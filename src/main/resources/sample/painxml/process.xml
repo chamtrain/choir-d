@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="Initial.0001" order="1" visit="1" visitType="NEW" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment" activity="Registered"
+               start_date="02-25-2020" expiration_date="" >
+    <Questionaire order="1"  print_order="999" value="names"           xml="names"           type="Local"       print_type="none"/>
+    <Questionaire order="2"  print_order="1"   value="bodymap"         xml="bodymap"         type="Local"       print_type="chart, img"  />
+    <Questionaire order="3"  print_order="2"   value="painIntensity"   xml="painIntensity"   type="Local"       print_type="chart, table"/>
+    <Questionaire order="4"  print_order="6"   value="questionTypes"   xml="questionTypes"   type="Local"       print_type="text"/>
+    <Questionaire order="7"  print_order="3.1" value="PROMIS Bank v1.2 - Physical Function"  type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="8"  print_order="3.2" value="PROMIS Fatigue Bank"                   type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="9"  print_order="4.1" value="PROMIS Depression Bank"                type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="10" print_order="4.2" value="PROMIS Anxiety Bank"                   type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="12" print_order="5"   value="questions"       xml="questions"       type="Local"       print_type="text"/>
+    <Questionaire order="20" print_order="999" value="research"        xml="research"        type="Local"       print_type="none"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUp.0001" order="2" visit="2" visitType="RTN" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered"
+               start_date="02-25-2020" expiration_date="">
+    <Questionaire order="1"  print_order="999" value="names"           xml="names"           type="Local"       print_type="none"/>
+    <Questionaire order="2"  print_order="1"   value="bodymap"         xml="bodymap"         type="Local"       print_type="chart, img"  />
+    <Questionaire order="3"  print_order="3.1" value="PROMIS Bank v1.2 - Physical Function"  type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="4"  print_order="3.2" value="PROMIS Fatigue Bank"                   type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="5"  print_order="4.1" value="PROMIS Depression Bank"                type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="6"  print_order="4.2" value="PROMIS Anxiety Bank"                   type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="8"  print_order="5"   value="questions"       xml="questions"       type="Local"       print_type="text"/>
+    <Questionaire order="10" print_order="999" value="research"        xml="research"        type="Local"       print_type="none"/>
+  </ProcessType>
+<!--
+  Procedure surveys, manually pushed to patients and then sent follow ups on configured schedules following the first pushed one
+  -->
+  <ProcessType value="ProcLumbarEpi.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="5" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="2" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="2" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="3" print_order="3" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcAccupunct.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="3" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="3" print_order="3" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.0 - Sleep Disturbance" type="LocalPromis" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart, text"/>
+    <Questionaire order="5" print_order="4.2" value="PROMIS Bank v1.0 - Sleep-Related Impairment" type="LocalPromis" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart, text"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Fatigue Bank" type="LocalPromis"  print_type="chart, text"/>
+    <Questionaire order="7" print_order="6" value="PROMIS Depression Bank" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="8" print_order="7" value="PROMIS Anxiety Bank" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcNerveBlock.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="6" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="procfuq6to7" type="Local" xml="procfuq6to7" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="3" print_order="3" value="procfuq2" type="Local" xml="procfuq2" print_type="text" />
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="6" print_order="4.3" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcBotox.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="4" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="procfuq8to10" type="Local" xml="procfuq8to10" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="3" print_order="3" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcSpinalCordStim.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="8" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="procfuq3to5" type="Local" xml="procfuq3to5" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="3" print_order="3" value="procfuq2" type="Local" xml="procfuq2" print_type="text"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcPeriNerveStim.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="7" visit="9999" visitType="Procedure"
+               start_date="02-26-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="procfuq2" type="Local" xml="procfuq2" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="procfuq1" type="Local" xml="procfuq1" print_type="text"/>
+    <Questionaire order="3" print_order="3.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="4" print_order="3.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Depression Bank" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="7" print_order="6" value="PROMIS Anxiety Bank" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="ProcGeneric.0001" notification="true" appointment_template="No-appointment" schedule_template="No-appointment" activity="Registered" order="10" visit="9999" visitType="Procedure"
+               start_date="08-14-2018" expiration_date="" report="Procedure">
+    <Questionaire order="1" print_order="1" value="PGIC" type="Local" xml="PGIC" print_type="text" />
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="chart"/>
+    <Questionaire order="3" print_order="3.1" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="4" print_order="3.2" value="PROMIS Bank v1.2 - Mobility" type="LocalPromis" print_type="chart, text" invert="true"/>
+    <Questionaire order="5" print_order="4" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="6" print_order="5" value="PROMIS Depression Bank" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="7" print_order="6" value="PROMIS Anxiety Bank" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="8" print_order="5" value="PROMIS Fatigue Bank" type="LocalPromis"  print_type="chart, text"/>
+    <Questionaire order="9" print_order="4.1" value="PROMIS Bank v1.0 - Sleep Disturbance" type="LocalPromis" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="DDTreatmentSet.1803" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="12" visit="9999" visitType="Treatmentset"
+               start_date="04-15-2018" expiration_date="" report="Procedure">
+    <Questionaire order="3" print_order="3.1" value="PROMIS Bank v1.1 - Pain Interference" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="6" print_order="4.1" value="PROMIS Depression Bank" type="LocalPromis" print_type="chart, text"/>
+    <Questionaire order="7" print_order="4.2" value="PROMIS Anxiety Bank" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <ProcessType value="PhysicianInput.0001" activity="Registered" order="1" visitType="" start_date="05-11-2015" expiration_date="" category="physician" onComplete="close">
+    <Questionaire value="physiciandiag" type="Local" xml="physiciandiag" order="1" print_order="1" print_type="text" />
+  </ProcessType>
+  <VisitTypes>
+    <VisitType value="NEW" group="new" />
+    <VisitType value="RTN" group="return" />
+    <VisitType value="Procedure" group="return"/>
+    <VisitType value="Treatmentset" group="noappt" excludeFromSurveyCnt="true"/>
+    <VisitType value="Procedure" group="noappt" excludeFromSurveyCnt="true"/>
+    <VisitType value="OptSurvey" group="noappt" excludeFromSurveyCnt="true"/>
+  </VisitTypes>
+</Process>    

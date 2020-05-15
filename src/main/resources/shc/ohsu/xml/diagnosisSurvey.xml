@@ -1,0 +1,324 @@
+<Form Description="Physician Diagnosis Survey" questionsPerPage="1">
+  <Items>
+   <Item Order="1">
+     <Description>Primary Psychological Diagnoses</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>psych_dx</ref>
+         <item>
+           <label>Somatic Symptom Disorder</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Psychological Factors Affecting Medical Condition</label>
+           <value>2</value>
+         </item>
+         <item>
+           <label>Conversion Disorder / Functional Neurological Symptom Disorder</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Illness Anxiety Disorder</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Factitious Disorder</label>
+           <value>5</value>
+         </item>
+         <item>
+           <label>Unspecified Somatic Symptom Disorder</label>
+           <value>6</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with depressed mood</label>
+           <value>7</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with anxiety</label>
+           <value>8</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with mixed anxiety and depressed mood</label>
+           <value>9</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with disturbance of conduct</label>
+           <value>10</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with mixed disturbance of emotions and conduct</label>
+           <value>11</value>
+         </item>
+         <item>
+           <label>Unspecified Anxiety Disorder</label>
+           <value>12</value>
+         </item>
+         <item>
+           <label>Posttraumatic Stress Disorder</label>
+           <value>13</value>
+         </item>
+         <item>
+           <label>Generalized Anxiety Disorder</label>
+           <value>14</value>
+         </item>
+         <item>
+           <label>Obsessive Compulsive Disorder</label>
+           <value>15</value>
+         </item>
+         <item>
+           <label>Social Anxiety Disorder</label>
+           <value>16</value>
+         </item>
+         <item>
+           <label>Panic Disorder</label>
+           <value>17</value>
+         </item>
+         <item>
+           <label>Unspecified Depressive Disorder</label>
+           <value>18</value>
+         </item>
+         <item>
+           <label>Major Depressive Disorder</label>
+           <value>19</value>
+         </item>
+         <item>
+           <label>Bipolar Disorder</label>
+           <value>20</value>
+         </item>
+         <item>
+           <label>Autism Spectrum Disorder</label>
+           <value>21</value>
+         </item>
+         <item>
+           <label>Learning Disorder</label>
+           <value>22</value>
+         </item>
+         <item>
+           <label>Eating Disorder </label>
+           <value>23</value>
+         </item>
+         <item>
+           <label>No psychological diagnosis</label>
+           <value>0</value>
+         </item>
+         <item>
+           <label>Other</label>
+           <value>99</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2">
+     <Description>Secondary Psychological Diagnoses</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>psych_dx2</ref>
+         <item>
+           <label>Somatic Symptom Disorder</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Psychological Factors Affecting Medical Condition</label>
+           <value>2</value>
+         </item>
+         <item>
+           <label>Conversion Disorder / Functional Neurological Symptom Disorder</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Illness Anxiety Disorder</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Factitious Disorder</label>
+           <value>5</value>
+         </item>
+         <item>
+           <label>Unspecified Somatic Symptom Disorder</label>
+           <value>6</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with depressed mood</label>
+           <value>7</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with anxiety</label>
+           <value>8</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with mixed anxiety and depressed mood</label>
+           <value>9</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with disturbance of conduct</label>
+           <value>10</value>
+         </item>
+         <item>
+           <label>Adjustment Disorder with mixed disturbance of emotions and conduct</label>
+           <value>11</value>
+         </item>
+         <item>
+           <label>Unspecified Anxiety Disorder</label>
+           <value>12</value>
+         </item>
+         <item>
+           <label>Posttraumatic Stress Disorder</label>
+           <value>13</value>
+         </item>
+         <item>
+           <label>Generalized Anxiety Disorder</label>
+           <value>14</value>
+         </item>
+         <item>
+           <label>Obsessive Compulsive Disorder</label>
+           <value>15</value>
+         </item>
+         <item>
+           <label>Social Anxiety Disorder</label>
+           <value>16</value>
+         </item>
+         <item>
+           <label>Panic Disorder</label>
+           <value>17</value>
+         </item>
+         <item>
+           <label>Unspecified Depressive Disorder</label>
+           <value>18</value>
+         </item>
+         <item>
+           <label>Major Depressive Disorder</label>
+           <value>19</value>
+         </item>
+         <item>
+           <label>Bipolar Disorder</label>
+           <value>20</value>
+         </item>
+         <item>
+           <label>Autism Spectrum Disorder</label>
+           <value>21</value>
+         </item>
+         <item>
+           <label>Learning Disorder</label>
+           <value>22</value>
+         </item>
+         <item>
+           <label>Eating Disorder </label>
+           <value>23</value>
+         </item>
+         <item>
+           <label>No psychological diagnosis</label>
+           <value>0</value>
+         </item>
+         <item>
+           <label>Other</label>
+           <value>99</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="3">
+     <Description>Primary Pain Diagnoses</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>pain_dx</ref>
+         <item>
+           <label>Musculoskeletal pain</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Abdominal pain</label>
+           <value>2</value>
+         </item>
+         <item>
+           <label>Headache</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Complex regional pain syndrome</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Fibromyalgia</label>
+           <value>5</value>
+         </item>
+         <item>
+           <label>Primary psychological diagnosis</label>
+           <value>6</value>
+         </item>
+         <item>
+           <label>Rheumatologic conditions</label>
+           <value>7</value>
+         </item>
+         <item>
+           <label>Cancer-related pain</label>
+           <value>8</value>
+         </item>
+         <item>
+           <label>Sickle Cell Disease</label>
+           <value>9</value>
+         </item>
+         <item>
+           <label>Ehlers-Danlos syndrome</label>
+           <value>10</value>
+         </item>
+         <item>
+           <label>Other</label>
+           <value>99</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="4">
+     <Description>Secondary Pain Diagnoses</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>pain_dx2</ref>
+         <item>
+           <label>Musculoskeletal pain</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Abdominal pain</label>
+           <value>2</value>
+         </item>
+         <item>
+           <label>Headache</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Complex regional pain syndrome</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Fibromyalgia</label>
+           <value>5</value>
+         </item>
+         <item>
+           <label>Primary psychological diagnosis</label>
+           <value>6</value>
+         </item>
+         <item>
+           <label>Rheumatologic conditions</label>
+           <value>7</value>
+         </item>
+         <item>
+           <label>Cancer-related pain</label>
+           <value>8</value>
+         </item>
+         <item>
+           <label>Sickle Cell Disease</label>
+           <value>9</value>
+         </item>
+         <item>
+           <label>Ehlers-Danlos syndrome</label>
+           <value>10</value>
+         </item>
+         <item>
+           <label>Other</label>
+           <value>99</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+  </Items>
+</Form>

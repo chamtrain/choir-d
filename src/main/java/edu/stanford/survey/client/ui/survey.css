@@ -1,0 +1,204 @@
+/*
+ * Copyright 2013 The Board of Trustees of The Leland Stanford Junior University.
+ * All Rights Reserved.
+ *
+ * See the NOTICE and LICENSE files distributed with this work for information
+ * regarding copyright ownership and licensing. You may not use this file except
+ * in compliance with a written license agreement with Stanford University.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See your
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+@external .gwt-* .ui-* .jqm4gwt-* labeledNumericScale unlabeledNumericScale unlabeledFieldset fullWidthUnlabeledFieldset;
+
+/* Adjust the appearance of Validator error messaged for each field */
+.jqm4gwt-error {
+  border-left: 3px solid red;
+  color: red;
+  padding-left: 5px;
+  padding-top: 1em;
+}
+
+.errorHighlight {
+  border-left: 3px solid red;
+  padding-left: 5px;
+}
+
+/* For labels that display error messages */
+.errorMessage {
+  color: red;
+}
+
+/* Certain form elements assume a label is provided, but we don't always want one.
+   Hide the label and adjust the width of the control here. */
+.unlabeledFieldset > fieldset > .ui-controlgroup-label {
+  display: none;
+}
+
+.unlabeledFieldset > fieldset > .ui-controlgroup-controls {
+  width: auto;
+}
+
+.continueButton {
+  margin-top: 2em;
+}
+
+.stopButton {
+  background-color: transparent !important;
+  box-shadow: none;
+  border-width: 0;
+}
+
+.labeledNumericScale > .ui-controlgroup > .ui-controlgroup-label,
+.labeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls {
+  /*margin-top: .5em;*/
+}
+
+.unlabeledNumericScale > fieldset > .ui-controlgroup-label {
+
+}
+/* used for likert scale questions with no text in the buttons */
+.fullWidthUnlabeledFieldset > fieldset > .ui-controlgroup-controls > .ui-radio {
+  width: auto;
+}
+.fullWidthUnlabeledFieldset > fieldset > .ui-controlgroup-controls > .ui-radio  > .ui-btn {
+  height: 30px;
+}
+
+.ui-btn-left {
+
+}
+
+.ui-btn-dtpicktoday {
+  background-color: #888 !important;
+  color: #fff !important;
+}
+
+/* Align the inline datepicker with the right edge */
+.ui-field-contain> div.ui-datebox-inline.ui-datebox-container {
+    margin-right: 0 !important;
+    margin-left: auto;
+
+}
+
+.ui-link-form {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui-link-h3 {
+  padding-bottom: 10px;
+}
+
+.ui-stanford-logo-left {
+  background: url("images/StanfordMedLogo20160119.png") no-repeat left center;
+  background-size: 120px 30px;
+  background-color: transparent !important;
+  float: left;
+  padding: 2px 5px;
+  background-origin: content-box;
+  width: 120px;
+  height: 30px;
+  box-shadow: none;
+  border-width: 0;
+}
+
+.ui-choir-logo-right {
+  background: url("images/ChoirLogoShort20160119.svg") no-repeat right center;
+  background-size: 90px 60px;
+  background-color: transparent !important;
+  float: left;
+  padding: 2px 2px;
+  background-origin: content-box;
+  width: 90px;
+  height: 30px;
+  margin-top: 0px;
+  text-align: right !important;
+  box-shadow: none;
+  border-width: 0;
+}
+
+.ui-link-title {
+  font-size: 1.6em;
+}
+/* Style the <progress> element */
+/* Chrome and safari */
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  position: relative;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius:3px;
+
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
+  background-image:
+          -webkit-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 23%, rgba(0,0,0,.1) 66%, transparent 66%),
+          -webkit-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)),
+          -webkit-linear-gradient( left, #09c, #f44);
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+  /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+  content: '';
+  position: absolute;
+
+  width:5px; height:5px;
+  top:7px; right:7px;
+
+  background-color: white;
+  border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image:
+          -moz-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%, transparent 66%),
+          -moz-linear-gradient( top, rgba(255, 255, 255, .25),
+          rgba(0,0,0,.2)),
+          -moz-linear-gradient( left, #09c, #f44);
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius:3px;
+
+  /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+progress[value] {
+  background-color: whiteSmoke;
+  width: 96%;
+  height: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* IE 11 and Microsoft Edge */
+progress[value]::-ms-fill {
+  background: whitesmoke;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+  background-image:
+          -ms-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 23%, rgba(0,0,0,.1) 66%, transparent 66%),
+          -ms-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)),
+          -ms-linear-gradient( left, #09c, #f44);
+  background-image:
+          -webkit-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 23%, rgba(0,0,0,.1) 66%, transparent 66%),
+          -webkit-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)),
+          -webkit-linear-gradient( left, #09c, #f44);
+  background-size: 35px, 20px, 100%, 100%, 100%, 100%;
+  border-radius: 3px;
+}

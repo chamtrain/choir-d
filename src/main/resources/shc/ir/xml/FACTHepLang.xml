@@ -1,0 +1,37 @@
+<Form Description="FACT-Hep Language" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Language]]></Description>
+      <Description><![CDATA[Please select your language of preference ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[English]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[Español]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[Русский]]></label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[Tiếng Việt Nam]]></label>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[廣東話]]></label>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[國語]]></label>
+            <value>5</value>
+          </item>
+          <ref>lang</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

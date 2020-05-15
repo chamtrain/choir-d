@@ -1,0 +1,280 @@
+package edu.stanford.survey.server.promis;
+
+import edu.stanford.survey.server.CatAlgorithm.ItemBank;
+import static edu.stanford.survey.server.ItemBanks.*;
+/**
+ * Item bank for PROMIS generated from: Alcohol Use C42EFA6F-48CE-4217-B9EF-4FE9493BE15F.json
+ */
+
+public class PromisAlcoholUse {
+
+  private static final ItemBank bank = itemBank(0.0, 0.0, 4, 12, 3.0, 
+  item("AlcoholScreener", "In the past 30 days", "Did you drink any type of alcoholic beverage?", "", 0.0, new double[] { 0.0 }, -1, "", 
+    response("Yes", 1),
+    response("No", 1)
+  ),
+  item("CONS01", "In the past 30 days", "I spent too much time drinking.", "", 3.2153, new double[] { 0.2443, 0.8524, 1.493, 1.9958 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS02", "In the past 30 days", "I finished several drinks fast to get a quick effect.", "", 2.46957, new double[] { 0.1724, 0.7572, 1.4666, 2.0393 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS03", "In the past 30 days", "I became drunk or intoxicated.", "", 2.32767, new double[] { -0.0342, 0.9633, 1.5244, 1.87 }, -1, "", 
+    response("Never", 1),
+    response("1-2 times", 2),
+    response("3-5 times", 3),
+    response("6-10 times", 4),
+    response("More than 10 times", 5)
+  ),
+  item("CONS05", "In the past 30 days", "On a typical day when I drank alcohol, I had…", "", 2.11475, new double[] { 0.1182, 0.9092, 1.5446, 2.1395 }, -1, "", 
+    response("1-2 drinks", 1),
+    response("3-4 drinks", 2),
+    response("5-6 drinks", 3),
+    response("7-10 drinks", 4),
+    response("More than 10 drinks", 5)
+  ),
+  item("CONS06", "In the past 30 days", "I spent a whole weekend drinking.", "", 2.25986, new double[] { 0.7719, 1.2719, 1.6222, 1.9267 }, -1, "", 
+    response("Never", 1),
+    response("1 time", 2),
+    response("2 times", 3),
+    response("3 times", 4),
+    response("4 or more times", 5)
+  ),
+  item("CONS07", "In the past 30 days", "I drank heavily at a single sitting.", "", 2.84906, new double[] { -0.016, 0.7032, 1.4632, 2.0775 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS08", "In the past 30 days", "I drank too much.", "", 3.03194, new double[] { -0.0017, 0.7362, 1.4977, 2.0216 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS09", "In the past 30 days", "I drank throughout the day.", "", 2.46512, new double[] { 0.5432, 1.1322, 1.7838, 2.2799 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS11", "In the past 30 days", "The largest number of drinks that I had in a single day was…", "", 1.92002, new double[] { -0.6141, 0.1692, 0.7845, 1.3448 }, -1, "", 
+    response("1-2 drinks", 1),
+    response("3-4 drinks", 2),
+    response("5-6 drinks", 3),
+    response("7-10 drinks", 4),
+    response("More than 10 drinks", 5)
+  ),
+  item("CONS12", "In the past 30 days", "I used alcohol and other drugs together, to get high.", "", 1.80651, new double[] { 0.3971, 0.8572, 1.5858, 2.2804 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CONS13", "In the past 30 days", "In a typical week, I drank…", "", 1.74234, new double[] { 0.6334, 1.2681, 1.7933, 2.3053 }, -1, "", 
+    response("1-7 drinks", 1),
+    response("8-14 drinks", 2),
+    response("15-21 drinks", 3),
+    response("22-28 drinks", 4),
+    response("More than 28 drinks", 5)
+  ),
+  item("CRAC02", "In the past 30 days", "I drank more than planned.", "", 3.17812, new double[] { -0.0919, 0.5194, 1.2984, 1.8786 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC05", "In the past 30 days", "I had an urge to continue drinking once I started.", "", 3.07097, new double[] { -0.1573, 0.3442, 1.0159, 1.5764 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC06", "In the past 30 days", "I felt that I should cut down on my drinking.", "", 2.48497, new double[] { 0.1768, 0.6494, 1.3523, 1.857 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC07", "In the past 30 days", "I had trouble controlling my drinking.", "", 4.7019, new double[] { 0.4287, 0.8351, 1.3304, 1.7529 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC08", "In the past 30 days", "It was difficult for me to stop drinking after one or two drinks.", "", 3.76129, new double[] { 0.2261, 0.6501, 1.1728, 1.5778 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC09", "In the past 30 days", "I had urges to drink.", "", 2.6685, new double[] { -0.1943, 0.5253, 1.3339, 2.124 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC10", "In the past 30 days", "I had cravings for alcohol.", "", 2.79953, new double[] { 0.0943, 0.6454, 1.4336, 2.0693 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC11", "In the past 30 days", "I felt I needed help for my drinking.", "", 3.62391, new double[] { 0.7088, 0.9438, 1.3401, 1.7873 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC12", "In the past 30 days", "I had trouble stopping drinking when I wanted to.", "", 4.17107, new double[] { 0.5139, 0.905, 1.3745, 1.8613 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("CRAC13", "In the past 30 days", "It was difficult to get the thought of drinking out of my mind.", "", 3.84619, new double[] { 0.4594, 0.9167, 1.4495, 1.8961 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG02", "In the past 30 days", "I drank when I was alone.", "", 1.51708, new double[] { -0.1185, 0.5276, 1.4241, 2.1723 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG03", "In the past 30 days", "I drank because I had nothing to do.", "", 2.6299, new double[] { 0.2683, 0.7343, 1.4869, 2.1917 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG06", "In the past 30 days", "I drank when I arrived at home.", "", 1.47552, new double[] { -0.1587, 0.5156, 1.5896, 2.3576 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG09", "In the past 30 days", "I drank because I was angry with myself.", "", 2.91953, new double[] { 0.6328, 1.1064, 1.7319, 2.2754 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG10", "In the past 30 days", "I drank because someone made me angry.", "", 2.61273, new double[] { 0.4619, 0.9498, 1.7994, 2.2881 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG11", "In the past 30 days", "I drank because I was irritable.", "", 2.5659, new double[] { 0.3253, 0.8271, 1.6329, 2.2685 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG14", "In the past 30 days", "I drank because I deserved it.", "", 1.30045, new double[] { 0.0656, 0.7699, 2.1327, 2.9532 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG15", "In the past 30 days", "I drank because I was annoyed.", "", 2.50873, new double[] { 0.332, 0.9047, 1.7238, 2.4237 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG16", "In the past 30 days", "I drank because I felt tense.", "", 1.98265, new double[] { -0.0013, 0.601, 1.6716, 2.48 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG17", "In the past 30 days", "I drank at the end of a busy day.", "", 1.23831, new double[] { -0.9922, -0.1236, 1.4406, 2.6311 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG19", "In the past 30 days", "I drank because I was nervous.", "", 2.54952, new double[] { 0.3863, 0.902, 1.7103, 2.2885 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG20", "In the past 30 days", "I drank because I was sad.", "", 2.77903, new double[] { 0.3273, 0.7758, 1.5146, 2.1311 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG21", "In the past 30 days", "I drank because I was lonely.", "", 2.94069, new double[] { 0.4382, 0.823, 1.5229, 2.0421 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG22", "In the past 30 days", "I drank because I was depressed.", "", 2.71494, new double[] { 0.2653, 0.7233, 1.4181, 2.0309 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG23", "In the past 30 days", "I drank because I had physical pain.", "", 1.69026, new double[] { 0.7638, 1.2644, 2.1167, 2.9932 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  ),
+  item("TRIG24", "In the past 30 days", "I drank because I was bored.", "", 2.87461, new double[] { 0.1847, 0.6282, 1.4085, 2.0925 }, -1, "", 
+    response("Never", 1),
+    response("Rarely", 2),
+    response("Sometimes", 3),
+    response("Often", 4),
+    response("Almost Always", 5)
+  )
+);
+
+  public static ItemBank bank() {
+    return bank;
+  }
+}

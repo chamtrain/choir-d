@@ -1,0 +1,292 @@
+<Form Description="MHQ" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+      <BR>Open a tight or new jar]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>JAR</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--Item Order="2" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>Do heavy household chores (e.g., wash walls, floors)]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>CHORES</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item-->
+    <!--Item Order="3" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>Carry a shopping bag or briefcase]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>SHOPBAG</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item-->
+    <Item Order="4" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>Wash your back]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>WASHBACK</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--Item Order="5" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>Use a knife to cut food]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>CUTFOOD</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item -->
+    <!--Item Order="6" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>Recreational activities in which you take some force or impact through your arm, shoulder or hand (e.g., golf, hammering, tennis, etc.)]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>RECRACT</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item-->
+    <Item Order="7" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>During the past week, to what extent has your arm, shoulder or hand problem interfered with your normal social activities with family, friends,
+neighbours or groups?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>SOCIAL</ref>
+          <item selected="false"><label>Not at all</label><value>1</value></item>
+          <item selected="false"><label>Slightly</label><value>2</value></item>
+          <item selected="false"><label>Moderately</label><value>3</value></item>
+          <item selected="false"><label>Quite</label><value>4</value></item>
+          <item selected="false"><label>Extremely</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate your ability to do the following activity in the last week
+       <BR>During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder or hand problem?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>LIMITED</ref>
+          <item selected="false"><label>Not limited at all</label><value>1</value></item>
+          <item selected="false"><label>Slightly limited</label><value>2</value></item>
+          <item selected="false"><label>Moderately limited</label><value>3</value></item>
+          <item selected="false"><label>Very limited</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate the severity of the following symptoms in the last week.
+       <BR>Arm, shoulder or hand pain]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>PAIN</ref>
+          <item selected="false"><label>None</label><value>1</value></item>
+          <item selected="false"><label>Mild</label><value>2</value></item>
+          <item selected="false"><label>Moderate</label><value>3</value></item>
+          <item selected="false"><label>Severe</label><value>4</value></item>
+          <item selected="false"><label>Extreme</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate the severity of the following symptoms in the last week.
+       <BR>Tingling (pins and needles) in your arm, shoulder or hand]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>PINS</ref>
+          <item selected="false"><label>None</label><value>1</value></item>
+          <item selected="false"><label>Mild</label><value>2</value></item>
+          <item selected="false"><label>Moderate</label><value>3</value></item>
+          <item selected="false"><label>Severe</label><value>4</value></item>
+          <item selected="false"><label>Extreme</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Please rate the severity of the following symptoms in the last week.
+       <BR>During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder or hand?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent> <![CDATA[These questions ask about your symptoms as well as your ability to perform certain activities.
+          Please answer every question, based on your condition in the last week, by choosing the appropriate answer.
+          If you did not have the opportunity to perform an activity in the past week, please make your best estimate
+          of which response would be the most accurate.
+          It doesn't matter which hand or arm you use to perform the activity; please answer based on your ability regardless
+        of how you perform the task.
+        ]]></CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>SLEEP</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>So much difficulty that I can't sleep</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

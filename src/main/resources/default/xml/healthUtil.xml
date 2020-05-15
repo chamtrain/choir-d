@@ -1,0 +1,92 @@
+<Form Description="Healthcare Utilization" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[In the past 6 months, how many times did you visit a physician?<p>Do not include visits while in the hospital or to a hospital emergency room.</p>]]>
+      </Description>
+	   <Alert>Please provide an integer response</Alert>
+       <Responses>
+        <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+          <ref>HURITTER1</ref>
+          <label>Physician visits</label>
+          <location>right</location>
+          <min>0</min>
+          <max>999</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Number of Doctor visits in the last 6 months.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[In the past 6 months, how many times did you go to a hospital emergency room?]]>
+      </Description>
+      <Alert>Please provide an integer response</Alert>
+      <Responses>
+        <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+          <ref>HURITTER2</ref>
+          <label>Emergency room visits</label>
+          <location>right</location>
+          <min>0</min>
+          <max>999</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Number of emergency room visits in the last 6 months.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[How many different times did you stay in a hospital overnight or longer in the past 6 months?]]>
+      </Description>
+      <Alert>Please provide an integer response</Alert>
+      <Responses>
+        <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+          <ref>HURITTER3</ref>
+          <label>Overnight hospital stays</label>
+          <location>right</location>
+          <min>0</min>
+          <max>999</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Number of hospital stays in the last 6 months.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	   <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[How many total nights did you stay in the hospital in the past 6 months?]]>
+      </Description>
+      <Alert>Please provide an integer response</Alert>
+      <Responses>
+        <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+          <ref>HURITTER4</ref>
+          <label>Total nights</label>
+          <location>right</location>
+          <min>0</min>
+          <max>999</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Number of nights in the hospital over the last 6 months.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

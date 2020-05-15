@@ -1,0 +1,165 @@
+<Form Description="Coordination Survey" questionsPerPage="1">
+  <Items>
+    <Item Order="0">
+      <Description>
+        <![CDATA[<p>
+Please tell us about the care you and/or your family have received at the Stanford Cancer Center. Your input will help us provide even better care for all patients.</p><p> Your responses will be kept confidential and will not be shared directly with your cancer care team.</p><p> Thank you for helping us make cancer care the best experience it can be for all. </p><p>If you have specific concerns please call 650-498-3333.
+    </p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="1" >
+      <Description>
+        <![CDATA[
+        In the past 3 months did you feel like your cancer care was coordinated well?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_1</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" >
+      <Description>
+        <![CDATA[
+        In the past 3 months how often did you know what the next step in your care would be?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_2</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" >
+      <Description>
+        <![CDATA[
+        In the past 3 months how often was your Stanford Cancer Center health care team (namely all doctors, nurses and staff related to your cancer care) familiar with all aspects of your most recent medical history?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_3</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" >
+      <Description>
+        <![CDATA[
+        In the past 3 months how often was your Stanford Cancer Center health care team aware of changes in your treatment that other doctors recommended?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_4</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" >
+      <Description>
+        <![CDATA[
+        In the past 3 months do you think your Stanford Cancer Center health care team had all the information they needed, such as test results, to make decisions about your treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_5</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" >
+      <Description>
+        <![CDATA[
+        In the past 3 months how often did you know who to ask at Stanford when you had questions about your cancer or treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_6</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" >
+      <Description>
+        <![CDATA[
+        	In the past 3 months how often were you given confusing or contradictory information about your cancer or treatments?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_7</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" >
+      <Description>
+        <![CDATA[
+        In the past 3 months did your Stanford Cancer Center health care team work well together?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_8</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" required="false">
+      <Description><![CDATA[ Please write your comments here  ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" >
+          <ref>comments</ref>
+          <label></label>
+          <format>
+            <lines>6</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

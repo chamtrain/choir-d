@@ -1,0 +1,43 @@
+<Form Description="Primary Reason for Referral" questionsPerPage="2">
+  <Items>
+    <Item Order="1">
+      <Description>What is the reason that your child was referred to the pain clinic?</Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>REASON</ref>
+          <item><value>1</value><label>Abdominal pain or irritable bowel syndrome</label></item>
+          <item><value>2</value><label>Headache</label></item>
+          <item><value>3</value><label>Joint pain/arthralgia</label></item>
+          <item><value>4</value><label>Musculoskeletal pain</label></item>
+          <item><value>5</value><label>Juvenile arthritis</label></item>
+          <item><value>6</value><label>Complex regional pain syndrome</label></item>
+          <item><value>7</value><label>Fibromyalgia or pain amplification syndrome</label></item>
+          <item><value>8</value><label>Back pain</label></item>
+          <item><value>9</value><label>Upper extremity pain</label></item>
+          <item><value>10</value><label>Lower extremity pain</label></item>
+          <item><value>11</value><label>Neck pain</label></item>
+          <item><value>12</value><label>Pain related to cancer</label></item>
+          <item><value>13</value><label>Sickle cell disease</label></item>
+          <item><value>14</value><label>Ehlers Danlos Syndrome</label></item>
+          <item><value>15</value><label>Post-concussive syndrome</label></item>
+          <item><value>16</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="2"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Visible="false">
+      <Description>Please describe</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="false">
+          <ref>OTHER</ref>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,123 @@
+<Form Description="HOOS JR Hip Survey" questionsPerPage="10">
+  <Items>
+    <Item Order="1" Page="start">
+      <Description>
+        <![CDATA[
+        <p>What amount of hip pain have you experienced with your left hip in the <u>last week</u> during the following activities?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        <p>Going up or down stairs</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P5" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <p>Walking on an uneven surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P10" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" Page="start">
+      <Description>
+        <![CDATA[
+        Difficulty experienced in the <u>last week</u> due to your left hip.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+     <Item Order="5">
+      <Description>
+        <![CDATA[
+        <p>Rising from sitting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="A3" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        <p>Bending to the floor/pick up and object</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="A5" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <p>Lying in bed (turning over, maintaining hip position)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="A12" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        <p>Sitting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="A14" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

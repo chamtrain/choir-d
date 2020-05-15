@@ -1,0 +1,168 @@
+<Form Description="Information Survey" questionsPerPage="1">
+  <Items>
+
+    <Item Order="0">
+      <Description>
+        <![CDATA[<p>
+Please tell us about the care you and/or your family have received at the Stanford Cancer Center. Your input will help us provide even better care for all patients.</p><p> Your responses will be kept confidential and will not be shared directly with your cancer care team.</p><p> Thank you for helping us make cancer care the best experience it can be for all. </p><p>If you have specific concerns please call 650-498-3333.
+    </p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="1" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your Stanford Cancer Center health care team (all doctors,
+nurses and staff related to your cancer care at Stanford) explain how your cancer and your cancer treatment could affect your normal daily activities?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_1</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your care team talk to you about next steps in your treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_2</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your care team explain test results in a way you understood?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_3</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your care team explain the purpose of medication or chemotherapy in a way you understood?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_4</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your care team involve you, to the extent that you wanted, in decisions about your cancer treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_5</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, did your care team talk with you about the reasons you might not want to have a particular type of treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_6</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" >
+      <Description>
+        <![CDATA[
+        	In the past 3 months, did your care team talk with you about the reasons you might want to have a particular type of treatment(s)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_7</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, were you asked for your opinion about whether or not to have a particular type of treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_8</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" required="false">
+      <Description><![CDATA[ Please write your comments here ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" >
+          <ref>comments</ref>
+          <label></label>
+          <format>
+            <lines>6</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

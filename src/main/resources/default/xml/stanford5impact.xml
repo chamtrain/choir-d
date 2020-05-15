@@ -1,0 +1,26 @@
+<Form Description="Stanford Five" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999">
+      <Description><![CDATA[How has your pain affected your life?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>S5IMPACT</ref>
+          <width>280</width>
+          <item><label>Laying in bed all day</label><value>1</value></item>
+          <item><label>Cannot do my job</label><value>2</value></item>
+          <item><label>Feeling isolated</label><value>3</value></item>
+          <item><label>Reduced social activities</label><value>4</value></item>
+          <item><label>Reduced recreational activities</label><value>5</value></item>
+        </Response>
+        <Response Order="2" Type="input"><Scores />
+          <ref>S5IMPACT</ref>
+          <label>and/or</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+          <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

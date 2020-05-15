@@ -1,0 +1,181 @@
+<Form Description="HOOS Hip Survey - Pain" questionsPerPage="10">
+  <Items>
+  <!--
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        <p>How often is your left hip painful?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P1" Type="select1" required="true">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Monthly</label></item>
+          <item><value>2</value><label>Weekly</label></item>
+          <item><value>3</value><label>Daily</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  -->
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[
+        <p>What amount of hip pain have you experienced with your left hip in the <u>last week</u> during the following activities?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+  <!--
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <p>Straightening your hip fully</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P2" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        <p>Bending your hip fully</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P3" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  -->
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        <p>Walking on a flat surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P4" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        <p>Going up or down stairs</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P5" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <p>At night while in bed</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P6" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        <p>Sitting or lying</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P7" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        <p>Standing upright</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P8" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  <!--
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        <p>Walking on a hard surface (asphalt, concrete, etc.)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P9" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        <p>Walking on an uneven surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="P10" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  -->
+  </Items>
+</Form>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- definition of an element group -->
+
+  <xs:group name="Process">
+    <xs:sequence>
+      <xs:element name="ProcessType" type="xs:string"/>
+      <xs:element name="Questionaire" type="xs:string"/>
+    </xs:sequence>
+  </xs:group>
+
+</xs:schema>
+

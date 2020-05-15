@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="../../js/jquery-1.12.0.min.cache.js"></script>
+  <script src="../../js/angular-1.7.5.min.cache.js"></script>
+  <script src="../../js/bootstrap-3.3.7.min.cache.js"></script>
+  <script src="./exportScores.js"></script>
+  <script src="../../scripts/choir-api.js"></script>
+
+  <link rel="stylesheet" href="../../css/bootstrap-3.3.7.min.cache.css">
+  <title>Export Scores</title>
+</head>
+<body>
+  <div ng-app="ExportScores" ng-controller="ExportScoresCtrl as vm">
+    <div class="container-fluid">
+      <h2>Export Survey Scores</h2>
+      <form novalidate name="vm.form">
+        <div style="margin-bottom: 20px">
+          <button  class={{vm.downloadBtnClass}} ng-show="vm.reportDataSet !== null" ng-click="vm.downloadFile()">{{vm.downloadBtnMsg}}</button>
+        </div>
+        <div>{{vm.result}}</div>
+        <div  ng-show="vm.reportDataSet !== null">
+          <table class="table table-striped table-bordered">
+            <thead>
+            <tr><th ng-repeat="val in vm.reportDataSet[0]" >
+              {{val}}
+            </th></tr>
+            </thead>
+            <tr ng-repeat="line in vm.reportDataSet track by $index" ng-if="$index > 0">
+              <td ng-repeat="val in line track by $index">{{val}}</td>
+            </tr>
+          </table>
+        </div>
+        <!--div>{{vm.reportDataSet}}</div -->
+        <button  class={{vm.downloadBtnClass}} ng-show="vm.reportDataSet !== null && vm.downloadComplete == null" ng-click="vm.downloadFile()">{{vm.downloadBtnMsg}}</button>
+        <div></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

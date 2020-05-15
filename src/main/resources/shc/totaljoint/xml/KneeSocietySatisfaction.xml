@@ -1,0 +1,83 @@
+<Form Description="Knee Society Score - Satisfaction" questionsPerPage="10">
+  <Items>
+    <Item Order="1" Page="start">
+      <Description>
+        <![CDATA[Currently, how satisfied are you with the pain level of your knee while...]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[Sitting?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>8</value><label>Very Satisfied</label></item>
+          <item><value>6</value><label>Satisfied</label></item>
+          <item><value>4</value><label>Neutral</label></item>
+          <item><value>2</value><label>Dissatisfied</label></item>
+          <item><value>0</value><label>Very Dissatisfied</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[Lying in bed?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>8</value><label>Very Satisfied</label></item>
+          <item><value>6</value><label>Satisfied</label></item>
+          <item><value>4</value><label>Neutral</label></item>
+          <item><value>2</value><label>Dissatisfied</label></item>
+          <item><value>0</value><label>Very Dissatisfied</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[Getting out of bed?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>8</value><label>Very Satisfied</label></item>
+          <item><value>6</value><label>Satisfied</label></item>
+          <item><value>4</value><label>Neutral</label></item>
+          <item><value>2</value><label>Dissatisfied</label></item>
+          <item><value>0</value><label>Very Dissatisfied</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[Performing light household duties?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>8</value><label>Very Satisfied</label></item>
+          <item><value>6</value><label>Satisfied</label></item>
+          <item><value>4</value><label>Neutral</label></item>
+          <item><value>2</value><label>Dissatisfied</label></item>
+          <item><value>0</value><label>Very Dissatisfied</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[Performing leisure recreational activities?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>8</value><label>Very Satisfied</label></item>
+          <item><value>6</value><label>Satisfied</label></item>
+          <item><value>4</value><label>Neutral</label></item>
+          <item><value>2</value><label>Dissatisfied</label></item>
+          <item><value>0</value><label>Very Dissatisfied</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

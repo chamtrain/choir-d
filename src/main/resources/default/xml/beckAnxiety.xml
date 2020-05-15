@@ -1,0 +1,169 @@
+<Form Description="Beck Anxiety Inventory" DateStarted="" DateFinished="" questionsPerPage="5" Class="surveyInlineBordered">
+<Items class="surveyInline"> 
+  
+  <Item Order="1" ItemScore="" RequiredMin="21" RequiredMax="21" Align="Vertical" ItemResponse="" TimeStarted="" TimeFinished="" Code="BECK" Class="beckAnxiety">
+ <Description><![CDATA[Below is a list of common symptoms of anxiety. Please carefully read each item in the list. Indicate how much you have been bothered by that symptom during the past month, including today. ]]></Description>
+
+<Responses Align="Horizontal" Class="surveyAnswerInline">
+<Response Order="0" Description="" Type="heading" Align="horizontal" Appearance="full" Class="beckHeading">
+	<item><label>Not at All</label></item>
+	<item><label>Mildly but it didn't bother me much</label></item>
+	<item><label>Moderately - it wasn't pleasant at times</label></item>
+	<item><label>Severely - it bothered me a lot</label></item>
+</Response>
+<Response Order="1" required="true" Description="Numbness or tingling" Position="left" Type="select1" Align="horizontal" Appearance="full" Class="beckAnswer">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="2" required="true" Description="Feeling hot" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="3" required="true" Description="Wobliness in legs" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="4" required="true" Description="Unable to relax" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="5" required="true" Description="Fear of worst happening" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="6" required="true" Description="Dizzy or lightheaded" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="7" required="true" Description="Heart pounding/racing" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="8" required="true" Description="Unsteady" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="9" required="true" Description="Terrified or afraid" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="10" required="true" Description="Nervous" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="11" required="true" Description="Feeling of choking" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="12" required="true" Description="Hands trembling" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="13" required="true" Description="Shaky /unsteady" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="14" required="true" Description="Fear of losing control" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="15" required="true" Description="Difficulty in breathing" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="16" required="true" Description="Fear of dying" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="17" required="true" Description="Scared" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="18" required="true" Description="Indigestion" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="19" required="true" Description="Faint / lightheaded" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="20" required="true" Description="Face flushed" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="21" required="true" Description="Hot/cold sweats" Type="select1" Align="horizontal" Class="beckAnswer" Appearance="full">
+<item><value>0</value> </item>
+<item><value>1</value>  </item>
+<item><value>2</value>  </item>
+<item><value>3</value> </item>
+  <Scores /> 
+</Response>
+<Response Order="0" Description="" Type="heading" Align="horizontal" Appearance="full" Class="beckHeading">
+	<item><label>Not at All</label></item>
+	<item><label>Mildly but it didn't bother me much</label></item>
+	<item><label>Moderately - it wasn't pleasant at times</label></item>
+	<item><label>Severely - it bothered me a lot</label></item>
+</Response>
+</Responses>
+</Item>
+</Items></Form>

@@ -1,0 +1,52 @@
+<Form DateFinished="" DateStarted="" Description="Seeking Treatment Question" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description>What are you seeking treatment for today?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Left</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>Right</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Both</label>
+            <value>2</value>
+          </item>
+          <ref>sides</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select" required="true">
+          <item>
+            <label>Wrist</label>
+            <value>0</value>
+            <ref>wr</ref>
+          </item>
+          <item>
+            <label>Elbow</label>
+            <value>1</value>
+            <ref>el</ref>
+          </item>
+          <item>
+            <label>Thumb</label>
+            <value>2</value>
+            <ref>th</ref>
+          </item>
+          <item>
+            <label>Forearm</label>
+            <value>3</value>
+            <ref>fa</ref>
+          </item>
+          <item>
+            <label>Fingers</label>
+            <value>4</value>
+            <ref>fi</ref>
+          </item>
+          <ref>parts</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

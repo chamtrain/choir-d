@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Contact About Future Studies" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[May we contact you about future studies that may be of interest to you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Ask me later]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>gi_contactQ_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

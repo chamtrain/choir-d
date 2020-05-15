@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="PATIENT HEALTH QUESTIONNAIRE (PHQ-9)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Over the last 2 weeks, how often have you been bothered by any of the following problems?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Little interest or pleasure in doing things]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>nopleasure</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Feeling down, depressed, or hopeless]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>depressed</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Trouble falling or staying asleep, or sleeping too much]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>diff_sleeping</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Feeling tired or having little energy]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>tired</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Poor appetite or overeating]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>poor_appetite</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[Feeling bad about yourself – or that you are a failure or have let yourself or your family down]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>failure</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Trouble concentrating on things, such as reading the newspaper or watching television]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>trouble_focusing</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Moving or speaking so slowly that other people could have noticed. Or the opposite - being so figety or restless that you have been moving around a lot more than usual]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>obv_behavior</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Thoughts that you would be better off dead, or of hurting yourself]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>neg_thoughts</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not difficult at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat difficult]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very difficult]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>diff_doing</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

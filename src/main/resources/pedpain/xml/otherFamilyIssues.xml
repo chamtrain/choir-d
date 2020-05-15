@@ -1,0 +1,18 @@
+<Form Description="Other Family Issues" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Is there anything else that would be important to know about your family
+        (e.g., financial difficulties, recent or ongoing stress such as divorce,
+        separation, death in the family)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="other-family-issues" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

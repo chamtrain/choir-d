@@ -1,0 +1,196 @@
+/** Custom style sheets need to define a class named for the stylesheet (without the .css)
+    with non-zero width and height. The application uses this class to determine when the style sheet has finished loading. 
+    Example:  mystylesheet.css
+    Contains: .mystylesheet {width:10px;height:10px;}
+*/
+
+/** load indicator class **/
+.painmanagement-2016-01-19 {
+  width:10px;
+  height:10px;
+}
+
+/** Site logo */
+.ui-btn-left {
+  background: url("images/EmpowerLogo.png") no-repeat left center;
+  background-size: 120px 30px;
+  float: left;
+  padding: 2px 5px;
+  background-origin: content-box;
+  width: 120px;
+  height: 30px;
+}
+
+@media screen and (min-width: 380px) {
+  .ui-btn-right {
+    background: url("images/ChoirLogoShort20160119.svg") no-repeat right center;
+    background-size: 120px 80px;
+    float: left;
+    padding: 2px 2px;
+    background-origin: content-box;
+    width: 120px;
+    height: 40px;
+    margin-top: 0px;
+    text-align: right !important;
+  }
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  border-top: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+@media (min-width: 900px) {
+  .ui-content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.ui-collapsible-content {
+	max-height: 24em;
+	overflow: scroll
+}
+
+.ui-collapsible-content p {
+	margin-bottom: 1em;
+}
+.ui-collapsible-content ul {
+  list-style-type: disc;
+}
+
+.dependantQuestion {
+  padding-bottom: 1.75em;
+  padding-left: 2em;
+}
+
+.physicianSurvey label {
+  font-size: medium;
+  float: left;
+  width: 15%;
+  /* padding-left: 10px; */
+  padding-bottom: .75em;
+}
+.physicianSurvey input {
+  float: right;
+  /* width: 50%; */
+  padding-bottom: .75em;
+}
+
+.physicianSurvey > .ui-field-contain {
+  width: 97%;
+  margin: 0;
+}
+
+.physicianSurvey .ui-controlgroup-controls  {
+  width: 96%;
+  margin: 0;
+}
+
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a, .ui-btn, label.ui-btn,
+.ui-mobile label, div.ui-controlgroup-label {
+  font-weight: normal;
+  font-size: large;
+  font-family: "Source Sans Pro", Verdana, Arial, Helvetica, sans-serif;
+}
+*, body, input, select, textarea, button, .ui-btn {
+  font-family: "Source Sans Pro", Verdana, Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: x-large;
+  font-family: "Source Sans Pro", Verdana, Arial, Helvetica, sans-serif;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+h4, h5, h6 {
+  font-size: large;
+}
+p, ul, ol {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  background-color: #ffffff;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  background-color: #f2f2f2;
+}
+
+.ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon {
+  background-color: #8C1515
+}
+
+.ui-icon-loading {
+  background: url(images/ajax-loader.gif);
+  background-size: 46px 46px;
+  color: #8C1515
+}
+
+.ui-overlay {
+  background: #8C1515;
+  filter: Alpha(Opacity=50);
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+.ui-btn:focus {
+  -moz-box-shadow: inset 0 0 3px #8C1515;
+  -webkit-box-shadow: inset 0 0 3px #8C1515;
+  box-shadow: inset 0 0 3px #8C1515;
+}
+
+.ui-input-text.ui-focus,
+.ui-input-search
+.ui-focus {
+  -moz-box-shadow: 0 0 12px #8C1515;
+  -webkit-box-shadow: 0 0 12px #8C1515;
+  box-shadow: 0 0 12px #8C1515
+}
+
+/** Prescription label image */
+.prescriptionLabel {
+  background: url("images/opioid_prescription_label.jpg") no-repeat center;
+  background-size:contain;
+  height: 400px;
+}
+
+/* 
+  Formatting for horizontal scales
+  
+  - Increase height to allow space for left and right scale labels
+  - Do not show or allocate space for fieldset label
+  - Width is the width of the buttons and align right
+  - Increase the width of the scale buttons
+  - Center the button text
+*/
+
+.horizontalScale {
+	height: 6em;
+}
+
+.horizontalScale > fieldset > .ui-controlgroup-label {
+  display: none;
+}
+
+.horizontalScale > fieldset > .ui-controlgroup-controls {
+  width: auto;
+  float: right;
+}
+
+.horizontalScale > fieldset > .ui-controlgroup-controls .ui-radio {
+  min-width: 65px;
+}
+
+.horizontalScale > fieldset > .ui-controlgroup-controls .ui-radio > label {
+  text-align: center;
+}
+
+
+/* override jquery mobile classes here */		

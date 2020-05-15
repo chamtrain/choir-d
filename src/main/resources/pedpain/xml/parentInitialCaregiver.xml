@@ -1,0 +1,563 @@
+<Form Description="Initial Parent - Primary Caregiver" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Please tell us a little bit about you, the parent/primary caregiver.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Section="start">
+      <Description>
+        <![CDATA[
+        Your relationship to your child
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="relation" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Biological mother</label> </item>
+          <item> <value>2</value> <label>Biological father</label> </item>
+          <item> <value>3</value> <label>Adopted mother</label> </item>
+          <item> <value>4</value> <label>Adopted father</label> </item>
+          <item> <value>5</value> <label>Stepmother</label> </item>
+          <item> <value>6</value> <label>Stepfather</label> </item>
+          <item> <value>7</value> <label>Foster mother</label> </item>
+          <item> <value>8</value> <label>Foster father</label> </item>
+          <item> <value>9</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Other, please specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="relation-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Section="start">
+      <Description>
+        <![CDATA[
+        Your age (enter 0 if you prefer not to respond)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="age" Order="1" Type="input" min="0" max="120" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        Your occupation (or enter NA for no answer)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="occupation" Order="1" Type="input" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        Your educational level
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="education" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Less than high school</label> </item>
+          <item> <value>2</value> <label>Some high school</label> </item>
+          <item> <value>3</value> <label>Finished high school (or equivalent)</label> </item>
+          <item> <value>4</value> <label>Some college or AA degree</label> </item>
+          <item> <value>5</value> <label>College degree (BA, BS)</label> </item>
+          <item> <value>6</value> <label>Post-graduate degree</label> </item>
+          <item> <value>7</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="7"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Other, please specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="education-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Section="start">
+      <Description>
+        <![CDATA[
+        Your ethnicity
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="ethnicity" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Hispanic/Latino</label> </item>
+          <item> <value>2</value> <label>Non-Hispanic/Non-Latino</label> </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Section="end">
+      <Description>
+        <![CDATA[
+        Your Race (check all that apply)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="race" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>White</label> </item>
+          <item> <value>2</value> <label>African-American</label> </item>
+          <item> <value>3</value> <label>Asian</label> </item>
+          <item> <value>4</value> <label>American Indian or Alaska Native</label> </item>
+          <item> <value>5</value> <label>Native Hawaiian or Other Pacific Islander</label> </item>
+          <item> <value>9</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="race-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        Your marital status
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="marital-status" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Married</label> </item>
+          <item> <value>2</value> <label>Separated</label> </item>
+          <item> <value>3</value> <label>Divorced</label> </item>
+          <item> <value>4</value> <label>Widowed</label> </item>
+          <item> <value>5</value> <label>Single (living alone)</label> </item>
+          <item> <value>6</value> <label>Single (living with a companion)</label> </item>
+          <item> <value>7</value> <label>Other</label>
+          <item> <value>99</value> <label>Prefer not to respond</label> </item>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" Section="start">
+      <Description>
+        <![CDATA[
+        Do you have any pain problems? 
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-problem" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="15"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        Please choose all that apply
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-problems" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>Headaches</label> </item>
+          <item> <value>2</value> <label>Arm/Leg pain</label> </item>
+          <item> <value>3</value> <label>Abdominal pain</label> </item>
+          <item> <value>4</value> <label>Back pain</label> </item>
+          <item> <value>5</value> <label>Chest pain</label> </item>
+          <item> <value>6</value> <label>Jaw/Mouth pain</label> </item>
+          <item> <value>7</value> <label>Menstrual pain</label> </item>
+          <item> <value>99</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="pain-problems-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" Section="start">
+      <Description>
+        <![CDATA[
+        Do you have any psychological difficulties (e.g., anxiety, depression)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="psych-problem" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="17"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Yes, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="psych-problem-describe" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" Section="start">
+      <Description>
+        <![CDATA[
+        Do you have any other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="medical-issues" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="19"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Yes, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="medical-issues-describe" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+<!-- Secondary Caregiver -->
+    <Item Order="31" Section="start">
+      <Description>
+        <![CDATA[
+        The following questions are about your child's <b><u>Second Caregiver</u></b>.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="32" Section="end">
+      <Description>
+        <![CDATA[
+        Is there a secondary caregiver for your child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="secondary-caregiver" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary Caregiver relationship to your child
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-relation" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Biological mother</label> </item>
+          <item> <value>2</value> <label>Biological father</label> </item>
+          <item> <value>3</value> <label>Adopted mother</label> </item>
+          <item> <value>4</value> <label>Adopted father</label> </item>
+          <item> <value>5</value> <label>Stepmother</label> </item>
+          <item> <value>6</value> <label>Stepfather</label> </item>
+          <item> <value>7</value> <label>Foster mother</label> </item>
+          <item> <value>8</value> <label>Foster father</label> </item>
+          <item> <value>9</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="34"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="34" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Other, please specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-relation-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="35" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver age (enter 0 if you prefer not to respond)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-age" Order="1" Type="input" min="0" max="120" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="36">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver occupation (or enter NA for no answer)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-occupation" Order="1" Type="input" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="37">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver educational level
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-education" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Less than high school</label> </item>
+          <item> <value>2</value> <label>Some high school</label> </item>
+          <item> <value>3</value> <label>Finished high school (or equivalent)</label> </item>
+          <item> <value>4</value> <label>Some college or AA degree</label> </item>
+          <item> <value>5</value> <label>College degree (BA, BS)</label> </item>
+          <item> <value>6</value> <label>Post-graduate degree</label> </item>
+          <item> <value>7</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="38"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="38" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Other, please specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-education-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="39" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver ethnicity
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-ethnicity" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Hispanic/Latino</label> </item>
+          <item> <value>2</value> <label>Non-Hispanic/Non-Latino</label> </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="40" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver Race (check all that apply)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-race" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>White</label> </item>
+          <item> <value>2</value> <label>African-American</label> </item>
+          <item> <value>3</value> <label>Asian</label> </item>
+          <item> <value>4</value> <label>American Indian or Alaska Native</label> </item>
+          <item> <value>5</value> <label>Native Hawaiian or Other Pacific Islander</label> </item>
+          <item> <value>9</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="2-race-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="41">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver marital status
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-marital-status" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Married</label> </item>
+          <item> <value>2</value> <label>Separated</label> </item>
+          <item> <value>3</value> <label>Divorced</label> </item>
+          <item> <value>4</value> <label>Widowed</label> </item>
+          <item> <value>5</value> <label>Single (living alone)</label> </item>
+          <item> <value>6</value> <label>Single (living with a companion)</label> </item>
+          <item> <value>7</value> <label>Other</label>
+          <item> <value>99</value> <label>Prefer not to respond</label> </item>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="43" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Secondary caregiver lives with child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-lives-with-child" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Yes</label> </item>
+          <item> <value>0</value> <label>No</label>
+            <onselect Type="Item" Where="Order" Value="44"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="44" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If No, please explain</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-doesnt-live-with-child-reason" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="45" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the secondary caregiver have any pain problems? 
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-pain-problem" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="46"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="46"  Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Please choose all that apply
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-pain-problems" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>Headaches</label> </item>
+          <item> <value>2</value> <label>Arm/Leg pain</label> </item>
+          <item> <value>3</value> <label>Abdominal pain</label> </item>
+          <item> <value>4</value> <label>Back pain</label> </item>
+          <item> <value>5</value> <label>Chest pain</label> </item>
+          <item> <value>6</value> <label>Jaw/Mouth pain</label> </item>
+          <item> <value>7</value> <label>Menstrual pain</label> </item>
+          <item> <value>99</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="2-pain-problems-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="47" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the secondary caregiver have any psychological difficulties (e.g., anxiety, depression)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-psych-problem" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="48"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="48" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-psych-problem-describe" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="49" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the secondary caregiver have any other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-medical-issues" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="50"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="50" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='secondary-caregiver']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-medical-issues-describe" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

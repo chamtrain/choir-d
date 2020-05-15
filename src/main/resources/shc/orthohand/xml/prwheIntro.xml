@@ -1,0 +1,16 @@
+<Form Description="Sample" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[<p>Patient Rated Wrist/Hand Evaluation</p>
+      The following questions will help us understand how much difficulty you have had with your wrist/hand in the past week.
+      You will be describing your <u><b>average</b></u> wrist/hand symptoms <u><b>over the past week</b></u> on a scale of 0-10.
+      Please provide an answer for <b>ALL</b> questions.
+      If you did not perform an activity, please <b>ESTIMATE</b> the pain or difficulty you would expect.</p>]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"></Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

@@ -1,0 +1,1078 @@
+<!--
+  ~ Copyright 2013 The Board of Trustees of The Leland Stanford Junior University.
+  ~ All Rights Reserved.
+  ~
+  ~ See the NOTICE and LICENSE files distributed with this work for information
+  ~ regarding copyright ownership and licensing. You may not use this file except
+  ~ in compliance with a written license agreement with Stanford University.
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  ~ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See your
+  ~ License for the specific language governing permissions and limitations under
+  ~ the License.
+  -->
+
+<project name="registry" default="usage" xmlns:ivy="antlib:org.apache.ivy.ant">
+  <!-- Internal properties we do not allow to be configured via ../build.properties -->
+  <property name="checksum.algorithm" value="SHA-512"/>
+
+  <!-- Create this file to override the properties below -->
+  <!-- NOTE: Run 'ant -debug target' to see property values imported (and overridden below) -->
+  <property file="../build.properties"/>
+
+  <!-- Set a default Timezone for the Docker clinc and survey containers if not overridden in ../build.properties. -->
+  <property name="docker.registry.timezone" value="America/Los_Angeles"/>
+
+  <!-- Maven central by default -->
+  <property name="maven.repos" value="https://repo1.maven.org/maven2"/>
+  <!-- Oracle isn't available except in private repos. Set up your own if you need it. -->
+  <property name="oracle.download.url" value="https://irt-maven.stanford.edu/nexus/content/groups/public/com/oracle/ojdbc7/12.1.0.2/ojdbc7-12.1.0.2.jar"/>
+
+  <!-- Also need Tomcat - can't find a way to download it using ivy... -->
+  <property name="tomcat.zip" value="tomcat-8.5.40.zip"/>
+  <property name="tomcat.download.url" value="${maven.repos}/org/apache/tomcat/tomcat/8.5.40/${tomcat.zip}"/>
+
+  <!-- Another repository on the filesystem that has non-free libraries (e.g. Oracle driver) -->
+  <property name="shared.repos" value="${basedir}/../ivy-repos"/>
+  <property name="shared.repos.pattern" value="[module]/[revision]/[artifact].[ext]"/>
+  <!-- Where Ivy will cache downloaded libraries; this is the default (deleted by cleanest target) -->
+  <property name="ivy.cache.dir" value="${user.home}/.ivy2"/>
+  <!-- Compiler options -->
+  <property name="compile.debug" value="on"/>
+  <property name="compile.debug.level" value="lines,source"/>
+  <property name="compile.deprecation" value="off"/>
+  <!-- Database connection stuff (the rest are mandatory in ../build.properties) -->
+  <property name="registry.database.url" value="jdbc:postgresql://localhost/postgres"/>
+  <condition property="registry.database.url.docker" value="jdbc:postgresql://choir-database/postgres">
+    <equals arg1="${registry.database.url}" arg2="jdbc:postgresql://localhost/postgres"/>
+  </condition>
+  <property name="registry.database.url.docker" value="${registry.database.url}"/>
+  <condition property="registry.network.docker.args" value="--network choir_net">
+    <equals arg1="${registry.database.url}" arg2="jdbc:postgresql://localhost/postgres"/>
+  </condition>
+  <property name="registry.database.docker.args" value=""/>
+  <condition property="database.oracle">
+    <contains string="${registry.database.url}" substring="oracle"/>
+  </condition>
+  <condition property="database.postgresql">
+    <contains string="${registry.database.url}" substring="postgresql"/>
+  </condition>
+  <condition property="registry.database.driver" value="oracle.jdbc.OracleDriver">
+    <contains string="${registry.database.url}" substring="oracle"/>
+  </condition>
+  <property name="registry.database.driver" value="org.postgresql.Driver"/>
+  <property name="registry.database.user" value=""/>
+  <property name="registry.database.password" value=""/>
+  <property name="database.system.user" value=""/>
+  <property name="database.system.password" value=""/>
+  <property name="registry.database.system.user" value="${database.system.user}"/>
+  <property name="registry.database.system.password" value="${database.system.password}"/>
+  <condition property="registry.database.flavor" value="oracle">
+    <isset property="database.oracle"/>
+  </condition>
+  <condition property="registry.database.flavor" value="postgresql">
+    <isset property="database.postgresql"/>
+  </condition>
+  <condition property="oracle.comment.end" value="-->">
+    <isset property="database.oracle"/>
+  </condition>
+  <condition property="oracle.comment.start" value="&lt;!--">
+    <isset property="database.oracle"/>
+  </condition>
+  <condition property="postgresql.comment.end" value="-->">
+    <isset property="database.postgresql"/>
+  </condition>
+  <condition property="postgresql.comment.start" value="&lt;!--">
+    <isset property="database.postgresql"/>
+  </condition>
+  <property name="patsat.database.user" value="${registry.database.user}"/>
+  <property name="patsat.database.password" value="${registry.database.password}"/>
+  <condition property="patsat.same.db">
+    <equals arg1="${registry.database.user}" arg2="${patsat.database.user}"/>
+  </condition>
+  <!-- Various properties for running Tomcat -->
+  <property name="ssl.keystore" value="${basedir}/../registry-ssl.keystore"/>
+  <property name="ssl.password" value="development"/>
+  <available property="keystore.exists" file="${ssl.keystore}"/>
+  <property name="tomcat.port.http" value="8080"/>
+  <property name="tomcat.port.https" value="8443"/>
+  <property name="tomcat.port.shutdown" value="8005"/>
+  <property name="catalina.home" value="${basedir}/build/tomcat-dist"/>
+  <property name="catalina.base" value="build/tomcat"/>
+  <property name="deploy.dir" value="${catalina.base}/webapps"/>
+  <property name="gwt.sdk" location="${basedir}/lib/ivy/gwt"/>
+  <condition property="verbose.arg" value="-verbose">
+    <isset property="verbose"/>
+  </condition>
+
+  <target name="usage">
+    <echo message="Recommended targets:"/>
+    <echo message="  "/>
+    <echo message="  create.database    DANGER: drops and re-creates the test schema"/>
+    <echo message="       Set your own data-creation-class- see  by setting data.creation.class in your build.properties file."/>
+    <echo message="       See edu.stanford.registry.tool.CreateRegistryDataDefault"/>
+    <echo message="  create.db.scripts  DANGER: drops and re-creates the test schema"/>
+    <echo message="       Logs the output of create.database then runs MakeDBCreationScripts to create database-creation scripts for a release."/>
+    <echo message="  "/>
+    <echo message="  tomcat            Configure Tomcat in build/tomcat and launch application"/>
+    <echo message="                      clinic: https://localhost:${tomcat.port.https}/registry/"/>
+    <echo message="                              http://localhost:${tomcat.port.http}/registry/"/>
+    <echo message="                      survey: https://localhost:${tomcat.port.https}/registry/survey2/"/>
+    <echo message="                              http://localhost:${tomcat.port.http}/registry/survey2/"/>
+    <echo message="                      test surveys (drop the tk=... to see the token lookup page):"/>
+    <echo message="                        client stub: https://localhost:${tomcat.port.https}/registry/survey2test/"/>
+    <echo message="                        server stub: https://localhost:${tomcat.port.https}/registry/survey2/?s=stub&amp;tk=test"/>
+    <echo message="                        test utility: https://localhost:${tomcat.port.https}/registry/survey2/?s=test&amp;tk=test"/>
+    <echo message="  tomcat.clean      Remove build/tomcat without cleaning other artifacts"/>
+    <echo message="  "/>
+    <echo message="  tests             Run all automated tests"/>
+    <echo message="  "/>
+    <echo message="  dist              Create final build artifacts"/>
+    <echo message="  classes           Compile Java source code"/>
+    <echo message="  lib               Populate lib directory by downloading libraries"/>
+    <echo message="  ivy-sums          Update lib/ivy-sums with actual checksums from lib/ivy"/>
+    <echo message="  "/>
+    <echo message="  clean             Remove build output (./build)"/>
+    <echo message="  cleaner             and also downloaded libraries (./lib/ivy)"/>
+    <echo message="  cleanest            and also clear the ivy cache"/>
+    <echo message="  "/>
+    <echo message="  loadconfig        Run the LoadConfig tool (be sure to add -e flag to Ant)"/>
+    <echo message="  For debugging information run:  ant [target] -verbose"/>
+    <echo message="  To debug property values, run:  ant usage -debug"/>
+    <echo message="  "/>
+  </target>
+
+  <target name="team-city" depends="clean,create.database,registry.war,tests"/>
+
+  <target name="dist" depends="registry.war,clinic.war,survey.war,tomcat.dist"/>
+
+  <target name="deploy" depends="registry.war">
+    <copy file="build/dist/registry.war" todir="${deploy.dir}" failonerror="no"/>
+  </target>
+  <target name="undeploy">
+    <delete dir="${deploy.dir}/registry"/>
+    <delete file="${deploy.dir}/registry.war"/>
+  </target>
+
+  <target name="registry.war" depends="classes,gwt.clients">
+    <war destfile="build/dist/registry.war" webxml="${basedir}/war/WEB-INF/web.xml">
+      <classes dir="build/classes"/>
+      <classes dir="src/main/resources"/>
+      <classes dir="build/gwt/WEB-INF/deploy">
+        <include name="registry/**/*"/>
+      </classes>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath.runtime.only"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <fileset dir="${basedir}/war" includes="*.html,*.css,images/**"/>
+      <fileset dir="build/gwt" includes="registry/**"/>
+      <fileset dir="build/gwt" includes="survey2/**" excludes="survey2/*NoServer*"/>
+      <fileset dir="build/gwt" includes="survey2test/**" excludes="**/Survey.nocache.html"/>
+    </war>
+  </target>
+
+  <target name="clinic.war" depends="classes,gwt.clients"
+          description="CHOIR clinic-facing application">
+    <war jarfile="build/dist/clinic.war" webxml="src/main/docker/clinic-web.xml">
+      <classes dir="build/classes"/>
+      <classes dir="src/main/resources"/>
+      <classes dir="build/gwt/WEB-INF/deploy">
+        <include name="registry/**/*"/>
+      </classes>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath.runtime.only"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <fileset dir="${basedir}/war" includes="*.html,*.css,images/**"/>
+      <fileset dir="build/gwt" includes="registry/**"/>
+    </war>
+  </target>
+
+  <target name="survey.war" depends="classes,gwt.clients"
+          description="CHOIR patient-facing application">
+    <war destfile="build/dist/survey.war" webxml="src/main/docker/survey-web.xml">
+      <classes dir="build/classes"/>
+      <classes dir="src/main/resources"/>
+      <classes dir="build/gwt/WEB-INF/deploy">
+        <include name="registry/**/*"/>
+      </classes>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <mappedresources>
+        <restrict>
+          <path refid="server.classpath.runtime.only"/>
+        </restrict>
+        <chainedmapper>
+          <flattenmapper/>
+          <globmapper from="*" to="WEB-INF/lib/*"/>
+        </chainedmapper>
+      </mappedresources>
+      <fileset dir="${basedir}/war" includes="images/**"/>
+      <fileset dir="build/gwt" includes="survey2/**" excludes="survey2/*NoServer*"/>
+    </war>
+  </target>
+
+  <target name="docker.build" depends="dist,docker.build.only"/>
+  <target name="docker.build.only">
+    <delete dir="build/deploy"/>
+    <mkdir dir="build/deploy"/>
+    <copy todir="build/deploy/tomcat">
+      <fileset dir="build/tomcat-dist">
+        <include name="bin/*.jar"/>
+        <include name="lib/*.jar"/>
+      </fileset>
+    </copy>
+    <copy todir="build/deploy">
+    	<fileset dir="src/main/docker" excludes="Dockerfile-choir, Dockerfile-survey"/>
+      <fileset dir="build/dist" includes="clinic.war,survey.war"/>
+    </copy>
+    <copy todir="build/deploy" filtering="true">
+      <fileset dir="src/main/docker" includes="Dockerfile-choir, Dockerfile-survey"/>
+      <filterset>
+         <filter token="docker.registry.timezone"
+                 value="${docker.registry.timezone}"/>
+      </filterset>
+    </copy>
+    <copy file="lib/ojdbc7.jar" todir="build/deploy/tomcat/lib" failonerror="no"/>
+    <copy todir="build/deploy" filtering="true">
+      <fileset dir="src/main/docker-deploy" includes="*"/>
+      <filterset>
+        <filter token="deploy.dir"
+                value="${basedir}/build/deploy"/>
+        <filter token="build.dir"
+                value="${basedir}/build"/>
+        <filter token="log.dir"
+                value="${basedir}/build/logs"/>
+        <filter token="registry.database.driver"
+                value="${registry.database.driver}"/>
+        <filter token="registry.database.flavor"
+                value="${registry.database.flavor}"/>
+        <filter token="registry.database.url"
+                value="${registry.database.url.docker}"/>
+        <filter token="registry.database.user"
+                value="${registry.database.user}"/>
+        <filter token="registry.database.password"
+                value="${registry.database.password}"/>
+      </filterset>
+    </copy>
+    <exec executable="docker" dir="build/deploy" failifexecutionfails="yes" failonerror="yes">
+      <arg line="build --pull -t choir-clinic -f Dockerfile-choir ."/>
+    </exec>
+    <exec executable="docker" dir="build/deploy" failifexecutionfails="yes" failonerror="yes">
+      <arg line="build --pull -t choir-survey -f Dockerfile-survey ."/>
+    </exec>
+  </target>
+  <target name="docker.create.database" depends="docker.db.destroy,docker.db.run,create.database"/>
+  <target name="docker.db.destroy">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="stop -t 60 choir-database"/>
+    </exec>
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="rm -f choir-database"/>
+    </exec>
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="volume rm choir-data"/>
+    </exec>
+  </target>
+  <target name="docker.db.run" depends="docker.network">
+    <exec executable="docker" failifexecutionfails="yes" failonerror="yes">
+      <arg line="pull postgres:9.6"/>
+    </exec>
+    <exec executable="docker" failifexecutionfails="yes" failonerror="yes">
+      <arg line="run -d --name choir-database -v choir-data:/var/lib/postgresql/data -e"/>
+      <arg value="POSTGRES_PASSWORD=${registry.database.system.password}"/>
+      <arg line="${registry.network.docker.args}"/>
+      <arg line="-p 5432:5432/tcp postgres:9.6"/>
+    </exec>
+  </target>
+  <target name="docker" depends="docker.build,docker.rm,docker.run"
+          description="Redeploy the choir clinic and survey Docker containers"/>
+  <target name="docker.run" depends="docker.network">
+    <exec executable="docker" failifexecutionfails="yes" failonerror="yes">
+      <arg line="run -d -p 8767:8080/tcp -v"/>
+      <arg value="${basedir}/build/logs/clinic:/app/logs"/>
+      <arg value="-v"/>
+      <arg value="${basedir}/build/deploy/clinic.properties:/app/conf/app.properties"/>
+      <arg value="-e"/>
+      <arg value="war=choir"/>
+      <arg value="-e"/>
+      <arg value="JAVA_OPTIONS=-Xmx512m -XX:MaxGCPauseMillis=40"/>
+      <arg line="${registry.network.docker.args}"/>
+      <arg line="--name choir-clinic choir-clinic"/>
+    </exec>
+    <exec executable="docker" failifexecutionfails="yes" failonerror="yes">
+      <arg line="run -d -p 8787:8080/tcp -v"/>
+      <arg value="${basedir}/build/logs/survey:/app/logs"/>
+      <arg value="-v"/>
+      <arg value="${basedir}/build/deploy/survey.properties:/app/conf/app.properties"/>
+      <arg value="-e"/>
+      <arg value="JAVA_OPTIONS=-Xmx512m -XX:MaxGCPauseMillis=40"/>
+      <arg line="${registry.network.docker.args}"/>
+      <arg line="--name choir-survey choir-survey"/>
+    </exec>
+    <echo message="CHOIR Clinic:"/>
+    <echo message="  http://localhost:8767/choir/?siteId=ped"/>
+    <echo message="CHOIR Surveys:"/>
+    <echo message="  http://localhost:8787/survey2/?s=ped"/>
+    <echo message="  http://localhost:8787/survey2/?s=stub&amp;tk=start"/>
+    <echo message=""/>
+    <echo message="Don't forget to enable a browser plugin like ModHeader for Chrome"/>
+    <echo message="so the HTTP header X-REMOTE-USER is set to 'admin' (or you)"/>
+  </target>
+  <target name="docker.stop" description="Stop the Docker containers started by the 'docker' target">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="stop -t 60 choir-survey choir-clinic"/>
+    </exec>
+  </target>
+  <target name="docker.rm" depends="docker.stop"
+          description="Remove the Docker containers started by the 'docker' target">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="rm -f choir-survey choir-clinic"/>
+    </exec>
+  </target>
+  <target name="docker.network"
+          description="Creates network for docker containers">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="network create choir_net"/>
+    </exec>
+  </target>
+  <target name="docker.network.rm" depends="docker.down"
+          description="Removes network for docker containers">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="network rm choir_net"/>
+    </exec>
+  </target>
+  <target name="docker.up" depends="docker.db.run,docker.run"
+          description="Restarts all three containers">
+  </target>
+
+  <target name="docker.down"
+          description="Removes network for docker containers">
+    <exec executable="docker" failifexecutionfails="yes">
+      <arg line="rm -f choir-survey choir-clinic choir-database"/>
+    </exec>
+  </target>
+
+  <target name="gwt.clients" depends="survey.gwt.client,clinic.gwt.client"/>
+  <target name="survey.gwt.client.updatecheck">
+    <uptodate property="gwt.uptodate-survey" targetfile="build/gwtuptodate-survey">
+      <srcfiles dir="src/main/java/edu/stanford/survey/client" includes="**/*"/>
+      <srcfiles dir="src/main/java/edu/stanford/survey/public" includes="**/*"/>
+      <srcfiles dir="src/main/java/edu/stanford/survey" includes="**/*.gwt.xml"/>
+    </uptodate>
+  </target>
+  <target name="survey.gwt.client" depends="survey.gwt.client.updatecheck" unless="gwt.uptodate-survey">
+    <mkdir dir="build/gwt"/>
+    <java failonerror="true" fork="true" classname="com.google.gwt.dev.Compiler">
+      <classpath>
+        <pathelement location="src/main/java"/>
+        <pathelement location="src/main/resources"/>
+        <path refid="survey.compile.classpath"/>
+        <path refid="gwt.classpath"/>
+      </classpath>
+      <jvmarg value="-Xmx512M"/>
+      <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
+      <!--arg value="-logLevel"/>
+             <arg value="DEBUG"/ -->
+      <arg value="-localWorkers"/>
+      <arg value="4"/>
+      <arg value="-war"/>
+      <arg value="${basedir}/build/gwt"/>
+      <!-- Need workDir so we don't flood /tmp on the build server -->
+      <arg value="-workDir"/>
+      <arg value="${basedir}/build/gwt-workDir"/>
+      <arg value="-extra"/>
+      <arg value="${basedir}/build/gwt-extra"/>
+      <arg value="-compileReport"/>
+      <arg value="edu.stanford.survey.Survey2"/>
+      <!--<arg value="edu.stanford.survey.Survey2NoServer"/>-->
+    </java>
+    <touch file="build/gwtuptodate-survey"/>
+  </target>
+
+  <target name="clinic.gwt.client.updatecheck">
+    <uptodate property="gwt.uptodate-clinic" targetfile="build/gwtuptodate-clinic">
+      <srcfiles dir="src/main/java/edu/stanford/registry/client"/>
+      <srcfiles dir="src/main/java/edu/stanford/registry/shared"/>
+      <!--<srcfiles dir="src/main/java/edu/stanford/registry/public"/>-->
+      <srcfiles dir="src/main/java/edu/stanford/registry" includes="**/*.gwt.xml"/>
+    </uptodate>
+  </target>
+  <target name="clinic.gwt.client" depends="clinic.gwt.client.updatecheck" unless="gwt.uptodate-clinic">
+    <mkdir dir="build/gwt"/>
+    <java failonerror="true" fork="true" classname="com.google.gwt.dev.Compiler">
+      <classpath>
+        <pathelement location="src/main/java"/>
+        <pathelement location="src/main/resources"/>
+        <path refid="clinic.compile.classpath"/>
+        <path refid="gwt.classpath"/>
+        <path refid="survey.compile.classpath"/>
+        <fileset dir="${gwt.sdk}" includes="validation-api*.jar, jqm4gwt-library.jar"/>
+      </classpath>
+      <jvmarg value="-Xmx1024M"/>
+      <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
+      <!--arg value="-logLevel"/>
+             <arg value="DEBUG"/ -->
+      <arg value="-localWorkers"/>
+      <arg value="4"/>
+      <arg value="-war"/>
+      <arg value="${basedir}/build/gwt"/>
+      <!-- Need workDir so we don't flood /tmp on the build server -->
+      <arg value="-workDir"/>
+      <arg value="${basedir}/build/gwt-workDir"/>
+      <arg value="-extra"/>
+      <arg value="${basedir}/build/gwt-extra"/>
+      <arg value="-compileReport"/>
+      <arg value="edu.stanford.registry.Registry"/>
+    </java>
+    <touch file="build/gwtuptodate-clinic"/>
+  </target>
+
+  <target name="classes" depends="lib" description="Compile Java source code">
+    <mkdir dir="build/classes"/>
+    <componentdef name="errorprone" classname="com.google.errorprone.ErrorProneExternalCompilerAdapter">
+      <classpath>
+        <!-- Provide our own Ant compiler adapter to avoid having to put error-prone in the Ant lib dir -->
+        <!--<pathelement location="lib/error_prone_ant_patch.jar"/>-->
+        <pathelement location="lib/ivy/runtime/error_prone_ant.jar"/>
+      </classpath>
+    </componentdef>
+
+    <!-- These are compiled at java 1.8 level. The gwt code uses the gwt compiler, which is at 1.7 -->
+    <javac srcdir="src/main/java" destdir="build/classes"
+           debug="${compile.debug}" debuglevel="${compile.debug.level}"
+           deprecation="${compile.deprecation}" fork="yes" memorymaximumsize="256m"
+           includeantruntime="no">
+      <errorprone memorystacksize="5m"/>
+      <classpath refid="server.classpath.compile.only"/>
+      <classpath refid="server.classpath"/>
+      <classpath refid="clinic.compile.classpath"/>
+      <classpath refid="survey.compile.classpath"/>
+      <!-- <classpath location="${basedir}/lib/ivy/default/json.jar"/> -->
+      <!-- <compilerarg value="-verbose"/>   for debugging -->
+      <compilerarg value="-version"/>
+      <compilerarg value="-fullversion"/>
+    </javac>
+    <mkdir dir="build/test-classes"/>
+    <javac destdir="build/test-classes"
+           debug="${compile.debug}" debuglevel="${compile.debug.level}"
+           deprecation="${compile.deprecation}" includes="**/*.java" fork="yes"
+           classpathref="test.compile.classpath" includeantruntime="no">
+      <errorprone memorystacksize="5m"/>
+      <src path="src/test/java"/>
+    </javac>
+    <!-- Macker is a tool to verify dependencies between classes/packages adhere to a set of
+         architectural constraints. For the exact rules we are using look in ./macker.xml -->
+    <taskdef name="macker" classname="net.innig.macker.ant.MackerAntTask" classpathref="macker.classpath"/>
+    <macker>
+      <classpath refid="macker.classpath" />
+      <rules dir="${basedir}" includes="macker.xml"/>
+      <classes dir="build/classes">
+        <include name="**/*.class"/>
+      </classes>
+    </macker>
+  </target>
+
+  <target name="setproxy" if="${proxy.enabled}">
+    <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" proxyuser="${proxy.user}" proxypassword="${proxy.password}"/>
+  </target>
+
+  <target name="lib.oracle" depends="setproxy" if="database.oracle">
+    <get src="${oracle.download.url}" dest="lib/ojdbc7.jar" usetimestamp="true" skipexisting="true"/>
+  </target>
+
+  <target name="lib" depends="-ivy,lib.oracle" description="Populate lib directory by downloading libraries" unless="libs.valid">
+    <ivy:resolve log="download-only" type="jar,source" refresh="true"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="default" pathid="server.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="runtime"
+                  pathid="server.classpath.runtime.only"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="compile"
+                  pathid="server.classpath.compile.only"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="clinic" pathid="clinic.compile.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="survey" pathid="survey.compile.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="test" pathid="test.lib.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="gwt" pathid="gwt.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact].[ext]" type="jar" conf="macker" pathid="macker.classpath"/>
+    <ivy:retrieve pattern="lib/ivy/[conf]/[artifact]-[type].[ext]" type="source"/>
+
+    <!-- Fetch the tomcat.zip as part of the lib task -->
+    <get src="${tomcat.download.url}" dest="${ivy.cache.dir}/${tomcat.zip}" usetimestamp="true" skipexisting="true"/>
+    <copy file="${ivy.cache.dir}/${tomcat.zip}" tofile="lib/ivy/tomcat.zip" overwrite="yes"/>
+    <fail message="Jars in lib/ivy do no match checksums in lib/ivy-sums (run ivy-sums target to recompute checksums)">
+      <condition>
+        <not>
+          <checksum algorithm="${checksum.algorithm}">
+            <fileset dir="lib/ivy">
+              <exclude name="**/*.${checksum.algorithm}"/>
+            </fileset>
+          </checksum>
+        </not>
+      </condition>
+    </fail>
+
+    <path id="test.compile.classpath">
+      <path refid="server.classpath.compile.only"/>
+      <path refid="server.classpath"/>
+      <pathelement path="build/classes"/>
+      <path refid="test.lib.classpath"/>
+    </path>
+
+    <path id="test.classpath">
+      <pathelement location="src/main/resources"/>
+      <pathelement path="build/test-classes"/>
+      <path refid="test.compile.classpath"/>
+      <pathelement location="lib/ojdbc7.jar"/>
+      <path refid="server.classpath"/>
+      <path refid="server.classpath.runtime.only"/>
+    </path>
+
+    <!-- Make sure we don't do this more than once in a build -->
+    <property name="libs.valid" value="yes"/>
+  </target>
+
+  <target name="lib.report" description="Ivy report of dependencies" depends="lib">
+    <ivy:report todir="build/lib.report"/>
+  </target>
+
+  <target name="ivy-sums" description="Update lib/ivy-sums with actual checksums from lib/ivy">
+    <checksum todir="lib/ivy-sums" algorithm="${checksum.algorithm}" forceoverwrite="yes">
+      <fileset dir="lib/ivy">
+        <exclude name="**/*.${checksum.algorithm}"/>
+      </fileset>
+    </checksum>
+  </target>
+
+  <target name="clean" description="Remove build output (./build)">
+    <delete dir="build"/>
+  </target>
+
+  <target name="cleaner" depends="clean" description="Also remove downloaded libraries (./lib/ivy)">
+    <delete dir="lib/ivy"/>
+  </target>
+
+  <target name="cleanest" depends="cleaner" description="Also clear the ivy cache and lib/ojdbc7.jar">
+    <delete dir="${ivy.cache.dir}"/>
+    <delete file="lib/ojdbc7.jar"/>
+  </target>
+
+  <!-- Initialize Ivy Ant tasks -->
+  <target name="-ivy" depends="-ivy.jar">
+    <!-- Bail out if the downloaded ivy.jar does not have the correct checksum -->
+    <copy todir="lib/ivy">
+      <fileset dir="lib/ivy-sums" includes="**"/>
+    </copy>
+    <fail message="Corrupt lib/ivy/ivy.jar (incorrect checksum)">
+      <condition>
+        <not>
+          <checksum file="lib/ivy/ivy.jar" algorithm="${checksum.algorithm}"/>
+        </not>
+      </condition>
+    </fail>
+    <taskdef resource="org/apache/ivy/ant/antlib.xml"
+             uri="antlib:org.apache.ivy.ant" classpath="lib/ivy/ivy.jar"/>
+  </target>
+
+  <!-- Download Ivy from maven repository, or copy from local cache, if necessary -->
+  <target name="-ivy.jar" unless="ivy.jar.exists" depends="-init">
+    <mkdir dir="${ivy.cache.dir}"/>
+    <!-- If you change the version here you must update the checksum in the "ivy" target above -->
+    <get src="${maven.repos}/org/apache/ivy/ivy/2.3.0/ivy-2.3.0.jar"
+         dest="${ivy.cache.dir}/ivy-2.3.0.jar" usetimestamp="true" skipexisting="true"/>
+    <copy file="${ivy.cache.dir}/ivy-2.3.0.jar" tofile="lib/ivy/ivy.jar"/>
+  </target>
+
+  <target name="-init">
+    <tstamp>
+      <format property="buildStartTime" pattern="MM/dd/yyyy hh:mm aa"/>
+    </tstamp>
+    <available property="ivy.jar.exists" file="lib/ivy/ivy.jar"/>
+    <fail message="Unsupported Java version: ${ant.java.version}. You must use Java 8. Tip: Older versions of Ant (like 1.8.0) may report this version incorrectly.">
+      <condition>
+        <not>
+          <equals arg1="${ant.java.version}" arg2="1.8"/>
+        </not>
+      </condition>
+    </fail>
+  </target>
+
+  <target name="tests" depends="unit.tests,system.tests"/>
+  <target name="unit.tests" depends="classes,unit.tests.only"/>
+  <target name="unit.tests.only">
+    <mkdir dir="build/test-report"/>
+    <junit printsummary="yes"
+           haltonfailure="yes"
+           dir="${basedir}">
+      <sysproperty key="log4j.configuration" value="file:log4j-tests.xml"/>
+      <sysproperty key="database.url" value="${registry.database.url}"/>
+      <sysproperty key="registry.database.user" value="${registry.database.user}"/>
+      <sysproperty key="registry.database.password" value="${registry.database.password}"/>
+      <sysproperty key="database.driver" value="${registry.database.driver}"/>
+      <classpath refid="test.classpath"/>
+      <formatter type="xml"/>
+      <batchtest fork="yes"
+                 todir="build/test-report">
+        <fileset dir="src/test/java">
+          <include name="**/*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+  <target name="system.tests" depends="classes">
+    <echo message="Need some tests here..."/>  
+  </target>
+
+  <target name="-recreate.user.oracle" if="database.oracle">
+    <!--
+    These are the permissions the "system" user will need to have:
+    grant create user to ccibuild;
+    grant drop user to ccibuild;
+    grant connect to ccibuild with admin option;
+    grant create table to ccibuild with admin option;
+    grant create view to ccibuild with admin option;
+    grant create sequence to ccibuild with admin option;
+    grant create procedure to ccibuild with admin option;
+    grant ctxapp to ccibuild with admin option;
+    -->
+    <sql driver="${registry.database.driver}"
+         url="${registry.database.url}"
+         userid="${registry.database.system.user}"
+         password="${registry.database.system.password}"
+         expandProperties="true"
+         classpath="${basedir}/lib/ojdbc7.jar"
+         onerror="continue">
+      DROP USER ${registry.database.user} CASCADE;
+    </sql>
+    <sql driver="${registry.database.driver}"
+         url="${registry.database.url}"
+         userid="${registry.database.system.user}"
+         password="${registry.database.system.password}"
+         expandProperties="true"
+         classpath="${basedir}/lib/ojdbc7.jar">
+      CREATE USER ${registry.database.user} IDENTIFIED BY ${registry.database.password}
+      DEFAULT TABLESPACE USERS
+      QUOTA UNLIMITED ON USERS
+      TEMPORARY TABLESPACE TEMP;
+      GRANT CONNECT TO ${registry.database.user};
+      GRANT CREATE TABLE TO ${registry.database.user};
+      GRANT CREATE TRIGGER TO ${registry.database.user};
+      GRANT CREATE VIEW TO ${registry.database.user};
+      GRANT CREATE SEQUENCE TO ${registry.database.user};
+      GRANT CREATE PROCEDURE TO ${registry.database.user};
+      GRANT CTXAPP TO ${registry.database.user};
+      grant select any dictionary to ${registry.database.user};
+    </sql>
+  </target>
+  <target name="-recreate.user.postgresql" if="database.postgresql">
+    <!--
+    These are the permissions the "system" user will need to have:
+    grant create user to ccibuild;
+    grant drop user to ccibuild;
+    grant connect to ccibuild with admin option;
+    grant create table to ccibuild with admin option;
+    grant create view to ccibuild with admin option;
+    grant create sequence to ccibuild with admin option;
+    grant create procedure to ccibuild with admin option;
+    grant ctxapp to ccibuild with admin option;
+    -->
+    <sql driver="${registry.database.driver}"
+         url="${registry.database.url}"
+         userid="${registry.database.system.user}"
+         password="${registry.database.system.password}"
+         expandProperties="true"
+         classpath="${basedir}/lib/ivy/runtime/postgresql.jar"
+         onerror="continue" autocommit="yes">
+      DROP OWNED BY ${registry.database.user} CASCADE;
+      DROP USER ${registry.database.user};
+    </sql>
+    <!-- Rudimentary parsing of URL because we need the database name to grant connect privilege below -->
+    <basename property="postgres.database" file="${registry.database.url}"/>
+    <sql driver="${registry.database.driver}"
+         url="${registry.database.url}"
+         userid="${registry.database.system.user}"
+         password="${registry.database.system.password}"
+         expandProperties="true"
+         classpath="${basedir}/lib/ivy/runtime/postgresql.jar">
+      CREATE USER ${registry.database.user} WITH PASSWORD '${registry.database.password}';
+      GRANT ${registry.database.user} to ${registry.database.system.user};
+      CREATE SCHEMA AUTHORIZATION ${registry.database.user};
+      GRANT ALL PRIVILEGES ON SCHEMA ${registry.database.user} TO ${registry.database.user};
+      GRANT CONNECT ON DATABASE ${postgres.database} TO ${registry.database.user};
+    </sql>
+  </target>
+  <target name="-recreate.user.derby" if="database.derby">
+    <delete dir="${basedir}/build/testdb"/>
+  </target>
+
+  <!-- So you can nuke the database and then debug CreateRegistrySchema, if needed -->
+  <target name="nuke.database"
+          depends="lib, classes, -recreate.user.oracle, -recreate.user.derby, -recreate.user.postgresql"/>
+
+  <target name="create.db.scripts" description="DANGER: Destroy and re-create 'database.url' to produce scripts"
+          depends="nuke.database">
+    <mkdir dir="build/release/in"/> <!-- for the log file(s) -->
+    <copy file="src/main/sql/apply-sql.sh" todir="build/release" preservelastmodified="Yes" verbose="Yes" />
+    <exec executable="chmod"><arg value="a+x"/><arg value="build/release/apply-sql.sh"/></exec>
+    <record name="build/release/in/createdb-${registry.database.driver}.log" action="start"/>
+    <java failonerror="true" fork="true" classname="edu.stanford.registry.tool.CreateRegistrySchema">
+      <classpath>
+        <path refid="test.classpath"/>
+      </classpath>
+      <jvmarg value="-Dderby.stream.error.file=${basedir}/build/derby.log"/>
+      <jvmarg value="-Ddatabase.driver=${registry.database.driver}"/>
+      <jvmarg value="-Ddatabase.url=${registry.database.url}"/>
+      <jvmarg value="-Ddatabase.user=${registry.database.user}"/>
+      <jvmarg value="-Ddatabase.password=${registry.database.password}"/>
+      <jvmarg value="-Ddata.creation.class=${data.creation.class}"/>
+      <arg value="-verbose"/>
+    </java>
+    <record name="build/release/in/createdb-${registry.database.driver}.log" action="stop"/>
+    <java failonerror="true" fork="true" classname="edu.stanford.registry.tool.MakeDBCreationScripts">
+      <classpath>
+        <path refid="test.classpath"/>
+      </classpath>
+      <jvmarg value="-Dderby.stream.error.file=${basedir}/build/derby.log"/>
+      <jvmarg value="-Ddatabase.driver=${registry.database.driver}"/>
+      <jvmarg value="-Ddatabase.url=${registry.database.url}"/>
+      <jvmarg value="-Ddatabase.user=${registry.database.user}"/>
+      <jvmarg value="-Ddatabase.password=${registry.database.password}"/>
+      <jvmarg value="-Ddata.creation.class=${data.creation.class}"/>
+    </java>
+    <echo message="Ensure you run this target for all database types you need. Output is in build/release/"/>
+  </target>
+
+  <target name="create.database" description="DANGER: Destroy and re-create 'database.url' as an empty test database"
+          depends="nuke.database">
+    <java failonerror="true" fork="true" classname="edu.stanford.registry.tool.CreateRegistrySchema">
+      <classpath>
+        <path refid="test.classpath"/>
+      </classpath>
+      <jvmarg value="-Dderby.stream.error.file=${basedir}/build/derby.log"/>
+      <jvmarg value="-Ddatabase.driver=${registry.database.driver}"/>
+      <jvmarg value="-Ddatabase.url=${registry.database.url}"/>
+      <jvmarg value="-Ddatabase.user=${registry.database.user}"/>
+      <jvmarg value="-Ddatabase.password=${registry.database.password}"/>
+      <jvmarg value="-Ddata.creation.class=${data.creation.class}"/>
+      <!-- <arg value="${verbose.arg}"/> for debugging -->
+    </java>
+  </target>
+
+  <!--
+       If you want to use this target, you probably want to launch Ant
+       with the -e option, so suppress distracting log output:
+
+       ./ant -e loadconfig
+  -->
+  <target name="loadconfig" description="Run the LoadConfig program" depends="lc.build">
+    <java jar="build/main/loadconfig.jar" failonerror="true" fork="true">
+      <jvmarg value="-Ddatabase.driver=${registry.database.driver}"/>
+      <jvmarg value="-Ddatabase.url=${registry.database.url}"/>
+      <jvmarg value="-Ddatabase.user=${registry.database.user}"/>
+      <jvmarg value="-Ddatabase.password=${registry.database.password}"/>
+    </java>
+  </target>
+
+  <target name="lc.build" description="Run the LoadConfig program" depends="lib, classes">
+    <condition property="database.oracle">
+      <contains string="${registry.database.url}" substring="oracle"/>
+    </condition>
+    <condition property="database.derby">
+      <contains string="${registry.database.url}" substring="derby"/>
+    </condition>
+    <condition property="database.postgresql">
+      <contains string="${registry.database.url}" substring="postgresql"/>
+    </condition>
+    <jar destfile="build/main/loadconfig.jar">
+      <fileset dir="build/classes"/>
+      <zipgroupfileset includes="*.jar" dir="lib/ivy/runtime"/>
+      <zipgroupfileset includes="*.jar" dir="lib/ivy/default"/>
+      <zipgroupfileset includes="*.jar" dir="lib"/>
+      <restrict>
+	<name name="build/classes/edu/stanford/registry/shared/**/*.class"/>
+        <name name="build/classes/edu/stanford/registry/server/**/*.class"/>
+	<archives>
+	  <zips>
+            <fileset dir="lib/ivy/runtime" includes="**/*.jar"/>
+            <fileset dir="lib/ivy/default" includes="**/*.jar"/>
+            <fileset dir="lib" includes="*.jar"/> <!-- pick up ojdbc7.jar -->
+	  </zips>
+	</archives>
+      </restrict>
+      <manifest>
+	<attribute name="Main-Class" value="edu.stanford.registry.server.config.tools.LoadConfig"/>
+      </manifest>
+    </jar>
+  </target>
+ 
+  <target name="lc.usage" description="Tell how to use the LoadConfig program">
+    <echo message=""/>
+    <echo message="To run the tool:"/>
+    <echo message=""/>
+    <echo message="  java -Ddatabase.url=jdbc:oracle:thin:@yourdbhost:1521:yourdb \"/>
+    <echo message="       -Ddatabase.user=you \"/>
+    <echo message="       -Ddatabase.password=yourpass \"/>
+    <echo message="       -jar build/main/loadconfig.jar"/>
+    <echo message=""/>
+    <echo message="IMPORTANT: Be sure the -D options are BEFORE the -jar or Java will"/>
+    <echo message="           not read them correctly!"/>
+    <echo message=""/>
+    <echo message="Once running, type '?' to see help information."/>
+    <echo message=""/>
+  </target>
+
+  <target name="keystore" unless="keystore.exists">
+    <exec executable="keytool" dir="${basedir}" failonerror="true">
+      <arg value="-keystore"/>
+      <arg value="${ssl.keystore}"/>
+      <arg value="-alias"/>
+      <arg value="localhost"/>
+      <arg value="-storepass"/>
+      <arg value="${ssl.password}"/>
+      <arg value="-genkey"/>
+      <arg value="-keyalg"/>
+      <arg value="RSA"/>
+      <arg value="-validity"/>
+      <arg value="3650"/>
+      <arg value="-dname"/>
+      <arg value="CN=localhost, OU=CCI, O=Stanford, L=Stanford, ST=CA, C=US"/>
+    </exec>
+    <!-- Make sure we don't try to do this twice within the same build -->
+    <property name="keystore.exists" value="yes"/>
+  </target>
+
+  <!-- Sets props.werent.updated = true if (build/tomcat/conf/context.xml NEWER THAN ../buildproperties) else unset -->
+  <target name="check.build.props">
+    <!-- Don't try to set a default value, else <uptodate> won't override with its value -->
+    <!-- This sets the property IF the copy is newer, else leaves it blank -->
+    <!-- Note there's no way to do the opposite, to set the property if it need updating -->
+    <uptodate property="props.werent.updated" value="true" srcfile="../build.properties" targetfile="build/tomcat/conf/context.xml" />
+    <!-- this copies build.properties IF it's newer, so the condition won't happen next time -->
+    <copy  file="../build.properties" todir="build"/>
+    <echo message="props.werent.updated, value = ${props.werent.updated}"/>
+  </target>
+
+  <!-- a target must depend on these in this order to work: check.build.props, tomcat.outofdate -->
+  <target name="tomcat.outofdate" unless="props.werent.updated">
+    <echo message="tomcat.outofdate calling tomcat.clean since props.werent.updated=${props.werent.updated}"/>
+    <antcall target="tomcat.clean"/>
+  </target>
+
+  <target name="tomcat.clean">
+    <echo message="Removing build/tomcat so it'll be rebuilt"/>
+    <delete dir="build/tomcat"/>
+  </target>
+ 
+  <target name="tomcat.dist" depends="lib">
+    <mkdir dir="build/tomcat-dist"/>
+    <unzip src="lib/ivy/tomcat.zip" dest="build/tomcat-dist" overwrite="no">
+      <patternset>
+        <include name="*/bin/*"/>
+        <include name="*/conf/*"/>
+        <include name="*/lib/*"/>
+      </patternset>
+      <cutdirsmapper dirs="1"/>
+    </unzip>
+  </target>
+
+  <target name="tomcat.configuration" depends="keystore,tomcat.dist">
+    <echo message="Copying files (substituting vars) to build/tomcat/conf; note: registry.database.url=${registry.database.url}"/>
+    <mkdir dir="build/tomcat/registry/templates"/>
+    <mkdir dir="build/tomcat/registry/xchgin"/>
+    <mkdir dir="build/tomcat/registry/xchgout"/>
+    <mkdir dir="build/tomcat/conf"/>
+    <mkdir dir="build/tomcat/lib"/>
+    <copy file="${basedir}/lib/ojdbc7.jar" todir="build/tomcat/lib" failonerror="false"/>
+    <mkdir dir="build/tomcat/webapps"/>
+    <mkdir dir="build/tomcat/work"/>
+    <mkdir dir="build/tomcat/temp"/>
+    <mkdir dir="build/tomcat/logs"/>
+    <copy file="build/tomcat-dist/conf/web.xml" todir="build/tomcat/conf"/>
+    <copy file="build/tomcat-dist/conf/catalina.properties" todir="build/tomcat/conf"/>
+    <copy todir="build/tomcat/conf" filtering="true" verbose="true">
+      <fileset dir="src/main/conf" includes="*"/>
+      <filterset>
+        <filter token="ssl.keystore"
+                value="${ssl.keystore}"/>
+        <filter token="ssl.password"
+                value="${ssl.password}"/>
+        <filter token="tomcat.port.http"
+                value="${tomcat.port.http}"/>
+        <filter token="tomcat.port.https"
+                value="${tomcat.port.https}"/>
+        <filter token="tomcat.port.shutdown"
+                value="${tomcat.port.shutdown}"/>
+        <filter token="catalina.base"
+                value="${catalina.base}"/>
+        <filter token="registry.database.url"
+                value="${registry.database.url}"/>
+        <filter token="registry.database.user"
+                value="${registry.database.user}"/>
+        <filter token="registry.database.password"
+                value="${registry.database.password}"/>
+        <filter token="oracle.comment.start"
+                value="${oracle.comment.start}"/>
+        <filter token="oracle.comment.end"
+                value="${oracle.comment.end}"/>
+        <filter token="postgresql.comment.start"
+                value="${postgresql.comment.start}"/>
+        <filter token="postgresql.comment.end"
+                value="${postgresql.comment.end}"/>
+        <filter token="patsat.database.url"
+                value="${registry.database.url}"/>
+        <filter token="patsat.database.user"
+                value="${patsat.database.user}"/>
+        <filter token="patsat.database.password"
+                value="${patsat.database.password}"/>
+      </filterset>
+    </copy>
+  </target>
+
+  <target name="tomcat" depends="check.build.props,tomcat.outofdate,undeploy,deploy,tomcat.start"/>
+
+  <target name="tomcat.start" depends="tomcat.configuration">
+    <delete dir="${catalina.base}/logs" includes="*.*" failonerror="no"/>
+    <echo message="Logs will be in ${catalina.base}/logs"/>
+    <echo message="To access the application:"/>
+    <echo message=""/>
+    <echo message="  clinic: http://localhost:${tomcat.port.http}/registry/"/>
+    <echo message="          https://localhost:${tomcat.port.https}/registry/"/>
+    <echo message="  survey: http://localhost:${tomcat.port.http}/registry/survey2/"/>
+    <echo message="          https://localhost:${tomcat.port.https}/registry/survey2/"/>
+    <echo message="    stub: http://localhost:${tomcat.port.http}/registry/survey2/?s=stub&amp;tk=test"/>
+    <echo message="          https://localhost:${tomcat.port.https}/registry/survey2/?s=stub&amp;tk=test"/>
+    <parallel>
+      <sequential>
+	<java classname="org.apache.catalina.startup.Bootstrap"
+              output="${catalina.base}/logs/catalina.out"
+              fork="true">
+          <classpath>
+            <pathelement location="${catalina.home}/bin/bootstrap.jar"/>
+            <pathelement location="${catalina.home}/bin/tomcat-juli.jar"/>
+          </classpath>
+          <jvmarg value="-Dcatalina.home=${catalina.home}"/>
+          <jvmarg value="-Dcatalina.base=${catalina.base}"/>
+          <jvmarg value="-Djava.io.tmpdir=${catalina.base}/temp"/>
+          <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+          <jvmarg value="-Djava.util.logging.config.file=${catalina.base}/conf/logging.properties"/>
+          <!-- <jvmarg value="-verbose:class"/> - makes java startup verbose- e.g. loading jars -->
+        </java>
+        <echo message="Tomcat (the web server) quit (and took choir with it)."/>
+      </sequential>
+      <sequential>
+        <echo message=""/>
+        <echo message="Waiting for Tomcat startup"/>
+        <waitfor maxwait="15" maxwaitunit="second" checkevery="3" checkeveryunit="second">
+          <http url="http://localhost:${tomcat.port.http}/AreYouUpYet"/>
+        </waitfor>
+        <echo message="Tomcat started, tailing the logs"/>
+        <pathconvert property="log.files" pathsep=" ">
+          <flattenmapper/>
+          <fileset dir="${catalina.base}/logs">
+            <include name="*.*"/>
+            <exclude name="*-poll.*"/>
+          </fileset>
+        </pathconvert>
+        <exec dir="${catalina.base}/logs" executable="tail" failifexecutionfails="no">
+          <arg line="-f -n +0 ${log.files}"/>
+        </exec>
+	<echo message="'tail' ended.  (tail -f -n +0 ${log.files}')"/>
+      </sequential>
+    </parallel>
+    <echo message="ant-tomcat finished (the web server is now shut down, too)"/>
+  </target>
+
+  <target name="tomcat.debug" depends="tomcat.configuration">
+    <echo message="Logs will be in ${catalina.base}/tomcat/logs"/>
+    <java classname="org.apache.catalina.startup.Bootstrap"
+	  fork="true">
+      <classpath>
+        <pathelement location="${catalina.home}/bin/bootstrap.jar"/>
+        <pathelement location="${catalina.home}/bin/tomcat-juli.jar"/>
+      </classpath>
+      <jvmarg value="-Dcatalina.home=${catalina.home}"/>
+      <jvmarg value="-Dcatalina.base=${catalina.base}"/>
+      <jvmarg value="-Djava.io.tmpdir=${catalina.base}/temp"/>
+      <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+      <jvmarg value="-Djava.util.logging.config.file=${catalina.base}/conf/logging.properties"/>
+      <jvmarg value="-Xdebug"/>
+      <jvmarg value="-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"/>
+    </java>
+    <echo message="ant exiting -- the server is now shut down, too"/>
+  </target>
+
+  <target name="tomcat.stop">
+    <java classname="org.apache.catalina.startup.Bootstrap"
+	  fork="true">
+      <classpath>
+        <pathelement location="${catalina.home}/bin/bootstrap.jar"/>
+        <pathelement location="${catalina.home}/bin/tomcat-juli.jar"/>
+      </classpath>
+      <jvmarg value="-Dcatalina.home=${catalina.home}"/>
+      <jvmarg value="-Dcatalina.base=${catalina.base}"/>
+      <jvmarg value="-Djava.io.tmpdir=${catalina.base}/temp"/>
+      <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+      <jvmarg value="-Djava.util.logging.config.file=${catalina.base}/conf/logging.properties"/>
+      <arg line="stop"/>
+    </java>
+  </target>
+
+  <!-- Target to package all registry jar files including dependencies in a single jar -->
+  <target name="choir.snapshot" depends="classes" >
+    <jar jarfile="${basedir}/build/dist/choir-3.0-SNAPSHOT.jar" basedir="${basedir}/build/classes">
+      <fileset dir="${basedir}/src/main/resources" includes="**/*"/>
+    </jar>
+    <jar jarfile="${basedir}/build/dist/choir-3.0-sources.jar" basedir="${basedir}/src/main/java/edu/stanford" />
+    <ivy:makepom ivyfile="ivy.xml" pomfile="${basedir}/build/dist/choir-3.0-SNAPSHOT.pom" conf="default,compile,runtime">
+      <mapping conf="default" scope="compile"/>
+      <mapping conf="compile" scope="compile"/>
+      <mapping conf="runtime" scope="compile"/>
+    </ivy:makepom>
+  </target>
+
+  <!-- Install to local maven .m2 repository -->
+  <target name="choir.snapshot.maven.install" depends="choir.snapshot">
+    <exec command="mvn install:install-file -Dfile=${basedir}/build/dist/choir-3.0-SNAPSHOT.jar -DpomFile=${basedir}/build/dist/choir-3.0-SNAPSHOT.pom -Dsources=${basedir}/build/dist/choir-3.0-sources.jar"/>
+  </target>
+
+  <!-- Deploy to private repository -->
+  <target name="deploy.maven.jar" depends="choir.snapshot" >
+    <exec command="mvn deploy:deploy-file -Dfile=${basedir}/build/dist/choir-3.0-SNAPSHOT.jar -DpomFile=${basedir}/build/dist/choir-3.0-SNAPSHOT.pom -Dsources=${basedir}/build/dist/choir-3.0-sources.jar -DrepositoryId=io.cloudrepo.rit-private-snapshot -Durl=https://susom.mycloudrepo.io/repositories/rit-private-snapshot"/>
+  </target>
+
+</project>

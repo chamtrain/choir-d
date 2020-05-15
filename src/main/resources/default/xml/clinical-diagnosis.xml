@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <select1 ref="diagnosis" appearance="compact">
+ 	<label>Diagnosis</label>
+ 	<item><label></label></item>
+   <choices>
+      <label>Back Pain</label>
+      <item><label>Slipped or bulging discs</label><value>Slipped or bulging discs</value></item>
+      <item><label>Spinal stenosis</label><value>Spinal stenosis</value></item>
+      <item><label>Compression fractures</label><value>Compression fractures</value></item>
+      <item><label>Soft tissue damage</label><value>Soft tissue damage</value></item>
+      <item><label>Traumatic fractures</label><value>Traumatic fractures</value></item>
+      <item><label>Structural deformities</label><value>Structural deformities</value></item>    
+   </choices>
+   <choices>
+      <label>Headaches</label>
+      <item><label>Muscle tension headaches</label><value>Muscle tension headaches</value></item>
+      <item><label>Eye strain headaches</label><value>Eye strain headaches</value></item>
+      <item><label>Migraines</label><value>Migraines</value></item>
+      <item><label>Cluster headaches</label><value>Cluster headaches</value></item>
+  </choices>
+  <choices>
+  	<label>Joint pain</label>
+   	<item><label>Osteoarthritis</label><value>Osteoarthritis</value></item>
+   	<item><label>Rheumatoid arthritis</label><value>Rheumatoid arthritis</value></item>
+   	<item><label>Repetitive strain injury</label><value>Repetitive strain injury</value></item>
+  </choices>
+  <choices>
+  	<label>Neuropathic</label>
+  	<item><label>Sciatica</label><value>Sciatica</value></item> 
+  	<item><label>Bulging or slipped discs</label><value>Bulging or slipped discs</value></item>
+  	<item><label>Diabetic neuropathy</label><value>Diabetic neuropathy</value></item>
+  	<item><label>Carpal tunnel syndrome</label><value>Carpal tunnel syndrome</value></item>
+  </choices>
+  <choices><label>Other</label>
+  	<item><label>Fibromyalgia</label><value>Fibromyalgia</value></item>
+  	<item><label>Cancer</label><value>Cancer</value></item>
+  	<item><label>Depression</label><value>Depression</value></item>
+  </choices>
+ </select1>
+ 
+ 	

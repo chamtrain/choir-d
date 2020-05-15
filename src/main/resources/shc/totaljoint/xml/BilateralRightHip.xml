@@ -1,0 +1,16 @@
+<Form Description="Bilateral Right Hip" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      The following section is about your <u>right</u> hip.
+      Answer the questions in the following section in relation to your <u>right</u> hip.
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

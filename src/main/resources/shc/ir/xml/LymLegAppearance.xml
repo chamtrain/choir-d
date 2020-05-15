@@ -1,0 +1,140 @@
+<Form Description="Lymphedema Leg Appearance" questionsPerPage="1">
+  <Items>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        How much do you feel the swelling affects your appearance?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q4</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        How much difficulty do you have finding clothes to fit?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q5</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        How much difficulty do you have finding clothing you would like to wear?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q6</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        Do you had difficulty finding shoes to fit?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q7</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        Do you have difficulty finding socks/tights/stockings that fit?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q8</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <Description>
+        <![CDATA[
+        Does the swelling affect how you feel about yourself?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q9</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22">
+      <Description>
+        <![CDATA[
+        Does the swelling affect your relationship with your partner?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q10</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23">
+      <Description>
+        <![CDATA[
+        Does the swelling affect your relationships with people other than your partner?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q11</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

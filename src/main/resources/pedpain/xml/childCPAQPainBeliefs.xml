@@ -1,0 +1,340 @@
+<!--
+  Versions of this file prior to 10/21/2015 incorrectly used the same 7 point scale 
+  as the parent proxy CPAQ. The child CPAQ is suppose to use a 5 point scale. This
+  file has been corrected to use the 5 point scale.
+-->
+<Form Description="CPAQ Pain Beliefs and Functioning" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        For the following statements, rate how true each statement is for you.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        I am getting on with life no matter what my level of pain is.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        My life is going well, even though I have chronic pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q2" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        It's okay to experience pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q3" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        I would give up important things in my life to control this pain better.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q4" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        I can do activities well even if I do not control my pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q5" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        I am living a normal life <u>with</u> my chronic pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q6" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        I need to concentrate on getting rid of my pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q7" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        I carry on with my normal activities when I feel pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q8" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        I do things that are important and things that are fun, even though I have chronic pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q9" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        Controlling pain is less important than other goals in my life.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q10" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        My thoughts and feelings about pain must change before I can do things that are important to me.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q11" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        Despite the pain, I am sticking to a certain plan in my life.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q12" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        Keeping my pain under control is the most important thing whenever I am doing something.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q13" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        Before I can make any real plans, I have to get some control over my pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q14" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        When my pain increases, I can still do things I have to do.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q15" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        I will have better control over my life if I can control my thoughts about pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q16" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        I avoid situations where pain might increase.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q17" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        My worries and fears about my pain are true.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q18" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        I realize that I don't have to change my pain to get on with my life.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q19" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <Description>
+        <![CDATA[
+        I have to struggle to do things when I have pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q20" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Never True</label></item>
+          <item><value>1</value><label>Rarely True</label></item>
+          <item><value>2</value><label>Sometimes True</label></item>
+          <item><value>3</value><label>Often True</label></item>
+          <item><value>4</value><label>Always True</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

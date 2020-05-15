@@ -1,0 +1,119 @@
+<Form Description="QST Measurement" DateStarted="" DateFinished="" questionsPerPage="6" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1">
+      <Description>Primary Pain Diagnoses</Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <ref>pain_dx</ref>
+          <item>
+            <label>Musculoskeletal pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Abdominal pain</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Headache</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Complex regional pain syndrome</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Fibromyalgia</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Primary psychological diagnosis</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Rheumatologic conditions</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Cancer-related pain</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Sickle Cell Disease</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Ehlers-Danlos syndrome</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Other</label>
+            <value>99</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>Secondary Pain Diagnoses</Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <ref>pain_dx2</ref>
+          <item>
+            <label>Musculoskeletal pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Abdominal pain</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Headache</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Complex regional pain syndrome</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Fibromyalgia</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Primary psychological diagnosis</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Rheumatologic conditions</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Cancer-related pain</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Sickle Cell Disease</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Ehlers-Danlos syndrome</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Other</label>
+            <value>99</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+   <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="3" RequiredMax="3" required="true" >
+      <Description>Optional notes</Description>
+  	  <Responses>
+        <Response Order="1" required="true" Type="textboxset" Align="horizontal" StyleName="physicianSurvey">
+		  <ref>KEYS</ref>
+		  <item><label>1</label><value></value></item>
+		  <item><label>2</label><value></value></item>
+		  <item><label>3</label><value></value></item>
+	    </Response>
+      </Responses>
+    </Item>	
+  </Items>
+</Form>

@@ -1,0 +1,366 @@
+<Form Description="Surgeries" DateStarted="" DateFinished="" questionsPerPage="8" >
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RepeatOnResponse="2:1" print="false" >
+      <Description>
+        <![CDATA[Please enter all past surgeries that were NOT performed at Stanford.]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>More info</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>Please enter any and all prior surgeries that were NOT performed at Stanford.</p><p> To enter a surgery select the option <i>Add Surgery</i> below.</p>
+            <p>You will then be asked additional questions about that surgery. Once you have completed entering those details click on <i>Continue</i> and you will be prompted again
+            to enter surgeries.</p><p>Once you have completed entering all of your previous surgeries select the option <i>No more surgeries to add</i> and click <i>Continue</i> to move onto the next question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+		      <ref>SURGERY</ref>
+          <item selected="false">
+            <label>Add surgery</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+  	  		  <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			      <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="7">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="13">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item selected="false">
+            <label>No more surgeries to add</label>
+            <value>2</value>
+          </item>
+          <Scores/>
+        </Response>
+      </Responses>
+    </Item>
+    <!--  Items 2 - 4 are conditional on item 1-->
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description><![CDATA[Type of operation]]></Description>
+      <Responses>
+        <Response Order="1" Type="input" >
+          <ref>SURGTYPE</ref>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+          </format>
+          <hint>Enter the name or purpose of the surgery</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item><Item Order="3" ItemResponse="" ItemScore="" Visible="false">
+      <Description> <![CDATA[Year of surgery]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+		      <ref>SURGYEAR</ref>
+          <format>
+            <datatype>integer</datatype>
+			    </format>
+          <hint>Year the surgery was performed</hint>
+          <Scores/>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description> <![CDATA[Were you given any of the following]]></Description>
+       <Responses>
+         <Response Order="1" required="false" Type="select" Appearance="full">
+           <ref>SURGANESTHGEN</ref>
+           <item>
+             <label>General anesthesia (were you put to sleep)?</label>
+             <value>1</value>
+             <onselect Type="Item" Where="Order" Value="5">
+               <Set Type="state" Name="visible" Value="true"/>
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+             </onselect>
+           </item>
+           </Response>
+         </Responses>
+      </Item>
+    <!-- conditional on item above -->
+    <Item Order="5" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" required="false" Type="select1" StyleName="dependantQuestion">
+          <ref>SURGANESTHGENPROB</ref>
+          <label>Problems or side effects?</label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <!-- conditional on item above -->
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false">
+      <Responses>
+        <Response Order="1" required="false" Type="select" StyleName="dependantQuestion">
+          <ref>SURGANESTHGENPRSEL</ref>
+          <item>
+            <ref>surganesthgenivpl</ref>
+            <label>Difficulty IV placement</label>
+            <value>1</value>
+          </item>
+          <item>
+            <ref>surganesthgennaus</ref>
+            <label>Nausea and vomiting</label>
+            <value>2</value>
+          </item>
+          <item>
+            <ref>surganesthgensore</ref>
+            <label>Sore throat</label>
+            <value>3</value>
+          </item>
+          <item>
+            <ref>surganesthgenwake</ref>
+            <label>Difficulty waking up</label>
+            <value>4</value>
+          </item>
+          <item>
+            <ref>surganesthgenagit</ref>
+            <label>Agitation</label>
+            <value>5</value>
+          </item>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHGENPROBEXP</ref>
+          <label>Explain</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse=""  RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" required="false" Type="select" Appearance="full">
+          <ref>SURGANESTHNB</ref>
+           <item>
+             <label>Nerve block</label>
+             <value>2</value>
+             <onselect Type="Item" Where="Order" Value="8">
+               <Set Type="state" Name="visible" Value="true"/>
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+             </onselect>
+           </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <ref>SURGANESTHNBPROB</ref>
+          <label>Problems or side effects?</label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="9">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHNBPROBEXP</ref>
+          <label>Explain</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" Visible="false">
+      <Description> </Description>
+      <Responses>
+        <Response Order="1" required="false" Type="select" Appearance="full">
+          <ref>SURGANESTHIV</ref>
+           <item>
+             <label>IV sedation</label>
+             <value>3</value>
+             <onselect Type="Item" Where="Order" Value="11">
+               <Set Type="state" Name="visible" Value="true"/>
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+             </onselect>
+           </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <ref>SURGANESTHIVPROB</ref>
+          <label>Problems or side effects?</label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHIVPROBEXP</ref>
+          <label>Explain</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" required="false" Type="select" Appearance="full">
+          <ref>SURGANESTHNS</ref>
+           <item>
+             <label>Not sure</label>
+             <value>4</value>
+             <onselect Type="Item" Where="Order" Value="14">
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+               <Set Type="state" Name="visible" Value="true"/>
+             </onselect>
+           </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal"  StyleName="dependantQuestion">
+          <ref>SURGANESTHNSPROB</ref>
+          <label>Problems or side effects?</label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="15">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHNSPROBEXP</ref>
+          <label>Explain</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" required="false" Type="select" Appearance="full">
+          <ref>SURGANESTHOTH</ref>
+           <item>
+             <label>Other</label>
+             <value>3</value>
+             <onselect Type="Item" Where="Order" Value="17">
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+               <Set Type="state" Name="visible" Value="true"/>
+             </onselect>
+             <onselect Type="Item" Where="Order" Value="18">
+               <Set Type="attribute" Name="RequiredMin" Value="1"/>
+               <Set Type="state" Name="visible" Value="true"/>
+             </onselect>
+           </item>
+         </Response>
+       </Responses>
+    </Item>
+    <Item Order="17" ItemResponse="" RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHOTHEXP</ref>
+          <label>Describe</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" ItemResponse="" RequiredMin="0" RequiredMax="1" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" required="false" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <ref>SURGANESTHOTHPROB</ref>
+          <label>Problems or side effects?</label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="19">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>SURGANESTHOTHPROBEXP</ref>
+          <label>Explain</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+   </Items>
+</Form>

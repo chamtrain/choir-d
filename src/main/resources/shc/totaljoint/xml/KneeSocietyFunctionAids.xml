@@ -1,0 +1,61 @@
+<Form Description="Knee Society Score - Functional Activities Aids" questionsPerPage="4">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[Can you walk around without any aids (such as a cane, crutches or wheelchair)?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label>
+          </item>
+          <item><value>0</value><label>No</label>
+            <onselect Type="Item" Where="Order" Value="2"/>
+            <onselect Type="Item" Where="Order" Value="4"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Visible="false">
+      <Description>
+        <![CDATA[Which of the following aid(s) do you use?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="AidDevice" Type="select1" required="true">
+          <item><value>1</value><label>Wheelchair</label></item>
+          <item><value>2</value><label>Walker</label></item>
+          <item><value>3</value><label>Crutches</label></item>
+          <item><value>4</value><label>Two canes</label></item>
+          <item><value>5</value><label>One crutch</label></item>
+          <item><value>6</value><label>One cane</label></item>
+          <item><value>7</value><label>Knee sleeve/brace</label></item>
+          <item><value>8</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>          
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false">
+      <Description>Kind of aid</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Visible="false">
+      <Description>
+        <![CDATA[Do you use these aid(s) because of your knees?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>0</value><label>No</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

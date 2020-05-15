@@ -1,0 +1,301 @@
+<Form Description="Knee Society Score - Functional Activities" questionsPerPage="1">
+  <Items>
+    <Item Order="1" Section="start">
+      <Description>
+        <![CDATA[Can you walk around without any aids (such as a cane, crutches or wheelchair)?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="NeedAid" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label>
+          </item>
+          <item><value>0</value><label>No</label>
+            <onselect Type="Item" Where="Order" Value="2"/>
+            <onselect Type="Item" Where="Order" Value="4"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Visible="false">
+      <Description>
+        <![CDATA[Which of the following aid(s) do you use?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="AidDevice" Type="select1" required="true">
+          <item><value>1</value><label>Wheelchair</label></item>
+          <item><value>2</value><label>Walker</label></item>
+          <item><value>3</value><label>Crutches</label></item>
+          <item><value>4</value><label>Two canes</label></item>
+          <item><value>5</value><label>One crutch</label></item>
+          <item><value>6</value><label>One cane</label></item>
+          <item><value>7</value><label>Knee sleeve/brace</label></item>
+          <item><value>8</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>          
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false">
+      <Description>Kind of aid</Description>
+      <Responses>
+        <Response Order="1" ref="AidDeviceOther" Type="input" required="true">
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Visible="false" Section="end">
+      <Description>
+        <![CDATA[Do you use these aid(s) because of your right knee?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="AidDeviceKnee" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>0</value><label>No</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5">
+      <Description>
+        <![CDATA[For how long can you stand (with or without aid) before sitting due to discomfort in your right knee?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q1" Type="select1" required="true">
+          <item><value>0</value><label>Cannot stand</label></item>
+          <item><value>3</value><label>0-5 minutes</label></item>
+          <item><value>6</value><label>6-15 minutes</label></item>
+          <item><value>9</value><label>16-30 minutes</label></item>
+          <item><value>12</value><label>31-60 minutes</label></item>
+          <item><value>15</value><label>More than an hour</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[For how long can you walk (with or without aid) before stopping due to discomfort in your right knee?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q2" Type="select1" required="true">
+          <item><value>0</value><label>Cannot walk</label></item>
+          <item><value>3</value><label>0-5 minutes</label></item>
+          <item><value>6</value><label>6-15 minutes</label></item>
+          <item><value>9</value><label>16-30 minutes</label></item>
+          <item><value>12</value><label>31-60 minutes</label></item>
+          <item><value>15</value><label>More than an hour</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Walking on an uneven surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q3" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Turning or pivoting on your leg</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q4" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Climbing up or down a flight of stairs</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q5" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Getting up from a low couch or a chair without arms</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q6" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Getting into or out of a car</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q7" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Moving laterally (stepping to the side)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q8" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Climbing a ladder or step stool</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q9" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Carrying a shopping bag for a block</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q10" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Squatting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q11" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Kneeling</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q12" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        How much does your right knee bother you with:
+        <p>Running</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q13" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

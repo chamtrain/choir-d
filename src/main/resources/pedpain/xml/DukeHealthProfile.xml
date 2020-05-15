@@ -1,0 +1,313 @@
+<Form Description="Duke Health Profile - Caregiver Well-Being" questionsPerPage="10">
+  <!--
+    Items are scored by assigning a value from 0 to 2 to the responses.
+    Positively worded items are scored 2 to 0
+    Negatively worded items are scored 0 to 2
+   -->
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        The following section is about <u><b>your</b></u> health and feelings.
+        Please read each question carefully and select your best answer.
+        You should answer the questions in your own way. There are no right
+        or wrong answers.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[
+        I like who I am
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="false">
+          <item><value>2</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>0</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        I am not an easy person to get along with
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref= "Q2" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>2</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        I am basically a healthy person
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q3" Order="1" Type="select1" required="false">
+          <item><value>2</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>0</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Page="start">
+      <Description>
+        <![CDATA[
+        I give up too easily
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref= "Q4" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>2</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        I have difficulty concentrating
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref= "Q5" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>2</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        I am happy with my family relationships
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q6" Order="1" Type="select1" required="false">
+          <item><value>2</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>0</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Page="start">
+      <Description>
+        <![CDATA[
+        I am comfortable being around people
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q7" Order="1" Type="select1" required="false">
+          <item><value>2</value><label>Yes, describes me exactly</label></item>
+          <item><value>1</value><label>Somewhat describes me</label></item>
+          <item><value>0</value><label>No, Doesn't describe me at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="9" Page="start">
+      <Description>
+        <![CDATA[
+        <u><b>TODAY</b></u> would you have any physical trouble or difficulty:
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        <h4>Walking up a flight of stairs</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q8" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        <h4>Running the length of a football field</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q9" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="12" Page="start">
+      <Description>
+        <![CDATA[
+        During the <u><b>PAST WEEK</b></u>: How much trouble have you had with:
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        <h4>Sleeping</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q10" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        <h4>Hurting or aching in any part of your body</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q11" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        <h4>Getting tired easily</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q12" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        <h4>Feeling depressed or sad</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q13" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        <h4>Nervousness</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q14" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>0</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="18" Page="start">
+      <Description>
+        <![CDATA[
+        During the <u><b>PAST WEEK</b></u>: How often did you:
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        <h4>Socialize with other people</h4>
+        <h4>(talk or visit with friends or relatives)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q15" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>2</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        <h4>Take part in social, religious, or recreation activities</h4>
+        <h4>(meetings, church, movies, sports, parties)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q16" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Some</label></item>
+          <item><value>2</value><label>A Lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="21" Page="start">
+      <Description>
+        <![CDATA[
+        During the <u><b>PAST WEEK</b></u>: How often did you:
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22">
+      <Description>
+        <![CDATA[
+        <h4>Stay in your home, a nursing home, or hospital because of
+        sickness, injury or other health problem.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q17" Order="1" Type="select1" required="false" Align="horizontal">
+          <item><value>2</value><label>None</label></item>
+          <item><value>1</value><label>1-4 Days</label></item>
+          <item><value>0</value><label>5-7 Days</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,167 @@
+<Form Description="DVT Feelings" questionsPerPage="1">
+  <Items>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        Leg problems can also affect your spirits. How closely do the following statements correspond to how you have felt recently?
+        <p>During the past four weeks, I felt nervous/tense
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I got tired quickly
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q13</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I felt I was a burden
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q14</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I always had to be cautious
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q15</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I felt embarrassed about showing my legs
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q16</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I got irritated easily
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q17</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I felt as if I was handicapped
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q18</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I found it hard to get going in the morning
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q19</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <Description>
+        <![CDATA[
+        During the past four weeks, I did not feel like going out
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q20</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>5</value><label>Completely</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

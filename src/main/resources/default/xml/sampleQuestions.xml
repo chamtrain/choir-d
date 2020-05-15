@@ -1,0 +1,199 @@
+<Form Description="sampleYesNo" DateStarted="" DateFinished="">
+	<!-- Note: ref tags are used to generate square tables and process the survey answers.
+			 They can be either upper or lowercase. They are shown in uppercase here to make them stand out -->
+<Items>
+	<!-- Sample radio button question with vertical choices; one ref tag is needed on the response -->
+	<Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" required="true" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+		<Description><![CDATA[In terms of marital status, are you:]]></Description>
+		<Responses>
+			<Response Order="1" Type="select1" align="vertical" Class="registrySurveyAnswer" Appearance="full">
+				<ref>BGMARITAL</ref>
+				<width>295px</width>
+				<item><label>Married</label><value>1</value></item>
+				<item><label>Divorced</label><value>6</value></item>
+				<item><label>Separated</label><value>2</value></item>
+				<item><label>Widowed</label><value>3</value></item>
+				<item><label>Never Married</label><value>4</value></item>
+				<item><label>Living together</label><value>5</value></item>
+			</Response>
+		</Responses>
+	</Item>
+	<!-- Sample radio numeric scale (horizontal); one ref tag is needed on the item -->
+	<Item Order="2" Align="Horizontal" Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+		<Description><![CDATA[Desired level of THC]]></Description>
+		<ref>DESIREDTHC</ref>
+		<Responses>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="1" Description2="None">
+				<Scores>
+					<Score value="1"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="2">
+				<Scores>
+					<Score value="2"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="3">
+				<Scores>
+					<Score value="3"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="4">
+				<Scores>
+					<Score value="4"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="5">
+				<Scores>
+					<Score value="5"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="6">
+				<Scores>
+					<Score value="6"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="7">
+				<Scores>
+					<Score value="7"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="8">
+				<Scores>
+					<Score value="8"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="9">
+				<Scores>
+					<Score value="9"/>
+				</Scores>
+			</Response>
+			<Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="10"
+								Description2="Highest possible">
+				<Scores>
+					<Score value="10"/>
+				</Scores>
+			</Response>
+		</Responses>
+	</Item>
+	<!-- Sample checkbox question; checkboxes should have a ref tag for the response plus one for each option.
+			 If no ref tag exists on an item then it will use the response ref followed by the first word of the items label(up to 8 characters).
+	 		 If more than one choice begins with the same word ref tags showld be assigned to the items so that they have unique column names.
+	 		 See the documentation output for the special handling required for select items that share the response single ref tag -->
+	<Item Order="3" ItemResponse="" ItemScore="">
+		<Description>
+			<![CDATA[How has your pain affected your life?]]>
+		</Description>
+		<Responses>
+		<Response Order="1" Type="select">
+      <ref>PAINAFF</ref>
+			<item>
+				<ref>NOTDOJOB</ref>
+				<label>Cannot do my job</label>
+				<value>1</value>
+			</item>
+			<item>
+				<ref>ISOLATED</ref>
+				<label>Feeling isolated</label>
+				<value>2</value>
+			</item>
+			<item>
+				<ref>LESSSOC</ref>
+				<label>Reduced social activities</label>
+				<value>3</value>
+			</item>
+			<item>
+				<ref>LESSREC</ref>
+				<label>Reduced recreational activities</label>
+				<value>4</value>
+			</item>
+		</Response>
+		</Responses>
+	</Item>
+  <!-- sample text input question; single ref tag is needed -->
+	<Item Order="4" ItemResponse="" ItemScore="" Visible="false" >
+		<Description>
+			<![CDATA[Please state your questions]]>
+		</Description>
+		<Responses>
+			<Response Order="1" Type="input" appearance="compact">
+				<ref>QUESTIONS</ref>
+				<format>
+					<lines>5</lines>
+				</format>
+				<Scores />
+			</Response>
+		</Responses>
+	</Item>
+	<!-- sample datePicker question; single ref tag -->
+	<Item Order="5" ItemResponse="" ItemScore="" Visible="true">
+		<Description><![CDATA[Date of last visit to a physician]]></Description>
+		<Responses>
+			<Response Order="1" Type="datePicker" inlineBlind="true" useFocus="true">
+				<ref>LASTVISIT</ref>
+				<label></label>
+				<hint>Enter a valid date</hint>
+				<format>
+					<lines>1</lines>
+				</format>
+				<Scores />
+			</Response>
+		</Responses>
+	</Item>
+	<!-- sample textboxset question; single ref tag,
+			multiple columns are created and numbered to match up with the response json choices -->
+	<Item Order="6" ItemResponse="" ItemScore="" Visible="true">
+		<Description>Right trapezius</Description>
+		<Responses>
+			<Response Order="1" required="true" Type="textboxset" StyleName="physicianSurvey" Align="horizontal">
+				<ref>TRAPEZIUSRIGHT</ref>
+				<item><label>1</label><value></value></item>
+				<item><label>2</label><value></value></item>
+				<item><label>3</label><value></value></item>
+			</Response>
+		</Responses>
+	</Item>
+	<Item Order="7" ItemResponse="" ItemScore=""  Visible="true">
+		<Description><![CDATA[In the past month, how many times have you visited the clinic for pain care (the clinic where you are doing this study)? Only include doctor and nurse visits, not visits for classes or groups.]]></Description>
+		<Responses>
+			<Response Appearance="Full" Order="0" Type="dropdown" required="false" Filter="true">
+				<item>
+					<label><![CDATA[One]]></label>
+					<value><![CDATA[1]]></value>
+				</item>
+				<item>
+					<label><![CDATA[Two]]></label>
+					<value><![CDATA[2]]></value>
+				</item>
+				<item>
+					<label><![CDATA[Three]]></label>
+					<value><![CDATA[3]]></value>
+				</item>
+				<item>
+					<label><![CDATA[Four]]></label>
+					<value><![CDATA[4]]></value>
+				</item>
+				<ref>prescribing_md_vist_amount</ref>
+			</Response>
+		</Responses>
+	</Item>
+	<Item Order="8" Align="Horizontal"  ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+		<Description>Please rank the following ice creams in your favorite order</Description>
+		<Responses>
+			<Response Order="1" required="true" Type="radiosetgrid" StyleName="ranking" Align="horizontal">
+				<ref>RANKICECREAM</ref>
+				<item><group>y-axis</group><label>Chocolate</label><ref>CHOC</ref></item>
+				<item><group>y-axis</group><label>Strawberry</label><ref>STRAW</ref></item>
+				<item><group>y-axis</group><label>Vanilla</label><ref>VANI</ref></item>
+				<item><group>y-axis</group><label>Pistachio</label><ref>PIST</ref></item>
+				<item><group>y-axis</group><label>Coffee</label><ref>COFF</ref> </item>
+				<item><group>x-axis</group><label>1</label><value>1</value></item>
+				<item><group>x-axis</group><label>2</label><value>2</value></item>
+				<item><group>x-axis</group><label>3</label><value>3</value></item>
+				<item><group>x-axis</group><label>4</label><value>4</value></item>
+				<item><group>x-axis</group><label>5</label><value>5</value></item>
+			</Response>
+		</Responses>
+	</Item>
+</Items>
+ </Form>

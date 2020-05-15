@@ -1,0 +1,250 @@
+<Form Description="Pediatic Pain PReP Research Consent" questionsPerPage="1" >
+  <Items>
+    <Item Order="1" ref="consent" Class="surveyQuestionCollapsible" >
+      <PatientAttribute data_name="PrepResearchConsent" data_value="any" condition="notexists"/>
+      <Description>
+<![CDATA[
+  You and your child are invited to participate in a research study to better understand pain conditions
+  and psychosocial outcomes related to pediatric pain.
+  <p>Do you (the parent) agree to allow us to use these questionnaires and your health related information
+  for this research study?</p>
+]]>
+      </Description>
+      <CollapsibleContent>
+<![CDATA[
+  <h3>Assessment of Pediatric Pain: Pediatric Pain Rehabilitation Program</h3>
+  <p><b>DESCRIPTION:</b>
+  You and your child are invited to participate in a research study to better understand pain conditions and psychosocial 
+  outcomes related to pediatric pain. You and your child will use a Stanford-encrypted iPad to complete secure online 
+  questionnaires. Your responses help to inform patient care for our pediatric providers. The questionnaires focus on 
+  demographics, medical history, and functioning (e.g., sleep, school, activity), as well as thoughts, feelings, and 
+  behaviors related to the experience of pain for your child and family (e.g., stress, sadness, and other pain concerns); 
+  however, at anytime, you have the right to refuse to answer particular questions. If you agree to participate in the 
+  study after learning more from our research team (e.g., examples of questions, frequency of questionnaires, how the 
+  study happens online, how to stop participation if wanted at any time for any reason), you will be asked similar 
+  questions via email six months, nine months, one year, two year, and three years after your completion of the 
+  Pediatric Pain Rehabilitation Program (PReP). A research staff may contact you via phone/email remind you to complete 
+  these follow-up questionnaires.
+  </p>
+  <p><b>STUDY PURPOSE:</b>
+  With your family’s assistance, the investigators of this project hope to develop a better understanding of medical, 
+  behavioral, and psychosocial factors associated with youth with chronic pain. This is a project that may help us to 
+  learn more about: 1) coping, functioning, emotions, and levels of discomfort (i.e., pain) at the time you are first 
+  evaluated at LPCH/Stanford, and 2) how these areas change over time (e.g., if there is higher functioning, lower pain) 
+  in the outpatient clinic, or after receiving care from the intensive rehabilitation treatment program.
+  </p>
+  <p><b>RISKS AND BENEFITS:</b>
+  Other than needing time to complete the questionnaires, we do not anticipate any risks in this study. The questionnaires 
+  might make you and your child notice the way that pain has affected your lives, but we do not expect discomfort. We cannot 
+  and do not guarantee or promise that your child will receive benefits from this study. 
+  </p>
+  <p><b>WHAT YOU WILL BE DOING:</b></p>
+  <p>
+  1. You and your child will answer questions on an iPad or on paper with pencil that will take about 45 minutes on your 
+  first day in the program.  We will make sure you have time in your schedule to finish the questions. You will answer 
+  these questions again when you end the program in several weeks and again in a few months.
+  </p>
+  <p>
+  2. Your child will be asked to take some pictures with their smartphone or one of our digital cameras to explain how 
+  pain has been a problem for them. Your child will be asked to take pictures of things to tell a story about their pain. 
+  Your child’s pictures should not have anything that could show that it is from them, so no pictures of their face or 
+  anyone else’s face, no names, no addresses, or anything that could link the pictures to your child.  We make this request 
+  in order to maintain confidentiality and privacy since these pictures may be used for public viewing upon completion of 
+  the PReP program at the graduation with your approval.
+  </p>
+  <p>
+  3. You and your child will also answer questions on an iPad or on paper with pencil that will take about 15 minutes once a week.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b>
+  Pediatric Rehabilitation Pain Program (PReP): if you agree to participate in this research, after your child’s graduation 
+  from the rehabilitation pain program, you and your child will answer the same questions 6 months, 9 months, 1, 2, and 3 years 
+  after completion of the program. The first time you and your child answer the questions it might take about 45 minutes, 
+  but the subsequent weekly questions will only take about 15 minutes.  Once you and your child finish the program you will 
+  both be asked to answer all of the questions again and that might take 30 to 45 minutes to complete online.
+  </p>
+  <p><b>PAYMENTS:</b>
+  There is no monetary reimbursement for participation in this study.
+  </p>
+  <p><b>PARTICIPANT’S RIGHTS:</b>
+  If you have read this form and have decided to participate and to allow your child to participate in this project, please 
+  understand you and your child’s participation is voluntary. The alternative is not to participate. If participating, you 
+  have the right to refuse to answer particular questions and you have the right to withdraw you and your child’s consent or 
+  discontinue participation at any time without penalty or loss of benefits to which you or your child is otherwise entitled. 
+  You and your child’s individual privacy will be maintained in all published data resulting from the study. 
+  </p>
+  <p><b>CONTACT INFORMATION FOR QUESTIONS:</b>
+  If you have any questions, concerns or complaints about this research, its procedures, risks and benefits, contact the 
+  Protocol Director, Dr. Anya Griffin at (650) 736-3656 or Protocol Co-Director, Dr. Amanda Feinstein at (650) 736-3494
+  </p>
+  <p><b>WITHDRAWAL FROM STUDY:</b>
+  The Protocol Director may also withdraw you and your child from the study without your consent for one or more of the following reasons:
+  <ul>
+  <li>Failure to follow the instructions of the Protocol Director and study staff.</li>
+  <li>The Protocol Director decides that continuing your participation could be harmful.</li>
+  <li>The study is cancelled</li>
+  <li>Other administrative reasons.</li>
+  <li>Unanticipated circumstances.</li>
+  </ul>
+  </p>
+
+  <h3>AUTHORIZATION TO USE YOUR HEALTH INFORMATION FOR RESEARCH PURPOSES (HIPAA)</h3>
+  <p>
+  Because information about your child’s health is personal and private, it generally cannot be used in this research study 
+  without your written authorization. The form is intended to inform you about how your child’s health information will be 
+  used or disclosed in the study. Your child’s information will only be used in accordance with this authorization form and 
+  the informed consent form and as required or allowed by law. Please read it carefully before agreeing to it. 
+  </p>
+  <p><b>What is the purpose of this research study and how will my child’s health information be utilized in the study?</b></p>
+  <p>
+  This study is meant to inform and enhance the quality of clinical care for pediatric patients with chronic pain. 
+  Collecting   information from the first PReP assessment through follow-up treatments may clarify – through a patient- and 
+  family-centered lens – the Clinic’s understanding of how physical well being, family functioning, and emotional health 
+  relate to pain and other medical domains. Such clarification may then help to improve established interventions for chronic pain.
+  </p>
+  <p><b>Do I have to agree to be in the study?</b></p>
+  <p>
+  No, you do not have to sign to participate in the study. However, the questions that you will answer are still part of your 
+  PReP treatment plan and will be used to make sure we know how well the program is helping you. If you choose to not participate 
+  in the study that is your choice, but these questions will be necessary to complete as part of your clinical care in PReP. 
+  You do not have to agree this authorization form.  But if you do not, you will not be able to participate in this research study. 
+  Agreeing to this form is not a condition for receiving any medical care outside the study.
+  </p>
+  <p><b>If I agree to participate, can I revoke or withdraw from the research later?</b></p>
+  <p>
+  If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your health 
+  information (and to discontinue any other participation in the study) at any time. After any revocation, your child’s health 
+  information will no longer be used or disclosed in the study, except to the extent that the law allows us to continue using 
+  your information (e.g., necessary to maintain integrity of research). If you wish to revoke your authorization for the 
+  research use or disclosure of your health information in this study, please write to: Anya Griffin, Ph.D. at anyag@stanford.edu.
+  </p>
+  <p><b>What personal information will be obtained, used or disclosed?</b></p>
+  <p>
+  The health information we are looking to use includes protected medical information about you and your child. We will need to 
+  know you and your child’s names, in addition to his or her: medical record number, birth date, pain diagnosis and date this 
+  was diagnosed. We will also need to obtain and use your phone number(s), mailing address, email address(es), and the number 
+  and type of interventions your child has received for pain management (medications, physical therapy, psychotherapy, 
+  occupational therapy, massage, acupuncture, etc.). We will also collect a photo from your child at the beginning and end 
+  of treatment. We will also collect information on how your child is doing over time. Information collected will include 
+  how youth are feeling and coping (pain level, stress, behaviors), and how they are functioning in school, at home, with 
+  physical activity, and with friends. Similarly, we will also be asking the youth’s parent to provide responses regarding 
+  observations of their child’s emotions, behaviors, and functioning at the initial visit and over time.
+  </p>
+  <p><b>Who may use or disclose the information?</b></p>
+  <p>
+  The following parties are authorized to use and/or disclose your health information in connection with this research study:
+  <ul>
+  <li>The Protocol Director: Anya Griffin, Ph.D.</li>
+  <li>The Protocol Co-Directors: Amanda Feinstein, Ph.D.</li>
+  <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary</li>
+  <li>Research Staff</li>
+  </ul>
+  </p>
+  <p><b>Who may receive or use the information?</b></p>
+  <p>
+  The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations 
+  for their use in connection with this research study: 
+  <ul>
+  <li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li>
+  </ul>
+  Your information may be re-disclosed by the recipients described above, if they are not required by law to protect the 
+  privacy of the information.
+  </p>
+  <p><b>When will my authorization expire?</b></p>
+  <p>
+  Your authorization for the use and/or disclosure of your health information will end on February 28, 2030 or whenever the 
+  research project ends, whichever is earlier.
+  </p>
+  <p><b>Will access to my medical record be limited during the study?</b></p>
+  <p>
+  To maintain the integrity of this research study, you may not have access to any health information developed as part of 
+  this study until it is completed. At that point, you would have access to such health information if it was used to 
+  make a medical or billing decision about you (i.e., if included in your official record). 
+  </p>
+  <h3>CONTACT INFORMATION:</h3>
+  <p>
+  Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this research study, its 
+  procedures, risks and benefits, or alternative courses of treatment, you should ask the Protocol Director, Anya Griffin, Ph.D. 
+  You may contact her now or later at (650) 736-3656. 
+  </p>
+  <p>
+  Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, 
+  or general questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board (IRB) 
+  to speak to someone independent of the research team at (650) 723-5244 or toll free at (866) 680-2906.  
+  You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.
+  </p>
+  <p>
+  Alternate Contact:  If you cannot reach the Protocol Director, please contact Protocol Co-Director Amanda Feinstein, Ph.D. at (650) 736-3494. 
+  </p>
+  <h3>PHOTO AUTHORIZATION:</h3>
+  <p>
+  You are agreeing to grant Stanford University and the Pediatric Pain Management Clinic use of your child’s photo(s), as well 
+  as the ability to store and share these photos for educational and clinical purposes.
+  </p>
+  <p>
+  I understand that if I decide to revoke permission to use my child’s photo, I will notify Anya Griffin, PhD, at (650) 736-3656.
+  </p>
+]]>
+      </CollapsibleContent>
+      <Responses>
+        <!-- Yes is expected to be Response Order 0 -->
+        <Response Order="0" Type="radio" >
+          <Description>Yes, I agree</Description>
+          <Scores><Score value="0"/></Scores>
+          <SetPatientAttribute data_name="PrepResearchConsent" data_value="y"/>
+        </Response>
+        <Response Order="1" Type="radio" >
+          <Description>No, I do not agree</Description>
+          <Scores><Score value="1"/></Scores>
+          <SetPatientAttribute data_name="PrepResearchConsent" data_value="n"/>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3" required="false">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" condition="exists"/>
+      <ResponseValue xpath_query="//Item[@ref='consent']/@ItemResponse" data_value="0" condition="equal"/>
+      <Description>
+<![CDATA[
+  <p>Thank you for agreeing to participate in the research study on the Assessment of Pediatric Pain.</p>
+  <p>A copy of the Research Consent and Youth Assent forms will be sent to you via email.</p>
+]]>
+      </Description>
+      <Responses> 
+        <Response Order="1" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" required="false">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" condition="notexists"/>
+      <ResponseValue xpath_query="//Item[@ref='consent']/@ItemResponse" data_value="0" condition="equal"/>
+      <Description>
+<![CDATA[
+  <p>Thank you for agreeing to participate in the research study on the Assessment of Pediatric Pain.</p>
+  <p>A copy of the Research Consent and Youth Assent forms can be obtained from the front desk.</p>
+]]>
+      </Description>
+      <Responses> 
+        <Response Order="1" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5" required="false">
+      <PatientAttribute data_name="PhotoPermission" data_value="any" condition="notexists"/>
+      <Description>
+<![CDATA[
+  Your child may be asked to take photos to explain their pain. We are requesting your permission to grant Stanford University
+  School of Medicine and the Pediatric Pain Management Clinic the ability to use the photo(s) your child takes, as well as the
+  ability to store and share these photos for educational and clinical purposes.
+]]>
+      </Description>
+      <Responses>
+        <Response ref="PhotoPermission" Order="1" Type="select1" required="false">
+          <item><label>Yes, I agree</label><value>1</value></item>
+          <item><label>No, I do not agree</label><value>0</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

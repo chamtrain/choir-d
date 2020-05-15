@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sample application tab</title>
+    <style>
+    </style>
+
+    <script type="text/javascript">
+
+
+      function ChoirApiV10() {
+        return parent.choirApiV10() + "report/angersurveyspatients?siteId=" + parent.getSiteId();
+      }
+
+      function loadParams(selectedFields) {
+        var http_request = new XMLHttpRequest();
+        try {
+          // Opera 8.0+, Firefox, Chrome, Safarilt7
+          http_request = new XMLHttpRequest();
+        } catch (e) {
+        // Internet Explorer Browsers
+          try {
+            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+          } catch (e) {
+            try {
+              http_request = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+              // Something went wrong
+              alert("Your browser broke!");
+            }
+          }
+        }
+        http_request.onreadystatechange = function () {
+
+          if (http_request.readyState == 4) {
+            // Parse the JSON data that is returned and create the report parameter options
+            //document.write(http_request.responseText);
+            document.write("<p></p>")
+
+            var jsonObj = JSON.parse(http_request.responseText);
+            if (typeof jsonObj["ERROR"] === 'object')  {
+              document.write("<h1>An error occurred getting the meta-data needed for this page</h1> ");
+              document.write("<p><div style='font-size: x-large'><strong>Check that the report <label style='color: purple'> angersurveuspatients</label> is defined</p>");
+              return;
+            }
+            document.write("<h2>List patients for a given response to the Anger survey consent or follow up consent question</h2>");
+            document.write("<form action=ChoirApiV10() method='post' name='reportform'> ");
+            var controlPanel = "<div style='padding: 10px 4px; font-size: medium; color: whitesmoke; width: 360px;'>" +
+             "<input type='button' onclick='getReport(\"view\")' value='View Data' style='margin-left: 85px;'>" +
+             "<input type='button' onclick='getReport(\"download\")' value='Download data' style='margin-left: 25px;'>" +
+             "</div><p></p>";
+            document.write("<table bgcolor='#fff'>");
+            cnt=0;
+            for (var f=0; f<jsonObj.reportParameters.length; f++) {
+              document.write("<tr>");
+              var fieldItem = jsonObj.reportParameters[f];
+              console.log("writing field " + fieldItem.title);
+              document.write("<td valign='top'>" + fieldItem.title + "</td>");
+              document.write("<td>");
+              if (fieldItem.type === "input" || fieldItem.type === "date") {
+                console.log("writing input/date field " + fieldItem.name);
+                document.write("<input type='" + fieldItem.type + "' name='");
+                document.write(fieldItem.name);
+                document.write("' id='" + f + "' value='");
+                if (!(fieldItem.value == null)) {
+                  document.write(fieldItem.value);
+                }
+                document.write("'>");
+              } else if (fieldItem.type === "checkbox" || fieldItem.type === "radio") {
+
+                document.write("</td><td># Responses To Date</td></tr>")
+                console.log("writing a checkbox/radio field " + fieldItem.name + " with " + fieldItem.VALUELIST.length);
+                document.write(" <tr><td></td>");
+
+                for (var i = 0; i < fieldItem.VALUELIST.length; i++) {
+                  document.write("<td>")
+
+                  document.write("<input type='"+fieldItem.type+"' name='" + fieldItem.name + "' ");
+                  document.write("id='" + i + "' value='" + fieldItem.VALUELIST[i]+"'");
+                  if (selectedFields.length > 0) {
+                    var sFields = selectedFields.split(",");
+                    for (s in sFields) {
+                      if (sFields[s] === fieldItem.VALUELIST[i]) {
+                        document.write(" checked ");
+                      }
+                    }
+                  }
+
+                  document.write(">" + fieldItem.VALUELIST[i]);
+                  document.write("</td>");
+                  console.log("Summarycounts length is " + jsonObj.summarycounts.length);
+                  for (var c=0; c<jsonObj.summarycounts.length; c++) {
+                    var sumcount = jsonObj.summarycounts[c];
+
+                    console.log("Does " + fieldItem.VALUELIST[i] + " == " + sumcount.name);
+                    if (sumcount.name === fieldItem.VALUELIST[i]) {
+                      document.write("<td>" + sumcount.count + "</td>")
+                    }
+                  }
+                  document.write("</tr><tr><td></td>");
+                }
+
+              }
+              document.write("</td></tr><tr></tr>");
+            }
+            document.write("</table><p></p>");
+            document.write(controlPanel);
+            document.write("</form>");
+            console.log("document written")
+          }
+        };
+        http_request.open("GET", ChoirApiV10(), true);
+        http_request.send();
+      }
+
+      function download( jsonObj ){
+        // convert json to csv
+        var downloadString = '';
+        if(typeof jsonObj === "object"){
+          for (var i = 0; i < jsonObj.reportDataSet.length; i++) {
+            var arr = jsonObj.reportDataSet[i];
+            var line = '';
+            for (a in arr) {
+              if (line !== '') line +=',';
+              line +="\"" + arr[a] +"\"";
+            }
+            downloadString += line + '\r\n';
+          }
+        }
+
+        var blob = new Blob([downloadString], {type: 'text/csv'}),
+                e    = document.createEvent('MouseEvents'),
+                a    = document.createElement('a');
+        a.download = "angerreport.csv";
+        a.href = window.URL.createObjectURL(blob);
+        a.dataset.downloadurl =  ['text/csv', a.download, a.href].join(':');
+        e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        a.dispatchEvent(e);
+        document.write("<h2>Data download complete</h2>");
+      }
+
+      function getReport( typ ) {
+
+        var http_request = new XMLHttpRequest();
+        try {
+          // Opera 8.0+, Firefox, Chrome, Safari
+          http_request = new XMLHttpRequest();
+        } catch (e) {
+          // Internet Explorer Browsers
+          try {
+            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+          } catch (e) {
+            try {
+              http_request = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+              // Something went wrong
+              alert("Your browser broke!");
+            }
+          }
+        }
+        var jsonData = {};
+        jsonData["fromDt"] = document.getElementsByName("fromDt")[0].value;
+        jsonData["toDt"] = document.getElementsByName("toDt")[0].value;
+        var choices = document.getElementsByName("patresponse");
+        for (var c=0; c<choices.length; c++) {
+          if (choices[c].checked) {
+            jsonData["patresponse"] = choices[c].value;
+            console.log("patresponse value is " + choices[c].value);
+          }
+        }
+
+        http_request.onreadystatechange = function () {
+
+          if (http_request.readyState == 4) {
+            // Parse the JSON data that is returned and display or download
+            document.open();
+            document.write("<p></p><h2>");
+            //document.write(reportName());
+            document.write("</h2>");
+
+            var jsonObj = JSON.parse(http_request.responseText);
+            if(!jsonObj || jsonObj === "undefined" ||  jsonObj.reportDataSet == undefined) {
+              document.write("<h2>NO DATA WAS FOUND FOR SELECTIONS</h2>");
+              document.write("<div style='padding: 10px 4px; font-size: medium; width: 222px;'>");
+              document.write("<div style='margin: auto; width: 20px'><input type='button' onclick=loadParams('All') value='Return' class='gwt-button'></div></div>");
+              document.close();
+              return;
+            }
+
+            if ("view" == typ) {
+              document.write("<table border='2' cellpadding='5' style='border-collapse: collapse';><tr>");
+              if (jsonObj.reportDataSet.length > 0) {
+                var headingArr = jsonObj.reportDataSet[0];
+                console.log("headingArr is " + headingArr);
+                for (a in headingArr) {
+                  document.write("<th style='background: #666; color: white;'>");
+                  document.write(headingArr[a]);
+                  document.write("</th>");
+                }
+              }
+              document.write("</tr>");
+              for (var i = 1; i < jsonObj.reportDataSet.length; i++) {
+                var arr = jsonObj.reportDataSet[i];
+                document.write("<tr>");
+                for (a in arr) {
+                  document.write("<td>");
+                  document.write(arr[a]);
+                  document.write("</td>");
+                }
+                document.write("</tr>");
+              }
+              document.write("</table>");
+            } else {
+              download(jsonObj)
+            }
+            document.write("<p></p>");
+            document.write("<form action=ChoirApiV10() method='post' name='reportform'> ");
+            var controlPanel = "<div style='padding: 10px 4px; font-size: medium; color: whitesmoke; width: 360px;'>" +
+                    "<input type='button' onclick='loadParams(\"return\")' value='Return' style='margin-left: 85px;'>" +
+                    "</div><p></p>";
+            document.write(controlPanel);
+            document.close();
+
+          }
+      };
+      http_request.open("POST", ChoirApiV10(), true);
+      http_request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      http_request.send(JSON.stringify(jsonData));
+      };
+    </script>
+  </head>
+  <body>
+    <p>
+      <script>
+          loadParams("All");
+          document.write()
+      </script>
+    </p>
+    <p/>
+   </body>
+</html>

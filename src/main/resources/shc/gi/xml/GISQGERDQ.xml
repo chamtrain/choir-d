@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Gastroesophageal Reflux Disease" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[How often did you have a burning feeling behind your breastbone (heartburn)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[How often did you have stomach contents (liquid or food) moving upwards to your throat or mouth (regurgitation)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[How often did you have a pain in the center of your upper stomach?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[How often did you have nausea?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[How often did you have difficulty getting a good night's sleep because of your heartburn and/or regurgitation?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[How often did you take additional medication for your heartburn and/or regurgitation other than what the physician told you to take (such as Tums, Rolaids, Maalox)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[One Day]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-3 Days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[4-7 Days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>GISQ_GERDQ_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server>
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <!--<Listener className="org.apache.catalina.security.SecurityListener" minimumUmask="0022" />-->
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+
+  <Service name="Catalina">
+    <Connector port="8080" protocol="HTTP/1.1"
+               maxHttpHeaderSize="32768"
+               connectionTimeout="20000" keepAliveTimeout="-1"
+               scheme="${proxy.scheme}" secure="true"
+               proxyName="${proxy.hostname}" proxyPort="${proxy.port}"
+               compression="on" compressableMimeType="text/html,text/javascript"/>
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost" appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+      </Host>
+      <Valve className="org.apache.catalina.valves.AccessLogValve"
+             directory="/app/logs" prefix="access" suffix=".log"
+             pattern="%h &quot;%{X-Forwarded-For}i&quot; &quot;%{X-REMOTE-USER}i&quot; %t &quot;%r&quot; %s %b %F &quot;%{User-Agent}i&quot;"/>
+    </Engine>
+  </Service>
+</Server>

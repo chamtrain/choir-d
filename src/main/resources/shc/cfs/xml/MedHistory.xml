@@ -1,0 +1,94 @@
+<Form Description="Medical History" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[Is this your first visit to the Stanford ME/CFS clinic?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>FirstVisit</ref>
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>0</value><label>No</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <ResponseValue xpath_query="//Response[ref='FirstVisit']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[The next series of questions involves typing answers about your medical history.
+        You may wish to complete these on a computer rather than a tablet. If you would like to switch devices, simply
+        exit the survey by closing the browser window and re-open it on the device of your choosing using the link in 
+        the original email.]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <ResponseValue xpath_query="//Response[ref='FirstVisit']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+	      <![CDATA[Please list all significant illnesses or diseases you currently have or have had other than ME/CFS.
+	       Please include approximate dates of onset and of diagnosis and resolution (if applicable).]]>
+      </Description>
+      <Responses>
+        <Response Order="2" Type="input">
+          <ref>illnesses</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <ResponseValue xpath_query="//Response[ref='FirstVisit']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[Please summarize your history of surgical procedures (if any). Include approximate dates.]]>
+      </Description>
+      <Responses>
+        <Response Order="2" Type="input">
+          <ref>surgeries</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <ResponseValue xpath_query="//Response[ref='FirstVisit']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[Please list all your current medications and supplements, including dose.]]>
+      </Description>
+      <Responses>
+        <Response Order="2" Type="input">
+          <ref>medications</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <ResponseValue xpath_query="//Response[ref='FirstVisit']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[If you have a family history of ME/CFS or any autoimmune disorders, please indicate which family members and which disorders]]>
+      </Description>
+      <Responses>
+        <Response Order="2" Type="input">
+          <ref>familyDisorders</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

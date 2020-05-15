@@ -1,0 +1,29 @@
+<Form Description="Survey Feedback" questionsPerPage="2">
+  <Items>
+    <Item Order="1">
+      <Description>Do you have any feedback for our team regarding the survey that you just completed?</Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <ref>feedback</ref>
+          <item>
+            <label>No</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Yes</label>
+            <value>2</value>
+            <onselect Type="Item" Where="Order" Value="2"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" RequiredMin="0" Visible="false">
+      <Description>Comments</Description>
+      <Responses>
+        <Response ref="feedback-text" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

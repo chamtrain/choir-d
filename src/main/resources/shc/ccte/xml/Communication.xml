@@ -1,0 +1,184 @@
+<Form Description="Communication Survey" questionsPerPage="1">
+  <Items>
+    <Item Order="0">
+      <Description>
+        <![CDATA[<p>
+Please tell us about the care you and/or your family have received at the Stanford Cancer Center. Your input will help us provide even better care for all patients.</p><p> Your responses will be kept confidential and will not be shared directly with your cancer care team.</p><p> Thank you for helping us make cancer care the best experience it can be for all. </p><p>If you have specific concerns please call 650-498-3333.
+    </p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="1" >
+      <Description>
+        <![CDATA[
+        How often are visit 'Notes by your Care Team' in MyHealth useful to you?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>notes_care</ref>
+          <item><value>1</value><label>Haven’t used MyHealth</label></item>
+          <item><value>2</value><label>Never</label></item>
+          <item><value>3</value><label>Sometimes</label></item>
+          <item><value>4</value><label>Usually</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" >
+      <Description>
+        <![CDATA[
+        How often is information from MyHealth, useful to you?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_1</ref>
+          <item><value>1</value><label>Haven’t used MyHealth</label></item>
+          <item><value>2</value><label>Never</label></item>
+          <item><value>3</value><label>Sometimes</label></item>
+          <item><value>4</value><label>Usually</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your Stanford Cancer Center health care team (all doctors,
+nurses and staff related to your cancer care at Stanford) tell you to call immediately regarding specific symptoms or side effects of your treatment?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_3</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your care team tell you how to contact them outside of regular hours?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_4</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your care team encourage you to contact them with questions between visits?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_5</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" >
+      <Description>
+        <![CDATA[
+        	In the past 3 months, how often did your care team spend enough time with you and your family during scheduled visits?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_6</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your care team ask you about your short-term physical, emotional and social goals?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_7</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your care team give care that helped you reach your short-term physical, emotional and social goals?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_8</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" >
+      <Description>
+        <![CDATA[
+        In the past 3 months, how often did your care team make you feel that they care about you as a person?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" >
+          <ref>question_9</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Usually</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="" required="false">
+      <Description><![CDATA[ Please write your comments here  ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" >
+          <ref>comments</ref>
+          <label></label>
+          <format>
+            <lines>6</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="663px" height="143px"
+	 viewBox="0 0 663 143" enable-background="new 0 0 663 143" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  width="800" height="600" y="0" x="0" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-34" y="-36" width="800" height="600"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g opacity="0" clip-path="url(#SVGID_2_)">
+		<g>
+			<defs>
+				<rect id="SVGID_3_" x="-34" y="-36" width="800" height="600"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+		</g>
+	</g>
+	<path clip-path="url(#SVGID_2_)" fill="#4E4F53" d="M101.156,60.177c0,0-14.831-9.3-9.228-16.699
+		c0.309-0.408,35.788-8.684,47.589,16.851c6.701,14.5-2.989,30.077-5.124,31.034c-2.13,0.96-2.58,1.06-2.58,1.06
+		s10.971-20.432-9.392-30.766C112.845,56.794,101.156,60.177,101.156,60.177"/>
+	<path clip-path="url(#SVGID_2_)" fill="#4E4F53" d="M133.504,56.924c-2.465-4.934-0.46-10.932,4.472-13.396
+		c4.934-2.464,10.934-0.458,13.397,4.473c2.465,4.934,0.462,10.932-4.473,13.397C141.966,63.861,135.969,61.859,133.504,56.924"/>
+	<path clip-path="url(#SVGID_2_)" fill="#8C191C" d="M112.163,78.693c0,0,9.299-14.833,16.698-9.228
+		c0.409,0.309,8.686,35.787-16.853,47.589c-14.499,6.7-30.075-2.991-31.034-5.124c-0.958-2.13-1.059-2.58-1.059-2.58
+		s20.429,10.972,30.766-9.392C115.543,90.381,112.163,78.693,112.163,78.693"/>
+	<path clip-path="url(#SVGID_2_)" fill="#8C191C" d="M115.415,111.041c4.933-2.464,10.931-0.461,13.395,4.473
+		c2.464,4.933,0.46,10.932-4.472,13.394c-4.936,2.467-10.934,0.464-13.397-4.471C108.477,119.503,110.479,113.506,115.415,111.041"
+		/>
+	<path clip-path="url(#SVGID_2_)" fill="#4E4F53" d="M93.645,89.698c0,0,14.831,9.301,9.229,16.699
+		c-0.31,0.408-35.788,8.685-47.59-16.853c-6.699-14.499,2.989-30.075,5.124-31.035c2.131-0.956,2.58-1.058,2.58-1.058
+		S52.016,77.88,72.379,88.218C81.957,93.083,93.645,89.698,93.645,89.698"/>
+	<path clip-path="url(#SVGID_2_)" fill="#4E4F53" d="M61.295,92.952c2.467,4.933,0.462,10.933-4.473,13.396
+		c-4.932,2.464-10.933,0.458-13.396-4.473c-2.464-4.936-0.46-10.934,4.474-13.397C52.834,86.013,58.833,88.016,61.295,92.952"/>
+	<path clip-path="url(#SVGID_2_)" fill="#8C191C" d="M82.638,71.183c0,0-9.3,14.83-16.698,9.229
+		c-0.409-0.312-8.684-35.788,16.853-47.591c14.499-6.699,30.075,2.99,31.034,5.124c0.958,2.13,1.06,2.578,1.06,2.578
+		s-20.43-10.969-30.768,9.395C79.257,59.495,82.638,71.183,82.638,71.183"/>
+	<path clip-path="url(#SVGID_2_)" fill="#8C191C" d="M79.386,38.833c-4.932,2.467-10.931,0.463-13.395-4.471
+		c-2.463-4.935-0.46-10.934,4.472-13.398c4.936-2.464,10.934-0.46,13.397,4.474C86.323,30.373,84.322,36.37,79.386,38.833"/>
+</g>
+<text transform="matrix(1 0 0 1 160.4277 106.9634)" fill="#8C191C" font-family="'Roboto-Bold'" font-size="90">CHOIR</text>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="-34" y="-36" width="800" height="600"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<line clip-path="url(#SVGID_6_)" fill="#8C191C" x1="437.134" y1="29.899" x2="437.134" y2="119.976"/>
+	
+		<line clip-path="url(#SVGID_6_)" fill="none" stroke="#8C191C" stroke-width="2" stroke-miterlimit="10" x1="462.134" y1="29.899" x2="462.134" y2="119.976"/>
+</g>
+<text transform="matrix(1 0 0 1 476.2334 57.9155)"><tspan x="0" y="0" fill="#4E4F53" font-family="'Roboto-Light'" font-size="20">Collaborative</tspan><tspan x="91.497" y="0" fill="#4E4F53" font-family="'Roboto-Light'" font-size="20"></tspan></text>
+<text transform="matrix(1 0 0 1 476.2334 81.9155)" fill="#4E4F53" font-family="'Roboto-Light'" font-size="20">Health Outcomes</text>
+<text transform="matrix(1 0 0 1 476.2334 105.9155)"><tspan x="0" y="0" fill="#4E4F53" font-family="'Roboto-Light'" font-size="20">Information Registry</tspan></text>
+</svg>

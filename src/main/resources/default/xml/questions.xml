@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Questions" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[What are the specific question(s) that you or your doctor wants answered today?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="input" appearance="compact" Class="registrySurvey">
+          <label></label>
+          <ref>QUESTIONS</ref>
+          <location>left</location>
+          <format>
+          <datatype>text</datatype>
+          <lines>10</lines>
+		      <charwidth>80</charwidth>
+          </format>
+          <hint>Enter questions you have.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,380 @@
+<Form Description="Issues" DateStarted="" DateFinished="" questionsPerPage="12">
+ <Items>
+   <Item Order="1" ItemResponse="" ItemScore="">
+     <Description><![CDATA[Do you have any allergies?]]></Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1">
+         <ref>ISSALLERGIES</ref>
+         <item selected="false">
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="2"><Set Type="state" Name="visible" Value="true"/></onselect>
+           <onselect Type="Item" Where="Order" Value="4"><Set Type="state" Name="visible" Value="true"/></onselect>
+           <onselect Type="Item" Where="Order" Value="6"><Set Type="state" Name="visible" Value="true"/></onselect>
+           <onselect Type="Item" Where="Order" Value="8"><Set Type="state" Name="visible" Value="true"/></onselect>
+           <onselect Type="Item" Where="Order" Value="10"><Set Type="state" Name="visible" Value="true"/></onselect>
+           <onselect Type="Item" Where="Order" Value="12"><Set Type="state" Name="visible" Value="true"/></onselect>
+         </item>
+         <item selected="false">
+           <label>No</label>
+           <value>2</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+     <Description><![CDATA[Are you allergic to any of the following:]]></Description>
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSALLERGYMED</ref>
+         <item><label>Medications</label><value>1</value>
+           <onselect Type="Item" Where="Order" Value="3">
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="3" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+        <ref>ISSALLERGYMEDEXP</ref>
+        <label>Please explain the type of reaction you experienced</label>
+
+        <format>
+         <lines>2</lines>
+       </format>
+        <Scores />
+      </Response>
+     </Responses>
+   </Item>
+   <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSALLERGYTAPE</ref>
+         <item><label>Tape or adhesive</label><value>2</value>
+           <onselect Type="Item" Where="Order" Value="5">
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect></item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="5" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSALLERGYTAPEEXP</ref>
+         <label>Please explain the type of reaction you experienced</label>
+         <format>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="6" ItemResponse="" ItemScore="" Visible="false">
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSALLERGYFOOD</ref>
+         <item><label>Foods</label><value>3</value>
+           <onselect Type="Item" Where="Order" Value="7">
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect></item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="7" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSALLERGYFOODEXP</ref>
+         <label>Please explain the type of reaction you experienced</label>
+         <format>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="8" ItemResponse="" ItemScore="" Visible="false">
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSALLERGYLAT</ref>
+         <item><label>Latex</label><value>4</value>
+           <onselect Type="Item" Where="Order" Value="9">
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect></item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="9" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSALLERGYLATEXP</ref>
+         <label>Please explain the type of reaction you experienced</label>
+         <format>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="10" ItemResponse="" ItemScore="" Visible="false">
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSALLERGYOTH</ref>
+         <item><label>Other</label><value>5</value>
+           <onselect Type="Item" Where="Order" Value="11">
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect></item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="11" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSALLERGYOTHEXP</ref>
+         <label>Please explain the type of reaction you experienced</label>
+         <format>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="12" ItemResponse="" ItemScore="" Visible="false">
+    <Responses>
+      <Response Order="1" Type="select">
+        <ref>ISSALLERGYDOC</ref>
+        <item>
+          <label>All my allergies are already documented in the Stanford electronic medical record</label>
+          <value>6</value>
+        </item>
+      </Response>
+   </Responses>
+   </Item>
+   <Item Order="13" ItemResponse="" ItemScore="" required="true" Page="start" >
+     <Description>
+       <![CDATA[Have you taken steroids such as prednisone or cortisone by mouth or by injection within the last six months??]]>
+     </Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1">
+         <ref>ISSSTEROIDS</ref>
+         <item selected="false">
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="14">
+             <Set Type="attribute" Name="RequiredMin" Value="1"/>
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect>
+         </item>
+         <item selected="false">
+           <label>No</label>
+           <value>2</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="14" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Description>Please indicate when you last took steroid medications:</Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1">
+         <ref>ISSSTEROIDSLAST</ref>
+         <item selected="false">
+           <label>More than 3 months ago</label>
+           <value>1</value>
+         </item>
+         <item selected="false">
+           <label>More than 1 month ago</label>
+           <value>2</value>
+         </item>
+         <item selected="false">
+           <label>Still taking</label>
+           <value>3</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="15" ItemResponse="" ItemScore="" required="true" Page="start">
+     <Description>
+       <![CDATA[Have you or any of your close relatives had problems or complications with anesthesia?]]>
+     </Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1" Appearance="full">
+         <ref>ISSCOMPLIC</ref>
+         <item selected="false">
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="16"><Set Type="attribute" Name="RequiredMin" Value="1"/>
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect>
+         </item>
+         <item selected="false">
+           <label>No</label>
+           <value>2</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <!--  conditional-->
+   <Item Order="16" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Visible="false">
+     <Description> <![CDATA[Please provide additional details]]></Description>
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSCOMPLICEXPL</ref>
+         <format>
+           <datatype>text</datatype>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="17" ItemResponse="" ItemScore="" Visible="true" Page="start">
+     <Description>
+             <![CDATA[Please check any of the following that you have or have had]]>
+     </Description>
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSPROBLEMS</ref>
+         <item><label>Heart problems of any kind</label><value>1</value>
+           <onselect Type="Item" Where="Order" Value="18"><Set Type="attribute" Name="RequiredMin" Value="1"/>
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect></item>
+         <item><label>Pace maker and/or cardiac implantable device (anti-shock device)</label><value>16</value></item>
+         <item><label>Cardiac stents</label><value>17</value></item>
+         <item><label>High blood pressure</label><value>2</value></item>
+         <item><label>Lung problem (e.g., pneumonia, emphysema, asthma)</label><value>3</value></item>
+         <item><label>Sleep apnea</label><value>4</value></item>
+         <item><label>Stroke</label><value>5</value></item>
+         <item><label>Seizure or epilepsy</label><value>6</value></item>
+         <item><label>Kidney or bladder problems</label><value>7</value></item>
+         <item><label>Liver problems or hepatitis</label><value>8</value></item>
+         <item><label>Gastroesophageal reflux disease / hiatial hernia</label><value>9</value></item>
+         <item><label>Diabetes</label><value>10</value></item>
+         <item><label>Thyroid disease</label><value>11</value></item>
+         <item><label>Bleeding problem</label><value>12</value></item>
+         <item><label>Cancer</label><value>13</value></item>
+         <item><label>Rheumatoid arthritis</label><value>14</value></item>
+         <item><label>Blood transfusion</label><value>15</value></item>
+         <item><label>Jehovah witness/refusal of blood products</label><value>18</value></item>
+       </Response>
+       <Response Order="2" Type="input">
+         <ref>ISPROBLEMSOTH</ref>
+         <label>Other problems</label>
+         <format>
+           <lines>2</lines>
+         </format>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <!-- Conditional. Only asked if 'Heart problems of any kind' was selected in the previous question -->
+   <Item Order="18" ItemResponse="" ItemScore="" Visible="false">
+     <!--ResponseValue condition="equal" data_value="true"
+                    xpath_query="//Responses/Response/item[label='Heart problems of any kind']/@selected"/ -->
+     <Description>
+     <![CDATA[Do you have a cardiologist?]]>
+   </Description>
+   <Responses>
+     <Response Order="1" required="true" Type="select1" Appearance="full">
+       <ref>CARDIOLOGIST</ref>
+       <item selected="false">
+         <label>Yes</label>
+         <value>1</value>
+         <onselect Type="Item" Where="Order" Value="19">
+           <Set Type="attribute" Name="RequiredMin" Value="1"/>
+           <Set Type="state" Name="visible" Value="true"/>
+         </onselect>
+       </item>
+       <item selected="false">
+         <label>No</label>
+         <value>2</value>
+         <onselect Type="Item" Where="Order" Value="20">
+           <Set Type="attribute" Name="RequiredMin" Value="1"/>
+           <Set Type="state" Name="visible" Value="true"/>
+         </onselect>
+       </item>
+       <Scores />
+     </Response>
+   </Responses>
+   </Item>
+   <Item Order="19" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>CARDIONAME</ref>
+         <label>Cardiologists name</label>
+         <Scores />
+       </Response>
+       <Response Order="2" Type="input">
+         <ref>CARDIONUMBER</ref>
+         <label>Phone number</label>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="20" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>HEARTMGRNAME</ref>
+         <label>Who manages your care for your heart?</label>
+        <Scores />
+       </Response>
+       <Response Order="2" Type="input">
+         <ref>HEARTMGRNUMBER</ref>
+         <label>Phone number</label>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="21" ItemResponse="" ItemScore="" Visible="true" Page="start">
+     <Description>
+       <![CDATA[At the present time, do you have? (Please check appropriate boxes)]]>
+     </Description>
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ISSPRESENT</ref>
+         <item><label>Chest pain</label><value>1</value></item>
+         <item><label>Blackouts or periods of dizziness</label><value>2</value></item>
+         <item><label>Palpitations or irregular heart beats</label><value>3</value></item>
+         <item><label>Ankle swelling</label><value>4</value></item>
+         <item><label>Shortness of breath at night</label><value>5</value></item>
+         <item><label>Shortness of breath while walking up one flight of stairs</label><value>6</value><ref>ISSPRESENTSHRTWALK</ref></item>
+         <item><label>Chronic cough or sputum (phlegm)</label><value>7</value></item>
+         <item><label>Pain in your legs with exercise</label><value>8</value></item>
+         <item><label>Temporary weakness of one or more limbs</label><value>9</value></item>
+         <item><label>Chronic pain</label><value>10</value><ref>ISSPRESENTCHRCPAIN</ref></item>
+         <item><label>Excessive bleeding following minor cuts or dental surgery</label><value>11</value></item>
+         <item><label>Recent weight loss</label><value>12</value></item>
+         <item><label>Difficulty walking</label><value>13</value></item>
+         <item><label>Acid reflex symptoms</label><value>14</value></item>
+         <item><label>Currently pregnant</label><value>15</value></item>
+         <item><label>False teeth, capped teeth, loose teeth, braces, chipped teeth</label><value>16</value></item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="23" ItemResponse="" ItemScore="" Visible="true" Page="start">
+     <Description>If you have any chronic conditions, has there been worsening over the past month?</Description>
+     <Responses>
+       <Response Order="1" Type="input">
+         <ref>ISSCHRONICWORSE</ref>
+         <label></label>
+         <format>
+           <datatype>text</datatype>
+           <lines>2</lines>
+         </format>
+       </Response>
+       <Response Order="2" Type="select">
+         <ref>ISSCHRONICNONE</ref>
+         <item selected="false">
+           <ref>ISSCHRONICNO</ref>
+           <label>No chronic conditions</label>
+           <value>2</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+ </Items>
+</Form>

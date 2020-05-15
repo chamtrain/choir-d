@@ -1,0 +1,15 @@
+<Form Description="Parent Thank You" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Thank you for completing the second portion of this survey.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

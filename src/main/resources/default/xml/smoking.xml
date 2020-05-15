@@ -1,0 +1,55 @@
+<Form Description="Smoking" DateStarted="" DateFinished="" questionsPerPage="2" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Do you smoke?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+			<ref>SMOKENOW</ref>
+          <width>100%</width>
+          <label/>
+          <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+			 <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  This is conditional: only shows if the answer to the previous question is yes -->
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="false" >
+      <Description>
+        <![CDATA[How many packs per day?]]>
+      </Description>
+      <Alert>Please answer all questions</Alert>
+      <Responses>
+        <Response Order="1" Type="input"   Class="registrySurvey"  >
+          <ref>SMOKEPPD</ref>
+          <label>Packs</label>
+          <location>right</location>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Enter the number of packs you smoke per day</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

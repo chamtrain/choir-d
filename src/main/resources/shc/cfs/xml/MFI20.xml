@@ -1,0 +1,363 @@
+<Form Description="MULTIDIMENSIONAL FATIGUE INVENTORY" questionsPerPage="1">
+  <Items>
+    <Item Order="1" >
+      <Description>
+        <![CDATA[
+       We would like to get an idea of how you have been feeling lately.
+        </p><p>For each statement on the following screens please indicate how much it applies to you.
+        </p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p> Consider, for example, the statement:
+</p><p>    "I FEEL RELAXED"
+   </p><p> If you think that this is entirely true, that indeed you have been feeling relaxed lately, please, select the extreme left box, the one labeled "Yes, that is true".
+</p><p>The more you disagree with the statement, the closer you can move in the direction of "no, that is not true", on the far right.
+ </p><p>To select an answer, simply touch the answer bar section you wish to select.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="false">
+        <ref>start</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="2" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I feel fit
+        ]]>
+      </Description>
+      <ref>Q1_POS_FITNESS</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        Physically I feel only able to do a little
+        ]]>
+      </Description>
+      <ref>Q2_NEG_PHYS_ABILITY</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I feel very active
+        ]]>
+      </Description>
+      <ref>Q3_POS_ACTIVE</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I feel like doing all sorts of nice things
+        ]]>
+      </Description>
+      <ref>Q4_POS_PLANS</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="6" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I feel tired
+        ]]>
+      </Description>
+      <ref>Q5_NEG_TIRED</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="7" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I think I do a lot in a day
+        ]]>
+      </Description>
+      <ref>Q6_POS_ACHIEVEMENT</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="8" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        When I am doing something, I can keep my thoughts on it
+        ]]>
+      </Description>
+      <ref>Q7_POS_CONCENTRATION</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="9" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        Physically I can take on a lot
+        ]]>
+      </Description>
+      <ref>Q8_POS_PHYS_CAPACITY</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="10" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I dread having to do things
+        ]]>
+      </Description>
+      <ref>Q9_NEG_FEAR_PLANS</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="11" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I think I do very little in a day
+        ]]>
+      </Description>
+      <ref>Q10_NEG_ACHIEVEMENT</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="12" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I can concentrate well
+        ]]>
+      </Description>
+      <ref>Q11_POS_CONCENTRATION</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="13" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I am rested
+        ]]>
+      </Description>
+      <ref>Q12_POS_RESTED</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="14" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        It takes a lot of effort to concentrate on things
+        ]]>
+      </Description>
+      <ref>Q13_NEG_CONCENTRATION</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="15" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        Physically I feel I am in a bad condition
+        ]]>
+      </Description>
+      <ref>Q14_NEG_PHYS_COND</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="16" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I have a lot of plans
+        ]]>
+      </Description>
+      <ref>Q15_POS_PLANS</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="17" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I tire easily
+        ]]>
+      </Description>
+      <ref>Q16_NEG_TIRED</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="18" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I get little done
+        ]]>
+      </Description>
+      <ref>Q17_NEG_ACHIEVEMENT</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="19" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        I don't feel like doing anything
+        ]]>
+      </Description>
+      <ref>Q18_NEG_MOTIVATION</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        My thoughts easily wander
+        ]]>
+      </Description>
+      <ref>Q19_NEG_CONCENTRATION</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="5" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="1" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="1"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="21" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        Physically I feel I am in an excellent condition
+        ]]>
+      </Description>
+      <ref>Q20_POS_FITNESS</ref>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Value="1" ShowValue="false" Description=""  Description2="Yes, that is true" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Value="2" ShowValue="false" Description=""><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Value="3" ShowValue="false" Description=""><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Value="4" ShowValue="false" Description=""><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Value="5" ShowValue="false" Description=""  Description2="No, that is not true"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22">
+      <Description>
+        <![CDATA[
+        Thank you for completing the MFI-20 questionnaire. Please click "continue" to proceed to the next set of questions.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        <ref>end</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

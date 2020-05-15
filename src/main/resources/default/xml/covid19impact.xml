@@ -1,0 +1,2757 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="COVID-19 Patient Impact Survey" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[We are interested in learning how COVID-19 has impacted your pain care and access to comprehensive treatments. We also hope to better understand any challenges you are facing in accessing care and ways we can mitigate that. You can help us by choosing ‘Yes’, after reading the information sheet below. This survey should take about 5-10 minutes. Of course, all answers will be confidential. No matter what you decide your treatment will be the same.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>APPROVE</ref>
+        </Response>
+        <Response Order="1" Type="collapsible" required="false">
+          <CollapsibleContent><![CDATA[<p><b><em>STANFORD UNIVERSITY Research Consent Form</em></b></p>
+<p><b>Protocol Director:</b> Sean Mackey MD PhD</p>
+<p><b>Protocol Title:</b>  Behavioral and Social Determinants of Pain</p>
+<hr><b>IRB Use Only Approval Date:</b>   April 30, 2020 Expiration Date: (Does not Expire)
+<hr>
+<p><b>FOR QUESTIONS ABOUT THE STUDY, CONTACT:</b></p>
+<p>Sean Mackey MD PhD, 300 Pasteur dr. Mail Code 5596 Stanford California 94305. Telephone (650) 498-6477 Fax (650) 725-9642</p>
+ 
+<p><b>PURPOSE OF RESEARCH</b></p>
+<p>
+You are invited to participate in a research study on the effects of past life events, behavior, and thought processes on current pain symptoms. We hope that the data collected will help to bring understanding to chronic pain and also develop new treatments. In light of the coronavirus pandemic, we are also interested in assessing how COVID-19 has impacted your pain care, health status, and access to comprehensive pain care. We also hope to better understand any challenges you are facing in accessing care and ways we can mitigate that. You will be asked to complete one or more short surveys as a participant of this study.
+Future use of Private Information and/or Specimens
+Research using private information and/or specimens is an important way to try to understand human disease.  You are being given this information because the investigators want to save private information and/or specimens for future research.  
+</p> 
+
+<p><b>VOLUNTARY PARTICIPATION</b></p>
+<p>
+Your participation in this study is entirely voluntary. Your decision not to participate will not have any negative effect on you or your medical care. You can decide to participate now but withdraw your consent leader and stop being in the study without any loss of benefits or medical care to which you are entitled.
+</p>
+
+<p><b>STUDY PROCEDURES</b></p>
+<p>Your participation will take approximately 15 minutes.</p>
+
+<p><b>COMPENSATION</b></p>
+<p>You will not receive compensation or payment for your participation.</p>
+
+<p><b>POSSIBLE RISKS, DISCOMMFORTS, AND INCONVENIECES</b></p>
+<p>There are risks discomforts and inconveniences associated with any research study. These deserve careful thought.  You will be asked to fill out a questionnaire. The questionnaire may contain sensitive items that may cause emotional discomfort. As the survey responses are protected personal health information, all data will be stored on encrypted computers or in locked cabinets. Only researchers who are trained in handling protected information, and who are working directly with the data will have access to the raw data. This is in compliance with federal HIPAA law. You should talk with the protocol director if you have any questions. You may discontinue participation at any time if you feel the need to do so. We do not believe this study will put your health at risk.</p>
+
+<p><b>POTENTIAL BENEFITS</b></p>
+<p>
+We cannot and do not promise that you will receive any direct benefits from the study.</p>
+
+<p><b>PARTICIPANT’S RIGHTS</b></p>
+<p>If you have read this form and have decided to participate in this project, please understand your participation is voluntary and you have the right to withdraw your consent or discontinue participation at any time without penalty or loss of benefits to which you are otherwise entitled.</p>
+<p>
+The results of this research study may be presented at scientific or professional meetings or published in scientific journals.  However, your identity will not be disclosed. You have the right to refuse to answer particular questions.</p>
+<p>
+Identifiers might be removed from identifiable private information and/or identifiable specimens and, after such removal, the information and/or specimens could be used for future research studies or distributed to another investigator for future research studies without additional informed consent from you.</p>
+<p>
+It is possible that, based on information gained from this study, the researchers may have serious concerns (e.g., severe depression, etc.) about your health and/or safety. In such a case, the researchers made contact you and provide a referral for your care.
+</p>
+
+<p><b>CONFIDENTIALITY</b></p>
+<p>The results of this research study maybe presented in scientific or medical meetings or published in scientific journals. Your identity and or personal health information will not be disclosed except for as authorized or required by law.</p>
+
+<p><b>Authorization To Use Your Health Information For Research Purposes </b></p>
+<p>
+Because information about you and your health is personal and private, it generally cannot be used in this research study without your written authorization.  If you sign this form, it will provide that authorization.  The form is intended to inform you about how your health information will be used or disclosed in the study.  Your information will only be used in accordance with this authorization form and the informed consent form and as required or allowed by law.  Please read it carefully before signing it.</p>
+
+<p><b>What is the purpose of this research study and how will my health information be utilized in the study?</b></p>
+<p>
+The answers that you provide will allow researchers to understand the effects of past events, as well as current behavior and thought patterns affect chronic pain patients. It will also help researchers understand the impact of coronavirus on your care and your access to appropriate pain care. This information may be analyzed in connection to other data that you have already provided for another research project or during your medical care at Stanford. This information will be protected under HIPAA guidelines and no persons other than the involved researchers will have access to the raw data. Any academic publications resulting from this study will only present data that has been de-identified and cannot be traced 
+back to you as an individual.</p>
+
+<p><b>Do I have to sign this authorization form?</b></p>
+<p>
+You do not have to sign this authorization form.  But if you do not, you will not be able to participate in this research study. Signing the form is not a condition for receiving any medical care outside the study.</p>
+
+<p><b>If I sign, can I revoke it or withdraw from the research later?</b></p>
+<p>
+
+If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your health information (and to discontinue any other participation in the study) at any time.  After any revocation, your health information will no longer be used or disclosed in the study, except to the extent that the law allows us to continue using your information (e.g., necessary to maintain integrity of research).  If you wish to revoke your authorization for the research use or disclosure of your health information in this study, you must write to: Sean Mackey MD PhD, 300 Pasteur dr. Mail Code 5596 Stanford California 94305. Telephone (650) 498-6477 Fax (650) 725-9642
+ </p>
+<p><b>What Personal Information Will Be Obtained, Used or Disclosed?</b></p>
+<p>
+Participant identifying information, including name, demographic data, and medical record number will be collected. The study survey may also inquire whether you or someone you know have tested positive for coronavirus. This study will also utilize personal health information collected during the course of this study, as well as information provided at Stanford pain clinics, or during the participation of other studies conducted by the Stanford Pain Division. The least amount of information needed to accomplish the study will be collected or reviewed. No personal health information will be disclosed outside of our research group and the raw data will be available only to the minimum number of people necessary to complete the study.</p>
+
+<p><b>Who May Use or Disclose the Information?</b></p>
+<p>
+
+The following parties are authorized to use and/or disclose your health information in connection with this research study:
+</p>
+<p></p><ul>
+<li>    The Protocol Director Sean Mackey MD PhD</li>
+<li>    The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary</li>
+<li>    Research Staff</li>
+</ul>
+<p></p><p><b>
+Who May Receive or Use the Information?</b></p><p></p>
+<p>
+The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations for their use in connection with this research study:
+ 
+</p><ul><li>   The Office for Human Research Protections in the U.S. Department of Health and Human Services</li></ul>
+ 
+<p> 
+Your information may be re-disclosed by the recipients described above, if they are not required by law to protect the privacy of the information.
+</p>
+
+<p><b> When will my authorization expire?</b></p>
+<p>
+Your authorization for the use and/or disclosure of your health information will end on December 31 2099 or when the research project ends, whichever is earlier.
+</p><p><b> 
+WITHDRAWAL FROM STUDY</b></p> 
+
+<p>
+The Protocol Director may also withdraw you from the study without your consent for one or more of the following reasons:  
+</p><ul>	<li>The study is cancelled.</li>
+	<li>Other administrative reasons.</li>
+	<li>Unanticipated circumstances.</li>
+ </ul><p></p>
+
+<p><b>CONTACT INFORMATION:</b></p>
+<p>
+If you have any questions, concerns or complaints about this research study, its procedures, risks and benefits, or alternative courses of treatment, you should ask the Protocol Director, Sean Mackey MD PhD phone: (650) 498-6477.  You should also contact him/her at any time if you feel you have been hurt by being a part of this study.
+ 
+</p><p>
+If you are not satisfied with how this study is being conducted, or if you have concerns, complaints, or general questions about the research or your rights as a participant, you may contact the Stanford Institutional Review Board (IRB) to speak to somebody who is independent of the research team at (650) 723-5244 or toll free at 1-866-680-2906. You can also write to the Stanford IRB, Stanford University, 1705 El Camino Real, Palo Alto, CA 94306.
+            </p>]]></CollapsibleContent>
+          <label><![CDATA[More Information]]></label>
+          <ref>CONSENT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Has your pain care been impacted by COVID-19? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>IMPACTED</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[In what ways has COVID-19 impacted your pain care? ]]></Description>
+      <Description><![CDATA[Ease of accessing pain care providers:]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely easy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Easy]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No impact]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Difficult]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>ACCESS_PROVIDERS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[In what ways has COVID-19 impacted your pain care? ]]></Description>
+      <Description><![CDATA[Ease of accessing necessary clinical care:]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely easy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Easy]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No impact]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Difficult]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>ACCESS_CARE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[In what ways has COVID-19 impacted your pain care? ]]></Description>
+      <Description><![CDATA[Scheduling visits to authorize prescriptions:]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely easy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Easy]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No impact]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Difficult]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>ACCESS_SCHEDULE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[In what ways has COVID-19 impacted your pain care? ]]></Description>
+      <Description><![CDATA[Obtaining prescriptions from the pharmacy:]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely easy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Easy]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No impact]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Difficult]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>ACCESS_RX</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[In what ways has COVID-19 impacted your pain care? ]]></Description>
+      <Description><![CDATA[Ease of accessing other pain-related treatments (e.g. procedures, injections, PT, acupuncture, psychological services):]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely easy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Easy ]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No impact]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Difficult]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>ACCESS_OTHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Has your pain care been impacted in other ways due to COVID-19?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='IMPACTED']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <lines>2</lines>
+          </format>
+          <ref>IMPACTED_OTHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="8" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[Have video visits been satisfactory for the offered services (e.g. medical appointments, psychological evaluations, individual sessions)? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not satisfactory at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="8" Description2="" Order="7" Type="radio">
+          <Scores>
+            <Score value="8"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="9" Description2="" Order="8" Type="radio">
+          <Scores>
+            <Score value="9"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="10" Description2="Fully satisfactory" Order="9" Type="radio">
+          <Scores>
+            <Score value="10"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>SATISFY</ref>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Are there any treatment options you are unable to access? (check all that apply)]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select" required="true">
+          <item>
+            <label><![CDATA[Physical Therapy]]></label>
+            <value><![CDATA[0]]></value>
+            <ref><![CDATA[PT]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Pain psychology services ]]></label>
+            <value><![CDATA[1]]></value>
+            <ref><![CDATA[PPS]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Acupuncture ]]></label>
+            <value><![CDATA[2]]></value>
+            <ref><![CDATA[Acu]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Epidural Steroid Injections]]></label>
+            <value><![CDATA[3]]></value>
+            <ref><![CDATA[ESI]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Nerve block]]></label>
+            <value><![CDATA[4]]></value>
+            <ref><![CDATA[NB]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Botox injection]]></label>
+            <value><![CDATA[5]]></value>
+            <ref><![CDATA[BI]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Nerve ablation]]></label>
+            <value><![CDATA[6]]></value>
+            <ref><![CDATA[NAB]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Surgery/ other procedure ]]></label>
+            <value><![CDATA[7]]></value>
+            <ref><![CDATA[SURG]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Device implant ]]></label>
+            <value><![CDATA[8]]></value>
+            <ref><![CDATA[DI]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Admission into SCIPP ]]></label>
+            <value><![CDATA[9]]></value>
+            <ref><![CDATA[SCIPP]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[Other]]></label>
+            <value><![CDATA[10]]></value>
+            <ref><![CDATA[OTR]]></ref>
+          </item>
+          <item>
+            <label><![CDATA[None]]></label>
+            <value><![CDATA[11]]></value>
+            <ref><![CDATA[NONE]]></ref>
+          </item>
+          <ref>NO_ACCESS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[Why are you unable to access physical therapy? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Physical Therapy')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_PT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description><![CDATA[Why are you unable to access pain psychology services?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Pain psychology services ')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_PPS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12">
+      <Description><![CDATA[Why are you unable to access acupuncture treatment? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Acupuncture ')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_ACU</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13">
+      <Description><![CDATA[Why are you unable to access epidural steroid injection treatments? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Epidural Steroid Injections')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_EPI</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="14">
+      <Description><![CDATA[Why are you unable to access nerve block treatments?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Nerve block')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_NB</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="15">
+      <Description><![CDATA[Why are you unable to access Botox injection treatments?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Botox injection')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_BOTOX</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="16">
+      <Description><![CDATA[Why are you unable to access nerve ablation treatments?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Nerve ablation')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_NB</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="17">
+      <Description><![CDATA[Why are you unable to access surgery or other procedures?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Surgery/ other procedure ')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_SURG</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="18">
+      <Description><![CDATA[Why are you unable to access device implant treatments?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Device implant ')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_DEV</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="19">
+      <Description><![CDATA[Why are you unable to get admission into SCIPP?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Admission into SCIPP ')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_SCIPP</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="20">
+      <Description><![CDATA[What other treatments are you unable to access?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Other')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>OTHER_WHAT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="21">
+      <Description><![CDATA[If you selected 'other', please describe which treatment options you have been unable to access.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='NO_ACCESS']/item[@selected='true' and (label='Other')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>NO_ACCESS_OTHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="22">
+      <Description><![CDATA[Why are you unable to access your other treatments?]]></Description>
+      <ResponseValue condition="exists" data_value="" xpath_query="//Item/Responses/Response[ref='OTHER_WHAT']/value/text()"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>WHY_OTHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="23" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[How satisfied are you with your current pain care? ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="0" Description2="Not satisfied" Order="0" Type="radio">
+          <Scores>
+            <Score value="0"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="6" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="" Order="7" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="8" Description2="" Order="8" Type="radio">
+          <Scores>
+            <Score value="8"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="9" Description2="" Order="9" Type="radio">
+          <Scores>
+            <Score value="9"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="10" Description2="Fully satisfied" Order="10" Type="radio">
+          <Scores>
+            <Score value="10"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>SATISFY_CURRENT_CARE</ref>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="24">
+      <Description><![CDATA[In which ways do you think your pain care could be improved?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>IMPROVE_CARE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="25">
+      <Description><![CDATA[Have you tested positive for COVID-19?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>POSITIVE_TEST</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="26">
+      <Description><![CDATA[Has someone close to you tested positive for COVID-19?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>POSITIVE_TEST_OTHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="27">
+      <Description><![CDATA[Are you an essential worker who has had to work during the lockdown?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>ESSENTIAL_WORKER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="28" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[Thinking about the coronavirus (COVID-19) makes me feel threatened. ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>THREAT</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="29" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I am afraid of the coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>AFRAID</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="30" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I am not worried about the coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>NOT_WORRIED</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="31" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I am worried that I, or people I love will get sick from the coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>WORRIED_GET_SICK</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="32" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I am stressed around other people because I worry I’ll catch the coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>WORRIED_CATCH</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="33" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have tried hard to avoid other people because I don’t want to get sick.	]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>AVOID_OTHERS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="34" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[The coronavirus (COVID-19) has impacted me negatively from a financial point of view.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>NEG_FINANCE</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="35" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have lost job-related income due to the coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>LOST_JOB</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="36" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[The coronavirus (COVID-19) has NOT impacted my financial status at all.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>FINANCE_UNCHANGED</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="37" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have had a hard time getting needed resources (food, toilet paper) due to the coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>GET_RSRCS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="38" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[It has been difficult for me to get the things I need due to the coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>GET_NEEDS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="39" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[The coronavirus (COVID-19) has NOT affected my ability to get needed resources.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>RESOURCES_UNCHANGED</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="40" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have had trouble reaching my pain management clinician due to disruption from coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>CLINICIAN_ACCESS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="41" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have had trouble reaching my general/family practitioner due to disruption from coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>GP_ACCESS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="42" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have become depressed because of the coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>DEPRESSED</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="43" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[The coronavirus (COVID-19) outbreak has impacted my psychological health negatively.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>NEG_PSYCH</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="44" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[The coronavirus (COVID-19) pandemic has NOT made me feel any worse than I did before.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>NOT_FEEL_WORSE</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="45" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[My pain levels have been worse since coronavirus (COVID-19) began.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>PAIN_LEVELS_WORSE</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="46" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have had difficulty determining if my pain symptoms could be coronavirus or if they are part of my daily pain condition.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>SYMPTOM_CONFUSION</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="47" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have been diagnosed with coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>DIAG_W_COVID19</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="48" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have had coronavirus-like symptoms at some point in the last two months.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>HAD_SYMPTOMS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="49" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have been sick with something other than the coronavirus in the last two months. ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>SICK_OTHER</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="50" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I know someone who has been diagnosed with coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>KNOW_DIAG</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="51" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have been in close proximity with someone who has been diagnosed with coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>CLOSE_PROX_DIAG</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="52" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I know someone who has had coronavirus-like symptoms in the last two months.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>KNOW_HAD_SYMP</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="53" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I have been in close proximity with someone who has had coronavirus-like symptoms in the last two months. ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>CLOSE_PROX_SYMP</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="54" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I watch a lot of news about the coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>WATCH_NEWS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="55" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I purposefully try NOT to watch news on coronavirus (COVID-19). ]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>NOT_WATCH_NEWS</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="56" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I spend a huge percentage of my time trying to find updates online or on TV about coronavirus (COVID-19).]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true of me at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true of me" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>TIME_UPDATES</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="57" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[My relationships with family members have improved during the pandemic.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>REL_FAM</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="58" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[ My relationships with friends have improved during the pandemic.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>REL_FRND</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="59" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I feel closer to friends and family during the pandemic.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>REL_CLSR</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="60" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[Overall, my pain care has been affected more than my other medical care needs during the COVID-19 pandemic.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>AFF_PN_CARE</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="61" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[Overall, the current model of care delivery (video visits) is more suited to pain care than my other medical care.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Not true at all" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Very true" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>VID_VISITS</ref>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="62">
+      <Description><![CDATA[Have you visited the Stanford Pain Management Center within the last 14 days?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>VISITED</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="63">
+      <Description><![CDATA[What was the date of your last visit?]]></Description>
+      <Responses>
+        <Response Order="0" Type="datePicker" required="true">
+          <ref>DATE_VISITED</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="64">
+      <Description><![CDATA[Did the appointment scheduler show concern and respect?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>CON_SCHED</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="65">
+      <Description><![CDATA[Did the staff show concern and respect at check-in?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>CON_STAFF</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="66">
+      <Description><![CDATA[Ease of contacting the clinic by phone.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>EASE_CONTACT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="67">
+      <Description><![CDATA[Finding convenient appointment times.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>CONV_APPT_TIME</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="68">
+      <Description><![CDATA[Updated you about delays.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>UPDATE_DELAYS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="69">
+      <Description><![CDATA[Waiting time at the clinic.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>WAIT_TIME</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="70">
+      <Description><![CDATA[Concerns and respect shown by nurse/assistant.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>CONCERN_NURSE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="71">
+      <Description><![CDATA[Care provider spent enough time with you.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>ENOUGH_TIME</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="72">
+      <Description><![CDATA[Concern and respect shown by care provider.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very Little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>CONCERN_PROV</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="73">
+      <Description><![CDATA[Instructions and educational material the care provider gave you.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>EDU_MAT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="74">
+      <Description><![CDATA[Your input was considered in treatment decisions.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>TREAT_DEC</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="75">
+      <Description><![CDATA[Clinic's ability to coordinate care with your other physicians?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>COORDINATE_CARE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="76">
+      <Description><![CDATA[Ease of obtaining new studies, lab work, psychology, or physical therapy?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>EASY_STUDIES</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="77">
+      <Description><![CDATA[Ease of contacting clinic by MyHealth?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very poor]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Poor]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fair]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Good]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very good]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>MYHEALTH</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="78">
+      <Description><![CDATA[Our program met your needs.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>MET_NEEDS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="79">
+      <Description><![CDATA[You can now better manage your pain.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>MANAGE_PN</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="80">
+      <Description><![CDATA[You can now perform more activities.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>PERF_ACT</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="81">
+      <Description><![CDATA[Clinic staff worked together to care for you.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Not applicable]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>WORKED_TOGETHER</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="82">
+      <Description><![CDATA[Your satisfaction with the current plan?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>PT_SAT_PAN</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="83">
+      <Description><![CDATA[Likelihood of your recommending the clinic to others?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very little]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>RECOMMEND</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="84">
+      <Description><![CDATA[Please provide any additional feedback below.]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='APPROVE']/item[@selected='true' and (label='Yes')]/@selected"/>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>EXTRA_FEEDBACK</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

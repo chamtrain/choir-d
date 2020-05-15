@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="Ineligible" notification="false" appointment_template="None" schedule_template="None" 
+               order="101" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2015">
+    <Questionaire order="1" value="NoSurvey"                 type="Local" xml="NoSurvey"                print_order="1" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpDone" notification="false" appointment_template="None" schedule_template="None" 
+               order="102" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2015">
+    <Questionaire order="1" value="NoSurvey"                 type="Local" xml="NoSurvey"                print_order="1" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="NoSurvey" notification="false" appointment_template="None" schedule_template="None" 
+               order="103" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2015">
+    <Questionaire order="1" value="NoSurvey"                 type="Local" xml="NoSurvey"                print_order="1" print_type="text"/>
+  </ProcessType>
+
+<!-- Surveys version 3/01/2015 -->
+
+  <ProcessType value="InitialHip.0315" notification="true" appointment_template="Initial" schedule_template="No-appointment" 
+               order="1" visit="1" visitType="POV" report="Initial"
+               start_date="03-01-2015" expiration_date="04-26-2015">
+    <Questionaire order="1" value="EmailAddress"             type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2" value="UCLAActivityScore"        type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="3" value="HOOSHipSymptoms"          type="Local" xml="HOOSHipSymptoms"         print_order="2"  print_type="text"/>
+    <Questionaire order="4" value="HOOSHipPain"              type="Local" xml="HOOSHipPain"             print_order="3"  print_type="text"/>
+    <Questionaire order="5" value="HOOSHipFunction"          type="Local" xml="HOOSHipFunction"         print_order="4"  print_type="text"/>
+    <Questionaire order="6" value="HOOSHipSports"            type="Local" xml="HOOSHipSports"           print_order="5"  print_type="text"/>
+    <Questionaire order="7" value="HOOSHipQOL"               type="Local" xml="HOOSHipQOL"              print_order="6"  print_type="text"/>
+    <Questionaire order="8" value="VR12"                     type="Local" xml="VR12"                    print_order="7"  print_type="text"/>
+    <Questionaire order="9" value="HarrisHipPain"            type="Local" xml="HarrisHipPain"           print_order="8"  print_type="text"/>
+    <Questionaire order="10" value="HarrisHipFunction"       type="Local" xml="HarrisHipFunction"       print_order="9"  print_type="text"/>
+    <Questionaire order="11" value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialKnee.0315" notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               order="1" visit="1" visitType="POV" report="Initial"
+               start_date="03-01-2015" expiration_date="04-26-2015">
+    <Questionaire order="1" value="EmailAddress"             type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2" value="UCLAActivityScore"        type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="3" value="KOOSKneeSymptoms"         type="Local" xml="KOOSKneeSymptoms"        print_order="2"  print_type="text"/>
+    <Questionaire order="4" value="KOOSKneePain"             type="Local" xml="KOOSKneePain"            print_order="3"  print_type="text"/>
+    <Questionaire order="5" value="KOOSKneeFunction"         type="Local" xml="KOOSKneeFunction"        print_order="4"  print_type="text"/>
+    <Questionaire order="6" value="KOOSKneeSports"           type="Local" xml="KOOSKneeSports"          print_order="5"  print_type="text"/>
+    <Questionaire order="7" value="KOOSKneeQOL"              type="Local" xml="KOOSKneeQOL"             print_order="6"  print_type="text"/>
+    <Questionaire order="8" value="VR12"                     type="Local" xml="VR12"                    print_order="7"  print_type="text"/>
+    <Questionaire order="9" value="KneeSocietySymptoms"      type="Local" xml="KneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="10" value="KneeSocietySatisfaction" type="Local" xml="KneeSocietySatisfaction" print_order="9"  print_type="text"/>
+    <Questionaire order="11" value="KneeSocietyPreExpect"    type="Local" xml="KneeSocietyPreExpect"    print_order="10" print_type="text"/>
+<!-- <Questionaire order="11" value="KneeSocietyPostExpect"   type="Local" xml="KneeSocietyPostExpect"   print_order="10" print_type="text"/> -->
+    <Questionaire order="12" value="KneeSocietyFunctionAids" type="Local" xml="KneeSocietyFunctionAids" print_order="11" print_type="text"/>
+    <Questionaire order="13" value="KneeSocietyFunction"     type="Local" xml="KneeSocietyFunction"     print_order="12" print_type="text"/>
+    <Questionaire order="14" value="KneeSocietyRecreation"   type="Local" xml="KneeSocietyRecreation"   print_order="13" print_type="text"/>
+    <Questionaire order="15" value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+  </ProcessType>
+   
+  <ProcessType value="FollowUpHip.0315" notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               order="1" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-01-2015" expiration_date="04-26-2015">
+    <Questionaire order="1" value="EmailAddress"             type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2" value="UCLAActivityScore"        type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="3" value="HOOSHipSymptoms"          type="Local" xml="HOOSHipSymptoms"         print_order="2"  print_type="text"/>
+    <Questionaire order="4" value="HOOSHipPain"              type="Local" xml="HOOSHipPain"             print_order="3"  print_type="text"/>
+    <Questionaire order="5" value="HOOSHipFunction"          type="Local" xml="HOOSHipFunction"         print_order="4"  print_type="text"/>
+    <Questionaire order="6" value="HOOSHipSports"            type="Local" xml="HOOSHipSports"           print_order="5"  print_type="text"/>
+    <Questionaire order="7" value="HOOSHipQOL"               type="Local" xml="HOOSHipQOL"              print_order="6"  print_type="text"/>
+    <Questionaire order="8" value="VR12"                     type="Local" xml="VR12"                    print_order="7"  print_type="text"/>
+    <Questionaire order="9" value="HarrisHipPain"            type="Local" xml="HarrisHipPain"           print_order="8"  print_type="text"/>
+    <Questionaire order="10" value="HarrisHipFunction"       type="Local" xml="HarrisHipFunction"       print_order="9"  print_type="text"/>
+    <Questionaire order="11" value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpKnee.0315" notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               order="2" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-01-2015" expiration_date="04-26-2015">
+    <Questionaire order="1" value="EmailAddress"             type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2" value="UCLAActivityScore"        type="Local" xml="UCLAActivityScore"       print_order="1" print_type="text"/>
+    <Questionaire order="3" value="KOOSKneeSymptoms"         type="Local" xml="KOOSKneeSymptoms"        print_order="2" print_type="text"/>
+    <Questionaire order="4" value="KOOSKneePain"             type="Local" xml="KOOSKneePain"            print_order="3" print_type="text"/>
+    <Questionaire order="5" value="KOOSKneeFunction"         type="Local" xml="KOOSKneeFunction"        print_order="4" print_type="text"/>
+    <Questionaire order="6" value="KOOSKneeSports"           type="Local" xml="KOOSKneeSports"          print_order="5" print_type="text"/>
+    <Questionaire order="7" value="KOOSKneeQOL"              type="Local" xml="KOOSKneeQOL"             print_order="6" print_type="text"/>
+    <Questionaire order="8" value="VR12"                     type="Local" xml="VR12"                    print_order="7" print_type="text"/>
+    <Questionaire order="9" value="KneeSocietySymptoms"      type="Local" xml="KneeSocietySymptoms"     print_order="8" print_type="text"/>
+    <Questionaire order="10" value="KneeSocietySatisfaction"  type="Local" xml="KneeSocietySatisfaction" print_order="9" print_type="text"/>
+<!-- <Questionaire order="11" value="KneeSocietyPreExpect"    type="Local" xml="KneeSocietyPreExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="11" value="KneeSocietyPostExpect"   type="Local" xml="KneeSocietyPostExpect"   print_order="10" print_type="text"/>
+    <Questionaire order="12" value="KneeSocietyFunctionAids" type="Local" xml="KneeSocietyFunctionAids" print_order="11" print_type="text"/>
+    <Questionaire order="13" value="KneeSocietyFunction"     type="Local" xml="KneeSocietyFunction"     print_order="12" print_type="text"/>
+    <Questionaire order="14" value="KneeSocietyRecreation"   type="Local" xml="KneeSocietyRecreation"   print_order="13" print_type="text"/>
+    <Questionaire order="15" value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="20" print_type="text"/>
+  </ProcessType>
+
+<!-- Surveys version 4/26/2015 -->
+
+  <ProcessType value="InitialLeftHip.0415" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="1" visit="1" visitType="POV" report="Initial"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightHip.0415" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="2" visit="1" visitType="POV" report="Initial"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLeftKnee.0415" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="3" visit="1" visitType="POV" report="Initial"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                        type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeSports"          type="Local" xml="LeftKOOSKneeSports"          print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="LeftKOOSKneeQOL"             type="Local" xml="LeftKOOSKneeQOL"             print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="10" print_type="text"/>
+<!-- <Questionaire order="12" value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightKnee.0415" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="4" visit="1" visitType="POV" report="Initial"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+    <Questionaire order="12" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="10" print_type="text"/>
+<!-- <Questionaire order="12" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiKnee.0415" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="5" visit="1" visitType="POV" report="Initial"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire order="6"  value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="5"  print_type="text"/>
+    <Questionaire order="9"  value="LeftKOOSKneeSports"           type="Local" xml="LeftKOOSKneeSports"           print_order="6"  print_type="text"/>
+    <Questionaire order="10" value="LeftKOOSKneeQOL"              type="Local" xml="LeftKOOSKneeQOL"              print_order="7"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="9"  print_type="text"/>
+    <Questionaire order="13" value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="10" print_type="text"/>
+<!-- <Questionaire order="13" value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="14" value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="11" print_type="text"/>
+    <Questionaire order="15" value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="12" print_type="text"/>
+    <Questionaire order="16" value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire order="17" value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="13"  print_type="text"/>
+    <Questionaire order="18" value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="14"  print_type="text"/>
+    <Questionaire order="19" value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="15"  print_type="text"/>
+    <Questionaire order="20" value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="16"  print_type="text"/>
+    <Questionaire order="21" value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="17"  print_type="text"/>
+    <Questionaire order="22" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="18"  print_type="text"/>
+    <Questionaire order="23" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="19"  print_type="text"/>
+    <Questionaire order="24" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="20" print_type="text"/>
+<!-- <Questionaire order="24" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="20" print_type="text"/> -->
+    <Questionaire order="25" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="21" print_type="text"/>
+    <Questionaire order="26" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="22" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftHip.0415" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="6" visit="2" visitType="RPV" report="FollowUp"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightHip.0415" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="7" visit="2" visitType="RPV" report="FollowUp"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftKnee.0415" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="8" visit="2" visitType="RPV" report="FollowUp"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                        type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeSports"          type="Local" xml="LeftKOOSKneeSports"          print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="LeftKOOSKneeQOL"             type="Local" xml="LeftKOOSKneeQOL"             print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+<!-- <Questionaire order="12" value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="12" value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="10" print_type="text"/>
+    <Questionaire order="13" value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightKnee.0415" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="9" visit="2" visitType="RPV" report="FollowUp"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="5"  print_type="text"/>
+    <Questionaire order="8"  value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="6"  print_type="text"/>
+    <Questionaire order="9"  value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="7"  print_type="text"/>
+    <Questionaire order="10" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+<!-- <Questionaire order="12" value="RightKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="12" value="RightKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="10" print_type="text"/>
+    <Questionaire order="13" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiKnee.0415" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="10" visit="2" visitType="RPV" report="FollowUp"
+               start_date="04-26-2015" expiration_date="07-01-2015">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire order="6"  value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="5"  print_type="text"/>
+    <Questionaire order="9"  value="LeftKOOSKneeSports"           type="Local" xml="LeftKOOSKneeSports"           print_order="6"  print_type="text"/>
+    <Questionaire order="10" value="LeftKOOSKneeQOL"              type="Local" xml="LeftKOOSKneeQOL"              print_order="7"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="9"  print_type="text"/>
+<!-- <Questionaire order="13" value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="10" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="11" print_type="text"/>
+    <Questionaire order="15" value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="12" print_type="text"/>
+    <Questionaire order="16" value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire order="17" value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="13" print_type="text"/>
+    <Questionaire order="18" value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="14" print_type="text"/>
+    <Questionaire order="19" value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="15" print_type="text"/>
+    <Questionaire order="20" value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="16" print_type="text"/>
+    <Questionaire order="21" value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="17" print_type="text"/>
+    <Questionaire order="22" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="18" print_type="text"/>
+    <Questionaire order="23" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="19" print_type="text"/>
+<!-- <Questionaire order="24" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="20" print_type="text"/> -->
+    <Questionaire order="24" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="20" print_type="text"/>
+    <Questionaire order="25" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="21" print_type="text"/>
+    <Questionaire order="26" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="22" print_type="text"/>
+  </ProcessType>
+
+<!-- Surveys version 7/1/2015 -->
+
+  <ProcessType value="InitialLeftHip.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="1" visit="1" visitType="POV" report="Initial"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightHip.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="2" visit="1" visitType="POV" report="Initial"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiHip.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="3" visit="1" visitType="POV" report="Initial"
+               start_date="08-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire order="6"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+<!-- <Questionaire order="9"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="10"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/> -->
+    <Questionaire order="11" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+    <Questionaire order="13" value="BilateralRightHip"       type="Local" xml="BilateralRightHip"        />
+    <Questionaire order="14"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="10"  print_type="text"/>
+    <Questionaire order="15"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="11"  print_type="text"/>
+    <Questionaire order="16"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="12"  print_type="text"/>
+<!-- <Questionaire order="17"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="13"  print_type="text"/> -->
+<!-- <Questionaire order="18"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="14"  print_type="text"/> -->
+    <Questionaire order="19" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="15"  print_type="text"/>
+    <Questionaire order="20" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="16"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLeftKnee.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="4" visit="1" visitType="POV" report="Initial"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                        type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="LeftKOOSKneeSports"          type="Local" xml="LeftKOOSKneeSports"          print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="LeftKOOSKneeQOL"             type="Local" xml="LeftKOOSKneeQOL"             print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="10" print_type="text"/>
+<!-- <Questionaire order="12" value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightKnee.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="5" visit="1" visitType="POV" report="Initial"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+    <Questionaire order="12" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="10" print_type="text"/>
+<!-- <Questionaire order="12" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiKnee.0715" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="6" visit="1" visitType="POV" report="Initial"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire order="6"  value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="5"  print_type="text"/>
+<!-- <Questionaire order="9"  value="LeftKOOSKneeSports"           type="Local" xml="LeftKOOSKneeSports"           print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="10" value="LeftKOOSKneeQOL"              type="Local" xml="LeftKOOSKneeQOL"              print_order="7"  print_type="text"/> -->
+    <Questionaire order="11" value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="9"  print_type="text"/>
+    <Questionaire order="13" value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="10" print_type="text"/>
+<!-- <Questionaire order="13" value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="14" value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="11" print_type="text"/>
+    <Questionaire order="15" value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="12" print_type="text"/>
+    <Questionaire order="16" value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire order="17" value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="13"  print_type="text"/>
+    <Questionaire order="18" value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="14"  print_type="text"/>
+    <Questionaire order="19" value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="15"  print_type="text"/>
+<!-- <Questionaire order="20" value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="16"  print_type="text"/> -->
+<!-- <Questionaire order="21" value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="17"  print_type="text"/> -->
+    <Questionaire order="22" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="18"  print_type="text"/>
+    <Questionaire order="23" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="19"  print_type="text"/>
+    <Questionaire order="24" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="20" print_type="text"/>
+<!-- <Questionaire order="24" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="20" print_type="text"/> -->
+    <Questionaire order="25" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="21" print_type="text"/>
+    <Questionaire order="26" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="22" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftHip.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="7" visit="2" visitType="RPV" report="FollowUp"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightHip.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="8" visit="2" visitType="RPV" report="FollowUp"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="9"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiHip.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="9" visit="2" visitType="RPV" report="FollowUp"
+               start_date="08-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                    type="Local" xml="VR12"                    print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire order="6"  value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="5"  print_type="text"/>
+<!-- <Questionaire order="9"  value="LeftHOOSHipSports"       type="Local" xml="LeftHOOSHipSports"       print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="10"  value="LeftHOOSHipQOL"          type="Local" xml="LeftHOOSHipQOL"          print_order="7"  print_type="text"/> -->
+    <Questionaire order="11" value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="9"  print_type="text"/>
+    <Questionaire order="13" value="BilateralRightHip"       type="Local" xml="BilateralRightHip"        />
+    <Questionaire order="14"  value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="10"  print_type="text"/>
+    <Questionaire order="15"  value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="11"  print_type="text"/>
+    <Questionaire order="16"  value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="12"  print_type="text"/>
+<!-- <Questionaire order="17"  value="RightHOOSHipSports"      type="Local" xml="RightHOOSHipSports"      print_order="13"  print_type="text"/> -->
+<!-- <Questionaire order="18"  value="RightHOOSHipQOL"         type="Local" xml="RightHOOSHipQOL"         print_order="14"  print_type="text"/> -->
+    <Questionaire order="19" value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="15"  print_type="text"/>
+    <Questionaire order="20" value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="16"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftKnee.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="10" visit="2" visitType="RPV" report="FollowUp"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                        type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="LeftKOOSKneeSports"          type="Local" xml="LeftKOOSKneeSports"          print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="LeftKOOSKneeQOL"             type="Local" xml="LeftKOOSKneeQOL"             print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+<!-- <Questionaire order="12" value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="12" value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="10" print_type="text"/>
+    <Questionaire order="13" value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightKnee.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="11" visit="2" visitType="RPV" report="FollowUp"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="20" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="21" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="3"  print_type="text"/>
+    <Questionaire order="6"  value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="4"  print_type="text"/>
+    <Questionaire order="7"  value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="5"  print_type="text"/>
+<!-- <Questionaire order="8"  value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="9"  value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="7"  print_type="text"/> -->
+    <Questionaire order="10" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="8"  print_type="text"/>
+    <Questionaire order="11" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="9"  print_type="text"/>
+<!-- <Questionaire order="12" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="10" print_type="text"/> -->
+    <Questionaire order="12" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="10" print_type="text"/>
+    <Questionaire order="13" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="11" print_type="text"/>
+    <Questionaire order="14" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="12" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiKnee.0715" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="12" visit="2" visitType="RPV" report="FollowUp"
+               start_date="07-01-2015" expiration_date="03-09-2016">
+    <Questionaire order="1"  value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire order="2"  value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire order="3"  value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"           print_order="1"  print_type="text"/>
+    <Questionaire order="4"  value="VR12"                         type="Local" xml="VR12"                        print_order="2"  print_type="text"/>
+    <Questionaire order="5"  value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire order="6"  value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="3"  print_type="text"/>
+    <Questionaire order="7"  value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="4"  print_type="text"/>
+    <Questionaire order="8"  value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="5"  print_type="text"/>
+<!-- <Questionaire order="9"  value="LeftKOOSKneeSports"           type="Local" xml="LeftKOOSKneeSports"           print_order="6"  print_type="text"/> -->
+<!-- <Questionaire order="10" value="LeftKOOSKneeQOL"              type="Local" xml="LeftKOOSKneeQOL"              print_order="7"  print_type="text"/> -->
+    <Questionaire order="11" value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="8"  print_type="text"/>
+    <Questionaire order="12" value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="9"  print_type="text"/>
+<!-- <Questionaire order="13" value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="10" print_type="text"/> -->
+    <Questionaire order="13" value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="10" print_type="text"/>
+    <Questionaire order="14" value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="11" print_type="text"/>
+    <Questionaire order="15" value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="12" print_type="text"/>
+    <Questionaire order="16" value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire order="17" value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="13" print_type="text"/>
+    <Questionaire order="18" value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="14" print_type="text"/>
+    <Questionaire order="19" value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="15" print_type="text"/>
+<!-- <Questionaire order="20" value="RightKOOSKneeSports"          type="Local" xml="RightKOOSKneeSports"          print_order="16" print_type="text"/> -->
+<!-- <Questionaire order="21" value="RightKOOSKneeQOL"             type="Local" xml="RightKOOSKneeQOL"             print_order="17" print_type="text"/> -->
+    <Questionaire order="22" value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="18" print_type="text"/>
+    <Questionaire order="23" value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="19" print_type="text"/>
+<!-- <Questionaire order="24" value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="20" print_type="text"/> -->
+    <Questionaire order="24" value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="20" print_type="text"/>
+    <Questionaire order="25" value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="21" print_type="text"/>
+    <Questionaire order="26" value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="22" print_type="text"/>
+  </ProcessType>
+
+<!-- Surveys version 3/9/2016 -->
+
+  <ProcessType value="InitialLeftHip.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="13" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartLeftHip"            type="Local" xml="StartLeftHip"            />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="10" print_type="text"/>
+    <Questionaire value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="11" print_type="text"/>
+    <Questionaire value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="12" print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13" print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightHip.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="14" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartRightHip"           type="Local" xml="StartRightHip"           />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="20"  print_type="text"/>
+    <Questionaire value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="21"  print_type="text"/>
+    <Questionaire value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="22"  print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23"  print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiHip.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="15" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartBiHip"              type="Local" xml="StartBiHip"              />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="10"  print_type="text"/>
+    <Questionaire value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="11"  print_type="text"/>
+    <Questionaire value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="12"  print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13"  print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14"  print_type="text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="20"  print_type="text"/>
+    <Questionaire value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="21"  print_type="text"/>
+    <Questionaire value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="22"  print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23"  print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24"  print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLeftKnee.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="16" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartLeftKnee"               type="Local" xml="StartLeftKnee"               />
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="text"/>
+    <Questionaire value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="10"  print_type="text"/>
+    <Questionaire value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="11"  print_type="text"/>
+    <Questionaire value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="12"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="15"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightKnee.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="17" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartRightKnee"               type="Local" xml="StartRightKnee"               />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="20"  print_type="text"/>
+    <Questionaire value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="21"  print_type="text"/>
+    <Questionaire value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="22"  print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23"  print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24"  print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25"  print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiKnee.0316" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="18" visit="1" visitType="POV" report="Initial"
+               start_date="03-09-2016">
+    <Questionaire value="StartBiKnee"                  type="Local" xml="StartBiKnee"                  />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="10"  print_type="text"/>
+    <Questionaire value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="11"  print_type="text"/>
+    <Questionaire value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="12"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="15"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="20"  print_type="text"/>
+    <Questionaire value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="21"  print_type="text"/>
+    <Questionaire value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="22"  print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23"  print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24"  print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftHip.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="19" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartLeftHip"            type="Local" xml="StartLeftHip"            />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="10.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="10.2"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="10.3"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightHip.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="20" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartRightHip"           type="Local" xml="StartRightHip"           />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="20.1"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="20.2"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="20.3"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiHip.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="21" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartBiHip"              type="Local" xml="StartBiHip"              />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSHipSymptoms"     type="Local" xml="LeftHOOSHipSymptoms"     print_order="10.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSHipPain"         type="Local" xml="LeftHOOSHipPain"         print_order="10.2"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSHipFunction"     type="Local" xml="LeftHOOSHipFunction"     print_order="10.3"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSHipSymptoms"    type="Local" xml="RightHOOSHipSymptoms"    print_order="20.1"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSHipPain"        type="Local" xml="RightHOOSHipPain"        print_order="20.2"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSHipFunction"    type="Local" xml="RightHOOSHipFunction"    print_order="20.3"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftKnee.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="22" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartLeftKnee"               type="Local" xml="StartLeftKnee"               />
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftKOOSKneeSymptoms"        type="Local" xml="LeftKOOSKneeSymptoms"        print_order="10.1" print_type="chart, text"/>
+    <Questionaire value="LeftKOOSKneePain"            type="Local" xml="LeftKOOSKneePain"            print_order="10.2" print_type="chart, text"/>
+    <Questionaire value="LeftKOOSKneeFunction"        type="Local" xml="LeftKOOSKneeFunction"        print_order="10.3" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14"  print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightKnee.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="23" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartRightKnee"               type="Local" xml="StartRightKnee"               />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="20.1" print_type="chart, text"/>
+    <Questionaire value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="20.2" print_type="chart, text"/>
+    <Questionaire value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="20.3" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiKnee.0316" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="24" visit="2" visitType="RPV" report="FollowUp"
+               start_date="03-09-2016">
+    <Questionaire value="StartBiKnee"                  type="Local" xml="StartBiKnee"                  />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSKneeSymptoms"         type="Local" xml="LeftKOOSKneeSymptoms"         print_order="10.1" print_type="chart, text"/>
+    <Questionaire value="LeftKOOSKneePain"             type="Local" xml="LeftKOOSKneePain"             print_order="10.2" print_type="chart, text"/>
+    <Questionaire value="LeftKOOSKneeFunction"         type="Local" xml="LeftKOOSKneeFunction"         print_order="10.3" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSKneeSymptoms"        type="Local" xml="RightKOOSKneeSymptoms"        print_order="20.1" print_type="chart, text"/>
+    <Questionaire value="RightKOOSKneePain"            type="Local" xml="RightKOOSKneePain"            print_order="20.2" print_type="chart, text"/>
+    <Questionaire value="RightKOOSKneeFunction"        type="Local" xml="RightKOOSKneeFunction"        print_order="20.3" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+<!-- Surveys version 1/1/2017 -->
+
+  <ProcessType value="InitialLeftHip.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="13" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13" print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightHip.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="14" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23" print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiHip.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="15" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13" print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14" print_type="text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23" print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLeftKnee.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="16" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="text"/>
+    <Questionaire value="LeftKOOSJR"                  type="Local" xml="LeftKOOSJR"                  print_order="10" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightKnee.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="17" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiKnee.0117" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="18" visit="1" visitType="POV" report="Initial"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSJR"                   type="Local" xml="LeftKOOSJR"                   print_order="10" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftHip.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="19" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightHip.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="20" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiHip.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="21" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftKnee.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="22" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftKOOSJR"                  type="Local" xml="LeftKOOSJR"                  print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightKnee.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="23" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiKnee.0117" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="24" visit="2" visitType="RPV" report="FollowUp"
+               start_date="01-01-2017" expiration_date="02-05-2017">
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSJR"                   type="Local" xml="LeftKOOSJR"                   print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+
+<!-- Surveys version 2/12/2017 -->
+
+  <ProcessType value="InitialLeftHipJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="1" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartLeftHip"            type="Local" xml="StartLeftHip"            />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13" print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightHipJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="2" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartRightHip"           type="Local" xml="StartRightHip"           />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23" print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiHipJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="3" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartBiHip"              type="Local" xml="StartBiHip"              />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="13" print_type="text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="14" print_type="text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="23" print_type="text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="24" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLeftKneeJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="4" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartLeftKnee"               type="Local" xml="StartLeftKnee"               />
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="text"/>
+    <Questionaire value="LeftKOOSJR"                  type="Local" xml="LeftKOOSJR"                  print_order="10" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"    type="Local" xml="LeftKneeSocietyPreExpect"    print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialRightKneeJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="5" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartRightKnee"               type="Local" xml="StartRightKnee"               />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="InitialBiKneeJR.0217" notification="true" appointment_template="Initial" schedule_template="Initial" 
+               order="6" visit="1" visitType="POV" report="Initial"
+               start_date="02-05-2017">
+    <Questionaire value="StartBiKnee"                  type="Local" xml="StartBiKnee"                  />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSJR"                   type="Local" xml="LeftKOOSJR"                   print_order="10" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPreExpect"     type="Local" xml="LeftKneeSocietyPreExpect"     print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPreExpect"    type="Local" xml="RightKneeSocietyPreExpect"    print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftHipJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="7" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartLeftHip"            type="Local" xml="StartLeftHip"            />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightHipJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="8" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartRightHip"           type="Local" xml="StartRightHip"           />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiHipJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="9" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartBiHip"              type="Local" xml="StartBiHip"              />
+    <Questionaire value="EmailAddress"            type="Local" xml="EmailAddress"            print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent" type="Local" xml="TJAOutcomesStudyConsent" print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"              type="Local" xml="SurveyInfo"              print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"       type="Local" xml="UCLAActivityScore"       print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                    type="Local" xml="VR12"                    print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftHip"        type="Local" xml="BilateralLeftHip"        />
+    <Questionaire value="LeftHOOSJR"              type="Local" xml="LeftHOOSJR"              print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipPain"       type="Local" xml="LeftHarrisHipPain"       print_order="11.1"  print_type="chart, text"/>
+    <Questionaire value="LeftHarrisHipFunction"   type="Local" xml="LeftHarrisHipFunction"   print_order="11.2"  print_type="chart, text"/>
+    <Questionaire value="BilateralRightHip"       type="Local" xml="BilateralRightHip"       />
+    <Questionaire value="RightHOOSJR"             type="Local" xml="RightHOOSJR"             print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipPain"      type="Local" xml="RightHarrisHipPain"      print_order="21.1"  print_type="chart, text"/>
+    <Questionaire value="RightHarrisHipFunction"  type="Local" xml="RightHarrisHipFunction"  print_order="21.2"  print_type="chart, text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpLeftKneeJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="10" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartLeftKnee"               type="Local" xml="StartLeftKnee"               />
+    <Questionaire value="EmailAddress"                type="Local" xml="EmailAddress"                print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"     type="Local" xml="TJAOutcomesStudyConsent"     print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                  type="Local" xml="SurveyInfo"                  print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"           type="Local" xml="UCLAActivityScore"           print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                        type="Local" xml="VR12"                        print_order="3"  print_type="chart, text"/>
+    <Questionaire value="LeftKOOSJR"                  type="Local" xml="LeftKOOSJR"                  print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"     type="Local" xml="LeftKneeSocietySymptoms"     print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction" type="Local" xml="LeftKneeSocietySatisfaction" print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"   type="Local" xml="LeftKneeSocietyPostExpect"   print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"    type="Local" xml="LeftKneeSocietyFunction2"    print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"   type="Local" xml="LeftKneeSocietyRecreation"   print_order="17" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpRightKneeJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="11" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartRightKnee"               type="Local" xml="StartRightKnee"               />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="FollowUpBiKneeJR.0217" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" 
+               order="12" visit="2" visitType="RPV" report="FollowUp"
+               start_date="02-05-2017">
+    <Questionaire value="StartBiKnee"                  type="Local" xml="StartBiKnee"                  />
+    <Questionaire value="EmailAddress"                 type="Local" xml="EmailAddress"                 print_order="30" print_type="text"/>
+    <Questionaire value="TJAOutcomesStudyConsent"      type="Local" xml="TJAOutcomesStudyConsent"      print_order="31" print_type="text"/>
+    <Questionaire value="SurveyInfo"                   type="Local" xml="SurveyInfo"                   print_order="1"  print_type="text"/>
+    <Questionaire value="UCLAActivityScore"            type="Local" xml="UCLAActivityScore"            print_order="2"  print_type="chart, text"/>
+    <Questionaire value="VR12"                         type="Local" xml="VR12"                         print_order="3"  print_type="chart, text"/>
+    <Questionaire value="BilateralLeftKnee"            type="Local" xml="BilateralLeftKnee"            />
+    <Questionaire value="LeftKOOSJR"                   type="Local" xml="LeftKOOSJR"                   print_order="10" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietySymptoms"      type="Local" xml="LeftKneeSocietySymptoms"      print_order="13" print_type="text"/>
+    <Questionaire value="LeftKneeSocietySatisfaction"  type="Local" xml="LeftKneeSocietySatisfaction"  print_order="14" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyPostExpect"    type="Local" xml="LeftKneeSocietyPostExpect"    print_order="15" print_type="text"/>
+    <Questionaire value="LeftKneeSocietyFunction2"     type="Local" xml="LeftKneeSocietyFunction2"     print_order="16" print_type="chart, text"/>
+    <Questionaire value="LeftKneeSocietyRecreation"    type="Local" xml="LeftKneeSocietyRecreation"    print_order="17" print_type="text"/>
+    <Questionaire value="BilateralRightKnee"           type="Local" xml="BilateralRightKnee"           />
+    <Questionaire value="RightKOOSJR"                  type="Local" xml="RightKOOSJR"                  print_order="20" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietySymptoms"     type="Local" xml="RightKneeSocietySymptoms"     print_order="23" print_type="text"/>
+    <Questionaire value="RightKneeSocietySatisfaction" type="Local" xml="RightKneeSocietySatisfaction" print_order="24" print_type="text"/>
+    <Questionaire value="RightKneeSocietyPostExpect"   type="Local" xml="RightKneeSocietyPostExpect"   print_order="25" print_type="text"/>
+    <Questionaire value="RightKneeSocietyFunction2"    type="Local" xml="RightKneeSocietyFunction2"    print_order="26" print_type="chart, text"/>
+    <Questionaire value="RightKneeSocietyRecreation"   type="Local" xml="RightKneeSocietyRecreation"   print_order="27" print_type="text"/>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="HDR15" group="return" />
+    <VisitType value="NPV 30" group="new" />
+    <VisitType value="NPV15" group="new" />
+    <VisitType value="NPV20" group="new" />
+    <VisitType value="POV" group="return" />
+    <VisitType value="POV 15" group="return" />
+    <VisitType value="POV30" group="return" />
+    <VisitType value="PREOP" group="return" />
+    <VisitType value="Pre Op 45" group="return" />
+    <VisitType value="RPV" group="return" />
+    <VisitType value="RPV 15" group="return" />
+    <VisitType value="RPV10" group="return" />
+    <VisitType value="RPV30" group="return" />
+  </VisitTypes>
+</Process>    

@@ -1,0 +1,22 @@
+<Form Description="Email Address" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" condition="notexists"/>
+      <Description>
+<![CDATA[
+  <p>Please provide an email address so that we can contact you for follow up surveys.</p>
+]]>
+      </Description>
+      <Responses> 
+        <Response Order="1" ref="email" Type="input" required="false">
+          <label>Email Address</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

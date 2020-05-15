@@ -1,0 +1,25 @@
+<Form Description="Energy Index Point Score" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[Please select the number corresponding to your level of activity based upon the past two weeks.]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>activity_level</ref>
+          <item><value>0</value><label>0. Bed-ridden, up to bathroom only</label></item>
+          <item><value>1</value><label>1. Out of bed 30-60 minutes a day (sitting in chair is out of bed)</label></item>
+          <item><value>2</value><label>2. Out of bed sitting, standing, walking 1-2 hours per day</label></item>
+          <item><value>3</value><label>3. Out of bed sitting, standing, walking 2-4 hours per day</label></item>
+          <item><value>4</value><label>4. Out of bed sitting, standing, walking 4-6 hours per day</label></item>
+          <item><value>5</value><label>5. Perform with difficulty sedentary job 40 hours a week, daily naps</label></item>
+          <item><value>6</value><label>6. Daily naps in bed, may maintain a 40 hour sedentary work week plus light, limited housekeeping and/or social activities</label></item>
+          <item><value>7</value><label>7. No naps in bed. Up 7:00am to 9:00pm. Able to work a sedentary job plus light housekeeping</label></item>
+          <item><value>8</value><label>8. Full sedentary workweek, no naps, some social activities plus light exercise</label></item>
+          <item><value>9</value><label>9. Same as 8 above plus exercise approximately 1/2 to 1/3 normal without excessive fatigue, awake next morning refreshed</label></item>
+          <item><value>10</value><label>10. Normal</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

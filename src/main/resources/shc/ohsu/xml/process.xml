@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+  <ProcessType value="NoSurvey" notification="false" appointment_template="None" schedule_template="None" 
+               order="90" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2020">
+    <Questionaire order="1" value="NoSurvey"                 type="Local" xml="NoSurvey"                print_order="1" print_type="text"/>
+  </ProcessType>
+
+  <!-- Active -->
+  <ProcessType value="Initial.0320" notification="true" appointment_template="Initial2" schedule_template="No-appointment2"
+               order="1" visit="1" visitType="New" report="Initial"
+               start_date="03-01-2020" >
+
+    <ProcessSubType surveyName="Child">
+      <Questionaire value="startChildSurvey2"        type="Local" xml="startChildSurvey2"        />
+      <Questionaire value="childPainCurrent"         type="Local" xml="childPainCurrent"         print_order="1" print_type="text, img"/>
+      <Questionaire value="childPainPastWeek"        type="Local" xml="childPainPastWeek"        print_order="3" print_type="text"/>
+      <Questionaire value="childPainQuestions"       type="Local" xml="childPainQuestions"       print_order="4" print_type="text"/>
+      <Questionaire value="painIntensity"            type="Local" xml="painIntensity"            print_order="16.1"  print_type="table"/>
+      <Questionaire value="childSleepQuestions"      type="Local" xml="childSleepQuestions"      print_order="31.1" print_type="text"/>
+      <Questionaire value="pedPainCatastrophizingScale" type="Local" xml="pedPainCatastrophizingScale" print_order="30.1" print_type="chart, text"/>
+      <Questionaire value="childPedsQL2"             type="Local" xml="childPedsQL2"             print_order="40" print_type="chart, text"/>
+      <Questionaire value="childFOPQ"                type="Local" xml="childFOPQ"                print_order="34.1" print_type="chart, text"/>
+      <Questionaire value="childPromisStart"         type="Local" xml="childPromisStart"         />
+      <Questionaire value="PROMIS Ped Bank v1.0 - Mobility"           type="LocalPromis"         print_order="20.1" print_type="chart, text" invert="true"/>
+      <Questionaire value="PROMIS Ped Bank v1.0 - Pain Interference"  type="LocalPromis"         print_order="21.1" print_type="chart, text"/>
+      <Questionaire value="PROMIS Ped Bank v1.0 - Peer Rel"           type="LocalPromis"         print_order="22.1" print_type="chart, text" invert="true"/>
+      <Questionaire value="PROMIS Ped Bank v1.0 - Fatigue"            type="LocalPromis"         print_order="23.1" print_type="chart, text"/>
+      <Questionaire value="PROMIS Ped Bank v1.1 - Anxiety"            type="LocalPromis"         print_order="24.1" print_type="chart, text"/>
+      <Questionaire value="childSleepDisturbance"    type="Local" xml="childSleepDisturbance"    print_order="27.1" print_type="chart, text"/>
+      <Questionaire value="PROMIS Ped Bank v1.1 - Depressive Sx"      type="LocalPromis"         print_order="25.1" print_type="chart, text"/>
+      <Questionaire value="childDepressive"          type="Local" xml="childDepressive"          print_order="8.1" print_type="text"/>
+      <Questionaire value="childSelfEfficacy"        type="Local" xml="childSelfEfficacy"        print_order="35.1" print_type="chart, text"/>
+      <Questionaire value="assistedChild"            type="Local" xml="assistedChild"            />
+      <Questionaire value="surveyFeedback"           type="Local" xml="surveyFeedback"           print_order="90" print_type="text"/>
+    </ProcessSubType>
+    
+    <ProcessSubType surveyName="Parent">
+      <Questionaire value="startParentSurvey2"       type="Local" xml="startParentSurvey2"       />
+      <Questionaire value="parentInitialBackground2"  type="Local" xml="parentInitialBackground2"  print_order="12" print_type="text"/>
+      <Questionaire value="parentInitialSiblings2"    type="Local" xml="parentInitialSiblings2"    print_order="13" print_type="text"/>
+      <Questionaire value="parentInitialCaregiver2"   type="Local" xml="parentInitialCaregiver2"   print_order="14" print_type="text"/>
+      <Questionaire value="parentInitialMedical"     type="Local" xml="parentInitialMedical"     print_order="9"  print_type="text"/>
+      <Questionaire value="parentInitialMedProblems2" type="Local" xml="parentInitialMedProblems2" print_order="11" print_type="text"/>
+      <Questionaire value="parentInitialMedHistory"  type="Local" xml="parentInitialMedHistory"  print_order="10" print_type="text"/>
+      <Questionaire value="proxyPainImprovementInit" type="Local" xml="proxyPainImprovementInit" print_order="16" print_type="text"/>
+      <Questionaire value="proxyPainCurrent2"         type="Local" xml="proxyPainCurrent2"         print_order="5" print_type="text"/>
+      <Questionaire value="proxyPainPastWeek"        type="Local" xml="proxyPainPastWeek"        print_order="6" print_type="text"/>
+      <Questionaire value="proxyPainQuestions2"       type="Local" xml="proxyPainQuestions2"       print_order="7" print_type="text"/>
+      <Questionaire value="proxyPainIntensity"       type="Local" xml="proxyPainIntensity"       print_order="16.2" print_type="table"/>
+      <Questionaire value="proxySleepQuestions2"      type="Local" xml="proxySleepQuestions2"      print_order="31.2" print_type="text"/>
+      <Questionaire value="ARCSProtect2"              type="Local" xml="ARCSProtect2"              print_order="41" print_type="chart, text"/>
+      <Questionaire value="proxyPainCatastrophizingScale2" type="Local" xml="proxyPainCatastrophizingScale2" print_order="30.2" print_type="chart, text"/>
+      <Questionaire value="proxyPromisStart"         type="Local" xml="proxyPromisStart"         />
+      <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Mobility"          type="LocalPromis" print_order="20.2" print_type="chart, text" invert="true"/>
+      <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Pain Interference" type="LocalPromis" print_order="21.2" print_type="chart, text"/>
+      <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Peer Relations"    type="LocalPromis" print_order="22.2" print_type="chart, text" invert="true"/>
+      <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Fatigue"           type="LocalPromis" print_order="23.2" print_type="chart, text"/>
+      <Questionaire value="PROMIS Parent Proxy Bank v1.1 - Anxiety"           type="LocalPromis" print_order="24.2" print_type="chart, text"/>
+      <Questionaire value="PROMIS Parent Proxy Bank v1.1 - Depressive Sx"     type="LocalPromis" print_order="25.2" print_type="chart, text"/>
+      <Questionaire value="proxyDepressive2"          type="Local" xml="proxyDepressive2"      print_order="8.2" print_type="text"/>
+      <Questionaire value="proxySelfEfficacy2"        type="Local" xml="proxySelfEfficacy2"        print_order="35.2" print_type="chart, text"/>
+      <Questionaire value="parentQuestions"          type="Local" xml="parentQuestions"          />
+      <Questionaire value="parentGlobalHealth"       type="Local" xml="parentGlobalHealth"       print_order="26" print_type="chart, text" invert="true"/>
+      <Questionaire value="otherFamilyIssues"        type="Local" xml="otherFamilyIssues"        print_order="15" print_type="text"/>
+      <Questionaire value="assistedParent"           type="Local" xml="assistedParent"           />
+      <Questionaire value="surveyFeedback"           type="Local" xml="surveyFeedback"           print_order="90" print_type="text"/>
+      <Questionaire value="EmailAddress"             type="Local" xml="EmailAddress"             />
+      <Questionaire value="research"                 type="Local" xml="research"                 print_order="91" print_type="text"/>
+    </ProcessSubType>
+  </ProcessType>
+
+  <ProcessType value="FollowUp.0320" notification="true" appointment_template="FollowUp2" schedule_template="No-appointment2"
+      order="3" visit="2" visitType="FU" report="FollowUp"
+      start_date="03-01-2020" >
+
+    <ProcessSubType surveyName="Child">
+    <Questionaire value="startChildSurvey2"        type="Local" xml="startChildSurvey2"        />
+    <Questionaire value="childPainCurrent"         type="Local" xml="childPainCurrent"         print_order="1" print_type="text, chart, img"/>
+    <Questionaire value="childPainPastWeek"        type="Local" xml="childPainPastWeek"        print_order="3" print_type="text"/>
+    <Questionaire value="childPainImprovement"     type="Local" xml="childPainImprovement"     print_order="4" print_type="text"/>
+    <Questionaire value="painIntensity"            type="Local" xml="painIntensity"            print_order="2"  print_type="chart"/>
+    <Questionaire value="childSleepQuestions"      type="Local" xml="childSleepQuestions"      print_order="31.1" print_type="text"/>
+    <Questionaire value="pedPainCatastrophizingScale" type="Local" xml="pedPainCatastrophizingScale" print_order="30.1" print_type="chart, text"/>
+    <Questionaire value="childPedsQL2"             type="Local" xml="childPedsQL2"             print_order="40" print_type="chart, text"/>
+    <Questionaire value="childFOPQ"                type="Local" xml="childFOPQ"                print_order="34.1" print_type="chart, text"/>
+    <Questionaire value="childPromisStart"         type="Local" xml="childPromisStart"         />
+    <Questionaire value="PROMIS Ped Bank v1.0 - Mobility"           type="LocalPromis"         print_order="20.1" print_type="chart, text" invert="true"/>
+    <Questionaire value="PROMIS Ped Bank v1.0 - Pain Interference"  type="LocalPromis"         print_order="21.1" print_type="chart, text"/>
+    <Questionaire value="PROMIS Ped Bank v1.0 - Peer Rel"           type="LocalPromis"         print_order="22.1" print_type="chart, text" invert="true"/>
+    <Questionaire value="PROMIS Ped Bank v1.0 - Fatigue"            type="LocalPromis"         print_order="23.1" print_type="chart, text"/>
+    <Questionaire value="PROMIS Ped Bank v1.1 - Anxiety"            type="LocalPromis"         print_order="24.1" print_type="chart, text"/>
+    <Questionaire value="childSleepDisturbance"    type="Local" xml="childSleepDisturbance"    print_order="27.1" print_type="chart, text"/>
+    <Questionaire value="PROMIS Ped Bank v1.1 - Depressive Sx"      type="LocalPromis"         print_order="25.1" print_type="chart, text"/>
+    <Questionaire value="childSelfEfficacy"        type="Local" xml="childSelfEfficacy"        print_order="35.1" print_type="chart, text"/>
+    <Questionaire value="assistedChild"            type="Local" xml="assistedChild"            />
+    <Questionaire value="surveyFeedback"           type="Local" xml="surveyFeedback"           print_order="90" print_type="text"/>
+    </ProcessSubType>
+
+    <ProcessSubType surveyName="Parent">
+    <Questionaire value="startParentSurvey2"       type="Local" xml="startParentSurvey2"       />
+    <Questionaire value="proxyPainCurrent2"         type="Local" xml="proxyPainCurrent2"         print_order="5" print_type="text"/>
+    <Questionaire value="proxyPainPastWeek"        type="Local" xml="proxyPainPastWeek"        print_order="6" print_type="text"/>
+    <Questionaire value="proxyPainImprovement"     type="Local" xml="proxyPainImprovement"     print_order="7" print_type="text"/>
+    <Questionaire value="proxyPainIntensity"       type="Local" xml="proxyPainIntensity"       />
+    <Questionaire value="proxySleepQuestions2"      type="Local" xml="proxySleepQuestions2"      print_order="31.2" print_type="text"/>
+    <Questionaire value="ARCSProtect2"              type="Local" xml="ARCSProtect2"              print_order="41" print_type="chart, text"/>
+    <Questionaire value="proxyPainCatastrophizingScale2" type="Local" xml="proxyPainCatastrophizingScale2" print_order="30.2" print_type="chart, text"/>
+    <Questionaire value="proxyPromisStart"         type="Local" xml="proxyPromisStart"         />
+    <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Mobility"          type="LocalPromis" print_order="20.2" print_type="chart, text" invert="true"/>
+    <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Pain Interference" type="LocalPromis" print_order="21.2" print_type="chart, text"/>
+    <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Peer Relations"    type="LocalPromis" print_order="22.2" print_type="chart, text" invert="true"/>
+    <Questionaire value="PROMIS Parent Proxy Bank v1.0 - Fatigue"           type="LocalPromis" print_order="23.2" print_type="chart, text"/>
+    <Questionaire value="PROMIS Parent Proxy Bank v1.1 - Anxiety"           type="LocalPromis" print_order="24.2" print_type="chart, text"/>
+    <Questionaire value="PROMIS Parent Proxy Bank v1.1 - Depressive Sx"     type="LocalPromis" print_order="25.2" print_type="chart, text"/>
+    <Questionaire value="proxySelfEfficacy2"        type="Local" xml="proxySelfEfficacy2"        print_order="35.2" print_type="chart, text"/>
+    <Questionaire value="parentQuestions"          type="Local" xml="parentQuestions"          />
+    <Questionaire value="parentGlobalHealth"       type="Local" xml="parentGlobalHealth"       print_order="26" print_type="chart, text" invert="true"/>
+    <Questionaire value="assistedParent"           type="Local" xml="assistedParent"           />
+    <Questionaire value="surveyFeedback"           type="Local" xml="surveyFeedback"           print_order="90" print_type="text"/>
+    <Questionaire value="EmailAddress"             type="Local" xml="EmailAddress"             />
+    <Questionaire value="research"                 type="Local" xml="research"                 print_order="91" print_type="text"/>
+    </ProcessSubType>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="New" group="new" />
+    <VisitType value="New MD" group="new" />
+    <VisitType value="New Pain Psy" group="new" />
+    <VisitType value="FU" group="return" />
+    <VisitType value="FU 30" group="return" />
+    <VisitType value="FU 45" group="return" />
+    <VisitType value="FU 60" group="return" />
+    <VisitType value="FU Pain Psy" group="return" />
+    <VisitType value="Acupunct" group="return" />
+    <VisitType value="NERVE BLOCK" group="return" />
+    <VisitType value="TRIG POINT" group="return" />
+    <VisitType value="PReP" group="return" />
+    <VisitType value="PPPRC" group="return" />
+    <VisitType value="PPPRC OT" group="return" />
+    <VisitType value="PPPRC PT" group="return" />
+    <VisitType value="PPPRC PSYCH" group="return" />
+  </VisitTypes>
+</Process>    

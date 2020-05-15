@@ -1,0 +1,16 @@
+<Form Description="Child Depressive" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description><![CDATA[I thought about hurting myself.]]></Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="false">
+          <item><label>Never</label><value>0</value></item>
+          <item><label>Almost Never</label><value>1</value></item>
+          <item><label>Sometimes</label><value>2</value></item>
+          <item><label>Often</label><value>3</value></item>
+          <item><label>Almost Always</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

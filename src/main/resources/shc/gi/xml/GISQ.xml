@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Symptom Specific Questions" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Have you experienced any heartburn in the last 1 year?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>gisq_heartburn</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Do you have any difficulty or pain swallowing? ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>gisq_swallowing_difficulty</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Do you have nausea and a full feeling after eating a little food in the last 1 year?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>gisq_nausea_full</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Have any of your activities, relationships, or feelings have been affected by your bladder, bowel, or vaginal symptoms or conditions over the last 3 months?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>gisq_affected</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>
+

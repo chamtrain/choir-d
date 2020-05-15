@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="HEAL Spirituality (SPT)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Please respond to each question or statement by marking one box per row.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[Spiritual beliefs give meaning to my life]]></label>
+          <ref>SPT1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[Spiritual beliefs give me hope]]></label>
+          <ref>SPT2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[I find comfort in my faith]]></label>
+          <ref>SPT3</ref>
+        </Response>
+        <Response Appearance="Full" Order="3" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[My spirituality gives me inner strength]]></label>
+          <ref>SPT4</ref>
+        </Response>
+        <Response Appearance="Full" Order="4" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[Prayer is a meaningful part of my life]]></label>
+          <ref>SPT5</ref>
+        </Response>
+        <Response Appearance="Full" Order="5" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[I feel supported by a higher power]]></label>
+          <ref>SPT6</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

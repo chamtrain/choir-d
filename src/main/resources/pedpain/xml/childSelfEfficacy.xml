@@ -1,0 +1,120 @@
+<Form Description="Child Self-Efficacy" questionsPerPage="10">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Some people are able to do many things even when they have pain. Some people with pain are not able to do things. 
+        The next questions are about your ability to do things when you have pain.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[How sure are you that you are able to do each of the following things when you have pain?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description><![CDATA[<h4>How sure are you that you can <u>make it through a day of school</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE1" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description><![CDATA[<h4>How sure are you that you <u>can be with your friends</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE2" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description><![CDATA[<h4>How sure are you that you can <u>do well in school</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE3" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description><![CDATA[<h4>How sure are you that you can <u>do house chores</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE4" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="7" Page="start">
+      <Description>
+        <![CDATA[How sure are you that you are able to do each of the following things when you have pain?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description><![CDATA[<h4>How sure are you that you can <u>take care of yourself</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE5" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description><![CDATA[<h4>How sure are you that you can <u>do your homework</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE6" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description><![CDATA[<h4>How sure are you that you can <u>do things with your family</u> when you have pain?</h4>]]></Description>
+      <Responses>
+        <Response ref="CSE7" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Very Sure</label><value>1</value></item>
+          <item><label>Pretty Sure</label><value>2</value></item>
+          <item><label>In the Middle</label><value>3</value></item>
+          <item><label>Pretty Unsure</label><value>4</value></item>
+          <item><label>Very Unsure</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

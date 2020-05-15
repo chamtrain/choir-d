@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A "project" describes a set of targets that may be requested
+     when Ant is executed.  The "default" attribute defines the
+     target which is executed if no specific target is requested,
+     and the "basedir" attribute defines the current working directory
+     from which Ant executes the requested task.  This is normally
+     set to the current working directory.
+-->
+<project name="demo" default="usage" basedir=".">
+  <!-- Properties for internal use in this file (not allowed to override them) -->
+  <property name="src.dir" value="${basedir}/src"/>
+  <property name="lib.dir" value="${basedir}/lib"/>
+  <property name="build.dir" value="${basedir}/build"/>
+  <property name="classes.dir" value="${build.dir}/classes"/>
+  <property name="dist.dir" value="${build.dir}/dist"/>
+
+  <!-- Hooks for customizing build properties (first definition takes priority) -->
+  <property file="../../build.properties"/>
+
+  <!-- Defaults for properties that might or might not be provided above -->
+  <property name="registry.home" value="${basedir}/.."/>
+  <property name="compile.debug" value="on"/>
+  <property name="compile.debug.level" value="lines,source"/>
+  <property name="compile.deprecation" value="off"/>
+  <property name="catalina.home" value="${build.dir}/tomcat-dist"/>
+  <property name="catalina.base" value="${build.dir}/tomcat"/>
+  <property name="tomcat.port.http" value="8080"/>
+  <property name="tomcat.port.https" value="8443"/>
+  <property name="tomcat.port.shutdown" value="8005"/>
+  <property name="deploy.dir" value="${catalina.base}/webapps"/>
+
+  <property name="ssl.keystore" value="${registry.home}/../demo.ssl.keystore"/>
+  <property name="ssl.alias" value="demo"/>
+  <property name="ssl.password" value="demopass"/>
+
+  <available property="keystore.exists" file="${ssl.keystore}"/>
+  <available property="registry.exists" file="${registry.home}"/>
+  <available property="registry.comment.end" value="-->" file="${registry.home}"/>
+  <available property="registry.comment.start" value="&lt;!--" file="${registry.home}"/>
+
+  <tstamp>
+    <format property="buildStartTime"
+            pattern="MM/dd/yyyy hh:mm aa" />
+  </tstamp>
+
+  <target name="prepare" depends="keystore">
+    <mkdir dir="${build.dir}/tomcat"/>
+  </target>
+  
+  <target name="clean" depends="registry.clean">
+    <delete dir="build" />
+  </target>
+  <target name="registry.clean">
+    <ant antfile="${registry.home}/build.xml" target="clean" inheritall="no" useNativeBasedir="yes"/>
+  </target>
+  
+  <target name="usage">
+    <echo message="Recommended targets:"/>
+    <echo message="  "/>
+    <echo message="  clean             Clear all build output"/>
+    <echo message="  "/>
+    <echo message="  tomcat.clean      Remove build/tomcat without cleaning other artifacts"/>
+    <echo message="  tomcat            Configure Tomcat in build/tomcat and launch with all wars"/>
+  </target>
+
+  <!-- There is a good reason why all of these call undeploy first. Tomcat 6 does not
+       redeploy an updated war if the exploded directory already exists. -->
+  <target name="deploy" depends="undeploy,wars" description="Build and copy all wars to deploy.dir">
+    <copy file="${dist.dir}/survey.war" todir="${deploy.dir}"/>
+    <copy file="${dist.dir}/clinic.war" todir="${deploy.dir}"/>
+  </target>
+  <target name="undeploy">
+    <delete dir="${deploy.dir}/survey"/>
+    <delete file="${deploy.dir}/survey.war"/>
+    <delete dir="${deploy.dir}/clinic"/>
+    <delete file="${deploy.dir}/clinic.war"/>
+  </target>
+
+  <target name="wars" depends="survey.war,clinic.war"/>
+
+  <target name="survey.war" description="The patient-facing survey application" depends="classes,registry.artifacts">
+    <war jarfile="${dist.dir}/survey.war" webxml="${basedir}/src/main/survey-web.xml">
+      <classes dir="${classes.dir}"/>
+      <classes dir="${build.dir}/registry-war/WEB-INF/classes"/>
+      <lib dir="${build.dir}/registry-war/WEB-INF/lib" includes="*.jar"/>
+      <fileset dir="${build.dir}/registry-war/">
+        <include name="survey2/**"/>
+        <!-- The following is a stub for development and testing -->
+        <!--<include name="survey2test/**"/>-->
+      </fileset>
+    </war>
+  </target>
+
+  <target name="clinic.war" depends="classes,registry.artifacts" description="Registry clinic-facing application">
+    <war jarfile="${dist.dir}/clinic.war" webxml="${basedir}/src/main/clinic-web.xml">
+      <classes dir="${classes.dir}"/>
+      <classes dir="${build.dir}/registry-war/WEB-INF/classes"/>
+      <lib dir="${build.dir}/registry-war/WEB-INF/lib" includes="*.jar"/>
+      <fileset dir="${build.dir}/registry-war/">
+        <include name="Registry.nocache.html"/>
+        <include name="images/**"/>
+        <include name="registry/**"/>
+      </fileset>
+    </war>
+  </target>
+
+  <target name="classes" depends="prepare,registry.artifacts">
+    <mkdir dir="${classes.dir}"/>
+    <javac destdir="${classes.dir}"
+           debug="${compile.debug}" debuglevel="${compile.debug.level}"
+           deprecation="${compile.deprecation}"
+           includes="**/*.java"  fork="yes" memorymaximumsize="512m"
+           includeantruntime="no">
+      <classpath>
+        <pathelement location="${registry.home}/lib/ivy/default/log4j.jar"/>
+      </classpath>
+      <compilerarg value="-version"/>
+      <src path="${src.dir}"/>
+    </javac>
+  </target>
+
+  <target name="registry.artifacts">
+    <ant antfile="${registry.home}/build.xml" target="registry.war" inheritall="no" useNativeBasedir="yes"/>
+    <unwar src="${registry.home}/build/dist/registry.war" dest="${build.dir}/registry-war"/>
+  </target>
+
+  <target name="keystore" unless="keystore.exists">
+    <exec executable="keytool" dir="${basedir}" failonerror="true">
+      <arg value="-keystore"/>
+      <arg value="${ssl.keystore}"/>
+      <arg value="-alias"/>
+      <arg value="${ssl.alias}"/>
+      <arg value="-storepass"/>
+      <arg value="${ssl.password}"/>
+      <arg value="-genkey"/>
+      <arg value="-keyalg"/>
+      <arg value="RSA"/>
+      <arg value="-validity"/>
+      <arg value="3650"/>
+      <arg value="-dname"/>
+      <arg value="CN=localhost, OU=IRT, O=Stanford, L=Menlo Park, ST=CA, C=US"/>
+    </exec>
+    <!-- Make sure we don't try to do this twice within the same build -->
+    <property name="keystore.exists" value="yes"/>
+  </target>
+
+  <target name="tomcat.clean">
+    <delete dir="${build.dir}/tomcat"/>
+  </target>
+  
+  <target name="tomcat.configuration">
+    <mkdir dir="${build.dir}/tomcat-dist"/>
+    <unzip src="${registry.home}/lib/ivy/tomcat.zip" dest="${build.dir}/tomcat-dist" overwrite="no">
+      <patternset>
+        <include name="*/bin/*"/>
+        <include name="*/conf/*"/>
+        <include name="*/lib/*"/>
+      </patternset>
+      <cutdirsmapper dirs="1"/>
+    </unzip>
+    <mkdir dir="${build.dir}/tomcat/registry/templates"/>
+    <mkdir dir="${build.dir}/tomcat/registry/xchgin"/>
+    <mkdir dir="${build.dir}/tomcat/registry/xchgout"/>
+    <mkdir dir="${build.dir}/tomcat/conf"/>
+    <mkdir dir="${build.dir}/tomcat/lib"/>
+    <copy file="${registry.home}/lib/ojdbc7.jar" todir="${build.dir}/tomcat/lib" failonerror="no"/>
+    <mkdir dir="${build.dir}/tomcat/webapps"/>
+    <mkdir dir="${build.dir}/tomcat/work"/>
+    <mkdir dir="${build.dir}/tomcat/temp"/>
+    <mkdir dir="${build.dir}/tomcat/logs"/>
+    <copy file="build/tomcat-dist/conf/web.xml" todir="build/tomcat/conf"/>
+    <copy file="build/tomcat-dist/conf/catalina.properties" todir="build/tomcat/conf"/>
+    <copy todir="${build.dir}/tomcat/conf" filtering="true">
+      <fileset dir="${basedir}/src/main/conf" includes="*"/>
+      <filterset>
+        <filter token="ssl.keystore"
+                value="${ssl.keystore}"/>
+        <filter token="ssl.password"
+                value="${ssl.password}"/>
+        <filter token="tomcat.port.http"
+                value="${tomcat.port.http}"/>
+        <filter token="tomcat.port.https"
+                value="${tomcat.port.https}"/>
+        <filter token="tomcat.port.shutdown"
+                value="${tomcat.port.shutdown}"/>
+        <filter token="catalina.base"
+                value="${catalina.base}"/>
+        <filter token="registry.database.url"
+                value="${registry.database.url}"/>
+        <filter token="registry.database.user"
+                value="${registry.database.user}"/>
+        <filter token="registry.database.password"
+                value="${registry.database.password}"/>
+        <filter token="registry.comment.start"
+                value="${registry.comment.start}"/>
+        <filter token="registry.comment.end"
+                value="${registry.comment.end}"/>
+      </filterset>
+    </copy>
+  </target>
+
+  <target name="tomcat" depends="deploy, tomcat.configuration">
+    <delete dir="${catalina.base}/logs" includes="*.*" failonerror="no"/>
+    <echo message="Logs will be in ${catalina.base}/logs"/>
+    <echo message="To access the application:"/>
+    <echo message=""/>
+    <echo message="  clinic: http://localhost:${tomcat.port.http}/clinic/"/>
+    <echo message="          https://localhost:${tomcat.port.https}/clinic/"/>
+    <echo message="  survey: http://localhost:${tomcat.port.http}/survey/survey2/"/>
+    <echo message="          https://localhost:${tomcat.port.https}/survey/survey2/"/>
+    <echo message="    stub: http://localhost:${tomcat.port.http}/survey/survey2/?s=stub&amp;tk=test"/>
+    <echo message="          https://localhost:${tomcat.port.https}/survey/survey2/?s=stub&amp;tk=test"/>
+    <parallel>
+      <java classname="org.apache.catalina.startup.Bootstrap"
+            fork="true" output="${catalina.base}/logs/catalina.out">
+        <classpath>
+          <pathelement location="${catalina.home}/bin/bootstrap.jar"/>
+          <pathelement location="${catalina.home}/bin/tomcat-juli.jar"/>
+        </classpath>
+        <jvmarg value="-Dcatalina.home=${catalina.home}"/>
+        <jvmarg value="-Dcatalina.base=${catalina.base}"/>
+        <jvmarg value="-Djava.io.tmpdir=${catalina.base}/temp"/>
+        <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+        <jvmarg value="-Djava.util.logging.config.file=${catalina.base}/conf/logging.properties"/>
+      </java>
+      <sequential>
+        <echo message=""/>
+        <echo message="Waiting for Tomcat startup"/>
+        <waitfor maxwait="15" maxwaitunit="second" checkevery="3" checkeveryunit="second">
+          <http url="http://localhost:${tomcat.port.http}/AreYouUpYet"/>
+        </waitfor>
+        <echo message="Tomcat started, tailing the logs"/>
+        <pathconvert property="log.files" pathsep=" ">
+          <flattenmapper/>
+          <fileset dir="${catalina.base}/logs">
+            <include name="*.*"/>
+            <exclude name="*-poll.*"/>
+          </fileset>
+        </pathconvert>
+        <exec dir="${catalina.base}/logs" executable="tail" failifexecutionfails="no">
+          <arg line="-f -n +0 ${log.files}"/>
+        </exec>
+      </sequential>
+    </parallel>
+  </target>
+</project>

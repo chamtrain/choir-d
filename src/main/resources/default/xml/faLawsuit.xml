@@ -1,0 +1,52 @@
+<Form Description="Functional Assessment - Lawsuit" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Are you involved in a legal action related to your pain problem?]]>
+      </Description>
+      <Responses>
+		  <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  	  <format>
+            <datatype>text</datatype>
+            <charwidth>5</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+ <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Are there any other legal problems?]]>
+      </Description>
+      <Responses>
+		  <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  	  <format>
+            <datatype>text</datatype>
+            <charwidth>5</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

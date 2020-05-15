@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[How many times in the past week have you used drugs or alcohol?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[One]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Two]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Three]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Four]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Five]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Six]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Seven]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>1_DUALDX</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

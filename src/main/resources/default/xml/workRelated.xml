@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="workRelated" DateStarted="" DateFinished="" questionsPerPage="3">
+ <Items class="surveyInline">
+   <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true">
+      <Description>
+        <![CDATA[Indicate your employment status for the past month?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" Type="select1">
+          <ref>WORK_STATUS</ref>
+          <item><label>Working/studying (full or part time)</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item><label>Unemployed</label><value>2</value></item>
+          <item><label>On disability</label><value>3</value></item>
+        </Response>
+      </Responses>
+    </Item>
+   <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Visible="false">
+     <Description>
+       <![CDATA[How many days in the past 1 month did you miss work or school because of your pain?]]>
+     </Description>
+     <Alert>Must be an integer </Alert>
+     <Responses>
+       <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+         <ref>MISSED_WORK</ref>
+         <label>Days</label>
+         <min>0</min>a
+         <max>31</max>
+         <location>right</location>
+         <format>
+           <datatype>integer</datatype>
+           <lines>1</lines>
+           <charwidth>2</charwidth>
+         </format>
+         <hint>Enter the number of days</hint>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Visible="false" >
+     <Description>
+       <![CDATA[How many days in the past 1 month was your productivity at work or school reduced by half or more because of your pain? <p>(Do not include days you counted in question 1 where you missed work or school)]]>
+     </Description>
+     <Alert>Must be an integer</Alert>
+     <Responses>
+       <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+         <ref>PROD_REDUCED</ref>
+         <label>Days</label>
+         <min>0</min>
+         <max>31</max>
+         <location>right</location>
+         <format>
+           <datatype>integer</datatype>
+           <lines>1</lines>
+           <charwidth>2</charwidth>
+         </format>
+         <hint>Enter the number of days</hint>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+  </Items>
+</Form>

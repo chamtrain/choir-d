@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="HEAL Patient-Provider Connection (PPC)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Think of the HCP (Healthcare Provider) who provides your current/ongoing treatment…]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[I am satisfied with my healthcare provider]]></label>
+          <ref>PPC1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[I trust my healthcare provider]]></label>
+          <ref>PPC2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[My healthcare provider pays attention to my individual needs]]></label>
+          <ref>PPC3</ref>
+        </Response>
+        <Response Appearance="Full" Order="3" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Rarely]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Sometimes]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Often]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost always]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[My healthcare provider gives me enough information]]></label>
+          <ref>PPC4</ref>
+        </Response>
+        <Response Appearance="Full" Order="4" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[My healthcare provider respects me]]></label>
+          <ref>PPC5</ref>
+        </Response>
+        <Response Appearance="Full" Order="5" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[I feel my healthcare provider understands me]]></label>
+          <ref>PPC6</ref>
+        </Response>
+        <Response Appearance="Full" Order="6" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <label><![CDATA[My healthcare provider gives me support and encouragement]]></label>
+          <ref>PPC7</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

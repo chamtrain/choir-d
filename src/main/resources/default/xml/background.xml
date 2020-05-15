@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Background Information" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[How many miles do you live from our facility?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" align="vertical" Appearance="full" Class="registrySurveyAnswer">
+          <ref>BGMILESBUCKET</ref>
+          <width>295px</width>
+          <item><label>less than 5 miles</label><value>1</value></item>
+          <item><label>5-40 miles</label><value>6</value></item>
+          <item><label>41-100 miles</label><value>2</value></item>
+          <item><label>101-300 miles</label><value>3</value></item> 
+          <item><label>301-1000 miles</label><value>4</value></item> 
+          <item><label>more than 1000 miles</label><value>5</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[How long does it take you to get to our facility?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" Type="select1" align="vertical" Appearance="full" Class="registrySurveyAnswer">
+          <ref>BGTIMEBUCKET</ref>
+          <width>295px</width>
+          <item><label>less than 15 minutes</label><value>1</value></item>
+          <item><label>15-30 minutes</label><value>6</value></item>
+          <item><label>30-60 minutes</label><value>2</value></item>
+          <item><label>1-2 hours</label><value>3</value></item> 
+          <item><label>more than 2 hours</label><value>4</value></item> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Who is your Primary Care Physician?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="input" appearance="compact" Class="registrySurvey">
+          <label></label>
+            <ref>BGPCP</ref>
+          <location>left</location>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>20</charwidth>
+          </format>
+          <hint>Enter the name of your primary care physician.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Who referred you to our clinic?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="input" appearance="compact" Class="registrySurvey">
+          <label></label>
+           <ref>BGREFER</ref>
+          <location>left</location>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>20</charwidth>
+          </format>
+          <hint>Enter the person who referred you to the clinic</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" required="true" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+      <Description><![CDATA[In terms of marital status, are you:]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" align="vertical" Class="registrySurveyAnswer" Appearance="full">
+           <ref>BGMARITAL</ref>
+           <width>295px</width>
+           <item><label>Married</label><value>1</value></item>
+         <item><label>Divorced</label><value>6</value></item>
+           <item><label>Separated</label><value>2</value></item>
+           <item><label>Widowed</label><value>3</value></item> 
+           <item><label>Never Married</label><value>4</value></item> 
+           <item><label>Living together</label><value>5</value></item>
+        </Response>
+      </Responses>
+      </Item>
+  </Items>
+</Form>

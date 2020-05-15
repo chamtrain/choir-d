@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Other Pain Management Interventions " DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+  <ref>TREATOTHERS</ref>
+    <Item Order="1" ItemResponse="" ItemScore="" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[What other specialized pain management interventions or surgeries have you received?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="false" Type="input" appearance="compact" Class="registrySurvey">
+          <label></label>
+          <format>
+            <datatype>text</datatype>
+            <lines>5</lines>
+            <charwidth>80</charwidth>
+          </format>
+          <hint>Enter names of other pain management interventions or surgeries you have received.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

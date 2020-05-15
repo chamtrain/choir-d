@@ -1,0 +1,80 @@
+<Form Description="HOOS Hip Survey - Sports" questionsPerPage="1">
+  <Items>
+    <Item Order="33">
+      <Description>
+        <![CDATA[
+        <p>The following questions concern your physical function when being active on a higher level.
+        The questions should be answered thinking of what degree of difficulty you have experienced during 
+        the <u>last week</u> due to your right hip.</p>
+        <p>Squatting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="SP1" Type="select1" required="true">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="34">
+      <Description>
+        <![CDATA[
+        <p>The following questions concern your physical function when being active on a higher level.
+        The questions should be answered thinking of what degree of difficulty you have experienced during 
+        the <u>last week</u> due to your right hip.</p>
+        <p>Running</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="SP2" Type="select1" required="true">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="35">
+      <Description>
+        <![CDATA[
+        <p>The following questions concern your physical function when being active on a higher level.
+        The questions should be answered thinking of what degree of difficulty you have experienced during 
+        the <u>last week</u> due to your right hip.</p>
+        <p>Twisting/pivoting on loaded leg</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="SP3" Type="select1" required="true">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="36">
+      <Description>
+        <![CDATA[
+        <p>The following questions concern your physical function when being active on a higher level.
+        The questions should be answered thinking of what degree of difficulty you have experienced during 
+        the <u>last week</u> due to your right hip.</p>
+        <p>Walking on uneven surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="SP4" Type="select1" required="true">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

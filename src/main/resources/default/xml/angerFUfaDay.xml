@@ -1,0 +1,41 @@
+<Form Description="Anger Follow Up functional assessment" DateStarted="" DateFinished="" questionsPerPage="2" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+   <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Page="start" >
+   <Description> <![CDATA[How many days in the past 1 month did you miss work or school because of your pain?]]></Description>
+     <Responses>
+       <Response Order="1" Type="input" Class="registrySurveyAnswer" Align="horizontal">
+         <ref>MISSEDWORK</ref>
+         <location>left</location>
+         <min>0</min>
+         <max>31</max>
+         <format>
+           <datatype>integer</datatype>
+           <lines>1</lines>
+           <charwidth>2</charwidth>
+         </format>
+         <hint>Enter an integer value</hint>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" >
+     <Description> <![CDATA[How many days in the past 1 month was your productivity at work or school reduced by half or more because of your pain?
+     (Do not include days you counted in question 1 where you missed work or school)]]></Description>
+     <Responses>
+       <Response Order="1" Type="input" Class="registrySurveyAnswer" Align="horizontal">
+         <ref>PRODREDUCED</ref>
+         <location>left</location>
+         <min>0</min>
+         <max>31</max>
+         <format>
+           <datatype>integer</datatype>
+           <lines>1</lines>
+           <charwidth>2</charwidth>
+         </format>
+         <hint>Enter an integer value</hint>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+ </Items>
+</Form>

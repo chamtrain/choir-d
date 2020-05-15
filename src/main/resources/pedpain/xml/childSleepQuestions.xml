@@ -1,0 +1,116 @@
+<Form Description="Pediatric Pain Sleep Questionnaire" questionsPerPage="1">
+  <Items>
+    <Item Order="1" Section="start">
+      <Description>
+        <![CDATA[
+        The following questions are regarding your sleep.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Section="end">
+      <Description>
+        <![CDATA[
+        Has pain disturbed your sleep?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="disturbed" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Section="start">
+      <Description>
+        <![CDATA[
+        What time do you usually go to sleep?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sleep-time"  Order="1" Type="input" min="1" max="12" required="true">
+          <label>Time (hour)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="sleep-time-ampm" Order="2" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>AM</label> </item>
+          <item> <value>1</value> <label>PM</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        What time do you usually wake up in the morning?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="wake-time" Order="1" Type="input" min="1" max="12" required="true">
+          <label>Time (hour)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="wake-time-ampm" Order="2" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>AM</label> </item>
+          <item> <value>1</value> <label>PM</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Section="end">
+      <Description>
+        <![CDATA[
+        On average, about how many hours of sleep do you get at night?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sleep-hours" Order="1" Type="input" min="0" max="24" required="true">
+          <label>Hours</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" Section="start" Page="start">
+      <Description>
+        <![CDATA[
+        Do you take naps during the day?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="takes-nap" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="7"/>
+            <onselect Type="Item" Where="Order" Value="8"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Visible="false">
+      <Description>
+        <![CDATA[
+        How many naps per week?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="naps-per-week" Order="1" Type="input" min="1" max="100" required="true">
+          <format> <datatype>integer</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        What is the average length of your naps?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="nap-minutes" Order="1" Type="input" min="1" max="300" required="true">
+          <label>Minutes</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,25 @@
+<Form Description="Procedure followup questions 6-7" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="6" ItemResponse="" ItemScore="">
+      <Description><![CDATA[During the first few hours after the nerve block, did you experience numbness over the painful area targeted?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>FFEW_NUMBNESS</ref>
+          <item><label>Yes</label><value>0</value></item>
+          <item><label>No</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="">
+    <Description><![CDATA[During the first few hours after the nerve block, did you feel improvement in your painful area targeted?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>FFEW_IMPROV</ref>
+          <item><label>Yes, 50% or more improvement</label><value>0</value></item>
+          <item><label>Yes, less than 50% improvement</label><value>1</value></item>
+          <item><label>No</label><value>2</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

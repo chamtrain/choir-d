@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+    <Items>
+        <Item ItemResponse="" ItemScore="" Order="0">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Little interest or pleasure in doing things?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>1_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="1">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling down, depressed, or hopeless?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>2_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="2">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling more irritated, grouchy, or angry than usual?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>3_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="3">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Sleeping less than usual, but still have a lot of energy?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>4_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="4">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Starting lots more projects than usual or doing more risky things than usual?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>5_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="5">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling nervous, anxious, frightened, worried, or on edge?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>6_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="6">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling panic or being frightened?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>7_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="7">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Avoiding situations that make you anxious?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>8_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="8">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>9_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="9">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling that your illnesses are not being taken seriously enough?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>10_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="10">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Thoughts of actually hurting yourself?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>11_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="11">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Hearing things other people couldn't hear, such as voices even when no one was around?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>12_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="12">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling that someone could hear your thoughts, or that you could hear what another person was thinking?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>13_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="13">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Problems with sleep that affected your sleep quality over all?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>14_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="14">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>15_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="15">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Unpleasant thoughts, urges, or images that repeatedly enter your mind?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>16_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="16">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling driven to perform certain behaviors or mental acts over and over again?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>17_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="17">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>18_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="18">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Not knowing who you really are or what you want out of life?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>19_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="19">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Not feeling close to other people or enjoying your relationships with them?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>20_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="20">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Drinking at least 4 drinks of any kind of alcohol in a single day?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>21_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="21">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>22_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="22">
+            <Description><![CDATA[During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problem?]]></Description>
+            <Description><![CDATA[Using any of the following medicines ON YOUR OWN, that is, without a doctor's prescription, in greater amounts or longer than prescribed [e.g., painkillers (like Vicodin), stimulants (like Ritalin or Adderall), sedatives or tranquilizers (like sleeping pills or Valium), or drugs like marijuana, cocaine or crack, club drugs (like ecstasy), hallucinogens (like LSD), heroin, inhalants or solvents (like glue), or methamphetamine (like speed)]?]]></Description>
+            <Responses>
+                <Response Appearance="Full" Order="0" Type="select1" required="true">
+                    <item>
+                        <label><![CDATA[None Not at all]]></label>
+                        <value><![CDATA[0]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Slight Rare, less than a day or two]]></label>
+                        <value><![CDATA[1]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Mild Several days]]></label>
+                        <value><![CDATA[2]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Moderate More than half the days]]></label>
+                        <value><![CDATA[3]]></value>
+                    </item>
+                    <item>
+                        <label><![CDATA[Severe Nearly every day]]></label>
+                        <value><![CDATA[4]]></value>
+                    </item>
+                    <ref>23_DSM5X</ref>
+                </Response>
+            </Responses>
+        </Item>
+    </Items>
+</Form>

@@ -1,0 +1,111 @@
+<Form Description="Medications" DateStarted="" DateFinished="" questionsPerPage="4">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" required="true" RepeatOnResponse="2:1" print="false">
+      <PatientAttribute data_name="personalMedRecord" data_value="y" data_type="string" condition="notexists"/>
+      <Description>
+        <![CDATA[Please enter all medications that you are presently taking which are not already documented in the Stanford electronic medical record; include all prescription and non-prescription drugs, including dietary supplements, herbs and aspirin.]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>More info</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[Please enter any and all medications you are taking that are not in the Stanford electronic medical record.</p><p> <p>To enter a medication select the option <i>Add Medication</i> below.</p>
+           <p>It will then ask for the medication name, dosage (mg), and how many times in a day you take the medication. </p>
+           <p>When you have completed entering the information for that medication click <i>Continue</i>. You will be prompted again to enter medications.
+            Once you have completed entering the details for all of your medications select the option <i>No more medications</i> below and click <i>Continue</i>
+            to move onto the next question.</p>]]>
+        </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+		      <ref>MED</ref>
+          <item selected="false">
+            <label>Add Medication</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+  	  		  <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			      <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			    </item>
+          <item selected="false">
+            <label>No more medications</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description> <![CDATA[Name of medication]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+		      <ref>MEDNAME</ref>
+          <format>
+            <datatype>text</datatype>
+			    </format>
+          <hint>Enter the name of the medication you are taking</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="false">
+      <Description> <![CDATA[Dosage]]></Description>
+      <Responses>
+        <Response Order="1" Type="input" >
+			    <ref>MEDDOSAGE</ref>
+		      <format>
+            <datatype>text</datatype>
+				  </format>
+          <hint>Enter the medications dosage, e.g. number of mg</hint>
+          <Scores />
+	      </Response>
+      </Responses>
+    </Item>
+     <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description> <![CDATA[Number of times taken each day]]></Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>MEDTIMES</ref>
+          <item><label>Once a day every morning</label><value>1</value></item>
+          <item><label>Once a day every evening</label><value>2</value></item>
+          <item><label>Twice every day</label><value>3</value></item>
+          <item><label>Three times every day</label><value>4</value></item>
+          <item><label>Once a day as needed</label><value>5</value></item>
+          <item><label>Twice a day as needed</label><value>6</value></item>
+          <item><label>Three times a day as needed</label><value>7</value></item>
+          <item><label>Four times a day as needed</label></item>
+          <item><label>Other way not listed above</label>
+            <onselect Type="Item" Where="Order" Value="5">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+     </Item>
+     <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="2" Visible="false">
+      <Description></Description>
+      <Responses>
+        <Response Order="1" required="false" Type="input"  Class="functAssessA" Align="Vertical">
+          <Scores />
+          <ref>MEDTIMESOTHER</ref>
+          <label>Please describe</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+          </format>
+          <hint>Enter the frequency in which you take the medication</hint>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

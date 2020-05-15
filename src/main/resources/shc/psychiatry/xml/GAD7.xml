@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Generalized Anxiety Disorder Screener (GAD-7)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Over the last 2 weeks, how often have you been bothered by the following problems?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Feeling nervous, anxious or on edge]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>feel_nervous</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Not being able to stop or control worrying]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>cntr_worrying</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Worrying too much about different things]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>worrying_much</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Trouble relaxing]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>trbl_relax</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Being so restless that it is hard to sit still]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>restless</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description>
+        <![CDATA[Becoming easily annoyed or irritated]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all sure]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>easily_annoyed</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description>
+        <![CDATA[Feeling afraid as if something awful might happen]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Several days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half the days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Nearly every day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>feel_afraid</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description>
+        <![CDATA[If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not difficult at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat difficult]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very difficult]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely difficult]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <ref>how_difficult</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

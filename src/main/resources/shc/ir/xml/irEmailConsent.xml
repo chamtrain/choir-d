@@ -1,0 +1,34 @@
+<Form Description="Email Consent" DateStarted="" DateFinished="" questionsPerPage="1" >
+  <!-- Revised Mar 2015 -->
+  <Items class="surveyInline">
+    <Item Order="1">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" data_type="string" condition="notexists"/>
+      <PatientAttribute data_name="irConsent" data_value="Y" data_type="string" condition="equal"/>
+      <Description>
+        <![CDATA[
+  <p>Your email address is required to receive a copy of the consent and follow-up research communications</p>
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="email" Type="input" required="false">
+          <label>Email Address</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+        <Response Order="2" ref="sendForm" Type="select1" required="true">
+          <item>
+            <label>Yes, email the consent form to the address entered above</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No, do not email the consent form</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

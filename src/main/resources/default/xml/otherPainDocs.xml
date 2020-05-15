@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Other Pain Physicians" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Which other pain doctor or pain clinic have you seen for your problem, in the past 5 years?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="false" Type="input" appearance="compact" Class="registrySurvey">
+          <label></label>
+            <ref>OTHERPAINDOCS</ref>
+          <location>left</location>
+          <format>
+            <datatype>text</datatype>
+           <lines>5</lines>
+		<charwidth>80</charwidth>
+          </format>
+          <hint>Enter names of pain Doctors and Clinics you've seen in the past 5 years.</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

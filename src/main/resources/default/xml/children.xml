@@ -1,0 +1,25 @@
+<Form Description="Children" DateStarted="" DateFinished="" questionsPerPage="1" >
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+	    <PatientAttribute data_name="research" data_value="y" data_type="string" condition="equal"/>
+      <PatientAttribute data_name="children8to12" data_value="any" data_type="string" condition="notexists"/>
+      <PatientAttribute data_name="gender" data_value="Female" data_type="string" condition="equal"/>
+      <Description>
+        <![CDATA[Do you have children between the ages of 8 – 12?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full">
+          <ref>BGCHILD812</ref>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Background Information" questionsPerPage="1" >
+ <Items>
+  <Item Order="1" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Have you had an Anesthesia Preoperative Evaluation Clinic (APEC) visit in the last 12 months?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>PAST12</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Have you had surgery at Stanford?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>SHCSURGERY</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

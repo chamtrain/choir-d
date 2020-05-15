@@ -1,0 +1,15 @@
+<Form Description="No Survey" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      There are no surveys for you to complete at this time.
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Adverse Childhood Experiences" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Did a parent or other adult in the household often swear at you, insult you, put you down, or humiliate you?  or act in a way that made you afraid that you might be physically hurt? ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Did a parent or other adult in the household often push, grab, slap, or throw something at you? or ever hit you so hard?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Did an adult or person at least 5 years older than you ever.. Touch or fondle you or have you touch their body in a sexual way? or try to or actually have oral, anal, or vaginal sex with you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Did you often feel that ... No one in your family loved you or thought you were important or special? or your family didn't look]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Did you often feel that ... you didn't have enough to eat, had to wear dirty clothes, and had no one to protect you? or your parents were too drunk or high to take care of you or take you to the doctor if you needed it?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Were your parents ever separated or divorced? ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[Was your mother or stepmother: Often pushed, grabbed, slapped, or had something thrown at her? or sometimes or often kicked, bitten, hit with a fist, or hit with something hard? or ever repeatedly hit over at least a few minutes or threatened with a gun or knife? ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_7</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Did you live with anyone who was a problem drinker or alcoholic or who used street drugs?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_8</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Was a household member depressed or mentally ill or did a household member attempt suicide?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_9</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Did a household member go to prison? ]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Prefer not to answer]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <ref>GI_ACE_1_10</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,130 @@
+<Form Description="Functional Assessment" DateStarted="" DateFinished="" questionsPerPage="4" Class="surveyInlineBordered">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Current or former occupation]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <Scores />
+          <ref>FAJOB</ref>
+          <label></label>
+          <location>left</location>
+          <alert></alert>
+          <format>
+            <datatype>text</datatype>
+            <charwidth>25</charwidth>
+            <lines>2</lines>
+          </format>
+          <hint>Optional: enter n/a if not applicable</hint>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Are you working now?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full">
+			<ref>FAWORKING</ref>
+          <width>100%</width>
+          <label/>
+          <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <format>
+            <datatype>text</datatype>
+            <charwidth>5</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  This is conditional: only shows if the answer to the previous question is no=false -->
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="false" >
+      <Description>
+        <![CDATA[When was the last time you worked?]]>
+      </Description>
+      <Alert>Please answer all questions</Alert>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>FAWORKINGLAST</ref>
+          <label>Years</label>
+          <location>right</location>
+          <min>0</min>
+          <max>99</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Enter the number of years it has been since you last worked</hint>
+          <Scores />
+        </Response>
+        <Response Order="2" required="false" Type="input">
+          <ref>duration</ref>
+          <label>Months</label>
+          <min>0</min>
+          <max>12</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Enter the number of months it has been since you last worked</hint>
+          <Scores />
+        </Response>
+        <Response Order="3" required="false" Type="input">
+          <ref>duration</ref>
+          <label>Days</label>
+          <min>0</min>
+          <max>31</max>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Enter the number of days it has been since you last worked</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description>
+        <![CDATA[Are you not working because of pain?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full">
+          <ref>FANOTWORKPAIN</ref>
+          <width>100%</width>
+          <label/>
+          <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

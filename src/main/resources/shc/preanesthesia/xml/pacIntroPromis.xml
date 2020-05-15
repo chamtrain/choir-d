@@ -1,0 +1,17 @@
+<Form Description="Pre-anesthesia Intro Page" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[<p><b>You are almost done</b><p>The following questions will help us to assess your general physical, psychological and social health.
+        Our research at Stanford has shown that each person’s unique health status impacts how they will respond to and recover from surgery.
+        Furthermore, at Stanford we are committed to treating you as a whole person, and not just the part of you undergoing surgery or a procedure.
+        We do not use this information to diagnose any conditions. Rather we want to obtain a general sense of your overall health to determine how to best help you.
+        Please feel free to ask your clinician about any of this information.
+        We thank you for the time in filling out the following questions.</p>]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"></Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

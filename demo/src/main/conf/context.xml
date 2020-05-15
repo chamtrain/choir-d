@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+  <Resource name="jdbc/registryDB" auth="Container"
+            type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+            url="@registry.database.url@"
+            username="@registry.database.user@" password="@registry.database.password@" maxTotal="10" maxIdle="10"
+            maxWaitMillis="10000" defaultAutoCommit="false" validationQuery="select count(1) from dual"/>
+  <Parameter name="registry.jndi.datasource" value="java:comp/env/jdbc/registryDB" override="false"/>
+
+  <Parameter name="log4j.configuration" value="${catalina.base}/conf/log4j-${context.path}.xml" override="false"/>
+
+  <!-- Use "real" proxy auth with localhost as the "proxy". That means you can have your
+       browser manipulate cookies to "authenticate". I use the "Modify Headers" extension
+       in Firefox and "ModHeader" in Chrome. Use these to set headers webauth_at=123
+       and X-REMOTE-USER=admin or whatever user you want. -->
+  <Parameter name="proxyauth.header" value="X-REMOTE-USER" override="false"/>
+  <!-- If you are using mod_jk or similar to pass the user as an attribute: -->
+  <!--<Parameter name="proxyauth.attribute" value="X-REMOTE-USER" override="false"/>-->
+  <Parameter name="proxyauth.proxy.hosts" value="127.0.0.1,0:0:0:0:0:0:0:1,0:0:0:0:0:0:0:1%0,::1" override="false"/>
+
+  <!-- Allow survey.war to talk to clinic.war -->
+  <Parameter name="registry.service.url" value="http://localhost:@tomcat.port.http@/clinic/patient/survey2" override="false"/>
+  <Parameter name="registry.service.password" value="foo" override="false"/>
+  <Parameter name="ohsu.service.url" value="http://localhost:@tomcat.port.http@/clinic/patient/survey2" override="false"/>
+  <Parameter name="ohsu.service.password" value="foo" override="false"/>
+
+  <!-- Various settings for the registry -->
+  <Parameter name="PatientIdFormatterClass" value="edu.stanford.registry.server.utils.StanfordMrn"/>
+  <Parameter name="PatientIdFormatErrorMessage" value="Patient Id must be 5-7 characters followed by - and a single digit."/>
+  <Parameter name="email.template.directory" value="${catalina.base}/registry/templates"/>
+  <Parameter name="default.dateFormat" value="MM/dd/yyyy"/>
+  <Parameter name="default.dateTimeFormat" value="MM/dd/yyyy h:mm a"/>
+  <!--<Parameter name="aboutus.link" value="https://clinicalinformatics.stanford.edu/"/>-->
+  <!--<Parameter name="terms.link" value="http://www.stanford.edu/site/terms.html"/>-->
+  <!--<Parameter name="contact.link" value="https://clinicalinformatics.stanford.edu/contact.html"/>-->
+  <Parameter name="survey.link" value="http://localhost:@tomcat.port.https@/survey/survey2"/>
+  <Parameter name="SurveyClassForPROMIS" value="edu.stanford.registry.server.survey.PromisSurveyService"/>
+  <Parameter name="SurveyClassForLocal" value="edu.stanford.registry.server.survey.RegistryAssessmentsService"/>
+  <Parameter name="appointment.daysout.load" value="1"/>
+  <Parameter name="appointment.initialemail.daysout" value="7"/>
+  <Parameter name="appointment.lastsurvey.daysout" value="11"/>
+  <Parameter name="appointment.reminderemail.daysout" value="4,1"/>
+  <Parameter name="appointment.scheduledsurvey.daysout" value="90"/>
+  <Parameter name="importPendingFileDirectory" value="${catalina.base}/registry/xchgin"/>
+  <Parameter name="importProcessedFileDirectory" value="${catalina.base}/registry/xchgout"/>
+
+  <!-- Optionally enable batch processing for patients/appointments into registry -->
+  <!--<Parameter name="import.url" value="http://localhost:@tomcat.port.http@/clinic/registry/svc/api/"/>-->
+  <!--<Parameter name="import.process.frequency" value="2"/>-->
+</Context>

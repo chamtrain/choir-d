@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Pelvic Floor Impact Questionnaire—short form 7 (PFIQ-7)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Instructions: Some women find that bladder, bowel, or vaginal symptoms affect their activities, relationships, and feelings. For each question, check the response that best describes how much your activities, relationships, or feelings have been affected by your bladder, bowel, or vaginal symptoms or conditions over the last 3 months. Please make sure you mark an answer for each question.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your ability to do household chores (cooking, laundry housecleaning)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_1_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_1_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_1_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your ability to do physical activities such as walking, swimming, or other exercise?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_2_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_2_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_2_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your entertainment activities such as going to a movie or concert?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_3_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_3_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_3_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your ability to travel by car or bus for a distance greater than 30 minutes away from home?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_4_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_4_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_4_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your participating in social activities outside your home?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_5_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_5_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_5_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your emotional health (nervousness, depression, etc)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_6_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_6_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_6_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[How do symptoms or conditions in the following usually affect your feeling frustrated?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bladder or urine]]></label>
+          <ref>gi_pfiq7_7_1</ref>
+        </Response>
+        <Response Appearance="Full" Order="1" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Bowel or rectum]]></label>
+          <ref>gi_pfiq7_7_2</ref>
+        </Response>
+        <Response Appearance="Full" Order="2" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderately]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <label><![CDATA[Vagina or pelvis]]></label>
+          <ref>gi_pfiq7_7_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

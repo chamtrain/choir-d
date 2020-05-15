@@ -1,0 +1,28 @@
+package edu.stanford.registry.server.randomset;
+
+import java.util.ArrayList;
+
+//import org.apache.log4j.Logger;
+import org.junit.Assert;
+import org.junit.Test;
+
+import edu.stanford.registry.server.SiteInfo;
+import edu.stanford.registry.test.FakeSiteInfo;
+
+public class RandomSetTest {
+  //private static Logger logger = Logger.getLogger(XMLFileUtils.class);
+
+  @Test
+  public void testInitialAndFollowupProcessesExist() {
+    FakeSiteInfo si = new FakeSiteInfo();
+    
+
+    
+    // Ensure there's an initial and a follow-up with a null end-date, for future appointments
+    String initial = null;
+    String followup = null;
+    Assert.assertNotNull("Expected to find at least one Initial process with no expiration date", initial);
+    Assert.assertNotNull("Expected to find at least one FollowUp process with no expiration date", followup);
+  }
+
+}

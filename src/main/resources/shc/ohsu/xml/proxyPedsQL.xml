@@ -1,0 +1,436 @@
+<Form Description="Proxy Peds Quality of Life - Short Form" questionsPerPage="10">
+  <Items>
+    <Item Order="1">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        The following questions are regarding your child's quality of life.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        The following questions are regarding your teen's quality of life.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3" Page="start">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your child had with...
+        <p>Physical Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Page="start">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your teen had with...
+        <p>Physical Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        <h4>Walking more than one block</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="physical1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        <h4>Running</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="physical2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <h4>Participating in sports activity or exercise</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="physical3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        <h4>Lifting something heavy</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="physical4" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        <h4>Doing chores around the house</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="physical5" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="10" Page="start">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your child had with...
+        <p>Emotional Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Page="start">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your teen had with...
+        <p>Emotional Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        <h4>Feeling afraid or scared</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emotional1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        <h4>Feeling sad or blue</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emotional2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        <h4>Feeling angry</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emotional3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        <h4>Worrying about what will happen to him or her</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emotional4" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="16" Page="start">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your child had with...
+        <p>Social Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" Page="start">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your teen had with...
+        <p>Social Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="18">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Getting along with other children</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Getting along with other teens</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Other kids not wanting to be his or her friend</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Other teens not wanting to be his or her friend</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Getting teased by other children</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        <h4>Getting teased by other teens</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="social3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24" Page="start">
+      <PatientAttribute data_name="age" data_value="13" condition="lessthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your child had with...
+        <p>School Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" Page="start">
+      <PatientAttribute data_name="age" data_value="12" condition="greaterthan"/>
+      <Description>
+        <![CDATA[
+        In the past <u>ONE</u> month, how much of a problem has your teen had with...
+        <p>School Functioning (problems with...)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26">
+      <Description>
+        <![CDATA[
+        <h4>Paying attention in class</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27">
+      <Description>
+        <![CDATA[
+        <h4>Forgetting things</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="28">
+      <Description>
+        <![CDATA[
+        <h4>Keeping up with schoolwork</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Almost Never</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Almost Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

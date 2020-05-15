@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+  <!-- @oracle.comment.end@
+  <Resource name="jdbc/registryDB" auth="Container"
+            type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+            url="@registry.database.url@"
+            username="@registry.database.user@" password="@registry.database.password@" maxTotal="10" maxIdle="10"
+            maxWaitMillis="10000" defaultAutoCommit="false" validationQuery="select count(1) from dual"/>
+  <Parameter name="registry.jndi.datasource.flavor" value="oracle" override="false"/>
+  @oracle.comment.start@ -->
+  <!-- @postgresql.comment.end@
+  <Resource name="jdbc/registryDB" auth="Container"
+            type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+            url="@registry.database.url@"
+            username="@registry.database.user@" password="@registry.database.password@" maxTotal="10" maxIdle="10"
+            maxWaitMillis="10000" defaultAutoCommit="false" validationQuery="select 1"/>
+  <Parameter name="registry.jndi.datasource.flavor" value="postgresql" override="false"/>
+  @postgresql.comment.start@ -->
+  <!--<Resource name="jdbc/patsatDB" auth="Container"-->
+            <!--type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"-->
+            <!--url="@patsat.database.url@"-->
+            <!--username="@patsat.database.user@" password="@patsat.database.password@" maxTotal="10" maxIdle="10"-->
+            <!--maxWaitMillis="10000" defaultAutoCommit="false" validationQuery="select count(1) from dual"/>-->
+  <Parameter name="registry.jndi.datasource" value="java:comp/env/jdbc/registryDB" override="false"/>
+
+  <!-- Logging options - as detailed as possible for dev -->
+  <Parameter name="log4j.configuration" value="${catalina.base}/conf/log4j-${context.path}.xml" override="false"/>
+  <Parameter name="registry.sql.log.parameters" value="true" override="false"/>
+  <Parameter name="registry.sql.in.exception.messages" value="true" override="false"/>
+
+  <!-- polling is on, by default, in the database so everything is available for testing -->
+  <!-- You can turn off all or some using the following - - >
+  <Parameter name="registry.polling" value="false" override="false"/>
+  <Parameter name="import.url" value="" override="false"/>
+  <Parameter name="registry.batch.interval.seconds" value="0" override="false"/>
+  <Parameter name="registry.reload.users" value="false" override="false"/>
+  <Parameter name="registry.reload.config" value="false" override="false"/>
+  -->
+
+  <!-- Use "real" webauth with localhost as the "proxy". That mean you can have your
+       browser manipulate cookies to "authenticate". I use the "Modify Headers" extension
+       in Firefox and "ModHeader" in Chrome. Use these to set headers webauth_at=123
+       and X-WEBAUTH-USER=admin or whatever user you want. -->
+  <Parameter name="webauth.allow.header.X-WEBAUTH-USER" value="true" override="false"/>
+  <Parameter name="webauth.proxy.hosts" value="127.0.0.1,0:0:0:0:0:0:0:1,0:0:0:0:0:0:0:1%0,::1" override="false"/>
+
+  <!-- Allow survey.war to talk to registry.war -->
+  <Parameter name="registry.service.url" value="http://localhost:@tomcat.port.http@/registry/service1/survey2" override="false"/>
+  <Parameter name="choir.service.url" value="http://localhost:@tomcat.port.http@/registry/service1/survey2" override="false"/>
+  <Parameter name="ohsu.service.url" value="http://localhost:@tomcat.port.http@/registry/service1/survey2" override="false"/>
+  <Parameter name="registry.service.password" value="foo" override="false"/>
+  <Parameter name="ohsu.service.password" value="foo" override="false"/>
+  <Parameter name="satisfaction.service.url" value="http://localhost:@tomcat.port.http@/registry/patsat/survey2" override="false"/>
+  <Parameter name="satisfaction.service.password" value="foo" override="false"/>
+
+  <!-- Other settings for the registry were moved to the database, see CreateRegistrySchema -->
+
+  <!-- Load war file specific properties file (blank, in the developer sample) -->
+  <Parameter name="registry.properties" value="${catalina.base}/conf/${context.path}.properties" override="false"/>
+
+  <!-- Optionally enable periodic batch importing of patient/appointment files into registry -->
+  <Parameter name="import.process.frequency" value="2"/>  <!-- minutes, 0 disables, as does not setting the dir -->
+  <Parameter name="import.url" value="http://localhost:@tomcat.port.http@/registry/registry/svc/api/"/>
+</Context>

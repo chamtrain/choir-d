@@ -1,0 +1,34 @@
+<Form Description="Brace Survey" questionsPerPage="2">
+<Items>
+   <Item Order="1">
+     <Description>Do you wear a brace?</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="true">
+         <ref>brace</ref>
+         <item>
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="2"/>
+         </item>
+         <item>
+           <label>No</label>
+           <value>0</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" Visible="false">
+     <Description>Over the week, on average how many hours a day you wear your brace?</Description>
+     <Responses>
+      <Response Order="1" Type="input" required="true">
+        <ref>brace_hours</ref>
+        <format>
+          <datatype>integer</datatype>
+        </format>
+        <min>0</min>
+        <max>24</max>
+      </Response>
+     </Responses>
+   </Item>
+</Items>
+</Form>

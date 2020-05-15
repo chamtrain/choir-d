@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Pediatric Pain Patient Survey Response Extract</title>
+
+  <script src="../../js/jquery-1.12.0.min.cache.js"></script>
+  <script src="../../js/angular-1.7.5.min.cache.js"></script>
+  <script src="../../js/bootstrap-3.3.7.min.cache.js"></script>
+  <script src="./pedSurveyExtract.js"></script>
+  <script src="../../scripts/choir-api.js"></script>
+  <script src="../../scripts/choir-utils.js"></script>
+  <link rel="stylesheet" href="../../css/bootstrap-datepicker3-1.5.1.min.cache.css">
+  <link rel="stylesheet" href="../../css/bootstrap-3.3.7.min.cache.css">
+</head>
+
+<body>
+<div ng-app="PedSurveyDataExtract" ng-controller="PedSurveyDataExtractCtrl as vm">
+  <div class="container-fluid">
+    <h3>Patient Survey Response Extract</h3>
+
+    <div  ng-show="vm.arrayLines === null">
+    <form novalidate name="vm.form" ng-show="vm.fieldList !== null">
+
+      <div class="row">
+        <div class="col-md-6" >
+          <div class="=formGroup">
+            <div class="col-sm-3"><label class="control-label" for="fromDt">Surveys From</label><input id="fromDt" type="text" class="form-control" data-date-format="mm/dd/yyyy" name="fromDt" ng-model="vm.fromDt" /></div>
+            <div class="col-sm-3"><label class="control-label" for="toDt">To</label><input id="toDt" type="text" class="form-control" data-date-format="mm/dd/yyyy" name="toDt" ng-model="vm.toDt" /></div>
+        </div></div>
+
+        <div class="col-md-6" >
+          <form class="form-inline float-sm-right">
+            <div class="=formGroup">
+              <div> <label class="control-label" for="btns">Check the fields you want to include </label>
+                   </div>
+              <div class="btn-group" id="btns">
+                <span><button  class="btn btn-info" ng-click="vm.checkAll()">Check All</button></span>
+                <span><button  class="btn btn-info" ng-click="vm.uncheckAll()">UncheckAll</button></span>
+                <span><button  class="btn btn-primary" ng-click="vm.runExtract()">Run report</button></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row alert" >
+        <div class="col-lg-12">
+          <div class="col-md-6" > <span class="alert alert-danger col-sm-offset-6" align="center" ng-show="!vm.checked">* Please select at least one field</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+              <label ng-repeat="val in vm.fieldList track by $index " ng-click="vm.toggleSelection(val)" ng-checked="vm.isChecked(val)"
+                      class="col-md-3 ">
+                <input type="checkbox"
+                        name="vm.selectedFieldList"
+                        checked="vm.isChecked({{val}})"
+                        value="{{val.name}}"
+                        ng-model="val.selected"> {{val.name}}
+              </label>
+            </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <span><button  class="btn btn-info" ng-click="vm.checkAll()">Check All</button></span>
+          <span><button  class="btn btn-info" ng-click="vm.uncheckAll()">UncheckAll</button></span>
+          <span><button  class="btn btn-primary" ng-click="vm.runExtract()">Run report</button></span>
+        </div>
+      </div>
+    </form>
+  </div>
+    <div  ng-show="vm.arrayLines !== null">
+      <div><p>Data</p></div>
+      <table class="table table-striped table-bordered">
+        <thead>
+        <tr><th ng-repeat="val in vm.arrayLines[0]" >
+          {{val}}
+        </th></tr>
+        </thead>
+        <tr ng-repeat="line in vm.arrayLines track by $index" ng-if="$index > 0">
+          <td ng-repeat="val in line track by $index">{{val}}</td>
+        </tr>
+      </table>
+      <button  class="btn btn-info" ng-click="vm.downloadExtract()">Download</button>
+      <button  class="btn btn-primary" ng-click="vm.showParameters()">Return</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

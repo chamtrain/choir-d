@@ -1,0 +1,15 @@
+<Form Description="Start Bilateral Hip" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      Please answer this survey about your Bilateral Total or Partial Knee Replacement.
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

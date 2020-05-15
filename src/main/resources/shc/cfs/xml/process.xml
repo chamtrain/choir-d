@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="CFS-NewPatient" visit="1" visitType="NEW" order="1" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="12-09-2018" optional_questionnaires="CFS-Consented">
+    <Questionaire order="1" value="cfsConsent2" type="Local" xml="cfsConsent2"/>
+  </ProcessType>
+
+  <!--
+    Changed from PROMIS Bank v1.0 - Physical Function to PROMIS Bank v1.2 - Physical Function on 10/18/2016 
+    Added EnergyIndex and MedHistory on 04/04/2017
+   -->
+  <ProcessType value="CFS-Consented" visit="2" visitType="RTN" order="2" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="12-09-2018">
+    <Questionaire order="3" value="MFI20" type="Local" xml="MFI20"                                print_order="1" print_type="text, table"/>
+    <Questionaire order="4" value="MFIGeneralFatigue" type="Local" xml="MFIGeneralFatigue"        print_order="2.1" print_type="chart"/>
+    <Questionaire order="5" value="MFIPhysicalFatigue" type="Local" xml="MFIPhysicalFatigue"      print_order="2.2" print_type="chart"/>
+    <Questionaire order="6" value="MFIMentalFatigue" type="Local" xml="MFIMentalFatigue"          print_order="2.3" print_type="chart"/>
+    <Questionaire order="7" value="MFIReducedActivity" type="Local" xml="MFIReducedActivity"      print_order="3.1" print_type="chart"/>
+    <Questionaire order="8" value="MFIReducedMotivation" type="Local" xml="MFIReducedMotivation"  print_order="3.2" print_type="chart"/>
+    <Questionaire order="9" value="MFITotal" type="Local" xml="MFITotal"                          print_order="4.1" print_type="chart"/>
+    <Questionaire order="10"  value="EnergyIndex" type="Local" xml="EnergyIndex"                  print_order="5.1" print_type="chart, table"/>
+    <Questionaire order="11" value="painIntensity" type="Local" xml="painIntensity"                                                 print_order="6" print_type="chart, table"/>
+    <Questionaire order="12" value="PROMIS Bank v1.2 - Physical Function" type="LocalPromis" OID="56296D2D-C919-40F1-AFC7-6F544FCA7772"  print_order="7.1" print_type="chart, text" invert="true"/>
+    <Questionaire order="13" value="PROMIS Depression Bank" type="LocalPromis" OID="96FE494D-F176-4EFB-A473-2AB406610626"           print_order="7.2" print_type="chart, text"/>
+    <Questionaire order="14" value="PROMIS Anxiety Bank" type="LocalPromis" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF"              print_order="7.3" print_type="chart, text"/>
+    <Questionaire order="15" value="PROMIS Bank v1.0 - Sleep Disturbance" type="LocalPromis" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E"  print_order="8.1" print_type="chart, text" />
+    <Questionaire order="16" value="PROMIS Bank v2.0 - Social Isolation" type="LocalPromis" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF"   print_order="8.2" print_type="chart, text"/>
+    <Questionaire order="17" value="PROMIS Fatigue Bank" type="LocalPromis" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D"                   print_order="8.3" print_type="chart, text"/>
+    <Questionaire order="18" value="MedHistory" type="Local" xml="MedHistory"                     print_order="9" print_type="text"/>
+  </ProcessType>
+
+  <!-- Version 2 -->
+  
+  <ProcessType value="CFS-NewPatient.2" visit="1" visitType="NEW" order="3" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="12-09-2018" expiration_date="" optional_questionnaires="CFS-Consented.2">
+    <Questionaire order="1" value="cfsConsent2" type="Local" xml="cfsConsent2"/>
+  </ProcessType>
+
+  <ProcessType value="CFS-Consented.2" visit="2" visitType="RTN" order="4" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="12-09-2018" expiration_date="">
+    <Questionaire order="3" value="MFI20" type="Local" xml="MFI20"                                print_order="1" print_type="text, table"/>
+    <Questionaire order="4" value="MFIGeneralFatigue" type="Local" xml="MFIGeneralFatigue"        print_order="2.1" print_type="chart"/>
+    <Questionaire order="5" value="MFIPhysicalFatigue" type="Local" xml="MFIPhysicalFatigue"      print_order="2.2" print_type="chart"/>
+    <Questionaire order="6" value="MFIMentalFatigue" type="Local" xml="MFIMentalFatigue"          print_order="2.3" print_type="chart"/>
+    <Questionaire order="7" value="MFIReducedActivity" type="Local" xml="MFIReducedActivity"      print_order="3.1" print_type="chart"/>
+    <Questionaire order="8" value="MFIReducedMotivation" type="Local" xml="MFIReducedMotivation"  print_order="3.2" print_type="chart"/>
+    <Questionaire order="9" value="MFITotal" type="Local" xml="MFITotal"                          print_order="4.1" print_type="chart"/>
+
+    <Questionaire order="10" value="FSS@13848" type="Local" xml="FSS"                             print_order="5" print_type="text, table"/>
+    <Questionaire order="11" value="PhysicalFunction@13850" type="Local" xml="PhysicalFunction"   print_order="6" print_type="text, table"/>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="NEW" group="new" />
+    <VisitType value="RTN" group="return" />
+  </VisitTypes>
+</Process>    

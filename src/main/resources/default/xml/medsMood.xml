@@ -1,0 +1,664 @@
+<Form Description="Mood Medications" DateStarted="" DateFinished="" questionsPerPage="34">
+  <Items>
+    <ref>MEDSMOOD</ref>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Which of these mood medications have you taken?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Elavil <span class="fontnormal">(Amitriptyline)</span>]]></label>
+            <value>Elavil (Amitriptyline)</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Abilify <span class="fontnormal">(Aripiprazole)</span>]]></label>
+            <value>Abilify (Aripiprazole)</value>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Wellbutrin <span class="fontnormal">(Buproprion)</span>]]></label>
+            <value>Wellbutrin (Buproprion)</value>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Celexa <span class="fontnormal">(Citalopram)</span>]]></label>
+            <value>Celexa (Citalopram)</value>
+            <onselect Type="Item" Where="Order" Value="8">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="8">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Desipramine</label>
+            <value>Desipramine</value>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Pristiq <span class="fontnormal">(Desvenlafaxine)</span>]]></label>
+            <value>Pristiq (Desvenlafaxine)</value>
+            <onselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Cymbalta <span class="fontnormal">(Duloxetine)</span>]]></label>
+            <value>Cymbalta (Duloxetine)</value>
+            <onselect Type="Item" Where="Order" Value="14">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="14">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Lexapro <span class="fontnormal">(Escitalopram)</span>]]></label>
+            <value>Lexapro (Escitalopram)</value>
+            <onselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Prozac <span class="fontnormal">(Fluoxetine)</span>]]></label>
+            <value>Prozac (Fluoxetine)</value>
+            <onselect Type="Item" Where="Order" Value="18">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="18">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="18" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Savella <span class="fontnormal">(Milnacipran)</span>]]></label>
+            <value>Savella (Milnacipran)</value>
+            <onselect Type="Item" Where="Order" Value="20">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="20">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Remoron <span class="fontnormal">(Mitrazepine)</span>]]></label>
+            <value>Remoron (Mitrazepine)</value>
+            <onselect Type="Item" Where="Order" Value="22">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="22">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Serzone <span class="fontnormal">(Nefazadone)</span>]]></label>
+            <value>Serzone (Nefazadone)</value>
+            <onselect Type="Item" Where="Order" Value="24">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="24">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="24" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" ItemResponse="" ItemScore="">
+      <Descriptio/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Pamelor <span class="fontnormal">(Nortriptyline)</span>]]></label>
+            <value>Pamelor (Nortriptyline)</value>
+            <onselect Type="Item" Where="Order" Value="26">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="26">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="26" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Paxil <span class="fontnormal">(Paroxetine)</span>]]></label>
+            <value>Paxil (Paroxetine)</value>
+            <onselect Type="Item" Where="Order" Value="28">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="28">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="28" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Zoloft <span class="fontnormal">(Sertraline)</span>]]></label>
+            <value>Zoloft (Sertraline)</value>
+            <onselect Type="Item" Where="Order" Value="30">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="30">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="30" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label><![CDATA[Deseryl <span class="fontnormal">(Trazadone)</span>]]></label>
+            <value>Deseryl (Trazadone)</value>
+            <onselect Type="Item" Where="Order" Value="32">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="32">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="32" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Effexor <span class="fontnormal">(Venlafaxine)</span>]]></label>
+            <value>Effexor (Venlafaxine)</value>
+            <onselect Type="Item" Where="Order" Value="34">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="34">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="34" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Still taking</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Effective</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Experienced side effects</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

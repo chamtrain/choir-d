@@ -1,0 +1,44 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="2">
+  <Items>
+
+
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        Was there a specific time when your fatigue/energy-related illness began?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item><value>2</value><label>No</label></item>
+          <item><value>3</value><label>Not Sure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+
+
+
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false">
+      <Description>Approximately when did your fatigue/ energy-related illness begin? </Description>
+      <Responses>
+        <Response Order="1" Type="input" >
+          <ref>ONSETDATE</ref>
+          <label>(MM/DD/YY)</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+
+
+  </Items>
+</Form>

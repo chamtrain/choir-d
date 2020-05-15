@@ -1,0 +1,116 @@
+<Form Description="Stanford Five" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">     
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999" Class="painexpQuestion" Align="Horizontal" DescriptionPosition="above" >
+	 <Description><![CDATA[Explain what you believe is the cause of your pain?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="horizontal" Class="registrySurveyCBInline" Appearance="full">
+		   <ref>S5CAUSE</ref>
+           <width>280</width>
+           <item><label>Accident</label><value>1</value></item> 
+           <item><label>Injury</label><value>2</value></item> 
+           <item><label>Undiagnosed medical problem</label><value>3</value></item> 
+           <item><label>Muscle</label><value>4</value></item> 
+           <item><label>Nerve</label><value>5</value></item> 
+           <item><label>Disc</label><value>6</value></item> 
+           <item><label>Bone</label><value>7</value></item> 
+           <item><label>Cancer</label><value>8</value></item> 
+           <item><label>Infection</label><value>9</value></item> 
+           <item><label>Unknown</label><value>10</value></item> 
+        </Response> 
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+           <ref>S5CAUSE</ref>
+           <label>and/or</label>
+           <location>above</location>
+           <alert></alert>
+           <format>
+               <datatype>text</datatype>
+           	<charwidth>80</charwidth><!-- textarea width is chars -->
+           	<lines>5</lines>
+           </format>
+           <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+     </Responses>
+  </Item>
+ 
+  <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999" Class="painexpQuestion" Align="Horizontal" DescriptionPosition="above" >
+	 <Description><![CDATA[How has your pain affected your life?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="horizontal" Class="registrySurveyCBInline" Appearance="full">
+		   <ref>S5IMPACT</ref>
+           <width>280</width>
+	       <item><label>Laying in bed all day</label><value>1</value></item> 
+	       <item><label>Cannot do my job</label><value>2</value></item> 
+	       <item><label>Feeling isolated</label><value>3</value></item> 
+	       <item><label>Reduced social activities</label><value>4</value></item> 
+	       <item><label>Reduced recreational activities</label><value>5</value></item>   
+	    </Response> 
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+            <ref>S5IMPACT</ref>
+           <label>and/or</label>
+           <location>above</location>
+           <alert></alert>
+           <format>
+               	<datatype>text</datatype>
+		<charwidth>80</charwidth><!-- textarea width is chars -->
+   		<lines>5</lines>
+           </format>
+           <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+     </Responses>
+  </Item>
+  <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999" Code="STANFORD5" Class="painexpQuestion" Align="Horizontal" DescriptionPosition="above" >
+     <Description><![CDATA[If your pain were 50% less tomorrow, what would you be doing differently?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+	        <ref>S5DIFFERENT</ref>
+			<width>280</width>
+	       <item><label>More physical activities</label><value>1</value></item> 
+	       <item><label>Return to work</label><value>2</value></item> 
+	       <item><label>Do more housework</label><value>3</value></item> 
+	    </Response>
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+            <ref>S5DIFFERENT</ref>
+           <label>and/or</label>
+           <location>above</location>
+           <alert></alert>
+           <format>
+               <datatype>text</datatype>
+		<charwidth>80</charwidth><!-- textarea width is chars -->
+   		<lines>5</lines>
+           </format>
+           <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+    </Responses>
+  </Item>
+  <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999" Class="painexpQuestion" Align="Horizontal" DescriptionPosition="above" >
+     <Description><![CDATA[What do you believe is the appropriate treatment?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+			    <ref>S5TREATMENT</ref>
+          <width>280</width>
+          <item><label>Medications</label><value>1</value></item>
+          <item><label>Surgery</label><value>2</value></item>
+          <item><label>Physical therapy</label><value>3</value></item>
+          <item><label>Natural therapies</label><value>4</value></item>
+          <item><label>Complementary therapies</label><value>5</value></item>
+          <item><label>Psychological therapies</label><value>6</value></item>
+          <item><label>Mind-body therapies</label><value>7</value></item>
+          <item><label>Finding a diagnosis</label><value>8</value></item>
+          <item><label>Unknown</label><value>9</value></item>
+        </Response>
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+             <ref>S5TREATMENT</ref>
+            <label>and/or</label>
+            <location>above</location>
+            <alert></alert>
+            <format>
+                <datatype>text</datatype>
+           	<charwidth>80</charwidth>
+           	<lines>5</lines>
+            </format>
+            <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+     </Responses>
+  </Item>
+ </Items>
+</Form>

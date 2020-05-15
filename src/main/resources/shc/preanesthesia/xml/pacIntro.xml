@@ -1,0 +1,17 @@
+<Form Description="Pre-anesthesia Intro Page" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[<p>Welcome to the Stanford Anesthesia Preoperative Evaluation Clinic.
+        In order to provide you with the highest level of anesthesia care, please take a few minutes to answer the following questions.
+        Your complete medical information will enable us to develop an enhanced level of perioperative care and safety.
+        Your active participartion may help improve your patient experience. We appreciate your time and effort.</p>
+        <p><p>Thank you,</p>
+           <p>Your Anesthesia Team</p>]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"></Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

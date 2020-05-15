@@ -1,0 +1,53 @@
+<Form Description="Knee Society Score - Expectation" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        What do you expect to accomplish with your knee replacement:
+        <p>Do you expect your knee joint replacement surgery will relieve your knee pain?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>No, not at all</label></item>
+          <item><value>2</value><label>Yes, a little bit</label></item>
+          <item><value>3</value><label>Yes, somewhat</label></item>
+          <item><value>4</value><label>Yes, a moderate amount</label></item>
+          <item><value>5</value><label>Yes, a lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        <p>Do you expect your surgery will help you carry out your normal activities of daily living?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>No, not at all</label></item>
+          <item><value>2</value><label>Yes, a little bit</label></item>
+          <item><value>3</value><label>Yes, somewhat</label></item>
+          <item><value>4</value><label>Yes, a moderate amount</label></item>
+          <item><value>5</value><label>Yes, a lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <p>Do you expect your surgery will help you perform leisure, recreational or sports activities?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>No, not at all</label></item>
+          <item><value>2</value><label>Yes, a little bit</label></item>
+          <item><value>3</value><label>Yes, somewhat</label></item>
+          <item><value>4</value><label>Yes, a moderate amount</label></item>
+          <item><value>5</value><label>Yes, a lot</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

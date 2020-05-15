@@ -1,0 +1,197 @@
+<Form Description="Pain Experience" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">     
+  <Item Order="1" ItemScore="" RequiredMin="1" RequiredMax="3" Align="Horizontal" Class="registrySurvey" >
+	<Description><![CDATA[How long have you had your pain problem?]]></Description>
+	<Alert>Please enter a valid integer.</Alert>
+    <Responses>
+      <Response Order="1" required="false" Type="input"   Class="registrySurveyAnswer"  >
+        <ref>PAINDURATION</ref>
+        <label>Years</label>
+        <min>0</min>
+        <max>99</max>
+        <format>
+          <datatype>integer</datatype>
+          <lines>1</lines>
+          <charwidth>2</charwidth>
+        </format>
+        <hint>Enter an integer value</hint>
+        <Scores />
+      </Response>
+      <Response Order="2" required="false" Type="input" Class="registrySurveyAnswer"  >
+        <ref>PAINDURATION</ref>
+        <label>Months</label>
+        <min>0</min>
+        <max>12</max>
+        <location>right</location>
+        <format>
+          <datatype>integer</datatype>
+          <lines>1</lines>
+          <charwidth>2</charwidth>
+        </format>
+        <hint>Enter an integer value</hint>
+        <Scores />
+      </Response>
+      <Response Order="3" required="false" Type="input" Class="registrySurveyAnswer"  >
+        <ref>PAINDURATION</ref>
+        <label>Days</label>
+        <min>0</min>
+        <max>31</max>
+        <location>right</location>
+        <format>
+          <datatype>integer</datatype>
+          <lines>1</lines>
+          <charwidth>2</charwidth>
+        </format>
+        <hint>Enter an integer value</hint>
+        <Scores />
+      </Response>
+    </Responses>
+  </Item>
+  <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+	  <Description><![CDATA[Briefly describe how your pain started]]></Description>
+	<Responses>
+       <Response Order="1" required="true" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+		    <label></label>
+            <location>above</location>
+            <format>
+                <datatype>text</datatype>
+		<lines>5</lines>
+		<charwidth>80</charwidth>
+            </format>
+		 </Response>
+    </Responses>
+  </Item>
+  <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+	  <Description><![CDATA[Describe your current pain]]></Description>
+	  
+    <Responses>
+        <Response Order="1" Type="select" align="horizontal" Class="registrySurveyCBInline" Appearance="full">
+		   <ref>PAINQUALITY</ref>
+           <width>295px</width>
+	       <item><label>Throbbing</label><value>1</value></item> 
+	       <item><label>Shooting</label><value>2</value></item> 
+	       <item><label>Stabbing</label><value>3</value></item> 
+	       <item><label>Sharp</label><value>4</value></item> 
+	       <item><label>Cramping</label><value>5</value></item> 
+	       <item><label>Gnawing</label><value>6</value></item> 
+	       <item><label>Hot</label><value>7</value></item> 
+	       <item><label>Burning</label><value>8</value></item> 
+	       <item><label>Aching</label><value>9</value></item> 
+		</Response> 
+		<Response Order="2" Type="select" align="horizontal" Class="registrySurveyCBInline" Appearance="full">
+		   <ref>PAINQUALITY</ref>
+           <item><label>Heavy</label><value>10</value></item> 
+	       <item><label>Tender</label><value>11</value></item> 
+	       <item><label>Splitting</label><value>12</value></item> 
+	       <item><label>Tiring</label><value>13</value></item> 
+	       <item><label>Exhausting</label><value>14</value></item> 
+	       <item><label>Sickening</label><value>15</value></item> 
+	       <item><label>Fearful</label><value>16</value></item> 
+	       <item><label>Punishing</label><value>17</value></item> 
+	       <item><label>Cruel</label><value>18</value></item>
+	    </Response> 
+    </Responses>
+  </Item>
+  <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" required="true" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+    <Description><![CDATA[Please describe the timing of your pain]]></Description>
+    <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+	       <ref>PAINTIME</ref>
+	       <width>295px</width>
+	       <item><label>Brief</label><value>1</value></item> 
+	       <item><label>Constant</label><value>2</value></item> 
+	       <item><label>Comes and goes</label><value>3</value></item> 
+	       <item><label>Continuous</label><value>4</value></item> 
+	       <item><label>Always there</label><value>5</value></item> 
+	       <item><label>Appears and disappears</label><value>6</value></item> 
+	       <item><label>Intermittent</label><value>7</value></item> 
+        </Response>
+        <Response Order="2" required="false" Type="input"  Class="registrySurvey" Align="Vertical"><Scores />
+		   <ref>PAINTIME</ref>
+            <ref>text</ref>
+            <label>and/or</label>
+            <location>above</location>
+            <format>
+                <datatype>text</datatype>
+		<lines>5</lines>
+		<charwidth>80</charwidth>
+            </format>
+            <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+    </Responses>
+  </Item>
+  <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" required="true" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >
+     <Description><![CDATA[What do you do to ease or relieve your pain?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+		   <ref>PAINRELIEF</ref>
+            <width>295px</width>
+            <item><label>Nothing</label><value>1</value></item> 
+            <item><label>Acupuncture</label><value>2</value></item> 
+            <item><label>Bedrest</label><value>3</value></item> 
+            <item><label>Chiropractic treatments</label><value>4</value></item> 
+            <item><label>Dark room</label><value>5</value></item> 
+            <item><label>Exercise</label><value>6</value></item> 
+            <item><label>Massage</label><value>7</value></item>
+            <item><label>Medications</label><value>8</value></item>
+            <item><label>Heat</label><value>9</value></item>
+            <item><label>Ice pack</label><value>10</value></item>
+            <item><label>Movement</label><value>11</value></item>
+            <item><label>Physical therapy</label><value>12</value></item>
+            <item><label>Quiet room</label><value>13</value></item>
+            <item><label>Sitting</label><value>14</value></item>
+            <item><label>Standing</label><value>15</value></item>
+            <item><label>Walking</label><value>16</value></item>
+        </Response>
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+		   <ref>PAINRELIEF</ref>
+            <label>and/or</label>
+            <location>above</location>
+            <format>
+                <datatype>text</datatype>
+		<lines>5</lines>
+		<charwidth>80</charwidth>
+            </format>
+            <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+    </Responses>
+  </Item>
+  <Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="100" required="true" Class="registrySurvey" Align="Horizontal" DescriptionPosition="above" >>
+     <Description><![CDATA[What makes your pain worse?]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+		    <ref>PAINWORSE</ref>
+            <width>295px</width><!--  px -->
+            <item><label>Nothing</label><value>1</value></item> 
+            <item><label>Acupuncture</label><value>2</value></item> 
+            <item><label>Bedrest</label><value>3</value></item> 
+            <item><label>Chiropractic treatments</label><value>4</value></item> 
+            <item><label>Dark room</label><value>5</value></item> 
+            <item><label>Exercise</label><value>6</value></item> 
+            <item><label>Massage</label><value>7</value></item>
+            <item><label>Medications</label><value>8</value></item>
+            <item><label>Heat</label><value>9</value></item>
+            <item><label>Ice pack</label><value>10</value></item>
+            <item><label>Movement</label><value>11</value></item>
+            <item><label>Physical therapy</label><value>12</value></item>
+            <item><label>Quiet room</label><value>13</value></item>
+            <item><label>Sitting</label><value>14</value></item>
+            <item><label>Standing</label><value>15</value></item>
+            <item><label>Walking</label><value>16</value></item>
+            <item><label>Stress</label><value>17</value></item>
+        </Response>
+        <Response Order="2" required="false"  Type="input"  Class="surveyAugText"   Align="Vertical"><Scores />
+		    <ref>PAINWORSE</ref>
+            <label>and/or</label>
+            <location>above</location>
+            <format>
+                <datatype>text</datatype>
+		<lines>5</lines>
+		<charwidth>80</charwidth>
+            </format>
+            <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+    </Responses>
+  </Item>
+ </Items>
+</Form>

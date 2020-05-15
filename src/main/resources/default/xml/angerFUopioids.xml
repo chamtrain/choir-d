@@ -1,0 +1,32 @@
+<Form Description="Anger Follow Up functional assessment" DateStarted="" DateFinished="" questionsPerPage="2">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description><![CDATA[Are you currently taking any opioid medications (such as Vicodin, Oxycontin, Oxycodone, Morphine, MS-Contin, Codeine, Actiq, Duragesic, Dilaudid, Demerol, Methadone, Percocet, Opana, Nucynta, Stadol, Ultram, Norco)?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>OPS_CURRENTLY_TAKING</ref>
+          <item><label>Yes</label><value>0</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item><label>No</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false" >
+      <Description>I experienced cravings for pain medication</Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>OPS_EXPER_CRAVINGS</ref>
+          <item><label>Never</label><value>0</value></item>
+          <item><label>Rarely</label><value>1</value></item>
+          <item><label>Sometimes</label><value>2</value></item>
+          <item><label>Often</label><value>3</value></item>
+          <item><label>Almost always</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="../../js/jquery-1.12.0.min.cache.js"></script>
+    <script src="../../js/angular-1.7.5.min.cache.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.cache.js"></script>
+    <script src="../../scripts/patient-info.js"></script>
+    <script src="../../scripts/patient-lookup.js"></script>
+    <script src="../../scripts/choir-api.js"></script>
+
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7.min.cache.css">
+    <title>Sample application tab</title>
+    <style>
+      h1, h2, h3, p {
+        text-indent: 40px;
+      }
+    </style>
+
+    <title>Sample patient page</title>
+  </head>
+  <body>
+  <div style="align-content: center">
+    <div class="row" style="margin-left: 20px; margin-top: 20px;">
+      <div class="col-xs-10">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="border: 1px solid #ddd;">
+            <h1>Sample application tab </h1>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <p></p>
+            <h3 class="panel-default">This is an example of how to add a custom tab into the CHOIR clinic interface</h3>
+              <p style="margin-top: 10px;">With custom tabs you can
+                <ul style="margin-left: 30px;">
+                  <li> customize the display of CHOIR data obtained through the API
+                  <li> show data external to CHOIR within the application
+                  <li> include information related to the last searched for (current) CHOIR patient
+                </ul>
+              </p>
+
+            <div ng-app="PatientInfo" ng-controller="PatientInfoCtrl as vm">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p></p>
+                    <div class="well"><strong>Access the API at: </strong>{{vm.apiUrl}}
+                      <div ng-if="vm.patientId !== ''">
+                        <br><strong>For example use: </strong> {{vm.apiUrl}}/{{vm.patientId}}?siteId={{vm.siteId}}
+                        to retrieve this patient
+
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- Header -->
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div ng-if="vm.patientId !== ''">
+                      <h3><i>Current Patient </i></h3>
+                    </div>
+                    <div ng-if="vm.patientId == ''">
+                      <h2><i>No current patient</i></h2>
+                    </div>
+                  </div>
+                </div>
+                <div ng-if="vm.patientId !== ''">
+                  <!-- Patient name -->
+                  <!--h3>{{vm.firstName}} {{vm.lastName}} </h3 -->
+                  <div style="height: 20px"></div>
+                  <div class="row">
+                    <!-- Patient Info form -->
+                    <div class="col-sm-7">
+                      <form class="form-horizontal" name="vm.form" novalidate>
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="firstName">First Name:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="firstName" name="firstName" readonly
+                                   ng-model="vm.firstName">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="lastName">Last Name:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="lastName" name="lastName" readonly
+                                   ng-model="vm.lastName">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="patientId">Patient Id:</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="patientId" name="patientId" readonly
+                                   ng-model="vm.patientId">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="gender">Gender:</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="gender" name="gender" readonly ng-model="vm.gender">
+                            <!--select class="form-control" id="gender" name="gender"  ng-model="vm.gender">
+                              <option value=""></option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                            </select-->
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="birthdate">Birth date:</label>
+                          <div class="col-sm-4">
+                            <input type="date" class="form-control" id="birthdate" name="birthdate" readonly
+                                   ng-model="vm.dtBirth">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-3" for="email">Email:</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" name="email" readonly ng-model="vm.email">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3>For more information about CHOIR see <a href="https://choir.stanford.edu/">the Stanford CHOIR website</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

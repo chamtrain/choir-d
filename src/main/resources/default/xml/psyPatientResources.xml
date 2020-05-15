@@ -1,0 +1,298 @@
+<Form Description="Psychology Patient Resources" DateStarted="" DateFinished="" questionsPerPage="100" >
+  <Items>
+    <Item Order="0" ItemResponse="" ItemScore="">
+      <!--PatientAttribute data_name="psyResources" data_value="any" data_type="string" condition="exists"/ -->
+      <Description>
+        <![CDATA[<b>Thank you for completing this portion of the CHOIR assessment. Please read through the following suggestions and answer the remaining questions below to complete the questionnaire.</b>]]>
+	  </Description>
+      <Description>
+		    <![CDATA[Based on your responses, the following resources available at the Stanford Pain Management Center might be helpful for you to consider.
+          These resources do not replace your upcoming pain psychology evaluation and they may not be exhaustive. 
+          Your pain psychologist might recommend additional resources or provide alternatives to the resources listed below 
+          based on the evaluation. We look forward to seeing you during your upcoming appointment. ]]>
+      </Description>
+      <Description>
+        <![CDATA[ Resources that may be helpful for you:]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="ChronicPainClass" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>Free CBT for Chronic Pain Class</b>: Cognitive Behavioral Therapy (CBT) is a widely used, evidence-based,
+          non-pharmacological treatment approach that has been successfully applied to the management of chronic pain. 
+          This free class takes a structured approach to teaching patients different skills and strategies to take control of their pain. 
+          These skills can help you complete tasks that are important to you in a paced manner, enhance your engagement with healthy 
+          activities, and reduce the impact that stress can have on your pain. This group meets at the Stanford Pain Management Center 
+          for 2 hours once a week for 8 weeks and covers a different topic each week. You must attend the first week to continue with 
+          the group. 
+          Please ask your pain provider during your upcoming appointment for more information regarding class times and registration. ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		      <ref>ChronicPainClass</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="ASAPClass" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>All About Sleep and Pain (ASAP) Class</b>: Your responses suggested you have had some recent difficulties with sleep, which is quite common for patients with pain. The All About Sleep and Pain (ASAP) class was designed by pain and sleep specialists to address both of these concerns using non-pharmacological approaches. In this class you will learn evidence-based strategies to improve sleep and manage chronic pain more effectively. This class meets at the Stanford Pain Management Center 2.5 hours, once a week for 6 weeks. You must attend the first week to continue with the group. Please ask your pain provider during your upcoming appointment for more information regarding class times and registration. ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		      <ref>ASAPClass</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="ACTionClass" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>Back In ACTion Class</b>: This program is designed to help patients with chronic pain reclaim control over their lives. Led by a physical therapist, pain psychologist, and physician, this class is founded on pain neuroscience education and teaches psychological and behavioral coping skills to patients. This program stems from principles in pain biology and aims to have patients improve their awareness of movement and return to their valued activities. The class meets at the Stanford Pain Management Center for 4 hours, twice a week for 6 weeks. You must attend the first week to continue with the group. Please ask your pain provider during your upcoming appointment for more information regarding class times and registration. ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		      <ref>ACTionClass</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="OTPsyClass" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>Free One-Time Empowered Relief Pain Psychology Class</b>: You may benefit from attending our free one-time class that teaches skills focused on managing chronic pain. Research has shown that the way we think about our pain is associated with how we physically experience pain. This class teaches patients evidence-based techniques to help manage how we think about our pain in an effort to inspire hope and have more control over our pain. This free one-time, 2-hour class is offered once a month and is intended only for patients of the Stanford Pain Management Center. You are allowed to bring one guest. If you are interested in attending, please ask your pain provider during your upcoming appointment to register you for the class. ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		      <ref>OTPsyClass</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="IPsyServices" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>Individual Pain Psychology Services</b>: Pain is sensory and emotional experience that can impact several aspects of our lives. Often it can bring stress, anxiety, and poor mood, all of which can in turn increase the volume of our pain and get in the way of living the life we want to live. Individual pain psychology services can help you gain control over your pain. Based on your responses, you may qualify for our individual pain psychology services that focus on teaching skills and techniques (without the use of medications) to help manage chronic pain. Individual pain psychology services are an added component to your ongoing medical care. Individual psychology services at our clinic are one hour, typically once a week, for 4-8 weeks.  If you are interested in these services, please ask your pain provider during your upcoming appointment to add you to our waitlist. ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+          <ref>IPsyServices</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="ACPAGroup" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>American Chronic Pain Association (ACPA) Support Group</b>: Managing pain alone often times is difficult. Being a part of a support group can help foster a sense of community and help patients learn coping skills from others with similar conditions. The American Chronic Pain Association offers peer support and education in pain management skills to people with pain, family and friends, and health care professionals. The ACPA has peer lead support groups throughout that U.S., including a local chapter that meets at the Redwood City campus every 3rd Thursday of the month from 12:30pm-3:00pm in Conference room B-3, located in Pavilion B, 3rd floor. For more information about their services please visit: https://www.theacpa.org/ ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+          <ref>ACPAGroup</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="DeptPsyBS" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[ <b>Department of Psychiatry and Behavioral Sciences</b>: It is quite common for individuals to struggle at one point in their lives with stress, depression, anxiety, or trauma. Several patients have found that speaking with a mental health professional can help cope with these matters. You may benefit from speaking with a qualified professional at the Department of Psychiatry and Behavioral Sciences to help you get started with that process. If you like, you can ask your pain provider during your upcoming appointment for a referral to the Stanford Psychiatry and Behavioral Sciences Department.  For more information about their services please visit: https://med.stanford.edu/psychiatry.html ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		      <ref>DeptPsyBS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="StanfordSleep" data_type="string" condition="contains"/>
+      <Description>
+        <![CDATA[<b>Stanford Sleep Medicine Center</b>: Unhealthy sleep and sleep deprivation are linked to several adverse health consequences including increased pain. Your responses suggest you have had some recent difficulties with sleep. You may benefit from specialized care that addresses sleep disturbance. These services are offered at the Stanford Sleep Medicine Center. Their staff is comprised of psychologists, psychiatrists, neurologists, pulmonary specialists, and pediatricians, all of whom specialize in the treatment of sleep disturbance. If you like, you can ask your pain provider during your upcoming appointment for more information.  Additionally, you can visit this link for more information about their services: https://stanfordhealthcare.org/medical-clinics/sleep-medicine-center.html ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+          <item>
+            <label><![CDATA[This resource was helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[This resource was not helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I already knew of this resource]]></label>
+            <value>2</value>
+          </item>
+		  <ref>StanfordSleep</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item  Order="9" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="any" data_type="string" condition="exists"/>
+      <Description>
+          <![CDATA[Overall, did you find learning about these resources helpful? ]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very helpful]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[Helpful]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[Neither helpful nor unhelpful]]></label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[Unhelpful]]></label>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[Very unhelpful]]></label>
+            <value>4</value>
+          </item>
+          <ref>helpful</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="any" data_type="string" condition="exists"/>
+      <Description>
+          <![CDATA[How likely are you to ask the pain psychologist about these resources during your upcoming appointment?]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Very likely]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[Likely]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[Neutral]]></label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[Unlikely]]></label>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[Very unlikely]]></label>
+            <value>4</value>
+          </item>
+          <ref>ask_about</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="">
+      <PatientAttribute data_name="psyResources" data_value="any" data_type="string" condition="exists"/>
+      <Description>
+        <![CDATA[Prior to completing this CHOIR assessment, did you know about the resources listed above?]]>
+      </Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[I already knew about all these resources ]]></label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[I knew some resources, but not all]]></label>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[I did not know of any of these resources]]></label>
+            <value>2</value>
+          </item>
+          <ref>know_about</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

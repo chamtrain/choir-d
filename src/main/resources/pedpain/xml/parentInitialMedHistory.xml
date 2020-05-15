@@ -1,0 +1,437 @@
+<Form Description="Initial Parent - Child Medical History" questionsPerPage="1">
+  <Items>
+    <Item Order="2" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child had any <u>operations</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="operation" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+            <onselect Type="Item" Where="Order" Value="4"/>
+            <onselect Type="Item" Where="Order" Value="5"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false">
+      <Description>1. Reason for operation</Description>
+      <Responses>
+        <Response ref="op1-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="op1-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Visible="false">
+      <Description>2. Reason for operation</Description>
+      <Responses>
+        <Response ref="op2-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="op2-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Visible="false" Section="end">
+      <Description>3. Reason for operation</Description>
+      <Responses>
+        <Response ref="op3-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="op3-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="6" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child ever been <u>hospitalized for medical reasons other than for an operation</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="hospitalization" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="7"/>
+            <onselect Type="Item" Where="Order" Value="8"/>
+            <onselect Type="Item" Where="Order" Value="9"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Visible="false">
+      <Description>1. Reason for hospitalization</Description>
+      <Responses>
+        <Response ref="hosp1-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="hosp1-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="hosp1-days" Order="3" Type="input" min="0" max="365">
+           <label>Days in hospital</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Visible="false">
+      <Description>2. Reason for hospitalization</Description>
+      <Responses>
+        <Response ref="hosp2-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="hosp2-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="hosp2-days" Order="3" Type="input" min="0" max="365">
+           <label>Days in hospital</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Visible="false" Section="end">
+      <Description>3. Reason for hospitalization</Description>
+      <Responses>
+        <Response ref="hosp3-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="hosp3-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="hosp3-days" Order="3" Type="input" min="0" max="365">
+           <label>Days in hospital</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="10" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child ever been to the <u>emergency room</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emergency" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="11"/>
+            <onselect Type="Item" Where="Order" Value="12"/>
+            <onselect Type="Item" Where="Order" Value="13"/>
+            <onselect Type="Item" Where="Order" Value="14"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Visible="false">
+      <Description>
+        <![CDATA[
+        Where any of these emergency room visits related to pain?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="emergency-pain" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" Visible="false">
+      <Description>1. Reason for emergency room visit</Description>
+      <Responses>
+        <Response ref="emergency1-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="emergency1-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" Visible="false">
+      <Description>2. Reason for emergency room visit</Description>
+      <Responses>
+        <Response ref="emergency2-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="emergency2-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" Visible="false" Section="end">
+      <Description>3. Reason for emergency room visit</Description>
+      <Responses>
+        <Response ref="emergency3-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="emergency3-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="15" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child ever been <u>unconscious</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="unconscious" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="16"/>
+            <onselect Type="Item" Where="Order" Value="17"/>
+            <onselect Type="Item" Where="Order" Value="18"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" Visible="false">
+      <Description>1. Please describe</Description>
+      <Responses>
+        <Response ref="unconscious1-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="unconscious1-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" Visible="false">
+      <Description>2. Please describe</Description>
+      <Responses>
+        <Response ref="unconscious2-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="unconscious2-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" Visible="false" Section="end">
+      <Description>3. Please describe</Description>
+      <Responses>
+        <Response ref="unconscious3-reason" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="unconscious3-age" Order="2" Type="input" min="0" max="99">
+           <label>Age (years)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="19" Section="start">
+      <Description>
+        <![CDATA[
+        What <u>medications</u> does your child currently take for pain?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-meds" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="pain-meds-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        What other <u>medications</u> does your child currently take that are <u><i>not</i> for pain</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="other-meds" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="other-meds-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" Section="end">
+      <Description>
+        <![CDATA[
+        What <u>herbal or home remedies or recipes</u> do you currently use for the child's symptoms?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="herbal-remedies" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+        <Response ref="herbal-remedies-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22" Section="start">
+      <Description>
+        <![CDATA[
+        Total duration of pregnancy:
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pregnancy-term" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Full term</label> </item>
+          <item> <value>2</value> <label>Premature</label>
+            <onselect Type="Item" Where="Order" Value="23"/>
+          </item>
+          <item> <value>9</value> <label>Don't know or Unsure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>Number of weeks</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="premature-weeks" Order="1" Type="input" min="0" max="36">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24">
+      <Description>
+        <![CDATA[
+        Difficulties with pregnancy?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pregnancy-difficulties" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="25"/>
+          </item>
+          <item> <value>9</value> <label>Don't know or Unsure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>Describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pregnancy-difficulties-describe" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26">
+      <Description>
+        <![CDATA[
+        Difficulties related to delivery?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="delivery-difficulties" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="27"/>
+          </item>
+          <item> <value>9</value> <label>Don't know or Unsure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>Describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="delivery-difficulties-describe" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="28">
+      <Description>
+        <![CDATA[
+        Difficulties related to newborn period (1st month of life)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="newborn-difficulties" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="29"/>
+          </item>
+          <item> <value>9</value> <label>Don't know or Unsure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>Describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="newborn-difficulties-describe" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="30">
+      <Description>
+        <![CDATA[
+        Child's birth weight
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="birth-weight" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>Normal</label> </item>
+          <item> <value>1</value> <label>Abnormal</label>
+            <onselect Type="Item" Where="Order" Value="31"/>
+          </item>
+          <item> <value>9</value> <label>Don't know or Unsure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Specify weight</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="birth-weight-describe" Order="1" Type="input">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

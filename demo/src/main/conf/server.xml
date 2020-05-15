@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="@tomcat.port.shutdown@" shutdown="SHUTDOWN">
+  <!-- See https://tomcat.apache.org/tomcat-8.0-doc/config/listeners.html -->
+  <!-- Prevent memory leaks due to use of particular java/javax APIs-->
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+
+  <Service name="Catalina">
+    <!-- Obviously you wouldn't want these set up like this except for development -->
+    <Connector port="@tomcat.port.http@" protocol="HTTP/1.1" secure="true"/>
+    <Connector port="@tomcat.port.https@" protocol="HTTP/1.1"
+               compression="on" compressableMimeType="text/html,text/javascript"
+               scheme="https" secure="true" SSLEnabled="true"
+               keystoreFile="@ssl.keystore@" keystorePass="@ssl.password@"/>
+
+    <Engine name="Catalina" defaultHost="localhost">
+      <!-- The request dumper valve dumps useful debugging information about
+           the request and response data received and sent by Tomcat.
+           Documentation at: /docs/config/valve.html -->
+      <!--
+      <Valve className="org.apache.catalina.valves.RequestDumperValve"/>
+      -->
+
+      <Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="access" suffix=".log" pattern="common"/>
+      </Host>
+    </Engine>
+  </Service>
+</Server>

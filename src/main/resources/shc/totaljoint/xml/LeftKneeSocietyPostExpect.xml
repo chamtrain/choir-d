@@ -1,0 +1,55 @@
+<Form Description="Knee Society Score - Expectation" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Compared to what you expected before your left knee replacement:
+        <p>My expectations for pain relief were...</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Too High - "I'm a lot worse then I thought"</label></item>
+          <item><value>2</value><label>Too High - "I'm somewhat worse than I thought"</label></item>
+          <item><value>3</value><label>Just Right - "My expectations were met"</label></item>
+          <item><value>4</value><label>Too Low - "I'm somewhat better than I thought"</label></item>
+          <item><value>5</value><label>Too Low - "I'm a lot better than I thought"</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        Compared to what you expected before your left knee replacement:
+        <p>My expectations for being able to do my normal activities of daily living were...</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Too High - "I'm a lot worse then I thought"</label></item>
+          <item><value>2</value><label>Too High - "I'm somewhat worse than I thought"</label></item>
+          <item><value>3</value><label>Just Right - "My expectations were met"</label></item>
+          <item><value>4</value><label>Too Low - "I'm somewhat better than I thought"</label></item>
+          <item><value>5</value><label>Too Low - "I'm a lot better than I thought"</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        Compared to what you expected before your left knee replacement:
+        <p>My expectations for being able to do my leisure, recreational or sports activities were...</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Too High - "I'm a lot worse then I thought"</label></item>
+          <item><value>2</value><label>Too High - "I'm somewhat worse than I thought"</label></item>
+          <item><value>3</value><label>Just Right - "My expectations were met"</label></item>
+          <item><value>4</value><label>Too Low - "I'm somewhat better than I thought"</label></item>
+          <item><value>5</value><label>Too Low - "I'm a lot better than I thought"</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

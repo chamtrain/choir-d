@@ -1,0 +1,74 @@
+<Form Description="Contact" DateStarted="" DateFinished="" questionsPerPage="4">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" required="true" >
+      <Description>
+        <![CDATA[Are you being seen by a Pain doctor?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>paindoc</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" required="true" Visible="false" >
+      <Description>
+        <![CDATA[Are they at Stanford?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>stanforddoc</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>STANPHYS</ref>
+          <label>Physicians name</label>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" StyleName="dependantQuestion" Visible="false">
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>PHYSNAME</ref>
+          <label>Physicians name</label>
+          <Scores />
+        </Response>
+        <Response Order="2" Type="input">
+          <ref>PHYSNUMBER</ref>
+          <label>Phone number</label>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,130 @@
+<Form Description="Pre-Injury Global Health" DateStarted="" DateFinished="" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, would you say your health was]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline"  Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, would you say your quality of life was]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline"  Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, how would you rate your physical health?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, how would you rate your mental health, including your mood and your ability to think?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, how would you rate your satisfaction with your social activities and relationships?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>in general, please rate how well you carried out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Excellent</label><value>5</value></item>
+          <item><label>Very good</label><value>4</value></item>
+          <item><label>Good</label><value>3</value></item>
+          <item><label>Fair</label><value>2</value></item>
+          <item><label>Poor</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>to what extent were you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Completely</label><value>5</value></item>
+          <item><label>Mostly</label><value>4</value></item>
+          <item><label>Moderately</label><value>3</value></item>
+          <item><label>A little</label><value>2</value></item>
+          <item><label>Not at all</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>how often were you bothered by emotional problems such as feeling anxious, depressed or irritable?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>Never</label><value>5</value></item>
+          <item><label>Rarely</label><value>4</value></item>
+          <item><label>Sometimes</label><value>3</value></item>
+          <item><label>Often</label><value>2</value></item>
+          <item><label>Always</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Align="Horizontal"  Class="registrySurvey" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>how would you rate your fatigue on average?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyCBInline" Align="vertical">
+          <item><label>None</label><value>5</value></item>
+          <item><label>Mild</label><value>4</value></item>
+          <item><label>Moderate</label><value>3</value></item>
+          <item><label>Severe</label><value>2</value></item>
+          <item><label>Very severe</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" Align="Horizontal" Class="surveyQuestionHorizontal" RequiredMin="1" RequiredMax="1" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+      <Description><![CDATA[During the week prior to your injury,<BR>how would you rate your pain on average?]]></Description>
+      <Responses>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="No pain"><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Worst imaginable pain"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+      <Footing left="" right="" center=""/>
+      <Footing left="" right="" center=""/>
+    </Item>
+  </Items>
+</Form>

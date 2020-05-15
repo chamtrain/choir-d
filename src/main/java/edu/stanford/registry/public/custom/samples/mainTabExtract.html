@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sample application tab</title>
+    <style>
+
+    </style>
+    <script type="text/javascript">
+      TABLENAME = "RPT_PAIN_STD_SURVEYS_SQUARE";
+      function ChoirApiV10() {
+        return parent.choirApiV10() + "extract/" + TABLENAME + "?siteId=" + parent.getSiteId();
+      }
+
+    function loadTable( selectedFields  ) {
+      var http_request = new XMLHttpRequest();
+      try {
+        // Opera 8.0+, Firefox, Chrome, Safari
+        http_request = new XMLHttpRequest();
+      } catch (e) {
+        // Internet Explorer Browsers
+        try {
+          http_request = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            // Something went wrong
+            alert("Your browser broke!");
+          }
+        }
+      }
+      http_request.onreadystatechange = function () {
+
+        if (http_request.readyState == 4) {
+          // Parse the JSON data that is returned and create the checkboxes
+          var jsonObj = JSON.parse(http_request.responseText);
+
+          if (typeof jsonObj["ERROR"] === 'object')  {
+            document.write("<h1>An error occurred getting the meta-data needed for this page</h1> ");
+            document.write("<p><div style='font-size: x-large'><strong>Check that the table <label style='color: purple'> " + TABLENAME + "</label> exists in your database</p>");
+            document.write("<p>Or, change the value of the <label style='color: blue'>TABLENAME</label> variable at the top of this page to your custom square table name</p></div>");
+            return;
+          }
+
+          document.write("<form action=ChoirApiV10() method='post' name='extractform'> ");
+          var controlPanel = "<div style='padding: 10px 4px; background: #555; font-size: medium; color: whitesmoke; width: 100%;'>"
+                  +
+           "<input type='checkbox' onClick='selectAll(this)'/>Select All " +
+           "<input type='button' onclick='extractsubmit(\"view\")' value='View Data' style='margin-left: 15px;'>" +
+           "<input type='button' onclick='extractsubmit(\"download\")' value='Download data' style='margin-left: 15px;'>" +
+           "</div>";
+          document.write(controlPanel);
+
+          document.write("<table bgcolor='#d3d3d3'><tr>")
+          cnt=0;
+          for (var i=0; i < jsonObj.fieldList.length; i++) {
+
+            var fieldItem = jsonObj.fieldList[i];
+            document.write("<td>");
+            document.write("<input type='checkbox' name='fields' id='" + i + "' value='");
+            document.write(fieldItem);
+            document.write("'");
+            if (selectedFields.length > 0) {
+
+              var sFields = selectedFields.split(",");
+                for (s in sFields) {
+                  if (sFields[s] === fieldItem) {
+                    document.write(" checked ");
+                  }
+                }
+            }
+
+            document.write(">" + fieldItem + "</td>");
+            cnt++;
+            if (cnt > 5) {
+              document.write("</tr><tr>");
+              cnt=0;
+            }
+
+          }
+          document.write("</tr></table>");
+          document.write(controlPanel);
+          document.write("</form>");
+
+        }
+      };
+      http_request.open("GET", ChoirApiV10(), true);
+      http_request.send();
+    }
+
+    function selectAll(source) {
+      checkboxes = document.getElementsByName("fields");
+      var n=checkboxes.length;
+      for (var i=0; i<n; i++) {
+        checkboxes[i].checked = source.checked;
+      }
+
+    }
+
+      function saveJSON( jsonObj ){
+        var filename = "extract.csv";
+
+        if(!filename) filename = 'console.json'
+        // convert json to csv
+        var downloadString = '';
+        if(typeof jsonObj === "object"){
+
+          for (var i = 0; i < jsonObj.EXTRACTDATA.length; i++) {
+            var arr = jsonObj.EXTRACTDATA[i];
+            var line = '';
+            for (a in arr) {
+              if (line !== '') line +=',';
+              line +="\"" + arr[a] +"\"";
+            }
+            downloadString += line + '\r\n';
+          }
+
+        }
+
+        var blob = new Blob([downloadString], {type: 'text/csv'}),
+                e    = document.createEvent('MouseEvents'),
+                a    = document.createElement('a')
+
+        a.download = filename
+        a.href = window.URL.createObjectURL(blob)
+        a.dataset.downloadurl = ['text/csv', a.download, a.href].join(':')
+        e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+        a.dispatchEvent(e)
+
+        document.write("<h2>Data download complete</h2>");
+      }
+
+    </script>
+    <title>Sample patient page</title>
+  </head>
+  <body>
+    <script>
+      function extractsubmit( typ ) {
+
+        var checkboxes = document.getElementsByName("fields");
+        var jsonData = {};
+        var ii = checkboxes.length;
+        var arr = new Array();
+
+        for (var i = 0; i < ii; ++i) {
+          if (checkboxes[i].checked) {
+            arr.push(checkboxes[i].value);
+          }
+        }
+
+        jsonData["fields"] = arr;
+
+
+        var http_request = new XMLHttpRequest();
+        try {
+          // Opera 8.0+, Firefox, Chrome, Safari
+          http_request = new XMLHttpRequest();
+        } catch (e) {
+          // Internet Explorer Browsers
+          try {
+            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+          } catch (e) {
+            try {
+              http_request = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+              // Something went wrong
+              alert("Your browser broke!");
+            }
+          }
+        }
+        http_request.onreadystatechange = function () {
+
+          if (http_request.readyState == 4) {
+            // Parse the JSON data that is returned and display or download
+            document.open();
+            document.write("<p></p>");
+
+            var jsonObj = JSON.parse(http_request.responseText);
+            if(!jsonObj || jsonObj === "undefined" ||  jsonObj.EXTRACTDATA == undefined) {
+              document.write("<h2>NO DATA FIELDS WERE SELECTED</h2>");
+              document.write("<div style='padding: 10px 4px; background: #555; font-size: medium; width: 222px;'>");
+              document.write("<div style='margin: auto; width: 20px'><input type='button' onclick=loadTable('') value='Return'></div></div>");
+              document.close();
+              return;
+            }
+            var fieldchoices = "";
+            var headingArr = jsonObj.EXTRACTDATA[0];
+            if (headingArr.length > 0) {
+
+              for (a in headingArr) {
+                if (fieldchoices.length > 0)
+                  fieldchoices+=",";
+                fieldchoices+=headingArr[a];
+              }
+            }
+            var buttonDiv = "<div style='padding: 0px 4px 0px 4px; background: #555; font-size: medium; width: 52px; margin: auto;'>";
+
+            if ("view" == typ) {
+              document.write(buttonDiv);
+              document.write("<input type='button' onclick=loadTable('" + fieldchoices + "') value='Return'>")
+              document.write("<p></p></div>");
+              document.write("<table border='2' cellpadding='5' style='border-collapse: collapse';><tr>");
+              //alert(jsonObj.EXTRACTDATA.length + " rows returned");
+              if (jsonObj.EXTRACTDATA.length > 0) {
+
+               // alert(headingArr.length + " entries in headingArr")
+                for (a in headingArr) {
+                  document.write("<th style='background: #b3b3b3; color: white;'>");
+                  document.write(headingArr[a]);
+                  document.write("</th>");
+
+                }
+              }
+              document.write("</tr>");
+              for (var i = 1; i < jsonObj.EXTRACTDATA.length; i++) {
+                var arr = jsonObj.EXTRACTDATA[i];
+                document.write("<tr>");
+                for (a in arr) {
+                  document.write("<td>");
+                  document.write(arr[a]);
+                  document.write("</td>");
+                }
+                document.write("</tr>");
+              }
+              document.write("</table>");
+            } else {
+              saveJSON(jsonObj)
+            }
+            document.write("<p></p>");
+            document.write(buttonDiv);
+            document.write("<input type='button' onclick=loadTable('" + fieldchoices + "') value='Return'>");
+            document.write("<p></p></div>");
+            document.close();
+
+          }
+      };
+      http_request.open("POST", ChoirApiV10(), true);
+      http_request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      http_request.send(JSON.stringify(jsonData));
+      };
+    </script>
+    <p>
+      <script>
+          loadTable('');
+          document.write()
+      </script>
+    </p>
+    <p/>
+   </body>
+</html>

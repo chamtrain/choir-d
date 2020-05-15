@@ -1,0 +1,201 @@
+<Form Description="Opioid Risk Assessment"  DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="0" ItemResponse="" ItemScore="" required="false" TimeStarted="" TimeFinished="">
+      <PatientAttribute data_name="gender" data_value="Male" data_type="string" condition="equal"/>
+      <Description>
+        <![CDATA[Family History of Substance Abuse]]>
+      </Description>
+      <Responses>
+        <Response Order="0" Type="select" Appearance="full">
+          <item>
+            <label>Alcohol</label>
+            <value>3</value>
+          </item>
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Illegal Drugs</label>
+            <value>3</value>
+          </item>
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Order="2" Type="select" Appearance="full">
+          <item>
+            <label>Prescription Drugs</label>
+            <value>3</value>
+          </item>
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="1" ItemResponse="" ItemScore="" required="false" TimeStarted="" TimeFinished="">
+      <PatientAttribute data_name="gender" data_value="Male" data_type="string" condition="notequal"/>
+      <Description>
+        <![CDATA[Family History of Substance Abuse]]>
+      </Description>
+      <Responses>
+        <Response Order="0" Type="select" Appearance="full">
+          <item>
+            <label>Alcohol</label>
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Illegal Drugs</label>
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Order="2" Type="select" Appearance="full">
+          <item>
+            <label>Prescription Drugs</label>
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" required="false">
+      <Description>
+        <![CDATA[Personal History of Substance Abuse]]>
+      </Description>
+      <Responses>
+        <Response Order="0" required="false" Type="select" Appearance="full" >
+          <item>
+            <label>Alcohol</label>
+            <value>3</value>
+          </item>
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Illegal Drugs</label>
+            <value>4</value>
+          </item>
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Order="2" Type="select" Appearance="full">
+          <item>
+            <label>Prescription Drugs</label>
+            <value>5</value>
+          </item>
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" required="false" >
+      <Description>
+          <![CDATA[Age (Mark box if 16 - 45)]]>
+      </Description>
+      <Responses>
+        <Response Order="0" Type="select" Appearance="full">
+          <item>
+            <label>Yes</label> 
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" required="true" RequiredMax="1">
+      <PatientAttribute data_name="gender" data_value="Male" data_type="string" condition="equal"/>
+      <Description>
+        <![CDATA[History of Preadolescent Sexual Abuse]]>
+      </Description>
+      <Responses>
+        <Response Order="0"  required="false" Type="select1" Appearance="full" >
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select1" Appearance="full">
+          <item>
+            <label>No</label>
+            <value>0</value>
+          </item>
+          <Scores>
+            <Score value="0"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" required="true" RequiredMax="1">
+      <PatientAttribute data_name="gender" data_value="Male" data_type="string" condition="notequal"/>
+      <Description>
+        <![CDATA[History of Preadolescent Sexual Abuse]]>
+      </Description>
+      <Responses>
+        <Response Order="0"  required="false" Type="select1" Appearance="full">
+          <item>
+            <label>Yes</label>
+            <value>0</value>
+          </item>
+          <Scores>
+            <Score value="0"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select1" Appearance="full">
+          <item>
+            <label>No</label>
+            <value>0</value>
+          </item>
+          <Scores>
+            <Score value="0"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore=""  RequiredMin="0" RequiredMax="0" required="false">
+      <Description>
+        <![CDATA[Psychological Disease]]>
+      </Description>
+      <Responses>
+        <Response Order="0"  required="false" Type="select" Appearance="full">
+          <item>
+            <label>Attention Deficit Disorder, Obsessive Compulsive Disorder, Bipolar Schizophrenia</label>
+            <value>2</value>
+          </item>
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Depression</label>
+            <value>1</value>
+          </item>
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

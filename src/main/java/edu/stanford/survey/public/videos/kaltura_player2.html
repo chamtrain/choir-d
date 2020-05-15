@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<!--
+ Load the kaltura player library
+-->
+<script type='text/javascript'>
+   function getPlayerLib() {
+       var libUrl = 'https://www.kaltura.com/p/' + parent.getPartnerId2()
+                        + '/sp/' + parent.getPartnerId2() + '00/embedIframeJs/uiconf_id/' + parent.getUiconfId2()
+                        + '/partner_id/' + parent.getPartnerId2();
+        return libUrl;
+   }</script>
+   <script>
+    var head = document.getElementsByTagName('head').item(0);
+    var script = document.createElement('script');
+    script.setAttribute('src', getPlayerLib());
+    head.appendChild(script);
+   </script>
+
+  <!--
+    Using the kaltura kWidget API embed the player into the "videoPlayer2" element below
+    and listen for notifications that certain events occurred in the player, such as the video is playing or is paused.
+    -->
+  <script>
+    function loadPlayerCallbacks() {
+      var playerDiv = document.getElementById("videoPlayer2");
+      playerDiv.setAttribute('style',parent.getPlayerStyle2());
+      playerDiv.setAttribute('id',parent.getTargetId2());
+      var vTargetId = parent.getTargetId2();
+      var vWid = parent.getWid2();
+      var vUiconfId = parent.getUiconfId2();
+      var vEntryId = parent.getEntryId2();
+      kWidget.embed({
+        'targetId': vTargetId,
+        'wid': vWid,
+        'uiconf_id' : vUiconfId,
+        'entry_id' : vEntryId,
+        'flashvars':{ 
+        'myPlugin':{ 'Kaltura.protocol': 'https', }, 
+          'autoPlay' : false 
+        },
+        'readyCallback': function( playerId ){ 
+          var kdp = document.getElementById( playerId ); 
+          var timePlayed = '0'; 
+          var isPaused = "true";
+          var eventInterval = 10.0;
+          var nextInterval = 0.0;
+          kdp.kBind('playerPlayed.choirVideoPlayer', function( id ) {
+            parent.playerStateChangeHandler2(id, 'Played', String(timePlayed));
+            isPaused = "false";
+          }); 
+          kdp.kBind('playerPaused.choirVideoPlayer', function( id ) { 
+	        parent.playerStateChangeHandler2(id, 'Paused', String(timePlayed));
+	        isPaused = "true";
+	      }); 
+	      kdp.kBind('playerUpdatePlayhead.choirVideoPlayer', function ( progressSeconds, id ) {
+	        timePlayed = progressSeconds;
+	        if (isPaused == "false") { 
+	           if (progressSeconds > nextInterval) {
+	               parent.playerStateChangeHandler2(id, 'Progress', String(timePlayed));
+	               nextInterval = progressSeconds + eventInterval;
+	           }
+	        }
+	      }); 
+	      kdp.kBind( 'playbackComplete.choirVideoPlayer', function() { 
+	        parent.playerStateChangeHandler2( playerId, 'Completed', String(timePlayed) );
+	        timePlayed = '0';
+	        setTimeout(function() { kdp.kUnbind('.choirVideoPlayer') }, 3000); 
+	      });
+        }
+      });
+      // console.log('kWidget injected for: ' + parent.getTargetId())
+    }
+  </script>
+</head>
+<body onload="loadPlayerCallbacks();">
+<div id="videoPlayer2"></div>
+</body>
+</html>

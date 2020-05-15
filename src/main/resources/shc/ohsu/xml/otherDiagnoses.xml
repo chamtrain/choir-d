@@ -1,0 +1,17 @@
+<Form Description="Other Diagnoses" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>Does your child have any other significant medical or mental health diagnoses (e.g., POTS, ADHD, depression)?</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="false">
+          <ref>DIAGNOSES</ref>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

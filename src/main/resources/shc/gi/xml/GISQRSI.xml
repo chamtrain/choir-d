@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Reflux Symptom Index" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Within the past month, how did the following problems affect you? (0 has no problem, 5 has severe Problem)]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Hoarseness or a problem with your voice]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Clearing your throat]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Excess throat mucous or postnasal drip]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Difficulty swallowing food, liquids or pills]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Coughing after you eat or after lying down]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[Breathing difficulties or choking episodes]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Troublesome or annoying cough]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_7</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Sensation of something sticking in your throat or a lump in your throat]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_8</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Heartburn, chest pain, indigestion or stomach acid coming up]]></Description>
+      <Responses>
+        <Response Order="0" Type="slider" lowerBound="0" required="true" upperBound="5">
+          <ref>GI_RSI_9</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

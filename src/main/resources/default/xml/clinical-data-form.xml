@@ -1,0 +1,25 @@
+<ClinicalDataForm>
+ 
+ 	<!--  name=patient_document.document_name  
+ 		each components "tag" is the xml element tag
+ 	-->
+    <FormField name="Diagnosis" dataObject="edu.stanford.registry.shared.PatientDiagnosis" type="composite" label="Patients Diagnosis">
+    	<component type="select1" file="clinical-diagnosis.xml" tag="Diagnosis" label="Diagnosis" required="true"/>
+    	<component type="date"  tag="FormDate" label="Date" required="true"/>
+    	<component type="text"  tag="Physician" label="Physician" size="100px" />
+    </FormField>
+    
+    <FormField name="Treatment" dataObject="edu.stanford.registry.shared.PatientTreatment"  type="composite" label="Patients Treatments">
+    	<component type="select1" file="clinical-treatment.xml" tag="Treatment" label="Treatments"/>
+    	<component type="date" tag="FormDate"  label="Date" />
+ 	</FormField>
+ 	
+ 	<FormField name="Medication" dataObject="edu.stanford.registry.shared.PatientMedication" type="composite" label="Patients Medications">
+ 		<component type="text" tag="Medication" label="Medication" size="300px"/>
+    	<component type="text" tag="Dose" label="Dose" size="75px"/>
+    	<component type="text" tag="Frequency" label="Frequency" size="100px"/>
+    	<component type="date" tag="FormDate" label="Date Started"/>
+    	<component type="text" tag="Physician" label="Prescribing Doctor" size="100px"/>
+    </FormField>
+    
+</ClinicalDataForm>    

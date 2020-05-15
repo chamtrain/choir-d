@@ -1,0 +1,135 @@
+<Form Description="KOOS Knee Survey - Symptoms" questionsPerPage="1">
+  <Items>
+  <!--
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        <p>These questions should be answered thinking of your knee symptoms during the <u>last week</u>.</p>
+        <p>Do you have swelling in your knee?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S1" Type="select1" required="true">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Rarely</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        <p>These questions should be answered thinking of your knee symptoms during the <u>last week</u>.</p>
+        <p>Do you feel grinding, hear clicking or any other type of noise when your knee moves?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S2" Type="select1" required="true">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Rarely</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <p>These questions should be answered thinking of your knee symptoms during the <u>last week</u>.</p>
+        <p>Does your knee catch or hang up when moving?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S3" Type="select1" required="true">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Rarely</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        <p>These questions should be answered thinking of your knee symptoms during the <u>last week</u>.</p>
+        <p>Can you straighten your knee fully?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S4" Type="select1" required="true">
+          <item><value>0</value><label>Always</label></item>
+          <item><value>1</value><label>Often</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Rarely</label></item>
+          <item><value>4</value><label>Never</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        <p>These questions should be answered thinking of your knee symptoms during the <u>last week</u>.</p>
+        <p>Can you bend your knee fully?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S5" Type="select1" required="true">
+          <item><value>0</value><label>Always</label></item>
+          <item><value>1</value><label>Often</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Rarely</label></item>
+          <item><value>4</value><label>Never</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  -->
+    <Item Order="6" Section="start">
+      <Description>
+        <![CDATA[
+        <p>The following questions concern the amount of joint stiffness you have experienced during the <u>last week</u> in 
+        your knee. Stiffness is a sensation of restriction or slowness in the ease with which you move your knee joint.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <p>How severe is your knee joint stiffness after first wakening in the morning?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S6" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Section="end">
+      <Description>
+        <![CDATA[
+        <p>How severe is your knee stiffness during sitting, lying or resting <u>later in the day</u>?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="S7" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

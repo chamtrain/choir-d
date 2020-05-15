@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PatientAttributes>
+  	
+    <!-- FormField value="dob" type="date" label="Date of Birth" required="true"/ -->
+    <!-- FormField value="email" type="string" label="Email Address"/ -->
+    <FormField name="gender" type="enumeration" label="Gender" >
+  		<enum value="Male" label="Male" />
+  		<enum value="Female" label="Female"/>
+    </FormField>
+    <!-- FormField value="ssn" type="string" label="Social Security Number" required="true">
+ 		<restriction pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" />
+    </FormField -->
+    <!-- FormField value="phonenumber" type="string" label="Phone" occurs="3" associations="phonetype">
+        <restriction pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}"/>
+    </FormField -->
+    <!-- FormField value="phonetype" type="enumeration" label="Phone type">
+		<enum value="Home"/>
+		<enum value="Work"/>
+		<enum value="Other"/>
+    </FormField-->
+    <FormField name="maritalStatus" type="enumeration" label="Marital Status" required="true">
+    	<enum value="Married"/>
+    	<enum value="Separated"/>
+    	<enum value="Widowed"/>
+    	<enum value="Never Married"/>
+    	<enum value="Living Together"/>
+    </FormField>
+    <FormField name="numberChildren" type="integer" label="Children" required="false">
+     <minimum value="0"/><maximum value="99"/>
+    </FormField>
+    </PatientAttributes>    

@@ -1,0 +1,92 @@
+<Form Description="bodymap" DateStarted="" DateFinished="">
+<Items>
+  <Item Order="1" Align="Image" Class="surveyQuestionBodymap" RequiredMin="1" RequiredMax="100" ItemResponse="" ItemScore="" TimeStarted="" TimeFinished="">
+    <Description><![CDATA[Select the areas on the back and front of your <b>left</b> hand where you are experiencing pain]]></Description>
+    <img name="left_hand_back" src="images/maps/left_hand_back.161130.cache.png" width="345" height="400" id="left_hand_back" usemap="#m_left_hand_back" alt="Left hand back image" border="0" />
+    <map Order="1" name="m_left_hand_back" id="m_left_hand_back">
+      <area shape="poly" coords="72,390,89,348,99,329,98,320,113,314,129,314,130,338,125,357,121,381,119,395,94,394,72,390" id="218" alt="" />
+      <area shape="poly" coords="121,394,125,367,128,349,132,336,131,313,169,310,169,364,177,393,178,398,149,397,121,394" id="217" alt="" />
+      <area shape="poly" coords="214,393,214,358,218,336,203,312,190,308,172,308,172,339,171,362,180,395,202,397,214,393" id="216" alt="" />
+      <area shape="poly" coords="97,320,83,292,78,271,68,240,63,227,72,222,99,196,118,195,131,189,142,186,162,180,181,182,202,184,224,194,225,219,228,228,232,237,222,267,209,290,201,309,173,306,130,311,109,315,97,320" id="215" alt="" />
+      <area shape="poly" coords="63,227,97,195,89,175,84,171,72,151,60,157,49,162,55,182,57,208,63,227" id="214" alt="" />
+      <area shape="poly" coords="52,161,40,144,40,136,52,132,62,131,71,150,60,154,52,161" id="213" alt="" />
+      <area shape="poly" coords="40,135,32,101,26,85,34,77,45,80,54,96,59,115,61,131,49,131,40,135" id="212" alt="" />
+      <area shape="poly" coords="89,171,91,162,91,144,87,136,100,135,114,133,123,130,126,144,133,155,136,170,141,185,119,192,99,194,89,171" id="211" alt="" />
+      <area shape="poly" coords="89,134,82,111,80,95,93,92,102,89,110,87,116,98,121,114,121,129,107,133,89,134" id="210" alt="" />
+      <area shape="poly" coords="80,92,72,61,70,41,76,31,87,31,97,37,103,60,111,86,93,90,80,92" id="209" alt="" />
+      <area shape="poly" coords="142,118,136,101,138,65,168,63,172,77,173,89,172,113,156,116,142,118" id="207" alt="" />
+      <area shape="poly" coords="138,64,136,40,133,15,143,4,154,4,161,13,165,20,167,32,167,62,151,62,138,64" id="206" alt="" />
+      <area shape="poly" coords="142,183,135,155,143,150,143,128,140,121,161,120,173,117,178,137,184,151,182,167,180,180,165,178,142,183" id="208" alt="" />
+      <area shape="poly" coords="183,180,184,150,193,135,195,111,209,116,226,115,222,156,222,189,203,181,183,180" id="205" alt="" />
+      <area shape="poly" coords="196,108,202,76,203,68,217,68,229,75,225,113,209,115,196,108" id="204" alt="" />
+      <area shape="poly" coords="203,66,218,67,231,73,235,48,234,35,228,27,218,23,213,29,206,42,203,66" id="203" alt="" />
+      <area shape="poly" coords="219,335,230,327,243,313,261,288,277,247,267,226,259,214,245,231,236,235,232,239,223,272,208,295,204,308,211,319,219,335" id="101" title="101" alt="101" />
+      <area shape="poly" coords="259,210,272,229,280,245,286,233,295,223,295,218,305,204,307,198,316,181,315,172,311,167,296,166,281,176,267,197,259,210" id="201" alt="" />
+    </map>
+    <img name="left_hand_front" src="images/maps/left_hand_front.161130.cache.png" width="337" height="400" id="left_hand_front" usemap="#m_left_hand_front" alt="Left hand front image" border="0"/>
+    <map Order="2" name="m_left_hand_front" id="m_left_hand_front">
+      <area shape="poly" coords="239,310,238,370,275,394,274,349,267,335,275,319,278,306,279,290,264,302,239,310" id="118" title="118" alt="118" />
+      <area shape="poly" coords="235,368,221,374,197,379,184,385,184,342,184,312,237,313,235,368" id="117" title="117" alt="117" />
+      <area shape="poly" coords="151,394,149,369,145,359,134,351,122,346,105,323,117,306,126,290,140,293,167,308,184,312,183,353,181,384,167,391,151,394" id="116" title="116" alt="116" />
+      <area shape="poly" coords="279,290,253,304,231,309,184,309,161,302,141,290,128,289,129,267,122,254,122,241,121,210,121,197,119,192,142,191,153,183,208,181,228,181,252,193,292,207,288,233,286,262,279,290" id="115" title="115" alt="115" />
+      <area shape="poly" coords="259,195,257,175,262,175,269,157,273,140,276,141,298,154,294,171,293,206,277,200,259,195" id="114" title="114" alt="114" />
+      <area shape="poly" coords="275,138,278,128,281,101,304,119,302,140,298,152,275,138" id="113" title="113" alt="113" />
+      <area shape="poly" coords="281,100,288,80,298,74,309,80,309,94,305,116,281,100" id="112" title="112" alt="112" />
+      <area shape="poly" coords="207,177,208,165,215,131,218,115,238,115,255,126,251,150,252,167,255,176,258,195,231,180,207,177" id="111" title="111" alt="111" />
+      <area shape="poly" coords="218,113,218,98,224,81,243,79,254,87,254,122,239,114,218,113" id="110" title="110" alt="110" />
+      <area shape="poly" coords="223,80,227,49,232,35,245,31,257,42,260,57,255,85,247,78,223,80" id="109" title="109" alt="109" />
+      <area shape="poly" coords="159,100,161,135,161,151,155,167,156,182,207,179,207,165,195,155,197,105,188,100,159,100" id="108" title="108" alt="108" />
+      <area shape="poly" coords="160,57,159,80,158,99,186,99,199,105,192,81,190,61,160,57" id="107" title="107" alt="107" />
+      <area shape="poly" coords="158,53,158,28,161,16,172,11,179,11,189,19,190,36,191,59,176,57,158,53" id="106" title="106" alt="106" />
+      <area shape="poly" coords="119,191,116,162,106,127,119,127,130,121,136,121,144,140,146,155,150,162,153,165,154,180,143,188,126,191,119,191" id="105" title="105" alt="105" />
+      <area shape="poly" coords="107,126,103,103,97,90,108,78,116,74,121,74,136,116,122,124,107,126" id="104" title="104" alt="104" />
+      <area shape="poly" coords="98,87,92,65,88,52,96,42,107,42,116,53,119,70,107,74,98,87" id="103" title="103" alt="103" />
+      <area shape="poly" coords="104,321,87,295,72,266,85,252,89,243,91,234,99,245,109,257,115,258,122,256,128,271,125,291,113,314,104,321" id="102" title="102" alt="102" />
+      <area shape="poly" coords="37,192,46,192,71,213,82,227,89,237,83,253,72,264,43,237,31,212,28,199,37,192" id="101" title="101" alt="101" />
+    </map>
+    <Responses><!--  These aren't shown, they are only to define the scores for the map id's selected -->
+               <Response Order="101" Description="1" Type="map" id="1" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="102" Description="2" Type="map" id="2" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="103" Description="3" Type="map" id="3" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="104" Description="4" Type="map" id="4" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="105" Description="5" Type="map" id="5" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="106" Description="6" Type="map" id="6" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="107" Description="7" Type="map" id="7" value="0" ><Scores><Score value="1"/></Scores></Response>
+        <Response Order="108" Description="8" Type="map" id="8" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="109" Description="9" Type="map" id="9" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="110" Description="10" Type="map" id="10" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="111" Description="11" Type="map" id="11" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="112" Description="12" Type="map" id="12" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="113" Description="13" Type="map" id="13" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="114" Description="14" Type="map" id="14" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="115" Description="15" Type="map" id="15" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="116" Description="16" Type="map" id="16" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="117" Description="17" Type="map" id="17" value="0"><Scores><Score value="1"/></Scores></Response>
+        <Response Order="118" Description="18" Type="map" id="18" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="201" Description="1" Type="map" id="1" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="202" Description="2" Type="map" id="2" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="203" Description="3" Type="map" id="3" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="204" Description="4" Type="map" id="4" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="205" Description="5" Type="map" id="5" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="206" Description="6" Type="map" id="6" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="207" Description="7" Type="map" id="7" value="0" ><Scores><Score value="1"/></Scores></Response>
+      <Response Order="208" Description="8" Type="map" id="8" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="209" Description="9" Type="map" id="9" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="210" Description="10" Type="map" id="10" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="211" Description="11" Type="map" id="11" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="212" Description="12" Type="map" id="12" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="213" Description="13" Type="map" id="13" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="214" Description="14" Type="map" id="14" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="215" Description="15" Type="map" id="15" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="216" Description="16" Type="map" id="16" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="217" Description="17" Type="map" id="17" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="218" Description="18" Type="map" id="18" value="0"><Scores><Score value="1"/></Scores></Response>
+      <Response Order="100" Description="noPainCheckboxLabel" Type="select" align="vertical" Class="bodymapChkbox" Appearance="full">
+          <item>
+            <label>Check box if you have no pain in your left hand</label><value>0</value></item>
+        </Response>
+      </Responses>
+      <Heading left="Front" right="Back" center="" class="imageHeading"/>
+    </Item>
+  </Items>
+</Form>

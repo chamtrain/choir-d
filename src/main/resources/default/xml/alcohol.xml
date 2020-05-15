@@ -1,0 +1,186 @@
+<Form Description="Alcohol and drugs" DateStarted="" DateFinished="" questionsPerPage="8" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Do you drink alcohol?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical">
+		<ref>ALCOHOLNOW</ref>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			  <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			  <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			  <onselect Type="Item" Where="Order" Value="5">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+			<ondeselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+            <ondeselect Type="Item" Where="Order" Value="4">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+            <ondeselect Type="Item" Where="Order" Value="5">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="false" align="horizontal">
+      <Description> <![CDATA[How many drinks per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input" Class="registrySurveyAnswer" Align="horizontal">
+		  <ref>ALCOHOLPERDAY</ref>
+          <location>left</location>
+          <min>0</min>
+	      <format>
+            <datatype>integer</datatype>
+			<lines>1</lines>
+			<charwidth>2</charwidth>
+          </format>
+          <hint>Enter an integer value</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="false" align="horizontal">
+      <Description> <![CDATA[How many drinks per week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input" Class="registrySurveyAnswer" Align="horizontal">
+			<ref>ALCOHOLPERWEEK</ref>
+		    <location>left</location>
+        <min>0</min>
+            <format>
+                <datatype>integer</datatype>
+				<lines>1</lines>
+	    		<charwidth>2</charwidth>
+            </format>
+	    </Response>
+      </Responses>
+    </Item>
+     <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="false">
+      <Description> <![CDATA[Do you drink to intoxication or binge drink?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical">
+			<ref>ALCOHOLBINGE</ref>
+           <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	 <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="false">
+        <Description> <![CDATA[Do you drink to decrease your pain?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical" >
+			<ref>ALCOHOLFORPAIN</ref>
+          <width>100%</width>
+          <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="true" align="horizontal">
+     <Description> <![CDATA[In the past 10 years have you ever tried street drugs?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical">
+		<ref>DRUGS10YR</ref>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+	      </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="true" align="horizontal">
+     <Description><![CDATA[Have you or anyone around you ever felt you had a problem with alcohol or drugs?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical">
+		<ref>DRUGSCUT</ref>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+	      </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	 <Item Order="8" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Horizontal" Visible="true" align="horizontal">
+     <Description><![CDATA[Have you ever received alcohol or drug treatment?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurveyAnswer" Align="vertical">
+		<ref>DRUGSTX</ref>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+	      </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	</Items>
+</Form>

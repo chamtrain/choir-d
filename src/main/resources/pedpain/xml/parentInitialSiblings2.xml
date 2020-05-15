@@ -1,0 +1,695 @@
+<Form Description="Initial Parent - Child Background Siblings" questionsPerPage="1">
+  <Items>
+    <!-- First Sibling -->
+    <Item Order="1" Section="start">
+      <Description>
+        <![CDATA[
+        In the following section please tell us about your child's siblings.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Section="end">
+      <Description>
+        <![CDATA[
+        Does your child have siblings?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sibling1" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Yes</label> </item>
+          <item> <value>0</value> <label>No</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    
+    <Item Order="3" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        First Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Relationship?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-relationship" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Age
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-age" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Lives with Child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-lives-with-child" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="7" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        First Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>First sibling's</i> Pain problem? <h4>(headaches, arm/leg, abdominal, back, chest, jaw/mouth, menstrual, etc.)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-pain-problems" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="9"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-pain-problem-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>First sibling's</i> Psychological difficulties?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-psych-difficulties" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="11"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-psych-difficulties-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>First sibling's</i> Other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-medical-issues" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="13"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="1-medical-issues-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+<!-- Second Sibling -->
+    <Item Order="22">
+      <ResponseValue xpath_query="//Response[@ref='sibling1']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Is there another sibling?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sibling2" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Yes</label> </item>
+          <item> <value>0</value> <label>No</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="23" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Second Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="24">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Relationship?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-relationship" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Age
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-age" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="26" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Lives with Child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-lives-with-child" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="27" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Second Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="28">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Second sibling's</i> Pain problem? <h4>(headaches, arm/leg, abdominal, back, chest, jaw/mouth, menstrual, etc.)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-pain-problems" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="29"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-pain-problem-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="30">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Second sibling's</i> Psychological difficulties?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-psych-difficulties" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="31"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-psych-difficulties-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="32">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Second sibling's</i> Other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-medical-issues" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="33"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="2-medical-issues-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+<!-- Third Sibling -->
+    <Item Order="42">
+      <ResponseValue xpath_query="//Response[@ref='sibling2']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Is there another sibling?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sibling3" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Yes</label> </item>
+          <item> <value>0</value> <label>No</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="43" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Third Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="44">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Relationship?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-relationship" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="45">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Age
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-age" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="46" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Lives with Child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-lives-with-child" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="47" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Third Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="48">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Third sibling's</i> Pain problem? <h4>(headaches, arm/leg, abdominal, back, chest, jaw/mouth, menstrual, etc.)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-pain-problems" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="49"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="49" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-pain-problem-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="50">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Third sibling's</i> Psychological difficulties?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-psych-difficulties" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="51"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="51" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-psych-difficulties-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="52">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Third sibling's</i> Other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-medical-issues" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="53"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="53" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="3-medical-issues-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+<!-- Forth Sibling -->
+    <Item Order="62">
+      <ResponseValue xpath_query="//Response[@ref='sibling3']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Is there another sibling?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sibling4" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Yes</label> </item>
+          <item> <value>0</value> <label>No</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="63" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Forth Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="64">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Relationship?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-relationship" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="65">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Age
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-age" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="66" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Lives with Child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-lives-with-child" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="67" Section="start">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Forth Sibling
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="68">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Forth sibling's</i> Pain problem? <h4>(headaches, arm/leg, abdominal, back, chest, jaw/mouth, menstrual, etc.)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-pain-problems" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="69"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="69" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-pain-problem-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="70">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Forth sibling's</i> Psychological difficulties?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-psych-difficulties" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="71"/>
+          </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="71" Visible="false">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-psych-difficulties-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="72">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <i>Forth sibling's</i> Other medical issues?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-medical-issues" Order="1" Type="select1" required="true" Align="horizontal">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="73"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="73" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Response[@ref='sibling4']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        <h4>If Yes, specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="4-medical-issues-specify" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

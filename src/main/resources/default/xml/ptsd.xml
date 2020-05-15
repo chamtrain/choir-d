@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Post Traumatic Stress Disorder" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Is your pain from a traumatic event?]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you:<p>Have had nightmares about it or thought about it when you did not want to?</p>]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you:<p>Have tried hard not to think about it or went out of your way to avoid situations that reminded you of it?</p>]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you:<p>Were constantly on guard, watchful, or easily startled?</p>]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+         <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+         <![CDATA[In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you:<p>Felt numb or detached from others, activities, or your surroundings?</p>]]>
+      </Description>
+      <Responses Align="Horizontal" Class="surveyAnswerInline" >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

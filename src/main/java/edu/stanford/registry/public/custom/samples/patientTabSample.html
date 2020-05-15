@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="../../js/jquery-1.12.0.min.cache.js"></script>
+  <script src="../../js/angular-1.7.5.min.cache.js"></script>
+  <script src="../../js/bootstrap-3.3.7.min.cache.js"></script>
+  <script src="../../scripts/patient-info.js"></script>
+  <script src="../../scripts/patient-lookup.js"></script>
+  <script src="../../scripts/choir-api.js"></script>
+
+  <link rel="stylesheet" href="../../css/bootstrap-3.3.7.min.cache.css">
+  <title>Sample patient tab</title>
+</head>
+<body>
+<div style="padding: 20px;">
+
+  <div ng-app="PatientInfo" ng-controller="PatientInfoCtrl as vm">
+    <div class="container-fluid">
+
+      <!-- Header -->
+      <div class="row" style="margin: 10px; border: 1px;">
+        <div class="col-sm-8" >
+
+          <div ng-if="vm.patientId == ''">
+            <h3><i>No current patient</i></h3>
+          </div>
+        </div>
+        <div ng-if="vm.patientId !== ''">
+          <div style="height: 10px"></div>
+          <!-- Patient Info form -->
+          <form class="form-horizontal" name="vm.form" novalidate>
+
+              <div class="panel panel-default">
+                  <div class="panel-heading" ng-switch="vm.gender" style="border: 1px solid #ddd;">
+                    <div ng-if="vm.gender!==''" class="panel-body">
+                      <h3>Gender: '{{vm.gender}}'</h3>
+                    </div>
+                    <div ng-if="vm.gender===''" class="panel-body">
+                      <h3>Gender: not available</h3>
+                    </div>
+                  </div>
+
+                <div class="panel-body">
+                  <div class="panel panel-default">
+                    <ul>
+                      <li ng-switch="vm.participates">
+                        <div ng-switch-when="y">
+                            <h3>{{vm.pronoun}} is registered to participate in this sites surveys</h3>
+                        </div>
+                        <div ng-switch-default>
+                            <h3>{{vm.pronoun}} is not registered to participate in this sites surveys</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div ng-if="vm.ethnicity!==''">
+                          <h3>{{vm.pronoun}} has an ethnicity value of '{{vm.ethnicity}}'</h3>
+                        </div>
+                        <div ng-if="vm.ethnicity===''">
+                          <h3>{{vm.pronoun}} does not have any ethnicity defined</h3>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="panel-footer" style="border: 1px solid #ddd;">
+                  <p></p>
+                  <span style="margin-left: 40px"><strong>Patient created: {{vm.created}} <p></p> </strong></span>
+                  <span style="margin-left: 40px"><strong>Last updated on: {{vm.changed}} </strong></span>
+                  <p></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <h3>For more information about CHOIR see <a href="https://choir.stanford.edu/">the Stanford CHOIR website</a></h3>
+</div>
+</body>
+</html>

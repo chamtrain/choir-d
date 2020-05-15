@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?><Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[This questionnaire contains a number of statements about tendencies that people have. This questionnaire contains 13 questions and should take about 5 minutes to complete. We do not ask for any personally identifiable information.]]></Description>
+      <Description><![CDATA[Please rank the following in the order that is most consistent with how you generally behave (not how you think you should behave, or how you might behave in a very specific situation). You should give your first and initial response without thinking about the question too much. Place a 1 by the answer that best fits you, followed by a 2 for your second choice, and a 3 for the answer that least fits you.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[In general, I carry myself...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... aimlessly ]]></label>
+            <group>y-axis</group>
+            <ref>CARRY_SELF_AIMLESS</ref>
+          </item>
+          <item>
+            <label><![CDATA[... briskly]]></label>
+            <group>y-axis</group>
+            <ref>CARRY_SELF_BRISK</ref>
+          </item>
+          <item>
+            <label><![CDATA[... buoyantly]]></label>
+            <group>y-axis</group>
+            <ref>CARRY_SELF_BOUYANT</ref>
+          </item>
+          <ref>CARRY_SELF</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[I prefer to make my living space ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[...organized]]></label>
+            <group>y-axis</group>
+            <ref>LIVING_SPACE_ORGANIZED</ref>
+          </item>
+          <item>
+            <label><![CDATA[...creative chaos]]></label>
+            <group>y-axis</group>
+            <ref>LIVING_SPACE_CHAOS</ref>
+          </item>
+          <item>
+            <label><![CDATA[...beautiful]]></label>
+            <group>y-axis</group>
+            <ref>LIVING_SPACE_BEAUTIFUL</ref>
+          </item>
+          <ref>LIVING_SPACE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[If I were to plan a party, ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[...I would want it to be high energy, with lots of people]]></label>
+            <group>y-axis</group>
+            <ref>PARTY_LOTS_OF_PEOPLE</ref>
+          </item>
+          <item>
+            <label><![CDATA[...I would only want certain people there]]></label>
+            <group>y-axis</group>
+            <ref>PARTY_CERTAIN_PEOPLE</ref>
+          </item>
+          <item>
+            <label><![CDATA[...it would be last minute and freeform]]></label>
+            <group>y-axis</group>
+            <ref>PARTY_FREEFORM</ref>
+          </item>
+          <ref>PARTY</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[I usually wear clothes in a way that is ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... carefree]]></label>
+            <group>y-axis</group>
+            <ref>WEAR_CLOTHES_CAREFREE</ref>
+          </item>
+          <item>
+            <label><![CDATA[...fashionable and attractive]]></label>
+            <group>y-axis</group>
+            <ref>WEAR_CLOTHES_FASHIONABLE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... neat and orderly]]></label>
+            <group>y-axis</group>
+            <ref>WEAR_CLOTHES_ORDERLY</ref>
+          </item>
+          <ref>WEAR_CLOTHES</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[When talking to other people, I might come across as ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[...affectionate]]></label>
+            <group>y-axis</group>
+            <ref>TALKING_AFFECTIONATE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... philosophical]]></label>
+            <group>y-axis</group>
+            <ref>TALKING_PHILOSOPHICAL</ref>
+          </item>
+          <item>
+            <label><![CDATA[... realistic]]></label>
+            <group>y-axis</group>
+            <ref>TALKING_REALISTIC</ref>
+          </item>
+          <ref>TALKING</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[When doing my job I like to ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... consider future possibilities / wonder about the best way forward]]></label>
+            <group>y-axis</group>
+            <ref>JOB_CONSIDER_FUTURE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... be passionate ]]></label>
+            <group>y-axis</group>
+            <ref>JOB_PASSIONATE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... make sure everything is accurate]]></label>
+            <group>y-axis</group>
+            <ref>JOB_ENSURE_ACCURACY</ref>
+          </item>
+          <ref>JOB</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[The disadvantage of my clothing style is that it may be...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... unimaginative]]></label>
+            <group>y-axis</group>
+            <ref>CLOTHING_STYLE_UNIMAGINE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... mismatched or uncoordinated]]></label>
+            <group>y-axis</group>
+            <ref>CLOTHING_STYLE_MISMATCHED</ref>
+          </item>
+          <item>
+            <label><![CDATA[... decadent]]></label>
+            <group>y-axis</group>
+            <ref>CLOTHING_STYLE_DECADENT</ref>
+          </item>
+          <ref>CLOTHING_STYLE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Generally, I tend to...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... be in my own world]]></label>
+            <group>y-axis</group>
+            <ref>TEND_TO_OWN_WORLD</ref>
+          </item>
+          <item>
+            <label><![CDATA[... have a strong desire for things]]></label>
+            <group>y-axis</group>
+            <ref>TEND_TO_STRONG_DESIRE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... be critical, but clear thinking]]></label>
+            <group>y-axis</group>
+            <ref>TEND_TO_CRITICAL</ref>
+          </item>
+          <ref>TENDANCY</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[At school, I might have been known for ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[...having lots of friends]]></label>
+            <group>y-axis</group>
+            <ref>KNOWN_FOR_FRIENDS</ref>
+          </item>
+          <item>
+            <label><![CDATA[... being intellectual]]></label>
+            <group>y-axis</group>
+            <ref>KNOWN_FOR_INTELLECTUAL</ref>
+          </item>
+          <item>
+            <label><![CDATA[... day-dreaming]]></label>
+            <group>y-axis</group>
+            <ref>KNOWN_FOR_DAYDREAM</ref>
+          </item>
+          <ref>KNOWN_FOR</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[When it comes to cleaning my room, I...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[...take pride in making things look great]]></label>
+            <group>y-axis</group>
+            <ref>CLEAN_ROOM_PRIDE</ref>
+          </item>
+          <item>
+            <label><![CDATA[... quickly notice problems, imperfections and untidiness ]]></label>
+            <group>y-axis</group>
+            <ref>CLEAN_ROOM_UNTIDY</ref>
+          </item>
+          <item>
+            <label><![CDATA[... don't tend to notice or get bothered by clutter]]></label>
+            <group>y-axis</group>
+            <ref>CLEAN_ROOM_UNBOTHERED</ref>
+          </item>
+          <ref>CLEAN_ROOM</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description><![CDATA[My room is ... ]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... neatly arranged]]></label>
+            <group>y-axis</group>
+            <ref>ROOM_NEAT</ref>
+          </item>
+          <item>
+            <label><![CDATA[... messy]]></label>
+            <group>y-axis</group>
+            <ref>ROOM_MESSY</ref>
+          </item>
+          <item>
+            <label><![CDATA[... richly decorated]]></label>
+            <group>y-axis</group>
+            <ref>ROOM_DECORATED</ref>
+          </item>
+          <ref>ROOM</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12">
+      <Description><![CDATA[When other people are enthusiastic about something, I...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... jump on board and want to get involved]]></label>
+            <group>y-axis</group>
+            <ref>JUMP_ON_BOARD</ref>
+          </item>
+          <item>
+            <label><![CDATA[... might be skeptical of it]]></label>
+            <group>y-axis</group>
+            <ref>SKEPTICAL</ref>
+          </item>
+          <item>
+            <label><![CDATA[... go off on tangents]]></label>
+            <group>y-axis</group>
+            <ref>TANGENTS</ref>
+          </item>
+          <ref>OTHERS_ARE</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13">
+      <Description><![CDATA[I come across as ...]]></Description>
+      <Responses>
+        <Response Order="0" Ranking="true" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[1 Most describes me]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[2]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[3 Least describes me]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[... thoughtful]]></label>
+            <group>y-axis</group>
+            <ref>THOUGHTFUL</ref>
+          </item>
+          <item>
+            <label><![CDATA[... absent-minded]]></label>
+            <group>y-axis</group>
+            <ref>ABSENT_MINDED</ref>
+          </item>
+          <item>
+            <label><![CDATA[... affectionate]]></label>
+            <group>y-axis</group>
+            <ref>AFFECTIONATE</ref>
+          </item>
+          <ref>COME_ACROSS</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

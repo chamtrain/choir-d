@@ -1,0 +1,2169 @@
+/*
+ * Copyright 2013 The Board of Trustees of The Leland Stanford Junior University.
+ * All Rights Reserved.
+ *
+ * See the NOTICE and LICENSE files distributed with this work for information
+ * regarding copyright ownership and licensing. You may not use this file except
+ * in compliance with a written license agreement with Stanford University.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See your
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+/* NOTE: double slash ( // ) is NOT a comment in css. 
+   It's just bad syntax until the next statement */
+
+/* Externals for things not in this module */
+@external .gwt-*;
+/* These are used by GWT inside .gwt-DialogBox */
+@external .Caption .dialogContent .dialogTopRightInner .dialogMiddleCenter .dialogTopLeftInner .dialogBottomLeftInner .dialogBottomRightInner;
+/* Used by GWT inside .gwt-DisclosurePanel */
+@external .content .header;
+/* Used by GWT inside .gwt-SuggestBoxPopup */
+@external .item .item-selected;
+
+/* Temporarily consider everything "external" because we use the string values everywhere
+ * in the code (which will break if stuff in this file gets obfuscated). Once the code
+ * uses RegistryCssResource everywhere we can turn this off.
+ */
+@external .*;
+
+* {
+  -webkit-touch-callout: none;
+}
+
+/*-----------------------------*\
+|   Clinic interface container    |
+\*-----------------------------*/
+/*.gwt-TabLayoutPanel { }*/
+/*.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab 							{ cursor: pointer; }*/
+/*.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected 				{ background: white; }*/
+/*.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent 						{ overflow: hidden; padding: 6px; position: relative; }*/
+/*.gwt-TabLayoutPanelContentContainer  								{ border: 0 solid black; font: normal 1.2em; text-align: center; }*/
+
+/*.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab 						{ cursor: pointer; text-align: center;  } */
+/*.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab .gwt-Label 			{ }*/
+/*.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-selected 			{ margin: 0 0 0 0; }*/
+/*.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-selected .gwt-Label 	{ color: #000; cursor: pointer; }*/
+/*.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-disabled 			{ cursor: default; }*/
+
+/*--------------*\
+|   Header	    |
+\*--------------*/
+/* A tall thin space (&#8201; or &thinsp;) will make the VBox high, so the title will be centered
+   even if it spans 2 lines (Stanford Total Joint Replacement Study" does this at 1070 px wide!) */
+.titleSpacer {
+  font-size: 50px; /* Not sure what's needed- whole space is 60...*/
+}
+
+/* The title button (SiteMenu) is inside vertically and horizontally centered boxes
+ * It's centered because its width is 100% and its text-align is center.
+ * I know of no way to tell its table cell to center it horizontally.
+ */
+.title-Text {
+  margin: auto;
+  font-size: 22px;
+  color: black;
+  overflow: visible;
+  display: block;
+  border-width: 0;
+  -webkit-appearance: none;
+  background: transparent;
+  }
+
+/* Overrides the default gray border on the left of the title popdown menu's arrow icon/character */
+Button.title-Text.GCCDRYCMDB>span.GCCDRYCNDB:last-child {
+	border-left: 0px;
+}
+
+.title-Text75 {
+  margin: 0 0 0 10px;
+  font-size: 17px;
+  float: right;
+  color: black;
+  overflow: visible;
+  font-weight: bold;
+}
+
+.title-Text50 {
+  margin: 0 0 0 5px;
+  font-size: 11px;
+  float: right;
+  color: black;
+  overflow: visible;
+  font-weight: bold;
+}
+
+.title-Login {
+  margin-right: 35px;
+  float: right;
+}
+
+/*--------------*\
+|   Structure    |
+\*--------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------*\
+|   Typography    |
+\*---------------*/
+body {
+  text-align: left;
+}
+
+h1 {
+  margin: 40px 0 70px;
+  color: #777;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0;
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  color: #7D775C;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+/*----------------*\
+|   Navigation     |
+\*----------------*/
+
+/* Top / Main Menu */
+
+.registry-TabPanel {
+  /*margin:0 3px;*/
+  border-top: 1px solid #690c0c;
+  border-bottom: 1px solid #690c0c;
+  padding: 8px 7px 0;
+  background: #9a0000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #820024), color-stop(38%, #8f0222), color-stop(100%, #a90329)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* W3C */
+  /*noinspection CssInvalidFunction*/
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#820024', endColorstr='#a90329',GradientType=0 )"); /* IE6-9 */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0;
+  border: 0;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelTabs {
+  margin-bottom: 0;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelTab .gwt-TabLayoutPanelTabInner {
+  margin-left: 3px;
+  border: 1px solid #690c0c;
+  padding: 5px 10px;
+  border-radius: 7px 7px 0 0;
+  background: #eee;
+  color: #5c0600;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelTab:hover .gwt-TabLayoutPanelTabInner {
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelTab-selected .gwt-TabLayoutPanelTabInner {
+  border-color: #690c0c;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  color: #333;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelTab-selected:hover .gwt-TabLayoutPanelTabInner {
+  text-decoration: none;
+}
+
+.registry-TabPanel .gwt-TabLayoutPanelContentContainer {
+  border: 0 solid black;
+  font: normal 1.2em;
+  text-align: center;
+  background: #fff;
+}
+
+.scrollPanelSchedule {
+  position: relative;
+  border: 0 solid;
+}
+
+/*------------*\
+|   Buttons    |
+\*------------*/
+
+.gwt-Button {
+  border: 1px solid #D8DCDF;
+  border-radius: 3px;
+  line-height: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), color-stop(100%, #f6f6f6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 )"); /* IE6-9 */
+}
+
+button:hover,
+.gwt-Button:hover {
+  border: 1px solid #aaa;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #f3f3f3), color-stop(51%, #ededed), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 )"); /* IE6-9 */
+}
+
+.showHistoryButtonNoBorder {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.showHistoryButton {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.showHistoryButton img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+.scheduleDeleteButton {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.scheduleDeleteButton img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: text-bottom;
+}
+
+.scheduleTableImage {
+  margin: 2px 6px;
+}
+
+.scheduleTableLabel {
+  padding-left: 6px;
+}
+
+.scheduleSearchBarLabel {
+  line-height: 1.8;
+  text-align: middle;
+  padding-left: 15px;
+  margin: 10px 0 10px 5px;
+  background: #f0f0f0;
+  border-radius: 7px 7px 0 0;
+}
+
+.scheduleHeadingBar {
+  border: 1px solid #BBBBBB;
+  padding: 0;
+}
+
+.scheduleListsPanel {
+  /* border: 1px solid #BBBBBB; padding:0; */
+}
+
+.scheduleChkBox {
+  margin: 0 0;
+}
+
+.gwt-Button.imageButton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+/*.searchButton					{ padding: 4px; }*/
+.sendButton {
+  display: block;
+  padding: 4px 40px;
+  font-size: 1em;
+  background-color: #CCCCCC;
+  color: black;
+}
+
+/*.mixedButton					{ vertical-align: top;**/
+.paddedButton {
+  padding: 5px;
+  margin: 5px;
+}
+
+/*-------------------*\
+|   Dropdown menus    |
+\*-------------------*/
+.dropdown-menu {
+}
+
+.dropdown-menu dt {
+  margin: 0;
+  padding: 0;
+}
+
+table.dropdown-menu,
+.dropdown-menu dd {
+  margin: 0;
+  border: 1px solid #BBBBBB;
+  padding: 0;
+  width: 200px;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 4px 0 #ccc;
+  -moz-box-shadow: 3px 3px 4px 0 #ccc;
+  box-shadow: 3px 3px 4px 0 #ccc;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  border: none !important;
+  background: transparent;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background: #f2f9fe; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 )"); /* IE6-9 */
+}
+
+/*-------------------*\
+|   Forms / Inputs    |
+\*-------------------*/
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='tel'],
+input[type='url'],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='range'],
+input[type='date'],
+input[type='time'],
+input[type='week'],
+input[type='month'],
+input[type='datetime'],
+input[type='datetime-local'],
+textarea,
+select {
+  padding: 3px 4px; /** border:1px solid #ABADB3; border-color: #ABADB3 #ABADB3 #E3E9EF #E3E9EF; **/
+}
+
+input[type='tel']:focus,
+input[type='url']:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='month']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+textarea:focus,
+select:focus {
+  /** border-color:#666; **/
+}
+
+/* Additional padding for select elements */
+select {
+  padding: 3px 3px;
+}
+
+.boldTextBoxLabel {
+  margin: 3px;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: right;
+  background-color: white;
+  color: black;
+  font: bold 1.8em;
+}
+
+.boldReportLabel {
+  margin: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+  text-align: left;
+  color: black;
+  font: bold 1.0em;
+}
+
+.numericReportData {
+  vertical-align: middle;
+  text-align: right;
+  color: black;
+  padding-right: 4px;
+}
+
+.numericDataHeaderLabel {
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 4px;
+}
+
+.textBoxLabel {
+  vertical-align: middle;
+  text-align: right;
+  font: normal 1.8em;
+}
+
+.textBoxInput {
+  margin: 3px;
+  border: 2px solid #C9C7BA;
+  padding: 0 0;
+  height: 2em;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.listBoxInput {
+  margin: 3px;
+  border: 2px solid #C9C7BA;
+  padding: 0 0;
+  height: 2em;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/*-----------*\
+|   Tables    |
+\*-----------*/
+/* registry table data header row */
+.tableDataHeader {
+  margin: 0 0 15px;
+  padding: 2px;
+  border-collapse: collapse;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.tableDataHeaderLabel {
+  padding: 2px 6px;
+}
+
+/** Shared **/
+.clTabPgHeadingBar {
+  background-color: #f0f0f0;
+}
+
+.clTabPgHeadingBar button {
+  vertical-align: middle;
+  background: #fff;
+  margin: 10px 0 10px 5px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* IE8 better with padding-bottom: 5px; padding-top: 5px; */
+.clTabPgHeadingBar button:hover {
+  vertical-align: middle;
+  background: #fff;
+  margin: 10px 0 10px 5px;
+}
+
+.clTabPgHeadingBarLabel {
+  /*margin: 10px 0 10px 5px;*/
+  padding: 0 0 0 10px;
+  /*background:#f0f0f0;*/
+  /*border-radius:7px 7px 0 0;*/
+}
+
+.clTabPgHeadingBarText {
+  margin: 10px 0 10px 5px;
+  padding-top: 2px;
+  text-align: center;
+}
+
+.clTabPgHeadingBarList {
+  margin: 10px 0 10px 5px;
+  padding: 2px;
+}
+
+.clTabPgHeadingBarChkBox {
+  margin: 10px 0 10px 5px;
+  padding-top: 4px;
+}
+
+.clTabPgHeadingSearchBar,
+.clTabPgHeadingSelectBar,
+.clTabPgHeadingButtonBar {
+  padding: 5px 5px 5px 5px;
+}
+
+.clTabPgFootingBar {
+  margin: 5px 5px 5px 5px;
+  float: left;
+}
+
+.clTabPgFootingBar button {
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+/* .assessmentFootingBar           { float: left; } */
+
+/**
+.clTabPgHeadingSearchBar tbody td .apptSearchLabel { padding: 5px;}
+.clTabPgHeadingSearchBar button			{ vertical-align: middle; background: #fff; margin: 10px 2px; }
+.clTabPgHeadingSearchBar button:hover	{ border:1px solid #999; background: #f2f9fe;
+**/
+/** Email templates */
+.emailTemplateHeadingBar {
+  width: 97%;
+  margin-left: 12px;
+}
+
+.emailTemplateTextPanel {
+  width: 98%;
+  height: 500px;
+  margin-left: 6px;
+}
+
+.emailTemplateLabel {
+  padding: 12px 7px 0 9px;
+}
+
+.emailTemplateMissing {
+  padding: 12px 7px 0 9px;
+  color: red;
+}
+
+.emailTemplateMenuItem {
+  color: red;
+}
+
+td .subVariableList {
+  background-color: #f0f0f0;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+.subVariable {
+  background-color: #f0f0f0;
+}
+
+/* registry tables numeric fields */
+.dataListNumericColumn {
+  padding: 2px;
+  width: 8em;
+  text-align: right;
+}
+
+.dataListTextHeader {
+  padding: 2px;
+  vertical-align: top;
+  background: lightgray;
+  color: #333;
+}
+
+.dataListTextColumn {
+  padding: 2px;
+  vertical-align: top;
+  background: #fff;
+  color: #333;
+}
+
+.dataListTextError {
+  border: 3px solid red !important;
+  padding: 0;
+  vertical-align: top;
+  background-color: #fff;
+  color: black;
+  font-style: italic;
+}
+
+.dataListTextCentered {
+  text-align: center;
+}
+
+/* .dataList table */
+.fixedList {
+  table-layout: fixed;
+}
+
+.dataList {
+  margin-bottom: 2px;
+  border-collapse: collapse;
+  padding: 2px;
+  width: 100%;
+}
+
+.dataList thead th,
+.dataList .tableDataHeader td {
+  padding: 5px 2px;
+  background-color: #666 !important;
+  color: #fff !important;
+  text-align: left;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.dataList .tableDataHeader tr {
+  background-color: #666 !important;
+}
+
+.datalist thead th:hover,
+.dataList .tableDataHeader tr:hover td {
+  background-color: #666 !important;
+  color: #fff !important;
+  text-align: left;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.dataList thead th:first-child,
+.dataList .tableDataHeader td:first-child {
+  padding-left: 8px;
+}
+
+/* Make room for internal scrollbar */
+.dataList th:last-child, .dataList td:last-child {
+  padding-right: 24px;
+}
+
+.dataList tbody tr td:first-child {
+  padding-left: 8px;
+}
+
+.dataList tbody tr td {
+  text-align: left;
+}
+
+/*.dataList th.right, .dataList td.right { text-align: right; }*/
+/** These attributes work on all children **/
+/*.dataList tbody tr.x-even td, .dataList tbody tr:nth-child\(even\) td { background: #EBE4CD; }*/
+/*.dataList tbody tr.x-odd  td, .dataList tbody tr:nth-child\(odd\)  td { background: #fff; }*/
+
+.report tbody tr td {
+  height: 2.0em;
+}
+
+.scheduleList tbody tr.x-even td {
+  vertical-align: middle;
+}
+
+.scheduleList tbody tr.x-even .imageButton {
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  filter: literal("alpha(opacity=90)");
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+}
+
+.scheduleList tbody tr.x-odd .imageButton {
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#EBE4CD', endColorstr='#EBE4CD',GradientType=0 )"); /* IE6-9 */
+}
+
+.scheduleList tbody td .imageButton:hover {
+  background: #f2f9fe;
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#f2f9fe',GradientType=0 )"); /* IE6-9 */
+}
+
+/* hack because DataGrid doesn't allow styles on headers, so header doesn't respect column justification */
+/*.scheduleList th:first-child + th + th + th + th { text-align: right; }*/
+.emailTextError {
+  border: 3px solid red !important;
+}
+
+.emailTextValid {
+  border-width: 1px;
+}
+
+/** These on only the immediate child **/
+.dataList > tbody > tr.x-even > td {
+  padding: 5px 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dataList > tbody > tr.x-odd > td {
+  padding: 5px 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dataList tfoot td {
+  padding: 10px 0;
+}
+
+/**.dataList tbody tr.odd td,
+.dataList tbody tr:nth-of-type(odd) td{ background:#EBE4CD; } **/
+.dataList tbody tr:hover td {
+  background: #f2f9fe;
+}
+
+.dataList tbody td button {
+  border-color: #bbb;
+}
+
+/*.dataList tbody td button:hover	{ border-color:#999; }*/
+/*.dataList tbody tr.x-even button { background: #fff; }*/
+/*.dataList tbody tr.x-odd  button { background: #EBE4CD; }*/
+.dataList > tbody > tr.x-even > td.activityTablelabel {
+  vertical-align: top;
+  padding-top: 15px;
+}
+
+.dataList > tbody > tr.x-odd > td.activityTableLabel {
+  vertical-align: top;
+  padding-top: 15px;
+}
+
+.linksList tbody tr td {
+  padding: 2px 12px;
+  background: #fff;
+  border-bottom: 0 solid #ccc;
+  font-weight: normal;
+}
+
+.clinicalDataPanel .saveButton {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+}
+
+.dataList td.dataListFirst {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.dataList td.dataListLast {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.treeDataList {
+  text-align: left;
+}
+
+/* .activity-tree-root div  { padding: 0 0 0 23px; margin: 0; }
+.gwt-Tree                   { margin: 0 0 0 0; background: yellow;} */
+
+.gwt-Tree .gwt-TreeItem-wrapper {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.gwt-Tree .gwt-TreeItem {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.activity-tree {
+  margin: 0 !important;
+}
+
+/* Appears above a dataList table */
+#filter {
+  margin-bottom: -3px;
+  padding: 5px 10px 8px;
+  background: #f0f0f0;
+  border-radius: 7px 7px 0 0;
+}
+
+#filter button {
+  background: #fff;
+}
+
+#filter button:hover {
+  border: 1px solid #999;
+  background: #f2f9fe; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 )"); /* IE6-9 */
+}
+
+/* .appts  { margin-top: 10px; margin-bottom: -3px; background:#f0f0f0; border-radius:7px 7px 0 0;} */
+/* .registrationSearchLabel		{ margin: 6px 10px 0 0; padding:0px 0 0; background:#f0f0f0; border-radius:7px 7px 0 0; }
+.registrationSearchChkBox       { margin: 6px 10px 0 0; padding:0px; background:#f0f0f0;}
+.registrationSearchText			{ margin: 6px 10px 0 0; padding:0px 0 0; }  
+.registrationSearchButton       { padding:6px; margin-right: 10px; }  
+/*.registrationSearchList         { margin: 6px 10px 0 0; padding:0px; } */
+.datePickerText {
+  width: 75px;
+}
+
+/** .registrationSearchLabel tbody td
+				 				{ padding: 2px 10px 4px 4px; } 
+				 				
+.registrationSearchList			{ margin-top: 9px; } */
+/**
+.registrationSearchPanel tbody td .apptSearchLabel { padding: 5px;}
+.registrationSearchPanel button			{ vertical-align: middle; background: #fff; margin: 10px 2px; }
+.registrationSearchPanel button:hover	{ border:1px solid #999; background: #f2f9fe; **//* Old browsers */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f9fe), color-stop(100%,#d6f0fd)); /* Chrome,Safari4+ */
+/*background: -webkit-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+/*background:    -moz-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* FF3.6+ */
+/*background:     -ms-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* IE10+ */
+/*background:      -o-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* Opera 11.10+ */
+/*background:         linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+/*}*/
+.registrationSearchBar button {
+  padding: 4px;
+}
+
+.registrationSearchBar td:last-child {
+  padding-right: 5px;
+}
+
+.registrationCurrentStatus {
+  background: lightgray;
+  color: #333;
+  padding: 5px;
+}
+
+.registrationCurrentStatus td {
+  vertical-align: center;
+}
+
+.registrationCurrentStatus button {
+  background: lightgray;
+}
+
+.registrationCurrentStatus button:hover {
+  background: lightgray;
+}
+
+.registrationButtonBar {
+  margin: 10px 0;
+}
+
+.registrationButtonBar button {
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.centerPanel {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.leftButton {
+  float: left;
+  vertical-align: top;
+}
+
+.rightButton {
+  float: right;
+  vertical-align: top;
+  margin: 5px;
+}
+
+.leftLabel {
+  text-align: left;
+  padding: 4px 6px;
+  vertical-align: middle;
+  font: normal 1.8em;
+}
+
+.rightLabel {
+  text-align: right;
+  padding: 4px 6px;
+  vertical-align: middle;
+  font: normal 1.8em;
+}
+
+.alignRightLabel {
+  text-align: right;
+}
+
+.patientHeaderPanel {
+  /* margin: 4px 4px 4px 4px; */
+  padding: 5px 10px 8px;
+}
+
+.patientHeader {
+  /**border-radius: 15px 15px 0 0;
+  margin-bottom: 4px;*/
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 2px 8px 2px 10px;
+  text-align: center;
+}
+
+.patientHeaderCloseButton {
+  margin: 15px 0 0 0;
+}
+
+.patientHeaderValue {
+  background: #fff;
+  margin-right: 2px;
+  padding-left: 6px;
+}
+
+.patientHeaderTopValue {
+  margin-top: 2px;
+}
+
+.patientHeaderTopRightValue {
+  margin-top: 2px;
+  border-radius: 0 15px 0 0;
+}
+
+.patientHeaderBotValue {
+  margin-bottom: 2px;
+}
+
+.patientHeaderBotRightValue {
+  margin-bottom: 2px;
+  border-radius: 0 0 15px 0;
+}
+
+.patientHeader tbody td {
+  vertical-align: bottom;
+}
+
+.patientHeader td.phName {
+  background: #f0f0f0;
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.patientHeader td.phValue {
+  background: #f0f0f0;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-right: 7px;
+}
+
+.patientHeader td.phTopLeft {
+  padding-top: 7px;
+  border-radius: 15px 0 0 0;
+}
+
+.patientHeader td.phTopMid {
+  padding-top: 7px;
+}
+
+.patientHeader td.phTopRight {
+  padding-top: 7px;
+  border-radius: 0 15px 0 0;
+  padding-right: 7px;
+}
+
+.patientHeader td.phBotLeft {
+  padding-bottom: 7px;
+  border-radius: 0 0 0 15px;
+}
+
+.patientHeader td.phBotMid {
+  padding-bottom: 7px;
+}
+
+.patientHeader td.phBotRight {
+  padding-bottom: 7px;
+  border-radius: 0 0 15px 0;
+  padding-right: 7px;
+}
+
+.patientHeaderValue button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  float: left;
+  background: transparent;
+}
+
+.patientHeaderValue button:hover {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  float: left;
+  background: transparent;
+}
+
+.patientHeaderValue button:active {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  float: left;
+  background: transparent;
+}
+
+/*
+ .patientHeader td.textTop	{ padding-top: 2px; }
+  /* .patientHeader td.textBottom{ border-bottom: 1px solid #f0f0f0; } * /
+.patientHeaderBotRightLabel	{ margin-bottom: 2px; margin-right: 2px;}
+*/
+
+/*---------------*\
+|   Dialog Box    |
+\*---------------*/
+.gwt-DialogBox {
+  width: 660px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 110;
+  border: 1px solid #999;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.gwt-DialogBox {
+  -webkit-box-shadow: 0 0 20px -2px #444;
+  -moz-box-shadow: 0 0 20px -2px #444;
+  box-shadow: 0 0 20px -2px #444;
+}
+
+.gwt-DialogBox .head,
+.gwt-DialogBox .body,
+.gwt-DialogBox .foot {
+  padding: 10px;
+}
+
+.gwt-DialogBox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.popupBox {
+  background: #fff;
+}
+
+.popupBox .heading {
+  padding: 10px 10px 10px 10px;
+  font-size: 14pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #820024;
+}
+
+.rpt-DialogBox {
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  z-index: 100;
+  border: 1px solid #999;
+  border-radius: 7px;
+  background: #fff;
+  padding: 20px;
+}
+
+/* .gwt-DialogBox .Caption, */
+.gwt-DialogBox .head {
+  margin: 3px;
+  padding: 1px 10px 3px;
+  border: 1px solid #690c0c;
+  border-radius: 5px;
+  color: #fff;
+  background: #820024; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #820024), color-stop(38%, #8f0222), color-stop(100%, #a90329)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* W3C */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820024', endColorstr='#a90329',GradientType=0 ); /* IE6-9 */
+}
+
+.gwt-DialogBox .body {
+  padding-top: 0;
+}
+
+.gwt-DialogBox .dialogBottomCenterInner,
+.gwt-DialogBox .foot {
+  padding: 5px 10px;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 7px 7px;
+  background: #f0f0f0;
+  text-align: right;
+}
+
+.gwt-DialogBox .dialogBottomCenterInner button,
+.gwt-DialogBox .foot button {
+  background: #fff;
+}
+
+.gwt-DialogBox .dialogBottomCenterInner button:hover,
+.gwt-DialogBox .foot button:hover {
+  border: 1px solid #999;
+  background: #f2f9fe; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 )"); /* IE6-9 */
+}
+
+.gwt-DialogBox .dialogTopRight,
+.gwt-DialogBox .dialogTopCenter,
+.gwt-DialogBox .dialogTopLeft,
+.gwt-DialogBox .dialogTopRightInner,
+.gwt-DialogBox .dialogBottomRightInner,
+.gwt-DialogBox .dialogBottomLeftInner,
+.gwt-DialogBox .dialogTopLeftInner {
+  width: 0;
+  height: 0;
+  zoom: 1;
+}
+
+.dialog-popUp .caption,
+.dialog-popUp .head,
+.search-popUp .Caption,
+.search-popUp .head {
+  margin: 3px;
+  padding: 1px 10px 3px;
+  border: 1px solid #690c0c;
+  border-radius: 5px;
+  color: #fff;
+  background: #820024; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #820024), color-stop(38%, #8f0222), color-stop(100%, #a90329)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #820024 0%, #8f0222 38%, #a90329 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#820024', endColorstr='#a90329',GradientType=0 )"); /* IE6-9 */
+}
+
+.dialog-popUp,
+.search-popUp {
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 7px 7px;
+  background: #f0f0f0;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+.dialog-popUp,
+.buttonPanel {
+  margin: 5px 5px 5px 5px;
+}
+
+.buttonPanel button {
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+/*--------------*\
+|   Other ???    |
+\*--------------*/
+.dialogVPanel {
+  margin: 5px;
+}
+
+.scoresTable {
+  margin: 2px;
+  font-size: .55em;
+}
+
+.scoresTable .header table TD {
+  margin: 2px;
+  font-size: .75em;
+  font-weight: bold;
+  color: grey;
+}
+
+.borderedVPanel {
+  border: 2px solid black;
+}
+
+.customizedHorizontalPanel {
+  margin: 0;
+  border: 0 solid #000;
+  padding: 5px;
+  background-color: #FFFFFF;
+  color: black;
+  font-weight: bold; /** font: 165% "Trebuchet MS",sans-serif; **/
+}
+
+.customizedVerticalPanel {
+  border: 10px solid #000;
+  vertical-align: top;
+}
+
+.customIndentedVerticalPanel {
+  margin: 10px;
+  border: 0 solid #000;
+  padding: 0;
+  background: #FFFFFF;
+  color: black;
+  font-weight: bold; /** font: 165% "Trebuchet MS",sans-serif; **/
+}
+
+.customizedFlowPanel {
+  margin: 0 auto;
+  background: #fff;
+  margin-right: auto;
+}
+
+.titleLabel {
+  margin: 0;
+  padding: 0 2px 0 2px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  font-size: 22px;
+}
+
+.popUpLabel {
+  margin: 15px 5px 15px 5px;;
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  color: #7D775C;
+}
+
+.messageLabel {
+  margin: 5px 5px 5px 5px;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+/*-------------------------------*\
+|   Patient interface container  |
+\*-------------------------------*/
+.patientPanel {
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  border-width: 0;
+}
+
+.newPatientQuestion {
+  margin-bottom: 0;
+  font: italic bold 1.4em georgia, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #7D775C;
+  background: #fff;
+}
+
+/* Default survey settings */
+.surveyLoginLabel {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #333333;
+  text-align: left;
+  background: #fff;
+}
+
+.surveyQuestion,
+.surveyQuestionHorizontal,
+.surveyQuestionBodymap {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  color: #333333;
+  text-align: center;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/*.surveyQuestionBodymap tbody tr td {  margin-left: auto; margin-right: auto; } */
+.surveyQuestionHorizontal {
+  padding-bottom: 6px;
+}
+
+.surveyQuestionImage {
+  padding-bottom: 25px;
+}
+
+.surveyAnswerTable {
+  border: 0;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.surveyAnswerTable-vertical
+tr > td {
+  padding-bottom: 25px;
+}
+
+/*.surveyQuestion-horizontal*/
+/*tr > td    { vertical-align: top;} */
+.surveyAnswer,
+.surveyAnswerRadioButton LABEL {
+  margin-left: 0;
+  padding: 2px 6px;
+  text-align: right;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #333333;
+}
+
+.surveyAnswerHorizontal {
+  width: 110px;
+  padding: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #333333;
+}
+
+.surveyAnswerHorizontal-description {
+  font-size: 15px;
+  color: #333333;
+  text-align: left;
+  vertical-align: top;
+}
+
+.surveyAnswerRadioButton {
+  vertical-align: top;
+}
+
+.surveyAnswerRadioButton-description {
+  font-size: 15px;
+  color: #333333;
+  text-align: left;
+  vertical-align: top;
+}
+
+.surveyAnswerRadioButton-label {
+  padding: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #333333;
+}
+
+/* Next button */
+.surveyAnswerButton {
+  border: 1px solid #D8DCDF;
+  border-radius: 3px;
+  background: #ffffff;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.surveyResetButton {
+  padding: 6px;
+  border: 0;
+  background: transparent;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px !important;
+  float: right;
+}
+
+.surveyAnswerButtonPanel {
+  text-align: center;
+}
+
+.surveyAnswerButtonImage {
+  margin-top: 10px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  margin-right: 18px;
+  border: 1px solid #D8DCDF;
+  border-radius: 3px;
+  background: #ffffff;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px !important;
+}
+
+.surveyDone {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  color: #333333;
+  text-align: center;
+  background: #fff;
+}
+
+.surveyQuestionCompleted {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #333333;
+  text-align: left;
+}
+
+.surveyAnswerCompleted {
+  margin-left: 10px;
+  text-align: left;
+  background-color: white;
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #333333;
+}
+
+.surveyAnswerNotSelected {
+  margin-left: 10px;
+  text-align: left;
+  background-color: white;
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #333333;
+}
+
+.surveyImg {
+  border: 0 white solid;
+}
+
+.surveyQuestionPadding {
+  padding-top: 16px;
+}
+
+.surveyErrorMessage {
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* Multi question survey */
+.surveyQuestionInline {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #333333;
+  text-align: right;
+  background: #fff;
+}
+
+.surveyInlineBordered tr {
+  vertical-align: top;
+}
+
+.surveyInLineBordered tbody tr > td {
+  padding-top: 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.surveyInline tr td {
+  vertical-align: top;
+}
+
+.surveyQuestionInline {
+  /* padding:5px 2px; */
+}
+
+.surveyAnswerInline {
+  width: 450px;
+  padding: 5px 2px;
+}
+
+.surveyAnswerInline tr > td {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  width: 50%;
+}
+
+.surveyResponse {
+  margin-left: 30px;
+}
+
+/*.surveyDurationSelect           { align: left; } */
+.surveyAugText {
+  width: 200px;
+  height: 120px;
+}
+
+/* IPad portrait - use less space between horizontal answers and next button */
+/*@media screen and (device-width: 768px) and (orientation:portrait) {*/
+/*.surveyQuestion               { color: #333333; } *//* testing color: #720026; */
+/*.surveyAnswerHorizontal       { width: 60px; }*/
+/*.surveyAnswerButton           { margin-top: 20px; font-size: 18px !important; }*/
+/*.surveyAnswer,*/
+/*.surveyAnswerRadioButton LABEL { margin-left: 0; padding: 2px 6px; text-align: right; font-family: Helvetica,Arial,sans-serif; font-size: 22px; */
+/*color: #333333; *//* #720026; *//* }*/
+/*.surveyAnswerDescHorizontal   { border: 0; padding-left: 0; font-size: 11px; color: #333333; text-align: left; background: #fff; vertical-align: top; }*/
+/*.surveyAnswerTable              { border: 0;  background-color: white; }*/
+/*.surveyAnswerTable-vertical*/
+/*tr > td    { *//*padding-top: 30px; padding-bottom: 35px;*//*}*/
+/*.title-Text                   { margin: 0 0 0 10px; font-size: 17px; float: right; color: black;  overflow: visible; font-weight: bold; }*/
+/*}*/
+
+/* IPad in landscape mode - use slightly smaller font and less space between lines */
+/*@media screen and (device-width: 768px) and (orientation:landscape)  {*/
+/*.surveyQuestion               { color: #333333; } *//* testing color:  #116348; *//* */
+/*.surveyAnswerHorizontal       { width: 59px; color: #333333; }*/
+/*.surveyAnswerButton           { margin-top: 20px; font-size: 18px !important; }*/
+/*.surveyAnswer,*/
+/*.surveyAnswerRadioButton LABEL { margin-left: 0; padding: 2px 6px; text-align: right; font-family: Helvetica,Arial,sans-serif; font-size: 18px; color: #333333; }*/
+/*.surveyAnswerDescHorizontal   { border: 0; padding-left: 0; font-size: 11px; color: #333333; text-align: left; background: #fff; vertical-align: top; }*/
+/*.surveyAnswerTable            { border: 0;  background-color: white; } *//* less space between question & answers *//*  */
+/*.surveyAnswerTable-vertical*/
+/*tr > td    { padding-top: 20px; padding-bottom: 25px;  }   */
+/*.title-Text                   { margin: 0 0 0 10px; font-size: 17px; float: right; color: black;  overflow: visible; font-weight: bold; }      */
+/*}*/
+
+/*@media screen and (orientation:landscape) {*/
+/*.patientPanel                   { overflow: hidden; position: relative; margin-top: 0px; margin-right: 2px; margin-bottom: 0px; margin-left: 2px; border-width: 0px;  }*/
+/*}*/
+
+.imageFooting {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+}
+
+.imageHeading {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* registry data flex table */
+
+.gwt-ProgressBar-shell {
+  border: 2px solid #848280;
+  border-right: 2px solid #848280;
+  border-bottom: 2px solid #848280;
+  background-color: #f0f0f0;
+  height: 14pt;
+  /** width: 50%; **/
+  width: 95%;
+  border-radius: 13px;
+  padding: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gwt-ProgressBar-shell .gwt-ProgressBar-barPartial {
+  background-color: #44BB52;
+  background-image: linear-gradient(0, transparent 80%, #4B0 20%);
+  background-image: -moz-linear-gradient(0, transparent 80%, #4B0 20%);
+  background-image: -webkit-linear-gradient(0, transparent 80%, #4B0 20%);
+  background-size: 5px;
+  border-radius: 15px 0 0 15px;
+  position: absolute;
+  height: 99%;
+
+}
+
+.gwt-ProgressBar-shell .gwt-ProgressBar-barDone {
+  background-color: #44BB52;
+  background-image: linear-gradient(0, transparent 80%, #4B0 20%);
+  background-image: -moz-linear-gradient(0, transparent 80%, #4B0 20%);
+  background-image: -webkit-linear-gradient(0, transparent 80%, #4B0 20%);
+  background-size: 5px;
+  border-radius: 12px;
+  position: absolute;
+  height: 99%;
+}
+
+.gwt-ProgressBar-shell .gwt-ProgressBar-text {
+  padding-left: 8px;
+  vertical-align: middle;
+  color: #000;
+}
+
+.serverResponseLabelError, .cancelled {
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.serverResponseLabelSuccess {
+  color: green;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.serverResponseLabelEmpty {
+  color: lightgray;
+  margin-left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.messageBar {
+  height: 2em; /* margin: 10px 0 0 14px; */
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.gwt-DisclosurePanel .header,
+.gwt-DisclosurePanel .header a,
+.gwt-DisclosurePanel .header td {
+  color: black;
+  text-decoration: none; /* Remove underline from header */
+}
+
+.gwt-DisclosurePanel .content {
+  margin-left: 6px;
+  border: 2px solid #e7e7e7;
+  border-left-width: 3px;
+  padding: 4px 0 4px 8px;
+}
+
+/* list fields */
+.list-mrn {
+  width: 62px;
+}
+
+.list-first-name {
+  width: 75px;
+}
+
+.list-last-name {
+  width: 85px;
+}
+
+.registrySurveyError {
+  border: 3px solid red !important;
+}
+
+/* padding: 0; vertical-align: top; background-color: #fff; color: black; font-style: italic; */
+
+.beckAnxiety {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+  border: 0 solid #fff;
+}
+
+.beckAnxiety table tr {
+  border: 0;
+  background-color: #D9D9D9;
+  padding: 0;
+  width: 750px;
+}
+
+.beckAnxiety table tr td {
+  padding: 0;
+}
+
+.beckAnxiety-Question {
+  font-size: 17px;
+  height: 50px;
+  padding: 0 0;
+  border: 1px solid #666;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  width: 748px;
+}
+
+/* padding:10px 3px; */
+
+.beckHeading {
+  background-color: #666;
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.beckHeading-panel {
+  width: 100%;
+  background-color: #D9D9D9;
+  border: 0 solid #D9D9D9;
+  padding: 0 0;
+}
+
+.beckHeading-descriptionTable tbody tr td {
+  padding: 0 0;
+  width: 100%;
+}
+
+/*5px 3px; */
+.beckHeading-description {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: middle;
+  width: 160px;
+  margin: 0;
+}
+
+.beckHeading-labelTable tbody tr td {
+  padding: 0 0;
+  height: 30px;
+  width: 140px;
+  margin: 0;
+  background-color: #D9D9D9;
+}
+
+/* 5px 3px; */
+.beckHeading-label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.beckAnswer-panel {
+  width: 100%;
+  background-color: #D9D9D9;
+  border: 1px solid #D9D9D9;
+  padding: 0 0;
+}
+
+.beckAnswer-descriptionTable {
+  width: 160px;
+}
+
+.beckAnswer-descriptionTable tbody tr td {
+  padding: 0 0;
+}
+
+/* 5px 3px; */
+.beckAnswer-button {
+  background-color: #fff;
+}
+
+.beckAnswer-buttonTable tbody tr td {
+  padding: 0 0;
+  height: 30px;
+  width: 140px;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* 5px 3px; */
+
+.bodymapChkbox,
+.bodymapChkbox td,
+.bodymapChkbox label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  vertical-align: middle !important;
+}
+
+.painexpQuestion,
+.functAssessQ,
+.functAssessQ td {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+  background: #fff;
+  margin-left: 5px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.functAssessQ-Question {
+  margin-top: 40px;
+}
+
+.painexpQuestion-Question,
+.painexpQuestionInline,
+.functAssessQ1-Question .gwt-Label,
+.functAssessQ-Question {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  color: #333333;
+  text-align: left;
+}
+
+/*.faworkingQInLine                   { text-align: left; margin-top: 30px; }*/
+.registrySurvey-Question {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  color: #333333;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.registrySurvey .gwt-ListBox,
+.registrySurvey .gwt-CheckBox,
+.registrySurveyAnswer-buttonTable,
+.registrySurvey-buttonTable {
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.registrySurveyAnswer-button,
+.registrySurvey-button,
+.registrySurvey .gwt-TextBox,
+.registrySurvey .gwt-Label {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.registrySurveyAnswer {
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.registrySurveyCBInline {
+  padding-top: 2em;
+}
+
+.registrySurveyQInline .gwt-Label {
+  font-size: 35px;
+}
+
+.registrySurveyQInline .gwt-ListBox {
+  margin-top: 5px;
+}
+
+.functAssessAInline .gwt-Label {
+  font-size: 35px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.functAssessA .gwt-Label {
+  font-size: 22px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.functAssessA .gwt-TextBox,
+.functAssessA .gwt-TextArea {
+  font-size: 1.0em;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.functAssessQInline {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.painexpQuestion td {
+  vertical-align: middle;
+}
+
+/*.painexpQuestionInline  { width: 100%; }*/
+.painexpQuestionInline td {
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.painexpQuestion > painexpQuestion-Question {
+  margin-top: 30px;
+}
+
+.painexpQuestion .gwt-CheckBox {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.painexpQuestion .gwt-Label {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.painexpQuestion .gwt-TextBox {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.surveyAugText {
+  margin-left: 45px;
+}
+
+.actionButton button {
+  padding: 4px;
+  background: none repeat scroll 0 0 #FFFFFF;
+  margin: 5px 0 5px 0;
+  vertical-align: middle;
+  border: 1px solid #D8DCDF;
+  border-radius: 3px 3px 3px 3px;
+  line-height: 1.2em;
+  border-image: none;
+  cursor: pointer;
+  font-size: small;
+  text-decoration: none;
+}
+
+.actionButton button:hover {
+  border: 1px solid #aaaaaa;
+}
+
+.undecoratedPopup {
+
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.patientInfoVerify {
+  padding: 5px 20px 5px 20px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.radioset {
+  padding-left: 20px;
+  padding-top: 7px;
+  display: block;
+}
+
+.radioset .gwt-RadioButton {
+  display: block;
+}
+
+.radioset .gwt-RadioButton label {
+  padding-left: 5px;
+}
+
+.radioset .gwt-TextBox, .quickRegisterPanel .gwt-TextBox {
+  margin-left: 25px;
+  margin-top: 7px;
+  width: 80%;
+  display: block;
+}
+
+.quickDeclinePanel, .quickRegisterPanel {
+  padding-top: 7px;
+  padding-left: 3px;
+}
+
+.treatmentBar {
+  margin: 4px 12px 4px 12px;
+  width: 865px;
+}
+
+.gwt-MenuItem-disabled {
+  color: gray;
+}
+
+.tsetPopupPanel {
+  padding-top: 7px;
+  padding-left: 3px;
+  margin-left: 7px;
+  display: block;
+}
+
+.tsetPopupPanel .gwt-RadioButton label {
+  padding-left: 5px;
+}
+
+.tsetPPCatLabel {
+  margin-left: 16px;
+}
+
+.tsetPPCatValue {
+  margin-left: 16px;
+}
+
+.tsetPPCatValue label {
+  padding-left: 5px;
+}
+
+.tsetPPSubMenu {
+  border: 1px;
+  border-color: grey;
+  margin: 5px 15px;
+}
+
+.tsetWithdrawReason {
+  font-size: small;
+}
+
+.gwt-TextArea-tsetGroupDesc {
+  margin-left: 14px;
+  width: auto;
+  color: purple;
+}
+
+.defaultButton {
+  background-color: #9FC7F2;
+  background-image: none;
+  border-color: #8CB4DC;
+}
+
+.registrationListButtonBar td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.registerDeclineButton {
+  white-space: nowrap;
+}
+
+.registerDeclineButton > img, .registerDeclineButton > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.registerDeclineButton > img {
+  padding-right: 7px;
+}
+
+.registerDeclineMenu {
+  background-color: rgb(241, 241, 241);
+}
+
+@url choirLogoUrl choirLogo;
+
+.choirImage {
+  background-image: 'choirLogoUrl';
+  background-repeat: no-repeat;
+  background-width: 800px;
+}
+
+.patientIdentificationPanel {
+  border: 3px solid #690c0c;
+  color: #690c0c;
+  width: 865px;
+}
+
+.patientIdentificationPanel td {
+  color: #690c0c;
+  font-weight: bold;
+}
+
+.patientIdentification {
+  margin-left: 10px;
+}
+
+.patientIdentificationLarge {
+  border: 4px solid #690c0c;
+}
+
+.patientIdLabel {
+  text-align: center;
+  padding: 2px 2px 2px 0;
+  vertical-align: middle;
+  font: normal 1.8em;
+}
+
+.patientIdColorLabel {
+  color: #690c0c;
+  font-weight: bold;
+}
+
+.patientIdLabelLarge {
+  font-size: 120%;
+  vertical-align: middle;
+}
+
+.patientReportHeader {
+  padding: 12px;
+  margin-top: 12px;
+  vertical-align: middle;
+  background: lightgray;
+  color: #333;
+}
+
+/* bootstrap overrides */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary  {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #286192), color-stop(50%, #235580), color-stop(51%, #1e496d), color-stop(100%, #286192)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #286192 0%, #235580 50%, #1e496d 51%, #286192 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #286192 0%, #235580 50%, #1e496d 51%, #286192 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #286192 0%, #235580 50%, #1e496d 51%, #286192 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #286192 0%, #235580 50%, #1e496d 51%, #286192 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #286192 0%, #235580 50%, #1e496d 51%, #286192 100%); /* W3C */
+  filter: literal("progid:DXImageTransform.Microsoft.gradient( startColorstr='#286192', endColorstr='#286192',GradientType=0 )"); /* IE6-9 */
+}
+
+.assessmentConfig {
+  padding-left: 30px;
+  width: 400px;
+  margin-left: 50px;
+}
+
+.assessmentConfig .assessmentListWrapper{
+  width: 100%
+}
+
+h4.assessmentConfigFormTitle{
+  font-size: 24px;
+  line-height: 2em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-select.title-Text,
+.site-select-menu.titleLabel,
+.site-title{
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.site-select.title-Text{
+  background: #ffffff !important;
+  padding: 10px 20px;
+}
+
+.site-select.title-Text:hover{
+  border: 1px solid #d3d3d3;
+}
+
+.site-select.title-Text > span:last-child{
+  color: #aaaaaa;
+  border-left: 0px;
+}
+
+/* Buttons with icon image and text*/
+.icon-text-button > img{
+  margin-top: -4px; /*level icon with text*/
+  margin-right: 4px;
+}

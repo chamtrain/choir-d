@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Dyadic Adjustment Scale" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[How often do you discuss or have you considered divorce, separation, or terminating your relationship?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[All the time]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Most of the time]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More often than not]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Occasionally]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Rarely]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>often_discuss</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[In general, how often do you think that things between you and your partner are going well?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[All of the time]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Most of the time]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More often than not]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Occasionally]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Rarely]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>how_well</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Do you confide in your mate?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[All of the time]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Most of the time]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More often than not]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Occasionally]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Rarely]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>confide_mate</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Please indicate the degree of happiness, all things considered, of your relationship]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Extremely Unhappy]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Fairly Unhappy]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A Little Unhappy]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Happy]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very Happy]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extremely Happy]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Perfect]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>degree_happy</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

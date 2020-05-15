@@ -1,0 +1,177 @@
+<Form Description="Child Pain Catastrophizing Scale" questionsPerPage="10">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        We are interested in what you think and how strong the feelings are when you are in pain. Below are 
+        sentences of different thoughts and feelings you can have when you are in pain. Try to show us as 
+        clearly as possible what you think and feel by choosing the word under each sentence that best reflects 
+        how strongly you have each thought.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3" Page="start">
+      <Description><![CDATA[<h4>When I am in pain, I worry all the time about whether the pain will end</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS1" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description><![CDATA[<h4>When I am in pain, I feel I can't go on like this much longer</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS2" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description><![CDATA[<h4>When I am in pain, it's terrible and I think it's never going to get better</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS3" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <ref>PCS1</ref>
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description><![CDATA[<h4>When I am in pain, it's awful and I feel that it takes over me</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS4" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description><![CDATA[<h4>When I am in pain, I can't stand it anymore</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS5" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description><![CDATA[<h4>When I am in pain, I become afraid that the pain will get worse</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS6" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description><![CDATA[<h4>When I am in pain, I keep thinking of other painful events</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS7" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="11" Page="start">
+      <Description><![CDATA[<h4>When I am in pain, I want the pain to go away</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS8" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description><![CDATA[<h4>When I am in pain, I can't keep it out of my mind</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS9" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description><![CDATA[<h4>When I am in pain, I keep thinking about how much it hurts</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS10" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description><![CDATA[<h4>When I am in pain, I keep thinking about how much I want the pain to stop</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS11" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description><![CDATA[<h4>When I am in pain, there is nothing I can do to stop the pain</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS12" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description><![CDATA[<h4>When I am in pain, I wonder whether something serious may happen</h4>]]></Description>
+      <Responses>
+        <Response ref="PCS13" Order="1" Type="select1" required="true" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><label>Not At All</label><value>0</value></item>
+          <item><label>Mildly</label><value>1</value></item>
+          <item><label>Moderately</label><value>2</value></item>
+          <item><label>Severely</label><value>3</value></item>
+          <item><label>Extremely</label><value>4</value></item>
+        </Response>
+      </Responses>
+    </Item>
+</Items>
+</Form>

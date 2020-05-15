@@ -1,0 +1,187 @@
+<Form Description="TJA Outcomes Study Consent" questionsPerPage="1" >
+  <Items>
+    <Item Order="1" ref="consent" Class="surveyQuestionCollapsible">
+      <PatientAttribute data_name="TJAOutcomesStudyConsent" data_value="any" condition="notexists"/>
+<!--  <PatientAttribute data_name="age" data_value="17" condition="greaterthan"/> -->
+      <Description>
+<![CDATA[
+  You are invited to participate in a research study on the outcomes of Total Joint Arthroplasty (TJA).
+  <BR>
+  Do you agree to allow us to use these questionnaires and your health information related to your Total Joint Arthroplasty for research purposes?
+]]>
+      </Description>
+      <CollapsibleContent>
+<![CDATA[
+  <h3>Outcome of Total Joint Arthroplasty</h3>
+  <p><b>DESCRIPTION:</b>
+  You are invited to participate in a research study on the outcomes of Total Joint Arthroplasty (TJA).
+  If you choose to participate, your health information related to your TJA, such as basic demographics
+  (date of birth or death, name, email, insurance information), surgical details(including diagnoses,
+  procedures, dates of service, admission, and discharge), x-rays, related physical examination records,
+  and the answers to self-report questionnaires will be recorded in a secure database system.  The purpose
+  of this database is to track your progress and the progress of other TJA patients to answer TJA research
+  questions. The surveys are used for both research and for quality purposes, and are sent to both the
+  California and the American Joint Replacement Registries. You will be asked to answer questionnaires prior
+  to your surgery, and again 3 months, 1 year, and every other year after your surgery for the lifetime of
+  the implant. You will receive the questionnaires via email, or on paper or a tablet upon entering the
+  clinic for an appointment with your surgeon. You may opt out of receiving emails, or choose to not receive
+  them at all.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b>
+  Your participation will take approximately 15-20 minutes.
+  </p>
+  <p><b>RISKS AND BENEFITS:</b>
+  There are no risks associated with this study. The benefits which may reasonably be expected to result from this
+  study are that your surgeon will be able to better track the progress of TJA patients, thus improving the quality
+  of care of TJA patients, and advancing the field of Total Joint Arthroplasty. We cannot and do not guarantee or
+  promise that you will receive any benefits from this study. Your decision whether or not to participate in this
+  study will not affect your care.
+  </p>
+  <p><b>PAYMENTS:</b>
+  You will not receive payment for your participation. 
+  </p>
+  <p>
+  <b>SUBJECT'S RIGHTS:</b>
+  If you have read this form and have decided to participate in this project, please understand your participation
+  is voluntary and you have the right to withdraw your consent or discontinue participation at any time without
+  penalty or loss of benefits to which you are otherwise entitled.  The alternative is not to participate. You have
+  the right to refuse to answer particular questions. Your individual privacy will be maintained in all published
+  and written data resulting from the study.
+  </p>
+  <p><b>CONTACT INFORMATION:</b></p>
+  <p><i>Questions:</i>
+  If you have any questions, concerns or complaints about this research, its procedures, risks and benefits,
+  contact the Protocol Director, Dr. Stuart Goodman, (650) 721-7662.
+  </p>
+  <p><i>Independent Contact:</i>
+  If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general
+  questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board (IRB)
+  to speak to someone independent of the research team at (650)-723-2480 or toll free at 1-866-680-2906. You can also write
+  to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.  
+  </p>
+  <p><i>Appointment Contact:</i>
+  If you need to change your appointment, please contact the clinic appointment line at (650) 723-5643.
+  </p>
+  <h3>Authorization To Use Your Health Information For Research Purposes</h3>
+  <p><b>1. Introduction:</b></p>
+  <p>
+  Because information about you and your health is personal and private, it generally cannot be used in this research study
+  without your written authorization. The form is intended to inform you about how your health information will be used or
+  disclosed in the study. Your information will only be used in accordance with this authorization form and the informed
+  consent form and as required or allowed by law. Please read it carefully.
+  </p>
+  <p><b>2. What is the purpose of this research study and how will my health information be utilized in the study?</b></p>
+  <p>
+  The purpose is to collect basic patient demographics, self-administered questionnaires, surgical data, related physical
+  examination records, and x-rays in a password secured data base, in order to answer research questions posed by the
+  investigator in regards to outcome of total joint replacement.
+  </p>
+  <p>
+  None of the patients' individual responses or identifiers are ever used in publications. Instead patient responses remain
+  anonymous and are aggregated as a group.
+  </p>
+  <p><b>3. Do I have to agree to this authorization?</b></p>
+  <p>
+  You do not have to agree to this authorization. But if you do not, you will not be able to participate in this research study.
+  Agreeing to this the form is not a condition for receiving any medical care outside the study.
+  </p>
+  <p><b>4. If I agree, can I revoke it or withdraw from the research later?</b></p>
+  <p>
+  If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your health
+  information (and to discontinue any other participation in the study) at any time. After any revocation, your health
+  information will no longer be used or disclosed in the study, except to the extent that the law allows us to continue using
+  your information (e.g., necessary to maintain integrity of research). If you wish to revoke your authorization for the
+  research use or disclosure of your health information in this study, you must write to:
+  </p>
+  <p>
+  Drs. Derek Amanatullah, Nicholas Giori, Stuart B. Goodman, James Huddleston, William Maloney, Matthew Miller, Steven Woolson
+  </p>
+  <p>
+  Department of Orthopaedic Surgery, 450 Broadway Street, M/C 6342, Redwood City, CA 94063 
+  </p>
+  <p><b>5. What Personal Information Will Be Used or Disclosed?</b></p>
+  <p>
+  Your health information related to this study, may be used or disclosed in connection with this research study, including,
+  but not limited to, basic patient demographics, including Patient name, address, phone number, email address, date of birth,
+  and insurance information, self-administered questionnaires, surgical data, related physical examination records, and x-rays. 
+  </p>
+  <p><b>6. Who May Use or Disclose the Information?</b></p>
+  <p>
+  The following parties are authorized to use and/or disclose your health information in connection with this research study:
+  <ul>
+  <li>The Protocol Director: Stuart Goodman, MD, PhD</li>
+  <li>The Co-Investigators: Derek Amanatullah, MD; Nicholas Giori, MD; James Huddleston, MD; William Maloney, MD; Matthew Miller, MD; Steven Woolson, MD</li>
+  <li>The Research team: Angela Bye; Katherine Hwang; Stanford Orthopaedic Fellows</li>
+  <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary.</li>
+  </ul>
+  </p>
+  <p><b>7. Who May Receive / Use the Information?</b></p>
+  <p>
+  The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations
+  for their use in connection with this research study:
+  <ul>
+  <li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li>
+  </ul>
+  Your information may be re-disclosed by the recipients described above, if they are not required by law to protect the privacy of the information.
+  </p>
+  <p><b>8. When will my authorization expire?</b></p>
+  <p>
+  Your authorization for the use and/or disclosure of your health information will expire December 31, 2075.
+  </p>
+]]>
+      </CollapsibleContent>
+      <Responses>
+        <!-- TotalJointCompleteHandler.java is expecting Yes to be Response Order 0 -->
+        <Response Order="0" Type="radio" >
+          <Description>Yes, I agree</Description>
+          <Scores><Score value="0"/></Scores>
+          <SetPatientAttribute data_name="TJAOutcomesStudyConsent" data_value="y"/>
+        </Response>
+        <Response Order="1" Type="radio" >
+          <Description>No, I do not agree</Description>
+          <Scores><Score value="1"/></Scores>
+          <SetPatientAttribute data_name="TJAOutcomesStudyConsent" data_value="n"/>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Section="start">
+      <ResponseValue xpath_query="//Item[@ref='consent']/@ItemResponse" data_value="0" condition="equal"/>
+      <Description>Please check all that are applicable</Description>
+      <Responses>
+        <Response Order="1" Type="select" required="false">
+          <ref>PARTICIPANT</ref>
+          <item>
+            <label>I am an adult participant in this study</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>
+          <item>
+            <label>I am the parent or guardian granting permission for a child in this study (the use of "you" refers to "your child" or “your ward.”)</label>
+            <value>2</value>
+            <onselect Type="Item" Where="Order" Value="4"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" RequiredMin="0" Visible="false">
+      <ResponseValue xpath_query="//Item[@ref='consent']/@ItemResponse" data_value="0" condition="equal"/>
+      <Description>Enter your name</Description>
+      <Responses>
+        <Response ref="PATIENTNAME" Order="1" Type="input" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" RequiredMin="0" Visible="false" Section="end">
+      <ResponseValue xpath_query="//Item[@ref='consent']/@ItemResponse" data_value="0" condition="equal"/>
+      <Description>Enter child's name</Description>
+      <Responses>
+        <Response ref="CHILDNAME" Order="1" Type="input" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

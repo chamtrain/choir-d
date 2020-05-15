@@ -1,0 +1,92 @@
+<Form Description="Alcohol" DateStarted="" DateFinished="" questionsPerPage="4">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Do you drink alcoholic beverages?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1">
+          <ref>ALCOHOLNOW</ref>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="required" Value="true"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Visible="false">
+      <Description> <![CDATA[How many drinks per week?]]></Description>
+      <Responses>
+        <Response Order="1" required="false" Type="select1">
+          <ref>ALCOHOLPERWEEK</ref>
+          <item>
+            <label>1 - 3</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>4 - 6</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>7 - 10</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>More than 10</label>
+            <value>4</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="required" Value="true"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="attribute" Name="required" Value="true"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Visible="false">
+      <Description> <![CDATA[Do you drink every day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" >
+          <ref>ALCOHOLDAILY</ref>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="1" Visible="false">
+      <Description> <![CDATA[How many drinks per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input" Class="registrySurveyAnswer" Align="horizontal">
+          <ref>ALCOHOLPERDAY</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

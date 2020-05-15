@@ -1,0 +1,142 @@
+<Form Description="Child PROMIS Sleep - Short Form" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>My sleep was restless.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little bit</label></item>
+          <item><value>3</value><label>Somewhat</label></item>
+          <item><value>4</value><label>Quite a bit</label></item>
+          <item><value>5</value><label>Very much</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>I was satisfied with my sleep.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q2" Order="1" Type="select1" required="true">
+          <item><value>5</value><label>Not at all</label></item>
+          <item><value>4</value><label>A little bit</label></item>
+          <item><value>3</value><label>Somewhat</label></item>
+          <item><value>2</value><label>Quite a bit</label></item>
+          <item><value>1</value><label>Very much</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>My sleep was refreshing.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q3" Order="1" Type="select1" required="true">
+          <item><value>5</value><label>Not at all</label></item>
+          <item><value>4</value><label>A little bit</label></item>
+          <item><value>3</value><label>Somewhat</label></item>
+          <item><value>2</value><label>Quite a bit</label></item>
+          <item><value>1</value><label>Very much</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>I had difficulty falling asleep.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q4" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little bit</label></item>
+          <item><value>3</value><label>Somewhat</label></item>
+          <item><value>4</value><label>Quite a bit</label></item>
+          <item><value>5</value><label>Very much</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>I had trouble staying asleep.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q5" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Rarely</label></item>
+          <item><value>3</value><label>Sometimes</label></item>
+          <item><value>4</value><label>Often</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>I had trouble sleeping.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q6" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Rarely</label></item>
+          <item><value>3</value><label>Sometimes</label></item>
+          <item><value>4</value><label>Often</label></item>
+          <item><value>5</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>I got enough sleep.</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q7" Order="1" Type="select1" required="true">
+          <item><value>5</value><label>Never</label></item>
+          <item><value>4</value><label>Rarely</label></item>
+          <item><value>3</value><label>Sometimes</label></item>
+          <item><value>2</value><label>Often</label></item>
+          <item><value>1</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        In the past 7 days
+        <p>My sleep quality was...</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q8" Order="1" Type="select1" required="true">
+          <item><value>5</value><label>Very poor</label></item>
+          <item><value>4</value><label>Poor</label></item>
+          <item><value>3</value><label>Fair</label></item>
+          <item><value>2</value><label>Good</label></item>
+          <item><value>1</value><label>Very good</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

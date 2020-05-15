@@ -1,0 +1,179 @@
+<Form Description="Psychology History" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Prior to the age of 17, did you experience any major upheaval that you think may have shaped your life or personality significantly?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <!--item>
+            <label>...</label>
+            <value />
+            <selected>true</selected>
+          </item-->
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+   <!-- Removed 2/2/2016
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[After the age of 17, did you experience any other major upheaval that you think may have shaped your life or personality significantly?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    -->
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Do you feel you were neglected as a child?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+   <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Did you experience chronic pain as a child?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+   <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Do you currently feel threatened in your environment?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+   </Item>
+   <Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Have you ever been psychiatrically hospitalized?]]>
+      </Description>
+      <Responses >
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <item>
+            <label>Choose not to answer</label>
+            <value>3</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>13</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+	  </Item>
+  </Items>
+</Form>

@@ -1,0 +1,42 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="2">
+  <Items>
+
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        How did you hear about the Stanford CFS clinic? Please check all that apply.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>InformationSource</ref>
+          <item><value>1</value><label>From another physician or healthcare provider within Stanford</label></item>
+          <item><value>2</value><label>From another physician or healthcare provider who is not affiliated with Stanford</label></item>
+          <item><value>3</value><label>From other patients</label></item>
+          <item><value>4</value><label>From media reports (newspaper, television, radio, online)</label></item>
+          <item><value>5</value><label>From my own research (e.g. using Google, etc.)</label></item>
+          <item><value>6</value><label>From Stanford Materials (website, newletter, video, etc.)</label></item>
+          <item><value>7</value><label>From another source</label>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" RequiredMin="0" RequiredMax="1" Visible="false">
+      <Description><![CDATA[ From what other source did you hear about our clinic? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" >
+          <ref>OtherInformationSource</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

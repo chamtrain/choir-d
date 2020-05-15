@@ -1,0 +1,315 @@
+<Form Description="Interventional Procedures" DateStarted="" DateFinished="" questionsPerPage="16">
+  <Items>
+    <ref>TREATINTERVENTION</ref>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description><![CDATA[Which of these interventional procedures have you received?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Trigger point injection</label>
+            <value>Trigger point injection</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Botox injection</label>
+            <value>Botox injection</value>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Epidural steroid injection</label>
+            <value>Epidural steroid injection</value>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <item>
+            <label>Facet joint injection</label>
+            <value>Facet joint injection</value>
+            <onselect Type="Item" Where="Order" Value="8">
+              <Set Type="state" Name="Visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="8">
+              <Set Type="state" Name="Visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Nerve blocks</label>
+            <value>Nerve blocks</value>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Bursa or joint steroid injection</label>
+            <value>Bursa or joint steroid injection</value>
+            <onselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Medial branch block</label>
+            <value>Medial branch block</value>
+            <onselect Type="Item" Where="Order" Value="14">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="14">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <ref>RADIOFREQ</ref>
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Radio frequency ablation of medial branch nerves or facets</label>
+            <value>Radio frequency ablation of medial branch nerves or facets</value>
+            <onselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <Scores />
+      </Response>
+    </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <ref>onselect</ref>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" Align="horizontal" StyleName="dependantQuestion">
+          <item>
+            <label>Improved pain</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No effect</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Worsened pain</label>
+            <value>3</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,208 @@
+<Form Description="injustice" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+<Items class="surveyInline">
+	 <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>Most people don't understand how severe my condition is</Description>
+        <Responses>
+			<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+				<Scores />
+        	</Response>
+        </Responses>
+     </Item>
+	 <Item Order="2" ItemResponse="" ItemScore=""  RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>My life will never be the same</Description>
+        <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ2</ref>
+           		<width>280</width>
+		  		<label></label>
+            	<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+			</Response>
+        </Responses>
+    </Item>
+	<Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above" >
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I am suffering because of someone else's negligence</Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ31</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>No one should have to live this way</Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ4</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I just want to have my life back</Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ5</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I feel that this has affected me in a permanent way</Description>
+        <Responses>
+          <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ6</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="7" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>It all seems so unfair</Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ7</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+	<Item Order="8" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I worry that my condition is not being taken seriously</Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ8</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+	<Item Order="9" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>Nothing will ever make up for all that I have gone through</Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ9</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="10" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I feel as if I have been robbed of something very precious</Description>
+        <Responses>
+<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ10</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="11" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I am troubled by fears that I may never achieve my dreams</Description>
+      <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ11</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	<Item Order="12" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you think about your health condition:]]></Description>
+	 <Description>I can't believe this has happened to me</Description>
+	  <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>IEQ12</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+</Items>
+</Form>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="OCD Brief Assessment" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Estimate how much time unwanted thoughts and actions to reduce anxiety take up in an average day:]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>red_anxiety</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[How much do OCD thoughts and actions bother you from 0 (not at all) to 10 (extremely bothersome):]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>ocd_bother</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[How much does OCD interfere with your social functioning right now (i.e., going out with friends, romantic life, enjoying time with others) from 0 (not at all) to 10 (extreme interference):]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>ocd_intrf_social</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[How much does OCD interfere with your work or school functioning right now (i.e., ability to engage in work, performing at the level you would like) from 0 (not at all) to 10 (extreme interference):]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>ocd_intrf_func</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[How much does OCD interfere with your general quality of life right now (i.e., ability to relax, ability to have fun or pleasant experiences) from 0 (not at all) to 10 (extreme interference): ]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>ocd_intrf_qol</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[How motivated do you feel to work on OCD from 0 (not at all motivated) to 10 (extremely motivated):]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>mot_to_work</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[How comfortable do you feel working on OCD in a group setting from 0 (not at all comfortable) to 10 (extremely comfortable):]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <min>0</min>
+          <max>10</max>
+          <ref>comf_to_work</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Emotion Regulation Questionnaire (ERQ)" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[<p>We would like to ask you some questions about your emotional life, in particular, how you control (that is, regulate and manage) your emotions. The questions below involve two distinct aspects of your emotional life. One is your EMOTIONAL EXPERIENCE, or what you feel like inside. The other is your emotional expression, or how you show your emotions in the way you talk, gesture, or behave. Although some of the following questions may seem similar to one another, they differ in important ways. For each item, please answer using the following scale:</p>From 1:(strongly disagree) up-to 7:(strongly agree)]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="1" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I want to feel more positive emotion (such as joy or amusement), I change what I'm thinking about.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>feel_positive</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="2" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I keep my emotions to myself.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>keep_emotions</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="3" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I want to feel less negative emotion (such as sadness or anger), I change what I'm thinking about.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>feel_less_neg</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="4" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I am feeling positive emotions, I am careful not to express them.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>feel_pos_exp</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="5" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I'm faced with a stressful situation, I make myself think about it in a way that helps me stay calm.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>think_calm</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="6" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I control my emotions by not expressing them.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>cntr_emot_exp</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="7" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I want to feel more positive emotion, I change the way I'm thinking about the situation.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>feel_pos_thinking</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="8" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[I control my emotions by changing the way I think about the situation I'm in.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>cntr_emot_think</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="9" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I am feeling negative emotions, I make sure not to express them.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>neg_no_exp</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="10" RequiredMax="1" RequiredMin="1">
+      <Description><![CDATA[When I want to feel less negative emotion, I change the way I'm thinking about the situation.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly disagree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="Neutral" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="7" Description2="Strongly agree" Order="6" Type="radio">
+          <Scores>
+            <Score value="7"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>feel_neg_thinking</ref>
+    </Item>
+  </Items>
+</Form>
+

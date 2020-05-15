@@ -1,0 +1,625 @@
+<Form Description="Adult Responses to Child Sx - Parent Responses to Pain" questionsPerPage="10">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        The following section is about what you do when your child has pain.
+        For each question, choose one:
+        <h4><b>Never</b> - You never do this</h4>
+        <h4><b>Once in a while</b> - You only do this once in a while</h4>
+        <h4><b>Sometimes</b> - You do this some of the time</h4>
+        <h4><b>Often</b> - You usually do this</h4>
+        <h4><b>Always</b> - You always do this</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <h4>Ask your child what you can do to help?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        <h4>Express irritation or frustration with your child?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        <h4>Do your child's chore or pick up your child's things instead of making him/her do it?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        <h4>Try to get your child to rest?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q4" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <h4>Talk to your child about something else to take your child's mind off of it?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q5" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        <h4>Give your child some medicine?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q6" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="9" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        <h4>Reassure your child that he/she is going to be OK?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q7" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        <h4>Get your child something to eat or drink?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q8" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        <h4>Spend more time than usual with your child?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q9" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        <h4>Bring your child treats or special gifts?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q10" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        <h4>Try not to pay attention to your child?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q11" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        <h4>Ask your child questions about how he/she feels?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q12" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="16" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        <h4>Let your child stay home from school?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q13" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        <h4>Encourage your child to do something he/she enjoys? (like watch TV or play a game)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q14" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        <h4>Call the doctor or take your child to the doctor?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q15" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20">
+      <Description>
+        <![CDATA[
+        <h4>Tell your child that s/he doesn't have to finish all of his/her homework?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q16" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <Description>
+        <![CDATA[
+        <h4>Tell your child there's nothing you can do about it?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q17" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22">
+      <Description>
+        <![CDATA[
+        <h4>Give your child special privileges to do things that s/he
+        usually isn't allowed to do (e.g., stay up late; watch TV)?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q18" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="23" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="24">
+      <Description>
+        <![CDATA[
+        <h4>Stay home from work or come home early (or stay home instead
+        of going out or running errands)?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q19" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25">
+      <Description>
+        <![CDATA[
+        <h4>Tell others in the family not to bother your child or
+        to be especially nice to your child?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q20" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="26">
+      <Description>
+        <![CDATA[
+        <h4>Tell your child not to make a fuss about it?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q21" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27">
+      <Description>
+        <![CDATA[
+        <h4>Pay more attention to your child than usual?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q22" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="28">
+      <Description>
+        <![CDATA[
+        <h4>Worry a lot about your child?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q23" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29">
+      <Description>
+        <![CDATA[
+        <h4>Let your child sleep in a special place (your room, couch)?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q24" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="30" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31">
+      <Description>
+        <![CDATA[
+        <h4>Tell your child that he/she needs to learn to be stronger?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q25" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="32">
+      <Description>
+        <![CDATA[
+        <h4>Let your child sleep later than usual in the morning?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q26" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33">
+      <Description>
+        <![CDATA[
+        <h4>Keep your child inside the house?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q27" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="34">
+      <Description>
+        <![CDATA[
+        <h4>Let your child get away with things he/she is not supposed to?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q28" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="35">
+      <Description>
+        <![CDATA[
+        <h4>Try to involve your child in some activity?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q29" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="36">
+      <Description>
+        <![CDATA[
+        <h4>Insist that your child go to school?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q30" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="37" Page="start">
+      <Description>
+        <![CDATA[
+        When your child has pain, how often do you...
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="38">
+      <Description>
+        <![CDATA[
+        <h4>Try to make your child as comfortable as possible?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q31" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="39">
+      <Description>
+        <![CDATA[
+        <h4>Tell your child you still expect him/her to do chores or pick
+        up his/her things around the house?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q32" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="40">
+      <Description>
+        <![CDATA[
+        <h4>Check on your child to see how he/she is doing?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q33" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Once in a while</label></item>
+          <item><value>2</value><label>Sometimes</label></item>
+          <item><value>3</value><label>Often</label></item>
+          <item><value>4</value><label>Always</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

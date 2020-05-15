@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Eating Disorder Examination–Questionnaire" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[<p>Instructions: The following questions are concerned with the past four weeks (28 days) only. Please read each question carefully. Please answer all of the questions. Please only choose one answer for each question. Thank you.</p><p>Remember that the questions only refer to the past four weeks (28 days) only.</p>]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false">
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Have you been deliberately trying to limit the amount of food you eat to influence your shape or weight (whether or not you have succeeded)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>lmt_fd_eat</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Have you gone for long periods of time (8 waking hours or more) without eating anything at all in order to influence your shape or weight?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>gn_wt_eating</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Have you tried to exclude from your diet any foods that you like in order to influence your shape or weight (whether or not you have succeeded)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>exc_food</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Have you tried to follow definite rules regarding your eating (for example, a calorie limit) in order to influence your shape or weight (whether or not you have succeeded)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>flw_rules</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Have you had a definite desire to have an empty stomach with the aim of influencing your shape or weight?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>des_emp_stmc</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[Have you had a definite desire to have a totally flat stomach?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>des_flt_stmc</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Has thinking about food, eating or calories made it very difficult to concentrate on things you are interested in (for example, working, following a conversation, or reading)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>thnk_fd_dfclt</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Has thinking about shape or weight made it very difficult to concentrate on things you are interested in (for example, working, following a conversation, or reading)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>thnk_shp_dfclt</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Have you had a definite fear of losing control over eating?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>lose_ctrl_eat</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[Have you had a definite fear that you might gain weight?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>fear_gain_wght</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description><![CDATA[Have you felt fat?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>felt_fat</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="12">
+      <Description><![CDATA[Have you had a strong desire to lose weight?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>dsr_lose_wght</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="13">
+      <Description><![CDATA[Over the past 28 days, how many times have you eaten what other people would regard as an unusually large amount of food (given the circumstances)?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>eaten_lrg_fd</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="14">
+      <Description><![CDATA[On how many of these times did you have a sense of having lost control over your eating (at the time that you were eating)?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>cntr_over_eat</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="15">
+      <Description><![CDATA[Over the past 28 days, on how many DAYS have such episodes of overeating occurred (i.e. you have eaten an unusually large amount of food and have had a sense of loss of control at the time)?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>sense_over_eat</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="16">
+      <Description><![CDATA[Over the past 28 days, how many times have you made yourself sick (vomit) as a means of controlling your shape or weight?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>sck_cntr_wght</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="17">
+      <Description><![CDATA[Over the past 28 days, how many times have you taken laxatives as a means of controlling your shape or weight?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>lax_cntr_wght</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="18">
+      <Description><![CDATA[Over the past 28 days, how many times have you exercised in a "driven" or "compulsive" way as a means of controlling your weight, shape or amount of fat or to burn off calories?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="true">
+          <format>
+            <datatype>integer</datatype>
+            <min>1</min>
+            <max>100</max>
+          </format>
+          <ref>exe_cntr_wght</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="19">
+      <Description><![CDATA[Over the past 28 days, on how many days have you eaten in secret (ie, furtively)?]]></Description>
+      <Description><![CDATA[......Do not count episodes of binge eating]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No days]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1-5 days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-12 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[13-15 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[16-22 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[23-27 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every Day]]></label>
+            <value><![CDATA[6]]></value>
+          </item>
+          <ref>eat_in_scrt</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="20">
+      <Description><![CDATA[On what proportion of the times that you have eaten have you felt guilty (felt that you’ve done wrong) because of its effect on your shape or weight?]]></Description>
+      <Description><![CDATA[......Do not count episodes of binge eating]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[None of the times]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A few of the times]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Less than half the times]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Half of the times]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[More than half]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Most of the time]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Every time]]></label>
+            <value><![CDATA[7]]></value>
+          </item>
+          <ref>eat_guilt_shp</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="21">
+      <Description><![CDATA[Over the past 28 days, how concerned have you been about other people seeing you eat?]]></Description>
+      <Description><![CDATA[......Do not count episodes of binge eating]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item>
+            <label>Not at all</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>1</value>
+            <printlabel>Not at all/Slightly</printlabel>
+          </item>
+          <item>
+            <label>Slightly</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>3</value>
+            <printlabel>3 - Moderately</printlabel>
+          </item>
+          <item>
+            <label>Moderately</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>5</value>
+            <printlabel>Moderately - Markedly</printlabel>
+          </item>
+          <item>
+            <label>Markedly</label>
+            <value>6</value>
+          </item>
+          <ref>cncrd_oth_see</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="22">
+      <Description><![CDATA[Has your weight influenced how you think about (judge) yourself as a person?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item>
+            <label>Not at all</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>1</value>
+            <printlabel>Not at all/Slightly</printlabel>
+          </item>
+          <item>
+            <label>Slightly</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>3</value>
+            <printlabel>3 - Moderately</printlabel>
+          </item>
+          <item>
+            <label>Moderately</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>5</value>
+            <printlabel>Moderately - Markedly</printlabel>
+          </item>
+          <item>
+            <label>Markedly</label>
+            <value>6</value>
+          </item>
+          <ref>wght_infuence</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="23">
+      <Description><![CDATA[Has your shape influenced how you think about (judge) yourself as a person?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item>
+            <label>Not at all</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>1</value>
+            <printlabel>Not at all/Slightly</printlabel>
+          </item>
+          <item>
+            <label>Slightly</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>3</value>
+            <printlabel>3 - Moderately</printlabel>
+          </item>
+          <item>
+            <label>Moderately</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[<p>]]></label>
+            <value>5</value>
+            <printlabel>Moderately - Markedly</printlabel>
+          </item>
+          <item>
+            <label>Markedly</label>
+            <value>6</value>
+          </item>
+          <ref>shp_influence</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="24">
+          <Description><![CDATA[How much would it have upset you if you had been asked to weigh yourself once a week (no more, or less, often) for the next four weeks?]]></Description>
+          <Responses>
+            <Response Order="1" Type="select1" required="true">
+              <item>
+                <label>Not at all</label>
+                <value>0</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>1</value>
+                <printlabel>Not at all/Slightly</printlabel>
+              </item>
+              <item>
+                <label>Slightly</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>3</value>
+                <printlabel>3 - Moderately</printlabel>
+              </item>
+              <item>
+                <label>Moderately</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>5</value>
+                <printlabel>Moderately - Markedly</printlabel>
+              </item>
+              <item>
+                <label>Markedly</label>
+                <value>6</value>
+              </item>
+              <ref>upst_asked_wght</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="25">
+          <Description><![CDATA[How dissatisfied have you been with your weight?]]></Description>
+          <Responses>
+            <Response Order="1" Type="select1" required="true">
+              <item>
+                <label>Not at all</label>
+                <value>0</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>1</value>
+                <printlabel>Not at all/Slightly</printlabel>
+              </item>
+              <item>
+                <label>Slightly</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>3</value>
+                <printlabel>3 - Moderately</printlabel>
+              </item>
+              <item>
+                <label>Moderately</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>5</value>
+                <printlabel>Moderately - Markedly</printlabel>
+              </item>
+              <item>
+                <label>Markedly</label>
+                <value>6</value>
+              </item>
+              <ref>dstsf_wght</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="26">
+          <Description><![CDATA[How dissatisfied have you been with your shape?]]></Description>
+          <Responses>
+            <Response Order="1" Type="select1" required="true">
+              <item>
+                <label>Not at all</label>
+                <value>0</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>1</value>
+                <printlabel>Not at all/Slightly</printlabel>
+              </item>
+              <item>
+                <label>Slightly</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>3</value>
+                <printlabel>3 - Moderately</printlabel>
+              </item>
+              <item>
+                <label>Moderately</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>5</value>
+                <printlabel>Moderately - Markedly</printlabel>
+              </item>
+              <item>
+                <label>Markedly</label>
+                <value>6</value>
+              </item>
+              <ref>dstsf_shp</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="27">
+          <Description><![CDATA[How uncomfortable have you felt seeing your body (for example, seeing your shape in the mirror, in a shop window reflection, while undressing or taking a bath or shower)?]]></Description>
+          <Responses>
+            <Response Order="1" Type="select1" required="true">
+              <item>
+                <label>Not at all</label>
+                <value>0</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>1</value>
+                <printlabel>Not at all/Slightly</printlabel>
+              </item>
+              <item>
+                <label>Slightly</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>3</value>
+                <printlabel>3 - Moderately</printlabel>
+              </item>
+              <item>
+                <label>Moderately</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>5</value>
+                <printlabel>Moderately - Markedly</printlabel>
+              </item>
+              <item>
+                <label>Markedly</label>
+                <value>6</value>
+              </item>
+              <ref>unc_self_body</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="28">
+          <Description><![CDATA[How uncomfortable have you felt about others seeing your shape or figure (for example, in communal changing rooms, when swimming, or wearing tight clothes)?]]></Description>
+          <Responses>
+            <Response Order="1" Type="select1" required="true">
+              <item>
+                <label>Not at all</label>
+                <value>0</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>1</value>
+                <printlabel>Not at all/Slightly</printlabel>
+              </item>
+              <item>
+                <label>Slightly</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>3</value>
+                <printlabel>3 - Moderately</printlabel>
+              </item>
+              <item>
+                <label>Moderately</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label><![CDATA[<p>]]></label>
+                <value>5</value>
+                <printlabel>Moderately - Markedly</printlabel>
+              </item>
+              <item>
+                <label>Markedly</label>
+                <value>6</value>
+              </item>
+              <ref>unc_oth_body</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+        <Item ItemResponse="" ItemScore="" Order="29">
+          <Description><![CDATA[What is your weight at present? (Please give your best estimate).]]></Description>
+          <Responses>
+            <Response Appearance="" Order="0" Type="input" required="false">
+              <ref>weight_now</ref>
+            </Response>
+          </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="30">
+          <Description><![CDATA[What is your height? (Please give your best estimate).]]></Description>
+          <Responses>
+            <Response Appearance="" Order="0" Type="input" required="true">
+              <ref>height</ref>
+            </Response>
+          </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="31">
+          <Description><![CDATA[If female:]]></Description>
+          <Description><![CDATA[Over the past three-to-four months have you missed any menstrual periods?]]></Description>
+          <Responses>
+            <Response Appearance="Full" Order="0" Type="dropdown" required="true">
+              <item>
+                <label><![CDATA[Yes]]></label>
+                <value><![CDATA[0]]></value>
+              </item>
+              <item>
+                <label><![CDATA[No]]></label>
+                <value><![CDATA[1]]></value>
+              </item>
+              <ref>mstrl_prd</ref>
+            </Response>
+          </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="32">
+          <Description><![CDATA[How many?]]></Description>
+          <ResponseValue condition="equal" data_value="Yes" xpath_query="//Item/Responses/Response[ref='mstrl_prd']/item[@selected='true']/value/text()"/>
+          <Responses>
+            <Response Appearance="" Order="0" Type="input" required="true">
+              <format>
+                <datatype>integer</datatype>
+              </format>
+              <min>1</min>
+              <max>10</max>
+              <ref>num_mstrl_prd</ref>
+            </Response>
+          </Responses>
+        </Item>
+        <Item ItemResponse="" ItemScore="" Order="33">
+          <Description><![CDATA[Have you been taking the “pill”?]]></Description>
+          <ResponseValue condition="equal" data_value="Yes" xpath_query="//Item/Responses/Response[ref='mstrl_prd']/item[@selected='true']/value/text()"/>
+          <Responses>
+            <Response Appearance="" Order="0" Type="input" required="false">
+              <ref>pill_mstrl_prd</ref>
+            </Response>
+          </Responses>
+        </Item>
+
+      </Items>
+    </Form>

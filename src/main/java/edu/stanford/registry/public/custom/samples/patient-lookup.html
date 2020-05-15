@@ -1,0 +1,35 @@
+
+<!-- HTML created by the patient-lookup element -->
+
+<div ng-controller="PatientLookupCtrl as vm">
+  <!-- Text box and search button -->
+  <div class="input-group">
+    <input type="text" class="form-control" ng-model="vm.searchText" ng-keydown="($event.which === 13) && vm.lookup(notify)">
+    <div class="input-group-btn">
+      <button class="btn btn-default" ng-click="vm.lookup(notify)">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal Dialog for search results -->
+  <div id="lookupDialog" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
+          <h4 class="modal-title">Patient Lookup</h4>
+        </div>
+        <div class="modal-body">
+          <p ng-show="vm.patients.length == 0">No patients found</p>
+          <p ng-show="vm.patients.length > 1">Multiple patients found</p>
+          <div ng-repeat="patient in vm.patients">
+            <button type="button" class="btn btn-block" ng-click="vm.select(patient)">
+              {{patient.lastName + ', ' + patient.firstName}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

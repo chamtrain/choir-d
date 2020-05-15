@@ -1,0 +1,107 @@
+<Form Description="Pediatic Pain PReP Research Assent" questionsPerPage="1" >
+  <Items>
+    <Item Order="2" ref="assent" Class="surveyQuestionCollapsible" >
+      <PatientAttribute data_name="CaptivateAssent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="7" condition="greaterthan"/>
+      <Description>
+<![CDATA[
+  We are asking you to be in a research study that involves learning ways to manage thoughts, 
+  feelings, activities, and comfort by working with other teens and families.
+  <p>Do you agree to allow us to use these questionnaires and your health related information
+  for this research study?</p>
+]]>
+      </Description>
+      <CollapsibleContent>
+<![CDATA[
+  <h3>Courage to Act with Pain: Teens Identifying Values, Acceptance, and Treatment Effects (CAPTIVATE)</h3>
+  <p><b>1. What will happen to me in this study?</b></p>
+  <p>
+  The CAPTIVATE group will meet one day each week for 10 weeks to talk about thoughts, feelings, and behavior related to 
+  discomfort and being a teenager. This study is not an experiment but does involve learning ways to manage thoughts, 
+  feelings, activities, and comfort by working with other teens and families. Group therapy is one type of treatment 
+  for people who may want extra help because of health issues. Teens who receive group treatment also get to meet other 
+  teens who may understand them and have good ideas about how to help them. Parents who participate in a caregiver group 
+  also get to meet and learn from other parents of teens that suffer from chronic pain.
+  </p>
+  <p>
+  Our group will use two treatments that research shows can be helpful for pain management: 1) Cognitive-Behavioral and 
+  2) Acceptance & Commitment Therapies. We hope that this group will help you to learn skills for managing pain and other 
+  issues that may be stressful for teens. We also hope that this group will help you and your family to identify things 
+  that are important to you (i.e., values) for living a healthy and happy life. If you agree to be in this group you and 
+  your parent(s) are encouraged to attend each session. We will also ask you to fill out secure online questionnaires at 
+  the beginning, middle, and end of treatment as well as 3-months after the program. You do not have to answer any question 
+  you do not want to answer. At the end of the study, we hope you will feel that the CAPTIVATE group was helpful for you, 
+  and we also believe that your time will help us to improve how we help families like yours in the future. 
+  </p>
+  <p><b>2. Can anything bad happen to me?</b></p>
+  <p>
+  It is up to you to decide if you want to be in this group. While nothing bad can happen to you, you will get help at 
+  the same time as other youth 12 to 18 years old. You will also be asked to spend one afternoon per week at our Clinic 
+  along with a parent (who will receive help in another group). Seeing other teens while getting help each week may 
+  1) make you aware of what you say or do in the group and/or 2) take away time from other activities. Our team is happy 
+  to answer your concerns and questions, if you have any.
+  </p>
+  <p><b>3. Can anything good happen to me?</b></p>
+  <p>
+  You may feel good about helping with research for teens with pain. You may also like meeting with, talking to, and 
+  learning from other teens like you. Last, you may learn – and start using – ways to cope with discomfort. Coping with 
+  discomfort means using skills to help the pain so that you can enjoy your life. You may learn skills like how to 
+  change thoughts, deal with feelings, and do what is important to you even if you still have pain.
+  </p>
+  <p>
+  There are no other known benefits. If you agree to do this study, you will express how you feel about your pain, and 
+  what you do about it. We will study and share what we learned from you and the group to help other kids with pain in 
+  the future, and can share those results with you if you would like. We believe that what we learn from you will help 
+  providers (e.g., doctors, therapists) improve treatments they offer to you and others that suffer from chronic pain. 
+  </p>
+  <p><b>4. Do I have other choices?</b></p>
+  <p>
+  Of course! Being in this study is your choice, and you can stop this study at any time. The other choice is not to 
+  participate, and this is okay with us. It will not affect how we take care of you.
+  </p>
+  <p><b>5. Will anyone know I am in the study?</b></p>
+  <p>
+  Your participation in this study will be kept confidential (secret). No one but our team and the other families in 
+  CAPTIVATE will know that you are in this study. We will have all teens and parents set up “Privacy Rules” specific to 
+  their group at the start of CAPTIVATE. Generally, <u>no one</u> in the group will be allowed to share anything with anyone 
+  outside the group. Even your parents will not know how you answer your questionnaires or what you say each week in 
+  the teen group – unless you want them to. If we have to tell them something to keep you healthy and safe we will talk 
+  to you first.
+  </p>
+  <p><b>6. What happens if I get hurt?</b></p>
+  <p>
+  It is very unlikely that you will get hurt because of this study. 
+  </p>
+  <p><b>7. Who can I talk to about the study?</b></p>
+  <p>
+  If you have any questions about or problems with the study you can contact the Protocol Director, Dr. Samantha Huestis at 
+  (650) 736-3482 or Protocol Co-Director Dr. Rashmi Bhandari at (650) 724-5333. 
+  </p>
+  <p>
+  If you have questions about the study but want to talk to someone else who is not a part of the study, you can call the 
+  Stanford Institutional Review Board (IRB) at (650) 723-5244 or toll free at 1-866-680-2906.
+  </p>
+  <p><b>8. What if I do not want to do this?</b></p>
+  <p>
+  Being in this study is voluntary, meaning you can choose to be in the study or not. It is 100% up to you and your 
+  parents/caregivers. Even if you decide to do the study and then change your mind, that is okay. Our medical team will 
+  continue to work with you and help you.
+  </p>
+]]>
+      </CollapsibleContent>
+      <Responses>
+        <!-- Yes is expected to be Response Order 0 -->
+        <Response Order="0" Type="radio" >
+          <Description>Yes, I agree</Description>
+          <Scores><Score value="0"/></Scores>
+          <SetPatientAttribute data_name="CaptivateAssent" data_value="y"/>
+        </Response>
+        <Response Order="1" Type="radio" >
+          <Description>No, I do not agree</Description>
+          <Scores><Score value="1"/></Scores>
+          <SetPatientAttribute data_name="CaptivateAssent" data_value="n"/>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

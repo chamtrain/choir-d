@@ -1,0 +1,106 @@
+<Form Description="Lymphedema Mood" questionsPerPage="1">
+  <Items>
+    <Item Order="38">
+      <Description>
+        <![CDATA[
+        In the past week have you had trouble sleeping?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q19</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="39">
+      <Description>
+        <![CDATA[
+        In the past week have you had difficulty concentrating on things,e.g. reading?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q20</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="40">
+      <Description>
+        <![CDATA[
+        In the past week have you felt tense?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q21</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="41">
+      <Description>
+        <![CDATA[
+        In the past week have you felt worried?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q22</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="42">
+      <Description>
+        <![CDATA[
+        In the past week have you felt irritable?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q23</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="43">
+      <Description>
+        <![CDATA[
+        In the past week have you felt depressed?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q24</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

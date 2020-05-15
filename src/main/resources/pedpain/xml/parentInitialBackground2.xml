@@ -1,0 +1,172 @@
+<Form Description="Initial Parent - Child and Family Background" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Please tell us about your child and family background.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+<!-- 
+    <Item Order="2" Section="start">
+      <Description>
+        <![CDATA[
+        What is your relationship to the child?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="relation" Order="1" Type="select1" required="false">
+          <item> <value>1</value> <label>Biological mother</label> </item>
+          <item> <value>2</value> <label>Biological father</label> </item>
+          <item> <value>3</value> <label>Adopted mother</label> </item>
+          <item> <value>4</value> <label>Adopted father</label> </item>
+          <item> <value>5</value> <label>Stepmother</label> </item>
+          <item> <value>6</value> <label>Stepfather</label> </item>
+          <item> <value>7</value> <label>Foster mother</label> </item>
+          <item> <value>8</value> <label>Foster father</label> </item>
+          <item> <value>9</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Other, please specify</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="relation-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        Is your child
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="sex" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Male</label> </item>
+          <item> <value>2</value> <label>Female</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        Child's Date of Birth (mm/dd/yyyy)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="dob" Order="1" Type="input" min="1" max="12" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+-->
+    <Item Order="6" Section="start">
+      <Description>
+        <![CDATA[
+        Child's Ethnicity (choose one that best describes your child)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="ethnicity" Order="1" Type="select1" required="true">
+          <item> <value>1</value> <label>Hispanic/Latino</label> </item>
+          <item> <value>2</value> <label>Non-Hispanic/Non-Latino</label> </item>
+          <item> <value>9</value> <label>Prefer not to respond</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Section="end">
+      <Description>
+        <![CDATA[
+        Child's Race (check all that apply)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="race" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>White</label> </item>
+          <item> <value>2</value> <label>African-American</label> </item>
+          <item> <value>3</value> <label>Asian</label> </item>
+          <item> <value>4</value> <label>American Indian or Alaska Native</label> </item>
+          <item> <value>5</value> <label>Native Hawaiian or Other Pacific Islander</label> </item>
+          <item> <value>9</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="race-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Section="start">
+      <Description>
+        <![CDATA[
+        What is the name of your child's school? (or enter NA for no answer)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school-name" Order="1" Type="input" required="true">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Section="start">
+      <Description>
+        <![CDATA[
+        What grade is your child in?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school-grade" Order="1" Type="input" min="0" max="20" required="true">
+          <label>Grade</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        Type of school program (check all that apply)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="school-pgm" Order="1" Type="select" required="true">
+          <item> <value>1</value> <label>Public School full-time</label> </item>
+          <item> <value>6</value> <label>Public School part-time</label> </item>
+          <item> <value>2</value> <label>Private School</label> </item>
+          <item> <value>3</value> <label>Independent Study</label> </item>
+          <item> <value>4</value> <label>Home/Hospital Programming</label> </item>
+          <item> <value>5</value> <label>Not currently enrolled in any schooling</label> </item>
+          <item> <value>99</value> <label>None of the above or Prefer not to respond</label> </item>
+        </Response>
+        <Response ref="school-pgm-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Section="end">
+      <Description>
+        <![CDATA[
+        How many days of school has your child missed in the past <b>month</b> due to their health? Enter 0 if none.
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-school-days" Order="1" Type="input" min="0" max="31" required="true">
+          <label>Days</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

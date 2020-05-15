@@ -1,0 +1,227 @@
+<Form Description="Family Assessment Device - General Functioning" questionsPerPage="10">
+  <!--
+    Items responses are
+      Strongly Agree, Agree, Disagree, Strongly Disagree
+    Items are scored by assigning a value from 1 to 4 to the responses.
+    Positively worded items are scored 1=Strongly Agree to 4=Strongly Disagree
+    Negatively worded items are scored 4=Strongly Agree to 1=Strongly Disagree
+   -->
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        The following section has general statements about families.
+        Select the answer that best fits your family now.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[
+        Select the answer that best fits your family now.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <h4>Planning family activities is <u>difficult</u> because we misunderstand each other.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF1" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        <h4>In times of crisis we can turn to each other for support.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF2" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        <h4>We <u>cannot</u> talk to each other about the sadness we feel.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF3" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        <h4>Individuals are accepted for who they are.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF4" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        <h4>We <u>avoid</u> discussing our fears and concerns.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF5" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        <h4>We can express feelings to each other.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF6" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="9" Page="start">
+      <Description>
+        <![CDATA[
+        Select the answer that best fits your family now.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        <h4>There are lots of <u>bad</u> feelings in the family.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF7" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        <h4>We feel accepted for who we are.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF8" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        <h4>Making decisions is a <u>problem</u> for our family.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF9" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        <h4>We are able to make decisions about how to solve problems.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF10" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        <h4>We <u>don't</u> get along very well together.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF11" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>4</value><label>Strongly Agree</label></item>
+          <item><value>3</value><label>Agree</label></item>
+          <item><value>2</value><label>Disagree</label></item>
+          <item><value>1</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        <h4>We confide in each other.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="GF12" Order="1" Type="select1" required="false" Align="horizontal" StyleName="unlabeledFieldset">
+          <item><value>1</value><label>Strongly Agree</label></item>
+          <item><value>2</value><label>Agree</label></item>
+          <item><value>3</value><label>Disagree</label></item>
+          <item><value>4</value><label>Strongly Disagree</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

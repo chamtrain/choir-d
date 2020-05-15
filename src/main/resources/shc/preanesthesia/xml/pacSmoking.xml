@@ -1,0 +1,79 @@
+<Form Description="Smoking" DateStarted="" DateFinished="" questionsPerPage="4" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Have you ever smoked?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full" required="true">
+			<ref>SMOKE</ref>
+          <width>100%</width>
+          <label/>
+          <location>left</location>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+			      <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  The following questions are conditional: only show if the answer to the previous question is yes -->
+    <Item Order="2" ItemResponse="" ItemScore=""  Visible="false" >
+      <Description>
+        <![CDATA[At most how many packs per day?]]>
+      </Description>
+       <Responses>
+        <Response Order="1" Type="input">
+          <ref>SMOKEOFTEN</ref>
+          <format>
+            <datatype>text</datatype>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore=""  Visible="false" >
+      <Description>
+        <![CDATA[How many years?]]>
+      </Description>
+      <Alert>Please enter a number</Alert>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>SMOKEMUCH</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false" >
+      <Description>
+        <![CDATA[If you quit, when?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>SMOKEMUCH</ref>
+          <format>
+            <datatype>text</datatype>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

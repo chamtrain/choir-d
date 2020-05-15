@@ -1,0 +1,57 @@
+<Form Description="UCLA Activity Score" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        The following question concerns your activity level. Activity levels are listed from 
+        most active to least active. Please choose the one that most closely reflects your 
+        activity level by selecting one from the group below.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item>
+            <label>Regularly participate in impact sports such as jogging, tennis, skiing, acrobatics, ballet, heavy labor or backpacking.</label>
+            <value>10</value>
+          </item>
+          <item>
+            <label>Sometimes participate in impact sports.</label>
+            <value>9</value>
+          </item>
+          <item>
+            <label>Regularly participate in very active events, such as bowling or golf.</label>
+            <value>8</value>
+          </item>
+          <item>
+            <label>Regularly participate in active events such as bicycling.</label>
+            <value>7</value>
+          </item>
+          <item>
+            <label>Regularly participate in moderate activities, such as swimming and unlimited housework or shopping.</label>
+            <value>6</value>
+          </item>
+          <item>
+            <label>Sometimes participate in moderate activities.</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Regularly participate in mild activities such as walking, limited housework and limited shopping.</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Sometimes participate in mild activities.</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Mostly inactive: restricted to minimal activities of daily living.</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Wholly inactive: dependent on others; cannot leave residence.</label>
+            <value>1</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

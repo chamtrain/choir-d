@@ -1,0 +1,27 @@
+<Form Description="Sample" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      This is a sample question. Select an answer.
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" ref="questonId" Type="select1" required="true">
+        <item>
+          <label>Red</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Yellow</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Blue</label>
+          <value>3</value>
+        </item>
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

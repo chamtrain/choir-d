@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Process>
+  <ProcessType value="PatientInitial.0803" start_date="08-03-2017" expiration_date="" notification="true" appointment_template="Initial"
+               schedule_template="Initial" order="1" visit="1" visitType="INI" report="Initial" optional_questionnaires="PatientConsented.0803">
+    <Questionaire order="1" value="TraumaConsent@7363" type="Local" xml="TraumaConsent"/>
+  </ProcessType>
+  <ProcessType value="PatientConsented.0803" notification="false" start_date="08-03-2017" expiration_date="" visit="9999" order="-1" >
+    <Questionaire order="2" print_order="2" value="PreinjuryQuestions@7309" type="Local" xml="PreinjuryQuestions" print_type="text" invert="true"/>
+    <Questionaire order="3" print_order="3" value="traumaPreinjuryIntro" type="Local" xml="traumaPreinjuryIntro" print_type=""/>
+    <Questionaire order="4" print_order="4" value="preInjuryGlobalHealth" type="Local" xml="preInjuryGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="15" print_order="15" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="17" print_order="17.1" value="PROMIS Bank v1.0 - Self-Efficacy Manage Symptoms" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="18" print_order="17.2" value="PROMIS Bank v1.0 - Self-Efficacy Manage Emotions" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="20" print_order="20.0" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="21" print_order="20.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat"  print_type="chart, text"/>
+    <Questionaire order="22" print_order="20.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="23" print_order="20.3" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="45" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+  <ProcessType value="FamilyInitial.0803" start_date="08-03-2017" expiration_date="" notification="true" appointment_template="Family"
+               schedule_template="Family" order="2" visit="999" visitType="FIN" report="Initial" optional_questionnaires="FamilyConsented.0803">
+    <Questionaire order="1" value="TraumaFamilyConsent@7167" type="Local" xml="TraumaFamilyConsent"/>
+  </ProcessType>
+  <ProcessType value="FamilyConsented.0803" notification="false" start_date="08-03-2017" expiration_date="" visit="9999" order="-1" >
+    <Questionaire order="2" print_order="2" value="PreinjuryFamily@7379" type="Local" xml="PreinjuryFamily" print_type="text" invert="true"/>
+    <Questionaire order="3" print_order="3" value="traumaPreinjuryIntro" type="Local" xml="traumaPreinjuryIntro" print_type=""/>
+    <Questionaire order="4" print_order="4" value="preInjuryGlobalHealth" type="Local" xml="preInjuryGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="15" print_order="15" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="17" print_order="17.1" value="PROMIS Bank v1.0 - Self-Efficacy Manage Emotions" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="18" print_order="17.2" value="PROMIS Bank v1.0 - Self-Efficacy Manage Soc Inter" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="20" print_order="20.0" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="21" print_order="20.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="22" print_order="20.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat"  print_type="chart,text"/>
+    <Questionaire order="23" print_order="20.3" value="PROMIS Bank v2.0 - Satisfaction Roles Activities" type="StanfordCat"  print_type="chart,text" invert="true"/>
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="45" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+  <ProcessType value="PatientFollowup.0803" start_date="08-03-2017" expiration_date="10-31-2017" notification="true" appointment_template="FollowUp"
+               schedule_template="FollowUp" order="2" visit="999" visitType="FOL" report="Followup">
+    <Questionaire order="3" print_order="3" value="TQoL@7199" type="Local" xml="TQoL" print_type="text"/>
+    <Questionaire order="6" print_order="6" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="9" print_order="9" value="traumaGlobalHealth" type="Local" xml="traumaGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="14" print_order="14.1" value="PROMIS Bank v1.0 - Self-Efficacy Manage Symptoms" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="15" print_order="14.2" value="PROMIS Bank v1.0 - Self-Efficacy Manage Emotions" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="16" print_order="14.3" value="PROMIS Bank v1.0 - Self-Efficacy Manage Soc Inter" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="17" print_order="14.4" value="PROMIS Bank v1.0 - Self-Efficacy Manage Day Activ" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="20" print_order="20.0" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="21" print_order="20.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="22" print_order="20.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat"  print_type="chart,text"/>
+    <Questionaire order="23" print_order="23.1" value="PROMIS Bank v2.0 - Satisfaction Roles Activities" type="StanfordCat"  print_type="chart,text" invert="true"/>
+    <Questionaire order="24" print_order="23.2" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat"  print_type="chart,text" />
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="45" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+
+  <ProcessType value="FamilyFollowup.0803" start_date="08-03-2017" expiration_date="10-31-2017" notification="true" appointment_template="Family-FollowUp"
+               schedule_template="Family-FollowUp" order="2" visit="999" visitType="FOL" report="Followup">
+    <Questionaire order="6" print_order="6" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="9" print_order="9" value="traumaGlobalHealth" type="Local" xml="traumaGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="17" print_order="17.1" value="PROMIS Bank v1.0 - Self-Efficacy Manage Emotions" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="18" print_order="17.2" value="PROMIS Bank v1.0 - Self-Efficacy Manage Soc Inter" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="20" print_order="20.0" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="21" print_order="20.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="22" print_order="20.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat"  print_type="chart,text"/>
+    <Questionaire order="23" print_order="20.3" value="PROMIS Bank v2.0 - Satisfaction Roles Activities" type="StanfordCat"  print_type="chart,text" invert="true"/>
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="45" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+  <ProcessType value="PatientFollowup.1031" start_date="10-31-2017" expiration_date="" notification="true" appointment_template="FollowUp"
+               schedule_template="FollowUp" order="2" visit="999" visitType="FOL" report="Followup">
+    <Questionaire order="1" print_order="1" value="FollowUpIntroduction@7732" type="Local" xml="FollowUpIntroduction" print_type="text"/>
+    <Questionaire order="2" print_order="2" value="RecoveryMilestonesPt@7785" type="Local"  xml="RecoveryMilestonesPt" print_type="text"/>
+    <Questionaire order="3" print_order="9" value="traumaGlobalHealth" type="Local" xml="traumaGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="4" print_order="3" value="TQoL@7199" type="Local" xml="TQoL" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="6" print_order="6" value="PostTraumaticGrowth@7796" type="Local" xml="PostTraumaticGrowth" print_type="text"/>
+    <Questionaire order="16" print_order="14.3" value="PROMIS Bank v1.0 - Self-Efficacy Manage Soc Inter" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="17" print_order="14.4" value="PROMIS Bank v1.0 - Self-Efficacy Manage Day Activ" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="23" print_order="23.1" value="PROMIS Bank v2.0 - Satisfaction Roles Activities" type="StanfordCat"  print_type="chart,text" invert="true"/>
+    <Questionaire order="24" print_order="23.2" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat"  print_type="chart,text" />
+    <Questionaire order="35" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+
+  <ProcessType value="FamilyFollowup.1031" start_date="10-31-2017" expiration_date="" notification="true" appointment_template="Family-FollowUp"
+               schedule_template="Family-FollowUp" order="2" visit="999" visitType="FOL" report="Followup">
+    <Questionaire order="3" print_order="3" value="traumaGlobalHealth" type="Local" xml="traumaGlobalHealth" print_type="text" invert="true"/>
+    <Questionaire order="5" print_order="5" value="CentralityEvents@7113" type="Local" xml="CentralityEvents" print_type="text"/>
+    <Questionaire order="6" print_order="6" value="PostTraumaticGrowth@7796" type="Local" xml="PostTraumaticGrowth" print_type="text"/>
+    <Questionaire order="17" print_order="17.1" value="PROMIS Bank v1.0 - Self-Efficacy Manage Emotions" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="18" print_order="17.2" value="PROMIS Bank v1.0 - Self-Efficacy Manage Soc Inter" type="StanfordCat" print_type="text, chart"/>
+    <Questionaire order="20" print_order="20.0" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="21" print_order="20.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" print_type="chart,text"/>
+    <Questionaire order="22" print_order="20.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat"  print_type="chart,text"/>
+    <Questionaire order="23" print_order="20.3" value="PROMIS Bank v2.0 - Satisfaction Roles Activities" type="StanfordCat"  print_type="chart,text" invert="true"/>
+    <Questionaire order="35" print_order="45" value="InjuryMindset@7299" type="Local" xml="InjuryMindset" print_type="text" invert="true"/>
+    <Questionaire order="40" print_order="40" value="TraumaMindsets@7292" type="Local" xml="TraumaMindsets" print_type="text" invert="true"/>
+    <Questionaire order="47" print_order="47" value="RecoveryMindsets@7308" type="Local" xml="RecoveryMindsets" print_type="text" invert="true"/>
+    <Questionaire order="50" print_order="50" value="SATISFACTION@7173" type="Local" xml="SATISFACTION" print_type="text" invert="true"/>
+  </ProcessType>
+  <ProcessType value="Create FamilyInitial" activity="Registered" order="1" visitType="" start_date="10-11-2017" expiration_date="" category="physician" onComplete="close">
+    <Questionaire value="sendFamilyInitialSurvey" type="Local" xml="sendFamilyInitialSurvey" order="1" print_order="1" print_type="text" />
+  </ProcessType>
+  <VisitTypes>
+    <VisitType value="INI" group="new" />
+    <VisitType value="FIN" group="new" />
+    <VisitType value="FOL" group="return" />
+    <VisitType value="FFO" group="return" />
+  </VisitTypes>
+</Process>

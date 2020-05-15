@@ -1,0 +1,115 @@
+<Form Description="HOOS Hip Survey" questionsPerPage="1">
+  <Items>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Limp</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>11</value><label>None</label></item>
+          <item><value>8</value><label>Slight</label></item>
+          <item><value>5</value><label>Moderate</label></item>
+          <item><value>0</value><label>Severe</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Support</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>11</value><label>None</label></item>
+          <item><value>7</value><label>Cane for long walks</label></item>
+          <item><value>5</value><label>Cane most of time</label></item>
+          <item><value>3</value><label>One crutch</label></item>
+          <item><value>2</value><label>Two canes</label></item>
+          <item><value>0</value><label>Two crutches or not able to walk</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Distance Walked</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>11</value><label>Unlimited</label></item>
+          <item><value>8</value><label>Six blocks</label></item>
+          <item><value>5</value><label>Two or three blocks</label></item>
+          <item><value>2</value><label>Indoors only</label></item>
+          <item><value>0</value><label>Bed and chair only</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Sitting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>Comfortably in ordinary chair for one hour</label></item>
+          <item><value>3</value><label>On a high chair for 30 minutes</label></item>
+          <item><value>0</value><label>Unable to sit comfortably in any chair</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Are you able to enter public transportation?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>0</value><label>No</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Stairs</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>4</value><label>Normally without using a railing</label></item>
+          <item><value>2</value><label>Normally using a railing</label></item>
+          <item><value>1</value><label>In any manner</label></item>
+          <item><value>0</value><label>Unable to do stairs</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your right hip.
+        <p>Put on Shoes and Socks</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>4</value><label>With ease</label></item>
+          <item><value>2</value><label>With difficulty</label></item>
+          <item><value>0</value><label>Unable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,84 @@
+<Form Description="Issues" DateStarted="" DateFinished="" questionsPerPage="2">
+ <Items>
+   <Item Order="1" ItemResponse="" ItemScore="" >
+     <Description>
+       <![CDATA[Have you had any illness in the last two weeks?]]>
+     </Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1" Appearance="full">
+         <ref>ILLNESSTWO</ref>
+         <item selected="false">
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="2"><Set Type="state" Name="visible" Value="true"/></onselect>
+         </item>
+         <item selected="false">
+           <label>No</label>
+           <value>2</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+     <Description/>
+     <Responses>
+       <Response Order="1" Type="select">
+         <ref>ILLNESSTYPE</ref>
+         <item><label>cold</label><value>1</value></item>
+         <item><label>flu</label><value>2</value></item>
+         <item><label>bronchitis</label><value>3</value></item>
+         <item><label>laryngitis</label><value>4</value></item>
+         <item><label>sore throat</label><value>5</value></item>
+         <item><label>wheezing</label><value>6</value></item>
+         <item><label>fever</label><value>7</value></item>
+       </Response>
+       <Response Order="2" Type="input"><Scores />
+         <ref>ISSEXPLAIN</ref>
+         <label>Explain</label>
+         <format>
+           <datatype>text</datatype>
+           <lines>2</lines>
+         </format>
+         <hint>Optional: you may enter additional information</hint>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="3" ItemResponse="" ItemScore="" Visible="true">
+     <Description>Have you been hospitalized in the past 6 months?</Description>
+     <Responses>
+       <Response Order="1" required="true" Type="select1" Appearance="full">
+         <ref>HOSP6MON</ref>
+         <item selected="false">
+           <label>Yes</label>
+           <value>1</value>
+           <onselect Type="Item" Where="Order" Value="4"><Set Type="state" Name="visible" Value="true"/></onselect>
+         </item>
+         <item selected="false">
+           <label>No</label>
+           <value>2</value>
+         </item>
+         <Scores />
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="4" Visible="false">
+     <Responses>
+       <Response Order="1" Type="input"><ref>HOSPWHERE</ref>
+         <label>Where were you hospitalized?</label>
+         <format>
+           <datatype>text</datatype>
+           <lines>2</lines>
+         </format>
+       </Response>
+       <Response Order="2" Type="input"><ref>HOSPWHY</ref>
+         <label>Why were you hospitalized?</label>
+         <format>
+           <datatype>text</datatype>
+           <lines>2</lines>
+         </format>
+       </Response>
+     </Responses>
+   </Item>
+  </Items>
+</Form>

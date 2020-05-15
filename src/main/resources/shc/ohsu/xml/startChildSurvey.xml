@@ -1,0 +1,19 @@
+<Form Description="Start Child Survey" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      This survey consists of two sections. The first section is to be completed
+      by the child and the second section is to be completed by the parent or caregiver.
+      <p>The following section is <u>to be completed by your <i>child</i></u>.</p> 
+      <p>If the child is not able to complete the survey at this time you can exit the survey 
+      by closing the browser and return to the survey anytime using the link.</p>
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

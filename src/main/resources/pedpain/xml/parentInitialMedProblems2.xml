@@ -1,0 +1,409 @@
+<Form Description="Initial Parent - Child Medical Problems" questionsPerPage="1">
+  <Items>
+    <Item Order="1" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child had any <u>major medical problems</u>?
+        <h4>Select the condition(s) from the list below and specify <u>age when they were diagnosed</u>,
+        or select None if there were no major medical problems.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+  
+    <Item Order="2" >
+      <Description></Description>
+      <Responses>
+        <Response ref="asthma" Order="1" Type="select">
+          <item> <value>1</value> <label>Asthma</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="asthma-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" >
+      <Description></Description>
+      <Responses>
+        <Response ref="arthritis" Order="1" Type="select">
+          <item> <value>1</value> <label>Arthritis</label>
+            <onselect Type="Item" Where="Order" Value="5"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="arthritis-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="6" >
+      <Description></Description>
+      <Responses>
+        <Response ref="autoimmune" Order="1" Type="select">
+          <item> <value>1</value> <label>Autoimmune disease (e.g., lupus)</label>
+            <onselect Type="Item" Where="Order" Value="7"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="autoimmune-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="8" >
+      <Description></Description>
+      <Responses>
+        <Response ref="blood-disease" Order="1" Type="select">
+          <item> <value>1</value> <label>Blood disease (e.g., sickle cell)</label>
+            <onselect Type="Item" Where="Order" Value="9"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="blood-disease-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="10" >
+      <Description></Description>
+      <Responses>
+        <Response ref="burns" Order="1" Type="select">
+          <item> <value>1</value> <label>Burns</label>
+            <onselect Type="Item" Where="Order" Value="11"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="burns-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="12" >
+      <Description></Description>
+      <Responses>
+        <Response ref="cancer" Order="1" Type="select">
+          <item> <value>1</value> <label>Cancer</label>
+            <onselect Type="Item" Where="Order" Value="13"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="cancer-type" Order="1" Type="input">
+           <label>Type</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+        <Response ref="cancer-age" Order="2" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="14" >
+      <Description></Description>
+      <Responses>
+        <Response ref="cystic-fibrosis" Order="1" Type="select">
+          <item> <value>1</value> <label>Cystic Fibrosis</label>
+            <onselect Type="Item" Where="Order" Value="15"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="cystic-fibrosis-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="16" >
+      <Description></Description>
+      <Responses>
+        <Response ref="heart-disease" Order="1" Type="select">
+          <item> <value>1</value> <label>Heart disease</label>
+            <onselect Type="Item" Where="Order" Value="17"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="heart-disease-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="18" >
+      <Description></Description>
+      <Responses>
+        <Response ref="diabetes" Order="1" Type="select">
+          <item> <value>1</value> <label>Diabetes</label>
+            <onselect Type="Item" Where="Order" Value="19"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="diabetes-type" Order="1" Type="select1" required="false" Align="horizontal">
+          <item> <value>1</value> <label>Type I</label> </item>
+          <item> <value>2</value> <label>Type II</label> </item>
+        </Response>
+        <Response ref="diabetes-age" Order="2" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20" >
+      <Description></Description>
+      <Responses>
+        <Response ref="prematurity" Order="1" Type="select">
+          <item> <value>1</value> <label>Very Low Birth Weight/Prematurity</label>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22" >
+      <Description></Description>
+      <Responses>
+        <Response ref="abdominal-disorder" Order="1" Type="select">
+          <item> <value>1</value> <label>Abdominal / Stomach Disorder (e.g., GI issues)</label>
+            <onselect Type="Item" Where="Order" Value="23"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="abdominal-disorder-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24" >
+      <Description></Description>
+      <Responses>
+        <Response ref="genetic-disease" Order="1" Type="select">
+          <item> <value>1</value> <label>Genetic Disease</label>
+            <onselect Type="Item" Where="Order" Value="25"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="genetic-disease-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26" >
+      <Description></Description>
+      <Responses>
+        <Response ref="kidney-disease" Order="1" Type="select">
+          <item> <value>1</value> <label>Kidney Disease</label>
+            <onselect Type="Item" Where="Order" Value="27"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="kidney-disease-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="28" >
+      <Description></Description>
+      <Responses>
+        <Response ref="neurological-disorder" Order="1" Type="select">
+          <item> <value>1</value> <label>Neurological Disorder</label>
+            <onselect Type="Item" Where="Order" Value="29"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="neurological-disorder-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="30" >
+      <Description></Description>
+      <Responses>
+        <Response ref="obesity" Order="1" Type="select">
+          <item> <value>1</value> <label>Pediatric Overweight / Obesity</label>
+            <onselect Type="Item" Where="Order" Value="31"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="obesity-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="32" >
+      <Description></Description>
+      <Responses>
+        <Response ref="transplant" Order="1" Type="select">
+          <item> <value>1</value> <label>Organ Transplant(s)</label>
+            <onselect Type="Item" Where="Order" Value="33"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="transplant-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="34" >
+      <Description></Description>
+      <Responses>
+        <Response ref="sleep-disorder" Order="1" Type="select">
+          <item> <value>1</value> <label>Sleep Disorder (e.g., obstructive sleep apnea)</label>
+            <onselect Type="Item" Where="Order" Value="35"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="35" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="sleep-disorder-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="36" >
+      <Description></Description>
+      <Responses>
+        <Response ref="thyroid-disease" Order="1" Type="select">
+          <item> <value>1</value> <label>Thyroid Disease</label>
+            <onselect Type="Item" Where="Order" Value="37"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="37" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="thyroid-disease-age" Order="1" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="38" >
+      <Description></Description>
+      <Responses>
+        <Response ref="other" Order="1" Type="select">
+          <item> <value>1</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="39"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="39" Visible="false">
+      <Description/>
+      <Responses>
+        <Response ref="other-specify" Order="1" Type="input" min="0" max="99">
+           <label>Specify</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+        <Response ref="other-age" Order="2" Type="input" min="0" max="99">
+           <label>Age Diagnosed</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="40" Section="end">
+      <Description></Description>
+      <Responses>
+        <Response ref="none" Order="1" Type="select">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

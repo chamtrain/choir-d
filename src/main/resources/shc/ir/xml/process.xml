@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="NoSurvey" visit="0" visitType="Unknown" order="99" report="Initial" notification="false"
+               start_date="08-01-2015" expiration_date="">
+    <Questionaire print_order="1" value="NoSurvey" type="Local" xml="NoSurvey" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="DVT" visit="1" visitType="NEW" order="1" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="04-24-2016" optional_questionnaires="DVT-Consented">
+    <Questionaire order="1" value="irConsent" type="Local" xml="irConsent"/>
+  </ProcessType>
+
+  <ProcessType value="DVT-Consented" visit="2" visitType="RTN" order="3" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="04-24-2016">
+    <Questionaire order="2" value="irEmailConsent" type="Local" xml="irEmailConsent"/>
+    <Questionaire order="3" value="DVT-QOL" type="Local" xml="DVT-QOL" print_order="2" print_type="text"/>
+    <Questionaire order="4" value="DVT-Activities" type="Local" xml="DVT-Activities" print_order="3" print_type="text"/>
+    <Questionaire order="5" value="DVT-Feelings" type="Local" xml="DVT-Feelings" print_order="4" print_type="text"/>
+    <Questionaire order="6" value="DVT" type="Local" xml="DVT" print_order="1" print_type="table, text, chart"/>
+  </ProcessType>
+
+  <ProcessType value="Lymphedema" visit="1" visitType="NEW" order="2" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="04-24-2016" optional_questionnaires="Lymphedema-Consented">
+    <Questionaire order="1" value="irConsent" type="Local" xml="irConsent"/>
+  </ProcessType>
+
+  <ProcessType value="Lymphedema-Consented" visit="2" visitType="RTN" order="4" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="08-01-2015" expiration_date="04-24-2016">
+    <Questionaire order="2" value="irEmailConsent" type="Local" xml="irEmailConsent"/>
+    <Questionaire order="3" value="LymphedemaFunction" type="Local" xml="LymphedemaFunction" print_order="2.1" print_type="text, chart"/>
+    <Questionaire order="4" value="LymphedemaAppearance" type="Local" xml="LymphedemaAppearance" print_order="2.2" print_type="text, chart"/>
+    <Questionaire order="5" value="LymphedemaSymptoms" type="Local" xml="LymphedemaSymptoms" print_order="3.1" print_type="text, chart"/>
+    <Questionaire order="6" value="LymphedemaMood" type="Local" xml="LymphedemaMood" print_order="3.2" print_type="text, chart"/>
+    <Questionaire order="7" value="LymphedemaOverall" type="Local" xml="LymphedemaOverall" print_order="4" print_type="text, chart"/>
+    <Questionaire order="8" value="Lymphedema" type="Local" xml="Lymphedema" print_order="1" print_type="table"/>
+  </ProcessType>
+
+<!--  -->
+
+  <ProcessType value="InitialDVT.0416" visit="1" visitType="NEW" order="1" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="04-24-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="DVT-QOL" type="Local" xml="DVT-QOL"               print_order="2" print_type="text"/>
+    <Questionaire value="DVT-Activities" type="Local" xml="DVT-Activities" print_order="3" print_type="text"/>
+    <Questionaire value="DVT-Feelings" type="Local" xml="DVT-Feelings"     print_order="4" print_type="text"/>
+    <Questionaire value="DVT" type="Local" xml="DVT"                       print_order="1" print_type="table, text, chart"/>
+    <Questionaire value="irConsent2" type="Local" xml="irConsent2"         print_order="5" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="DVT.0416" visit="2" visitType="RTN" order="5" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="04-24-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="DVT-QOL" type="Local" xml="DVT-QOL"               print_order="2" print_type="text"/>
+    <Questionaire value="DVT-Activities" type="Local" xml="DVT-Activities" print_order="3" print_type="text"/>
+    <Questionaire value="DVT-Feelings" type="Local" xml="DVT-Feelings"     print_order="4" print_type="text"/>
+    <Questionaire value="DVT" type="Local" xml="DVT"                       print_order="1" print_type="table, text, chart"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLymLeg.0416" visit="1" visitType="NEW" order="2" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="04-24-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="LymLegFunction" type="Local" xml="LymLegFunction"             print_order="2.1" print_type="text, chart"/>
+    <Questionaire value="LymLegAppearance" type="Local" xml="LymLegAppearance"         print_order="2.2" print_type="text, chart"/>
+    <Questionaire value="LymLegSymptoms" type="Local" xml="LymLegSymptoms"             print_order="3.1" print_type="text, chart"/>
+    <Questionaire value="LymphedemaMood" type="Local" xml="LymphedemaMood"             print_order="3.2" print_type="text, chart"/>
+    <Questionaire value="LymphedemaOverall" type="Local" xml="LymphedemaOverall"       print_order="4" print_type="text, chart"/>
+    <Questionaire value="LymLeg" type="Local" xml="LymLeg"                             print_order="1" print_type="table"/>
+    <Questionaire value="irConsent2" type="Local" xml="irConsent2"                     print_order="5" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="LymLeg.0416" visit="2" visitType="RTN" order="6" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="04-24-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="LymLegFunction" type="Local" xml="LymLegFunction"             print_order="2.1" print_type="text, chart"/>
+    <Questionaire value="LymLegAppearance" type="Local" xml="LymLegAppearance"         print_order="2.2" print_type="text, chart"/>
+    <Questionaire value="LymLegSymptoms" type="Local" xml="LymLegSymptoms"             print_order="3.1" print_type="text, chart"/>
+    <Questionaire value="LymphedemaMood" type="Local" xml="LymphedemaMood"             print_order="3.2" print_type="text, chart"/>
+    <Questionaire value="LymphedemaOverall" type="Local" xml="LymphedemaOverall"       print_order="4" print_type="text, chart"/>
+    <Questionaire value="LymLeg" type="Local" xml="LymLeg"                             print_order="1" print_type="table"/>
+  </ProcessType>
+
+  <ProcessType value="InitialLymArm.0716" visit="1" visitType="NEW" order="3" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="07-01-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="LymArmFunction" type="Local" xml="LymArmFunction"             print_order="2.1" print_type="text, chart"/>
+    <Questionaire value="LymArmAppearance" type="Local" xml="LymArmAppearance"         print_order="2.2" print_type="text, chart"/>
+    <Questionaire value="LymArmSymptoms" type="Local" xml="LymArmSymptoms"             print_order="3.1" print_type="text, chart"/>
+    <Questionaire value="LymphedemaMood" type="Local" xml="LymphedemaMood"             print_order="3.2" print_type="text, chart"/>
+    <Questionaire value="LymphedemaOverall" type="Local" xml="LymphedemaOverall"       print_order="4" print_type="text, chart"/>
+    <Questionaire value="LymArm" type="Local" xml="LymArm"                             print_order="1" print_type="table"/>
+    <Questionaire value="irConsent2" type="Local" xml="irConsent2"                     print_order="5" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="LymArm.0716" visit="2" visitType="RTN" order="7" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               start_date="07-01-2016" expiration_date="">
+    <Questionaire value="startSurvey" type="Local" xml="startSurvey"/>
+    <Questionaire value="LymArmFunction" type="Local" xml="LymArmFunction"             print_order="2.1" print_type="text, chart"/>
+    <Questionaire value="LymArmAppearance" type="Local" xml="LymArmAppearance"         print_order="2.2" print_type="text, chart"/>
+    <Questionaire value="LymArmSymptoms" type="Local" xml="LymArmSymptoms"             print_order="3.1" print_type="text, chart"/>
+    <Questionaire value="LymphedemaMood" type="Local" xml="LymphedemaMood"             print_order="3.2" print_type="text, chart"/>
+    <Questionaire value="LymphedemaOverall" type="Local" xml="LymphedemaOverall"       print_order="4" print_type="text, chart"/>
+    <Questionaire value="LymArm" type="Local" xml="LymArm"                             print_order="1" print_type="table"/>
+  </ProcessType>
+
+  <ProcessType value="InitialHCC.1118" visit="1" visitType="RTN" order="4" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               optional_questionnaires="FACT-Hep-Print"
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="1" value="FACTHepLang"         type="Local" xml="FACTHepLang"    />
+    <Questionaire order="3" value="HCC"                 type="Local" xml="HCC"            print_order="8" print_type="table, chart"/>
+  </ProcessType>
+
+  <ProcessType value="HCC.1118" visit="2" visitType="RTN" order="8" report="FollowUp"
+               notification="true" appointment_template="FollowUp" schedule_template="No-appointment"
+               optional_questionnaires="FACT-Hep-Print"
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="1" value="FACTHepLang"         type="Local" xml="FACTHepLang"    />
+    <Questionaire order="3" value="HCC"                 type="Local" xml="HCC"            print_order="8" print_type="table"/>
+  </ProcessType>
+
+  <!-- Language specific FACT-Hep surveys included by IRSurveyService -->
+  <ProcessType value="FACT-Hep-English.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthep@13841" type="Local" xml="facthep" />
+  </ProcessType>
+
+  <ProcessType value="FACT-Hep-Cantonese.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthepcant@13843" type="Local" xml="facthepcant" />
+  </ProcessType>
+
+  <ProcessType value="FACT-Hep-Mandarin.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthepman@13844" type="Local" xml="facthepman" />
+  </ProcessType>
+
+  <ProcessType value="FACT-Hep-Russian.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="factheprussian@13840" type="Local" xml="factheprussian" />
+  </ProcessType>
+
+  <ProcessType value="FACT-Hep-Spanish.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthepspanish@13842" type="Local" xml="facthepspanish" />
+  </ProcessType>
+
+  <ProcessType value="FACT-Hep-Vietnamese.1118" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthepvie@13845" type="Local" xml="facthepvie" />
+  </ProcessType>
+
+  <!-- Included as optional questionnaires so that these studies get printed if present -->
+  <ProcessType value="FACT-Hep-Print" notification="false" order="-1" visit="9999" 
+               start_date="12-01-2018" expiration_date="">
+    <Questionaire order="2" value="facthep@13841"        type="Local" xml="facthep"        print_order="2" print_type="text,table,chart"/>
+    <Questionaire order="2" value="facthepcant@13843"    type="Local" xml="facthepcant"    print_order="3" print_type="text,table,chart" print_version="facthep@13841"/>
+    <Questionaire order="2" value="facthepman@13844"     type="Local" xml="facthepman"     print_order="4" print_type="text,table,chart" print_version="facthep@13841"/>
+    <Questionaire order="2" value="factheprussian@13840" type="Local" xml="factheprussian" print_order="5" print_type="text,table,chart" print_version="facthep@13841"/>
+    <Questionaire order="2" value="facthepspanish@13842" type="Local" xml="facthepspanish" print_order="6" print_type="text,table,chart" print_version="facthep@13841"/>
+    <Questionaire order="2" value="facthepvie@13845"     type="Local" xml="facthepvie"     print_order="7" print_type="text,table,chart" print_version="facthep@13841"/>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="NEW" group="new" />
+    <VisitType value="RTN" group="return" />
+  </VisitTypes>
+</Process>    

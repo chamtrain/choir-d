@@ -1,0 +1,36 @@
+<Form Description="Education" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description><![CDATA[How far did you <u>- the parent -</u> go in school? (Select the highest attained)]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" align="vertical" Class="registrySurveyAnswer" Appearance="full">
+		   <ref>SHEDUCATION</ref>
+	       <width>295px</width>
+   	       <item><label> Never attended/Kindergarten only</label><value>1</value></item> 
+	       <item><label> 1st Grade</label><value>2</value></item> 
+	       <item><label> 2nd Grade</label><value>3</value></item> 
+	       <item><label> 3rd Grade</label><value>4</value></item> 
+	       <item><label> 4th Grade</label><value>5</value></item> 
+	       <item><label> 5th Grade</label><value>6</value></item> 
+	       <item><label> 6th Grade</label><value>7</value></item> 
+	       <item><label> 7th Grade</label><value>8</value></item> 
+	       <item><label> 8th Grade</label><value>9</value></item> 
+	       <item><label> 9th Grade</label><value>10</value></item> 
+	       <item><label> 10th Grade</label><value>11</value></item> 
+	       <item><label> 11th Grade</label><value>12</value></item> 
+	       <item><label> 12th Grade, no diploma</label><value>13</value></item>
+		   <item><label> High school equivalent</label><value>14</value></item> 
+		   <item><label> GED or equivalent</label><value>15</value></item> 
+	       <item><label> Some college, no degree</label><value>16</value></item> 
+		   <item><label> Associate degree: occupational/technical/vocational program</label><value>17</value></item> 
+   		   <item><label> Associate degree: academic program</label><value>18</value></item> 
+   		   <item><label> Bachelor's degree (e.g., BA, AB, BS, BBA)</label><value>19</value></item> 
+   		   <item><label> Master's degree (e.g., MA, MS, MEng, Med, MBA)</label><value>20</value></item> 
+  		   <item><label> Professional school degree (e.g. MD, DDS, DVM, JD)</label><value>21</value></item> 
+		   <item><label> Doctoral degree (e.g., PhD, EdD)</label><value>22</value></item> 
+	       <item><label> Unknown</label><value>23</value></item> 
+    	</Response>
+      </Responses>
+    </Item>
+	</Items>
+	</Form>

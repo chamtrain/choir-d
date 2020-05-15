@@ -1,0 +1,23 @@
+<Form Description="HOOS Hip Survey" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Please answer the following questions as it pertains to your hip.
+        <p>Pain</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>44</value><label>None or ignore it</label></item>
+          <item><value>40</value><label>Slight, occasional, no compromise in activities</label></item>
+          <item><value>30</value><label>Mild pain, no effect on average activities, rarely moderate pain with unusual activity; may take aspirin</label></item>
+          <item><value>20</value><label>Moderate pain, tolerable but makes concession to pain. Some limitation of ordinary activity or work.
+            Occasional pain medication stronger than aspirin.</label></item>
+          <item><value>10</value><label>Marked pain, serious limitation of activities</label></item>
+          <item><value>0</value><label>Totally disabled, crippled, pain in bed, bedridden</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,232 @@
+<Form Description="Proxy Pain Improvement" questionsPerPage="1">
+  <Items>
+    <!-- This version removes the first 2 questions for the EndPrep survey 01/2020
+    <Item Order="17" Section="start">
+      <Description>
+        <![CDATA[
+        Please estimate your child's use of medical services in the last <b>3 months</b>. Enter 0 if none.
+        <p>Approximate number of visits to:</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="medical-visits" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Medical doctors/nurses</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="pt-visits" Order="2" Type="input" min="0" max="99" required="true">
+          <label>Physical therapist</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="ot-visits" Order="3" Type="input" min="0" max="99" required="true">
+          <label>Occupational therapist</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="acupuncture-visits" Order="4" Type="input" min="0" max="99" required="true">
+          <label>Acupuncturist</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="psychologist-visits" Order="5" Type="input" min="0" max="99" required="true">
+          <label>Psychologist/ Therapist</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="psychiatrist-visits" Order="6" Type="input" min="0" max="99" required="true">
+          <label>Psychiatrist (medications)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="chiropractor-visits" Order="7" Type="input" min="0" max="99" required="true">
+          <label>Chiropractor</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="massage-visits" Order="8" Type="input" min="0" max="99" required="true">
+          <label>Massage therapist</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="emergency-visits" Order="9" Type="input" min="0" max="99" required="true">
+          <label>Emergency Department</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="inpatient-visits" Order="10" Type="input" min="0" max="99" required="true">
+          <label>Inpatient Hospital (number of days)</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="visits-other" Order="11" Type="select">
+          <item> <value>1</value> <label>Other</label>
+            <onselect Type="Item" Where="Order" Value="18"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" Visible="false" Section="end">
+      <Description></Description>
+      <Responses>
+        <Response ref="visits-other-specify" Order="1" Type="input" required="false">
+          <label>If Other, specify</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+        <Response ref="other-visits" Order="2" Type="input" min="0" max="99" required="true">
+          <label>Number of visits</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    -->
+    <Item Order="19" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child switched or stopped pain medications?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-meds-changed" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="20"/>
+            <onselect Type="Item" Where="Order" Value="21"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>Check all that apply</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-meds-changed-stopped-switched" Order="1" Type="select" required="false">
+          <item> <value>1</value> <label>Switched medications</label> </item>
+          <item> <value>2</value> <label>Stopped medications</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Why? (check all that apply)</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-meds-changed-reasons" Order="1" Type="select" required="false">
+          <item> <value>1</value> <label>Previous medication(s) not helpful</label> </item>
+          <item> <value>2</value> <label>Too many side effects</label> </item>
+          <item> <value>3</value> <label>Doctor recommended</label> </item>
+          <item> <value>4</value> <label>I/my child wanted to try something else for pain management</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child received any interventional procedures (e.g., nerve block or injection; infusion?)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="interventional-procedures" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="23"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Check all that apply</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="interventions" Order="1" Type="select" required="false">
+          <item> <value>1</value> <label>Nerve block / injection</label> </item>
+          <item> <value>2</value> <label>Infusion</label> </item>
+        </Response>
+        <Response ref="interventions-other" Order="2" Type="input" required="false">
+          <label>and/or</label>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24" Section="start">
+      <Description>
+        <![CDATA[
+        Has your child missed any school/academic programming because of pain in the last month (30 days)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-school" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="25"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Please estimate how many days missed in the <b>last month</b>.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-school-days" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Days</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26" Section="start">
+      <Description>
+        <![CDATA[
+        Have you missed any work because of your child's pain in the last month (30 days)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-work" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="27"/>
+          </item>
+          <item> <value>9</value> <label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Please estimate how many days missed in the <b>last month</b>.</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-work-days" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Days</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="30" ref="satisfaction" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+        Overall, how satisfied are you with the pain management services your child received <b>here in our clinic</b> over the last month?
+        ]]>
+      </Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="Not Satisfied" ><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Very Satisfied"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

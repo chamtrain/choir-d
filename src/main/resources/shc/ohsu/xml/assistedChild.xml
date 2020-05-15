@@ -1,0 +1,53 @@
+<Form Description="Assisted Child Survey" questionsPerPage="2">
+<Items>
+   <Item Order="1">
+     <Description>Did someone help you complete this questionnaire?</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>ASSISTED</ref>
+         <item>
+           <label>No</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Yes</label>
+           <value>2</value>
+           <onselect Type="Item" Where="Order" Value="2"/>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" RequiredMin="0" Visible="false">
+     <Description>Who is helping?</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="false">
+         <ref>HELPER</ref>
+         <item>
+           <label>Parent</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Grand Parent</label>
+           <value>2</value>
+         </item>
+         <item>
+           <label>Brother or Sister</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Other Family or Caregiver (babysitter)</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Translator</label>
+           <value>6</value>
+         </item>
+         <item>
+           <label>Someone Else</label>
+           <value>5</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+</Items>
+</Form>

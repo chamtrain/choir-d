@@ -1,0 +1,26 @@
+<Form Description="QST Measurement" DateStarted="" DateFinished="" questionsPerPage="6" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="3" RequiredMax="3" required="true" Class="registrySurvey">
+      <Description>Right trapezius</Description>
+	  <Responses>
+        <Response Order="1" required="true" Type="textboxset" StyleName="physicianSurvey" Align="horizontal">
+		  <ref>TRAPEZIUSRIGHT</ref>
+		  <item><label>1</label><value></value></item>
+		  <item><label>2</label><value></value></item>
+		  <item><label>3</label><value></value></item>
+	    </Response>
+     </Responses>
+   </Item>
+   <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="3" RequiredMax="3" required="true" >
+      <Description>Left Trapezius</Description>
+  	  <Responses>
+        <Response Order="1" required="true" Type="textboxset" Align="horizontal" StyleName="physicianSurvey">
+		  <ref>TRAPEZIUSLEFT</ref>
+		  <item><label>1</label><value></value></item>
+		  <item><label>2</label><value></value></item>
+		  <item><label>3</label><value></value></item>
+	    </Response>
+      </Responses>
+    </Item>	
+  </Items>
+</Form>

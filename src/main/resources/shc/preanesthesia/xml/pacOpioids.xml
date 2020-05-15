@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Opioid Use" questionsPerPage="3" >
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Are you using opioids for pain?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>OPIOIDS4PAIN</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>OPIOIDS4TYPE</ref>
+          <item><label>For surgical pain</label><value>1</value></item>
+          <item><label>For other pain</label><value>2</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="2" Type="input"><Scores />
+          <ref>OPIOIDS4DESC</ref>
+          <label>Please describe</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+          </format>
+          <hint>Optional: enter additional information</hint>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

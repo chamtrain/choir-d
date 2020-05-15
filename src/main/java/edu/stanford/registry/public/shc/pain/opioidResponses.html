@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Survey Opioid Use Response Report</title>
+
+  <script src="../../js/jquery-1.12.0.min.cache.js"></script>
+  <script src="../../js/angular-1.7.5.min.cache.js"></script>
+  <script src="../../js/bootstrap-3.3.7.min.cache.js"></script>
+  <script src="./opioidresponses-report.js"></script>
+  <script src="../../scripts/choir-api.js"></script>
+  <script src="../../scripts/choir-utils.js"></script>
+
+  <link rel="stylesheet" href="../../css/bootstrap-3.3.7.min.cache.css">
+</head>
+
+<body>
+<div ng-app="OpioidResponsesReport" ng-controller="OpioidResponsesReportCtrl as vm">
+  <div class="container-fluid">
+    <h3>Patient Survey Opioid Use Response Report</h3>
+    <form novalidate name="vm.form" ng-show="vm.arrayLines === null">
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-bordered" cellspacing="10">
+            <tbody>
+            <tr>
+              <td style="width: 20px" >
+                <div>From</div>
+              </td>
+              <td style="width: 70%" >
+                <div><input type="text" name="fromDt" ng-model="vm.fromDt"  ></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20%">
+                <div>To</div>
+              </td>
+              <td style="width: 70%" >
+                <div><input type="text"  name="toDt" ng-model="vm.toDt" ></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20%" >
+                <div>{{vm.allpatients.title}}</div>
+              </td>
+              <td style="width: 70%; margin: 4px;">
+                <div ng-repeat="val in vm.allpatients.valueList">
+                  <label class="radio-inline" >
+                    <input type="radio" name="allpatients" value = "{{val}}" ng-model="vm.allpatients.value" ng-checked="'{{val}}' === 'All patients'"
+                    ><span>{{val}}</span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 20%" >
+                <div></div>
+              </td>
+              <td style="width: 70%; margin: 4px;">
+                <div >
+                  <label class="checkbox-inline" >
+                    <input type="checkbox" name="clbppatients" value = "" ng-model="vm.clbppatients.value"
+                    ><span> {{vm.clbppatients.title}}</span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <button  class="btn btn-default" ng-click="vm.runReport()">Run report</button>
+        </div>
+      </div>
+    </form>
+    <div  ng-show="vm.arrayLines !== null">
+      <table class="table table-striped table-bordered">
+        <thead>
+        <tr><th ng-repeat="val in vm.arrayLines[0]" >
+          {{val}}
+        </th></tr>
+        </thead>
+        <tr ng-repeat="line in vm.arrayLines track by $index" ng-if="$index > 0">
+          <td ng-repeat="val in line track by $index">{{val}}</td>
+        </tr>
+      </table>
+      <button  class="btn btn-default" ng-click="vm.downloadReport()">Download</button>
+      <button  class="btn btn-default" ng-click="vm.showParameters()">Return</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

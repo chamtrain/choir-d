@@ -1,0 +1,487 @@
+<Form Description="Pediatric Orthopedic Scoliosis Consent" questionsPerPage="1" >
+  <Items>
+
+	  <Item Order="1">
+	    <Description>
+	    Please complete the following questionnaire. If you are not able to complete the survey at this time you can exit
+	    the survey by closing the browser and return to the survey at anytime using the link.
+	    </Description>
+	    <Responses>
+	      <Response Order="1" Type="select1" required="false"> 
+	      </Response>
+	    </Responses>
+	  </Item>
+
+    <!-- Patient Consent -->
+    <Item Order="10" Section="start">
+      <PatientAttribute data_name="ScoliosisConsent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="17" condition="greaterthan"/>
+      <Description>
+      The following is to be completed by the patient.
+      </Description>
+      <Description>
+      You are invited to participate in a research study on collecting information electronically 
+      using the Collaborative Health Outcomes Information Registry (CHOIR) database. 
+      You will be asked questions about clinical outcome measures (for example, how well you can move, 
+      if you have any pain) on a paper form and/or on an electronic form on a tablet. 
+      We plan to use this data for tracking clinical outcomes measures over time, for quality 
+      improvement, of as well as for recruitment for future studies.
+      Do you agree to participate in this research study?
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Consent Form</label>
+          <CollapsibleContent>
+<![CDATA[
+  <h3>Use of CHOIR for patient outcome measures in Pediatric Orthopaedic Surgery Clinics</h3>
+  <p><b>FOR QUESTIONS ABOUT THE STUDY, CONTACT:</b>
+  Steven Frick, MD and/or Katherine Hastings, MPH. 300 Pasteur Drive, Stanford, CA 94305. 650-721-7669, 650-498-2588.
+  <p><b>DESCRIPTION:</b>
+  You are invited to participate in a research study on collecting information electronically using the Collaborative
+  Health Outcomes Information Registry (CHOIR) database. You will be asked questions about clinical outcome measures
+  (for example, how well you can move, if you have any pain) on a paper form and/or on an electronic form on a tablet.
+  We plan to use this data for tracking clinical outcomes measures over time, for quality improvement, of as well as
+  for recruitment for future studies.
+  </p>
+  <p><b>RISKS AND BENEFITS:</b>
+  There are no risks associated with this study.  The benefits which may reasonably be expected to result from this
+  study are the development of an efficient, effective, and organized way of viewing and managing information collected
+  routinely through our clinical practice. We cannot and do not guarantee or promise that you will receive any benefits
+  from this study.
+  </p>
+  <p>
+  Your decision whether or not to participate in this study will not affect your employment/medical care.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b>
+  Your participation in this experiment will take approximately 15 minutes, and an additional 5-10 minutes
+  for any follow up surveys.
+  </p>
+  <p><b>PAYMENTS:</b>
+  You will not receive payment for your participation. 
+  </p>
+  <p>
+  <b>PARTICIPANT'S RIGHTS:</b>
+  If you have read this form and have decided to participate in this project, please understand your participation
+  is voluntary and you have the right to withdraw your consent or discontinue participation at any time without
+  penalty or loss of benefits to which you are otherwise entitled. 
+  </p>
+  <p>
+  The results of this research study may be presented at scientific or professional meetings or published in scientific
+  journals.  However, your identity will not be disclosed.
+  </p>
+  <p>
+  You have the right to refuse to answer particular questions. 
+  </p>
+  <h3>Authorization To Use Your Health Information For Research Purposes</h3>
+  <p>
+  Because information about you and your health is personal and private, it generally cannot be used in this research
+  study without your authorization.  If you authorize, it will provide the authorization to use your health information.
+  The form is intended to inform you about how your health information will be used or disclosed in the study.
+  Your information will only be used in accordance with this authorization form and the informed consent form and as
+  required or allowed by law.  Please read it carefully before authorizing. 
+  </p>
+  <p><b>What is the purpose of this research study and how will my health information be utilized in the study?</b></p>
+  <p>
+  The purpose of this protocol is to collect patient outcome data electronically using the Collaborative Health Outcomes
+  Information Registry (CHOIR) database. You will be asked questions about clinical outcome measures (for example, how
+  well you can move, if you have any pain) on a paper form and/or on an electronic form on a tablet. We plan to use this
+  data for tracking clinical outcomes measures over time, for quality improvement, of as well as for recruitment for
+  future studies.
+  </p>
+  <p><b>Do I have to sign this authorization form?</b></p>
+  <p>
+  You do not have to authorize.  But if you do not, you will not be able to participate in this research study.
+  </p>
+  <p><b>If I sign, can I revoke it or withdraw from the research later?</b></p>
+  <p>
+  If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your
+  health information (and to discontinue any other participation in the study) at any time. After any revocation,
+  your health information will no longer be used or disclosed in the study, except to the extent that the law allows
+  us to continue using your information (e.g., necessary to maintain integrity of research). If you wish to revoke
+  your authorization for the research use or disclosure of your health information in this study, you must write to:
+  Steven Frick, MD and/or Katherine Hastings, MPH. 300 Pasteur Drive, Stanford, CA 94305. 650-721-7669, 650-725-5339.
+  </p>
+  <p><b>What Personal Information Will Be Obtained, Used or Disclosed?</b></p>
+  <p>
+  Your health information related to this study, may be used or disclosed in connection with this research study,
+  including, but not limited to your name, medical record number, zip code, birth date, telephone number, electronic
+  mail address, and medical chart information. This information will be kept confidential and secured with limited
+  access to authorized member of to study team at Stanford.
+  </p>
+  <p><b>Who May Use or Disclose the Information?</b></p>
+  <p>
+  The following parties are authorized to use and/or disclose your health information in connection with this research study:
+  <ul>
+  <li>The Protocol Director Steven Frick, MD</li>
+  <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University
+   as necessary</li>
+  <li>Research Staff including the Stanford School of Medicine Research IT team</li>
+  </ul>
+  </p>
+  <p><b>Who May Receive or Use the Information?</b></p>
+  <p>
+  The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations
+  for their use in connection with this research study:
+  <ul>
+  <li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li>
+  </ul>
+  Your information may be re-disclosed by the recipients described above, if they are not required by law to protect the privacy
+  of the information.
+  </p>
+  <p><b>When will my authorization expire?</b></p>
+  <p>
+  Your authorization for the use and/or disclosure of your health information will end on December 31, 2050 or when the research
+  project ends, whichever is earlier.
+  </p>
+  <p><b>WITHDRAWAL FROM STUDY</b></p>
+  <p>
+  The Protocol Director may also withdraw you from the study without your consent for one or more of the following reasons:
+  <ul>
+  <li>Failure to follow the instructions of the Protocol Director and study staff.</li>
+  <li>The Protocol Director decides that continuing your participation could be harmful to you.</li>
+  <li>The study is cancelled.</li>
+  <li>Other administrative reasons.</li>
+  <li>Unanticipated circumstances.</li>
+  </ul>
+  </p>
+  <p><b>CONTACT INFORMATION:</b></p>
+  <p><i>Questions, Concerns, or Complaints:</i>
+  If you have any questions, concerns or complaints about this research study, its procedures, risks and benefits, or
+  alternative courses of treatment, you should ask the Protocol Director, Steven Frick, MD. You may contact him/her
+  now or later at 650-721-7669. 
+  </p>
+  <p><i>Independent Contact:</i>
+  If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general
+  questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board
+  (IRB) to speak to someone independent of the research team at (650)-723-5244 or toll free at 1-866-680-2906.
+  You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor,
+  Palo Alto, CA 94306.
+  </p>
+  <p><i>Alternate Contact:</i>
+  If you cannot reach the Protocol Director, please contact Katherine Hastings, MPH at (650-725-5339)
+  </p>
+]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>consent</ref>
+          <item>
+            <label>Yes, I agree</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="11"/>
+          </item>
+          <item>
+            <label>No, I do not agree</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" Visible="false" Section="end">
+      <Description>Enter your name</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <ref>consent_name</ref>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>consent_type</ref>
+          <item>
+            <label>I am an adult participant in this study</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>I am the parent or guardian granting permission for a child in this study (the use of "you" refers to "your child" or “your ward.”)</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <!-- Parent Consent -->
+    <Item Order="20" Section="start">
+      <PatientAttribute data_name="ScoliosisParentConsent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="18" condition="lessthan"/>
+      <Description>
+      The following question is to be completed by the parent or caregiver.
+      </Description>
+      <Description>
+      You are invited to participate in a research study on collecting information electronically
+      using the Collaborative Health Outcomes Information Registry (CHOIR) database.
+      You will be asked questions about clinical outcome measures (for example, how well you can move,
+      if you have any pain) on a paper form and/or on an electronic form on a tablet.
+      We plan to use this data for tracking clinical outcomes measures over time, for quality
+      improvement, of as well as for recruitment for future studies.
+      Do you (the parent) agree to your child's participation in this research study?
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Consent Form</label>
+          <CollapsibleContent>
+<![CDATA[
+  <h3>Use of CHOIR for patient outcome measures in Pediatric Orthopaedic Surgery Clinics</h3>
+  <p><b>FOR QUESTIONS ABOUT THE STUDY, CONTACT:</b>
+  Steven Frick, MD and/or Katherine Hastings, MPH. 300 Pasteur Drive, Stanford, CA 94305. 650-721-7669, 650-498-2588.
+  <p><b>DESCRIPTION:</b>
+  You are invited to participate in a research study on collecting information electronically using the Collaborative
+  Health Outcomes Information Registry (CHOIR) database. You will be asked questions about clinical outcome measures
+  (for example, how well you can move, if you have any pain) on a paper form and/or on an electronic form on a tablet.
+  We plan to use this data for tracking clinical outcomes measures over time, for quality improvement, of as well as
+  for recruitment for future studies.
+  </p>
+  <p><b>RISKS AND BENEFITS:</b>
+  There are no risks associated with this study.  The benefits which may reasonably be expected to result from this
+  study are the development of an efficient, effective, and organized way of viewing and managing information collected
+  routinely through our clinical practice. We cannot and do not guarantee or promise that you will receive any benefits
+  from this study.
+  </p>
+  <p>
+  Your decision whether or not to participate in this study will not affect your employment/medical care.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b>
+  Your participation in this experiment will take approximately 15 minutes, and an additional 5-10 minutes
+  for any follow up surveys.
+  </p>
+  <p><b>PAYMENTS:</b>
+  You will not receive payment for your participation. 
+  </p>
+  <p>
+  <b>PARTICIPANT'S RIGHTS:</b>
+  If you have read this form and have decided to participate in this project, please understand your participation
+  is voluntary and you have the right to withdraw your consent or discontinue participation at any time without
+  penalty or loss of benefits to which you are otherwise entitled. 
+  </p>
+  <p>
+  The results of this research study may be presented at scientific or professional meetings or published in scientific
+  journals.  However, your identity will not be disclosed.
+  </p>
+  <p>
+  You have the right to refuse to answer particular questions. 
+  </p>
+  <h3>Authorization To Use Your Health Information For Research Purposes</h3>
+  <p>
+  Because information about you and your health is personal and private, it generally cannot be used in this research
+  study without your authorization.  If you authorize, it will provide the authorization to use your health information.
+  The form is intended to inform you about how your health information will be used or disclosed in the study.
+  Your information will only be used in accordance with this authorization form and the informed consent form and as
+  required or allowed by law.  Please read it carefully before authorizing. 
+  </p>
+  <p><b>What is the purpose of this research study and how will my health information be utilized in the study?</b></p>
+  <p>
+  The purpose of this protocol is to collect patient outcome data electronically using the Collaborative Health Outcomes
+  Information Registry (CHOIR) database. You will be asked questions about clinical outcome measures (for example, how
+  well you can move, if you have any pain) on a paper form and/or on an electronic form on a tablet. We plan to use this
+  data for tracking clinical outcomes measures over time, for quality improvement, of as well as for recruitment for
+  future studies.
+  </p>
+  <p><b>Do I have to sign this authorization form?</b></p>
+  <p>
+  You do not have to authorize.  But if you do not, you will not be able to participate in this research study.
+  </p>
+  <p><b>If I sign, can I revoke it or withdraw from the research later?</b></p>
+  <p>
+  If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your
+  health information (and to discontinue any other participation in the study) at any time. After any revocation,
+  your health information will no longer be used or disclosed in the study, except to the extent that the law allows
+  us to continue using your information (e.g., necessary to maintain integrity of research). If you wish to revoke
+  your authorization for the research use or disclosure of your health information in this study, you must write to:
+  Steven Frick, MD and/or Katherine Hastings, MPH. 300 Pasteur Drive, Stanford, CA 94305. 650-721-7669, 650-725-5339.
+  </p>
+  <p><b>What Personal Information Will Be Obtained, Used or Disclosed?</b></p>
+  <p>
+  Your health information related to this study, may be used or disclosed in connection with this research study,
+  including, but not limited to your name, medical record number, zip code, birth date, telephone number, electronic
+  mail address, and medical chart information. This information will be kept confidential and secured with limited
+  access to authorized member of to study team at Stanford.
+  </p>
+  <p><b>Who May Use or Disclose the Information?</b></p>
+  <p>
+  The following parties are authorized to use and/or disclose your health information in connection with this research study:
+  <ul>
+  <li>The Protocol Director Steven Frick, MD</li>
+  <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University
+   as necessary</li>
+  <li>Research Staff including the Stanford School of Medicine Research IT team</li>
+  </ul>
+  </p>
+  <p><b>Who May Receive or Use the Information?</b></p>
+  <p>
+  The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations
+  for their use in connection with this research study:
+  <ul>
+  <li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li>
+  </ul>
+  Your information may be re-disclosed by the recipients described above, if they are not required by law to protect the privacy
+  of the information.
+  </p>
+  <p><b>When will my authorization expire?</b></p>
+  <p>
+  Your authorization for the use and/or disclosure of your health information will end on December 31, 2050 or when the research
+  project ends, whichever is earlier.
+  </p>
+  <p><b>WITHDRAWAL FROM STUDY</b></p>
+  <p>
+  The Protocol Director may also withdraw you from the study without your consent for one or more of the following reasons:
+  <ul>
+  <li>Failure to follow the instructions of the Protocol Director and study staff.</li>
+  <li>The Protocol Director decides that continuing your participation could be harmful to you.</li>
+  <li>The study is cancelled.</li>
+  <li>Other administrative reasons.</li>
+  <li>Unanticipated circumstances.</li>
+  </ul>
+  </p>
+  <p><b>CONTACT INFORMATION:</b></p>
+  <p><i>Questions, Concerns, or Complaints:</i>
+  If you have any questions, concerns or complaints about this research study, its procedures, risks and benefits, or
+  alternative courses of treatment, you should ask the Protocol Director, Steven Frick, MD. You may contact him/her
+  now or later at 650-721-7669. 
+  </p>
+  <p><i>Independent Contact:</i>
+  If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general
+  questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board
+  (IRB) to speak to someone independent of the research team at (650)-723-5244 or toll free at 1-866-680-2906.
+  You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor,
+  Palo Alto, CA 94306.
+  </p>
+  <p><i>Alternate Contact:</i>
+  If you cannot reach the Protocol Director, please contact Katherine Hastings, MPH at (650-725-5339)
+  </p>
+]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>parent_consent</ref>
+          <item>
+            <label>Yes, I agree</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="21"/>
+          </item>
+          <item>
+            <label>No, I do not agree</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" Visible="false" Section="end">
+      <Description>Enter your name</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <ref>parent_consent_name</ref>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+        <Response Order="1" Type="select1" required="true">
+          <ref>parent_consent_type</ref>
+          <item>
+            <label>I am an adult participant in this study</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>I am the parent or guardian granting permission for a child in this study (the use of "you" refers to "your child" or “your ward.”)</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <!-- Child Assent -->
+    <Item Order="30" Section="start">
+      <PatientAttribute data_name="ScoliosisChildAssent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="18" condition="lessthan"/>
+      <PatientAttribute data_name="age" data_value="7" condition="greaterthan"/>
+      <ResponseValue xpath_query="//Response[ref='parent_consent']/item[@selected='true']/value/text()" data_value="1" condition="equal"/>
+      <Description>
+      The following question is to be completed by the child.
+      </Description>
+      <Description>
+      You are invited to participate in a research study on collecting information electronically using the Collaborative
+      Health Outcomes Information Registry (CHOIR) database. You will be asked questions about how you are doing
+      (for example, how well you can move? do you have any pain?) on a paper form and/or on an electronic form on a tablet.
+      We plan to use this information to look at changes in these clinical outcomes measures over time, for quality improvement,
+      of as well as for recruitment for future studies.
+      Do you (the child) agree to participate in this research study?
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Assent Form</label>
+          <CollapsibleContent>
+<![CDATA[
+  <h3>Use of CHOIR for patient outcome measures in Pediatric Orthopaedic Surgery Clinics</h3>
+  <p><b>1. What will happen to me in this study? </b></p>
+  <p>
+  You are invited to participate in a research study on collecting information electronically using the Collaborative
+  Health Outcomes Information Registry (CHOIR) database. You will be asked questions about how you are doing
+  (for example, how well you can move? do you have any pain?) on a paper form and/or on an electronic form on a tablet.
+  We plan to use this information to look at changes in these clinical outcomes measures over time, for quality improvement,
+  of as well as for recruitment for future studies.
+  </p>
+  <p><b>2. Can anything bad happen to me?</b></p>
+  <p>
+  No, we expect nothing bad to happen to you if you complete our forms.  
+  </p>
+  <p><b>3. Can anything good happen to me?</b></p>
+  <p>
+  The benefits that reasonably to expect from this study are the development of an efficient, effective, and
+  organized way of viewing and managing clinical information collected routinely from patients like you.
+  </p>
+  <p><b>4. Do I have other choices? </b></p>
+  <p>
+  Your participation is voluntary. You have the right to withdraw or discontinue participation at any time.
+  </p>
+  <p><b>5. Will anyone know I am in the study?</b></p>
+  <p>
+  Your participation in the study will be kept secret.
+  </p>
+  <p><b>6. What happens if I get hurt?</b></p>
+  <p>
+  Your parents/legal guardians have been given information on what to do if you are injured during the study.
+  </p>
+  <p><b>7. Who can I talk to about the study?</b></p>
+  <p>
+  If you have any questions about the study or any problems to do with the study, you can contact the
+  Protocol Director Steven Frick. You can call him/her at (650) 721-7669. You can also call the Research Manager,
+  Katherine Hastings, MPH (650) 725-5339.
+  </p>
+  <p>
+  If you have questions about the study but want to talk to someone else who is not a part of the study, you can
+  call the Stanford Institutional Review Board (IRB) at (650)-723-5244 or toll free at 1-866-680-2906.
+  </p>
+  <p><b>8.  What happens if I turn 18 while participating in the study?</b></p>
+  <p>
+  If you turn the age of 18 after agreeing to participate in this study, you will be asked to re-consent as an
+  adult during your next scheduled follow up survey (by email) or clinical visit (in person).
+  </p>
+  <p><b>9. What if I do not want to do this</b></p>
+  <p>
+  You can stop being in the study at any time without getting in trouble and your doctor will continue to treat you
+  if treatment is necessary and available. 
+  </p>
+]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>child_assent</ref>
+          <item>
+            <label>Yes, I agree</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="31"/>
+          </item>
+          <item>
+            <label>No, I do not agree</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="31" Visible="false" Section="end">
+      <Description>Enter your name</Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <ref>child_assent_name</ref>
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

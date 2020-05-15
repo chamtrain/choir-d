@@ -1,0 +1,140 @@
+<Form Description="cpaq" DateStarted="" DateFinished="" questionsPerPage="1" >
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>I am getting on with the business of living no matter what my level of pain is</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ1</ref>
+          <item><label>Never true</label><value>0</value></item>
+          <item><label>Very rarely true</label><value>1</value></item>
+	      <item><label>Seldom true</label><value>2</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>4</value></item>
+		  <item><label>Almost always true</label><value>5</value></item>
+		  <item><label>Always true</label><value>6</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>Keeping my pain level under control takes first priority whenever I am doing something</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ2</ref>
+          <item><label>Never true</label><value>6</value></item>
+          <item><label>Very rarely true</label><value>5</value></item>
+	      <item><label>Seldom true</label><value>4</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>2</value></item>
+		  <item><label>Almost always true</label><value>1</value></item>
+		  <item><label>Always true</label><value>0</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>Although things have changed, I am living a normal life despite my chronic pain</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ3</ref>
+          <item><label>Never true</label><value>0</value></item>
+          <item><label>Very rarely true</label><value>1</value></item>
+	      <item><label>Seldom true</label><value>2</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>4</value></item>
+		  <item><label>Almost always true</label><value>5</value></item>
+		  <item><label>Always true</label><value>6</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>Before I can make any serious plans, I have to get some control over my pain</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ4</ref>
+          <item><label>Never true</label><value>6</value></item>
+          <item><label>Very rarely true</label><value>5</value></item>
+	      <item><label>Seldom true</label><value>4</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>2</value></item>
+		  <item><label>Almost always true</label><value>1</value></item>
+		  <item><label>Always true</label><value>0</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>I lead a full life even though I have chronic pain</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ5</ref>
+          <item><label>Never true</label><value>0</value></item>
+          <item><label>Very rarely true</label><value>1</value></item>
+	      <item><label>Seldom true</label><value>2</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>4</value></item>
+		  <item><label>Almost always true</label><value>5</value></item>
+		  <item><label>Always true</label><value>6</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>When my pain increases, I can still take care of my responsibilities</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ6</ref>
+          <item><label>Never true</label><value>0</value></item>
+          <item><label>Very rarely true</label><value>1</value></item>
+	      <item><label>Seldom true</label><value>2</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>4</value></item>
+		  <item><label>Almost always true</label><value>5</value></item>
+		  <item><label>Always true</label><value>6</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="7" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>I avoid putting myself in situations where my pain might increase</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ1</ref>
+          <item><label>Never true</label><value>6</value></item>
+          <item><label>Very rarely true</label><value>5</value></item>
+	      <item><label>Seldom true</label><value>4</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>2</value></item>
+		  <item><label>Almost always true</label><value>1</value></item>
+		  <item><label>Always true</label><value>0</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+	<Item Order="8" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1">
+      <Description><![CDATA[Please rate the truth of the following statement as it applies to you:]]></Description>
+	  <Description>My worries and fears about what pain will do to me are true</Description>
+      <Responses>
+	    <Response Order="1" required="true" Type="select1" >
+          <ref>CPAQ1</ref>
+          <item><label>Never true</label><value>6</value></item>
+          <item><label>Very rarely true</label><value>5</value></item>
+	      <item><label>Seldom true</label><value>4</value></item>
+		  <item><label>Sometimes true</label><value>3</value></item>
+		  <item><label>Often true</label><value>2</value></item>
+		  <item><label>Almost always true</label><value>1</value></item>
+		  <item><label>Always true</label><value>0</value></item>
+		  <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,41 @@
+
+.ui-radio{
+  width: 100% !important;
+  margin-bottom: 5px !important ;
+  border-radius: 5px;
+}
+
+.s-scale-right-label{
+  left: 0 !important;
+  text-align: left !important;
+}
+
+.s-scale-left-label{
+  position: static !important;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ui-controlgroup-controls{
+  margin-top: 0em !important;
+}
+
+.ui-field-contain {
+  padding: 0;
+}
+
+.ui-btn.ui-corner-all{
+  border-radius: 5px !important;
+}
+
+.ui-btn-inherit{
+  border-right-width: 1px !important;
+}
+
+.ui-radio input{
+  margin: -10px 0 0 0;
+}
+
+.horizontalScale {
+  height: auto !important;
+}

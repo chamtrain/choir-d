@@ -1,0 +1,129 @@
+<Form Description="Knee Society Score - Expectation" questionsPerPage="2">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[Please select the activity that you consider most important to you]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Swimming</label></item>
+          <item><value>2</value><label>Golfing (18 holes)</label></item>
+          <item><value>3</value><label>Road Cycling (>30 minutes)</label></item>
+          <item><value>4</value><label>Gardening</label></item>
+          <item><value>5</value><label>Bowling</label></item>
+          <item><value>6</value><label>Racquet Sports (Tennis, Racquetball, etc.)</label></item>
+          <item><value>7</value><label>Distance Walking</label></item>
+          <item><value>8</value><label>Dancing/Ballet</label></item>
+          <item><value>9</value><label>Stretching Exercises (stretching out your muscles)</label></item>
+          <item><value>10</value><label>Weight-lifting</label></item>
+          <item><value>11</value><label>Leg Extensions</label></item>
+          <item><value>12</value><label>Stair-Climber</label></item>
+          <item><value>13</value><label>Stationary Biking/Spinning</label></item>
+          <item><value>14</value><label>Leg Press</label></item>
+          <item><value>15</value><label>Jogging</label></item>
+          <item><value>16</value><label>Elliptical Trainer</label></item>
+          <item><value>17</value><label>Aerobic Exercises</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[How much does your knee bother you during this activity?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very Severe</label></item>
+          <item><value>0</value><label>Cannot do (because of knee)</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3">
+      <Description>
+        <![CDATA[Please select the activity that you consider second most important to you]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <item><value>1</value><label>Swimming</label></item>
+          <item><value>2</value><label>Golfing (18 holes)</label></item>
+          <item><value>3</value><label>Road Cycling (>30 minutes)</label></item>
+          <item><value>4</value><label>Gardening</label></item>
+          <item><value>5</value><label>Bowling</label></item>
+          <item><value>6</value><label>Racquet Sports (Tennis, Racquetball, etc.)</label></item>
+          <item><value>7</value><label>Distance Walking</label></item>
+          <item><value>8</value><label>Dancing/Ballet</label></item>
+          <item><value>9</value><label>Stretching Exercises (stretching out your muscles)</label></item>
+          <item><value>10</value><label>Weight-lifting</label></item>
+          <item><value>11</value><label>Leg Extensions</label></item>
+          <item><value>12</value><label>Stair-Climber</label></item>
+          <item><value>13</value><label>Stationary Biking/Spinning</label></item>
+          <item><value>14</value><label>Leg Press</label></item>
+          <item><value>15</value><label>Jogging</label></item>
+          <item><value>16</value><label>Elliptical Trainer</label></item>
+          <item><value>17</value><label>Aerobic Exercises</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[How much does your knee bother you during this activity?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very Severe</label></item>
+          <item><value>0</value><label>Cannot do (because of knee)</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="5">
+      <Description>
+        <![CDATA[Please select the activity that you consider third most important to you]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <item><value>1</value><label>Swimming</label></item>
+          <item><value>2</value><label>Golfing (18 holes)</label></item>
+          <item><value>3</value><label>Road Cycling (>30 minutes)</label></item>
+          <item><value>4</value><label>Gardening</label></item>
+          <item><value>5</value><label>Bowling</label></item>
+          <item><value>6</value><label>Racquet Sports (Tennis, Racquetball, etc.)</label></item>
+          <item><value>7</value><label>Distance Walking</label></item>
+          <item><value>8</value><label>Dancing/Ballet</label></item>
+          <item><value>9</value><label>Stretching Exercises (stretching out your muscles)</label></item>
+          <item><value>10</value><label>Weight-lifting</label></item>
+          <item><value>11</value><label>Leg Extensions</label></item>
+          <item><value>12</value><label>Stair-Climber</label></item>
+          <item><value>13</value><label>Stationary Biking/Spinning</label></item>
+          <item><value>14</value><label>Leg Press</label></item>
+          <item><value>15</value><label>Jogging</label></item>
+          <item><value>16</value><label>Elliptical Trainer</label></item>
+          <item><value>17</value><label>Aerobic Exercises</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[How much does your knee bother you during this activity?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very Severe</label></item>
+          <item><value>0</value><label>Cannot do (because of knee)</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

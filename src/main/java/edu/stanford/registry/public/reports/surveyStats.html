@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sample application tab</title>
+    <style>
+    </style>
+
+    <script type="text/javascript">
+
+      function ChoirApiV10() {
+        return parent.choirApiV10() + "report/surveystats?siteId=" + parent.getSiteId();
+      }
+
+      function getReport(  ) {
+        parent.showLoadingPopup();
+        var http_request = new XMLHttpRequest();
+        try {
+          // Opera 8.0+, Firefox, Chrome, Safari
+          http_request = new XMLHttpRequest();
+        } catch (e) {
+          // Internet Explorer Browsers
+          try {
+            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+          } catch (e) {
+            try {
+              http_request = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+              // Something went wrong
+              alert("Your browser broke!");
+            }
+          }
+        }
+
+        var jsonData = {};
+
+        //console.log("sending fromDate " + parent.getFromDt() + " toDate " + parent.getToDt());
+        jsonData["fromDt"] = parent.getFromDt();
+        jsonData["toDt"] = parent.getToDt();
+
+        http_request.onreadystatechange = function () {
+
+          if (http_request.readyState == 4) {
+            // Parse the JSON data that is returned and display
+            document.open();
+            document.write("<p></p>");
+            //document.write(http_request.responseText);
+            var jsonObj = JSON.parse(http_request.responseText);
+            if(!jsonObj || jsonObj === "undefined" ||  jsonObj.reportDataSet == undefined) {
+              document.write("<h2>NO DATA WAS FOUND FOR SELECTIONS</h2>");
+              document.write("<div style='padding: 10px 4px; font-size: medium; width: 222px;'>");
+              document.close();
+              return;
+            }
+           document.write("<h1>" + jsonObj.h1 + "</h1>");
+            document.write("<h2>" + jsonObj.h2 + "</h2>")
+            document.write("<table border='2' cellpadding='5' style='border-collapse: collapse';><tr>");
+            if (jsonObj.reportDataSet.length > 0) {
+              var headingArr = jsonObj.reportDataSet[0];
+              console.log("headingArr is " + headingArr);
+              for (a in headingArr) {
+                document.write("<th style='background: #666; color: white;' width='40%'>");
+                document.write(headingArr[a]);
+                document.write("</th>");
+              }
+            }
+            document.write("</tr>");
+            for (var i = 1; i < jsonObj.reportDataSet.length; i++) {
+              var arr = jsonObj.reportDataSet[i];
+              document.write("<tr>");
+              for (a in arr) {
+                document.write("<td>");
+                document.write(arr[a]);
+                document.write("</td>");
+              }
+              document.write("</tr>");
+            }
+            document.write("</table>");
+            document.write("<p></p>");
+            document.write("<form action=ChoirApiV10() method='post' name='reportform'> ");
+            document.close();
+            parent.hideLoadingPopup();
+          }
+      };
+      http_request.open("POST", ChoirApiV10(), true);
+      http_request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      http_request.send(JSON.stringify(jsonData));
+      };
+    </script>
+  </head>
+  <body>
+    <p>
+      <script>
+          getReport();
+          document.write()
+      </script>
+    </p>
+    <p/>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+<Form Description="PGIC" DateStarted="" DateFinished="" questionsPerPage="1" RequiredMin="1" RequiredMax="1">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Since you have started the treatment, how would you describe the change (if any) in your overall status related to your painful condition?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>OVERALL_STATUS</ref>
+          <item><label>Very much improved</label><value>0</value></item>
+          <item><label><![CDATA[<p>]]></label><value>1</value></item>
+          <item><label><![CDATA[<p>]]></label><value>2</value></item>
+          <item><label>No change</label><value>3</value></item>
+          <item><label><![CDATA[<p>]]></label><value>4</value></item>
+          <item><label><![CDATA[<p>]]></label><value>5</value></item>
+          <item><label>Very much worse</label><value>6</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

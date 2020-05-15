@@ -1,0 +1,17 @@
+<Form Description="Start Survey" questionsPerPage="1">
+ <Items>
+   <Item Order="1">
+     <Description>
+       <![CDATA[
+       We would like to find out how you are feeling before your visit with us.
+       The next few pages contain some questionnaires that will help us prepare
+       for your visit and tell us more about your health.
+       ]]>
+     </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+   </Item>
+ </Items>
+</Form>

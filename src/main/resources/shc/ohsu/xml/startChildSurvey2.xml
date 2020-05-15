@@ -1,0 +1,32 @@
+<Form Description="Start Child Survey" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[
+      <p>The following survey is <u>to be completed by the <i>child</i></u>.</p> 
+      <p>If the child is not able to complete the survey at this time you can exit the survey 
+      by closing the browser and return to the survey anytime using the link.</p>
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"> 
+      </Response>
+    </Responses>
+  </Item>
+  <Item Order="2">
+    <Description>What is your name?</Description>
+    <Responses>
+      <Response Order="1" Type="input" required="true">
+        <ref>PATIENTNAME</ref>
+        <format>
+          <datatype>text</datatype>
+          <lines>1</lines>
+          <charwidth>80</charwidth>
+        </format>
+        <hint>Enter your name if you are filling out this survey for yourself,
+           or the patient's name if you are assisting someone else.</hint>
+      </Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Misc Questions" DateStarted="" DateFinished="" questionsPerPage="1" >
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" Visible="true" >
+      <Description>
+        <![CDATA[What is your height?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input" appearance="compact">
+          <ref>HEIGHTFT</ref>
+          <location>left</location>
+          <label>Feet</label>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <Scores />
+        </Response>
+        <Response Order="2" Type="input" appearance="compact">
+          <ref>HEIGHTIN</ref>
+          <location>left</location>
+          <label>Inches</label>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="true">
+      <Description>
+        <![CDATA[What is your weight?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input" appearance="compact">
+          <ref>WEIGHTLBS</ref>
+          <location>left</location>
+          <label>Pounds</label>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="true">
+      <Description>
+        <![CDATA[What kind of physical exercise or activity do you do?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>EXERCISE</ref>
+          <item><label>Walk</label><value>1</value></item>
+          <item><label>Run</label><value>2</value></item>
+          <item><label>Bike</label><value>3</value></item>
+          <item><label>Swim</label><value>4</value></item>
+          <item><label>None</label><value>5</value></item>
+        </Response>
+        <Response Order="2" Type="input">
+          <ref>EXERCISEOTH</ref>
+          <label>Other</label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="true">
+      <Description>
+        <![CDATA[What do you for work?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>WORK</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

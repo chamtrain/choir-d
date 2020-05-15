@@ -1,0 +1,109 @@
+<Form Description="Pediatic Pain Research Assent" questionsPerPage="1" >
+  <Items>
+    <Item Order="2" ref="assent" Class="surveyQuestionCollapsible" >
+      <PatientAttribute data_name="PedResearchAssent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="7" condition="greaterthan"/>
+      <Description>
+<![CDATA[
+  You are invited to participate in a research study to better understand pain conditions
+  and psychosocial outcomes related to pediatric pain. Our team wants to understand how pain
+  affects what you think, how you feel, and where you do things in your day-to-day life.
+  <p>Do you agree to allow us to use these questionnaires and your health related information
+  for this research study?</p>
+]]>
+      </Description>
+      <CollapsibleContent>
+<![CDATA[
+  <h3>Assessment of Pediatric Pain</h3>
+  <p><b>1. What will happen to me in this study?</b></p>
+  <p>
+  You are invited to participate in a research study to better understand pain conditions and 
+  psychosocial outcomes related to pediatric pain. Our team wants to understand how pain affects what 
+  you think, how you feel, and where you do things in your day-to-day life. We hope to improve how we 
+  evaluate (ask about) and treat (help) pain by learning from you and your family. Your parent 
+  already received an email before this first visit to our Pain Clinic, and you both were asked to 
+  answer questions online. Thank you for doing that! 
+  </p>
+  <p>
+  If you agree to be part of this study, we will use your responses to improve how we help kids and 
+  families like yours in the future. You will also be asked to answer some of the same questions in 
+  3, 6, 9, 12, and 24 months, and if you receive ongoing outpatient care at the pain clinic, 
+  shortened surveys every two weeks or more. At any time you have the right to refuse to answer 
+  particular questions. This study is not an experiment, so you will not be asked to do anything but 
+  answer questions online. We are happy to talk to you about the questions if you wish to. 
+  </p>
+  <p><b>TIME INVOLVEMENT:</b></p>
+  <p>
+  Pediatric Pain Management Clinic/Outpatient Clinic (PPMC): if you choose to follow-up with the 
+  Pediatric Pain Management Clinic after this first visit, and agree to participate in this research, 
+  you will be asked to complete similar questionnaires online in three, six, nine, 12, and 24 months. 
+  Baseline questionnaires will take approximately 45 minutes, while subsequent questionnaires at 
+  follow-up will approximately 30 minutes to complete online. The shortened surveys every two weeks 
+  or more will take about 10 minutes to complete online.
+  </p>
+  <p><b>2. Can anything bad happen to me?</b></p>
+  <p>
+  It is up to you to decide if you want to participate. Helping with this study will not cause 
+  anything bad to happen to you. We do want you to be honest in answering the questions, and no one 
+  but us will know your answers. If you do not understand some questions, or some questions make you 
+  feel worried or sad, our team will be happy to talk to you.
+  </p>
+  <p><b>3. Can anything good happen to me?</b></p>
+  <p>
+  We cannot and do not guarantee or promise that you will receive benefits from this study. However, 
+  being part of our study may help you feel good about being involved in research for kids with 
+  chronic pain. If you agree to do this study, you will express how you feel about your pain, and 
+  what you do about it. We will study and share what we learned from you to help other kids with pain 
+  in the future, and can share those results with you if you would like. Your participation in this 
+  study will give us information that can then be used to help providers improve the assessments 
+  (ratings) they do, and the interventions (treatments) they offer to reduce the impact of pain on 
+  your life. 
+  </p>
+  <p><b>4. Do I have other choices?</b></p>
+  <p>
+  Of course! Your participation in this study is your choice, and you can stop being in this study at 
+  any time. The other choice is not to participate, and this is okay with us. It will not affect how 
+  we take care of you at Stanford.
+  </p>
+  <p><b>5. Will anyone know I am in the study?</b></p>
+  <p>
+  Your participation in this study will be kept confidential (secret). No one but our pediatric 
+  research team will know that you are participating. Even your parents will not know how you answer 
+  questions, unless you want them to, or we have to tell them something to keep you healthy.
+  </p>
+  <p><b>6. Who can I talk to about the study?</b></p>
+  <p>
+  If you have any questions about the study or any problems with the study you can contact the 
+  Protocol Director, Dr. Samantha Huestis at (650) 736-3482. You can also call Co-Protocol Director 
+  Dr. Rashmi Bhandari, PhD, at (650) 724-5333.
+  </p>
+  <p>
+  If you have questions about the study but want to talk to someone else who is not a part of the 
+  study, you can call the Stanford Institutional Review Board (IRB) at (650) 723-5244 or toll free at 
+  1-866-680-2906.
+  </p>
+  <p><b>7. What if I do not want to do this?</b></p>
+  <p>
+  Your participation in this study is voluntary, meaning you can choose to be in the study or not. It 
+  is 100% up to you and your parents. Even if you decide to do the study and then change your mind, 
+  that is okay. Our medical team will continue to work with you and help you if you need it.
+  </p>
+]]>
+      </CollapsibleContent>
+      <Responses>
+        <!-- Yes is expected to be Response Order 0 -->
+        <Response Order="0" Type="radio" >
+          <Description>Yes, I agree</Description>
+          <Scores><Score value="0"/></Scores>
+          <SetPatientAttribute data_name="PedResearchAssent" data_value="y"/>
+        </Response>
+        <Response Order="1" Type="radio" >
+          <Description>No, I do not agree</Description>
+          <Scores><Score value="1"/></Scores>
+          <SetPatientAttribute data_name="PedResearchAssent" data_value="n"/>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

@@ -1,0 +1,39 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="1">
+  <Items>
+
+
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        Where were you living when you first became ill? (City, State, Country)
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <label></label>
+          <format>
+            <datatype>text</datatype>
+            <lines>2</lines>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        Was there a precipitating event associated with the onset of your fatigue/energy-related illness?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>2</value><label>No</label></item>
+          <item><value>3</value><label>Not Sure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+
+  </Items>
+</Form>

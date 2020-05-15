@@ -1,0 +1,217 @@
+<Form Description="painCatastrophizingScale" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+<Items class="surveyInline">
+	 <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[Indicate the degree to which you have these thoughts and feelings when you are experiencing pain:<p>I worry all the time about whether the pain will end</p>]]></Description>
+        <Responses>
+			<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+				<format>
+            <datatype>text</datatype>
+            <charwidth>250</charwidth>
+            <lines>2</lines>
+          </format>
+		  		<Scores />
+        	</Response>
+        </Responses>
+     </Item>
+	 <Item Order="2" ItemResponse="" ItemScore=""  RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I feel I can't go on</p>]]></Description>
+        <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS2</ref>
+           		<width>280</width>
+		  		<label></label>
+            	<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+			</Response>
+        </Responses>
+    </Item>
+	 <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above" >
+     <Description><![CDATA[It's terrible and I think it's never going to get any better</p>]]></Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="4" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[It's awful and I feel that it overwhelms me</p>]]></Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="5" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I feel I can't stand it anymore</p>]]></Description>
+        <Responses>
+           <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="6" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I become afraid that the pain will get worse</p>]]></Description>
+        <Responses>
+          <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="7" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I keep thinking of other painful events</p>]]></Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+	 <Item Order="8" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I anxiously want the pain to go away</p>]]></Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+	 <Item Order="9" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I can't seem to keep it out of my mind</p>]]></Description>
+        <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="10" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I keep thinking about how much it hurts</p>]]></Description>
+        <Responses>
+<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="11" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I keep thinking about how badly I want the pain to stop</p>]]></Description>
+      <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+	 <Item Order="12" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[There's nothing I can do to reduce the intensity of the pain</p>]]></Description>
+	  <Responses>
+		<Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+		</Responses>
+    </Item>
+	 <Item Order="13" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Align="Horizontal"  Class="registrySurvey" DescriptionPosition="above">
+     <Description><![CDATA[I wonder whether something serious may happen</p>]]></Description>
+        <Responses>
+          <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          		<ref>PCS1</ref>
+           		<width>280</width>
+		  		<label></label>
+          		<item><label>Not At All</label><value>0</value></item>
+          		<item><label>To a slight degree</label><value>1</value></item>
+		  		<item><label>To a moderate degree</label><value>2</value></item>
+		  		<item><label>To a great degree</label><value>3</value></item>
+		  		<item><label>All the time</label><value>4</value></item>
+		  		<Scores />
+        	</Response>
+        </Responses>
+    </Item>
+</Items>
+</Form>

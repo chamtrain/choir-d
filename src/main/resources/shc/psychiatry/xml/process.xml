@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Process>
+  <ProcessType value="Default" visit="0" visitType="NEW" order="1" report="Initial" notification="true" appointment_template="Default" schedule_template="No-appointment" start_date="01-01-2019" expiration_date="">
+    <Questionaire order="1" value="Research Consent" type="Local" xml="researchConsent"      print_order="1" print_type="text"/>
+    <Questionaire order="2" value="PHQ9" type="Local" xml="PHQ9"            print_order="2" print_type="text, table, chart"/>
+    <Questionaire order="3" value="PCL5" type="Local" xml="PCL5"            print_order="3" print_type="text, table, chart"/>
+    <Questionaire order="4" value="GAD7" type="Local" xml="GAD7"            print_order="4" print_type="text, table, chart"/>
+    <Questionaire order="5" value="Edinburgh" type="Local" xml="Edinburgh"  print_order="5" print_type="text, table, chart"/>
+    <Questionaire order="6" value="ERQ" type="Local" xml="ERQ"              print_order="6" print_type="text, table, chart"/>
+    <Questionaire order="7" value="Qol" type="Local" xml="Qol"              print_order="7" print_type="text, table, chart"/>
+    <Questionaire order="8" value="DERS18" type="Local" xml="DERS18"        print_order="8" print_type="text, table, chart"/>
+    <Questionaire order="9" value="Alliance" type="Local" xml="Alliance"    print_order="9" print_type="text, table, chart"/>
+    <Questionaire order="10" value="DAS4" type="Local" xml="DAS4"           print_order="10" print_type="text, table, chart"/>
+    <Questionaire order="11" value="DSM5X" type="Local" xml="DSM5X"         print_order="11" print_type="text, table, chart"/>
+    <Questionaire order="12" value="EDEQ" type="Local" xml="EDEQ"           print_order="12" print_type="text, table, chart"/>
+    <Questionaire order="13" value="EDEQa" type="Local" xml="EDEQa"         print_order="13" print_type="text, table, chart"/>
+    <Questionaire order="14" value="QIDS" type="Local" xml="QIDS"           print_order="14" print_type="text, table, chart"/>
+    <Questionaire order="15" value="Edds" type="Local" xml="Edds"           print_order="15" print_type="text, table, chart"/>
+    <Questionaire order="16" value="DUALDX" type="Local" xml="DUALDX"       print_order="16" print_type="text, table, chart"/>
+    <Questionaire order="17" value="SUS" type="Local" xml="SUS"             print_order="17" print_type="text, table, chart"/>
+    <Questionaire order="18" value="TRGI" type="Local" xml="TRGI"           print_order="18" print_type="text, table, chart"/>
+    <Questionaire order="19" value="confidentialSupportTeamIntakeForm"
+      type="Local" xml="confidentialSupportTeamIntakeForm"                  print_order="19" print_type="text, table"/>
+    <Questionaire order="20" value="FOCI" type="Local" xml="FOCI"           print_order="20" print_type="text, table, chart"/>
+    <Questionaire order="21" value="OCD-BA" type="Local" xml="OCD-BA"       print_order="21" print_type="text, table"/>
+    <Questionaire order="22" value="SCS" type="Local" xml="SCS"             print_order="22" print_type="text, table, chart"/>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="NEW" group="new"/>
+    <VisitType value="RTN" group="return"/>
+  </VisitTypes>
+</Process>

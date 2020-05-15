@@ -1,0 +1,42 @@
+<Form Description="Research" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="surveyQuestionCollapsible" Align="Horizontal" >
+   <PatientAttribute data_name="research" data_value="any" data_type="string" condition="notexists"/>
+      <Description>
+        <![CDATA[Would you like to be contacted about future educational, group, or research opportunities?]]>
+      </Description>
+    <CollapsibleContent> <![CDATA[
+          <p>Many of the physicians here at the [placeholder] conduct research to learn more about chronic pain and
+          develop new therapies to treat pain.</p>
+          <p>We would like to include you in our Research Database so that we may contact you regarding
+          current or future research studies.</p>
+          <p>Indicating "Yes" to the research database:
+            <ul>
+              <li> Allows us to access information from your medical record (e.g. name, contact information, age, pain condition) to match you with research studies for which you may be eligible. </li>
+              <li> It does not obligate you to be a research participant, but allows us to contact you if we think you may be eligible for one of our research studies.</li>
+              <li> You may contact the research team at any time to be removed from our contact list.</li>
+            </ul>
+          </p>
+          <p>You may choose not to participate, or not to speak with us further about our research at any time, without affecting your medical treatment. 
+          Completing this form is voluntary and is not related to your medical appointment. All the information we collect will remain as confidential as
+          possible as required by law. We will never share your personal identifying information outside of the Stanford School of Medicine Researchers
+          who are approved to access this information.
+          <p>For general information about participant rights, contact 1-xxx-xxx-xxxx.</p>
+]]>
+    </CollapsibleContent>
+      <Responses>
+        <Response Order="0" Type="radio" Class="registrySurvey" Description="Yes, your research team may contact me to discuss research opportunities">
+          <Scores><Score value="0"/></Scores>
+      <SetPatientAttribute data_name="research" data_value="y"/>
+    </Response>
+        <Response Order="1" Type="radio" Class="registrySurvey" Description="No thank you">
+          <Scores><Score value="1"/></Scores>
+      <SetPatientAttribute data_name="research" data_value="n"/>
+        </Response>
+    <Response Order="2" Type="radio" Class="registrySurvey" Description="Ask me again later">
+          <Scores><Score value="2"/></Scores>
+    </Response>
+    </Responses>
+    </Item>
+</Items>
+</Form>

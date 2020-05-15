@@ -1,0 +1,92 @@
+<Form Description="Functional Assessment - Working" DateStarted="" DateFinished="" questionsPerPage="3" Class="surveyInlineBordered">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Horizontal" >
+      <Description>
+        <![CDATA[Are you receiving any kind of disability?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <selected>false</selected>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="2">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <item>
+            <label>No</label>
+            <selected>false</selected>
+            <value>2</value>
+          </item>
+          <format>
+            <datatype>text</datatype>
+            <charwidth>5</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional, only show item 10 if the answer to 9 is true -->
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="2" Class="registrySurvey" Align="Vertical" Visible="false">
+      <Description>
+        <![CDATA[What kind of disability?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select" >
+          <ref>FADISABILITY</ref>
+          <item>
+            <label>Worker's Compensation</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Social Security Disability Insurance (SSDI)</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Other</label>
+            <value>3</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="3">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+          <format>
+            <datatype>text</datatype>
+            <charwidth>40</charwidth>
+            <lines>3</lines>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="2" Class="nospace" Align="Vertical" Visible="false">
+      <Description></Description>
+      <Responses>
+        <Response Order="1" required="false" Type="input"  Class="functAssessA" Align="Vertical">
+          <Scores />
+          <ref>text</ref>
+          <label></label>
+          <location>above</location>
+          <alert></alert>
+          <format>
+            <datatype>text</datatype>
+            <charwidth>50</charwidth>
+            <lines>2</lines>
+          </format>
+          <hint>Optional: you may enter another source</hint>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

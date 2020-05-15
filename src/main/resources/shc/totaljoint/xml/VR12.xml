@@ -1,0 +1,283 @@
+<Form Description="VR-12 Health Survey" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        In general, would you say your health is:
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="GH1" Type="select1" required="true">
+          <item><value>1</value><label>Excellent</label></item>
+          <item><value>2</value><label>Very Good</label></item>
+          <item><value>3</value><label>Good</label></item>
+          <item><value>4</value><label>Fair</label></item>
+          <item><value>5</value><label>Poor</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" Section="start">
+      <Description>
+        <![CDATA[
+        The following questions are about activities you might do during a typical day.
+        Does <u>your health now limit you</u> in these activities? If so, how much?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        <u>Moderate activities</u>, such as moving a table, pushing a vacuum cleaner, bowling or playing golf?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="PF02" Type="select1" required="true">
+          <item><value>1</value><label>Yes, limited a lot</label></item>
+          <item><value>2</value><label>Yes, limited a little</label></item>
+          <item><value>3</value><label>No, not limited at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" Section="end">
+      <Description>
+        <![CDATA[
+        Climbing <u>several</u> flights of stairs?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="PF04" Type="select1" required="true">
+          <item><value>1</value><label>Yes, limited a lot</label></item>
+          <item><value>2</value><label>Yes, limited a little</label></item>
+          <item><value>3</value><label>No, not limited at all</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Section="start">
+      <Description>
+        <![CDATA[
+        <u>During the past 4 weeks</u>, have you had any of the following problems with
+        your work or other regular daily activities <u>as a result of your physical health</u>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        Accomplished <u>less</u> than you would like.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="RP2" Type="select1" required="true">
+          <item><value>1</value><label>No, none of the time</label></item>
+          <item><value>2</value><label>Yes, a little of the time</label></item>
+          <item><value>3</value><label>Yes, some of the time</label></item>
+          <item><value>4</value><label>Yes, most of the time</label></item>
+          <item><value>5</value><label>Yes, all of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" Section="end">
+      <Description>
+        <![CDATA[
+       Were limited in the <u>kind</u> of work or other activities.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="RP3" Type="select1" required="true">
+          <item><value>1</value><label>No, none of the time</label></item>
+          <item><value>2</value><label>Yes, a little of the time</label></item>
+          <item><value>3</value><label>Yes, some of the time</label></item>
+          <item><value>4</value><label>Yes, most of the time</label></item>
+          <item><value>5</value><label>Yes, all of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" Section="start">
+      <Description>
+        <![CDATA[
+        <u>During the past 4 weeks</u>, have you had any of the following problems with
+        your work or other regular daily activities <u>as a result of any emotional problems</u>
+        (such as feeling depressed or anxious)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        Accomplished <u>less</u> than you would like.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="RE2" Type="select1" required="true">
+          <item><value>1</value><label>No, none of the time</label></item>
+          <item><value>2</value><label>Yes, a little of the time</label></item>
+          <item><value>3</value><label>Yes, some of the time</label></item>
+          <item><value>4</value><label>Yes, most of the time</label></item>
+          <item><value>5</value><label>Yes, all of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" Section="end">
+      <Description>
+        <![CDATA[
+        Didn't do work or other activities as <u>carefully</u> as usual.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="RE3" Type="select1" required="true">
+          <item><value>1</value><label>No, none of the time</label></item>
+          <item><value>2</value><label>Yes, a little of the time</label></item>
+          <item><value>3</value><label>Yes, some of the time</label></item>
+          <item><value>4</value><label>Yes, most of the time</label></item>
+          <item><value>5</value><label>Yes, all of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        <u>During the past 4 weeks</u>, how much did <u>pain</u> interfere with your
+        normal work (including both work outside the home and housework)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="BP2" Type="select1" required="true">
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little bit</label></item>
+          <item><value>3</value><label>Moderately</label></item>
+          <item><value>4</value><label>Quite a bit</label></item>
+          <item><value>5</value><label>Extremely</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  <!--
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        These questions are about how you feel and how things have been with you during
+        the past 4 weeks. For each question, please give the one answer that comes closest
+        to the way you have been feeling.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+  -->
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        How much of the time during the <u>past 4 weeks</u> have you felt calm and peaceful?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="MH3" Type="select1" required="true">
+          <item><value>1</value><label>All of the time</label></item>
+          <item><value>2</value><label>Most of the time</label></item>
+          <item><value>3</value><label>A good bit of the time</label></item>
+          <item><value>4</value><label>Some of the time</label></item>
+          <item><value>5</value><label>A little of the time</label></item>
+          <item><value>6</value><label>None of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14">
+      <Description>
+        <![CDATA[
+        How much of the time during the <u>past 4 weeks</u> did you have a lot of energy?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="VT2" Type="select1" required="true">
+          <item><value>1</value><label>All of the time</label></item>
+          <item><value>2</value><label>Most of the time</label></item>
+          <item><value>3</value><label>A good bit of the time</label></item>
+          <item><value>4</value><label>Some of the time</label></item>
+          <item><value>5</value><label>A little of the time</label></item>
+          <item><value>6</value><label>None of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        How much of the time during the <u>past 4 weeks</u> have you felt downhearted and blue?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="MH4" Type="select1" required="true">
+          <item><value>1</value><label>All of the time</label></item>
+          <item><value>2</value><label>Most of the time</label></item>
+          <item><value>3</value><label>A good bit of the time</label></item>
+          <item><value>4</value><label>Some of the time</label></item>
+          <item><value>5</value><label>A little of the time</label></item>
+          <item><value>6</value><label>None of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        <u>During the past 4 weeks</u>, how much of the time has your <u>physical health or
+        emotional problems</u> interfered with your social activities (like visiting with
+        friends, relatives, etc.)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="SF2" Type="select1" required="true">
+          <item><value>1</value><label>All of the time</label></item>
+          <item><value>2</value><label>Most of the time</label></item>
+          <item><value>3</value><label>Some of the time</label></item>
+          <item><value>4</value><label>A little of the time</label></item>
+          <item><value>5</value><label>None of the time</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        <u>Compared to one year ago</u>, how would you rate your <u>physical health</u> in general now?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q8" Type="select1" required="true">
+          <item><value>1</value><label>Much better</label></item>
+          <item><value>2</value><label>Slightly better</label></item>
+          <item><value>3</value><label>About the same</label></item>
+          <item><value>4</value><label>Slightly worse</label></item>
+          <item><value>5</value><label>Much worse</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        <u>Compared to one year ago</u>, how would you rate your <u>emotional problems</u>
+        (such as feeling anxious, depressed or irritable) now?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q9" Type="select1" required="true">
+          <item><value>1</value><label>Much better</label></item>
+          <item><value>2</value><label>Slightly better</label></item>
+          <item><value>3</value><label>About the same</label></item>
+          <item><value>4</value><label>Slightly worse</label></item>
+          <item><value>5</value><label>Much worse</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

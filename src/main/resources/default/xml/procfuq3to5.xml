@@ -1,0 +1,36 @@
+<Form Description="Procedure followup questions 3-5" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="3" ItemResponse="" ItemScore="">
+      <Description><![CDATA[If you feel the stimulation, does it cover your painful area targeted?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>STIM_COVER</ref>
+          <item><label>Yes, it covers all the painful area targeted</label><value>0</value></item>
+          <item><label>Yes, it covers parts of the painful area targeted</label><value>1</value></item>
+          <item><label>No</label><value>3</value></item>
+          <item><label>Not applicable (if you do not feel stimulation)</label><value>2</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="">
+      <Description><![CDATA[Compared to before the stimulator trial, how much improvement have you experienced in the painful area targeted?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>IMPROV_AREA</ref>
+          <item><label>50% or more improvement</label><value>0</value></item>
+          <item><label>Less than 50% improvement</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="">
+      <Description><![CDATA[Compared to before the stimulator trial, how much improvement have you experienced in your overall pain?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>IMPROV_OVERALL</ref>
+          <item><label>50% or more improvement</label><value>0</value></item>
+          <item><label>Less than 50% improvement</label><value>1</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

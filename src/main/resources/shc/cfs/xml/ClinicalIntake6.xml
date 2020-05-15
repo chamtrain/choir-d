@@ -1,0 +1,643 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="42">
+  <Items>
+
+
+    <Item Order="9" >
+      <Description>
+        <![CDATA[
+        Did your fatigue/energy-related illness start after any of the experiences listed below? Please select all that apply and include the approximate date where applicable.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>TriggerEvent</ref>
+          <item><value>1</value><label>An infectious illness</label>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="11">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <ondeselect Type="Item" Where="Order" Value="10">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+            <ondeselect Type="Item" Where="Order" Value="11">
+              <Set Type="attribute" Name="RequiredMin" Value="0"/>
+              <Set Type="state" Name="visible" Value="false"/>
+            </ondeselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="10" StyleName="dependantQuestion">
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="11" StyleName="dependantQuestion">
+      <Description>
+        <![CDATA[
+        Please specify: choose one that best describes the infectious illness
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" StyleName="dependantQuestion">
+          <item><value>1</value><label>Documented acute infection (e.g, EBV, mononucleosis, acute parvovirus infection, shingles, cytomegalovirus, etc.)</label></item>
+          <item><value>2</value><label>Respiratory infection (sore throat, runny nose, cough, etc.)</label></item>
+          <item><value>3</value><label>Abdominal infection (diarrhea, nausea, vomiting, blood in stool, etc.)</label></item>
+          <item><value>4</value><label>Bladder infection (pain/burning during urination, urinating frequently, feeling of having to urinate frequently, etc.)</label></item>
+          <item><value>5</value><label>Prostate infection</label></item>
+          <item><value>6</value><label>Non-specific infection (fever, chills, sweating, muscle aches, exhaustion without other symptoms, etc.)</label></item>
+          <item><value>7</value><label>Other</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="12" >
+      <Description></Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>2</value><label>Meningitis or symptoms suggestive of a neurological infection or other neurological event or condition that prompted a visit to a physician’s office or emergency room (headache, fever, sensitivity to light, nausea, vomiting)</label>
+            <onselect Type="Item" Where="Order" Value="13">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="13">
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="14" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>3</value><label>Myocarditis or symptoms suggestive of heart problems that prompted a visit to a physician’s office or emergency room (chest pain, palpitations, lightheadedness, loss of consciousness)</label>
+            <onselect Type="Item" Where="Order" Value="15">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="15" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="16" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>4</value><label>A trip or vacation within the United States</label>
+            <onselect Type="Item" Where="Order" Value="17">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="18">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="19">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="17" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="18" StyleName="dependantQuestion">
+      <Description><![CDATA[ City, State ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="19" >
+      <Description><![CDATA[ What did you do during your trip? Any unusual activities? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>5</value><label>A trip or vacation outside the United States</label>
+            <onselect Type="Item" Where="Order" Value="21">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="22">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="23">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="21" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="22" >
+      <Description><![CDATA[ City, Country ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="23" >
+      <Description><![CDATA[ What did you do during your trip? Any unusual activities? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>6</value><label>An injection at a doctor’s office</label>
+            <onselect Type="Item" Where="Order" Value="25">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="26">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="25" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26" >
+      <Description><![CDATA[ What was injected? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="27" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>7</value><label>Surgery</label>
+            <onselect Type="Item" Where="Order" Value="28">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="29">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="28" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="29" >
+      <Description><![CDATA[ What was the surgery? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="30" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>8</value><label>Stress or a major life event</label>
+            <onselect Type="Item" Where="Order" Value="31">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="32">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="31" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="32" >
+      <Description><![CDATA[ What was the event / stressor? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="33" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>9</value><label>An accident</label>
+            <onselect Type="Item" Where="Order" Value="34">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="35">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="34" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="35" >
+      <Description><![CDATA[ What was the accident? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="36" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>10</value><label>Pregnancy</label>
+            <onselect Type="Item" Where="Order" Value="37">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="38">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="37" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="38" >
+      <Description><![CDATA[ What was the result of the pregnancy? ]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true" StyleName="dependantQuestion">
+          <item><value>1</value><label>Abortion</label></item>
+          <item><value>2</value><label>Miscarriage</label></item>
+          <item><value>3</value><label>Still birth</label></item>
+          <item><value>4</value><label>Live birth via vaginal delivery</label></item>
+          <item><value>5</value><label>Prostate infection</label></item>
+          <item><value>6</value><label>Live birth via cesarean section</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="39" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>11</value><label>Eating dairy, eggs, or meat that had not been pasteurized or thoroughly cooked</label>
+            <onselect Type="Item" Where="Order" Value="40">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="41">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="40" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="41" >
+      <Description><![CDATA[ What did you consume? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+
+    <Item Order="420" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>12</value><label>Drinking water from a well, river, lake, or stream</label>
+            <onselect Type="Item" Where="Order" Value="430">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="430" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="440" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>13</value><label>Exposure to chemical/environmental toxins</label>
+            <onselect Type="Item" Where="Order" Value="450">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="460">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="450" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="460" >
+      <Description><![CDATA[ To what chemical/environmental toxins were you exposed? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+    <Item Order="470" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>14</value><label>Other (Please describe)</label>
+            <onselect Type="Item" Where="Order" Value="480">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="490">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="480" >
+      <Description><![CDATA[ Date (MM/DD/YYY) ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="490" >
+      <Description><![CDATA[ Description ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" StyleName="dependantQuestion">
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="500" >
+      <Description>      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <item><value>15</value><label>None of the above</label>
+
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

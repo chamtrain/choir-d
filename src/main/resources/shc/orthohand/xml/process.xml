@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+    <ProcessType value="Initial.1015" start_date="09-11-2015" expiration_date="11-30-2016" notification="true" appointment_template="Initial"
+               schedule_template="Initial" order="1" visit="1" visitType="NEW" report="Initial" optional_questionnaires="Consented.1015">
+        <Questionaire order="1" value="handConsent" type="Local" xml="handConsent"/>
+    </ProcessType>
+    <ProcessType value="FollowUp.1015" start_date="09-11-2015" expiration_date="10-24-2016" notification="true" appointment_template="FollowUp"
+                 schedule_template="No-appointment" order="2" visit="2" visitType="RTN" report="Followup">
+        <Questionaire order="1" value="handGlobalHealth" type="Local" xml="handGlobalHealth" print_order="6" print_type="chart, text"  invert="true"/>
+        <Questionaire order="2" value="PROMIS Depression Bank" type="LocalPromis"  print_order="7.2" print_type="chart, text" OID="96FE494D-F176-4EFB-A473-2AB406610626"/>
+        <Questionaire order="3" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="4" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="5" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="6" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <!--Questionaire order="7" value="upperExtremityIntro" type="Local" xml="upperExtremityIntro" / -->
+        <Questionaire order="8" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="9" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="10" value="prwhe" type="Local" xml="prwhe" print_order="5" print_type="chart, text"/>
+    </ProcessType>
+    <ProcessType value="Consented.1015" notification="false" start_date="09-15-2015" expiration_date="11-30-2016" visit="9999" order="-1" >
+        <Questionaire order="2" value="handEmailConsent" type="Local" xml="handEmailConsent" />
+        <Questionaire order="3" value="handGlobalHealth" type="Local" xml="handGlobalHealth" print_order="6" print_type="chart, text"  invert="true"/>
+        <Questionaire order="4" value="PROMIS Depression Bank" type="LocalPromis"  print_order="7.2" print_type="chart, text" OID="96FE494D-F176-4EFB-A473-2AB406610626"/>
+        <Questionaire order="5" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="6" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="7" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="8" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <!--Questionaire order="9" value="upperExtremityIntro" type="Local" xml="upperExtremityIntro" / -->
+        <Questionaire order="10" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="11" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="12" value="prwhe" type="Local" xml="prwhe" print_order="5" print_type="chart, text"/>
+        <!--
+        <Questionaire order="12" value="handqDASH" type="Local" xml="handqDASH" print_order="8" print_type="text"/>
+        <Questionaire order="13" value="handMHQ" type="Local" xml="handMHQ" print_order="8" print_type="text"/>
+        -->
+    </ProcessType>
+    <ProcessType value="FollowUp.1016" start_date="10-24-2016" expiration_date="11-30-2016" notification="true" appointment_template="FollowUp"
+                 schedule_template="No-appointment" order="2" visit="2" visitType="RTN" report="Followup">
+        <Questionaire order="1" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="2" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="3" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="4" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <Questionaire order="5" value="PROMIS Bank v1.2 - Upper Extremity" type="LocalPromis" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="6" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="7" value="prwhe" type="Local" xml="prwhe" print_order="5" print_type="chart, text"/>
+    </ProcessType>
+    <ProcessType value="Initial.1116" start_date="12-01-2016" expiration_date="06-11-2017" notification="true" appointment_template="Initial"
+                 schedule_template="Initial" order="1" visit="1" visitType="NEW" report="Initial" optional_questionnaires="Consented.1116">
+        <Questionaire order="1" value="handConsent" type="Local" xml="handConsent"/>
+    </ProcessType>
+    <ProcessType value="Consented.1116" notification="false" start_date="12-01-2016" expiration_date="06-11-2017" visit="9999" order="-1" >
+        <Questionaire order="2" value="handEmailConsent" type="Local" xml="handEmailConsent" />
+        <Questionaire order="3" value="handSane" type="Local" xml="handSane" print_order="6" print_type="text"/>
+        <Questionaire order="4" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="5" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="6" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="7" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <Questionaire order="8" value="PROMIS Bank v1.2 - Upper Extremity" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisUpperExtService" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="9" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="10" value="prwhe" type="Local" xml="prwhe" print_order="5" print_type="chart, text"/>
+        <Questionaire order="11" value="handGlobalHealth" type="Local" xml="handGlobalHealth" print_order="6" print_type="chart, text"  invert="true"/>
+        <Questionaire order="12" value="PROMIS Depression Bank" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisDepressionService" print_order="7.2" print_type="chart, text" OID="96FE494D-F176-4EFB-A473-2AB406610626"/>
+
+    </ProcessType>
+    <ProcessType value="FollowUp.1116" start_date="12-01-2016" expiration_date="06-11-2017" notification="true" appointment_template="FollowUp"
+                 schedule_template="No-appointment" order="2" visit="2" visitType="RTN" report="Followup">
+        <Questionaire order="1" value="handSane" type="Local" xml="handSane" print_order="6" print_type="text"/>
+        <Questionaire order="2" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="3" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="4" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="5" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <Questionaire order="6" value="PROMIS Bank v1.2 - Upper Extremity" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisUpperExtService" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="7" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="8" value="prwhe" type="Local" xml="prwhe" print_order="5" print_type="chart, text"/>
+    </ProcessType>
+    <ProcessType value="Initial.0617" start_date="06-11-2017" expiration_date="" notification="true" appointment_template="Initial"
+                 schedule_template="Initial" order="1" visit="1" visitType="NEW" report="Initial" optional_questionnaires="Consented.0617">
+        <Questionaire order="1" value="handConsent" type="Local" xml="handConsent"/>
+    </ProcessType>
+    <ProcessType value="Consented.0617" notification="false" start_date="06-11-2017" expiration_date="" visit="9999" order="-1" >
+        <Questionaire order="2" value="handEmailConsent" type="Local" xml="handEmailConsent" />
+        <Questionaire order="4" value="handSane" type="Local" xml="handSane" print_order="10" print_type="chart"/>
+        <Questionaire order="3" value="handSeekTreat" type="Local" xml="handSeekTreat" print_order="5" print_type="text"/>
+        <Questionaire order="5" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="6" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="7" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="8" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <Questionaire order="9" value="PROMIS Bank v1.2 - Upper Extremity" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisUpperExtService" print_order="9.1" print_type="chart, text"/>
+        <Questionaire order="10" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="11" value="prwhe" type="Local" xml="prwhe" print_order="6.1" print_type="chart, text"/>
+        <Questionaire order="12" value="handqDash" type="Local" xml="handqDASH" print_order="6.2" print_type="chart"/>
+        <Questionaire order="13" value="handGlobalHealth" type="Local" xml="handGlobalHealth" print_order="8" print_type="chart, text"  invert="true"/>
+        <Questionaire order="14" value="PROMIS Depression Bank" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisDepressionService" print_order="9.2" print_type="chart, text" OID="96FE494D-F176-4EFB-A473-2AB406610626"/>
+    </ProcessType>
+    <ProcessType value="FollowUp.0617" start_date="06-11-2017" expiration_date="" notification="true" appointment_template="FollowUp"
+                 schedule_template="No-appointment" order="2" visit="2" visitType="RTN" report="Followup">
+        <Questionaire order="1" value="handSane" type="Local" xml="handSane" print_order="7.2" print_type="chart"/>
+        <Questionaire order="2" value="leftArm" type="Local" xml="leftArm" print_order="1" print_type="img"/>
+        <Questionaire order="3" value="leftHand" type="Local" xml="leftHand" print_order="2" print_type="img"/>
+        <Questionaire order="4" value="rightArm" type="Local" xml="rightArm" print_order="3" print_type="img"/>
+        <Questionaire order="5" value="rightHand" type="Local" xml="rightHand" print_order="4" print_type="img"/>
+        <Questionaire order="6" value="PROMIS Bank v1.2 - Upper Extremity" type="edu.stanford.registry.server.shc.orthohand.OrthoPromisUpperExtService" print_order="7.1" print_type="chart, text"/>
+        <Questionaire order="7" value="prwheIntro" type="Local" xml="prwheIntro"/>
+        <Questionaire order="8" value="prwhe" type="Local" xml="prwhe" print_order="5.1" print_type="chart, text"/>
+        <Questionaire order="9" value="handqDash" type="Local" xml="handqDASH" print_order="5.2" print_type="chart, text"/>
+    </ProcessType>
+    <VisitTypes>
+        <VisitType value="NPV30" group="new" />
+        <VisitType value="RPV30" group="return" />
+        <VisitType value="STA" group="return" />
+    </VisitTypes>
+</Process>    

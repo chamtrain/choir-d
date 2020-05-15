@@ -1,0 +1,58 @@
+<Form Description="DVT Quality of Life" questionsPerPage="1">
+  <Items>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        During the past four weeks, have you had any <b>pain</b> in your <b>ankles</b> or <b>legs</b>, and how severe has this pain been?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1</ref>
+          <item><value>1</value><label>No pain</label></item>
+          <item><value>2</value><label>Slight pain</label></item>
+          <item><value>3</value><label>Moderate pain</label></item>
+          <item><value>4</value><label>Considerable pain</label></item>
+          <item><value>5</value><label>Severe pain</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        During the past four weeks, how much trouble have you had at <b>work</b> or with your <b>usual daily activities because of your leg problems</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q2</ref>
+          <item><value>1</value><label>No trouble</label></item>
+          <item><value>2</value><label>Slight trouble</label></item>
+          <item><value>3</value><label>Moderate trouble</label></item>
+          <item><value>4</value><label>Considerable trouble</label></item>
+          <item><value>5</value><label>Severe trouble</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        During the past four weeks, have you <b>slept poorly</b> because of your leg problems, and how often?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q3</ref>
+          <item><value>1</value><label>Never</label></item>
+          <item><value>2</value><label>Rarely</label></item>
+          <item><value>3</value><label>Fairly often</label></item>
+          <item><value>4</value><label>Very often</label></item>
+          <item><value>5</value><label>Every night</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

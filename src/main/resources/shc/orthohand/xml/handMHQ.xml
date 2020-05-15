@@ -1,0 +1,458 @@
+<Form Description="MHQ" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" required="true">
+      <Description>
+        <![CDATA[Overall, how well did your hand(s) work during the past week?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+        </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+		      <ref>WORK</ref>
+          <item selected="false"><label>Very good</label><value>1</value></item>
+          <item selected="false"><label>Good</label><value>2</value></item>
+          <item selected="false"><label>Fair</label><value>3</value></item>
+          <item selected="false"><label>Poor</label><value>4</value></item>
+          <item selected="false"><label>Very Poor</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[How was the sensation (feeling) in your hand(s) during the past week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>SENSATION</ref>
+          <item selected="false"><label>Very good</label><value>1</value></item>
+          <item selected="false"><label>Good</label><value>2</value></item>
+          <item selected="false"><label>Fair</label><value>3</value></item>
+          <item selected="false"><label>Poor</label><value>4</value></item>
+          <item selected="false"><label>Very Poor</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[How difficult was it for you to hold a frying pan during the last week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>FRYPAN</ref>
+          <item selected="false"><label>Not at all difficult</label><value>1</value></item>
+          <item selected="false"><label>A little difficult</label><value>2</value></item>
+          <item selected="false"><label>Somewhat difficult</label><value>3</value></item>
+          <item selected="false"><label>Moderately difficult</label><value>4</value></item>
+          <item selected="false"><label>Very difficult</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[How difficult was it for you to button a shirt or blouse during the past week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>BUTTON</ref>
+          <item selected="false"><label>Not at all difficult</label><value>1</value></item>
+          <item selected="false"><label>A little difficult</label><value>2</value></item>
+          <item selected="false"><label>Somewhat difficult</label><value>3</value></item>
+          <item selected="false"><label>Moderately difficult</label><value>4</value></item>
+          <item selected="false"><label>Very difficult</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[In the past 4 weeks, how often were you unable to do your work because of problems with your hand(s)/wrist(s)?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>UNWORK</ref>
+          <item selected="false"><label>Always</label><value>1</value></item>
+          <item selected="false"><label>Often</label><value>2</value></item>
+          <item selected="false"><label>Sometimes</label><value>3</value></item>
+          <item selected="false"><label>Rarely</label><value>4</value></item>
+          <item selected="false"><label>Never</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[In the past 4 weeks, how often did you take longer to do tasks in your work because of problems with your hand(s)/wrist(s)?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>LONGER</ref>
+          <item selected="false"><label>Always</label><value>1</value></item>
+          <item selected="false"><label>Often</label><value>2</value></item>
+          <item selected="false"><label>Sometimes</label><value>3</value></item>
+          <item selected="false"><label>Rarely</label><value>4</value></item>
+          <item selected="false"><label>Never</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[How often did the pain in your hand(s)/wrist(s) interfere with your daily activities (such as eating or bathing) in the past week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>INTERFERE</ref>
+          <item selected="false"><label>Always</label><value>1</value></item>
+          <item selected="false"><label>Often</label><value>2</value></item>
+          <item selected="false"><label>Sometimes</label><value>3</value></item>
+          <item selected="false"><label>Rarely</label><value>4</value></item>
+          <item selected="false"><label>Never</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Describe the pain in your hand(s)/wrist(s) in the past week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>DESCRIBE</ref>
+          <item selected="false"><label>Very mild</label><value>1</value></item>
+          <item selected="false"><label>Mild</label><value>2</value></item>
+          <item selected="false"><label>Moderate</label><value>3</value></item>
+          <item selected="false"><label>Severe</label><value>4</value></item>
+          <item selected="false"><label>Very severe</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[I am satisfied with the look of my hand(s).]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>SATLOOK</ref>
+          <item selected="false"><label>Strongly agree</label><value>1</value></item>
+          <item selected="false"><label>Agree</label><value>2</value></item>
+          <item selected="false"><label>Neither agree nor disagree</label><value>3</value></item>
+          <item selected="false"><label>Disagree</label><value>4</value></item>
+          <item selected="false"><label>Strongly disagree</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[In the past week, the appearance of my hand(s) interferes with my normal daily activities.]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>LOOKINTERF</ref>
+          <item selected="false"><label>Strongly agree</label><value>1</value></item>
+          <item selected="false"><label>Agree</label><value>2</value></item>
+          <item selected="false"><label>Neither agree nor disagree</label><value>3</value></item>
+          <item selected="false"><label>Disagree</label><value>4</value></item>
+          <item selected="false"><label>Strongly disagree</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[In the past week, how satisfied are you with the motion of your fingers?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>MOTIONFIN</ref>
+          <item selected="false"><label>Very mild</label><value>1</value></item>
+          <item selected="false"><label>Mild</label><value>2</value></item>
+          <item selected="false"><label>Moderate</label><value>3</value></item>
+          <item selected="false"><label>Severe</label><value>4</value></item>
+          <item selected="false"><label>Very severe</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[In the past week, how satisfied are you with the motion of your wrist?]]></Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Instructions</label>
+          <icon>INFO</icon>
+          <CollapsibleContent><![CDATA[<p>This survey asks you for your views about your hands and your health. This information will help keep track of how you feel and how well you are able to do your usual activities.</p>
+          <p>Answer <b><u><i>EVERY</i></u></b> question by marking the answer as indicated.</p>
+          <p>If you are unsure about how to answer a question, please give it the best answer you can. <b>Please answer every question, even if you do not experience problems with the hand or wrist.</b>
+          Some questions may ask you about your ability to complete certain tasks.
+          If you do not do a certain task, please estimate the difficulty with which you would have in performing it.
+          Questions pertaining to work include occupational work, housework, and school work. Please circle one answer for each question.</p>]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" required="true" Type="select1" Appearance="full">
+          <ref>MOTIONWRI</ref>
+          <item selected="false"><label>Very mild</label><value>1</value></item>
+          <item selected="false"><label>Mild</label><value>2</value></item>
+          <item selected="false"><label>Moderate</label><value>3</value></item>
+          <item selected="false"><label>Severe</label><value>4</value></item>
+          <item selected="false"><label>Very severe</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[Are you right or left handed?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>MOTIONWRI</ref>
+          <item selected="false"><label>Right-handed</label><value>1</value></item>
+          <item selected="false"><label>Left-handed</label><value>2</value></item>
+          <item selected="false"><label>Both</label><value>3</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[What is your ethnic background?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>ETHNIC</ref>
+          <item selected="false"><label>Hispanic or Latino/a</label><value>1</value></item>
+          <item selected="false"><label>Not Hispanic or Latino/a</label><value>2</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[What is your racial background?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>RACE</ref>
+          <item selected="false"><label>American Indian or Alaskan Native</label><value>1</value></item>
+          <item selected="false"><label>Asian</label><value>2</value></item>
+          <item selected="false"><label>Native Hawaiian or other Pacific Islander</label><value>3</value></item>
+          <item selected="false"><label>Black or African-American</label><value>4</value></item>
+          <item selected="false"><label>White</label><value>5</value></item>
+          <Scores />
+        </Response>
+        <Response Order="2" Type="input">
+          <ref>RACEOTHER</ref>
+          <label>Other (Please specify)</label>
+          <hint>Please specify</hint>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" required="true">
+      <Description><![CDATA[Please describe the type of job you had <b>before</b> you injured your hand(s).]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>JOBBEFORE</ref>
+          <label></label>
+          <hint>Explain your job before your injury</hint>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+    </Responses>
+  </Item>
+  <Item Order="17" ItemResponse="" ItemScore="" required="true">
+    <Description><![CDATA[Please describe the type of job you are doing now.]]></Description>
+    <Responses>
+        <Response Order="2" Type="input">
+          <ref>JOBNOW</ref>
+          <label></label>
+          <hint>Explain your job now</hint>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" ItemResponse="" ItemScore="" required="true">
+      <Description>How long after surgery did you return to work?</Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>RETURNWORK</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" ItemResponse="" ItemScore="" required="true">
+      <Description>How long after surgery did you return to the same job you were doing before your injury?</Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>RETURNJOB</ref>
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20" ItemResponse="" ItemScore="" required="true">
+      <Description>What is your gender?</Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>GENDER</ref>
+          <item selected="false"><label>Male</label><value>1</value></item>
+          <item selected="false"><label>Female</label><value>2</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[What is the highest level of education you received?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>EDUCATION</ref>
+          <item selected="false"><label>Less than high school graduate</label><value>1</value></item>
+          <item selected="false"><label>High school graduate or GED</label><value>2</value></item>
+          <item selected="false"><label>Vocational/technical school</label><value>3</value></item>
+          <item selected="false"><label>Some college or Associate degree</label><value>4</value></item>
+          <item selected="false"><label>College graduate</label><value>5</value></item>
+          <item selected="false"><label>Professional or graduate school</label><value>6</value></item>
+          <Scores />
+        </Response>
+        <Response Order="2" Type="input">
+          <ref>EDUCATIONOTHER</ref>
+          <label>Other (Please specify)</label>
+          <hint>Please specify</hint>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[What is your approximate family income including wages, disability payment, retirement income and welfare?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>INCOME</ref>
+          <item selected="false"><label>Less than $10,000</label><value>1</value></item>
+          <item selected="false"><label>$10,000 - $19,999</label><value>2</value></item>
+          <item selected="false"><label>$20,000 - $29,999</label><value>3</value></item>
+          <item selected="false"><label>$30,000 - $39,999</label><value>4</value></item>
+          <item selected="false"><label>$40,000 - $49,999</label><value>5</value></item>
+          <item selected="false"><label>$50,000 - $59,999</label><value>6</value></item>
+          <item selected="false"><label>$60,000 - $69,999</label><value>7</value></item>
+          <item selected="false"><label>More than $70,000</label><value>8</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

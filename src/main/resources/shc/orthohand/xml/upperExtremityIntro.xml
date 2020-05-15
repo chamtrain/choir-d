@@ -1,0 +1,13 @@
+<Form Description="Sample" questionsPerPage="1">
+<Items>
+  <Item Order="1">
+    <Description>
+      <![CDATA[<p>The following questions ask about the hand that causes you the most trouble</p>
+      ]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" required="false"></Response>
+    </Responses>
+  </Item>
+</Items>
+</Form>

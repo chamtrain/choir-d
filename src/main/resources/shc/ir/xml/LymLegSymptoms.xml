@@ -1,0 +1,231 @@
+<Form Description="Lymphedema Leg Symptoms" questionsPerPage="1">
+  <Items>
+    <Item Order="24">
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25">
+      <ResponseValue xpath_query="//Item[@Order='24']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain <b>in your foot/feet?</b>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12A</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="26">
+      <ResponseValue xpath_query="//Item[@Order='24']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain <b>in your leg(s)?</b>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12B</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27">
+      <ResponseValue xpath_query="//Item[@Order='24']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain <b>in your hip(s)</b>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12C</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="28">
+      <ResponseValue xpath_query="//Item[@Order='24']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain <b>in your back?</b>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12D</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="29">
+      <ResponseValue xpath_query="//Item[@Order='24']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Does the lymphedema cause you pain <b>elsewhere than in your back, hips, legs or feet?</b>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q12E</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="30">
+      <ResponseValue xpath_query="//Item[@Order='29']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Where is your pain?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="input" required="true">
+          <ref>Q12F</ref>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="32">
+      <Description>
+        <![CDATA[
+        Do you have any numbness in your swollen leg(s)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q13</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="33">
+      <Description>
+        <![CDATA[
+        Do you have any feelings of "pins and needles" or tingling in your swollen leg(s)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q14</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="34">
+      <Description>
+        <![CDATA[
+        Does (do) your swollen leg(s) feel weak?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q15</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="35">
+      <Description>
+        <![CDATA[
+        Does (do) your swollen leg(s) feel heavy?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q16</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="36">
+      <Description>
+        <![CDATA[
+        Does (do) your swollen leg(s) feel "cold"?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q17</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="37">
+      <Description>
+        <![CDATA[
+        Have you had any leakage of fluid from your leg(s)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q18</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,48 @@
+<Form Description="Procedure followup questions 8-10" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="8" ItemResponse="" ItemScore="">
+    <Description><![CDATA[In the past 4 weeks, how many headache days have you had?]]></Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <ref>NUM_HEADACHES</ref>
+          <format>
+            <datatype>integer</datatype>
+            <min>0</min>
+            <max>28</max>
+          </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="">
+    <Description><![CDATA[Since the Botox injection, how would you describe the change (if any) in your overall frequency of your headaches?]]></Description>
+      <Responses>
+      <Response Order="1" Type="select1" required="true">
+        <ref>FREQ_HEADACHES</ref>
+        <item><label>Very much decreased</label><value>0</value></item>
+        <item><label><![CDATA[<p>]]></label><value>1</value><printlabel>Much decreased</printlabel></item>
+        <item><label><![CDATA[<p>]]></label><value>2</value><printlabel>Minimally decreased</printlabel></item>
+        <item><label>No change</label><value>3</value></item>
+        <!--item><label>Increased</label><value>4</value></item-->
+        <item><label><![CDATA[<p>]]></label><value>5</value><printlabel>Minimally increased</printlabel></item>
+        <item><label><![CDATA[<p>]]></label><value>6</value><printlabel>Much increased</printlabel></item>
+        <item><label>Very much increased</label><value>7</value></item>
+      </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="">
+    <Description><![CDATA[Since the Botox injection, how would you describe the change (if any) in your overall intensity of your headaches]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+        <ref>INTEN_HEADACHES</ref>
+          <item><label>Very much improved</label><value>0</value></item>
+          <item><label><![CDATA[<p>]]></label><value>1</value><printlabel>Much improved</printlabel></item>
+          <item><label><![CDATA[<p>]]></label><value>2</value><printlabel>Minimally improved </printlabel></item>
+          <item><label>No change</label><value>3</value></item>
+          <item><label><![CDATA[<p>]]></label><value>4</value><printlabel>Minimally worse</printlabel></item>
+          <item><label><![CDATA[<p>]]></label><value>5</value><printlabel>Much worse</printlabel></item>
+          <item><label>Very much worse</label><value>6</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

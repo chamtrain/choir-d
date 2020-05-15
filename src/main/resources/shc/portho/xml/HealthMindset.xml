@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[Answer the following questions. For each item, we would like you to circle the number that represents the extent to which you agree or disagree with that statement. The more you disagree, the higher the number your circle.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[1. Your body has a certain amount of health, and you really can't do much to change it.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly Agree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="Strongly Disagree" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>HMS1</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[2. Your health is something about you that you can't change very much.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly Agree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="Strongly Disagree" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>HMS2</ref>
+    </Item>
+    <Item Class="surveyQuestionHorizontal" ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[3. You can try to make yourself feel better, but you can't really change your basic health.]]></Description>
+      <Responses>
+        <Response Class="surveyAnswerHorizontal" Description="1" Description2="Strongly Agree" Order="0" Type="radio">
+          <Scores>
+            <Score value="1"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="2" Description2="" Order="1" Type="radio">
+          <Scores>
+            <Score value="2"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="3" Description2="" Order="2" Type="radio">
+          <Scores>
+            <Score value="3"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="4" Description2="" Order="3" Type="radio">
+          <Scores>
+            <Score value="4"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="5" Description2="" Order="4" Type="radio">
+          <Scores>
+            <Score value="5"/>
+          </Scores>
+        </Response>
+        <Response Class="surveyAnswerHorizontal" Description="6" Description2="Strongly Disagree" Order="5" Type="radio">
+          <Scores>
+            <Score value="6"/>
+          </Scores>
+        </Response>
+      </Responses>
+      <ref>HMS3</ref>
+    </Item>
+  </Items>
+</Form>

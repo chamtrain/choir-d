@@ -1,0 +1,60 @@
+<Form Description="Functional Assessment - Working" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" required="true" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[Have you been told you snore loudly or gasp for breath at night?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <label></label>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+	  <format>
+            <datatype>text</datatype>
+            <charwidth>5</charwidth>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="registrySurvey" Align="Vertical" >
+      <Description>
+        <![CDATA[Can you estimate the average number of hours you sleep per night?]]>
+      </Description>
+      <Alert>Please provide an integer estimate for the hours you sleep each night</Alert>
+      <Responses>
+        <Response Order="1" Type="input"   Class="registrySurveyAnswer"  >
+          <ref>duration</ref>
+          <label>Hours</label>
+          <min>0</min>
+          <max>24</max>
+          <location>right</location>
+          <format>
+            <datatype>integer</datatype>
+            <lines>1</lines>
+            <charwidth>2</charwidth>
+          </format>
+          <hint>Enter the approximate hours you sleep nights</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="0" RequiredMax="999" Class="registrySurvey" Align="Vertical" 	DescriptionPosition="above" >
+     <Description><![CDATA[If you have difficulty sleeping is it related more to:]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyAnswer" Appearance="full">
+            <width>480</width>
+            <item><label>Getting to sleep initially</label><value>1</value></item> 
+            <item><label>Maintaining sleep throughout the night</label><value>2</value></item> 
+	</Response>
+     </Responses>
+  </Item>
+  </Items>
+</Form>

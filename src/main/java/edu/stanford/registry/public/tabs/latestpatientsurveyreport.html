@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latest Completed Survey Report</title>
+
+  <script src="../js/jquery-1.12.0.min.cache.js"></script>
+  <script src="../js/angular-1.7.5.min.cache.js"></script>
+  <script src="../js/bootstrap-3.3.7.min.cache.js"></script>
+  <script src="../scripts/patient-latestsurvey-report.js"></script>
+  <script src="../scripts/choir-api.js"></script>
+  <script src="../js/d3.v4.min.cache.js"></script>
+
+  <link href="../css/bootstrap-3.3.7.min.cache.css" rel="stylesheet">
+
+  <style>
+    .line {
+      fill: none;
+      stroke: #ffab00;
+      stroke-width: 2;
+    }
+
+    /* Style the dots by assigning a fill and stroke */
+    .dot {
+      stroke: #fff;
+    }
+
+    div.tooltip {
+      position: absolute;
+      text-align: left;
+      width: auto;
+      padding: 5px;
+      font: 12px sans-serif;
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #000000;
+      pointer-events: none;
+      text-wrap: none;
+    }
+
+    .no-completed-registration{
+      padding: 10px 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div ng-app="PatientLatestSurveyReport" ng-controller="PatientLatestSurveyReportCtrl as vm">
+  <div class="container-fluid" ng-show="vm.instrumentTotalScore">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel with-nav-tabs">
+          <div class="panel-heading">
+            <ul class="nav nav-tabs">
+              <li class="active"><a class="allInstruments" href="#all" data-toggle="tab"
+                                    ng-click="vm.instrumentChartHandler('all')">Total Instrument Scores</a></li>
+              <li ng-repeat="instrument in vm.instrumentTotalScore"><a href="#{{instrument.name}}" data-toggle="tab"
+                                                                       ng-click="vm.instrumentChartHandler(this)">{{instrument.name}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-body">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="all">
+                <div class="all-instrument-chart"></div>
+              </div>
+              <div ng-repeat="instrument in vm.instrumentTotalScore" class="tab-pane" id="{{instrument.name}}">
+                <div class="instrument-chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Displaying score table from getTableInternal method -->
+      <div class="col-md-12">
+        <h3>Score Result</h3>
+        <div ng-repeat="study in vm.latestSurvey.Studies">
+          <div>
+            <h5>{{study.StudyDescription}}</h5>
+            <table class="table table-condensed">
+              <thead>
+              <tr>
+                <th ng-repeat="subScaleHeader in study.Table.Rows[0].column"
+                    style="width: {{subScaleHeader.width}}">{{subScaleHeader.value}}
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr ng-repeat="row in study.Table.Rows.slice(1) | limitTo : 3 : -3">
+                <td ng-repeat="col in row.column">{{col.value}}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Questions and Answers-->
+      <div class="col-md-12">
+        <h3>Questions and Answers</h3>
+        <div ng-repeat="study in vm.latestSurvey.Studies">
+          <div>
+            <h5>{{study.StudyDescription}}</h5>
+            <table class="table table-condensed">
+              <thead>
+              <tr>
+                <th>Question</th>
+                <th>Answer</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in study.questions">
+                  <td><span style="display: inline-block" ng-repeat="q in item.question">{{q}}</span></td>
+                  <td><span style="display: inline-block" ng-repeat="a in item.answer">{{a}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" ng-hide="vm.instrumentTotalScore">
+    <div class="row no-completed-registration" ><h3>{{vm.error}}</h3></div>
+  </div>
+</div>
+</body>
+
+</html>

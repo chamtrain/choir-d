@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Interface API</title>
+    <style type="javascript">
+    h1, h2 {
+      text-indent: 40px;
+    }
+    p {
+      padding-left: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>CHOIR interface integration points:</h1>
+    <ul>
+      <li><a href="#api-app-tabs">Application tabs </a></li>
+      <li><a href="#api-pat-tabs">Patient tabs</a></li>
+      <li><a href="#api-rpt-tabs">Report tabs</a></li>
+      <li><a href="#api-security">Security</a></li>
+    </ul>
+    <ul>
+      <li>
+        <div id="api-app-tabs">Application tabs (V1.0)</div>
+        <p><strong>ClientConfig </strong>  – the class that provides configuration values for the Registry App client – now includes new methods to insert custom tabs into the CHOIR application interface from within your sites <strong>RegistryCustomizer</strong>.
+        <ul>
+          <li><strong>addCustomTab(String[] authority, String path, String title)</strong>
+            <ul>
+              <li><strong>authority:</strong>Array of roles and views required to access the content of this tab. See
+                the <a href="#api-security">Security</a>section for mmore details</a></li>
+              <li><strong>path:</strong>The html content of the tab. This is a relative path for the html found in the application within the edu/stanford/registry/public directory</li>
+              <li><strong>title:</strong>The title displayed on the tab in the application</li>
+            </ul>
+          </li>
+          <li><strong>addCustomTab(String authority, String path, String title)</strong>
+            <ul>
+              <li><strong>authority:</strong>The single role required to access the content of this tab. See the <a
+                      href="#api-security">Security</a>section for mmore details
+              </li>
+              <li><strong>path:</strong>The html content of the tab. This is a relative path for the html found in the application within the edu/stanford/registry/public directory</li>
+              <li><strong>title:</strong>The title displayed on the tab in the application</li>
+            </ul>
+          </li>
+          <li><strong>addCustomTab(CustomTab tab)</strong>
+            <ul><li><strong>tab:</strong>CustomTab object containing the authority(s) required to see and use this tab, content path and title</li></ul>
+          </li>
+        </ul>
+      </li>
+      <p></p>
+      <li>
+        <div id="api-pat-tabs">Patient tabs (V1.0)</div>
+        <p><strong>ClientConfig </strong>  – the class that provides configuration values for the Registry App client – now includes new methods to insert custom tabs into the CHOIR application within the "Patient" tab.
+        <ul>
+          <li><strong>addCustomPatientTab(String[] authority, String path, String title)</strong>
+            <ul>
+              <li><strong>authority:</strong>Set of roles required to access the content of this tab. See the <a
+                      href="#api-security">Security</a>section for mmore details
+              </li>
+              <li><strong>path:</strong>The html content of the tab. This is a relative path for the html found in the application within the edu/stanford/registry/public directory</li>
+              <li><strong>title:</strong>The title displayed on the tab in the application</li>
+            </ul>
+          </li>
+          <li><strong>addCustomPatientTab(String authority, String path, String title)</strong>
+            <ul>
+              <li><strong>authority:</strong>The only role required to access the content of this tab. See the <a
+                      href="#api-security">Security</a>section for mmore details
+              </li>
+              <li><strong>path:</strong>The html content of the tab. This is a relative path for the html found in the application within the edu/stanford/registry/public directory</li>
+              <li><strong>title:</strong>The title displayed on the tab in the application</li>
+            </ul>
+          </li>
+          <li><strong>addCustomPatientTab(CustomTab tab)</strong>
+            <ul><li><strong>tab:</strong>CustomTab object containing the authority required to see and use this tab, content path and title</li></ul>
+          </li>
+        </ul>
+      </li>
+      <p></p>
+      <li>
+        <div id="api-rpt-tabs">Report tabs (V1.0.3)</div>
+        <p>Custom reports can be run through the API and optionally added into the CHOIR "Reports" tab from your sites <strong>RegistryCustomizer</strong>
+        <ul> <li>To create a custom report that runs through the API
+              <ol><li>Create a <strong>java class</strong> that implements <strong>edu.stanford.registry.server.service.ApiReportGenerator</strong>
+                    <ul>
+                      <li>The <strong>getReportParameters</strong>  method will be invoked when the API call has no JSON.
+                        <br>This method needs to return a JSONObject that defines the parameters for your report.
+                        <br>If your report needs only "from" and "to" date parameters, (like most standard reports), then make your class <strong>extend ApiReportGeneratorBase</strong> and don't implement <strong>getReportParameters</strong>
+                      </li>
+                      <li>The <strong>getReportData</strong>  method will be invoked when the API call has JSON.
+                        <br>This method should parse the JSON for the parameters, run the report and return the report output as JSON</li>
+                      <li>See <strong>server/reports/TreatmentSetReportGenerator.java</strong> for an example implementation of <strong>ApiReportGenerator</strong>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Create an <strong>html page</strong> to
+                    <ul>
+                      <li>Call the CHOIR API
+                        <br><strong><i>parent.choirApiV10()</i> + "report/[YOUR_REPORT_NAME]?siteId=" + parent.getSiteId();</strong>
+                        <br>If your report has custom parameters that need data from CHOIR, then an onload call to the API without JSON can be used to get the parameters
+                        <br>To run the report the call must include JSON with the parameters, {name: value} pairs, needed to run the report.
+                        <br>If your custom report only needs the from and to date parameters then your onload call to the api can simply include the following JSON object
+                        <br><strong>{ "fromDt": <i>parent.getFromDt()</i>, "toDt": <i>parent.getToDt()</i>}</strong>
+                      </li>
+                      <li>See <strong>public/reports/tsetLast7days.html</strong> for an example custom report html page with handling for custom parameters.</li>
+                    </ul>
+                  </li>
+                  <li>In your sites RegistryCustomizer class, override the method getCustomApiReportGenerator to return the class you created in step 1 above that implements ApiReportGenerator for
+                  [YOUR_REPORT_NAME] that's used in your html page's API calls. </li>
+                  <li>Add the report into the CHOIR "Reports" tab
+                    <ul>
+                      <li>Define a.CustomClinicReportConfig with the report title and path to your html page created in step 2 above.</li>
+                      <li>Include the new CustomClinicReportConfig in your clientConfig. For example:<pre>
+                        CustomClinicReportConfig reportConfig = new CustomClinicReportConfig("Your custom report", "reports/[YOUR_REPORT_NAME].html");
+                        reportConfig.setWidgetType(CustomClinicReportConfig.WidgetType.api);
+                        clientConfig.setCustomReports(new CustomClinicReportConfig[] { reportConfig });
+                      </pre></li>
+                    </ul>
+                  </li>
+              </ol>
+        </li>
+          <li><strong>The predefined CHOIR reports</strong> on the "Reports" tab can also be run outside of the CHOIR
+            client using the API
+            <br>JSON object <strong>reportParameters</strong> is returned when the report API call has no JSON.
+            <br>JSON Object <strong>reportDataSet</strong> is returned when the report API call receives JSON with the
+            parameter values needed to run the report
+        <p>For example, a call to "http..../svc/apiV10/json/report/AverageSurveyTimeByMonth" without JSON will return the <strong>reportParameters</strong> JSON object with the parameters required for running the CHOIR report "Avg Survey Times by Month"
+        <pre>
+          {
+            "reportParameters": [
+              {
+                "title": "From",
+                "name": "fromDt",
+                "type": "date"
+              },
+              {
+                "title": "To",
+                "name": "toDt",
+                "type": "date"
+              }
+            ]
+          }
+        </pre>
+        The same call ("http..../svc/apiV10/json/report/AverageSurveyTimeByMonth") with the following JSON
+        <pre>
+          {
+            "fromDt": "2017-01-01",
+            "toDt": "2017-06-30"
+          }
+        </pre>
+        Will return the <strong>reportDataSet</strong> JSON object with the report
+        <pre>
+          {
+            "reportDataSet":[
+              ["Month","Average Time (MIN:SS)","Std Deviation (MIN:SS)"]
+              ["2017-01","11:26","00:05:13"],
+              ["2017-02","10:28","00:04:53"],
+              ["2017-03","10:15","00:04:50"],
+              ["2017-04","10:48","00:04:48"],
+              ["2017-05","10:22","00:05:16"],
+              ["2017-06","10:47","00:04:36"]
+            ]
+          }
+        </pre>
+        <strong>CHOIR "Report" tab names in the API</strong>
+        <table border="2" cellspacing="0" cellpadding="4">
+          <tr><td style="background-color: #666; color: #fff;" >Report Name</td><td style="background-color: #666; color: #fff;">API</td></tr>
+          <tr><td>Activity Counts</td><td>apiV10/json/report/cr1</td></tr>
+          <tr><td>Registered Patients</td><td>apiV10/json/report/registration</td></tr>
+          <tr><td>Patient Visits</td><td>apiV10/json/report/visits</td></tr>
+          <tr><td>Avg Survey Times</td><td>apiV10/json/report/AverageSurveyTime</td></tr>
+          <tr><td>Avg Survey Times by Month</td><td>apiV10/json/report/AverageSurveyTimeByMonth</td></tr>
+          <tr><td>Avg Survey Times by Type</td><td>apiV10/json/report/AverageSurveyTimeByType</td></tr>
+        </table>
+      </li>
+    </ul>
+    <h2>
+      <div id="api-security">Security</div>
+    </h2>
+    <p>When adding a custom tab you need to identify which CHOIR permissions are needed for the API calls you are
+      using. </p>
+    <p>Custom <b>Views</b> can optionally be created to control displaying custom tabs to a defined subset of users</p>
+    <p>Views and permissions are granted to users by using the CHOIR User Administation tab.
+    <p>For a user to be given a custom tab they must have <b>ALL</b> the permissions and at least <b>ONE</b> of the
+      views listed in the authority array used to define the tab</p>
+    <p>Tabs are not visible unless the user has all of the roles identified in the authority parameter.</p>
+    <p></p>
+    <p><a href="../index.html">Return to previous page</a></p>
+  </body>
+</html>

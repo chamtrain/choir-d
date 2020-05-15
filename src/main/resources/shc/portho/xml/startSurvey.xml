@@ -1,0 +1,27 @@
+<Form Description="Start Survey" questionsPerPage="1">
+ <Items>
+   <Item Order="1">
+     <Description>
+     The following questions should be completed by the patient. 
+     If the patient is unable to complete the questions on their own a parent or caregiver may assist them.
+     </Description>
+     <Description>
+     What is the patient's name?
+     </Description>
+     <Responses>
+       <Response Order="1" Type="input" required="true">
+         <ref>PATIENTNAME</ref>
+         <format>
+           <datatype>text</datatype>
+           <lines>1</lines>
+           <charwidth>80</charwidth>
+         </format>
+         <hint>
+         Enter your name if you are filling out this survey for yourself,
+         or the patient's name if you are assisting someone else.
+         </hint>
+       </Response>
+     </Responses>
+   </Item>
+ </Items>
+</Form>

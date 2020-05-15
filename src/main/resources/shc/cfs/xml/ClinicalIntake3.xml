@@ -1,0 +1,22 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="1">
+  <Items>
+
+
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        Have you had your fatigue/energy-related illness as long as you can remember? That is, have you had your illness your entire life?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Yes</label></item>
+          <item><value>2</value><label>No</label></item>
+          <item><value>3</value><label>Not Sure</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+
+  </Items>
+</Form>

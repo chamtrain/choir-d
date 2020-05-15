@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outcomes Survey</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <link rel="icon" type="image/ico" href="data:image/ico;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wDa2vAkgYHMtWxsxJPw8PkM////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wCiotpaCgqd8z8/sv8AAJn/ICCl3szM6jH///8A////AP///wD///8A////AP///wD///8A////AP///wCGhs53AACZ/wAAmf8/P7L/AACZ/wAAmf8KCp31vLzkQf///wD///8A////AP///wD///8A////AP///wCiotpaISGm/S8vrP8vL6z/Pz+y/wAAmf8AAJn/Cwud/xsbo/DU1O4p////AP///wD///8A////AP///wDe3vIfDAyd83xwy/+kjtz/wrPn/z8/sv8AAJn/AACZ/1pavf9ISLb/MDCsz/r6/QP///8A////AP///wD///8AWFi8pk5MuP+biNj/jG/S/5uD2P8/P7L/AACZ/wAAmf9FRbT/mprW/wwMnf+YmNZl////AP///wD///8A4ODyHQQEmvxmZML/tKLi/7yr5f93dcj/Pz+y/wAAmf8QEJ//nZ3Y/3Z2yP8AAJn/Jiao2f///wD///8A////AIqK0HIAAJn/VFK7/2tTxf+Xidb/Jiao/z8/sv8AAJn/Jiao/6ys3v8wMKz/AACZ/wAAmf/Kyuoy////AP///wBiYr+1ICCl/yAgpf8gIKX/ICCl/yAgpf9XV7z/AACZ/wAAmf9KSrb/k5PU/ywsqv8AAJn/iIjPdf///wD///8AQkKz4jMzrf9SUrr/d3fJ/0lJtv8vL6z/Y2PA/wAAmf8AAJn/PDyx/2NjwP9nZ8L/AACZ/1xcvaH///8A////AAUFmv1kZMH/ysrp/9XV7v+2tuH/NDSu/z8/sv8AAJn/AACZ/29vxf+np9v/BASa/wAAmf9CQrO9////AP///wAGBpv/m5vX/4eHz//u7vj/Tk64/5eX1f8/P7L/AACZ/ywsqv+qqt3/QECy/wAAmf8AAJn/QECyv////wD///8AAgKZ/QAAmf9ra8T/3d3x/ykpqf8CApn/Pz+y/wcHm/+JidD/MDCs/1dXvP8AAJn/AACZ/0BAsr3///8A////ABgYouUAAJn/Wlq9/9/f8v8XF6L/AACZ/z8/sv8UFKH/kZHT/6el3P9iYsD/AACZ/wAAmf9YWLym////AP///wBCQrO9AACZ/yMjp/+vr9//BASa/wAAmf8/P7L/AACZ/wAAmf8ICJz/AACZ/wAAmf8AAJn/goLNff///wD///8Ajo7ScCAgpd4gIKXeS0u33iAgpd4gIKXeV1e73iAgpd4gIKXeICCl3iAgpd4gIKXeICCl3sbG6Dj///8A/n8AAPw/AAD4HwAA8A8AAOAHAADABwAAwAMAAMADAACAAwAAgAEAAIABAACAAQAAgAEAAIABAACAAwAAwAMAAA=="/>
+  <link rel="apple-touch-icon" href="images/ipadicon.png"/>
+  <style type="text/css">
+    a, input[type="button"], input[type="checkbox"], input[type="image"], input[type="radio"], input[type="reset"] {
+      /* Disable the popup menus when long-pressing controls */
+      -webkit-touch-callout: none;
+      -moz-touch-callout: none;
+      touch-callout: none;
+      /* Prevent touches accidentally selecting text or buttons */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    /* Remove some ugliness when tapping */
+    *:active {
+      -webkit-tap-highlight-color: transparent;
+      -moz-tap-highlight-color: transparent;
+      tap-highlight-color: transparent;
+    }
+    /* Remove the Firefox outlining */
+    select:-moz-focusring {
+      color: transparent;
+    }
+    /* Override default display:block put on the image wrapper div by maphilight library */
+    .hilightImgWrapper {
+      display: inline-block !important;
+    }
+    @media (max-width: 640px) {
+      /* See NumericScalePage - flip label to top on small screens */
+      .s-scale-left-label {
+        top:-3em !important;
+      }
+      .unlabeledNumericScale > .ui-controlgroup > .ui-controlgroup-label,
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-label,
+      .unlabeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls,
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls {
+        margin-top: 1em;
+        display: block;
+        float: none;
+        width: 100%;
+      }
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        max-width: 400px;
+      }
+    }
+    @media (min-width: 641px) /*and (max-width: 800px)*/ {
+      .unlabeledNumericScale > .ui-controlgroup > .ui-controlgroup-label,
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-label,
+      .unlabeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls,
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls {
+        margin-top: 1em;
+        display: block;
+        float: none;
+        width: 100%;
+      }
+      .labeledNumericScale > .ui-controlgroup > .ui-controlgroup-controls {
+        margin-bottom: 4em;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="jquery.mobile.default-1.4.5.min.cache.css"/>
+  <!--<script src="fastclick-2013-06-27.cache.js"></script>-->
+  <script src="jquery-1.11.2.cache.js"></script>
+  <script src="jquery.blockUI-2.61.0-2013.06.06.cache.js"></script>
+  <script src="jquery.maphilight-2013-04-07.cache.js"></script>
+  <script type="text/javascript" language="javascript">
+    // This jQuery Plugin will disable text selection for Android and iOS devices.
+    // Stackoverflow Answer: http://stackoverflow.com/a/2723677/1195891
+//    $(document).ready(function(){
+//      $('body').disableSelection();
+//    });
+//    $.fn.extend({
+//      disableSelection: function() {
+//        this.each(function() {
+//          this.onselectstart = function() {
+//            return false;
+//          };
+//          this.unselectable = "on";
+//          $(this).css('-moz-user-select', 'none');
+//          $(this).css('-webkit-user-select', 'none');
+//        });
+//      }
+//    });
+    // Custom configuration for jQuery Mobile
+    $(document).on("mobileinit", function(){
+      $.mobile.ajaxEnabled = false;
+      $.mobile.pushStateEnabled = false;
+    });
+    if (window.location.hash.length > 0) {
+      window.location.hash = ' ';
+      window.location = window.location;
+    }
+  </script>
+  <script src="jquery.mobile-1.4.5.min.cache.js"></script>
+  <script src="survey2test.nocache.js"></script>
+</head>
+<body>
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+<noscript>
+  <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+    Your web browser must have JavaScript enabled
+    in order for this application to display correctly.
+  </div>
+</noscript>
+<div data-role="page" id="start"></div>
+<!--<script src="ios-orientationchange-fix-2013-06-27.cache.js"></script>-->
+</body>
+</html>

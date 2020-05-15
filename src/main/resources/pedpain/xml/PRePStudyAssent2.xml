@@ -1,0 +1,113 @@
+<Form Description="Pediatic Pain PReP Research Assent" questionsPerPage="1" >
+  <Items>
+    <Item Order="2" ref="assent" Class="surveyQuestionCollapsible" >
+      <PatientAttribute data_name="PrepResearchAssent" data_value="any" condition="notexists"/>
+      <PatientAttribute data_name="age" data_value="7" condition="greaterthan"/>
+      <PatientAttribute data_name="age" data_value="18" condition="lessthan"/>
+      <Description>
+<![CDATA[
+  We are asking you to be in a research study to understand more about kids with pain and how they deal with it. 
+  Our team wants to know how pain affects what you think, how you feel, and what you do in your day-to-day life.
+  <p>Do you agree to allow us to use these questionnaires and your health related information
+  for this research study?</p>
+]]>
+      </Description>
+      <CollapsibleContent>
+<![CDATA[
+  <h3>Assessment of Pediatric Pain: Pediatric Pain Rehabilitation Program</h3>
+  <p><b>1. What will happen to me in this study?</b></p>
+  <p>
+  We are asking you to be in a research study to understand more about kids with pain and how they deal with it. 
+  Our team wants to know how pain affects what you think, how you feel, and what you do in your day-to-day life. 
+  We want to improve how we evaluate (ask about) and treat (help) kids with pain by learning from you and your family.
+  </p>
+  <p>
+  If you agree to be part of this study, we will use your responses to improve how we help kids and families like 
+  yours in the future. You will also be asked to answer some of the same questions in 3, 6, 9 months, 1, 2, 3 years. 
+  At anytime, you have the right to refuse to answer particular questions. In this study you will answer questions 
+  on an iPad or on paper with pencil and take some pictures of things to explain your pain. We are happy to talk to 
+  you more about what you will be doing in this study.
+  </p>
+  <p><b>WHAT YOU WILL BE DOING:</b></p>
+  <p>
+  1. You and your parent will answer questions on an iPad or on paper with pencil that will take about 45 minutes on 
+  your first day in the program.  We will make sure you have time in your schedule to finish the questions. You will 
+  answer these questions again when you end the program in several weeks and again in a few months.
+  </p>
+  <p>
+  2. You will be asked to take some pictures with your smartphone or one of our digital cameras to explain how pain 
+  has been a problem for you. You will be asked to take pictures of things to tell a story about your pain. 
+  Your pictures should not have anything that could show that it is from you, so no pictures of your face or 
+  anyone else’s face, no names, no addresses, or anything that could link the pictures to you.
+  </p>
+  <p>
+  3. You and your parent will also answer questions on an ipad or on paper with pencil that will take about 15 minutes once a week.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b></p>
+  <p>
+  Pediatric Rehabilitation Pain Program (PReP): if you agree to participate in this research, after your graduation from the 
+  rehabilitation pain program, you will answer the same questions 3, 6, 9 months, 1, 2, and 3 years after your finish the program. 
+  The first time you answer the questions it might take about 45 minutes, but the weekly questions you answer after that will 
+  only take about 15 minutes.  Once you finish the program you will answer all of the questions again and that might 
+  take 30 to 45 minutes to complete online.
+  </p>
+  <p><b>2. Can anything bad happen to me?</b></p>
+  <p>
+  It is up to you to decide if you want to be part of the research study. Helping with this study will not cause anything bad to 
+  happen to you. We do want you to be honest in answering the questions, and no one but us will know your answers. If you do not 
+  understand some questions, or some questions make you feel worried or sad, our team will be happy to talk to you.
+  </p>
+  <p><b>3. Can anything good happen to me?</b></p>
+  <p>
+  We cannot and do not guarantee or promise that you will receive benefits from this study. However, the questions that you will 
+  answer will be used to make sure we know how well the program is helping you. Being part of our study may help you feel good 
+  about being involved in research for kids with chronic pain. If you agree to do this study, you can tell us how you feel about 
+  your pain, and what you do about it. We will study and share what we learned from you to help other kids with pain in the future, 
+  and we can share those results with you if you would like. You will help to give us information that can be used to improve 
+  treatment to reduce the impact of pain on your life.
+  </p>
+  <p><b>4. Do I have other choices?</b></p>
+  <p>
+  Of course! Your participation in this study is your choice, and you can stop being in this study at any time. The other choice 
+  is not to participate, and this is okay with us and you can just answer the questions that are part of your treatment in PReP. 
+  Being in the study will not affect how we take care of you at Stanford.
+  </p>
+  <p><b>5. Will anyone know I am in the study?</b></p>
+  <p>
+  Your participation in this study will be kept confidential (secret). No one but our pediatric research team will know that 
+  you are participating. Even your parents will not know how you answer questions, unless you want them to, or we have to tell 
+  them something to keep you healthy.
+  </p>
+  <p><b>6. Who can I talk to about the study?</b></p>
+  <p>
+  If you have any questions about the study or any problems with the study you can contact the Protocol Director, Dr. Anya Griffin 
+  at (650) 736-3656. You can also call Co-Protocol Director, Dr. Amanda Feinstein at (650) 736-3494.
+  </p>
+  <p>
+  If you have questions about the study but want to talk to someone else who is not a part of the study, you can call the 
+  Stanford Institutional Review Board (IRB) at (650)-723-5244 or toll free at 1-866-680-2906.
+  </p>
+  <p><b>7. What if I do not want to do this?</b></p>
+  <p>
+  Your participation in this study is voluntary, meaning you can choose to be in the study or not. It is 100% up to you and your parents. 
+  Even if you decide to do the study and then change your mind, that is okay. Our medical team will continue to work with you and 
+  help you if you need it.
+  </p>
+]]>
+      </CollapsibleContent>
+      <Responses>
+        <!-- Yes is expected to be Response Order 0 -->
+        <Response Order="0" Type="radio" >
+          <Description>Yes, I agree</Description>
+          <Scores><Score value="0"/></Scores>
+          <SetPatientAttribute data_name="PrepResearchAssent" data_value="y"/>
+        </Response>
+        <Response Order="1" Type="radio" >
+          <Description>No, I do not agree</Description>
+          <Scores><Score value="1"/></Scores>
+          <SetPatientAttribute data_name="PrepResearchAssent" data_value="n"/>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

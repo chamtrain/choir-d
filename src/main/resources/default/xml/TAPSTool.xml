@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?><Form DateFinished="" DateStarted="" Description="TAPS" questionsPerPage="9">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="1" Section="start">
+      <Description><![CDATA[In the past 12 months, how often have you used any tobacco product?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost Daily]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Daily]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <ref>tobacco_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[In the past 12 months, how often have you had 5 or more drinks containing alcohol in one day?]]></Description>
+      <PatientAttribute condition="equal" data_name="gender" data_value="Male"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="false">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost Daily]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Daily]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <ref>alcohol_male_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[In the past 12 months, how often have you had 4 or more drinks containing alcohol in one day?]]></Description>
+      <PatientAttribute condition="equal" data_name="gender" data_value="Female"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost Daily]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Daily]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <ref>alcohol_female_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4" >
+      <Description><![CDATA[In the past 12 months, how often have you used any drugs including marijuana, cocaine or crack, heroin, methamphetamine (crystal meth), hallucinogens, ecstasy/MDMA?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost Daily]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Daily]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <ref>drugs_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5" Section="end">
+      <Description><![CDATA[In the past 12 months, how often have you used any prescription medications just for the feeling,
+      more than prescribed or that were not prescribed for you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Never]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Almost Daily]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Daily]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <ref>prescript_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6" Section="start" Page="start">
+      <Description><![CDATA[In the past 3 months, did you smoke a cigarette containing tobacco?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='tobacco_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="7">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="8">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>tobacco_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7" Visible="false">
+      <Description><![CDATA[In the past 3 months, did you usually smoke more than 10 cigarettes each day?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='tobacco_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>10_cigs_daily</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8" Visible="false" Section="end">
+      <Description><![CDATA[In the past 3 months, did you usually smoke within 30 minutes after waking?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='tobacco_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>smoke_after_waking</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9" Page="start" Section="start">
+      <Description><![CDATA[In the past 3 months, did you have a drink containing alcohol?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='alcohol_male_12' or ref='alcohol_female_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="11">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="12">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="13">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>alcohol_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="10" Visible="false">
+      <Description><![CDATA[In the past 3 months, did you have 4 or more drinks containing alcohol in a day?]]></Description>
+      <PatientAttribute condition="equal" data_name="gender" data_value="Female"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='alcohol_male_12' or ref='alcohol_female_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>alcohol_female_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11" Visible="false">
+      <Description><![CDATA[In the past 3 months, did you have 5 or more drinks containing alcohol in a day?]]></Description>
+      <PatientAttribute condition="equal" data_name="gender" data_value="Male"/>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='alcohol_male_12' or ref='alcohol_female_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>alcohol_male_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12" Visible="false">
+      <Description><![CDATA[In the past 3 months, have you tried and failed to control, cut down or stop drinking?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='alcohol_male_12' or ref='alcohol_female_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>alcohol_control</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13" Visible="false" Section="end">
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your drinking?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='alcohol_male_12' or ref='alcohol_female_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>alcohol_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="14" Page="start" Section="start">
+      <Description><![CDATA[In the past 3 months, did you use marijuana (hash, weed)?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="15">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="16">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>marijuana_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="15" Visible="false">
+      <Description><![CDATA[In the past 3 months, have you had a strong desire or urge to use marijuana at least once a week or more often?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>marijuana_weekly</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="16" Visible="false" >
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of marijuana?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>marijuana_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="17"> <!-- Section="start" Page="start"-->
+    <Description><![CDATA[In the past 3 months, did you use cocaine, crack, or methamphetamine (crystal meth)?]]></Description>
+    <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+    <Responses>
+      <Response Appearance="Full" Order="0" Type="select1" required="true">
+        <item>
+          <label><![CDATA[Yes]]></label>
+          <value><![CDATA[1]]></value>
+          <onselect Type="Item" Where="Order" Value="18">
+            <Set Type="attribute" Name="RequiredMin" Value="1"/>
+            <Set Type="state" Name="visible" Value="true"/>
+          </onselect>
+          <onselect Type="Item" Where="Order" Value="19">
+            <Set Type="attribute" Name="RequiredMin" Value="1"/>
+            <Set Type="state" Name="visible" Value="true"/>
+          </onselect>
+        </item>
+        <item>
+          <label><![CDATA[No]]></label>
+          <value><![CDATA[0]]></value>
+        </item>
+        <ref>cocaine_3</ref>
+      </Response>
+    </Responses>
+  </Item>
+    <Item ItemResponse="" ItemScore="" Order="18" Visible="false">
+      <Description><![CDATA[In the past 3 months, did you use cocaine, crack, or methamphetamine (crystal meth) at least once a week or more often?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>cocaine_weekly</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="19" Visible="false"> <!--Section="end" -->
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of cocaine, crack, or methamphetamine (crystal meth)?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>cocaine_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="20"> <!-- Section="start" Page="start"-->
+      <Description><![CDATA[In the past 3 months, did you use heroin?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="21">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="22">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>heroin_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="21" Visible="false">
+      <Description><![CDATA[In the past 3 months, have you tried and failed to control, cut down or stop using heroin?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>heroin_control</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="22" Visible="false" Section="end">
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of heroin?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='drugs_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>heroin_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="23" Section="start" Page="start">
+      <Description><![CDATA[In the past 3 months, did you use a prescription opiate pain reliever (for example, Percocet, Vicodin) not as prescribed or that was not prescribed for you?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="24">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="25">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>painreliever</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="24" Visible="false">
+      <Description><![CDATA[In the past 3 months, have you tried and failed to control, cut down or stop using an opiate pain reliever?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>control_opiates</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="25" Visible="false"><!--Section="end"-->
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of an opiate pain reliever?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>opiate_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="26"> <!-- Section="start" Page="start"-->
+      <Description><![CDATA[In the past 3 months, did you use a medication for anxiety or sleep (for example, Xanax, Ativan,or Klonopin) not as prescribed or that was not prescribed for you?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="27">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="28">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>anxiety_sleep_med</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="27" Visible="false">
+      <Description><![CDATA[In the past 3 months, have you had a strong desire or urge to use medications for anxiety or sleep at least once a week or more often?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>desireforuse</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="28" Visible="false"> <!-- Section="end"-->
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of medication for anxiety or sleep?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>concernofuse</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="29"> <!-- Section="start" Page="start"-->
+      <Description><![CDATA[In the past 3 months, did you use a medication for ADHD (for example, Adderall, Ritalin) not asprescribed or that was not prescribed for you?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+            <onselect Type="Item" Where="Order" Value="30">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="31">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>ADHD</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="30" Visible="false">
+      <Description><![CDATA[In the past 3 months, did you use a medication for ADHD (for example, Adderall, Ritalin) at least once a week or more often?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>morethanonce</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="31" Visible="false" Section="end">
+      <Description><![CDATA[In the past 3 months, has anyone expressed concern about your use of a medication for ADHD (for example, Adderall or Ritalin)?]]></Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='prescript_12']/item[@selected='true' and (label='Almost Daily' or label='Daily')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <ref>ADHD_use_concern</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

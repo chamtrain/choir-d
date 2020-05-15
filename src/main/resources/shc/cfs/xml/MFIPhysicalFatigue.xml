@@ -1,0 +1,8 @@
+<Form Description="MFI Physical Fatigue" questionsPerPage="1">
+<Items>
+  <!--
+    This is a place holder file used to specify a print_order and print_type
+    in the process.xml. This file does not contain any questions.
+  -->
+</Items>
+</Form>

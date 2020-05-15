@@ -1,0 +1,114 @@
+<Form Description="Initial Parent - Child Medical" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        Please tell us about your child's medical history.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Section="start">
+      <Description>
+        <![CDATA[
+        What is the reason that your child was referred to the pain clinic?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="primary-reason" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Abdominal pain or irritable bowel syndrome</label></item>
+          <item><value>2</value><label>Headache</label></item>
+          <item><value>3</value><label>Joint pain/arthralgia</label></item>
+          <item><value>4</value><label>Musculoskeletal pain</label></item>
+          <item><value>5</value><label>Juvenile arthritis</label></item>
+          <item><value>6</value><label>Complex regional pain syndrome</label></item>
+          <item><value>7</value><label>Fibromyalgia or pain amplification syndrome</label></item>
+          <item><value>8</value><label>Back pain</label></item>
+          <item><value>9</value><label>Upper extremity pain</label></item>
+          <item><value>10</value><label>Lower extremity pain</label></item>
+          <item><value>11</value><label>Neck pain</label></item>
+          <item><value>12</value><label>Pain related to cancer</label></item>
+          <item><value>13</value><label>Sickle cell disease</label></item>
+          <item><value>14</value><label>Ehlers Danlos Syndrome</label></item>
+          <item><value>15</value><label>Post-concussive syndrome</label></item>
+          <item><value>16</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="3"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Other, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="primary-reason-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4" Section="start">
+      <Description>
+        <![CDATA[
+        Is there a second reason that your child was referred to the pain clinic?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="have-secondary-reason" Order="1" Type="select1" required="true">
+          <item><value>0</value><label>No</label></item>
+          <item><value>1</value><label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="5"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" Visible="false">
+      <Description>
+        <![CDATA[
+        <h4>If yes, what is the second reason they were referred here?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="secondary-reason" Order="1" Type="select1" required="true">
+          <item><value>1</value><label>Abdominal pain or irritable bowel syndrome</label></item>
+          <item><value>2</value><label>Headache</label></item>
+          <item><value>3</value><label>Joint pain/arthralgia</label></item>
+          <item><value>4</value><label>Musculoskeletal pain</label></item>
+          <item><value>5</value><label>Juvenile arthritis</label></item>
+          <item><value>6</value><label>Complex regional pain syndrome</label></item>
+          <item><value>7</value><label>Fibromyalgia or pain amplification syndrome</label></item>
+          <item><value>8</value><label>Back pain</label></item>
+          <item><value>9</value><label>Upper extremity pain</label></item>
+          <item><value>10</value><label>Lower extremity pain</label></item>
+          <item><value>11</value><label>Neck pain</label></item>
+          <item><value>12</value><label>Pain related to cancer</label></item>
+          <item><value>13</value><label>Sickle cell disease</label></item>
+          <item><value>14</value><label>Ehlers Danlos Syndrome</label></item>
+          <item><value>15</value><label>Post-concussive syndrome</label></item>
+          <item><value>16</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="6"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Other, please describe</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="secondary-reason-other" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>1</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

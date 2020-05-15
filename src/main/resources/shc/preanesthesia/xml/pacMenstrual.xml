@@ -1,0 +1,70 @@
+<Form Description="Issues" DateStarted="" DateFinished="" questionsPerPage="11">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description><![CDATA[Are you having menstrual periods?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1">
+          <ref>HASMENSTRUAL</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2"><Set Type="state" Name="visible" Value="true"/></onselect>
+            <onselect Type="Item" Where="Order" Value="3"><Set Type="state" Name="visible" Value="true"/></onselect>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+            <onselect Type="Item" Where="Order" Value="4"><Set Type="state" Name="visible" Value="true"/></onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description><![CDATA[Date of last menstrual period]]></Description>
+      <Responses>
+        <Response Order="1" Type="datePicker" inlineBlind="true" useFocus="true">
+          <ref>LASTPERIOD</ref>
+          <label></label>
+          <hint>Enter a valid date</hint>
+          <format>
+            <lines>1</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="false">
+      <Description><![CDATA[Is there a possibility that you may be pregnant?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+          <ref>POSSPREGNANT</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false">
+      <Description><![CDATA[What is the reason you are not having menstrual periods?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full" Class="registrySurvey" Align="vertical">
+          <ref>NOMENSTRUAL</ref>
+          <item><label>Hysterectomy</label><value>0</value></item>
+          <item><label>Birth control pills</label><value>1</value></item>
+          <item><label>Intrauterine device (IUD)</label><value>2</value></item>
+          <item><label>Never had menstrual periods</label><value>3</value></item>
+          <item><label>Post-menopausal</label><value>4</value></item>
+          <item><label>Currently pregnant</label><value>5</value></item>
+          <item><label>Not sure</label><value>6</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,28 @@
+<Form Description="Functional Assessment" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">     
+  <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="999" Class="painexpQuestion" Align="Horizontal" DescriptionPosition="above" >
+     <Description><![CDATA[Please describe your activities in an average day]]></Description>
+     <Responses>
+        <Response Order="1" Type="select" align="vertical" Class="registrySurveyCBInline" Appearance="full">
+            <width>280</width>
+            <item><label>Laying in bed all day</label><value>1</value></item> 
+            <item><label>Going to school</label><value>2</value></item> 
+            <item><label>Going to work</label><value>3</value></item> 
+            <item><label>Taking care of family</label><value>4</value></item> 
+        </Response>
+        <Response Order="2" required="false" Type="input"  Class="surveyAugText" Align="Vertical"><Scores />
+            <ref>text</ref>
+            <label>and/or</label>
+            <location>above</location>
+            <alert></alert>
+            <format>
+                <datatype>text</datatype>
+           	<charwidth>80</charwidth>
+           	<lines>5</lines>
+            </format>
+            <hint>Optional: you may enter additional descriptions</hint>
+        </Response>
+     </Responses>
+  </Item>
+ </Items>
+</Form>

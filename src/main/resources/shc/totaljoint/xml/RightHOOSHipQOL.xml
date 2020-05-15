@@ -1,0 +1,68 @@
+<Form Description="HOOS Hip Survey - Quality of Life" questionsPerPage="1">
+  <Items>
+    <Item Order="37">
+      <Description>
+        <![CDATA[
+        <p>How often are you aware of your right hip problem?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q1" Type="select1" required="true">
+          <item><value>0</value><label>Never</label></item>
+          <item><value>1</value><label>Monthly</label></item>
+          <item><value>2</value><label>Weekly</label></item>
+          <item><value>3</value><label>Daily</label></item>
+          <item><value>4</value><label>Constantly</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="38">
+      <Description>
+        <![CDATA[
+        <p>Have you modified your life style to avoid activities potentially damaging to your right hip?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q2" Type="select1" required="true">
+          <item><value>0</value><label>Not at all</label></item>
+          <item><value>1</value><label>Mildly</label></item>
+          <item><value>2</value><label>Moderately</label></item>
+          <item><value>3</value><label>Severely</label></item>
+          <item><value>4</value><label>Totally</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="39">
+      <Description>
+        <![CDATA[
+        <p>How much are you troubled with lack of confidence in your right hip?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q3" Type="select1" required="true">
+          <item><value>0</value><label>Not at all</label></item>
+          <item><value>1</value><label>Mildly</label></item>
+          <item><value>2</value><label>Moderately</label></item>
+          <item><value>3</value><label>Severely</label></item>
+          <item><value>4</value><label>Extremely</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="40">
+      <Description>
+        <![CDATA[
+        <p>In general, how much difficulty do you have with your right hip?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="Q4" Type="select1" required="true">
+          <item><value>0</value><label>None</label></item>
+          <item><value>1</value><label>Mild</label></item>
+          <item><value>2</value><label>Moderate</label></item>
+          <item><value>3</value><label>Severe</label></item>
+          <item><value>4</value><label>Extreme</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

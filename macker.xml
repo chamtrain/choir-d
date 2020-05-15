@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!-- This file contains architectural constraints that will be enforced by the "classes" target
+     in the Ant build. For details on the syntax see http://innig.net/macker/guide/index.html -->
+<macker>
+  <ruleset name="Dependency Rules">
+    <pattern name="client-java">
+      <include class="java.io.Serializable"/>
+      <include class="java.lang.*"/>
+      <include class="java.util.*"/>
+      <include class="void"/>
+      <include class="int"/>
+      <include class="boolean"/>
+      <include class="long"/>
+      <include class="char"/>
+      <include class="byte"/>
+      <include class="double"/>
+      <include class="float"/>
+    </pattern>
+    <pattern name="client-gwt">
+      <include class="com.google.gwt.**.client.**"/>
+      <include class="com.google.gwt.**.shared.**"/>
+      <include class="com.google.web.bindery.autobean.shared.*"/>
+      <include class="com.google.web.bindery.event.shared.*"/>
+    </pattern>
+
+    <pattern name="server-java">
+      <include pattern="client-java"/>
+      <include class="java.beans.**"/>
+      <include class="java.io.**"/>
+      <include class="java.nio.charset.**"/>
+      <include class="java.lang.**"/>
+      <include class="java.math.**"/>
+      <include class="java.net.**"/>
+      <include class="java.security.**"/>
+      <include class="java.text.**"/>
+      <include class="java.util.**"/>
+      <include class="javax.activation.**"/>
+      <include class="javax.imageio.**"/>
+      <include class="javax.mail.**"/>
+      <include class="javax.naming.**"/>
+      <include class="javax.servlet.**"/>
+      <include class="javax.xml.**"/>
+      <include class="javax.inject.**"/>
+    </pattern>
+    <pattern name="server-gwt">
+      <include pattern="client-gwt"/>
+      <include class="com.google.gwt.logging.**"/>
+      <include class="com.google.gwt.user.server.rpc.RemoteServiceServlet"/>
+      <include class="com.google.web.bindery.autobean.shared.AutoBean"/>
+      <include class="com.google.web.bindery.autobean.shared.AutoBeanCodex"/>
+      <include class="com.google.web.bindery.autobean.shared.AutoBeanUtils"/>
+      <include class="com.google.web.bindery.autobean.shared.Splittable"/>
+      <include class="com.google.web.bindery.autobean.vm.AutoBeanFactorySource"/>
+    </pattern>
+    <pattern name="server-libs">
+      <include class="org.apache.commons.codec.**"/>
+      <include class="org.apache.commons.lang.**"/>
+      <include class="org.apache.commons.math3.**"/>
+      <include class="org.apache.log4j.**"/>
+      <include class="org.json.**"/>
+      <include class="org.apache.**"/>
+      <include class="org.jfree.**"/>
+      <include class="org.restlet.**"/>
+      <include class="org.slf4j.**"/>
+      <include class="org.w3c.dom.**"/>
+      <include class="org.xml.**"/>
+      <include class="au.com.bytecode.opencsv.**"/>
+      <include class="com.seguedevelopment.**"/>
+      <include class="com.github.susom.database.**"/>
+      <include class="ca.uhn.hl7v2.**"/>
+    </pattern>
+
+    <access-rule>
+      <message>Survey client dependencies were violated</message>
+      <deny>
+        <from class="edu.stanford.survey.client.api.**"/>
+        <allow>
+          <to>
+            <include class="edu.stanford.survey.client.api.*"/>
+            <include pattern="client-java"/>
+            <include pattern="client-gwt"/>
+          </to>
+        </allow>
+      </deny>
+      <deny>
+        <from class="edu.stanford.survey.client.ui.**"/>
+        <allow>
+          <to>
+            <include class="edu.stanford.survey.client.ui.**"/>
+            <include class="edu.stanford.survey.client.api.*"/>
+            <include pattern="client-java"/>
+            <include pattern="client-gwt"/>
+            <include class="java.util.logging.**"/>
+            <include class="com.sksamuel.jqm4gwt.**"/>
+            <include class="org.gwtbootstrap3.**"/>
+
+          </to>
+        </allow>
+      </deny>
+    </access-rule>
+
+    <access-rule>
+      <message>Survey server dependencies were violated</message>
+      <deny>
+        <from class="edu.stanford.survey.server.**"/>
+        <allow>
+          <to>
+            <include class="edu.stanford.survey.server.**"/>
+            <include class="edu.stanford.survey.client.api.*"/>
+            <include pattern="server-java"/>
+            <include pattern="server-gwt"/>
+            <include pattern="server-libs"/>
+          </to>
+        </allow>
+      </deny>
+    </access-rule>
+
+    <access-rule>
+      <message>Registry client dependencies were violated</message>
+      <deny>
+        <from>
+          <include class="edu.stanford.registry.client.**"/>
+          <include class="edu.stanford.registry.shared.**"/>
+        </from>
+        <allow>
+          <to>
+            <include class="edu.stanford.registry.client.**"/>
+            <include class="edu.stanford.registry.shared.**"/>
+            <include class="edu.stanford.survey.client.**"/>
+            <include pattern="client-java"/>
+            <include pattern="client-gwt"/>
+            <include class="java.util.logging.**"/>
+            <include class="com.google.gwt.logging.**"/>
+            <!-- Might separate these out because not generally used -->
+            <include class="org.restlet.client.**"/>
+            <!-- Seems maybe we could/should avoid these -->
+            <include class="java.io.*"/>
+            <include class="java.math.*"/>
+            <include class="java.sql.Date"/>
+            <include class="org.gwtbootstrap3.**"/>
+          </to>
+        </allow>
+      </deny>
+    </access-rule>
+
+    <access-rule>
+      <message>Registry server dependencies were violated</message>
+      <deny>
+        <from class="edu.stanford.registry.server.**"/>
+        <allow>
+          <to>
+            <include class="edu.stanford.registry.server.**"/>
+            <include class="edu.stanford.registry.client.**"/>
+            <include class="edu.stanford.registry.shared.**"/>
+            <include class="edu.stanford.survey.client.api.**"/>
+            <include class="edu.stanford.survey.server.**"/>
+            <include pattern="server-java"/>
+            <include pattern="server-gwt"/>
+            <include pattern="server-libs"/>
+            <!-- These three are for PDF/PNG generation -->
+            <include class="java.awt.**"/>
+            <include class="javax.swing.**"/>
+            <include class="com.keypoint.**"/>
+          </to>
+        </allow>
+        <allow>
+          <from class="edu.stanford.registry.server.service.DevModeFilter*"/>
+          <to>
+            <include class="java.sql.**"/>
+            <include class="javax.sql.**"/>
+          </to>
+        </allow>
+        <allow>
+          <from class="edu.stanford.registry.server.service.ConnectionProvider"/>
+          <to>
+            <include class="java.sql.**"/>
+            <include class="javax.sql.**"/>
+          </to>
+        </allow>
+        <allow>
+          <from class="edu.stanford.registry.server.reports.SquareTableExportReport**"/>
+          <to>
+            <include class="java.sql.**"/>
+            <include class="javax.sql.**"/>
+          </to>
+        </allow>
+      </deny>
+    </access-rule>
+  </ruleset>
+</macker>

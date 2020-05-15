@@ -1,0 +1,394 @@
+<Form Description="Drugs" DateStarted="" DateFinished="" questionsPerPage="24">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Have you used recreational drugs in the last 5 years?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1">
+		    <ref>DRUGS5YR</ref>
+          <item selected="false">
+            <label>Yes</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2">
+             <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+			      <onselect Type="Item" Where="Order" Value="5">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="8">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="11">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+            <onselect Type="Item" Where="Order" Value="14">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <item selected="false">
+            <label>No</label>
+            <value>2</value>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  the rest are conditional -->
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>DRUGSTYPEMARI</ref>
+          <item><label>Marijuana</label><value>1</value>
+            <onselect Type="Item" Where="Order" Value="3">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many days per week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+		  <ref>DRUGSPERWKMARI</ref>
+          <item selected="false">
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item selected="false">
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item selected="false">
+            <label>4</label>
+            <value>4</value>
+          </item>
+          <item selected="false">
+            <label>5</label>
+            <value>5</value>
+          </item>
+          <item selected="false">
+            <label>6</label>
+            <value>6</value>
+          </item>
+          <item selected="false">
+            <label>7</label>
+            <value>7</value>
+            <onselect Type="Item" Where="Order" Value="4">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many times per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>DRUGSPERDAYMARI</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <hint>Enter the number of times in a day that you use marijuana</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>DRUGSUSEDCOCA</ref>
+          <item><label>Cocaine</label><value>1</value>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many days per week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+          <ref>DRUGSPERWKCOCA</ref>
+          <item selected="false">
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item selected="false">
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item selected="false">
+            <label>4</label>
+            <value>4</value>
+          </item>
+          <item selected="false">
+            <label>5</label>
+            <value>5</value>
+          </item>
+          <item selected="false">
+            <label>6</label>
+            <value>6</value>
+          </item>
+          <item selected="false">
+            <label>7</label>
+            <value>7</value>
+            <onselect Type="Item" Where="Order" Value="7">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="7" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many times per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>DRUGSPERDAYCOCA</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <hint>Enter the number of times in a day that you use drugs</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>DRUGSUSEDMETH</ref>
+            <item><label>Methamphetamine</label><value>3</value>
+            <onselect Type="Item" Where="Order" Value="9">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many days per week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+          <ref>DRUGSPERWKMETH</ref>
+          <item selected="false">
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item selected="false">
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item selected="false">
+            <label>4</label>
+            <value>4</value>
+          </item>
+          <item selected="false">
+            <label>5</label>
+            <value>5</value>
+          </item>
+          <item selected="false">
+            <label>6</label>
+            <value>6</value>
+          </item>
+          <item selected="false">
+            <label>7</label>
+            <value>7</value>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="10" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many times per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>DRUGSPERDAYMETH</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <hint>Enter the number of times in a day that you use drugs</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>DRUGSUSEDHERO</ref>
+          <item><label>Heroin/Narcotics</label><value>4</value>
+          <onselect Type="Item" Where="Order" Value="12">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many days per week?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+          <ref>DRUGSPERWKHERO</ref>
+          <item selected="false">
+            <label>1</label>
+            <value>1</value>
+          </item>
+          <item selected="false">
+            <label>2</label>
+            <value>2</value>
+          </item>
+          <item selected="false">
+            <label>3</label>
+            <value>3</value>
+          </item>
+          <item selected="false">
+            <label>4</label>
+            <value>4</value>
+          </item>
+          <item selected="false">
+            <label>5</label>
+            <value>5</value>
+          </item>
+          <item selected="false">
+            <label>6</label>
+            <value>6</value>
+          </item>
+          <item selected="false">
+            <label>7</label>
+            <value>7</value>
+            <onselect Type="Item" Where="Order" Value="13">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  conditional-->
+    <Item Order="13" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Description> <![CDATA[How many times per day?]]></Description>
+      <Responses>
+        <Response Order="1" Type="input">
+          <ref>DRUGSPERDAYHERO</ref>
+          <format>
+            <datatype>integer</datatype>
+          </format>
+          <hint>Enter the number of times in a day that you use drugs</hint>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" Visible="false">
+    <Responses>
+      <Response Order="1" Type="select"><Scores />
+        <ref>DRUGSUSEDOTHER</ref>
+        <item><label>Other</label>
+          <value>1</value>
+          <onselect Type="Item" Where="Order" Value="15">
+            <Set Type="state" Name="visible" Value="true"/>
+          </onselect>
+          <onselect Type="Item" Where="Order" Value="16">
+            <Set Type="state" Name="visible" Value="true"/>
+          </onselect>
+        </item>
+        <hint>please describe others not listed above</hint>
+      </Response>
+    </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+      <Responses>
+        <Response Order="1" Type="input"><Scores />
+          <ref>DRUGSDESCOTHER</ref>
+          <label>Please describe</label>
+          <format>
+            <datatype>text</datatype>
+          </format>
+          <hint>Optional: please describe</hint>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+        <Description> <![CDATA[How many days per week?]]></Description>
+        <Responses>
+          <Response Order="1" Type="select1">
+            <ref>DRUGSPERWKOTHER</ref>
+            <item selected="false">
+              <label>1</label>
+              <value>1</value>
+            </item>
+            <item selected="false">
+              <label>2</label>
+              <value>2</value>
+            </item>
+            <item selected="false">
+              <label>3</label>
+              <value>3</value>
+            </item>
+            <item selected="false">
+              <label>4</label>
+              <value>4</value>
+            </item>
+            <item selected="false">
+              <label>5</label>
+              <value>5</value>
+            </item>
+            <item selected="false">
+              <label>6</label>
+              <value>6</value>
+            </item>
+            <item selected="false">
+              <label>7</label>
+              <value>7</value>
+              <onselect Type="Item" Where="Order" Value="17">
+                <Set Type="state" Name="visible" Value="true"/>
+              </onselect>
+            </item>
+            <Scores />
+          </Response>
+        </Responses>
+      </Item>
+      <!--  conditional-->
+      <Item Order="17" ItemResponse="" ItemScore="" Visible="false" StyleName="dependantQuestion">
+        <Description> <![CDATA[How many times per day?]]></Description>
+        <Responses>
+          <Response Order="1" Type="input">
+            <ref>DRUGSPERDAYOTHER</ref>
+            <format>
+              <datatype>integer</datatype>
+            </format>
+            <hint>Enter the number of times in a day that you use drugs</hint>
+            <Scores />
+          </Response>
+        </Responses>
+      </Item>
+  </Items>
+</Form>

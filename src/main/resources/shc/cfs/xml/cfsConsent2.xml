@@ -1,0 +1,235 @@
+<Form Description="Research Consent" questionsPerPage="1" >
+  <Items>
+    <Item Order="1">
+      <PatientAttribute data_name="cfsConsent" data_value="any" condition="notexists"/>
+      <Description>
+<![CDATA[
+  <p>Dear Patient,</p>
+  <p>Welcome to the Stanford Clinical Intake Questionnaire for Patients with Chronic Unexplained Illnesses.
+  Please take your time answering the following questions. This is a questionnaire we will use to get an
+  approximate picture of your health and how ME/CFS has affected you. This questionnaire will likely take
+  10-20 minutes to complete. If you are unsure how to answer a question, give it your best effort.
+  </p>
+  <p>If at any point you have questions or require help, please feel free to contact our research coordinator,
+  Jill Anderson, at 650-723-9711 or janders5@stanford.edu.
+  </p>
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false">
+        <ref>intro</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2">
+      <PatientAttribute data_name="cfsConsent" data_value="any" condition="notexists"/>
+      <Description>
+<![CDATA[
+  <p>We would like to find out how you are feeling before your visit with us. The next few pages contain some
+  questionnaires that will help us prepare for your visit and tell us more about your health. We also maintain
+  a database of the information about our patients in order to learn more about your health and strengthen our
+  clinical practice.
+  </p>
+  <p><b>By completing the questions, you are confirming your consent to be included in our
+  secure patient database.</b> The full consent form, available below, or at the front desk at the clinic,
+  describes what information we collect, how we will use the information and how we will protect your information.
+  </p>
+  <p><b>Being included in the data collection does not require you to make additional visits and there is no
+  experimental intervention. Additionally, your identity is never used or shared when we study the information collected.</b>
+  </p>
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Consent Form</label>
+          <CollapsibleContent>
+<![CDATA[
+
+  <p><b>CONSENT</b></p>
+  <p><b>For Collection of Medical Information</b></p>
+  <p><b>DESCRIPTION:</b> You are invited to participate in a research study on chronic unexplained illnesses.
+  From the information collected and studied in this project we hope to learn more about the causes and effects
+  of chronic unexplained illnesses.
+  </p>
+  <p><b>PROCEDURES:</b> With your permission, we would like to collect health information about you, including
+  your responses to several questionnaires, information about your general health (results from blood tests,
+  medications, physical exam findings) related to medical treatments and care you receive. The questionnaires
+  and assessments will be administered online and at your clinic visits. We would like to collect this information
+  about you after each medical visit you have for as long as you are treated at a Stanford Clinic or hospital.
+  This study does not involve any treatment  just the collection and study of medical information.
+  </p>
+  <p><b>RISKS AND BENEFITS:</b> Risks of participating in this research are minimal and consist of possible
+  breaches of confidentiality. Though we make every effort to protect your health information, there is always
+  a small risk that your information will be accessed by unauthorized persons, especially if a paper forms are
+  mailed or faxed. You will not receive any direct benefit from participation. We cannot and do not guarantee
+  or promise that you will receive any benefits from this study.
+  </p>
+  <p><b>TIME INVOLVEMENT:</b> Your participation in this study will require that you complete an intake questionnaire
+  consisting of a health history questionnaire and several other questionnaires and assessments, which may take
+  anywhere from 5 minutes to 30 minutes to complete, as well as a shorter version of the questionnaire which will
+  be administered at or before your follow-up clinic appointments. The shorter version of the questionnaire will
+  take 30 minutes or less to complete. We will ask you to complete the shorter questionnaire at your follow-up
+  appointments for the duration of the study, which is anticipated to be ten years. You will not have any further
+  time involvement in this study following the completion of the project. If you agree to participate, you will
+  complete the questionnaires securely online or you may also request a paper copy of the questionnaires. If you
+  agree to participate, we will collect medical information from your medical record after each visit, which does
+  not involve any direct participation by you.
+  </p>
+  <p><b>PAYMENTS:</b> You will not be paid to participate in this study.
+  </p> 
+  <p><b>PARTICIPANT'S RIGHTS:</b> If you have read this form and have decided to participate in this project, please
+  understand your participation is voluntary and you have the right to withdraw your consent or discontinue
+  participation at any time without penalty or loss of benefits to which you are otherwise entitled. You have the
+  right to refuse to answer particular questions. Your identity will not be disclosed in any published and written
+  material resulting from the study.
+  </p>
+  <p><b>Authorization to Use Your Health Information for Research Purposes</b>
+  </p> 
+  <p>Because information about you and your health is personal and private, it generally cannot be used in this
+  research study without your written authorization. If you participate in this study, your participation will
+  provide that authorization. The form is intended to inform you about how your health information will be used
+  or disclosed in the study. Your information will only be used in accordance with this authorization form and
+  the informed consent form and as required or allowed by law. Please read it carefully before participating.
+  </p>
+  <p><b>What is the purpose of this research study and how will my health information be utilized in the study?</b>
+  </p> 
+  <p>The purpose of this project is to study the causes and effects of chronic unexplained illnesses. Your responses
+  to several questionnaires and you medical information will be used to learn more about chronic unexplained illnesses.
+  </p>
+  <p><b>Do I have to sign this authorization form?</b>
+  </p> 
+  <p>You do not have to sign this authorization form or participate in this research.
+  </p>
+  <p><b>If I agree to participate, can I revoke my permission or withdraw from the research later?</b>
+  </p>
+  <p>If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of
+  your health information (and to discontinue any other participation in the study) at any time. After any revocation,
+  your health information will no longer be used or disclosed in the study, except to the extent that the law allows
+  us to continue using your information (e.g., necessary to maintain integrity of research). If you wish to revoke
+  your authorization for the research use or disclosure of your health information in this study, you must do so in
+  writing. Please provide the written withdrawal to Dr. Montoya’s research team at 1000 Welch Road, Suite 202, Palo Alto, CA 94304.
+  </p>
+  <p><b>What Personal Information Will Be Used or Disclosed?</b>
+  </p> 
+  <p>We will be looking at the following categories of health information, where * denotes embedded identifiers:
+  * laboratory and pathology test results with embedded identifiers, coded diagnoses and procedures,
+  * clinical records with embedded identifiers,
+  * images and imaging reports with embedded identifiers,
+  * demographics with embedded identifiers.
+  We will be obtaining and using the following protected health information: laboratory and pathology test results
+  with embedded identifiers, clinical records with embedded identifiers, images and imaging reports with embedded
+  identifiers, demographics with embedded identifiers (names, telephone numbers, address (all geographic subdivisions
+  smaller than a state), dates more precise than year only, e.g. date of birth or death, date of service, diagnosis,
+  admission, electronic mail addresses, medical record numbers).
+  </p>
+  <p><b>Who May Use or Disclose the Information?</b>
+  </p> 
+  <p>The following parties are authorized to use and/or disclose your health information in connection with this research study:
+    <ul> 
+      <li>The Protocol Director</li>
+      <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary</li> 
+      <li>Research Staﬀ working on this project</li>
+    </ul>
+  </p> 
+  <p><b>Who May Receive or Use the Information?</b>
+  The parties listed in the preceding paragraph may disclose your health information to the following persons and
+  organizations for their use in connection with this research study:
+  </p> 
+    <ul> 
+      <li>The Oﬃce for Human Research Protections in the U.S. Department of Health and Human Services</li> 
+    </ul> 
+  <p>Your information may be re-disclosed by the recipients described above,
+  if they are not required by law to protect the privacy of the information.
+  </p> 
+  <p><b>When will my authorization expire?</b>
+  </p> 
+  <p>Your authorization for the use and/or disclosure of your health information will end on December 31, 2100.
+  </p>
+  <p><b>CONTACT INFORMATION:</b></p> 
+  <p>Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this research study,
+  its procedures, risks and benefits, or alternative courses of treatment, you should ask Dr. Montoya’s research
+  coordinator Tullia Lieb, at 650-723-8126.  You should also contact her at any time if you feel you have been
+  hurt by being a part of this study.
+  </p>
+  <p>Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any concerns,
+  complaints, or general questions about the research or your rights as a participant, please contact the Stanford
+  Institutional Review Board (IRB) to speak to someone independent of the research team at (650)-723-5244 or toll
+  free at 1-866-680-2906. You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real,
+   Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.
+   </p>
+   <p>Please feel free to print out a copy of this form for your records. It is for you to keep.
+   </p>
+   <p>If you agree to participate in this research, please complete the following questionnaire.
+   </p>
+]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>CFSCONSENT</ref>
+          <item>
+            <label>Yes, I agree to participate in this research</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No, I do not want to participate in this research</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="3">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" data_type="string" condition="notexists"/>
+      <ResponseValue xpath_query="//Response[ref='CFSCONSENT']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+<![CDATA[
+  <p>Your email address is required to receive a copy of the consent and follow-up research communications</p>
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="email" Type="input" required="false">
+          <label>Email Address</label>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+            <charwidth>80</charwidth>
+          </format>
+        </Response>
+        <Response Order="2" ref="sendForm" Type="select1" required="true">
+          <item>
+            <label>Yes, email the consent form to the address entered above</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No, do not email the consent form</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="4">
+      <PatientAttribute data_name="surveyEmailAddress" data_value="any" data_type="string" condition="exists"/>
+      <ResponseValue xpath_query="//Response[ref='CFSCONSENT']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <ResponseValue xpath_query="//Item[@Order='3']/@ItemResponse" condition="notexists"/>
+      <Description>
+<![CDATA[
+  <p>Do you want a copy of the consent form sent to your email address?</p> 
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" ref="sendForm" Type="select1" required="true">
+          <item>
+            <label>Yes, email the consent form</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No, do not email the consent form</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+ </Form>

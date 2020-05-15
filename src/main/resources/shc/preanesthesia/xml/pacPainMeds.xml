@@ -1,0 +1,394 @@
+<Form Description="Opioid Pain Medications " DateStarted="" DateFinished="" questionsPerPage="26">
+  <Items>
+    <ref>MEDSOPIOID</ref>
+    <Item Order="1" ItemResponse="" ItemScore="">
+      <Description>
+        <![CDATA[Do you take any of these prescription pain medications]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <width>100%</width>
+          <label/>
+          <item>
+            <ref>butorphanol</ref>
+            <label><![CDATA[Stadol <span class="fontnormal">(Butorphanol)</span>]]></label>
+            <selected>false</selected>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="2"><Set Type="state" Name="visible" Value="true" /></onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>butortimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>butorpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore=""  Visible="true" >
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full" >
+          <label/>
+          <item>
+            <ref>codeine</ref>
+            <label>Codeine, Tylenol #3,#4</label>
+            <value>1</value>
+            <onselect Type="Item" Where="Order" Value="4"><Set Type="state" Name="visible" Value="true"/></onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>codeintimes</ref>
+          <label># times a day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>codeinpills</ref>
+          <label># pills do you take in a day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" Visible="true" >
+      <Responses>
+        <Response Order="3" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Actiq <span class="fontnormal">(Fentanyl lozenges)</span>]]></label>
+            <value>Actiq (Fentanyl lozenges)</value>
+            <onselect Type="Item" Where="Order" Value="6">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+       <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>actiqtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>actiqpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Duragesic <span class="fontnormal">(Fentanyl patch)</span>]]></label>
+            <value>Duragesic (Fentanyl patch)</value>
+            <onselect Type="Item" Where="Order" Value="8">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>duragtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>duragpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Vicodin, Lortab, Norco <span class="fontnormal">(Hydrocodone)</span>]]></label>
+            <value>Vicodin, Lortab, Norco (Hydrocodone)</value>
+            <onselect Type="Item" Where="Order" Value="10">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>vicodtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>vicodpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Dilaudid <span class="fontnormal">(Hydromorphone)</span>]]></label>
+            <value>Dilaudid (Hydromorphone)</value>
+            <onselect Type="Item" Where="Order" Value="12" >
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>dilaudtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>dilaudpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Demerol <span class="fontnormal">(Meperidine)</span>]]></label>
+            <value>Demerol (Meperidine)</value>
+            <onselect Type="Item" Where="Order" Value="14">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>demeroltimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>demerolpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label>Methadone</label>
+            <value>Methadone</value>
+            <onselect Type="Item" Where="Order" Value="16">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>methodtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>methodpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[MS Contin, Avinza, Kadian <span class="fontnormal">(Morphine)</span>]]></label>
+            <value>MS Contin, Avinza, Kadian (Morphine)</value>
+            <onselect Type="Item" Where="Order" Value="18">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>msconttimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>mscontpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Percocet, Roxycodone, Oxycontin <span class="fontnormal">(Oxycodone)</span>]]></label>
+            <value>Percocet, Roxycodone, Oxycontin (Oxycodone)</value>
+            <onselect Type="Item" Where="Order" Value="20">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="20" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>percoctimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>percocpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Opana <span class="fontnormal">(Oxymorphone)</span>]]></label>
+            <value>Opana (Oxymorphone)</value>
+            <onselect Type="Item" Where="Order" Value="22">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>opanatimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>opanapills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="23" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Nucynta <span class="fontnormal">(Tapentadol)</span>]]></label>
+            <value>Nucynta (Tapentadol)</value>
+            <onselect Type="Item" Where="Order" Value="24">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="24" ItemResponse="" ItemScore="" Visible="false" >
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>nucyntimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>nucynpills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="25" ItemResponse="" ItemScore="">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="select" Appearance="full">
+          <width>100%</width>
+          <label/>
+          <item>
+            <label><![CDATA[Ultram <span class="fontnormal">(Tramadol)</span>]]></label>
+            <value>Ultram (Tramadol)</value>
+            <onselect Type="Item" Where="Order" Value="26">
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect>
+          </item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <!--  This is conditional: only shows if the answer to the previous question is yes -->
+    <Item Order="26" ItemResponse="" ItemScore="" Visible="false">
+      <Description/>
+      <Responses>
+        <Response Order="1" Type="input" StyleName="dependantQuestion">
+          <ref>ultramtimes</ref>
+          <label># times per day</label>
+        </Response>
+        <Response Order="2" Type="input" StyleName="dependantQuestion">
+          <ref>ultrampills</ref>
+          <label># pills per day</label>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

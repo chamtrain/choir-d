@@ -1,0 +1,15 @@
+@import url("/survey/survey2/painmanagement-2016-01-19.cache.css");
+
+/** This moves lines on numeric scale questions that were forced with a <p> tag
+    up a bit so the spacing matches the ones that auto break */
+.s-scale-right-label p {
+	margin-top: -3px;
+	margin-bottom: 0;
+}
+
+/** load indicator class **/
+.orthohand-2016-01-19 {
+	width:10px;
+	height:10px;
+}
+

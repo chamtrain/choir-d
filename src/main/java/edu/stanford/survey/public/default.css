@@ -1,0 +1,75 @@
+/** Custom style sheets need to define a class named for the stylesheet (without the .css)
+    with non-zero width and height. The application uses this class to determine when the style sheet has finished loading. 
+    Example:  mystylesheet.css
+    Contains: .mystylesheet {width:10px;height:10px;}
+*/
+
+/** load indicator class **/
+.painmanagement {
+  width:10px;
+  height:10px;
+}
+
+.ui-header .ui-title {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em;
+  padding-left: 1em;
+}
+
+@media (min-width: 900px) {
+  .ui-content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* uncomment this to add a logo to the survey
+.ui-bar-a {
+  border-top: none;
+  border-width: 8px;
+  border-bottom-style: double;
+  color: #333;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-weight:300;
+  background: url(./images/logo.gif) no-repeat left;
+  border-color: #8C1515;
+}
+
+.ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon {
+  background-color: #8C1515
+}
+
+.ui-icon-loading {
+  background: url(images/ajax-loader.gif);
+  background-size: 46px 46px;
+  color: #8C1515
+}
+
+.ui-overlay {
+  background: #8C1515;
+  filter: Alpha(Opacity=50);
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+.ui-btn:focus {
+  -moz-box-shadow: inset 0 0 3px #8C1515 0 9px #8C1515;
+  -webkit-box-shadow: inset 0 0 3px #8C1515 0 9px #8C1515;
+  box-shadow: inset 0 0 3px #8C1515 0 9px #8C1515
+}
+
+.ui-input-text.ui-focus,
+.ui-input-search
+.ui-focus {
+  -moz-box-shadow: 0 0 12px #8C1515;
+  -webkit-box-shadow: 0 0 12px #8C1515;
+  box-shadow: 0 0 12px #8C1515
+}
+*/
+
+/* override jquery mobile classes here */		

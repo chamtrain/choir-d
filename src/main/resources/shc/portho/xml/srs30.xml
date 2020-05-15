@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description>What best describes your current treatment or follow up status?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Pre-treatment</label>
+            <value>0</value>
+          </item>
+          <item>
+            <label>3 months</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>6 months</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>1 year</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>2 years</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>3 years or more</label>
+            <value>5</value>
+          </item>
+          <ref>exam</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description>Your doctors are carefully evaluating the condition of your back before and after your treatment. Please select the one best answer to each question unless otherwise indicated.</Description>
+      <Description>All results will be kept confidential.</Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description>1. Which one of the following best describes the amount of pain you have experienced during the past 6 months?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Mild</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Moderate</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Moderate to severe</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Severe</label>
+            <value>1</value>
+          </item>
+          <ref>6months</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description>2. Which one of the following best describes the amount of pain you have experienced over the last month?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Mild</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Moderate</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Moderate to severe</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Severe</label>
+            <value>1</value>
+          </item>
+          <ref>1month</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description>3. During the past 6 months have you been a very nervous person?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None of the time</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>A little of the time</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Some of the time</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Most of the time</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>All of the time</label>
+            <value>1</value>
+          </item>
+          <ref>nervous</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description>4. If you had to spend the rest of your life with your back shape as it is right now, how would you feel about it?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very happy</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Somewhat happy</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Neither happy nor unhappy</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Somewhat unhappy</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very unhappy</label>
+            <value>1</value>
+          </item>
+          <ref>shape</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description>5. What is your current level of activity?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Bedridden/Wheelchair</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Primarily no activity</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Light labor, such as household chores</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Moderate manual labor and moderate sports, such as walking and biking</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Full activities without restriction</label>
+            <value>5</value>
+          </item>
+          <ref>activity</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description>6. How do you look in clothes?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very good</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Good</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Fair</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Bad</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very bad</label>
+            <value>1</value>
+          </item>
+          <ref>clothes</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description>7. In the past 6 months have you felt so down in the dumps that nothing could cheer you up?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very often</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Often</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Sometimes</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Rarely</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Never</label>
+            <value>5</value>
+          </item>
+          <ref>dumps</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description>8. Do you experience back pain when at rest?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very often</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Often</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Sometimes</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Rarely</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Never</label>
+            <value>5</value>
+          </item>
+          <ref>restpain</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description>9. What is your current level of work/school activity?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>100% normal</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>75% normal</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>50% normal</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>25% normal</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>0% normal</label>
+            <value>1</value>
+          </item>
+          <ref>workactivity</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description>10. Which of the following best describes the appearance of your trunk; defined as the human body except for the head and extremities?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very Good</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Good</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Fair</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Poor</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very Poor</label>
+            <value>1</value>
+          </item>
+          <ref>trunk</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12" Section="start">
+      <Description>11. Which one of the following best describes your medication usage for your back?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Non-narcotics weekly or less (e.g., Tylenol, Ibuprofen)</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Non-narcotics daily</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Narcotics weekly or less (e.g., Tylenol #3, Lorocet, Percocet, Darvocet)</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Narcotics daily</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Other</label>
+            <value>99</value>
+            <onselect Type="Item" Where="Order" Value="13"/>
+          </item>
+          <ref>med</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13" Visible="false" Section="end">
+      <Description>Please enter the name of the medication and frequency.</Description>
+      <Responses>
+        <Response Appearance="" Order="0" Type="input" required="false">
+          <label>Medication:</label>
+          <ref>medname</ref>
+        </Response>
+        <Response Appearance="" Order="1" Type="input" required="false">
+          <label>Usage (weekly or less or daily):</label>
+          <ref>medfreq</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="14">
+      <Description>12. Does your back limit your ability to do things around the house?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Never</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Rarely</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Sometimes</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Often</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very Often</label>
+            <value>1</value>
+          </item>
+          <ref>house</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="15">
+      <Description>13. Have you felt calm and peaceful during the past 6 months?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>All of the time</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Most of the time</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Some of the time</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>A little of the time</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>None of the time</label>
+            <value>1</value>
+          </item>
+          <ref>calm</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="16">
+      <Description>14. Do you feel that your back condition affects your personal relationships?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Slightly</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Mildly</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Moderately</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Severely</label>
+            <value>1</value>
+          </item>
+          <ref>relationships</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="17">
+      <Description>15. Are you and or your family experiencing financial difficulties because of your back?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Severely</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Mildly</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Moderately</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Slightly</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>None</label>
+            <value>5</value>
+          </item>
+          <ref>financial</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="18">
+      <Description>16. In the past 6 months have you felt down hearted and blue?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Never</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Rarely</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Sometimes</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Often</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very Often</label>
+            <value>1</value>
+          </item>
+          <ref>blue</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="19">
+      <Description>17. In the last 3 months have you taken any sick days from work/school due to back pain, and if so, how many?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>0</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>1</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>2</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>3</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>4 or more</label>
+            <value>1</value>
+          </item>
+          <ref>sickdays</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="20">
+      <Description>18. Do you go out more or less than your friends?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Much More</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>More</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Same</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Less</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Much less</label>
+            <value>1</value>
+          </item>
+          <ref>goout</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="21">
+      <Description>19. Do you feel attractive with your current back condition?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Yes, very</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Yes, somewhat</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Neither attractive nor unattractive</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>No, not very much</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>No, not at all</label>
+            <value>1</value>
+          </item>
+          <ref>attractive</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="22">
+      <Description>20. Have you been a happy person during the past 6 months?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>None of the time</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>A little of the time</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Some of the time</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Most of the time</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>All of the time</label>
+            <value>5</value>
+          </item>
+          <ref>happy</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="23">
+      <Description>21. Are you satisfied with the results of your back management?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Very satisfied</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Satisfied</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Neither satisfied nor unsatisfied</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Unsatisfied</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Very unsatisfied</label>
+            <value>1</value>
+          </item>
+          <ref>satisfied</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="24">
+      <Description>22. Would you have the same management again if you had the same condition?</Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Definitely yes</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Probably yes</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Not sure</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Probably not</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Definitely not</label>
+            <value>1</value>
+          </item>
+          <ref>management</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="25" Class="surveyQuestionHorizontal">
+      <Description>23. On a scale of 1 to 9, with 1 being very low and 9 being extremely high, how would you rate your self-image?</Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="1"  Description2="Low" ><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="2"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="3"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="4"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="5"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="6"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="7"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="8"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="9"  Description2="High"><Scores><Score value="5"/></Scores></Response>
+      </Responses>
+      <ref>selfimage</ref>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="26">
+      <Description>Post-surgery patients only</Description>
+      <Description>24. Compared with before treatment, how do you feel you now look?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Much Better</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Better</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Same</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Worse</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Much worse</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>look</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="27">
+      <Description>Post-surgery patients only</Description>
+      <Description>25. Has your back treatment changed your function and daily activity?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Increased</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Not changed</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Decreased</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changefunction</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="28">
+      <Description>Post-surgery patients only</Description>
+      <Description>26. Has your back treatment changed your ability to enjoy sports/hobbies?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Increased</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Not changed</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Decreased</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changesports</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="29">
+      <Description>Post-surgery patients only</Description>
+      <Description>27. Has your back treatment __________ your back pain?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Increased</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not changed</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Decreased</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changepain</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="30">
+      <Description>Post-surgery patients only</Description>
+      <Description>28. Has your treatment changed your confidence in personal relationships with others?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Increased</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Not changed</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Decreased</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changeconfidence</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="31">
+      <Description>Post-surgery patients only</Description>
+      <Description>29. Has your treatment changed the way others view you?</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Much Better</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Better</label>
+            <value>4</value>
+          </item>
+          <item>
+            <label>Same</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Worse</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>Much worse</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changeothers</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="32">
+      <Description>Post-surgery patients only</Description>
+      <Description>30. Has your treatment changed your self image</Description>
+      <ResponseValue condition="equal" data_value="true" xpath_query="//Item/Responses/Response[ref='exam']/item[@selected='true' and (label='3 months' or label='6 months' or label='1 year' or label='2 years' or label='3 years or more')]/@selected"/>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label>Increased</label>
+            <value>5</value>
+          </item>
+          <item>
+            <label>Not changed</label>
+            <value>3</value>
+          </item>
+          <item>
+            <label>Decreased</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Not Applicable</label>
+            <value>99</value>
+          </item>
+          <ref>changeselfimage</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

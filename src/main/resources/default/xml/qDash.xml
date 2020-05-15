@@ -1,0 +1,155 @@
+<Form Description="MHQ" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" required="">
+      <Description><![CDATA[Please rate your ability to do the following activities in the last week by choosing the appropriate response.]]></Description>
+      <Responses>
+        <Response Order="0" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[No difficulty]]></label>
+            <group>x-axis</group>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[Mild difficulty]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate difficulty]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[Severe difficulty]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[Unable]]></label>
+            <group>x-axis</group>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[Open a tight or new jar]]></label>
+            <group>y-axis</group>
+            <ref>JAR</ref>
+          </item>
+          <item>
+            <label><![CDATA[Do heavy household chores (e.g., wash walls, floors)]]></label>
+            <group>y-axis</group>
+            <ref>CHORES</ref>
+          </item>
+          <item>
+            <label><![CDATA[Carry a shopping bag or briefcase]]></label>
+            <group>y-axis</group>
+            <ref>SHOPBAG</ref>
+          </item>
+          <item>
+            <label><![CDATA[Wash your back]]></label>
+            <group>y-axis</group>
+            <ref>WASHBACK</ref>
+          </item>
+          <item>
+            <label><![CDATA[Use a knife to cut food]]></label>
+            <group>y-axis</group>
+            <ref>CUTFOOD</ref>
+          </item>
+          <item>
+            <label><![CDATA[Recreational activities in which you take some force
+or impact through your arm, shoulder or hand
+(e.g., golf, hammering, tennis, etc.)]]></label>
+            <group>y-axis</group>
+            <ref>RECRACT</ref>
+          </item>
+          <ref>ABILITY</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" required="true">
+        <Description>During the past week, to what extent has your arm, shoulder or hand problem interfered with your normal social activities with family, friends,
+neighbours or groups?</Description>
+      <Responses>
+        <Response Order="1" Type="select1">
+        <ref>SOCIAL</ref>
+          <item selected="false"><label>Not at all</label><value>1</value></item>
+          <item selected="false"><label>Slightly</label><value>2</value></item>
+          <item selected="false"><label>Moderately</label><value>3</value></item>
+          <item selected="false"><label>Quite a bit</label><value>4</value></item>
+          <item selected="false"><label>Extremely</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" required="true">
+      <Description> <![CDATA[During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder or hand problem?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>LIMITED</ref>
+          <item selected="false"><label>Not limited at all</label><value>1</value></item>
+          <item selected="false"><label>Slightly limited</label><value>2</value></item>
+          <item selected="false"><label>Moderately limited</label><value>3</value></item>
+          <item selected="false"><label>Very limited</label><value>4</value></item>
+          <item selected="false"><label>Unable</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" required="">
+      <Description> <![CDATA[Please rate the severity of the following symptoms in the last week.]]></Description>
+      <Responses>
+        <Response Order="0" Type="radioSetGrid" required="true">
+          <item>
+            <label><![CDATA[None]]></label>
+            <group>x-axis</group>
+            <value>0</value>
+          </item>
+          <item>
+            <label><![CDATA[Mild]]></label>
+            <group>x-axis</group>
+            <value>1</value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate]]></label>
+            <group>x-axis</group>
+            <value>2</value>
+          </item>
+          <item>
+            <label><![CDATA[Severe]]></label>
+            <group>x-axis</group>
+            <value>3</value>
+          </item>
+          <item>
+            <label><![CDATA[Extreme]]></label>
+            <group>x-axis</group>
+            <value>4</value>
+          </item>
+          <item>
+            <label><![CDATA[Arm, shoulder or hand pain]]></label>
+            <group>y-axis</group>
+            <ref>PAIN</ref>
+          </item>
+          <item>
+            <label><![CDATA[Tingling (pins and needles) in your arm, shoulder or hand]]></label>
+            <group>y-axis</group>
+            <ref>PINS</ref>
+          </item>
+          <ref>SYMPTOMS</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5" ItemResponse="" ItemScore="" required="true">
+      <Description><![CDATA[During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder or hand?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" Appearance="full">
+          <ref>SLEEP</ref>
+          <item selected="false"><label>No difficulty</label><value>1</value></item>
+          <item selected="false"><label>Mild difficulty</label><value>2</value></item>
+          <item selected="false"><label>Moderate difficulty</label><value>3</value></item>
+          <item selected="false"><label>Severe difficulty</label><value>4</value></item>
+          <item selected="false"><label>So much difficulty that I can't sleep</label><value>5</value></item>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

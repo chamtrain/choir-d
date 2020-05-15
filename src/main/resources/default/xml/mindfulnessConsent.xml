@@ -1,0 +1,117 @@
+<Form Description="Mindfulness" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <!-- Created Sep 2018 -->
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+      <PatientAttribute data_name="painPsychology" data_value="Y" data_type="string" condition="equal" />
+      <Description>
+        <![CDATA[May we include you in a research study that will help us examine how our mental attention and thoughts may impact our ability to engage with physical and social activities for people living with pain ?]]>
+      </Description>
+      <Responses>
+      <Response Order="0" Type="select1" required="true">
+        <ref>MINDFULNESS_CONSENT</ref>
+        <item>
+          <label>Yes, I will participate</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>No thank you</label>
+          <value>2</value>
+        </item>
+      </Response>
+      <Response Order="1" Type="collapsible">
+        <label>More Information</label>
+	    <CollapsibleContent> <![CDATA[
+           <p><b>Description:</b> You are invited to take part in a research study that will help us examine how mental processes like attention and flexibility in thoughts may impact the ability to
+           engage with physical, emotional, and recreational activities for people living with pain.  You will be asked to complete three to four, 20-minute online surveys over the course of your
+           clinical care at the Stanford Pain Management Center, typically over a 12-week period.
+           This survey will ask for your name and contact information, demographics, and information about your pain experience.  </p>
+
+
+           <p><b>Risks and Benefits:</b>  There is a small risk that people outside our research lab could learn this information, but we do our best to keep all your information confidential.
+           The benefits which may reasonably be expected to result from this study are that you will gain further insight on your psychological flexibility, behavioral tendencies, and attitudes that
+           influence your pain experience. Understanding the potential roles of these factors can also serve clinicians to more effectively select treatment approaches for your pain condition.
+           <b><u><i>We cannot and do not guarantee or promise that you will receive any benefits from this study. </i></u></b>
+           Your decision whether or not to participate in this study will not affect your medical care.</p>
+
+           <p><b>Time Involvement:</b> Your participation will take approximately 20-30 minutes during your clinical appointments over the course of your treatment (approximately once a month over
+            three months).</p>
+
+           <p><b>Payments:</b> You will not receive payment for your participation.</p>
+
+           <p><b>Participant Rights:</b> If you have read this form and have decided to participate in this project, please understand your <b><u><i>participation is voluntary </i></u></b>
+           and you have the <b><u><i>right to withdraw your consent or discontinue participation at any time without penalty or loss of benefits to which you are otherwise entitled.
+           The alternative is not to participate. </i></u></b> You have the right to refuse to answer particular questions. Your individual privacy will be maintained in all published and written data
+           resulting from the study.
+
+           <h4><b>Authorization to Use Your Health Information for Research Purposes</b></h4>
+           <p>Because information about you and your health is personal and private, it generally cannot be used in this research study without your authorization.
+           This form is intended to inform you about how your health information will be used or disclosed in the study.  Your information will only be used in accordance with this authorization
+           and informed consent form and as required or allowed by law.  Please read it carefully.</p>
+
+           <p><b>What is the purpose of this research study and how will my health information be utilized in the study?</b><br>
+            The purpose of this study is to investigate psychological flexibility, behavioral tendencies, the healthcare experience, and patient attitudes that may help to partially explain the
+            relationship between mindfulness and pain interference outcomes. The health information obtained from this study will be used to accomplish this aim.
+            The intention of this study is to share the results with clinicians and clinical scientists working in the fields of pain and rehabilitation medicine in order to improve clinical care.
+            This will be accomplished through peer-reviewed journal publications and conference presentations.</p>
+
+           <p><b>Can I revoke my authorization or withdraw from the research later?</b><br>
+           If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your health information (and to discontinue any other participation in the study) at any
+           time.  After any revocation, your health information will no longer be used or disclosed in the study, except to the extent that the law allows us to continue using your information (e.g., necessary
+           to maintain integrity of research).  If you wish to revoke your authorization for the research use or disclosure of your health information in this study, you must write to: Sean Mackey, MD,
+           PhD, 1070 Arastradero Road, Suite 200, Palo Alto, CA 94304</p>
+
+           <p><b>What personal information will be obtained, used or disclosed?</b><br>
+           Your health information related to this study, may be used or disclosed in connection with this research study, including, but not limited to, your name, contact information, demographics,
+           information about your pain (if you have any), medication use, and relevant medical history as you report on the survey.</p>
+
+           <p><b>Who may use or disclose the information?</b><br>
+           The following parties are authorized to use and/or disclose your health information in connection with this research study:
+           <ul><li>The Protocol Director Sean Mackey, MD, PhD</li>
+               <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary</li>
+               <li>Research Staff</li></ul>
+           </p>
+
+           <p><b>Who may receive or use the Information?</b><br>
+           The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations for their use in connection with this research study:
+           <ul><li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li></ul>
+           </p>
+
+           <p><b>When will my authorization expire?</b><br>
+           Your authorization for the use and/or disclosure of your health information will end on October 31, 2050 or when the research project ends, whichever is earlier. </p>
+
+           <p><b>Will access to my medical record be limited during the study?</b><br>
+           To maintain the integrity of this research study, you may not have access to any health information developed as part of this study until it is completed.
+           At that point, you would have access to such health information if it was used to make a medical or billing decision about you (e.g., if included in your official medical record).</p>
+
+           <p>Because information about you and your health is personal and private, it generally cannot be used for research purposes without your authorization.  By consenting to participate in this
+           research study by following the instructions at the end of this form, you are providing your authorization.  The form is intended to inform you about how your health information will be used
+           or disclosed in the study. Your information will only be used in accordance with this authorization form and the informed consent form and as required or allowed by law. Please read it
+           carefully before indicating your consent.  </p>
+
+           <p> The following parties are authorized to use and/or disclose your health information in connection with this research study:
+
+           <ul><li>The Protocol Director Sean Mackey, MD, PhD</li>
+              <li>The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary</li>
+              </li>Research Staff</li></ul></p>
+
+            <p>The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations for their use in connection with this research study:
+              <ul><li>The Office for Human Research Protections in the U.S. Department of Health and Human Services</li></ul></p>
+
+            <p><b>Contact information: </b><br>
+            <u><i>Questions:</i></u> If you have any questions, concerns or complaints about this research, its procedures, risks and benefits, contact the Protocol Director, Sean Mackey, MD PhD,
+            at (650) 725-9636. <br>
+            <u><i>Independent contact:</i></u> If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general questions about the research
+            or your rights as a participant, please contact the Stanford Institutional Review Board (IRB) to speak to someone independent of the research team at (650)-723-2480 or toll free at
+            1-866-680-2906. You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.</p>
+
+
+           <p><b>Please print a copy of this form for your records.</b></p>
+
+           <p><b>If you agree to participate in this research, please complete the survey. </b></p>
+]]>
+          </CollapsibleContent>
+        </Response>
+	    </Responses>
+    </Item>
+  </Items>
+</Form>

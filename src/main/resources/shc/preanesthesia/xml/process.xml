@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Process>
+  <!-- 08/2015 first preanesthesia questionnaire -->
+  <ProcessType value="Initial.0815" notification="true" appointment_template="Initial" schedule_template="No-appointment" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="07-28-2015" expiration_date="11-10-2015" report="Initial">
+    <Questionaire order="1" print_order="2" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="2" print_order="3" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <!--Questionaire order="3" print_order="4" value="pacMedications" type="RepeatingSurveyService-pacMedications" xml="pacMedications" print_type="text" / -->
+    <Questionaire order="4" print_order="5" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="6" print_order="7" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="7" print_order="8" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="8" print_order="9" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="9" print_order="10" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="10" print_order="13.1" value="PROMIS Physical Function Bank" type="LocalPromis" OID="98DB589F-04D5-4529-9E4D-0D77F022C2CC" print_type="chart" invert="true"/>
+    <Questionaire order="11" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="12" print_order="11" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="13" print_order="13.2" value="PROMIS Pain Intensity Bank" type="LocalPromis" OID="8F048079-0A22-46DA-9711-07687D492259" print_type="chart"/>
+    <Questionaire order="14" print_order="14.1" value="PROMIS Depression Bank" type="LocalPromis" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="15" print_order="14.2" value="PROMIS Anxiety Bank" type="LocalPromis" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="16" print_order="15.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="LocalPromis" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="17" print_order="14.3" value="PROMIS Bank v1.0 - Anger" type="LocalPromis" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="18" print_order="15.1" value="PROMIS Fatigue Bank" type="LocalPromis" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="19" print_order="12" value="painCatastrophizingScale" type="Local" xml="painCatastrophizingScale" print_type="table" />
+    <Questionaire order="20" print_order="16" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="Initial.1215" notification="true" appointment_template="Initial" schedule_template="Initial" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="11-10-2015" expiration_date="02-28-2016" report="Initial">
+    <Questionaire order="1" print_order="2" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="2" print_order="3" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <Questionaire order="3" print_order="4" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="6" print_order="7" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="7" print_order="8" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="8" print_order="9" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="9" print_order="10" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="10" print_order="13.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart" invert="true"/>
+    <Questionaire order="11" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="12" print_order="11" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="13" print_order="13.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="14" print_order="14.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="15" print_order="14.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="16" print_order="15.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="17" print_order="14.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="18" print_order="15.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="20" print_order="16" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="Initial.0216" notification="true" appointment_template="Initial" schedule_template="Initial" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="02-28-2016" expiration_date="05-09-2016" report="Initial">
+    <Questionaire order="1" print_order="3" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="2" print_order="4" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <Questionaire order="3" print_order="5" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="4" print_order="6" value="pacMenstrual"  type="Local" xml="pacMenstrual" print_type="text"/>
+    <Questionaire order="5" print_order="7" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="6" print_order="8" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="7" print_order="9" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="8" print_order="10" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="9" print_order="11" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="10" print_order="13.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart, text" invert="true"/>
+    <Questionaire order="11" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="12" print_order="12" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="13" print_order="13.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="14" print_order="14.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="15" print_order="14.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="16" print_order="15.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="17" print_order="14.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="18" print_order="15.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="19" print_order="2" value="pacContactInfo" type="Local" xml="pacContactInfo" print_type="text" />
+    <Questionaire order="20" print_order="17" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="Initial.0516" notification="true" appointment_template="Initial" schedule_template="Initial" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="05-09-2016" expiration_date="05-31-2016" report="Initial" >
+    <Questionaire order="1" value="pacIntro" type="Local" xml="pacIntro"/>
+    <Questionaire order="2" print_order="3" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="3" print_order="4" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <Questionaire order="4" print_order="5" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="pacMenstrual"  type="Local" xml="pacMenstrual" print_type="text"/>
+    <Questionaire order="6" print_order="7" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="7" print_order="8" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="8" print_order="9" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="9" print_order="10" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="10" print_order="11" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="11" value="pacIntroPromis" type="Local" xml="pacIntroPromis"/>
+    <Questionaire order="12" print_order="13.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart, text" invert="true"/>
+    <Questionaire order="13" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="14" print_order="12" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="15" print_order="13.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="16" print_order="14.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="17" print_order="14.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="18" print_order="15.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="19" print_order="14.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="20" print_order="15.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="21" print_order="2" value="pacContactInfo" type="Local" xml="pacContactInfo" print_type="text" />
+    <Questionaire order="22" print_order="17" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="Initial.0616" notification="true" appointment_template="Initial" schedule_template="Initial" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="05-31-2016" expiration_date="10-11-2016" report="Initial" >
+    <Questionaire order="1" value="pacIntro" type="Local" xml="pacIntro"/>
+    <Questionaire order="2" print_order="3" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="3" print_order="4" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <Questionaire order="4" print_order="5" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="pacMenstrual"  type="Local" xml="pacMenstrual" print_type="text"/>
+    <Questionaire order="6" print_order="7" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="7" print_order="8" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="8" print_order="9" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="9" print_order="10" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="10" print_order="11" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="11" value="pacIntroPromis" type="Local" xml="pacIntroPromis"/>
+    <Questionaire order="12" print_order="23.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart, text" invert="true"/>
+    <Questionaire order="13" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="14" print_order="12" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="15" print_order="13" value="pacPainMeds" type="Local" xml="pacPainMeds" print_type="text" />
+    <Questionaire order="16" print_order="14" value="pacPainDoc" type="Local" xml="pacPainDoc" print_type="text" />
+    <Questionaire order="25" print_order="23.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="26" print_order="24.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="27" print_order="24.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="28" print_order="25.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="29" print_order="24.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="30" print_order="25.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="31" print_order="2" value="pacContactInfo" type="Local" xml="pacContactInfo" print_type="text" />
+    <Questionaire order="32" print_order="17" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="PostOpQtly.0216" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="1" visit="2" visitType="STA"
+               start_date="02-28-2016" expiration_date="08-12-2016" report="FollowUp">
+    <!-- Post-op quarterly is sent 90 & 180 days after an appointment if agreed to followups -->
+    <Questionaire order="1" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="3" print_order="4.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart" invert="true"/>
+    <Questionaire order="5" print_order="6.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="6" print_order="5.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="7" print_order="5.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="8" print_order="6.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="9" print_order="5.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="10" print_order="6.2" value="PROMIS Bank v2.0 - Social Isolation" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="11" print_order="7" value="globalHealth" type="Local" xml="globalHealth" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="3" value="pacOpioids" xml="pacOpioids" type="Local" print_type="text"/>
+  </ProcessType>
+  <ProcessType value="PostOpWkly.0816" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="1" visit="99" visitType="STA"
+                start_date="08-12-2016" expiration_date="10-11-2016" report="FollowUp">
+  <!-- Post-op weekly is sent 7,14,21 & 28 days after an appointment if agreed to followups -->
+  <Questionaire order="1" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+  <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="chart" />
+  <Questionaire order="3" print_order="4.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+  <Questionaire order="4" print_order="4.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart" invert="true"/>
+  <Questionaire order="5" print_order="6.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+  <Questionaire order="6" print_order="5.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+  <Questionaire order="7" print_order="5.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+  <Questionaire order="8" print_order="6.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+  <Questionaire order="9" print_order="5.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+  <Questionaire order="10" print_order="6.3" value="PROMIS Bank v2.0 - Social Isolation" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+  <Questionaire order="11" print_order="3" value="pacOpioids" xml="pacOpioids" type="Local" print_type="text"/>
+</ProcessType>
+  <ProcessType value="PostOpQtly.0816" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="1" visit="99" visitType="STA"
+               start_date="08-12-2016" expiration_date="10-11-2016" report="FollowUp">
+    <!-- Post-op quarterly is sent 90 & 180 days after an appointment if agreed to followups -->
+    <Questionaire order="1" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="3" print_order="4.2" value="PROMIS Bank v1.0 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Physical Function Bank" type="StanfordCat" print_type="chart" invert="true"/>
+    <Questionaire order="5" print_order="6.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="6" print_order="5.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="7" print_order="5.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="8" print_order="6.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="9" print_order="5.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="10" print_order="6.2" value="PROMIS Bank v2.0 - Social Isolation" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="11" print_order="7" value="globalHealth" type="Local" xml="globalHealth" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="3" value="pacOpioids" xml="pacOpioids" type="Local" print_type="text"/>
+  </ProcessType>
+  <ProcessType value="Initial.1016" notification="true" appointment_template="Initial" schedule_template="Initial" activity="Registered" order="1" visit="2" visitType="NPV60"
+               start_date="10-11-2016" expiration_date="" report="Initial" >
+    <Questionaire order="1" value="pacIntro" type="Local" xml="pacIntro"/>
+    <Questionaire order="2" print_order="3" value="pacBackground" type="Local" xml="pacBackground" print_type="text"/>
+    <Questionaire order="3" print_order="4" value="pacSurgeries" type="RepeatingSurveyService-pacSurgeries" xml="pacSurgeries" print_type="text"/>
+    <Questionaire order="4" print_order="5" value="pacIssues" type="Local" xml="pacIssues" print_type="text"/>
+    <Questionaire order="5" print_order="6" value="pacMenstrual"  type="Local" xml="pacMenstrual" print_type="text"/>
+    <Questionaire order="6" print_order="7" value="pacIllness" type="Local" xml="pacIllness" print_type="text"/>
+    <Questionaire order="7" print_order="8" value="pacSmoking" type="Local" xml="pacSmoking" print_type="text"/>
+    <Questionaire order="8" print_order="9" value="pacAlcohol" type="Local" xml="pacAlcohol" print_type="text"/>
+    <Questionaire order="9" print_order="10" value="pacDrugs" type="Local" xml="pacDrugs" print_type="text"/>
+    <Questionaire order="10" print_order="11" value="pacQuestions" type="Local" xml="pacQuestions" print_type="text"/>
+    <Questionaire order="11" value="pacIntroPromis" type="Local" xml="pacIntroPromis"/>
+    <Questionaire order="12" print_order="23.1" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" print_type="chart, text" invert="true"/>
+    <Questionaire order="13" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="14" print_order="12" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="15" print_order="13" value="pacPainMeds" type="Local" xml="pacPainMeds" print_type="text" />
+    <Questionaire order="16" print_order="14" value="pacPainDoc" type="Local" xml="pacPainDoc" print_type="text" />
+    <Questionaire order="25" print_order="23.2" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="26" print_order="24.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="27" print_order="24.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="28" print_order="25.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="29" print_order="24.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="30" print_order="25.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="31" print_order="2" value="pacContactInfo" type="Local" xml="pacContactInfo" print_type="text" />
+    <Questionaire order="32" print_order="17" value="pacFollowUp" type="Local" xml="pacFollowUp" print_type="" />
+  </ProcessType>
+  <ProcessType value="PostOpWkly.1016" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="1" visit="99" visitType="STA"
+               start_date="10-11-2016" expiration_date="" report="FollowUp">
+    <!-- Post-op weekly is sent 7,14,21 & 28 days after an appointment if agreed to followups -->
+    <Questionaire order="1" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="chart" />
+    <Questionaire order="3" print_order="4.2" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" print_type="chart" invert="true"/>
+    <Questionaire order="5" print_order="6.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="6" print_order="5.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="7" print_order="5.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="8" print_order="6.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="9" print_order="5.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="10" print_order="6.3" value="PROMIS Bank v2.0 - Social Isolation" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="11" print_order="3" value="pacOpioids" xml="pacOpioids" type="Local" print_type="text"/>
+  </ProcessType>
+  <ProcessType value="PostOpQtly.1016" notification="true" appointment_template="FollowUp" schedule_template="No-appointment" activity="Registered" order="1" visit="99" visitType="STA"
+               start_date="10-11-2016" expiration_date="" report="FollowUp">
+    <!-- Post-op quarterly is sent 90 & 180 days after an appointment if agreed to followups -->
+    <Questionaire order="1" print_order="1" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="2" print_order="2" value="painIntensity" type="Local" xml="painIntensity" print_type="table" />
+    <Questionaire order="3" print_order="4.2" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart"/>
+    <Questionaire order="4" print_order="4.1" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" print_type="chart" invert="true"/>
+    <Questionaire order="5" print_order="6.1" value="PROMIS Bank v1.0 - Fatigue" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart"/>
+    <Questionaire order="6" print_order="5.1" value="PROMIS Bank v1.0 - Depression" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart"/>
+    <Questionaire order="7" print_order="5.2" value="PROMIS Bank v1.0 - Anxiety" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart"/>
+    <Questionaire order="8" print_order="6.2" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart" />
+    <Questionaire order="9" print_order="5.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart" />
+    <Questionaire order="10" print_order="6.2" value="PROMIS Bank v2.0 - Social Isolation" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="11" print_order="7" value="globalHealth" type="Local" xml="globalHealth" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="3" value="pacOpioids" xml="pacOpioids" type="Local" print_type="text"/>
+  </ProcessType>
+  <!-- Test survey for Hah-R01 -->
+  <ProcessType value="Pending-Hah" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" activity="Registered" order="12" visit="9999" visitType="OptSurvey"
+               start_date="02-28-2019" expiration_date="" report="">
+    <!--
+    <Questionaire order="1" print_order="2" value="TAPS@15763" type="Local" xml="TAPS" print_type="text"/>
+    <Questionaire order="2" print_order="3" value="PHQ@15764" type="Local" xml="PHQ" print_type="text" />
+    <Questionaire order="3" print_order="4" value="AUDITC@15765" type="Local" xml="AUDITC" print_type="text" />
+    <Questionaire order="4" print_order="5" value="CESDR@15766" type="Local" xml="CESDR" print_type="text" />
+    <Questionaire order="5" print_order="6" value="AA@15767" type="Local" xml="AA" print_type="text" />-->
+    <Questionaire order="6" print_order="1"  value="bodymap" type="Local" xml="bodymap" print_type="img"/>
+    <!--Questionaire order="7" print_order="7" value="COMM@15768" type="Local" xml="COMM" print_type="text" />
+    <Questionaire order="8" print_order="8" value="Opi@15769" type="Local" xml="Opi" print_type="text" />
+    <Questionaire order="9" print_order="9" value="SOAPP@15770" type="Local" xml="SOAPP" print_type="text, table" />
+    <Questionaire order="10" print_order="10" value="BDI@15771" type="Local" xml="BDI" print_type="text" />
+    <Questionaire order="11" print_order="11" value="DSO@15772" type="Local" xml="DSO" print_type="text" />
+    <Questionaire order="12" print_order="12" value="HADS@15773" type="Local" xml="HADS" print_type="text" /-->
+    <Questionaire order="13" print_order="13" value="PROMIS SF v1.0-Depression 6a" type="LocalPromis" print_type="chart, text"/>
+  </ProcessType>
+  <VisitTypes>
+    <VisitType value="tba" group="new" />
+    <VisitType value="OPS" group="new" />
+    <VisitType value="STA" group="new" />
+  </VisitTypes>
+</Process>

@@ -1,0 +1,33 @@
+<Form Description="Proxy Pain Improvement Initial" questionsPerPage="1">
+  <Items>
+    <Item Order="26" Section="start">
+      <Description>
+        <![CDATA[
+        Have you missed any work because of your child's pain?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-work" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label>
+            <onselect Type="Item" Where="Order" Value="27"/>
+          </item>
+          <item> <value>9</value> <label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="27" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If yes, how many days in the past month?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="missed-work-days" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Days</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

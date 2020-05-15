@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Process>
+
+
+  <ProcessType value="GI-NewPatient" visit="1" visitType="NPV" order="1" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="08-01-2019" expiration_date="03-16-2020" optional_questionnaires="Baseline.01">
+    <Questionaire order="1" value="consent" type="GISQSurveyService" xml="consent"/>
+  </ProcessType>
+
+  <ProcessType value="GI-NewPatient.0320" visit="1" visitType="NPV" order="1" report="Initial"
+               notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               start_date="03-19-2020" optional_questionnaires="Baseline.02">
+    <Questionaire order="1" value="consent" type="GISQSurveyService" xml="consent"/>
+  </ProcessType>
+
+  <ProcessType value="Baseline.01" notification="true" appointment_template="baseline" schedule_template="baseline"
+               order="99" visit="0" visitType="base" report="Initial"
+               start_date="07-01-2019" expiration_date="03-16-2020">
+
+    <Questionaire order="2" print_order="2" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="3" print_order="3" value="gipromis" type="GISQSurveyService" xml="gipromis" print_type="text, table, chart" />
+
+    <Questionaire order="4" print_order="4" value="PROMIS Scale v1.0 - GI Bowel Incontinence 4a" type="StanfordCat" OID="76DB88BA-CDC0-4796-9C15-D6D8662A2BBD" print_type="chart, text"/>
+    <Questionaire order="5" print_order="5" value="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" type="StanfordCat" OID="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" print_type="chart, text"/>
+
+
+    <Questionaire order="8" print_order="9.3" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="9" print_order="9.4" value="PROMIS Pain Behavior Bank" type="StanfordCat" OID="C4ADCFAB-6B75-498E-9E94-AFD3BA211DC4" print_type="chart, text"/>
+    <Questionaire order="10" print_order="10" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" OID="98DB589F-04D5-4529-9E4D-0D77F022C2CC" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="10.1" value="PROMIS Fatigue Bank" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart, text"/>
+    <Questionaire order="13" print_order="8.1" value="PROMIS Depression Bank" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart, text"/>
+    <Questionaire order="14" print_order="8.2" value="PROMIS Anxiety Bank" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="15" print_order="10.3" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart, text" />
+    <Questionaire order="16" print_order="10.2" value="PROMIS Bank v1.0 - Sleep-Related Impairment" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart, text" />
+    <Questionaire order="17" print_order="8.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="D2FA612D-C290-4B88-957D-1C27F48EE58C" print_type="chart, text"/>
+    <Questionaire value="GIACE" type="GISQSurveyService" xml="GIACE" order="18" print_order="18" print_type="text, table, chart" />
+    <Questionaire value="GICIRS" type="GISQSurveyService" xml="GICIRS" order="19" print_order="19" print_type="text, table, chart" />
+    <Questionaire value="GISQ" type="GISQSurveyService" xml="GISQ" order="21" print_order="21" print_type="text, table, chart" />
+    <Questionaire value="GIContactQ" type="Local" xml="GIContactQ" order="22" print_order="22" print_type="text, table, chart" />
+    <Questionaire value="GISQGERDQ" type="GISQSurveyService" xml="GISQGERDQ" order="23" print_order="23" print_type="text, table, chart" />
+    <Questionaire value="GISQRSI" type="GISQSurveyService" xml="GISQRSI" order="24" print_order="24" print_type="text, table, chart" />
+    <Questionaire value="GISQBEDQ" type="GISQSurveyService" xml="GISQBEDQ" order="25" print_order="25" print_type="text, table, chart" />
+    <Questionaire value="GISQEckardt" type="GISQSurveyService" xml="GISQEckardt" order="26" print_order="26" print_type="text, table, chart" />
+    <Questionaire value="GISQGCSI" type="GISQSurveyService" xml="GISQGCSI" order="28" print_order="28" print_type="text, table, chart" />
+    <Questionaire value="GIPFIQ7" type="GISQSurveyService" xml="GIPFIQ7" order="30" print_order="30" print_type="text, table, chart" />
+    <Questionaire value="GIPFDI20" type="GISQSurveyService" xml="GIPFDI20" order="32" print_order="32" print_type="text, table, chart" />
+
+  </ProcessType>
+
+<!--followUp doesn't have ACE and CIRS-->
+  <ProcessType value="FollowUp" notification="true" appointment_template="FollowUp" schedule_template="FollowUp" activity="Registered" order="2" visit="2" visitType="RPV"
+               start_date="07-04-2019" expiration_date="" report="FollowUp">
+    <Questionaire order="2" print_order="3" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="3" print_order="3" value="gipromis" type="GISQSurveyService" xml="gipromis" print_type="text, table" />
+    <Questionaire order="4" print_order="4" value="PROMIS Scale v1.0 - GI Bowel Incontinence 4a" type="StanfordCat" OID="76DB88BA-CDC0-4796-9C15-D6D8662A2BBD" print_type="chart, text"/>
+    <Questionaire order="5" print_order="5" value="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" type="StanfordCat" OID="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" print_type="chart, text"/>
+    <Questionaire order="8" print_order="9.3" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="9" print_order="9.4" value="PROMIS Pain Behavior Bank" type="StanfordCat" OID="C4ADCFAB-6B75-498E-9E94-AFD3BA211DC4" print_type="chart, text"/>
+    <Questionaire order="10" print_order="10" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" OID="98DB589F-04D5-4529-9E4D-0D77F022C2CC" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="10.1" value="PROMIS Fatigue Bank" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart, text"/>
+    <Questionaire order="13" print_order="8.1" value="PROMIS Depression Bank" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart, text"/>
+    <Questionaire order="14" print_order="8.2" value="PROMIS Anxiety Bank" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="15" print_order="10.3" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart, text" />
+    <Questionaire order="16" print_order="10.2" value="PROMIS Bank v1.0 - Sleep-Related Impairment" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart, text" />
+    <Questionaire order="17" print_order="8.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="D2FA612D-C290-4B88-957D-1C27F48EE58C" print_type="chart, text"/>
+    <Questionaire value="GISQ" type="GISQSurveyService" xml="GISQ" order="22" print_order="22" print_type="text, table, chart" />
+    <Questionaire value="GISQGERDQ" type="GISQSurveyService" xml="GISQGERDQ" order="23" print_order="23" print_type="text, table, chart" />
+    <Questionaire value="GISQRSI" type="GISQSurveyService" xml="GISQRSI" order="24" print_order="24" print_type="text, table" />
+    <Questionaire value="GISQBEDQ" type="GISQSurveyService" xml="GISQBEDQ" order="25" print_order="25" print_type="text, table" />
+    <Questionaire value="GISQEckardt" type="GISQSurveyService" xml="GISQEckardt" order="26" print_order="26" print_type="text, table" />
+    <Questionaire value="GISQGCSI" type="GISQSurveyService" xml="GISQGCSI" order="28" print_order="28" print_type="text, table" />
+    <Questionaire value="GIPFIQ7" type="GISQSurveyService" xml="GIPFIQ7" order="30" print_order="30" print_type="text, table, chart" />
+    <Questionaire value="GIPFDI20" type="GISQSurveyService" xml="GIPFDI20" order="32" print_order="32" print_type="text, table, chart" />
+
+
+  </ProcessType>
+
+<!--removed CIRS-->
+  <ProcessType value="Baseline.02" notification="true" appointment_template="baseline" schedule_template="baseline"
+               order="99" visit="0" visitType="base" report="Initial"
+               start_date="03-16-2020">
+
+    <Questionaire order="2" print_order="2" value="bodymap" type="Local" xml="bodymap" print_type="chart, img"  />
+    <Questionaire order="3" print_order="3" value="gipromis" type="GISQSurveyService" xml="gipromis" print_type="text, table, chart" />
+
+    <Questionaire order="4" print_order="4" value="PROMIS Scale v1.0 - GI Bowel Incontinence 4a" type="StanfordCat" OID="76DB88BA-CDC0-4796-9C15-D6D8662A2BBD" print_type="chart, text"/>
+    <Questionaire order="5" print_order="5" value="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" type="StanfordCat" OID="PROMIS Scale v1.0 - GI Disrupted Swallowing 7a" print_type="chart, text"/>
+
+
+    <Questionaire order="8" print_order="9.3" value="PROMIS Bank v1.1 - Pain Interference" type="StanfordCat" print_type="chart, text"/>
+    <Questionaire order="9" print_order="9.4" value="PROMIS Pain Behavior Bank" type="StanfordCat" OID="C4ADCFAB-6B75-498E-9E94-AFD3BA211DC4" print_type="chart, text"/>
+    <Questionaire order="10" print_order="10" value="PROMIS Bank v1.2 - Physical Function" type="StanfordCat" OID="98DB589F-04D5-4529-9E4D-0D77F022C2CC" print_type="chart, text" invert="true"/>
+    <Questionaire order="12" print_order="10.1" value="PROMIS Fatigue Bank" type="StanfordCat" OID="B3B30AF1-7536-451D-AD39-62A097A5EA4D" print_type="chart, text"/>
+    <Questionaire order="13" print_order="8.1" value="PROMIS Depression Bank" type="StanfordCat" OID="96FE494D-F176-4EFB-A473-2AB406610626" print_type="chart, text"/>
+    <Questionaire order="14" print_order="8.2" value="PROMIS Anxiety Bank" type="StanfordCat" OID="FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF" print_type="chart, text"/>
+    <Questionaire order="15" print_order="10.3" value="PROMIS Bank v1.0 - Sleep Disturbance" type="StanfordCat" OID="F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E" print_type="chart, text" />
+    <Questionaire order="16" print_order="10.2" value="PROMIS Bank v1.0 - Sleep-Related Impairment" type="StanfordCat" OID="E038718E-F556-4D0D-9B00-BD178DE6A2C8" print_type="chart, text" />
+    <Questionaire order="17" print_order="8.3" value="PROMIS Bank v1.0 - Anger" type="StanfordCat" OID="D2FA612D-C290-4B88-957D-1C27F48EE58C" print_type="chart, text"/>
+    <Questionaire value="GIACE" type="GISQSurveyService" xml="GIACE" order="18" print_order="18" print_type="text, table, chart" />
+    <Questionaire value="GISQ" type="GISQSurveyService" xml="GISQ" order="21" print_order="21" print_type="text, table, chart" />
+    <Questionaire value="GIContactQ" type="Local" xml="GIContactQ" order="22" print_order="22" print_type="text, table, chart" />
+    <Questionaire value="GISQGERDQ" type="GISQSurveyService" xml="GISQGERDQ" order="23" print_order="23" print_type="text, table, chart" />
+    <Questionaire value="GISQRSI" type="GISQSurveyService" xml="GISQRSI" order="24" print_order="24" print_type="text, table, chart" />
+    <Questionaire value="GISQBEDQ" type="GISQSurveyService" xml="GISQBEDQ" order="25" print_order="25" print_type="text, table, chart" />
+    <Questionaire value="GISQEckardt" type="GISQSurveyService" xml="GISQEckardt" order="26" print_order="26" print_type="text, table, chart" />
+    <Questionaire value="GISQGCSI" type="GISQSurveyService" xml="GISQGCSI" order="28" print_order="28" print_type="text, table, chart" />
+    <Questionaire value="GIPFIQ7" type="GISQSurveyService" xml="GIPFIQ7" order="30" print_order="30" print_type="text, table, chart" />
+    <Questionaire value="GIPFDI20" type="GISQSurveyService" xml="GIPFDI20" order="32" print_order="32" print_type="text, table, chart" />
+
+  </ProcessType>
+
+
+  <VisitTypes>
+    <VisitType value="NUTNEW30" group="new" />
+    <VisitType value="new" group="new" />
+    <VisitType value="IBDNPV" group="new" />
+    <VisitType value="NPV" group="new" />
+    <VisitType value="base" group="new" />
+
+    <VisitType value="IPHS" group="return" />
+    <VisitType value="SBCE" group="return" />
+    <VisitType value="BTP" group="return" />
+    <VisitType value="wcm" group="return" />
+    <VisitType value="IBDRV" group="return" />
+    <VisitType value="OPS" group="return" />
+    <VisitType value="MYDH-2FLR" group="return" />
+    <VisitType value="RPV" group="return" />
+    <VisitType value="NUTRT30" group="return" />
+
+    <VisitType value="AGILE" group="noappt" excludeFromSurveyCnt="true"/>
+    <VisitType value="EMAN" group="noappt" excludeFromSurveyCnt="true"/>
+
+  </VisitTypes>
+</Process>

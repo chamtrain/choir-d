@@ -1,0 +1,21 @@
+<Form Description="Procedure followup question 1" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description>
+        <![CDATA[Since the procedure, how would you describe the change (if any) in your overall status related to your painful condition?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>OVERALL_STATUS</ref>
+          <item><label>Very much improved</label><value>0</value></item>
+          <item><label><![CDATA[<p>]]></label><value>1</value><printlabel>Much improved</printlabel></item>
+          <item><label><![CDATA[<p>]]></label><value>2</value><printlabel>Minimally improved</printlabel></item>
+          <item><label>No change</label><value>3</value></item>
+          <item><label><![CDATA[<p>]]></label><value>4</value><printlabel>Minimally worse</printlabel></item>
+          <item><label><![CDATA[<p>]]></label><value>5</value><printlabel>Much worse</printlabel></item>
+          <item><label>Very much worse</label><value>6</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

@@ -1,0 +1,56 @@
+<Form Description="Research" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+  <!-- This is an example of a question that sets an attribute when the "Yes" or "No" response is choosen
+       the question is skipped when the attribute already exists -->
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" Class="surveyQuestionCollapsible" Align="Horizontal" >
+	 <PatientAttribute data_name="research" data_value="any" data_type="string" condition="notexists"/>
+      <Description>
+        <![CDATA[May we include you in our Research Database?]]>
+      </Description>
+	  <CollapsibleContent> <![CDATA[
+           <p><b>DESCRIPTION:</b> You are invited to participate in a research database for current and future studies.
+              Indicating "Yes" to the research database: 
+              <ul> 
+                 <li>Allows us to access information from your medical record (e.g. name, contact information, age, condition) to match you with research studies for which you may be eligible.</li>
+                 <li>It does not obligate you to be a research participant, but allows us to contact you if we think you may be eligible for one of our research studies.</li> 
+              </ul></p> 
+           <p><b>TIME INVOLVEMENT:</b> Your participation will take approximately 5 minutes.</p> 
+           <p><b>PAYMENTS:</b> You will not be paid to participate in this study.</p> 
+           <p><b>PARTICIPANT'S RIGHTS:</b> If you have read this form and have decided to participate in this project,  
+                 please understand your participation is voluntary and <u>you have the right to withdraw your consent
+                 or discontinue participation at any time without penalty or loss of benefits to which you are  
+                 otherwise entitled</u>. The alternative is not to participate. You have the right to refuse to answer
+                 particular questions. Your individual privacy will be maintained in all published and written data  
+                 resulting from the study.</p> 
+           <p><b>RISKS AND BENEFITS:</b>  There is a small risk that people outside our research lab  
+                 could learn this information, but we do our best to keep all your information confidential. The  
+                 benefits which may reasonably be expected to result from this study are that you  
+                 may be found to be a candidate for one or more studies conducted at our lab. We cannot and do not  
+                 guarantee or promise that you will receive any benefits from this study. Your  
+                 decision whether or not to participate in this study will not affect your medical care. </p> 
+           <hr> 
+           <h4><b>Authorization to Use Your Health Information for Research Purposes</b></h4>
+           <p>....<i>this is just an example</i>...</p>
+           <hr>
+             <p><b>CONTACT INFORMATION:</b></p>
+           <p>Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this research database, its procedures, risks and benefits, you should ask the Protocol Director, Dr. Sean Mackey at (650) 725-9636.</p> 
+           <p>Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board (IRB) to speak to someone independent of the research team at (650)-723-5244 or toll free at 1-866-680-2906. You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.</p> 
+           <p>Please print a copy of this form for your records.</p> 
+]]>
+	  </CollapsibleContent>
+      <Responses>
+        <Response Order="0" Type="radio" Class="registrySurvey" Description="Yes, your research team may contact me to discuss research opportunities">
+          <Scores><Score value="0"/></Scores>
+		  <SetPatientAttribute data_name="research" data_value="y"/>
+		</Response>
+        <Response Order="1" Type="radio" Class="registrySurvey" Description="No thank you">
+          <Scores><Score value="1"/></Scores>
+		  <SetPatientAttribute data_name="research" data_value="n"/>
+        </Response>
+		<Response Order="2" Type="radio" Class="registrySurvey" Description="Ask me again later">
+          <Scores><Score value="2"/></Scores>
+		</Response>
+	  </Responses>
+    </Item>
+</Items>
+</Form>

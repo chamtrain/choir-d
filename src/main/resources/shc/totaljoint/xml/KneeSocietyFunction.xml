@@ -1,0 +1,243 @@
+<Form Description="Knee Society Score - Functional Activities" questionsPerPage="1">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[For how long can you stand (with or without aid) before sitting due to knee discomfort?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Cannot stand</label></item>
+          <item><value>3</value><label>0-5 minutes</label></item>
+          <item><value>6</value><label>6-15 minutes</label></item>
+          <item><value>9</value><label>16-30 minutes</label></item>
+          <item><value>12</value><label>31-60 minutes</label></item>
+          <item><value>15</value><label>More than an hour</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2">
+      <Description>
+        <![CDATA[For how long can you walk (with or without aid) before stopping due to knee discomfort?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>0</value><label>Cannot walk</label></item>
+          <item><value>3</value><label>0-5 minutes</label></item>
+          <item><value>6</value><label>6-15 minutes</label></item>
+          <item><value>9</value><label>16-30 minutes</label></item>
+          <item><value>12</value><label>31-60 minutes</label></item>
+          <item><value>15</value><label>More than an hour</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Walking on an uneven surface</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Turning or pivoting on your leg</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Climbing up or down a flight of stairs</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Getting up from a low couch or a chair without arms</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Getting into or out of a car</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Moving laterally (stepping to the side)</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Climbing a ladder or step stool</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Carrying a shopping bag for a block</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Squatting</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Kneeling</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        How much does your knee bother you during each of the following activities?
+        <p>Running</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <item><value>5</value><label>No bother</label></item>
+          <item><value>4</value><label>Slight</label></item>
+          <item><value>3</value><label>Moderate</label></item>
+          <item><value>2</value><label>Severe</label></item>
+          <item><value>1</value><label>Very severe</label></item>
+          <item><value>0</value><label>Cannot do because of knee</label></item>
+          <item><value>99</value><label>I never do this</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

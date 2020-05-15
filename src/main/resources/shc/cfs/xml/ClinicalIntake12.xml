@@ -1,0 +1,62 @@
+<Form Description="Clinical Intake Questionnaire" questionsPerPage="21">
+  <Items>
+
+
+    <Item Order="29" >
+      <Description>
+        <![CDATA[
+        <b>COURSE OF ILLNESS</b><p>Did your fatigue/energy-related illness start after any of the experiences listed below? Please select all that apply.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select">
+          <ref>TriggerEvent</ref>
+          <item><value>1</value><label>An infectious illness</label>
+          </item>
+          <item><value>2</value><label>Meningitis or symptoms suggestive of a neurological infection or other neurological event or condition that prompted a visit to a physician’s office or emergency room (headache, fever, sensitivity to light, nausea, vomiting)</label>
+          </item>
+          <item><value>3</value><label>Myocarditis or symptoms suggestive of heart problems that prompted a visit to a physician’s office or emergency room (chest pain, palpitations, lightheadedness, loss of consciousness)</label>
+          </item>
+          <item><value>4</value><label>A trip or vacation within the United States</label>
+          </item>
+          <item><value>5</value><label>A trip or vacation outside the United States</label>
+          </item>
+          <item><value>6</value><label>An injection at a doctor’s office</label>
+          </item>
+          <item><value>7</value><label>Surgery</label></item>
+          <item><value>7</value><label>Stress or a major life event</label></item>
+          <item><value>7</value><label>An accident</label></item>
+          <item><value>7</value><label>Pregnancy</label></item>
+          <item><value>7</value><label>Eating dairy, eggs, or meat that had not been pasteurized or thoroughly cooked</label></item>
+          <item><value>7</value><label>Drinking water from a well, river, lake, or stream</label></item>
+          <item><value>7</value><label>Exposure to chemical/environmental toxins</label></item>
+          <item><value>7</value><label>Other</label>
+            <onselect Type="Item" Where="Order" Value="30">
+              <Set Type="attribute" Name="RequiredMin" Value="1"/>
+              <Set Type="state" Name="visible" Value="true"/>
+            </onselect></item>
+
+        </Response>
+      </Responses>
+    </Item>
+
+
+
+    <Item Order="30" >
+      <Description><![CDATA[ Please describe ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" Visible="false" >
+          <label></label>
+          <format>
+            <lines>2</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+
+
+
+
+  </Items>
+</Form>

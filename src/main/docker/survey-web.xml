@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+  <display-name>CHOIR Survey</display-name>
+
+  <welcome-file-list>
+    <welcome-file>Survey.nocache.html</welcome-file>
+  </welcome-file-list>
+
+  <filter>
+    <filter-name>cacheFilter</filter-name>
+    <filter-class>edu.stanford.registry.server.CacheFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>serviceFilter</filter-name>
+    <filter-class>edu.stanford.registry.server.PatientServiceFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>surveyTokenFilter</filter-name>
+    <filter-class>edu.stanford.registry.server.service.SurveyTokenFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>surveyTokenFilter</filter-name>
+    <url-pattern>/survey/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>cacheFilter</filter-name>
+    <url-pattern>/survey2/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>serviceFilter</filter-name>
+    <url-pattern>/survey/*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>survey2</servlet-name>
+    <servlet-class>edu.stanford.registry.server.survey.SurveyServiceProxy</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>survey2</servlet-name>
+    <url-pattern>/survey/svc/survey2</url-pattern>
+  </servlet-mapping>
+
+  <mime-mapping>
+    <extension>ico</extension>
+    <mime-type>image/x-icon</mime-type>
+  </mime-mapping>
+
+  <listener>
+    <description>Log4J Configuration and Shutdown</description>
+    <listener-class>edu.stanford.registry.server.Log4jContextListener</listener-class>
+  </listener>
+</web-app>

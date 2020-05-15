@@ -1,0 +1,107 @@
+<Form Description="Pain Intensity" questionsPerPage="1">
+  <Items>
+
+
+    <Item Order="22" ref="intensity_now" Class="surveyQuestionHorizontal">
+      <Description>
+        <![CDATA[
+         What is your <b>current</b> level of pain?
+         ]]>
+      </Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="No Pain" ><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Worst Pain Possible"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="23">
+      <Description>
+        <![CDATA[
+        Have you experienced any body pain in the <b>last month</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="last_month" Order="1" Type="select1" required="true">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="24" ref="intensity_average" Class="surveyQuestionHorizontal">
+      <ResponseValue xpath_query="//Response[@ref='last_month']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+         What was your <b><i>average</i></b> level of pain over the <b>last month</b>?
+         ]]>
+      </Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="No Pain" ><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Worst Pain Possible"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="25" ref="intensity_lowest" Class="surveyQuestionHorizontal">
+      <ResponseValue xpath_query="//Response[@ref='last_month']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+         What was your <b><i>lowest</i></b> level of pain over the <b>last month</b>?
+         ]]>
+      </Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="No Pain" ><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Worst Pain Possible"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+    </Item>
+
+    <Item Order="26" ref="intensity_highest" Class="surveyQuestionHorizontal">
+      <ResponseValue xpath_query="//Response[@ref='last_month']/item[value=1]/@selected" data_value="true" condition="equal"/>
+      <Description>
+        <![CDATA[
+         What was your <b><i>highest</i></b> level of pain over the <b>last month</b>?
+         ]]>
+      </Description>
+      <Responses><!--default: DescriptionPosition="below" -->
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="0" Description="0"  Description2="No Pain" ><Scores><Score value="0"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="1" Description="1"><Scores><Score value="1"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="2" Description="2"><Scores><Score value="2"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="3" Description="3"><Scores><Score value="3"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="4" Description="4"><Scores><Score value="4"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="5" Description="5"><Scores><Score value="5"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="6" Description="6"><Scores><Score value="6"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="7" Description="7"><Scores><Score value="7"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="8" Description="8"><Scores><Score value="8"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="9" Description="9"><Scores><Score value="9"/></Scores></Response>
+        <Response Type="radio" Class="surveyAnswerHorizontal" Order="10" Description="10"  Description2="Worst Pain Possible"><Scores><Score value="10"/></Scores></Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

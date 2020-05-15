@@ -1,0 +1,67 @@
+<Form Description="Contact" DateStarted="" DateFinished="" questionsPerPage="2">
+    <Items>
+        <Item Order="1" ItemResponse="" ItemScore="" required="true" >
+            <Description>
+                <![CDATA[Best contact phone number to reach you before surgery?]]>
+            </Description>
+            <Responses>
+                <Response Order="1" Type="input" appearance="compact">
+                    <ref>CONTACTNUM</ref>
+                    <label></label>
+                    <format><datatype>integer</datatype></format>
+                    <Scores />
+                </Response>
+            </Responses>
+        </Item>
+        <Item Order="2" ItemResponse="" ItemScore=""  required="false">
+            <Description>
+                <![CDATA[If this is not your phone, please indicate whose phone number it is]]>
+            </Description>
+            <Responses>
+                <Response Order="1" Type="input" appearance="compact">
+                    <ref>CONTACTWHO</ref>
+                    <label></label>
+                    <format><datatype>text</datatype></format>
+                    <Scores />
+                </Response>
+            </Responses>
+        </Item>
+        <Item Order="3" ItemResponse="" ItemScore="" required="true" Page="start">
+            <Description>
+                <![CDATA[Do you have any questions for your anesthesiologist?]]>
+            </Description>
+            <Responses>
+                <Response Order="1" required="true" Type="select1">
+                    <ref>QUESTIONS</ref>
+                    <item selected="false">
+                        <label>Yes</label>
+                        <value>1</value>
+                        <onselect Type="Item" Where="Order" Value="4">
+                            <Set Type="state" Name="visible" Value="true"/>
+                        </onselect>
+                    </item>
+                    <item selected="false">
+                        <label>No</label>
+                        <value>2</value>
+                    </item>
+                    <Scores />
+                </Response>
+            </Responses>
+        </Item>
+        <Item Order="4" ItemResponse="" ItemScore="" Visible="false" >
+            <Description>
+                <![CDATA[Please list your questions]]>
+            </Description>
+            <Responses>
+                <Response Order="1" Type="input" appearance="compact">
+                    <ref>QUESTIONSEXP</ref>
+                    <location>left</location>
+                    <format>
+                        <lines>5</lines>
+                    </format>
+                    <Scores />
+                </Response>
+            </Responses>
+        </Item>
+    </Items>
+</Form>

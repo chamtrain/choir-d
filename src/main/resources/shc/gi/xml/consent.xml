@@ -1,0 +1,80 @@
+<Form Description="Research Consent" questionsPerPage="1" >
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+  <p>We maintain a database of the information about our patients in order to learn
+  more about your health and strengthen our clinical practice. We would like to include
+  your answers in our database. <b>By agreeing to participate, you are confirming your consent
+  to be included in our secure patient database.</b> The full consent form, available below,
+  or at the front desk at the clinic, describes what information we collect, how we will
+  use the information and how we will protect your information. <b>Being included in the data
+  collection does not require you to make additional visits and there is no experimental
+  intervention. Additionally, your identity is never used or shared when we study the
+  information collected</b>
+  </p>
+]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="collapsible">
+          <label>Consent Form</label>
+          <CollapsibleContent>
+            <![CDATA[
+  <p><b>CONSENT FORM</b></p>
+  <p><b>Patient Outcomes in Gastrointestinal</b></p>
+ <p>DESCRIPTION: You are invited to participate in a research study on in an ongoing collection of clinical information that will be used to track your progress in our clinic. The health information we collect could also be used to find future areas for research investigation. The information collected is based upon your routine visits to the Stanford Redwood city outpatient Clinic. </p>
+
+<p>RISKS AND BENEFITS: There are no risks to participants in this study. The benefits, which may reasonably be expected to result from this study, are better tracking of progress by your physician. We cannot and do not guarantee or promise that you will receive any benefits from this study. Chart reviews, registries can carry a risk of breach of confidentiality, we will ensure that no data is shared without proper identification. Stanford uses encrypted laptops and electronic database systems that are password protected</p>
+
+<p>TIME INVOLVEMENT: Your participation in this experiment will take approximately the same time as your clinic visits where you will complete the questionnaires. You will receive questionnaires and reminders via email.</p>
+
+<p>PAYMENTS/REIMBURSEMENTS: You will not be paid to participate in this study.</p>
+
+<p>PARTICIPANT&rsquo;S RIGHTS: If you have read this form and have decided to participate in this project, please understand your participation is voluntary and you have the right to withdraw your consent or discontinue participation at any time without penalty or loss of benefits to which you are otherwise entitled.  The results of this research study may be presented at scientific or professional meetings or published in scientific journals. However, your identity will not be disclosed. Identifiers might be removed from identifiable private information and/or identifiable specimens and, after such removal, the information and/or specimens could be used for future research studies or distributed to another investigator for future research studies without additional informed consent from you.</p>
+
+<p>A description of this clinical trial will be available on http://www.ClinicalTrials.gov, as required by U.S. Law. This Web site will not include information that can identify you. At most, the Web site will include a summary of the results. You can search this Web site at any time.</p>
+
+<p> Authorization To Use Your Health Information For Research Purposes&#160; Because information about you and your health is personal and private, it generally cannot be used in this research study without your authorization. If you agree to this form, it will provide that authorization. The form is intended to inform you about how your health information will be used or disclosed in the study. Your information will only be used in accordance with this authorization form and the informed consent form and as required or allowed by law. Please read it carefully before agreeing to it. </p>
+
+<p>What is the purpose of this research study and how will my health information be utilized in the study? The purpose of this project is to study is to collect and maintain information about your Digestive health. The information collected is based upon your routine visits to the Stanford Redwood city Digestive Health Center.  If you choose to participate, information from self-report questionnaires will be recorded in a secure database system. This database will be used to track your progress and determine outcomes from treatments. There is no study intervention involved and no change in your routine treatment. If you participate, you will be asked to complete routine questionnaires via electronic survey, either on your home computer before your appointment or on a tablet while waiting for appointment. </p>
+
+<p>Do I have to agree to this authorization form? You do not have to agree this authorization form. But if you do not, you will not be able to participate in this research study.</p>
+
+<p>If I agree, can I revoke it or withdraw from the research later? If you decide to participate, you are free to withdraw your authorization regarding the use and disclosure of your health information (and to discontinue any other participation in the study) at any time. After any revocation, your health information will no longer be used or disclosed in the study, except to the extent that the law allows us to continue using your information (e.g., necessary to maintain integrity of research). If you wish to revoke your authorization for the research use or disclosure of your health information in this study, you must write to: Research team at Stanford Medicine, 450 Broadway St. Pavilion C, 3rd floor, Redwood City, CA 94063.</p>
+
+<p>What Personal Information Will Be Obtained, Used or Disclosed? Your health information related to this study may be used or disclosed in connection with this research study, including, but not limited to, scores on clinical outcomes measures, physical exam outcomes, clinical diagnosis and treatments, Dates of Service with CPT/Procedure codes, name, electronic mail addresses, medical record number, phone number and date of birth. This information will never be associated with your name or any other personally identifying information.</p>
+
+<p>Who May Use or Disclose the Information? The following parties are authorized to use and/or disclose your health information in connection with this research study: * The Protocol Director, Dr. Clarke * The Stanford University Administrative Panel on Human Subjects in Medical Research and any other unit of Stanford University as necessary * Research Staff   Who May Receive or Use the Information? The parties listed in the preceding paragraph may disclose your health information to the following persons and organizations for their use in connection with this research study: </p>
+
+<p>* The Office for Human Research Protections in the U.S. Department of Health and Human Services</p>
+
+<p>When will my authorization expire? Your authorization for the use and/or disclosure of your health information will end on January 22nd, 2060 or when the research project ends, whichever is earlier. </p>
+
+<p> CONTACT INFORMATION:  Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this research study, its procedures, risks and benefits, or alternative courses of treatment, you should ask the Protocol Director, Dr. John Clarke. You may contact him/her now or later at (650) 736-5555 .  Injury Notification: If you feel you have been hurt by being a part of this study, please contact the Protocol Director, John Clarke at (650) 736-5555. Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board (IRB) to speak to someone independent of the research team at (650)-723-5244 or toll free at 1-866-680-2906.&#160; You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306.</p>
+
+<p>If you agree to participate in this research, please complete the questionnaire / survey </p>
+
+<p> STANFORD UNIVERSITY Research Consent Form</p>
+
+<p> Protocol Director: Dr. John Clarke</p>
+
+<p> Protocol Title: Prospective Data Collection for Evaluation of Health and Disease in Gastrointestinal Disorders</p>
+]]>
+          </CollapsibleContent>
+        </Response>
+        <Response Order="2" Type="select1" required="true">
+          <ref>consent</ref>
+          <item>
+            <label>Yes, I agree to participate in this research</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No, I do not want to participate in this research</label>
+            <value>0</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>

@@ -1,0 +1,239 @@
+<Form Description="Lymphedema Leg Function" questionsPerPage="1">
+  <Items>
+    <Item Order="2">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>walk</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1A</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>go up and down stairs</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1B</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>bend (e.g. tie shoelaces, cut toenails)</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1C</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>kneel</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1D</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>stand</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1E</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>get into/out of a car</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1F</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="8">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>get on/off public transport, e.g. trains/buses</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1G</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>get up from a chair</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1H</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>drive a car</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1I</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>do your job/occupation</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1J</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        How much does (do) your swollen leg(s) affect your ability to <b>do housework</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q1K</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13" >
+      <Description>
+        <![CDATA[
+        How much does your lymphedema affect your leisure activities/social life?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q2</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="14" ItemResponse="" ItemScore="" required="false" >
+      <ResponseValue xpath_query="//Item[@Order='13']/Responses/Response/item[@selected='true' and (label='A little' or label='Quite a bit' or label='A lot')]/@selected" data_value="true" condition="equal"/>
+      <Description><![CDATA[ What are some examples of how your lymphedema affects your leisure activities/social life? ]]></Description>
+      <Responses>
+        <Response Order="2" Type="input" >
+          <ref>Q2A</ref>
+          <label></label>
+          <format>
+            <lines>6</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        How much do you have to depend on other people?
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="true">
+          <ref>Q3</ref>
+          <item><value>1</value><label>Not at all</label></item>
+          <item><value>2</value><label>A little</label></item>
+          <item><value>3</value><label>Quite a bit</label></item>
+          <item><value>4</value><label>A lot</label></item>
+          <item><value>0</value><label>Not applicable</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

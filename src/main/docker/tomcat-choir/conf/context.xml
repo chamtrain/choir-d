@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+  <Resource name="jdbc/choirDB" auth="Container"
+            type="javax.sql.DataSource" driverClassName="${database.driver}"
+            url="${database.url}"
+            username="${database.user}" password="${database.password}"
+            maxTotal="${database.pool.max.total}" maxIdle="${database.pool.max.idle}"
+            maxWaitMillis="10000" defaultAutoCommit="false"/>
+  <Parameter name="registry.jndi.datasource" value="java:comp/env/jdbc/choirDB" override="false"/>
+  <Parameter name="registry.jndi.datasource.flavor" value="${database.flavor}" override="false"/>
+
+  <!-- Assume a reverse proxy is configured to pass forwarded IP and
+       the authenticated user as headers -->
+  <Parameter name="proxyauth.header" value="${proxyauth.header}" override="false"/>
+  <Parameter name="proxyauth.proxy.hosts" value="${proxy.hosts}" override="false"/>
+  <Parameter name="proxyauth.forwarded.ip" value="X-FORWARDED-FOR" override="false"/>
+
+  <!-- This controls where/how application logs will be stored -->
+  <Parameter name="log4j.configuration" value="/tomcat/conf/log4j.xml" override="false"/>
+  <Parameter name="registry.sql.log.parameters" value="true" override="false"/>
+
+  <!-- Allow survey.war to talk to choir.war -->
+  <Parameter name="registry.service.password" value="${registry.service.password}" override="false"/>
+  <Parameter name="ohsu.service.password" value="${ohsu.service.password}" override="false"/>
+
+  <!-- Enable/disable batch processing (survey advance/complete handling) -->
+  <Parameter name="registry.batch.interval.seconds" value="30" override="false"/>
+  <Parameter name="import.process.frequency" value="2" override="false"/>  <!-- minutes -->
+  <Parameter name="importPendingFileDirectory" value="/app/appointments/{site}/xchgin" override="false"/>
+  <Parameter name="importProcessedFileDirectory" value="/app/appointments/{site}/xchgout" override="false"/>
+  <Parameter name="import.url" value="${import.url}" override="false"/>
+
+  <!-- Custom factories from mercury -->
+  <!--<Parameter name="factory.survey.system" value="edu.stanford.mercury.registry.SurveySystemFactoryImpl" override="false"/>-->
+  <!--<Parameter name="factory.survey.advance" value="edu.stanford.mercury.registry.SurveyAdvanceHandlerFactoryImpl" override="false"/>-->
+  <!--<Parameter name="factory.survey.complete" value="edu.stanford.mercury.registry.SurveyCompleteHandlerFactoryImpl" override="false"/>-->
+
+  <!-- MRN and date/time formatting -->
+  <Parameter name="PatientIdFormatterClass" value="edu.stanford.registry.server.utils.StanfordMrn" />
+  <Parameter name="PatientIdFormatErrorMessage" value="Patient Id must be 5-7 characters followed by - and a single digit." />
+  <Parameter name="default.dateFormat" value="MM/dd/yyyy" />
+  <Parameter name="default.dateTimeFormat" value="MM/dd/yyyy h:mm a" />
+
+  <!-- These control the optional links at the footer of the page -->
+  <Parameter name="aboutus.link" value="https://med.stanford.edu/researchit.html" />
+  <Parameter name="terms.link" value="https://www.stanford.edu/site/terms.html" />
+  <Parameter name="contact.link" value="https://choir.stanford.edu/contact/" />
+
+  <!-- Configure sending of emails -->
+  <Parameter name="survey.link" value="${survey.link}"/>
+  <Parameter name="registry.email.mode" value="${email.mode}" override="false"/>
+  <Parameter name="registry.email.production.host" value="*" override="false"/>
+  <Parameter name="registry.email.server" value="smtp" override="false"/>
+  <Parameter name="registry.email.port" value="${email.port}" override="false"/>
+  <Parameter name="registry.email.file" value="/app/logs/{site}.email.log" override="false"/>
+
+  <!-- Configure char url and resource dirs -->
+  <Parameter name="chart.url" value="${chart.url}" override="false"/>
+  <Parameter name="importDefinitionResource" value="${importDefinitionResource}" override="false"/>
+  <Parameter name="xml_resource" value="${xml_resource}" override="false"/>
+  <Parameter name="emailTemplateResource" value="${emailTemplateResource}" override="false"/>
+  
+  <!-- Amazon Gift Card -->
+  <Parameter name="amazon.host" value="${amazon.host}" override="false"/>
+  <Parameter name="amazon.accessKey" value="${amazon.accessKey}" override="false"/>
+  <Parameter name="amazon.secretKey" value="${amazon.secretKey}" override="false"/>
+
+</Context>

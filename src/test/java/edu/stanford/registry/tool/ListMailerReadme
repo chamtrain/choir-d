@@ -1,0 +1,20 @@
+##
+# ListMailer is a utility to do mass mailing. It will send a predefined email,
+# with or without an attachment, to a list of addresses.
+# 
+# Usage: ListMailer [properties.file]
+# The properties.file is optional. All or some of the properties for ListMailer can be provided 
+# in a single file named at runtime or they can be defined as a System.property. 
+# If a property is defined in both the System.property value is used.
+# See ListMailerSampleProperties.properties for a description of the properties.
+#
+# ListMailer can be run from within an IDE or from a custom script.
+###################################################################################################################### 
+# Sample script to run ListMailer
+#!/bin/bash
+CLASSBASE=./war/WEB-INF/
+CLASSPATH=${CLASSBASE}lib/commons-io.jar:${CLASSBASE}lib/javax.mail.jar:${CLASSBASE}lib/log4j.jar:${CLASSBASE}classes/
+export CLASSPATH
+export PATH="$JAVA_HOME/bin:$PATH"
+java -Dlog4j.configuration=log4j.xml edu.stanford.registry.tool.ListMailer /my/path/ListMailerSample.properties
+###################################################################################################################### 

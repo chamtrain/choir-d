@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<select1 ref="treatment" appearance="compact">
+		<item><label></label></item>
+		<item><label>Physical therapy</label><value>Physical therapy</value></item>
+ 		<item><label>Occupational therapy</label><value>Occupational therapy</value></item>
+ 		<item><label>Aquatic/Pool therapy</label><value>Aquatic/Pool therapy</value></item>
+ 		<item><label>Passive (heat, ice, gentle massage, ultrasound)</label><value>Passive (heat, ice, gentle massage, ultrasound)</value></item>
+ 		<item><label>Mobilizations</label><value>Mobilizations</value></item>
+ 		<item><label>Traction</label><value>Traction</value></item>
+ 		<item><label>Exercises/aerobic conditioning</label><value>Exercises/aerobic conditioning</value></item>
+ 		<item><label>TENS</label><value>TENS</value></item>
+ 		<item><label>Orthotics (i.e. corrective foot inserts)</label><value>Orthotics (i.e. corrective foot inserts)</value></item>
+ 		<item><label>Prosthetics (braces, supports, etc)</label><value>Prosthetics (braces, supports, etc)</value></item>
+ 		<item><label>Chiropractic</label><value>Chiropractic</value></item>
+ 		<item><label>Deep tissue Massage</label><value>Deep tissue Massage</value></item>
+ 		<item><label>Psychological counseling</label><value>Psychological counseling</value></item>
+ 		<item><label>Alcohol/Drug </label><value>Alcohol/Drug Detoxification</value></item>
+ 		<item><label>Accupuncture</label><value>Accupuncture</value></item>
+ 		<item><label>Extended Bed Rest</label><value>Extended Bed Rest</value></item>
+ 		<item><label>Biofeedback or relaxation therapy</label><value>Biofeedback or relaxation therapy</value></item>
+ 		<item><label>Radiation treatment</label><value>Radiation treatment</value></item>
+ 		<item><label>Trigger point injections</label><value>Trigger point injections</value></item>
+ 		<item><label>Epidural steroid injections</label><value>Epidural steroid injections</value></item>
+ 		<item><label>Facet joint injections</label><value>Facet joint injections</value></item>
+ 		<item><label>Nerve blocks</label><value>Nerve blocks</value></item>
+ 		<item><label>Spinal cord stimulation</label><value>Spinal cord stimulation</value></item>
+ 		<item><label>Acupuncture</label><value>Acupuncture</value></item>
+ 		<item><label>Acupressure</label><value>Acupressure</value></item>
+  	</select1>

@@ -1,0 +1,83 @@
+<Form Description="Names" questionsPerPage="3">
+ <Items>
+   <Item Order="1">
+     <Description>What is the patient's name?</Description>
+     <Responses>
+       <Response Order="1" Type="input" required="true">
+         <ref>PATIENTNAME</ref>
+         <format>
+           <datatype>text</datatype>
+           <lines>1</lines>
+           <charwidth>80</charwidth>
+         </format>
+         <hint>Enter your name if you are filling out this survey for yourself,
+           or the patient's name if you are assisting someone else.</hint>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="2">
+     <Description>Is someone helping complete this questionnaire?</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="true">
+         <ref>ASSISTED</ref>
+         <item>
+           <label>No</label>
+           <value>1</value>
+         </item>
+         <item>
+           <label>Yes</label>
+           <value>2</value>
+           <onselect Type="Item" Where="Order" Value="3">
+             <Set Type="attribute" Name="RequiredMin" Value="1"/>
+             <Set Type="state" Name="visible" Value="true"/>
+           </onselect>
+           <ondeselect Type="Item" Where="Order" Value="3">
+             <Set Type="attribute" Name="RequiredMin" Value="0"/>
+             <Set Type="state" Name="visible" Value="false"/>
+           </ondeselect>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+   <Item Order="3" RequiredMin="0" Visible="false">
+     <Description>Who is helping?</Description>
+     <Responses>
+       <Response Order="1" Type="select1" required="true">
+         <ref>HELPER</ref>
+         <item>
+           <label>Spouse</label>
+           <value>1</value>
+         </item>
+<!-- 
+         <item>
+           <label>Parent</label>
+           <value>2</value>
+         </item>
+-->
+         <item>
+           <label>Child</label>
+           <value>3</value>
+         </item>
+         <item>
+           <label>Other Family</label>
+           <value>4</value>
+         </item>
+         <item>
+           <label>Translator</label>
+           <value>5</value>
+         </item>
+<!-- 
+         <item>
+           <label>Clinic Staff</label>
+           <value>6</value>
+         </item>
+-->
+         <item>
+           <label>Someone Else</label>
+           <value>7</value>
+         </item>
+       </Response>
+     </Responses>
+   </Item>
+ </Items>
+</Form>

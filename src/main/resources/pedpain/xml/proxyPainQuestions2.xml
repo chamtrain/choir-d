@@ -1,0 +1,153 @@
+<Form Description="Proxy Pain Questions" questionsPerPage="1">
+  <Items>
+    <Item Order="17" Section="start">
+      <Description>
+        <![CDATA[
+        How long has your child had the pain that bothers them <b>the most</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-years" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Years</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="pain-most-months" Order="2" Type="input" min="0" max="11" required="true">
+          <label>Months</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        <h4>How did that pain start?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-reason" Order="2" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Has your child been to a doctor or nurse because of this pain?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-seen-dr" Order="1" Type="select1" required="false">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20" Section="start">
+      <Description>
+        <![CDATA[
+        Regarding your child's pain in general
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21">
+      <Description>
+        <![CDATA[
+        <h4>Approximately how many (different) doctors has your child seen in the past 12 months
+        while looking for pain relief?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-doctors-year" Order="1" Type="input" min="0" max="99" required="false">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="pain-doctors-year-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Approximately how many (different) doctors has your child <i><u>ever</u></i> seen 
+        while looking for pain relief?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-doctors-ever" Order="1" Type="input" min="0" max="99" required="false">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="pain-doctors-ever-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="23" Section="start">
+      <Description>
+        <![CDATA[
+        Please estimate your child's use of medical services for the past 12 months. Enter 0 if none.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="24">
+      <Description>
+        <![CDATA[
+        <h4>Number of office visits to medical doctors</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="visits-medical" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <!-- 
+        <Response ref="visits-medical-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+        -->
+      </Responses>
+    </Item>
+    <Item Order="25">
+      <Description>
+        <![CDATA[
+        <h4>Number of office visits to complementary and alternative therapists</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="visits-alternative" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <!-- 
+        <Response ref="visits-alternative-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+        -->
+      </Responses>
+    </Item>
+    <Item Order="26" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Number of mental health visits</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="visits-mental" Order="1" Type="input" min="0" max="99" required="true">
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <!-- 
+        <Response ref="visits-mental-none" Order="2" Type="select" required="false">
+          <item> <value>1</value> <label>None</label> </item>
+        </Response>
+        -->
+      </Responses>
+    </Item>
+  </Items>
+</Form>

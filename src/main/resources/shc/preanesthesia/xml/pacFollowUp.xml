@@ -1,0 +1,27 @@
+<Form Description="Followup consent" DateStarted="" DateFinished="" questionsPerPage="1">
+    <Items>
+        <Item Order="1" ItemResponse="" ItemScore="" required="true" >
+            <!-- Original wording:
+                    Our goal is to provide you the best care possible. We would like to contact you with a much briefer version of this survey to assess how you did after your surgery or procedure.  This information will be used to improve our care for patients such as yourself.
+                 replaced 2016-08-16 -->
+            <Description>
+                <![CDATA[We are interested in learning more about how you are feeling after your procedure at Stanford. We would like to contact you with a much briefer version of this survey which will assess your overall health. Note you may receive this request even if you don’t have an upcoming appointment because we are tracking your health over the long term. We will use this information to provide the best care possible for you and other patients like you.
+                 <p>May we contact you?]]>
+            </Description>
+            <Responses>
+                <Response Order="1" required="true" Type="select1">
+                    <ref>FOLLOWCONS</ref>
+                    <item selected="false">
+                        <label>Yes</label>
+                        <value>1</value>
+                    </item>
+                    <item selected="false">
+                        <label>No</label>
+                        <value>2</value>
+                    </item>
+                    <Scores />
+                </Response>
+            </Responses>
+        </Item>
+    </Items>
+</Form>

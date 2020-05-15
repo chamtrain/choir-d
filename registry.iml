@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gwt" name="GWT">
+      <configuration>
+        <setting name="compilerMaxHeapSize" value="1024" />
+        <setting name="gwtScriptOutputStyle" value="PRETTY" />
+        <setting name="gwtSdkUrl" value="file://$MODULE_DIR$/lib/ivy/gwt" />
+        <setting name="webFacet" value="GWT-Web" />
+      </configuration>
+    </facet>
+    <facet type="web" name="GWT-Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/war/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/war" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gwt" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/demo/build" />
+      <excludeFolder url="file://$MODULE_DIR$/gwt-unitCache" />
+      <excludeFolder url="file://$MODULE_DIR$/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library name="Source Resources">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="survey">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-library.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-datebox.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-library-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-library.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-datebox-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/survey/jqm4gwt-datebox.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="clinic">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.ext.json.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3-extras.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.ext.json-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.ext.json.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet-source.jar!/com/google/gwt/emul" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.jar!/com/google/gwt/emul" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/org.restlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3-extras-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3-extras.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/clinic/gwtbootstrap3.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="default">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-codec.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-fileupload.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-io.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-math3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/fontbox.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/httpclient.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/httpcore.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/javax.mail.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/jcommon.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/jfreechart.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/json.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/log4j.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/opencsv.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.fileupload.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.json.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.servlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/pdfbox.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/poi-ooxml.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/poi.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-lang3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/encoder.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-base.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-hl7overhttp.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-structures-v23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-codec-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-fileupload-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-io-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-math3-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/httpclient-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/httpcore-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/javax.mail-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/jcommon-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/jfreechart-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/opencsv-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.fileupload-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.json-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/org.restlet.ext.servlet-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/poi-ooxml-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/poi-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/commons-lang3-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/encoder-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-base-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-structures-v23-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/hapi-hl7overhttp-source.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="compile">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/compile/jqm4gwt-library.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/compile/jqm4gwt-library-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/compile/jqm4gwt-library.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library name="runtime">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/commons-logging.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/postgresql.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/slf4j-log4j12.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ojdbc7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/commons-logging-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/postgresql-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/runtime/slf4j-log4j12-source.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="test">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/cglib-nodep.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/easymock.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/junit.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/objenesis.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/mockito-core.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/hamcrest-core.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/byte-buddy.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/easymock-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/junit-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/objenesis-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/cglib-nodep-source.jar!/src/test" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/cglib-nodep-source.jar!/src/proxy" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/mockito-core-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/mockito-core.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/hamcrest-core.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/test/byte-buddy-source.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gwt">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-dev.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-servlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-user.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/validation-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/asm.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-codeserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-dev-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-dev.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-servlet-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-servlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-user-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-user.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/validation-api-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/gwt/gwt-codeserver.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.github.susom.database">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/annotations.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/database.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/javax.inject.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/slf4j-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/annotations-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/database-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/javax.inject-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/slf4j-api-source.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ivy/default/database-source.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

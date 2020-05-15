@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+  <!-- This controls where/how application logs will be stored -->
+  <Parameter name="log4j.configuration" value="/tomcat/conf/log4j.xml" override="false"/>
+
+  <!-- Need the factory for all CHOIR surveys so we know which of the above services to use -->
+  <!--<Parameter name="factory.survey.system" value="edu.stanford.mercury.registry.SurveySystemFactoryImpl" override="false"/>-->
+</Context>

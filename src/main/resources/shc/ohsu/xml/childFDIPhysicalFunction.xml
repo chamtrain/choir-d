@@ -1,0 +1,298 @@
+<Form Description="Proxy Functional Disability Index - Physical Functioning" questionsPerPage="10">
+  <Items>
+    <Item Order="1">
+      <Description>
+        <![CDATA[
+        The following questions are regarding your physical functioning.
+        <p>When people are sick or not feeling well it is sometimes difficult for them
+        to do their regular activities.
+        In the past <b><u>2 weeks</u></b>, would you have had any <b>physical trouble</b>
+        or <b>difficulty</b> doing the following activities?</p>
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="2" Page="start">
+      <Description>
+        <![CDATA[
+        Remember, you are being asked about difficulty due to <u>physical health</u>
+        during the past <u>2 weeks</u>.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3">
+      <Description>
+        <![CDATA[
+        Walking to the bathroom
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q1" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4">
+      <Description>
+        <![CDATA[
+        Walking up stairs
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q2" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="5">
+      <Description>
+        <![CDATA[
+        Doing something with a friend. (For example, playing a game.)
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q3" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="6">
+      <Description>
+        <![CDATA[
+        Doing chores at home
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q4" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="7">
+      <Description>
+        <![CDATA[
+        Eating regular meals
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q5" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="8" Page="start">
+      <Description>
+        <![CDATA[
+        Remember, you are being asked about difficulty due to <u>physical health</u>
+        during the past <u>2 weeks</u>.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="9">
+      <Description>
+        <![CDATA[
+        Being up all day without a nap or rest
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q6" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="10">
+      <Description>
+        <![CDATA[
+        Riding the school bus or traveling in a car
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q7" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="11">
+      <Description>
+        <![CDATA[
+        Being at school all day
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q8" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="12">
+      <Description>
+        <![CDATA[
+        Doing the activities in gym class (or playing sports).
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q9" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="13">
+      <Description>
+        <![CDATA[
+        Reading or doing homework
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q10" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="14" Page="start">
+      <Description>
+        <![CDATA[
+        Remember, you are being asked about difficulty due to <u>physical health</u>
+        during the past <u>2 weeks</u>.
+        ]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" required="false"> 
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="15">
+      <Description>
+        <![CDATA[
+        Watching TV
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q11" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="16">
+      <Description>
+        <![CDATA[
+        Walking the length of a football field
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q12" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="17">
+      <Description>
+        <![CDATA[
+        Running the length of a football field
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q13" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        Going shopping
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q14" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19">
+      <Description>
+        <![CDATA[
+        Getting to sleep at night and staying asleep
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="Q15" Order="1" Type="select1" required="false">
+          <item><value>0</value><label>No Trouble</label></item>
+          <item><value>1</value><label>A Little Trouble</label></item>
+          <item><value>2</value><label>Some Trouble</label></item>
+          <item><value>3</value><label>A Lot of Trouble</label></item>
+          <item><value>4</value><label>Impossible</label></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

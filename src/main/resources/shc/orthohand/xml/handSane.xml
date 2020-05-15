@@ -1,0 +1,34 @@
+<Form Description="Issues" DateStarted="" DateFinished="" questionsPerPage="1">
+  <Items>
+    <Item Order="1" ItemResponse="" ItemScore="" >
+      <Description><![CDATA[<u>For the problem that you are seeking treatment for today</u>, Out of 100%, (100% being normal), how would you rate the function of your RIGHT wrist/hand/finger/elbow today?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="slider" lowerBound="0" upperBound="100">
+          <ref>RATERIGHT</ref>
+        </Response>
+        <Response Order="2" Type="select" Description="">
+          <ref>RATERIGHTNA</ref>
+          <item selected="false">
+            <label>Not applicable</label>
+            <value>1</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" >
+      <Description><![CDATA[<u>For the problem that you are seeking treatment for today</u>, Out of 100%, (100% being normal), how would you rate the function of your LEFT wrist/hand/finger/elbow today?]]></Description>
+      <Responses>
+        <Response Order="1" required="true" Type="slider" lowerBound="0" upperBound="100">
+          <ref>RATELEFT</ref>
+        </Response>
+        <Response Order="2" Type="select" Description="">
+          <ref>RATELEFTNA</ref>
+          <item selected="false">
+            <label>Not applicable</label>
+            <value>1</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

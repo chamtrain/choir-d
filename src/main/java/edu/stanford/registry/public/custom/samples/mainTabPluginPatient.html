@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Sample plugin tab</title>
+  <style>
+    h1, h2 {
+      text-indent: 40px;
+    }
+
+    p {
+      padding-left: 40px;
+      font-size: x-large;
+    }
+  </style>
+  <script type="text/javascript">
+
+    function loadPatient() {
+      var ChoirApiV10 = parent.choirApiV10() + "pluginData/patient/getAll/sample?siteId=" + parent.getSiteId();
+      var jsonData = {"patientId": parent.getPatientId()};
+      var lastData = '';
+
+      var http_request = new XMLHttpRequest();
+      try {
+        // Opera 8.0+, Firefox, Chrome, Safari
+        http_request = new XMLHttpRequest();
+      } catch (e) {
+        // Internet Explorer Browsers
+        try {
+          http_request = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            // Something went wrong
+            alert("Your browser broke!");
+          }
+        }
+      }
+      http_request.onreadystatechange = function () {
+        if (http_request.readyState == 4) {
+          // Javascript function to parse the JSON data that is returned for display
+          document.open();
+
+          var inputDiv = "<div style='font-size: 1.5em; font-weight: bold; margin: auto;'>";
+          var jsonObj = JSON.parse(http_request.responseText);
+          document.write(inputDiv);
+          document.write("Posted data for patient " + parent.getPatientId() + "<p></p>");
+          if (!jsonObj || jsonObj === "undefined" || jsonObj.pluginPatientData == undefined || jsonObj.length == 0) {
+            document.write("<div>NO DATA YET</div>");
+          } else {
+            document.write("<div><TABLE border='1' cellpadding='2' style='width: 742px; border-collapse: collapse;'>");
+
+            if (jsonObj.pluginPatientData.length > 0) {
+              document.write("<TR><TH width='15%'>Created</TH><TH>Value</TH></TR>");
+              var a;
+              for (a in jsonObj.pluginPatientData) {
+                document.write("<TR><TD>" + formatTime(Number(jsonObj.pluginPatientData[a].createdTime)) + "</TD><TD>"
+                        + jsonObj.pluginPatientData[a].dataValue + "</TD></TR>");
+                lastData = jsonObj.pluginPatientData[a].dataValue;
+              }
+            }
+            document.write("</TABLE></div>");
+          }
+          document.write("<p></p><p></p>");
+
+          if (lastData.length > 0) {
+            document.write("To update the patient's data modify it in the box below and ->");
+          } else {
+            document.write("Enter data for patient " + parent.getPatientId());
+          }
+
+          document.write("<input type='button' onclick=saveData() value='SAVE' style='margin-left: 20px; padding: 10px 4px 5px 4px; background: #fff; font-size: medium; width: 52px;'>");
+          document.write("<p></p><textarea name='somedata' id='saveDataValue' rows='6' cols='120'></textarea></p>");
+          document.getElementById('saveDataValue').value = lastData;
+          document.write("</div>");
+          document.close();
+          return;
+        }
+        document.write("</div>");
+      };
+      http_request.open("POST", ChoirApiV10, true);
+      http_request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      http_request.send(JSON.stringify(jsonData));
+    }
+
+    function saveData() {
+      var dataToWrite = document.getElementById('saveDataValue').value;
+      var ChoirApiV10 = parent.choirApiV10() + "pluginData/patient/post/sample?siteId=" + parent.getSiteId();
+      //var ChoirApiV10 = parent.choirApiV10() + "pluginData/patient/store/sample?siteId=" + parent.getSiteId();
+      var jsonText = '{"patientId":"' + parent.getPatientId() + '","dataValue":"' + dataToWrite + '"}';
+      var jsonSave = JSON.parse(jsonText);
+      document.getElementById('saveDataValue').value = '';
+
+      var http_request = new XMLHttpRequest();
+      try {
+        // Opera 8.0+, Firefox, Chrome, Safari
+        http_request = new XMLHttpRequest();
+      } catch (e) {
+        // Internet Explorer Browsers
+        try {
+          http_request = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            // Something went wrong
+            alert("Your browser broke!");
+          }
+        }
+      }
+      http_request.onreadystatechange = function () {
+        if (http_request.readyState == 4) {
+          loadPatient();
+        }
+
+      };
+      http_request.open("POST", ChoirApiV10, true);
+      http_request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      http_request.send(JSON.stringify(jsonSave));
+    }
+
+    function formatTime(epochtime) {
+      var date = new Date(epochtime);
+      var yr = date.getFullYear();
+      var mth = padZero(date.getMonth() + 1);
+      var day = padZero(date.getDate());
+      var hrs = padZero(date.getHours());
+      var min = padZero(date.getMinutes());
+      var sec = padZero(date.getSeconds());
+      return mth + "/" + day + "/" + yr + " " + hrs + ":" + min + ":" + sec;
+    }
+
+    function padZero(val) {
+      if (val < 10) {
+        val = "0" + val;
+
+      }
+      return val;
+    }
+
+  </script>
+  <title>Sample plugin patient data page</title>
+</head>
+<body>
+<h1>Sample plugin patient data page </h1>
+<p>
+  <script type="text/javascript">
+    if (typeof(parent.choirApiV10) !== 'undefined') {
+      document.write("<strong>Access the pluginDataPatient portion of the api using: </strong>");
+      document.write("<ul></ul><li>" + parent.choirApiV10() + "pluginData/patient/post/{dataType}?siteId={site}</li>");
+      document.write("</ul><li>" + parent.choirApiV10() + "pluginData/patient/getLast/{dataType}?siteId={site}</li>");
+      document.write("</ul><li>" + parent.choirApiV10()
+              + "pluginData/patient/getAll/{dataType}?siteId={site}</li></ul>");
+    }
+    document.write("<p>See the API documentation for details</p>")
+  </script>
+</p>
+<hr>
+<p>
+
+</p>
+
+<p>
+  <script type="text/javascript">
+    if (typeof(parent.getPatientId) !== 'undefined') {
+      document.write(parent.getPatientId());
+      loadPatient(parent.getPatientId());
+    }
+  </script>
+</p>
+</body>
+</html>

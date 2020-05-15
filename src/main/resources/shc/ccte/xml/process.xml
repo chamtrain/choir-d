@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="Access" notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               activity="Registered" order="1" visit="1" visitType="NEW" report="Initial"
+               start_date="08-01-2015" expiration_date="" >
+    <Questionaire order="1" value="Access" type="Local" xml="Access" print_order="1" print_type="text"/>
+  </ProcessType>
+
+
+  <ProcessType value="Communication" notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               activity="Registered" order="1" visit="1" visitType="NEW" report="Initial"
+               start_date="08-01-2015" expiration_date="" >
+    <Questionaire order="1" value="Communication" type="Local" xml="Communication" print_order="1" print_type="text"/>
+  </ProcessType>
+
+
+  <ProcessType value="Coordination" notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               activity="Registered" order="1" visit="1" visitType="NEW" report="Initial"
+               start_date="08-01-2015" expiration_date="" >
+    <Questionaire order="1" value="Coordination" type="Local" xml="Coordination" print_order="1" print_type="text"/>
+  </ProcessType>
+
+
+  <ProcessType value="Information" notification="true" appointment_template="Initial" schedule_template="No-appointment"
+               activity="Registered" order="1" visit="1" visitType="NEW" report="Initial"
+               start_date="08-01-2015" expiration_date="" >
+    <Questionaire order="1" value="Information" type="Local" xml="Information" print_order="1" print_type="text"/>
+  </ProcessType>
+
+
+
+
+  <VisitTypes>
+    <VisitType value="NEW" group="new" />
+    <VisitType value="RTN" group="return" />
+  </VisitTypes>
+</Process>    

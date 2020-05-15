@@ -1,0 +1,131 @@
+<!--
+  ~ Copyright 2013 The Board of Trustees of The Leland Stanford Junior University.
+  ~ All Rights Reserved.
+  ~
+  ~ See the NOTICE and LICENSE files distributed with this work for information
+  ~ regarding copyright ownership and licensing. You may not use this file except
+  ~ in compliance with a written license agreement with Stanford University.
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  ~ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See your
+  ~ License for the specific language governing permissions and limitations under
+  ~ the License.
+  -->
+
+<ivy-module version="2.0">
+  <info organisation="com.github.susom" module="choir" revision="3.0-SNAPSHOT"/>
+  <configurations defaultconfmapping="*->master(*),sources">
+    <!-- Libraries for both server compile and runtime -->
+    <conf name="default"/>
+    <!-- Libraries for server runtime only -->
+    <conf name="runtime"/>
+    <!-- Libraries for server compile only -->
+    <conf name="compile"/>
+    <!-- Libraries for compilation of registry gwt module -->
+    <conf name="clinic"/>
+    <!-- Libraries for compilation of survey gwt module -->
+    <conf name="survey"/>
+    <!-- Libraries for tests -->
+    <conf name="test"/>
+    <!-- A proper GWT install dir for the IDEs -->
+    <conf name="gwt"/>
+    <!-- Macker is a dependency checking tool used during the build only -->
+    <conf name="macker"/>
+  </configurations>
+  <publications>
+    <artifact name="choir" type="jar"/>
+  </publications>
+  <dependencies>
+    <!-- These are in the public Maven repository -->
+    <!-- but this won't fetch them, so comment it out...
+    <dependency org="org.apache.tomcat" name="tomcat" rev="8.5.9" conf="default" transitive="false">
+      <artifact name="tomcat" type="zip"/>
+    </dependency>
+    <dependency org="org.apache.tomcat" name="tomcat-juli" rev="8.5.9" conf="default"/>
+    -->
+
+    <dependency org="com.google.gwt" name="gwt-servlet" rev="2.7.0" conf="runtime;gwt" transitive="false"/>
+    <dependency org="com.google.gwt" name="gwt-user" rev="2.7.0" conf="compile;clinic;survey;gwt"/>
+    <dependency org="javax.validation" name="validation-api" rev="1.0.0.GA" conf="compile;clinic;survey;gwt"/>
+    <dependency org="com.google.gwt" name="gwt-dev" rev="2.7.0" conf="gwt"/>
+    <dependency org="com.google.gwt" name="gwt-codeserver" rev="2.7.0" conf="gwt"/>
+    <dependency org="org.ow2.asm" name="asm" rev="5.0.3" conf="gwt"/>
+    <dependency org="com.sun.mail" name="javax.mail" rev="1.4.7" conf="default"/>
+    <dependency org="commons-codec" name="commons-codec" rev="1.10" conf="default"/>
+    <dependency org="org.apache.commons" name="commons-collections4" rev="4.1"/>
+    <dependency org="org.owasp.encoder" name="encoder" rev="1.2.1" conf="default"/>
+    <dependency org="innig" name="macker" rev="0.4.2" conf="macker"/>
+    <dependency org="innig" name="innig-util" rev="0.4.2" conf="macker"/>
+    <dependency org="org.apache.bcel" name="bcel" rev="6.0" conf="macker"/>
+    <dependency org="jakarta-regexp" name="jakarta-regexp" rev="1.4" conf="macker"/>
+    <dependency org="jdom" name="jdom" rev="1.0b8" conf="macker"/>
+    <dependency org="commons-lang" name="commons-lang" rev="2.1" conf="macker"/>
+    <!-- Needed by httpclient, but only at runtime -->
+    <dependency org="commons-logging" name="commons-logging" rev="1.2" conf="runtime"/>
+    <dependency org="commons-fileupload" name="commons-fileupload" rev="1.3.3" conf="default" transitive="false"/>
+    <dependency org="commons-io" name="commons-io" rev="2.6" conf="default"/>
+    <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2" conf="default"/>
+    <dependency org="org.jfree" name="jfreechart" rev="1.0.19" conf="default"/>
+    <dependency org="org.jfree" name="jcommon" rev="1.0.23" conf="default"/>
+    <dependency org="log4j" name="log4j" rev="1.2.17" transitive="false" conf="default">
+      <artifact name="log4j" type="jar"/>
+    </dependency>
+    <dependency org="net.sf.opencsv" name="opencsv" rev="2.3" conf="default"/>
+    <dependency org="org.apache.commons" name="commons-math3" rev="3.2" conf="default"/>
+    <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.3" conf="default"/>
+    <dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4" conf="default"/>
+    <dependency org="org.apache.pdfbox" name="pdfbox" rev="2.0.15" conf="default" transitive="false">
+      <artifact name="pdfbox" type="jar"/>
+    </dependency>
+    <dependency org="org.apache.pdfbox" name="fontbox" rev="2.0.15" conf="default" transitive="false">
+      <artifact name="fontbox" type="jar"/>
+    </dependency>
+    <dependency org="org.apache.poi" name="poi" rev="3.17" conf="default" transitive="false"/>
+    <dependency org="org.apache.poi" name="poi-ooxml" rev="3.17" conf="default" transitive="false"/>
+    <dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.17" conf="runtime" transitive="false"/>
+    <dependency org="org.apache.xmlbeans" name="xmlbeans" rev="2.6.0" conf="runtime" transitive="false"/>
+    <!--dependency org="dom4j" name="dom4j" rev="1.6.1" conf="runtime" transitive="false"/ -->
+
+    <!-- The standard json.org software has an MIT license, not an open source license.
+         Plus it has a non-standard name, so can't be easily gotten with Ivy.
+         The license would be okay with us, but it led TDunning to make an Open JSON version,
+	 built by the Android team, available. He: "adapted and packaged the android clean-room
+	 rewrite of the json.org library. The source is on github and is Apache licensed.
+	 See https://github.com/tdunning/open-json
+     -->
+    <dependency org="com.tdunning" name="json" rev="1.3" conf="default"/>
+    <dependency org="org.restlet.gwt" name="org.restlet" rev="2.3.0" conf="clinic" transitive="false"/>
+    <dependency org="org.restlet.gwt" name="org.restlet.ext.json" rev="2.3.0" conf="clinic" transitive="false"/>
+    <dependency org="org.restlet.jee" name="org.restlet" rev="2.3.0" conf="default" transitive="false"/>
+    <dependency org="org.restlet.jee" name="org.restlet.ext.fileupload" rev="2.3.0" conf="default" transitive="false"/>
+    <dependency org="org.restlet.jee" name="org.restlet.ext.json" rev="2.3.0" conf="default" transitive="false"/>
+    <dependency org="org.restlet.jee" name="org.restlet.ext.servlet" rev="2.3.0" conf="default" transitive="false"/>
+    <dependency org="com.sksamuel.jqm4gwt" name="jqm4gwt-library" rev="1.4.5.Final" conf="survey;compile" transitive="false"/>
+    <dependency org="com.sksamuel.jqm4gwt" name="jqm4gwt-datebox" rev="1.4.5.Final" conf="survey;compile" transitive="false"/>
+    <dependency org="org.gwtbootstrap3" name ="gwtbootstrap3" rev="0.9.3" conf="clinic" transitive="false"/>
+    <dependency org="org.gwtbootstrap3" name ="gwtbootstrap3-extras" rev="0.9.3" conf="clinic" transitive="false"/>
+    <dependency org="org.easymock" name="easymock" rev="3.4" conf="test"/>
+    <dependency org="cglib" name="cglib-nodep" rev="2.2.2" conf="test"/>
+    <dependency org="net.bytebuddy" name="byte-buddy" rev="1.4.26" conf="test"/>
+    <dependency org="net.bytebuddy" name="byte-buddy-agent" rev="1.4.26" conf="test"/>
+    <dependency org="org.objenesis" name="objenesis" rev="2.4" conf="test"/>
+    <dependency org="junit" name="junit" rev="4.11" conf="test"/>
+    <dependency org="org.mockito" name="mockito-core" rev="2.1.0" conf="test"/>
+    <dependency org="org.hamcrest" name="hamcrest-core" rev="1.1" conf="test"/>
+    <dependency org="com.github.susom" name="server-logging" rev="1.0" conf="default"/>
+    <dependency org="com.github.susom" name="database" rev="2.5" conf="default"/>
+    <!-- These next four go with com.github.susom.database above -->
+    <dependency org="javax.inject" name="javax.inject" rev="1" conf="default"/>
+    <dependency org="com.intellij" name="annotations" rev="12.0" conf="default"/>
+    <dependency org="com.google.code.findbugs" name="jsr305" rev="2.0.3" conf="default"/>
+    <dependency org="org.slf4j" name="slf4j-api" rev="1.7.7" conf="default"/>
+    <dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.7" conf="runtime"/>
+    <dependency org="org.postgresql" name="postgresql" rev="9.3-1101-jdbc41" conf="runtime"/>
+    <dependency org="com.google.errorprone" name="error_prone_ant" rev="2.0.12" conf="runtime"/>
+    <dependency org="com.google.errorprone" name="error_prone_core" rev="2.0.12" conf="runtime"/>
+    <dependency org="ca.uhn.hapi" name="hapi-base" rev="2.3" conf="default" transitive="false"/>
+    <dependency org="ca.uhn.hapi" name="hapi-structures-v23" rev="2.3" conf="default"/>
+    <dependency org="ca.uhn.hapi" name="hapi-hl7overhttp" rev="2.3" conf="default"/>
+  </dependencies>
+</ivy-module>

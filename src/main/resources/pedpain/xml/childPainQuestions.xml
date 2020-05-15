@@ -1,0 +1,87 @@
+<Form Description="Child Pain Questions" questionsPerPage="1">
+  <Items>
+    <Item Order="17" Section="start">
+      <Description>
+        <![CDATA[
+        How long have you had the pain that bothers you <b>the most</b>?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-years" Order="1" Type="input" min="0" max="99" required="true">
+          <label>Years</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+        <Response ref="pain-most-months" Order="2" Type="input" min="0" max="11" required="true">
+          <label>Months</label>
+          <format> <datatype>integer</datatype> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="18">
+      <Description>
+        <![CDATA[
+        <h4>How did that pain start?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-reason" Order="2" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="19" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>Have you been to a doctor or nurse because of this pain?</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-most-seen-dr" Order="1" Type="select1" required="false">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> </item>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item Order="20" Section="start">
+      <PatientAttribute data_name="gender" data_value="Female" data_type="string" condition="equal"/>
+      <Description>
+        <![CDATA[
+        Is there any relationship between your pain and your menstrual period?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-menstrual-related" Order="1" Type="select1" required="false">
+          <item> <value>0</value> <label>No</label> </item>
+          <item> <value>1</value> <label>Yes</label> 
+            <onselect Type="Item" Where="Order" Value="21"/>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="21" Visible="false" Section="end">
+      <Description>
+        <![CDATA[
+        <h4>If Yes, please explain</h4>
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="pain-menstrual-explain" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="22">
+      <Description>
+        <![CDATA[
+        What has helped your pain (e.g., icing, heat, rest, relaxation, physical therapy)?
+        ]]>
+      </Description>
+      <Responses>
+        <Response ref="what_helped" Order="1" Type="input" required="false">
+          <format> <datatype>text</datatype> <lines>2</lines> </format>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

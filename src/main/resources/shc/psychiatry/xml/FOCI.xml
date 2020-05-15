@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="The Florida Obsessive Compulsive Inventory" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[<p><b>General Instructions:</b> The questions below are designed to help health professionals evaluate anxiety symptoms. Keep in mind, a high score on this questionnaire does not necessarily mean you have an anxiety disorder — only an evaluation by a health professional can make this determination. Answer these questions as accurately as you can.</p>]]></Description>
+      <Description><![CDATA[<p><b>Part A instructions</b></p><p>Please circle YES or NO for the following questions, based on your experience in the past MONTH:</p>]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[Have you been bothered by unpleasant thoughts or images that repeatedly enter your mind, such as:]]></Description>
+      <Description><![CDATA[Concerns with contamination (dirt, germs, chemicals, radiation) or acquiring a serious illness such as AIDS?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>cncrn_ill</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[Have you been bothered by unpleasant thoughts or images that repeatedly enter your mind, such as:]]></Description>
+      <Description><![CDATA[Overconcern with keeping objects (clothing, tools, etc) in perfect order or arranged exactly?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>ovr_cncrn_ordr</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[Have you been bothered by unpleasant thoughts or images that repeatedly enter your mind, such as:]]></Description>
+      <Description><![CDATA[Images of death or other horrible events?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>hrbl_event</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[Have you been bothered by unpleasant thoughts or images that repeatedly enter your mind, such as:]]></Description>
+      <Description><![CDATA[Personally unacceptable religious or sexual thoughts?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>unacc_thght</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[Have you worried a lot about terrible things happening, such as:]]></Description>
+      <Description><![CDATA[Fire, burglary or flooding of the house?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>fire_burg_fld</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[Have you worried a lot about terrible things happening, such as:]]></Description>
+      <Description><![CDATA[Accidentally hitting a pedestrian with your car or letting it roll down a hill?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>acc_pedi</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[Have you worried a lot about terrible things happening, such as:]]></Description>
+      <Description><![CDATA[Spreading an illness (giving someone AIDS)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>sprd_illness</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[Have you worried a lot about terrible things happening, such as:]]></Description>
+      <Description><![CDATA[Losing something valuable?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>lose_smn</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[Have you worried a lot about terrible things happening, such as:]]></Description>
+      <Description><![CDATA[Harm coming to a loved one because you weren't careful enough?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>hrm_loved</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[Have you worried about acting on an unwanted and senseless urge or impulse, such as:]]></Description>
+      <Description><![CDATA[Physically harming a loved one, pushing a stranger in front of a bus, steering your car into oncoming traffic; inappropriate sexual contact; or poisoning dinner guests?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>harming_anyone</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Excessive or ritualized washing, cleaning or grooming?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>excs_cleaning</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Checking light switches, water faucets, the stove, door locks or the emergency brake?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>chk_things</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Counting, arranging; evening-up behaviors (making sure socks are at same height)?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>excs_counting</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="14">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Collecting useless objects or inspecting the garbage before it is thrown out?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>clct_inspect</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="15">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Repeating routine actions (in/out of chair, going through doorway, relighting cigarette) a certain number of times or until it feels <b>just right</b>?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>rpt_routine</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="16">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Needing to touch objects or people?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>need_touch</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="17">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Unnecessary rereading or rewriting; reopening envelopes before they are mailed?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>unncry_doing</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="18">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Examining your body for signs of illness?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>exmn_self</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="19">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Avoiding colors ('red' means blood), numbers ('13' is unlucky) or names (those that start with 'D' signify death) that are associated with dreaded events or unpleasant thoughts?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>avd_colors</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="20">
+      <Description><![CDATA[Have you felt driven to perform certain acts over and over again, such as:]]></Description>
+      <Description><![CDATA[Needing to 'confess' or repeatedly asking for reassurance that you said or did something correctly?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Yes]]></label>
+            <value><![CDATA[0]]></value>
+            <SetPatientAttribute data_name="partb" data_value="y"/>
+          </item>
+          <item>
+            <label><![CDATA[No]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <ref>rpt_ask</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="21">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[<b>Part B instructions</b> The following questions refer to the repeated thoughts, images, urges or behaviors identified in Part A. Consider your experience during the past 30 days when selecting an answer. Circle the most appropriate number from 0 to 4.]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="1" Type="select1" required="false"/>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="22">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[In the past month...]]></Description>
+      <Description><![CDATA[On average, how much time is occupied by these thoughts or behaviors each day?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[None]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Mild (less than 1 hour) ]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate (1 to 3 hours) ]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Severe (3 to 8 hours)]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extreme (more than 8 hours)]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>how_mch_time</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="23">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[In the past month...]]></Description>
+      <Description><![CDATA[How much distress do they cause you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[None]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Mild]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Severe]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extreme (disabling)]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>how_mch_distress</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="24">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[In the past month...]]></Description>
+      <Description><![CDATA[How hard is it for you to control them?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Complete control]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much control]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate control]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Little control]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[No control]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>hard_cntrl</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="25">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[In the past month...]]></Description>
+      <Description><![CDATA[How much do they cause you to avoid doing anything, going anyplace or being with anyone?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[No avoidance]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Occasional avoidance]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Moderate avoidance]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Frequent and extensive avoidance]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extreme avoidance (house-bound)]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>cause_avd_doing</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="26">
+      <PatientAttribute data_name="partb" data_value="y" data_type="string" condition="equal"/>
+      <Description><![CDATA[In the past month...]]></Description>
+      <Description><![CDATA[How much do they interfere with school, work or your social or family life?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[None]]></label>
+            <value><![CDATA[0]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Slight interference]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Definitely interferes with functioning]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Much interferes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Extreme interferes (disabling)]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>intrf_life</ref>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>

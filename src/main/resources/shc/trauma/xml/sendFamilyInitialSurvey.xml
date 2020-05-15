@@ -1,0 +1,50 @@
+<Form Description="Create and send FamilyInitial Surveys" DateStarted="" DateFinished="" questionsPerPage="2" >
+  <Items class="surveyInline">
+    <Item Order="1" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+    <PatientAttribute data_name="Family2" data_value="y" data_type="string" condition="exists"/>
+    <Description>
+      <![CDATA[Create a FamilyInitial survey for the first caregiver and email an invitation?]]>
+    </Description>
+    <Responses>
+      <Response Order="1" Type="select1" Appearance="full">
+        <ref>Family2</ref>
+        <item>
+          <label>Yes</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>2</value>
+        </item>
+      </Response>
+    </Responses>
+  </Item>
+    <Item Order="2" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+      <PatientAttribute data_name="Family4" data_value="y" data_type="string" condition="exists"/>
+      <Description>
+        <![CDATA[Create a FamilyInitial survey for the second caregiver and email an invitation?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" Type="select1" Appearance="full">
+          <ref>Family4</ref>
+          <item>
+            <label>Yes</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>No</label>
+            <value>2</value>
+          </item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" RequiredMin="1" RequiredMax="1" >
+    <PatientAttribute data_name="Family2" data_value="y" data_type="string" condition="notexists"/>
+    <PatientAttribute data_name="Family4" data_value="y" data_type="string" condition="notexists"/>
+    <Description>
+      <![CDATA[Cannot create FamilyInitial surveys. <p>The patient does not have caregiver email addresses.]]>
+    </Description>
+    <Responses/>
+    </Item>
+  </Items>
+</Form>

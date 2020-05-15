@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form DateFinished="" DateStarted="" Description="Survey builder" questionsPerPage="1">
+  <Items>
+    <Item ItemResponse="" ItemScore="" Order="0">
+      <Description><![CDATA[In the past 7 days, how often did you have belly pain?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>bp_often</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="1">
+      <Description><![CDATA[In the past 7 days, at its worst, how would you rate your belly pain]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not bad at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bad]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat bad]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite bad]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very bad]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>bp_rate</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="2">
+      <Description><![CDATA[In the past 7 days, how much did belly pain interfere with your day to day activities?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>bp_activities</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="3">
+      <Description><![CDATA[In the past 7 days, how much did belly pain bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>bp_bother</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="4">
+      <Description><![CDATA[In the past 7 days, how often did you have discomfort in your belly?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>bp_discomfort</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="5">
+      <Description><![CDATA[In the past 7 days, how often did you pass very hard or lumpy stools?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_5_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="6">
+      <Description><![CDATA[In the past 7 days, how much did hard or lumpy stools bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_6_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <Item ItemResponse="" ItemScore="" Order="7">
+      <Description><![CDATA[In the past 7 days, how often did you strain while trying to have a bowel movement?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_7_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="8">
+      <Description><![CDATA[In the past 7 days, how much do you usually strain while trying to have a bowel movement?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_8_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="9">
+      <Description><![CDATA[In the past 7 days, how much did straining during bowel movements bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_9_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="10">
+      <Description><![CDATA[In the past 7 days, how often did you feel pain in your rectum or anus while trying to have a bowel movement?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_10_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="11">
+      <Description><![CDATA[At its worst, how would you rate the pain in your rectum or anus during bowel movements?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not bad at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bad]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat bad]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite bad]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very bad]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_11_7</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="12">
+      <Description><![CDATA[In the past 7 days, how often after a bowel movement did you feel unfinished-that is, that you had not passed all of your stool?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_12_8</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="13">
+      <Description><![CDATA[In the past 7 days, how often did you use your finger or toilet paper to get out stool?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>cp_13_9</ref>
+        </Response>
+      </Responses>
+    </Item>
+<!--Diarrhea-->
+    <Item ItemResponse="" ItemScore="" Order="14">
+      <Description><![CDATA[In the past 7 days, how many days did you have loose or watery stools?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[no days]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[1 day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[3-5 days]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[6-7 days]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_14_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="15">
+      <Description><![CDATA[In the past 7 days, how much did having loose or watery stools interfere with your day to day activities?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_15_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="16">
+      <Description><![CDATA[In the past 7 days, how much did having loose or watery stools bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_16_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="17">
+      <Description><![CDATA[In the past 7 days, how often did you feel like you needed to empty your bowels right away or else you would have an accident?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one time during the past 7 days]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 times during the past 7 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_17_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="18">
+      <Description><![CDATA[In the past 7 days, how much did feeling you needed to empty your bowels right way interfere with your day to day activities?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_18_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="19">
+      <Description><![CDATA[In the past 7 days, how much did feeling you needed to empty your bowels right away bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>dia_19_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="20">
+      <Description><![CDATA[Did you have swelling in your belly?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[no]]></label>
+            <value><![CDATA[99]]></value>
+          </item>
+          <item>
+            <label><![CDATA[yes]]></label>
+            <value><![CDATA[100]]></value>
+          </item>
+          <ref>gas_20_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="21">
+      <Description><![CDATA[In the past 7 days, how bad did the swelling in your belly get?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not bad at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bad]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat bad]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite bad]]></label>
+          </item>
+          <value><![CDATA[4]]></value>
+          <item>
+            <label><![CDATA[Very bad]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_21_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="22">
+      <Description><![CDATA[In the past 7 days, how much did the swelling in your belly interfere with day to day activites?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_22_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="23">
+      <Description><![CDATA[In the past 7 days, how much did the swelling in your belly bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_23_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="24">
+      <Description><![CDATA[In the past 7 days, how often did you feel bloated?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_24_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="25">
+      <Description><![CDATA[In the past 7 days, in general how severe was your bloating?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_25_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="26">
+      <Description><![CDATA[In the past 7 days, at its worst, how severe was your bloating?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_26_7</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="27">
+      <Description><![CDATA[In the past 7 days, in general, how severe did your bloating feel?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_27_8</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="28">
+      <Description><![CDATA[In the past 7 days, how often did you know you would feel bloated before it happened?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_28_9</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="29">
+      <Description><![CDATA[In the past 7 days, how much did feeling bloated interfere with your day to day activities?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_29_10</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="30">
+      <Description><![CDATA[In the past 7 days, how much did feeling bloated bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_30_11</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="31">
+      <Description><![CDATA[In the past 7 days, how often did you pass gas?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[only once or twice a day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[about every 3-4 hours]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[about every 2 hours]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[about every hour]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_31_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="32">
+      <Description><![CDATA[In the past 7 days, how often did you have gurgling or rumbling in your belly when you were not hungry?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>gas_32_13</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <!--Gastrointestinal Nausea and Vomiting-->
+    <Item ItemResponse="" ItemScore="" Order="33">
+      <Description><![CDATA[In the past 7 days, how often did you have nausea- that is, a feeling like you could vomit?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>nv_33_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="34">
+      <Description><![CDATA[In the past 7 days, how often did you know that you woudl have nausea before it happened?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>nv_34_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="35">
+      <Description><![CDATA[In the past 7 days, how often did you have a poor appetite?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>nv_35_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="36">
+      <Description><![CDATA[In the past 7 days, how often did you throw up or vomit?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>nv_36_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+    <!--Gastroesophageal Reflux -->
+    <Item ItemResponse="" ItemScore="" Order="37">
+      <Description><![CDATA[In the past 7 days, how often did you have regurgitation- that is, food or liquid coming back up into your throat or one day
+mouth without vomiting?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_37_1</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="38">
+      <Description><![CDATA[In the past 7 days, what was the most food or liquid you had come back up into your mouth at one time?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[none]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[enough to fill a little of my mouth]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[enough to fill some of my mouth]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[enough to fill most of my mouth]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[so much that it filled my entire mouth]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_38_2</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="39">
+      <Description><![CDATA[In the past 7 days, after eating a meal, how often did food or liquid come back into your throat without vomiting?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_39_3</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="40">
+      <Description><![CDATA[In the past 7 days, how often did you re-swallow food that came back into your throat?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_40_4</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="41">
+      <Description><![CDATA[In the past 7 days, how often did you feel like you were going to burp, but food or liquid came out instead?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_41_5</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="42">
+      <Description><![CDATA[In the past 7 days, how often did you feel like there was too much saliva in your mouth?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_42_6</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="43">
+      <Description><![CDATA[In the past 7 days, how often did you feel burning behind the breastbone?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[2-6 days]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_43_7</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="44">
+      <Description><![CDATA[In the past 7 days, how often did you feel burning in your throat?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[always]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_44_8</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="45">
+      <Description><![CDATA[In the past 7 days, how often did you burp?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[one day]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[once a day]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[more than once a day]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <ref>rf_45_9</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="46">
+      <Description><![CDATA[In the past 7 days, how much did burping bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[a little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_46_10</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="47">
+      <Description><![CDATA[In the past 7 days, how often after a bowel movement did you feel unfinished-that is, that you had not passed all of your stool?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[very often]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_47_11</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="48">
+      <Description><![CDATA[In the past 7 days, how often did you feel like there was a lump in your throat?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[never]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[rarely]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[sometimes]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[often]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[very often]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_48_12</ref>
+        </Response>
+      </Responses>
+    </Item>
+    <Item ItemResponse="" ItemScore="" Order="49">
+      <Description><![CDATA[In the past 7 days, how much did having a lump in your throat bother you?]]></Description>
+      <Responses>
+        <Response Appearance="Full" Order="0" Type="select1" required="true">
+          <item>
+            <label><![CDATA[Not at all]]></label>
+            <value><![CDATA[1]]></value>
+          </item>
+          <item>
+            <label><![CDATA[A little bit]]></label>
+            <value><![CDATA[2]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Somewhat]]></label>
+            <value><![CDATA[3]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Quite a bit]]></label>
+            <value><![CDATA[4]]></value>
+          </item>
+          <item>
+            <label><![CDATA[Very much]]></label>
+            <value><![CDATA[5]]></value>
+          </item>
+          <ref>rf_49_13</ref>
+        </Response>
+      </Responses>
+    </Item>
+
+  </Items>
+</Form>
+

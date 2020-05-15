@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Process>
+
+  <ProcessType value="NoSurvey" notification="false" appointment_template="None" schedule_template="None" 
+               order="103" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2015">
+    <Questionaire order="1" value="NoSurvey"  type="Local" xml="NoSurvey"  print_order="1" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="Ineligible" notification="false" appointment_template="None" schedule_template="None" 
+               order="101" visit="0" visitType="Unknown" report="Initial"
+               start_date="03-01-2015">
+    <Questionaire order="1" value="NoSurvey"  type="Local" xml="NoSurvey"  print_order="1" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="SRS30.0917" notification="true" appointment_template="SRS30" schedule_template="SRS30-No-appointment" 
+               order="1" visit="1" visitType="POV" report="Initial" optional_questionnaires="SRS30-Consented.0917"
+               start_date="09-01-2017">
+    <Questionaire value="scoliosisConsent"  type="Local" xml="scoliosisConsent"/>
+  </ProcessType>
+
+  <ProcessType value="SRS30-Consented.0917" notification="false" 
+               order="-1" visit="9999" 
+               start_date="09-01-2017">
+    <Questionaire order="10" value="startSurvey"  type="Local" xml="startSurvey"/>
+    <Questionaire order="11" value="srs30"        type="Local" xml="srs30"        print_order="2" print_type="text, table"/>
+    <Questionaire order="12" value="bodymap"      type="Local" xml="bodymap"      print_order="1" print_type="text, img"/>
+    <Questionaire order="13" value="assisted"     type="Local" xml="assisted"     print_order="3" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="SRS30+HM.1118" notification="true" appointment_template="SRS30" schedule_template="SRS30-No-appointment" 
+               order="2" visit="1" visitType="POV" report="Initial" optional_questionnaires="SRS30+HM-Consented.1118"
+               start_date="11-01-2018">
+    <Questionaire value="scoliosisConsent"  type="Local" xml="scoliosisConsent"/>
+  </ProcessType>
+
+  <ProcessType value="SRS30+HM-Consented.1118" notification="false" 
+               order="-1" visit="9999" 
+               start_date="11-01-2018">
+    <Questionaire order="10" value="startSurvey"   type="Local" xml="startSurvey"/>
+    <Questionaire order="11" value="srs30"         type="Local" xml="srs30"         print_order="2" print_type="text, table"/>
+    <Questionaire order="12" value="bodymap"       type="Local" xml="bodymap"       print_order="1" print_type="text, img"/>
+    <Questionaire order="13" value="brace"         type="Local" xml="brace"         print_order="3" print_type="text"/>
+    <Questionaire order="13" value="HealthMindset" type="Local" xml="HealthMindset" print_order="4" print_type="text"/>
+    <Questionaire order="14" value="assisted"      type="Local" xml="assisted"      print_order="5" print_type="text"/>
+  </ProcessType>
+
+  <ProcessType value="New-AIS.0819" notification="true" appointment_template="SRS30" schedule_template="SRS30-No-appointment"
+               order="3" visit="1" visitType="POV" report="Initial" optional_questionnaires="New-AIS-Consented.0819"
+               start_date="08-15-2019">
+    <Questionaire order="1" value="TimingConsent@19403"  type="Local" xml="TimingConsent" print_type="none"/>
+  </ProcessType>
+
+  <ProcessType value="New-AIS-Consented.0819" notification="false"
+               order="-1" visit="9999"
+               start_date="08-15-2019">
+    <Questionaire order="10" value="SRS30notreq@19301" type="Local" xml="SRS30notreq" print_order="1" print_type="text, table"/>
+    <Questionaire order="13" value="HealthMindsetnotreq" type="Local" xml="HealthMindsetnotreq" print_order="2" print_type="text"/>
+    <Questionaire order="14" value="AQ@19136" type="Local" xml="AQ" print_order="3" print_type="text"/>
+    <Questionaire order="15" value="Pause@18782" type="Local" xml="Pause" print_type="none"/>
+    <Questionaire order="16" value="SRS30notreq2@19480" type="Local" xml="SRS30notreq2" print_order="4" print_type="text, table"/>
+  </ProcessType>
+
+  <VisitTypes>
+    <VisitType value="POV" group="new" />
+  </VisitTypes>
+
+</Process>

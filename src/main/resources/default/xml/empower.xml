@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Form Description="Background Information" DateStarted="" DateFinished="" questionsPerPage="1" Class="surveyInlineBordered">
+ <Items class="surveyInline">
+  <Item Order="1" ItemResponse="" ItemScore="" required="true" >
+       <Description>
+        <![CDATA[Are you interested in learning more about a research study?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" >
+          <ref>learn_about_study</ref>
+          <item><label>Yes</label><value>1</value></item>
+          <item><label>No</label><value>2</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="2" required="true" Type="select1" >
+       <Description>
+        <![CDATA[Do you experience ongoing pain?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1" >
+          <ref>exper_ongoing_pain</ref>
+          <item><label>Yes</label><value>1</value></item>
+          <item><label>No</label><value>2</value></item>
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="3" ItemResponse="" ItemScore="" required="true">
+      <Description>
+        <![CDATA[Do you take opioids medication DAILY?]]>
+      </Description>
+      <Responses>
+        <Response Order="1" required="true" Type="select1"  >
+          <ref>take_opioids_daily</ref>
+          <item><label>Yes</label><value>1</value></item>
+          <item><label>No</label><value>2</value></item>
+          <item><label>I don't know</label><value>3</value></item>
+        </Response>
+        <Response Order="2" required="false" Type="input"  >
+          <label>Please enter any comments</label>
+           <ref>opioids_comments</ref>
+          <location>left</location>
+          <format>
+            <datatype>text</datatype>
+            <lines>1</lines>
+          </format>
+          <Scores />
+        </Response>
+      </Responses>
+    </Item>
+    <Item Order="4" ItemResponse="" ItemScore="" required="true" >
+      <Description><![CDATA[Are you interested in speaking with your doctor or staff about a new nationally recognized
+      program that helps people gently reduce opioid medication over the course of one year?]]></Description>
+      <Responses>
+        <Response Order="1" Type="select1" align="vertical" Class="registrySurveyAnswer" Appearance="full">
+           <ref>interest_speak_dr</ref>
+           <item><label>Yes, my doctor or staff may contact me to discuss my interest in the study</label><value>1</value></item>
+           <item><label>No, thank you</label><value>2</value></item>
+           <item><label>Ask me again later</label><value>3</value></item>
+        </Response>
+      </Responses>
+    </Item>
+  </Items>
+</Form>
